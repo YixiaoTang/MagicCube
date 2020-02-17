@@ -11,43 +11,51 @@ public class moveorb : MonoBehaviour
     public float horizVel = 0;
     public int laneNum = 2;
     public string controlLocked = "n";
-
+    public float maxScale = 1.2f;
     public Transform boomObj;
+    private Rigidbody rb;
+    private Vector3 initSnowBallScale;
     // Start is called before the first frame update
     void Start()
     {
-        
+        rb = GetComponent<Rigidbody>();
+        initSnowBallScale = rb.transform.localScale;
     }
 
     // Update is called once per frame
     void Update()
     {
-        GetComponent<Rigidbody>().velocity = new Vector3(horizVel, GM.vertVel, 4);
-
-        if ((Input.GetKeyDown(moveL)) && laneNum > 1 && controlLocked == "n")
+        if(Input.GetKeyUp(moveL) || Input.GetKeyUp(moveR) || transform.position.x <= GM.leftLineBondary || transform.position.x >= GM.rightLineBondary)
+        {
+            horizVel = 0;
+        }
+        
+        if ((Input.GetKeyDown(moveL)) && transform.position.x > GM.leftLineBondary)
         {
             horizVel = -2;
-            StartCoroutine(stopSlide());
-            laneNum -= 1;
-            controlLocked = "y";
         }
-        if ((Input.GetKeyDown(moveR)) && laneNum < 3 && controlLocked == "n")
+        if ((Input.GetKeyDown(moveR)) && transform.position.x < GM.rightLineBondary)
         {
             horizVel = 2;
-            StartCoroutine(stopSlide());
-            laneNum += 1;
-            controlLocked = "y";
         }
+        if(transform.localScale.x < maxScale && transform.localScale.y < maxScale && transform.localScale.z < maxScale)
+        {
+            
+            transform.localScale = initSnowBallScale * (1 + GM.Instance.getSnowBallSizeCoefficient());
+        }
+        rb.velocity = new Vector3(horizVel, GM.Instance.vertVel, GM.Instance.zVel);
     }
 
     void OnCollisionEnter(Collision other)
     {
         if (other.gameObject.CompareTag("lethal"))
         {
-            Destroy(gameObject);
-            GM.zVelAdj = 0;
+            GM.Instance.snowBallSizeCoefficient = 1;
+            Destroy(other.gameObject);
+            transform.localScale = initSnowBallScale * (1 + GM.Instance.getSnowBallSizeCoefficient());
+            /*GM.zVel = 0;
             Instantiate(boomObj, transform.position, boomObj.rotation);
-            GM.lvlCompStatus = "Fail";
+            GM.lvlCompStatus = "Fail";*/
         }
         //power-up
         if(other.gameObject.name == "Capsule(Clone)")
@@ -58,7 +66,7 @@ public class moveorb : MonoBehaviour
         if (other.gameObject.name == "coin(Clone)")
         {
             Destroy(other.gameObject);
-            GM.coinTotal += 1;
+            GM.Instance.coinTotal += 1;
         }
     }
 
@@ -66,15 +74,15 @@ public class moveorb : MonoBehaviour
     {
         if(other.gameObject.name == "rampBottomTrig")
         {
-            GM.vertVel = 2;
+            GM.Instance.vertVel = 2;
         }
         if (other.gameObject.name == "rampTopTrig")
         {
-            GM.vertVel = 0;
+            GM.Instance.vertVel = 0;
         }
         if(other.gameObject.name == "exit")
         {
-            GM.lvlCompStatus = "Success";
+            GM.Instance.lvlCompStatus = "Success";
             SceneManager.LoadScene("LevelComp");
         }
 

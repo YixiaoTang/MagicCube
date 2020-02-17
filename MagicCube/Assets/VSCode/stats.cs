@@ -15,15 +15,15 @@ public class stats : MonoBehaviour
     {
         if(gameObject.name == "coinsTxt")
         {
-            GetComponent<TextMesh>().text = "Coin : " + GM.coinTotal;
+            GetComponent<TextMesh>().text = "Coin : " + GM.Instance.coinTotal;
         }
         if(gameObject.name == "timeTxt")
         {
-            GetComponent<TextMesh>().text = "Time : " + GM.timeTotal;
+            GetComponent<TextMesh>().text = "Time : " + GM.Instance.timeTotal;
         }
         if (gameObject.name == "runstatus")
         {
-            GetComponent<TextMesh>().text = GM.lvlCompStatus;
+            GetComponent<TextMesh>().text = GM.Instance.lvlCompStatus;
         }
     }
 }

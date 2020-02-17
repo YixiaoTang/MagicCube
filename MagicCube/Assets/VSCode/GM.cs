@@ -5,11 +5,13 @@ using UnityEngine;
 
 public class GM : MonoBehaviour
 {
-    public static float vertVel = 0;
-    public static int coinTotal = 0;
-    public static float timeTotal = 0;
-    public static float zVelAdj = 1;
-    public static string lvlCompStatus = "";
+    public float vertVel = 0;
+    public int coinTotal = 0;
+    public float timeTotal = 0;
+    public float zVel = 2;
+    public float scaleChange = 0.003f;
+    public string lvlCompStatus = "";
+    public float snowBallSizeCoefficient = 1f;
     public float waitToLoad = 0;
     public float zScenePos = 62;
     public Transform bbNoPit;
@@ -17,7 +19,30 @@ public class GM : MonoBehaviour
     public Transform coinObj;
     public Transform obstObj;
     public Transform capsuleObj;
+    public static float initSnowBallSizeCoefficient;
     public int randNum;
+    public static int leftLineBondary = -1;
+    public static int rightLineBondary = 1;
+
+    static GM instance;
+
+    public static GM Instance
+    {
+        get
+        {
+            if (instance == null)
+            {
+                instance = FindObjectOfType(typeof(GM)) as GM;
+                if (instance == null)
+                {
+                    GameObject obj = new GameObject();
+                    instance = (GM)obj.AddComponent(typeof(GM));
+                }
+            }
+            return instance;
+        }
+    }
+
 
     // Start is called before the first frame update
     void Start()
@@ -25,10 +50,9 @@ public class GM : MonoBehaviour
         Instantiate(bbNoPit, new Vector3(0, 2.28f, 42), bbNoPit.rotation);
         Instantiate(bbNoPit, new Vector3(0,2.28f,46), bbNoPit.rotation);
         Instantiate(bbNoPit, new Vector3(0, 2.28f, 50), bbNoPit.rotation);
-        Instantiate(bbPitMid, new Vector3(0, 2.28f, 54), bbPitMid.rotation);
+        Instantiate(bbNoPit, new Vector3(0, 2.28f, 54), bbNoPit.rotation);
         Instantiate(bbNoPit, new Vector3(0, 2.28f, 58), bbNoPit.rotation);
-        
-        
+        initSnowBallSizeCoefficient = snowBallSizeCoefficient;
     }
 
     // Update is called once per frame
@@ -59,11 +83,28 @@ public class GM : MonoBehaviour
         timeTotal += Time.deltaTime;
         if(lvlCompStatus == "Fail")
         {
-            waitToLoad += Time.deltaTime;
+            waitToLoad = getVelocity();
         }
         if(waitToLoad > 1)
         {
             SceneManager.LoadScene("levelcomp");
         }
+        if(snowBallSizeCoefficient < 4)
+        {
+            snowBallSizeCoefficient += 0.01f;
+        }
+        if(zVel < 8)
+        {
+            zVel = getVelocity();
+        }
+    }
+
+    public float getVelocity()
+    {
+        return 1 * snowBallSizeCoefficient;
+    } 
+    public float getSnowBallSizeCoefficient()
+    {
+        return (snowBallSizeCoefficient - 1f)*0.2f;
     }
 }
