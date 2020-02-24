@@ -64,6 +64,7 @@ public class GM : MonoBehaviour
         }
 
 
+
         //timeTotal -= 1;
         //if (timeTotal == 0)
         //{

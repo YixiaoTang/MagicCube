@@ -744,63 +744,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36f591147032147da9b1b628740f949d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveL: 97
-  moveR: 100
-  moveU: 119
-  moveD: 115
-  xVel: 0
-  zVel: 0
-  deVel: 0.01
-  initBallScale: {x: 0, y: 0, z: 0}
-  rb: {fileID: 0}
 --- !u!54 &1376204681
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1023,17 +966,17 @@ PrefabInstance:
     - target: {fileID: 8170153791668043271, guid: 0d230cc8be529a542a08cb878ab14b18,
         type: 3}
       propertyPath: m_Color.r
-      value: 0.14150941
+      value: 0.14094089
       objectReference: {fileID: 0}
     - target: {fileID: 8170153791668043271, guid: 0d230cc8be529a542a08cb878ab14b18,
         type: 3}
       propertyPath: m_Color.g
-      value: 0.13416694
+      value: 0.14117648
       objectReference: {fileID: 0}
     - target: {fileID: 8170153791668043271, guid: 0d230cc8be529a542a08cb878ab14b18,
         type: 3}
       propertyPath: m_Color.b
-      value: 0.13416694
+      value: 0.13333334
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0d230cc8be529a542a08cb878ab14b18, type: 3}
@@ -1049,6 +992,8 @@ GameObject:
   - component: {fileID: 1990084799}
   - component: {fileID: 1990084798}
   - component: {fileID: 1990084800}
+  - component: {fileID: 1990084802}
+  - component: {fileID: 1990084801}
   m_Layer: 5
   m_Name: coinBar
   m_TagString: Untagged
@@ -1127,3 +1072,62 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a06336d83769140a4922ea5ea12eaa0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!102 &1990084801
+TextMesh:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1990084796}
+  m_Text: 
+  m_OffsetZ: 0
+  m_CharacterSize: 1
+  m_LineSpacing: 1
+  m_Anchor: 0
+  m_Alignment: 0
+  m_TabSize: 4
+  m_FontSize: 0
+  m_FontStyle: 0
+  m_RichText: 1
+  m_Font: {fileID: 0}
+  m_Color:
+    serializedVersion: 2
+    rgba: 4294967295
+--- !u!23 &1990084802
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1990084796}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10100, guid: 0000000000000000e000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
