@@ -13,9 +13,9 @@ public class moveByTouch : MonoBehaviour
     float verticalMove = 0f;
     float horizontalMove = 0f;
 
-    public float xVel = 0;
-    public float zVel = 0;
-    public float deVel = 0.5f;
+    public static float xVel = 0;
+    public static float zVel = 0;
+    public static float deVel = 0.05f;
 
     private Vector3 initBallScale;
     private Rigidbody rb;
@@ -41,6 +41,8 @@ public class moveByTouch : MonoBehaviour
         //        Debug.DrawLine(gameObject.transform.position, touchPosition, Color.red);
         //    }
         //}
+        Debug.Log(GetComponent<Rigidbody>().velocity);
+
 
         horizontalMove = joystick.Horizontal;
         verticalMove = joystick.Vertical;
