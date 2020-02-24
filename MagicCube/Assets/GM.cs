@@ -26,11 +26,11 @@ public class GM : MonoBehaviour
     public Transform obstObj;
 
     public static float timeTotal = 60 * 0.5f;
-
+    public int coinNum = 1000;
     // Start is called before the first frame update
     void Start()
     {
-        for(int i = 0; i < 1000; i++)
+        for(int i = 0; i < coinNum; i++)
         {
             rand1 = Random.Range(-xRange, xRange);
             rand2 = Random.Range(-zRange, zRange);
