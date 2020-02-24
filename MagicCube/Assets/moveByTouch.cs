@@ -60,7 +60,7 @@ public class moveByTouch : MonoBehaviour
             }
         }
         zVel += verticalMove/4;
-        if (System.Math.Abs(xVel) > GM.ballVelMax)
+        if (System.Math.Abs(zVel) > GM.ballVelMax)
         {
             if (zVel < 0)
             {

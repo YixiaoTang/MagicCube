@@ -17,9 +17,9 @@ public class GM : MonoBehaviour
     public static float ballSize = 1f;
 
     public static float initBallVel = 1f;
-    public static float ballVel = 0.1f;
+    public static float ballVel = 2f;
 
-    public static float ballVelMax = 1f;
+    public static float ballVelMax = 4f;
     public static float ballSizeMax = 4f;
 
     public static int coinTotal = 0;
