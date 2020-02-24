@@ -13,6 +13,6 @@ public class upDateCoinNum : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        GetComponent<TextMesh>().text = "Coins: " + GM.coinTotal;
+        GetComponent<UnityEngine.UI.Text>().text = "Coins: " + GM.coinTotal.ToString();
     }
 }

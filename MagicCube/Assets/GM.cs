@@ -22,6 +22,17 @@ public class GM : MonoBehaviour
     public static float ballVelMax = 4f;
     public static float ballSizeMax = 4f;
 
+    //================================== configuration ===================================
+    public static int obst1Num = 25;
+    public static int obst2Num = 25;
+    public static int obst3Num = 25;
+    public static int obst4Num = 25;
+    public static int obst5Num = 25;
+    public static int coinNum = 1000;
+    public static float timeTotal = 60 * 2f; // 60 frames/sec * secs
+
+
+    //================================== Statistics ===================================
     public static int coinTotal = 0;
 
     public Transform coinObj;
@@ -30,12 +41,11 @@ public class GM : MonoBehaviour
 
     public GameObject coinBar;
 
-    public static float timeTotal = 60 * 0.5f;
-    public int coinNum = 1000;
     // Start is called before the first frame update
     void Start()
     {
-        for(int i = 0; i < coinNum; i++)
+        Application.targetFrameRate = 60;
+        for(int i = 0; i < 1000; i++)
         {
             rand1 = Random.Range(-xRange, xRange);
             rand2 = Random.Range(-zRange, zRange);
@@ -62,6 +72,7 @@ public class GM : MonoBehaviour
         {
             ballVel += 0.01f;
         }
+
 
 
         //timeTotal -= 1;
