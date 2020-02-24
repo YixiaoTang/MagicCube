@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class GM : MonoBehaviour
 {
+    //public static Camera mainCamera;
+
     private int xRange = 50;
     private int zRange = 50;
 
@@ -15,15 +17,18 @@ public class GM : MonoBehaviour
     public static float ballSize = 1f;
 
     public static float initBallVel = 1f;
-    public static float ballVel = 2f;
+    public static float ballVel = 0.1f;
 
-    public static float ballVelMax = 4f;
+    public static float ballVelMax = 1f;
     public static float ballSizeMax = 4f;
 
     public static int coinTotal = 0;
 
     public Transform coinObj;
     public Transform obstObj;
+    public static GameObject mainCamera;
+
+    public GameObject coinBar;
 
     public static float timeTotal = 60 * 0.5f;
     public int coinNum = 1000;
@@ -57,6 +62,7 @@ public class GM : MonoBehaviour
         {
             ballVel += 0.01f;
         }
+
 
         //timeTotal -= 1;
         //if (timeTotal == 0)
