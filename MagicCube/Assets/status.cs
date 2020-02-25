@@ -11,6 +11,7 @@ public class status : MonoBehaviour
     }
 
     // Update is called once per frame
+    // 显示分数
     void Update()
     {
         if(gameObject.name == "Coin Num")

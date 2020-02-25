@@ -8,6 +8,8 @@ TagManager:
   - exit
   - coin
   - obst
+  - obst2
+  - obst1
   layers:
   - Default
   - TransparentFX
