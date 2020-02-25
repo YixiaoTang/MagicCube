@@ -716,10 +716,10 @@ PlayerSettings:
   facebookXfbml: 0
   facebookFrictionlessRequests: 1
   apiCompatibilityLevel: 6
-  cloudProjectId: 
+  cloudProjectId: fba221e5-a477-4a92-bbe3-c01b543ab40b
   framebufferDepthMemorylessMode: 0
-  projectName: 
-  organizationId: 
+  projectName: MagicCubeUSC
+  organizationId: magiccubeusc
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0
   disableOldInputManagerSupport: 0

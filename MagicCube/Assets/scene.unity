@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657838, g: 0.49641234, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -513,6 +513,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1044698156}
   - component: {fileID: 1044698155}
+  - component: {fileID: 1044698157}
+  - component: {fileID: 1044698158}
   m_Layer: 0
   m_Name: GM
   m_TagString: Untagged
@@ -532,6 +534,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad9bfd7c1b2df48118833aa3ae77a005, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  obst1Num: 25
+  obst2Num: 25
+  obst3Num: 25
+  obst4Num: 25
+  obst5Num: 25
+  coinNum: 1000
   coinObj: {fileID: 8448418934256457359, guid: 402455e8ded8d4207864f945818b05c7, type: 3}
   obstObj: {fileID: 7465245655506830614, guid: b788fa30584e84f6cb2b6604e29fa062, type: 3}
   coinBar: {fileID: 1990084796}
@@ -549,6 +557,87 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1044698157
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1044698154}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52774eb4e08ee1f44a312b607e84fb4e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_DriveableProperty:
+    m_Fields:
+    - m_Target: {fileID: 1044698155}
+      m_FieldPath: coinNum
+      m_RSKeyName: coinNum
+      m_Type: int
+    - m_Target: {fileID: 1044698155}
+      m_FieldPath: obst1Num
+      m_RSKeyName: ObstacleNum
+      m_Type: int
+--- !u!114 &1044698158
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1044698154}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -745406591, guid: 220224b43fc464c28bc0e8de8f54a432, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Trigger:
+    m_IsTriggerExpanded: 1
+    m_Type: 0
+    m_LifecycleEvent: 2
+    m_ApplyRules: 0
+    m_Rules:
+      m_Rules: []
+    m_TriggerBool: 0
+    m_InitTime: 1
+    m_RepeatTime: 3
+    m_Repetitions: 0
+    repetitionCount: 0
+  m_EventPayload:
+    m_IsEventExpanded: 1
+    m_StandardEventType: GameStart
+    m_Parameters:
+      m_Parameters:
+      - m_RequirementType: 0
+        m_GroupID: 
+        m_Tooltip: 
+        m_Name: test
+        m_Value:
+          m_EditingCustomValue: 0
+          m_PopupIndex: 0
+          m_CustomValue: 
+          m_FixedType: 0
+          m_EnumType: 
+          m_EnumTypeIsCustomizable: 0
+          m_CanDisable: 0
+          m_PropertyType: 1
+          m_ValueType: System.String
+          m_Value: test
+          m_Target:
+            m_Target: {fileID: 0}
+            m_Path: 
+            m_ValidTypeNames:
+            - System.Int32
+            - System.Boolean
+            - System.Decimal
+            - System.Double
+            - System.Single
+            - System.Int64
+            - System.Int16
+            - System.String
+            m_Type: System.String
+            m_EnumType: 
+    m_Name: game_start
 --- !u!1 &1081093043
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Analytics;
 using UnityEngine.SceneManagement;
 
 public class GM : MonoBehaviour
@@ -45,20 +46,22 @@ public class GM : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
-        for(int i = 0; i < 1000; i++)
-        {
-            rand1 = Random.Range(-xRange, xRange);
-            rand2 = Random.Range(-zRange, zRange);
-            Instantiate(coinObj, new Vector3(rand1, 1, rand2), coinObj.rotation);
-        }
-        //生成柱子
-        for (int i = 0; i < 50; i++)
+        remoteSetting();
+        Application.targetFrameRate = 60;
+        
+        for (int i = 0; i < obst1Num; i++)
         {
             rand1 = Random.Range(-xRange, xRange);
             rand2 = Random.Range(-zRange, zRange);
             Instantiate(obstObj, new Vector3(rand1, 1, rand2), obstObj.rotation);
         }
+        for (int i = 0; i < coinNum; i++)
+        {
+            rand1 = Random.Range(-xRange, xRange);
+            rand2 = Random.Range(-zRange, zRange);
+            Instantiate(coinObj, new Vector3(rand1, 1, rand2), coinObj.rotation);
+        }
+        
     }
 
     // Update is called once per frame
@@ -86,5 +89,22 @@ public class GM : MonoBehaviour
     public static float getBallSizeFactor()
     {
         return 1f;
+    }
+
+    private void remoteSetting()
+    {
+        UnityEngine.RemoteSettings.ForceUpdate();
+        coinNum = UnityEngine.RemoteSettings.GetInt("coinNum");
+        obst1Num = UnityEngine.RemoteSettings.GetInt("Obst1Num");
+        obst2Num = UnityEngine.RemoteSettings.GetInt("Obst2Num");
+        timeTotal = UnityEngine.RemoteSettings.GetFloat("TimeTotal");
+    }
+
+    public static void level1CompleteEvent()
+    {
+        AnalyticsEvent.Custom("level 1 Complete", new Dictionary<string, object>
+        {
+            { "Total Coin", coinTotal }
+        });
     }
 }
