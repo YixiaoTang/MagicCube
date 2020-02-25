@@ -13,6 +13,12 @@ MonoBehaviour:
   m_Name: RemoteSettingsDataStore
   m_EditorClassIdentifier: 
   rsKeyList:
+  - key: ObstacleNum
+    value: 100
+    type: int
+  - key: Obst1Num
+    value: 100
+    type: int
   - key: coinNum
-    value: 50
+    value: 10
     type: int

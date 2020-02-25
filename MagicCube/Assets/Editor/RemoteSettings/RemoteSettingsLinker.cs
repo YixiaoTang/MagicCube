@@ -21,6 +21,7 @@ namespace UnityEngine.Analytics
     // During a build, collect classes referenced by RemoteSettings components
     // in each scene and in prefabs, and write to a link.xml file to prevent
     // those classes from being stripped.
+    [Obsolete]
     public class RemoteSettingsLinker : IPreprocessBuild, IProcessScene
     {
         const string k_LinkPath = "Assets/Editor/RemoteSettings/link.xml";
@@ -223,12 +224,12 @@ namespace UnityEngine.Analytics
 
         public void OnPreprocessBuild(BuildTarget target, string path)
         {
-            throw new NotImplementedException();
+            //throw new NotImplementedException();
         }
 
         public void OnProcessScene(Scene scene)
         {
-            throw new NotImplementedException();
+            //throw new NotImplementedException();
         }
     }
 }

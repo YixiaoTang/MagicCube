@@ -124,6 +124,7 @@ public class moveByTouch : MonoBehaviour
         {
             Destroy(gameObject);
             SceneManager.LoadScene("finish");
+            GM.level1CompleteEvent();
         }
     }
 }

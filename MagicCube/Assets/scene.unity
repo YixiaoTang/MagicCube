@@ -534,10 +534,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad9bfd7c1b2df48118833aa3ae77a005, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  obst1Num: 25
+  obst2Num: 25
+  obst3Num: 25
+  obst4Num: 25
+  obst5Num: 25
+  coinNum: 1000
   coinObj: {fileID: 8448418934256457359, guid: 402455e8ded8d4207864f945818b05c7, type: 3}
   obstObj: {fileID: 7465245655506830614, guid: b788fa30584e84f6cb2b6604e29fa062, type: 3}
   coinBar: {fileID: 1990084796}
-  coinNum: 1000
 --- !u!4 &1044698156
 Transform:
   m_ObjectHideFlags: 0
@@ -569,6 +574,10 @@ MonoBehaviour:
     - m_Target: {fileID: 1044698155}
       m_FieldPath: coinNum
       m_RSKeyName: coinNum
+      m_Type: int
+    - m_Target: {fileID: 1044698155}
+      m_FieldPath: obst1Num
+      m_RSKeyName: ObstacleNum
       m_Type: int
 --- !u!114 &1044698158
 MonoBehaviour:
