@@ -19,6 +19,7 @@
 
 
 
+extern "C" void Joystick_get_AxisOptions_m41669BF41810BA976B1A230E1FB3ADCDC1F4C758 ();
 extern "C" void KeyHandler_Lookup_m4A5D9DB01199D9E77D5304499BDD4F5981955208 ();
 extern "C" void RegistryKey_get_Hive_m48D177AF2D2721B1045DBD28938DB4AD1CFE3DBB ();
 extern "C" void KeyHandler_Ensure_m9C067DAA07B1D9E74FBBB4E62B1BDB72D92CB115 ();
@@ -75,6 +76,9 @@ extern "C" void Array_UnsafeCreateInstance_m3524CE53B16324730C94C54940BB63A5CF67
 extern "C" void ArrayList_ToArray_mA747CA021786BE2729CFFD4B9CE2BF57A3990C76 ();
 extern "C" void Converter_CreatePrimitiveArray_m5C8E9CCD1307AA9A3C678F0E338EA580D67B81D3 ();
 extern "C" void Type_GetEnumRawConstantValues_m665064C1BD51087A300A882E46B4992AD3F7BBD2 ();
+extern "C" void GameObject_GetComponentsInternal_mAB759217A3AD0831ABD9387163126D391459E1B8 ();
+extern "C" void Mesh_GetAllocArrayFromChannelImpl_m965F3844FBD29C866754948D036A6BC6ECF89334 ();
+extern "C" void NoAllocHelpers_ExtractArrayFromList_mB4B8B76B4F160975C949FB3E15C1D497DBAE8EDC ();
 extern "C" void Attribute_GetCustomAttribute_m2F7052FBA63683DCBD28CA75E300CB453AF531F8 ();
 extern "C" void Attribute_GetCustomAttribute_mD832C65CE28D6177FDE62D3C23C5229D8BDEF9AE ();
 extern "C" void Attribute_GetCustomAttribute_m2A281F2593CC0DC3D02E97D79A3581C72A7512E4 ();
@@ -88,6 +92,8 @@ extern "C" void Attribute_GetCustomAttributes_m42F9AB42F21554BE6F973B3CD699692A9
 extern "C" void Attribute_GetCustomAttributes_m51F1A204FE1FB412E23B00056B127E5EE03041A8 ();
 extern "C" void Attribute_InternalGetCustomAttributes_m786427FC13FB2D718DF52743D0D56B4F4A4B7C87 ();
 extern "C" void Attribute_InternalGetCustomAttributes_m79A1BD09EEADB51067F0EAD54C2FCFED60825FD3 ();
+extern "C" void Joystick_get_SnapX_m8BFFB04A6377302BCD1E3106930231C756150211 ();
+extern "C" void Joystick_get_SnapY_m3B972003ED2D6D62DC433D6429AD58AEDCEE5957 ();
 extern "C" void ReflectionExtensions_IsAbstract_m7D58AD3A5F2B93C0F96353054BD8132C36EDD84E ();
 extern "C" void ReflectionExtensions_IsEnum_m2930BB5E455993D6A599EA4F61DFB9859099EDA6 ();
 extern "C" void ReflectionExtensions_IsSealed_mFD0388F050D6EEBB0832BDFAE3026AF62DC24C89 ();
@@ -179,17 +185,21 @@ extern "C" void Char_IsLatin1_m2C0F22F8C188ADA91F693A582BB94E3C252A7931 ();
 extern "C" void Char_IsLetter_mCC7F387F16C2DE7C85B6A1A0C5BC75D92A813DFE ();
 extern "C" void Char_IsLetterOrDigit_mD7307B3157DFA4EC20D58F68ACB6A9793D3A8292 ();
 extern "C" void Char_IsLowSurrogate_m11EF790BE9683BDF04022FD055104AE7A22A6A9C ();
+extern "C" void Char_IsLower_mE89996F09044C07A991164C7E6A4A9C02867CC90 ();
 extern "C" void Char_IsNumber_m6B4D661D496A7EBCC142740E91F55B01754FC24F ();
 extern "C" void Char_IsSurrogate_m464F9F75070ACD88165EE4734D617622A6667CB1 ();
 extern "C" void Char_IsSurrogate_m43C03392CA71985B36FE7EB29B6ECB2DABA2680F ();
 extern "C" void Char_IsSurrogatePair_m186784A2523D247DD43AC669D29A140AE0E992CF ();
+extern "C" void Char_IsUpper_m94DFB4B66A46914F0588FB7EB42E9BB4A14C3513 ();
 extern "C" void Char_IsWhiteSpace_m8AE1C4157A1E1D8F5022630F4229AB26223BDC6B ();
 extern "C" void Char_IsWhiteSpaceLatin1_m13356CA19562C77A7D5FE447D9D0D5FAC2663CE0 ();
 extern "C" void Char_System_IConvertible_ToBoolean_m4B3E7F71862B0AA10F450EEBA622EA1DE2C11777_AdjustorThunk ();
 extern "C" void CharEnumerator_MoveNext_m1689A4568C226AB519D03A6047E17BF551AA0C6D ();
 extern "C" void ArrayListEnumeratorSimple_MoveNext_m44B1A29111DEB18390CBB7C336575906A0F14ABE ();
 extern "C" void ArrayList_Contains_mC8B35E33F1A1264FD7779FF33D13CA0BC5E7523B ();
+extern "C" void ArrayList_get_IsFixedSize_m330C11D43A42002EABFA78E2CE8A8F262392AC99 ();
 extern "C" void ArrayList_get_IsReadOnly_m872F6CBFA59DA8ABF64E52802DEED7E7DBD08BEC ();
+extern "C" void ArrayList_get_IsSynchronized_m3FD213444148DDE20199149E073A3C1E2D1C7123 ();
 extern "C" void CompatibleComparer_Equals_m22DF5EBFC4A592CDF54C17F401BF454585DD7C87 ();
 extern "C" void ByteEqualityComparer_Equals_m25F9EA406F900169EE63CFB34BDE3E8E478DF338 ();
 extern "C" void ByteEqualityComparer_Equals_m9289C7A7A89DC4B9F90EBD2724A9844B7199E8AA ();
@@ -198,18 +208,27 @@ extern "C" void NonRandomizedStringEqualityComparer_Equals_mD35083F160C9DD803E60
 extern "C" void ObjectEqualityComparer_System_Collections_IEqualityComparer_Equals_m0041B53A123F89F72A2F8BE30E0419B1E804EDF4 ();
 extern "C" void HashHelpers_IsPrime_mB435CA4898F891CCFE7227DB6721A9803E35099B ();
 extern "C" void HashtableEnumerator_MoveNext_m9517CB795206780030F5231EB58BC2A0B04D3B65 ();
+extern "C" void KeyCollection_get_IsSynchronized_m5C76390DFB2BD8E3884F6C83440CD9350BA729A4 ();
 extern "C" void SyncHashtable_Contains_m9ED7A575E1BB3E958935D0F9D7EBF0FAB3E1A9A3 ();
 extern "C" void SyncHashtable_ContainsKey_m2535E9B4F57EA6CF6D26945A835838B4AD24EEDD ();
+extern "C" void SyncHashtable_get_IsSynchronized_mF15EAEFC1C5A4AB01CE2AA2692108DC6608FE0FF ();
 extern "C" void Hashtable_Contains_m79926516859B7D4825E59FA348E675021716D3C4 ();
 extern "C" void Hashtable_ContainsKey_mF8D5E3E33831B9A7EA5365B580EE03B234975EC2 ();
 extern "C" void Hashtable_KeyEquals_mA81BC468DA574BB7F49C21FA7DDFB29756715D1E ();
+extern "C" void Hashtable_get_IsSynchronized_mEF9A5B16329878D2B5E5940C8DF5A7133F5889DE ();
 extern "C" void QueueEnumerator_MoveNext_mD32B729CB15A926B5CD49F1A1227DE43601953F8 ();
+extern "C" void Queue_get_IsSynchronized_mDB1FCF1611C2B50D77A508A235F8571E07F9049D ();
 extern "C" void SortedListEnumerator_MoveNext_m9E4024F4C87D1FE851B86685062E1EB389D56266 ();
+extern "C" void SortedList_get_IsSynchronized_m6440118E5D3C3B00089657685A4C6A414D557626 ();
 extern "C" void StackEnumerator_MoveNext_m7C00619A440FB2C12C0A5C3C8CEB934250C3DE22 ();
+extern "C" void Stack_get_IsSynchronized_m1DE2ABB7B9C97434B1AAC9B51D069F32AD3B0A65 ();
 extern "C" void EditorBrowsableAttribute_Equals_m6F5EF9CC298CBDC862CBCA5187379A79635726FA ();
+extern "C" void StandardValuesCollection_System_Collections_ICollection_get_IsSynchronized_m9A74F835BFD37AA9DC9458A0B7D3FE739612F9EA ();
 extern "C" void TypeConverterAttribute_Equals_mDA74DFC28CC7ABC315407EDD1AAC14531C5F6AC4 ();
 extern "C" void ConfigurationElement_IsModified_mA046D03044CDCD875C22E34247CE15E7BBC883A5 ();
 extern "C" void ConfigurationElementCollection_IsModified_m8CE9100FF55419730D78D1399847C4AA31596769 ();
+extern "C" void ConfigurationElementCollection_get_IsSynchronized_m01A1041417359C9558B7BD6BBE38A079B1290C59 ();
+extern "C" void ConfigurationPropertyCollection_get_IsSynchronized_mC9C67CAB13360A77A9EC5DA5474900997EAAC474 ();
 extern "C" void ConfigurationSection_IsModified_mDD7D74427E761D9EFAA2629FE71DD83A8B7D1785 ();
 extern "C" void IgnoreSection_IsModified_m0430C7830B3A902BCAE985427CB2FCE1F15EB595 ();
 extern "C" void WindowsCancelHandler_EndInvoke_m09FBBD984881460084F4F50D0A99E0A752DB4CB0 ();
@@ -370,6 +389,7 @@ extern "C" void DomainNameHelper_IsValidDomainLabelCharacter_mF6DEB20D9D03A8728B
 extern "C" void Double_Equals_m07123CFF3B06183E095BF281110526F9B8953472_AdjustorThunk ();
 extern "C" void Double_Equals_m25A10C1D70E2906C2DAA5F3863B6AB76AFB13F33_AdjustorThunk ();
 extern "C" void Double_IsNaN_m5DFBBD58036879B687FEC248C50EACBABE205AB3 ();
+extern "C" void Double_IsPositiveInfinity_m45537C58204CD5AA96F39D42F4CB8DADA128C77B ();
 extern "C" void Double_System_IConvertible_ToBoolean_mF2373D33947A1A2A41037A40C332F1F8B0B31399_AdjustorThunk ();
 extern "C" void Enum_Equals_mA344E3D044BE40ED5BB8C4A5838F9F5A2A235901 ();
 extern "C" void Enum_GetEnumValuesAndNames_m1DE3CB2A67168F041F94B867603001FA33DE19BB ();
@@ -712,6 +732,7 @@ extern "C" void LogicalCallContext_get_HasUserData_mA66D388149260DB9F1A4CB358919
 extern "C" void DictionaryEnumerator_MoveNext_mB1768E3DC0980322503D658FE95B9443812991C1 ();
 extern "C" void MessageDictionary_HasUserData_m9FF4B15D46E81D6991E7FAC2C3B5C0C5089FFA95 ();
 extern "C" void MessageDictionary_IsOverridenKey_mD305D7E4CA9CA6B25A501B9A828582234FB7F79E ();
+extern "C" void MessageDictionary_get_IsSynchronized_mC1E75EE4A9D812DDD49F50F8B3AF95204073464C ();
 extern "C" void MonoMethodMessage_NeedsOutProcessing_m91A820AC440989C58838EF714F839047DFE42012 ();
 extern "C" void SoapAttribute_get_UseAttribute_m683D27D10227D657AA60D34563B2003F00BD2E56 ();
 extern "C" void SoapFieldAttribute_IsInteropXmlElement_m4317D5BFFB52C5096A6939E3268EB3F9E722A573 ();
@@ -818,6 +839,7 @@ extern "C" void RuntimeTypeHandle_CanCastTo_mFF4E6B20B50C8639B20F1E536996AA060A9
 extern "C" void RuntimeTypeHandle_Equals_m48B5444F358AF14D1A45A4EE6C45AF0FCFC8719E_AdjustorThunk ();
 extern "C" void RuntimeTypeHandle_HasElementType_m844E596F2213BFE1DBB19D22021A9F900516E72D ();
 extern "C" void RuntimeTypeHandle_HasInstantiation_m0B85705C2F3F51E0914884205C1D0E36B512F596 ();
+extern "C" void RuntimeTypeHandle_HasReferences_m71822B61531288291A39FCF9B42B8076164939A3 ();
 extern "C" void RuntimeTypeHandle_IsArray_mA4058E6FF1974AD1D9BDBCDEDD58E6E9D7CDFB25 ();
 extern "C" void RuntimeTypeHandle_IsByRef_m1A205727682A26038795FB350609631C03C6379E ();
 extern "C" void RuntimeTypeHandle_IsComObject_m67B87E7FD87201A0AA12508BA7F679A4EA926BCE ();
@@ -835,12 +857,14 @@ extern "C" void RuntimeTypeHandle_type_is_assignable_from_mE6A9B9581955D9B343212
 extern "C" void SByte_Equals_m4B25C5FC7403EB2480D9F70F9B48C5619C6DD144_AdjustorThunk ();
 extern "C" void SByte_Equals_mD344184DEB18C1E1C585D6481DB3EB02989EBCC8_AdjustorThunk ();
 extern "C" void SByte_System_IConvertible_ToBoolean_m277D16AD22D59EB8D9D1CD3438CC225D72C0F1AB_AdjustorThunk ();
+extern "C" void OidCollection_get_IsSynchronized_m1300193FE08B13D161AAFB69DA709B41BA7A0FC2 ();
 extern "C" void OidEnumerator_MoveNext_m073D94D5D3254D53DF53429ACAD0AA9BD682221D ();
 extern "C" void RNGCryptoServiceProvider_RngOpen_m5054B79BCB3AEE33418C1BD91E24DA1B73204766 ();
 extern "C" void X509BasicConstraintsExtension_get_CertificateAuthority_m282E5D9E7640A06AF2CE06A0FA374571F25BAB6F ();
 extern "C" void X509BasicConstraintsExtension_get_HasPathLengthConstraint_m463A8B4DF4BEB46A9353309AA5EF3EAA2F7A4D42 ();
 extern "C" void X509Extension_get_Critical_m8F4D4C2F0ECBE5CB4C9998CE3E56D5040E2EEBE2 ();
 extern "C" void EvidenceEnumerator_MoveNext_mC9D2715D6026F22D7A0CE13DB1EC9E1EBAFFC0A6 ();
+extern "C" void Evidence_get_IsSynchronized_mFE3D5D7B7FAC76C47D6C49034E55FDC830655561 ();
 extern "C" void SecurityElement_IsValidAttributeName_mB2931DE1E6F81B307D10B7EA7EF7D82FF006968A ();
 extern "C" void SecurityElement_IsValidAttributeValue_m51DB156F9ACB51CC51E3C8C316FAAD8A17A74E89 ();
 extern "C" void SecurityElement_IsValidTag_m7BE8436536B0DC06BA6D524C6332DA972390B644 ();
@@ -851,6 +875,7 @@ extern "C" void Single_Equals_mCDFA927E712FBA83D076864E16C77E39A6E66FE7_Adjustor
 extern "C" void Single_IsInfinity_m811B198540AB538C4FE145F7C0303C4AD772988B ();
 extern "C" void Single_IsNaN_m1ACB82FA5DC805F0F5015A1DA6B3DC447C963AFB ();
 extern "C" void Single_System_IConvertible_ToBoolean_m010C755076291EE3AF73DC3E84B8820A71CFA0B5_AdjustorThunk ();
+extern "C" void String_Contains_m4488034AF8CB3EEA9A205EB8A1F25D438FF8704B ();
 extern "C" void String_EndsWith_m2281A2B36765C493DEDB28A9B0E22BEFFE2E9AC1 ();
 extern "C" void String_EndsWith_mE4F039DCC2A9FCB8C1ED2D04B00A35E3CE16DE99 ();
 extern "C" void String_EndsWith_m80B198568050D692B70AD8949AC6EDC3044ED811 ();
@@ -1241,7 +1266,18 @@ extern "C" void __Filters_FilterName_m768C2766720890EE1D07554E3433C0F828D427DB (
 extern "C" void AnimationCurve_Equals_m5E3528A0595AC6714584CAD54549D756C9B3DDD5 ();
 extern "C" void AnimationCurve_Equals_m60310C21F9B109BAC9BA4FACE9BEF88931B22DED ();
 extern "C" void AnimationCurve_Internal_Equals_m7ACF09175F2DC61D95006ABB5BBE1CF7434B2D1D ();
+extern "C" void AnimationClipPlayable_Equals_m06BA3E1C3AE0CC205C8531CCF6596C99C8D927EE_AdjustorThunk ();
+extern "C" void AnimationLayerMixerPlayable_Equals_m0A6A86FEDCE98E63B84BD01D0D362D03EA733E59_AdjustorThunk ();
+extern "C" void AnimationMixerPlayable_Equals_m7CB1B61B74A6BE00A35AD072490F07D4C7A17B0F_AdjustorThunk ();
+extern "C" void AnimationMotionXToDeltaPlayable_Equals_m53B4AAB54D7F3633C3954056F8C334BB8B7D590E_AdjustorThunk ();
+extern "C" void AnimationOffsetPlayable_Equals_m30B207FC6287EABF6FC1FDA47784322A3ABB98DF_AdjustorThunk ();
+extern "C" void AnimationPosePlayable_Equals_m4417430115DCF9B39D3E4B64424120CE7E555961_AdjustorThunk ();
+extern "C" void AnimationRemoveScalePlayable_Equals_m58B139243E3B27CE86CA4CC470895BF719CD9BAD_AdjustorThunk ();
+extern "C" void AnimatorControllerPlayable_Equals_m04685CCA5A5FC388A0387D3453A677C0CB47D173_AdjustorThunk ();
+extern "C" void Animator_get_hasBoundPlayables_m283AF0BA9B841E3FD1ADC5541C41B936A9D1EB05 ();
 extern "C" void Application_Internal_ApplicationWantsToQuit_mDF35192EF816ECD73F0BD4AFBCDE1460EF06442A ();
+extern "C" void Application_get_isEditor_m347E6EE16E5109EF613C83ED98DB1EC6E3EF5E26 ();
+extern "C" void Application_get_isPlaying_mF43B519662E7433DD90D883E5AE22EC3CFB65CA5 ();
 extern "C" void AudioClipPlayable_Equals_mEB47B5F2E1C643D403FA916C8961F117593DCFC0_AdjustorThunk ();
 extern "C" void AudioMixerPlayable_Equals_m6B84D1A5AEDEAAE12AEFB77319B2662506ABC9C4_AdjustorThunk ();
 extern "C" void AudioClip_get_ambisonic_m9C97B0E60B6AD2A70849439DFCB08D3F3968A1A4 ();
@@ -1249,12 +1285,83 @@ extern "C" void AudioSource_get_isPlaying_m5112A878573652681F40C82F0D8103C999978
 extern "C" void AudioSource_get_spatialize_m8CC430356EDE4FF4BD31A5F5509028B7DDCC4C11 ();
 extern "C" void AudioSource_get_spatializeInternal_mFA756EEB0BD4DC62422DEE11E7E6013BC0F23224 ();
 extern "C" void Behaviour_get_enabled_mAA0C9ED5A3D1589C1C8AA22636543528DB353CFB ();
+extern "C" void Behaviour_get_isActiveAndEnabled_mC42DFCC1ECC2C94D52928FFE446CE7E266CA8B61 ();
+extern "C" void Bounds_Equals_m1ECFAEFE19BAFB61FFECA5C0B8AE068483A39C61_AdjustorThunk ();
+extern "C" void Bounds_Equals_mC2E2B04AB16455E2C17CD0B3C1497835DEA39859_AdjustorThunk ();
+extern "C" void Bounds_op_Equality_m8168B65BF71D8E5B2F0181677ED79957DD754FF4 ();
+extern "C" void Bounds_op_Inequality_mA6EBEDD980A41D5E206CBE009731EB1CA0B25502 ();
+extern "C" void Canvas_get_isRootCanvas_mA4ADE90017884B88AF7A9DD3114FDD4FEB73918A ();
+extern "C" void Canvas_get_overrideSorting_m5C4295223733C2195D2B6CC69721B04376C3C67C ();
+extern "C" void Canvas_get_pixelPerfect_mEB8527374734F73BE960B288095A1A619E700595 ();
+extern "C" void CanvasGroup_IsRaycastLocationValid_m21C6A4F645CDD52E57D6CDBD0963E3594081782A ();
+extern "C" void CanvasGroup_get_blocksRaycasts_m3792CE490F35260A673C28FD29BF4B2814833DDA ();
+extern "C" void CanvasGroup_get_ignoreParentGroups_mD37DD35C1B20CC9750AA6CC442C00E5731157918 ();
+extern "C" void CanvasGroup_get_interactable_mC5CE48DEFFC97EFEC794DB695E3C906736483BA1 ();
+extern "C" void CanvasRenderer_get_cull_m3BBDA319F68D6182BF4451812A7ABC3E862356DA ();
+extern "C" void CanvasRenderer_get_hasMoved_m169212ADE7843C5721D2D4ED3567AB8299B6F073 ();
+extern "C" void Color_Equals_m63ECBA87A0F27CD7D09EEA36BCB697652E076F4E_AdjustorThunk ();
+extern "C" void Color_Equals_mA81EEDDC4250DE67C2F43BC88A102EA32A138052_AdjustorThunk ();
+extern "C" void Color_op_Equality_m71B1A2F64AD6228F10E20149EF6440460D2C748E ();
 extern "C" void Cubemap_Internal_CreateImpl_m49FA4B17DCF892870B138FD61BAB2430B353A9FE ();
+extern "C" void Cubemap_get_isReadable_m97956094F4DBC9C67A86AEC8CCE73AB237694121 ();
 extern "C" void CubemapArray_Internal_CreateImpl_m062A29BE58FCC9687B9D08EE9DF44043525B1CF6 ();
+extern "C" void CubemapArray_get_isReadable_mBE24F088422FA9FE007086C36C7D16A6D6377919 ();
+extern "C" void CustomYieldInstruction_MoveNext_m7EA6BAAEF6A01DC791D0B013D5AB5C377F9A6990 ();
+extern "C" void Event_Equals_m1DEF4FB843B631FC437B1366F0F78CEF7A739070 ();
+extern "C" void Event_PopEvent_m8D01FDDC4C7423FCCD7EF3F1B13340C857BE4E4F ();
+extern "C" void Event_get_isKey_m17D185B6CD336242BC5FB9BAB025EE8FA7771E90 ();
+extern "C" void Event_get_isMouse_m5923637C4A5E3BD642C3E88A428D5B39F0A85AB6 ();
+extern "C" void AbstractEventData_get_used_mFE059F65AD2603FFC611BE86D065760E254BF540 ();
+extern "C" void BaseInput_GetButtonDown_m2A399DE11BC0F313D180331A02B5C07725563ADD ();
+extern "C" void BaseInput_GetMouseButton_m62DF2ADFEA57FFBC63B5D570516562752634680F ();
+extern "C" void BaseInput_GetMouseButtonDown_m69D27C6AB59F20CBA6E08212279A71FA957B90FF ();
+extern "C" void BaseInput_GetMouseButtonUp_m5BC8BA9572311DD7B5D0DB6D4B9B023975ADA535 ();
+extern "C" void BaseInput_get_mousePresent_mB49E596225EC5A0874D31EF1EBBB90A6214B4C88 ();
+extern "C" void BaseInput_get_touchSupported_mAB9D4E60006953CDC410EC00A924232A97F459E6 ();
+extern "C" void BaseInputModule_IsModuleSupported_m6A88D17A1773D055099100F0687F761ECF933703 ();
+extern "C" void BaseInputModule_IsPointerOverGameObject_m77AA0A7A6F5FE61956760FA0471E61BB11DCF960 ();
+extern "C" void BaseInputModule_ShouldActivateModule_m468CA6D37A7EEA87C09D12FFFB99C596A6148F53 ();
+extern "C" void EventSystem_IsPointerOverGameObject_mC987B968BDFE0A02F8368616CBCE2200792905F2 ();
+extern "C" void EventSystem_IsPointerOverGameObject_mF58A5A42C2CBE80CBF04EBC600C71A0B46FC649D ();
+extern "C" void EventSystem_get_alreadySelecting_m6A9B2D4446A8E5C6736FA532D005A27A4EE26C7D ();
+extern "C" void EventSystem_get_isFocused_mEB38A1641133D11FDF5B9D8609BA0A6AB578F1B9 ();
+extern "C" void EventSystem_get_sendNavigationEvents_mDE210910CB9BAC7D814A4DA46C8D8F9457144059 ();
+extern "C" void PhysicsRaycaster_ComputeRayAndDistance_m38F1B20E0A1948699C2A952234705E1E74666486 ();
+extern "C" void PointerEventData_IsPointerMoving_m37FC040F49DFB57856117469B61C342CDB85A76B ();
+extern "C" void PointerEventData_IsScrolling_mF80C182B633F482EFD10317B29C6BF9F48F98093 ();
+extern "C" void PointerEventData_get_dragging_m5D58C6A1A44088BEC5C5D3BF4F65EF402DBE3C35 ();
+extern "C" void PointerEventData_get_eligibleForClick_m9780B9329C18F5779EB06CCB9E6874D1A8318D7C ();
+extern "C" void PointerEventData_get_useDragThreshold_mC715443AE2D0DA2D6B195DC583AEF0522CFE71BE ();
+extern "C" void MouseButtonEventData_PressedThisFrame_m21899C9B366068C28D05030ED0742CEA48746CA4 ();
+extern "C" void MouseButtonEventData_ReleasedThisFrame_m9ED62232E56AC9CAC793097B455FA9D927DBDB4D ();
+extern "C" void MouseState_AnyPressesThisFrame_m1EAB75B7C05EF268BC2C4606CDE9A10781FE5675 ();
+extern "C" void MouseState_AnyReleasesThisFrame_mDDFF8A7DEC3E10A4E30832FCEAFFB1F51B5830BD ();
+extern "C" void PointerInputModule_GetPointerData_m27E1E7AC37461EA83BD10D2572AE0D567148DD64 ();
+extern "C" void PointerInputModule_IsPointerOverGameObject_m827551D2E47DC2C6B097DB06FCDC94D826791DE1 ();
+extern "C" void PointerInputModule_ShouldStartDrag_m88884E8652D0D73324C01E4DB1EDF308C678E329 ();
+extern "C" void RaycastResult_get_isValid_mEF9C1AA69A007B373CF7112EF0AB46E6846DF59E_AdjustorThunk ();
+extern "C" void StandaloneInputModule_ForceAutoSelect_mC34941BAE0857191D918CA7D57E5449EEC68E183 ();
+extern "C" void StandaloneInputModule_IsModuleSupported_m5402F7286685A3F46018C5D8A382A08E6134C950 ();
+extern "C" void StandaloneInputModule_ProcessTouchEvents_mBED4842DB8EB55D163C92FC142466D0DF9E28B5F ();
+extern "C" void StandaloneInputModule_SendMoveEventToSelectedObject_m79655668775AB4C60A0ED68ABACEB7480469E7BB ();
+extern "C" void StandaloneInputModule_SendSubmitEventToSelectedObject_mDF9122A384B1A2AF5E1C28F30963D7F802AB6411 ();
+extern "C" void StandaloneInputModule_SendUpdateEventToSelectedObject_m0BD287423AC39711A6BAB5D7E6B49E0E6A03FB0D ();
+extern "C" void StandaloneInputModule_ShouldActivateModule_m1FCC03EF5003F9D5898D62546537106516FE32D7 ();
+extern "C" void StandaloneInputModule_ShouldIgnoreEventsOnNoFocus_mEEEEF969347F7CF25E65E8CD66416595AF391B3C ();
+extern "C" void StandaloneInputModule_get_allowActivationOnMobileDevice_m14C54726E83BB2B6CA6A52166CF8872FEDAB32DC ();
+extern "C" void StandaloneInputModule_get_forceModuleActive_m413DAEFBC9582E515B6D757F2966F978A479765A ();
+extern "C" void TouchInputModule_IsModuleSupported_m2BEDD8E24F386C31727EABC1CDC9ACCD9988D833 ();
+extern "C" void TouchInputModule_ShouldActivateModule_mE4D58FF441BED313A7B0CD8A2316303CE27380CB ();
+extern "C" void TouchInputModule_UseFakeInput_mDEBB2F3226B351E4524C1A5BF29490FF715F6861 ();
+extern "C" void TouchInputModule_get_allowActivationOnStandalone_m78DC53155A9725907340E0492B161CFC0AECEA52 ();
+extern "C" void TouchInputModule_get_forceModuleActive_mEE351E61F06D735A1651516E8210501BDB3A0A2C ();
+extern "C" void UIBehaviour_IsActive_m49D11FABD06B8DCA1008BC1FF6C84991FE8F2054 ();
+extern "C" void UIBehaviour_IsDestroyed_m019424306A85134DDEE900D085CCF1E2AE0B9AA8 ();
 extern "C" void ArgumentCache_get_boolArgument_mCCAB5FB41B0F1C8C8A2C31FB3D46DF99A7A71BE2 ();
 extern "C" void BaseInvokableCall_AllowInvoke_m0B193EBF1EF138FC5354933974DD702D3D9FF091 ();
 extern "C" void InvokableCall_Find_mDC13296B10EFCD0A92E486CD5787E07890C7B8CC ();
 extern "C" void PersistentCall_IsValid_mF3E3A11AF1547E84B2AC78AFAF6B2907C9B159AE ();
+extern "C" void AnimationScriptPlayable_Equals_m39A1F71C360404625ABD1EAD32DCAEDD7736E1B3_AdjustorThunk ();
 extern "C" void CameraPlayable_Equals_mBA0325A3187672B8FDE237D2D5229474C19E3A52_AdjustorThunk ();
 extern "C" void MaterialEffectPlayable_Equals_m9C2DB0EB37CFB9679961D667B61E2360384C71DA_AdjustorThunk ();
 extern "C" void TextureMixerPlayable_Equals_mEDE18FD43C9501F04871D2357DC66BABE43F397B_AdjustorThunk ();
@@ -1265,17 +1372,40 @@ extern "C" void GraphicsFormatUtility_IsCrunchFormat_m97E8A6551AAEE6B1E4E92F9216
 extern "C" void GraphicsFormatUtility_IsSRGBFormat_mBF49E7451A3960BD67B1F13745BCA3AC5C8AC66E ();
 extern "C" void SupportedRenderingFeatures_IsLightmapBakeTypeSupported_m4F9CD811B4CE02F9B1786672A6AE37DC7A47E239 ();
 extern "C" void SupportedRenderingFeatures_IsMixedLightingModeSupported_mD7803C613108B86195AFB36F01B0864A7A8DAFDB ();
+extern "C" void Font_HasCharacter_m23CC7E1E37BCA115DC130B841CF3207212E2802E ();
+extern "C" void Font_HasCharacter_m59FF574F1E4A2F9807CCF0C5D56C29E68D514D51 ();
+extern "C" void Font_get_dynamic_m14C7E59606E317C5952A69F05CC44BF399CFFE2E ();
+extern "C" void GUIStyle_get_stretchHeight_m264308B18FA5F0A8400CF49945BAE1B9EFDC934F ();
+extern "C" void GUIStyle_get_stretchWidth_m4513B313AABE48E1D10424844DC186405BC8A677 ();
+extern "C" void GUIUtility_EndContainerGUIFromException_m66F073A94FF85A8B7C6D8A4614B43365F0A68042 ();
+extern "C" void GUIUtility_EndGUIFromException_m40542B74697654BEDD0BAA656EC370D00097223E ();
+extern "C" void GUIUtility_IsExitGUIException_mBCCE6118666769B8B767D74496E44D2ECC7AFDD2 ();
+extern "C" void GUIUtility_ProcessEvent_mA250CB35828235FE2F8BA5EA7B6592234DA2D312 ();
+extern "C" void GUIUtility_ShouldRethrowException_mCF3B04493727D6A40ED50AC2414D5617455339B6 ();
+extern "C" void GameObject_get_activeInHierarchy_mDEE60F1B28281974BA9880EC448682F3DAABB1EF ();
+extern "C" void GameObject_get_activeSelf_mFE1834886CAE59884AC2BE707A3B821A1DB61F44 ();
 extern "C" void Gradient_Equals_m0A13AD7938F81F21CC380609A506A39B37CF2097 ();
 extern "C" void Gradient_Equals_m7F23C7692189DDD94FC31758493D4C99C2F3FB1E ();
 extern "C" void Gradient_Internal_Equals_m210D28E9843DBA28E2F60FDBB366FE2B5B739B1A ();
-extern "C" void Input_GetKey_m54DC93F781FFEAB1DCDFAA3D15FA2FC01BF7667A ();
-extern "C" void Input_GetKeyInt_mCAE84934A2A069329005CB582E2B038FA5DDFF12 ();
+extern "C" void Input_GetButtonDown_mBCFF01DD979D2BE061A8F47082060258F2C4458B ();
 extern "C" void Input_GetMouseButton_mFA83B0C0BABD3113D1AAB38FBB953C91EA7FFA30 ();
 extern "C" void Input_GetMouseButtonDown_mBC5947EA49ED797F0DB1830BFC13AF6514B765FD ();
+extern "C" void Input_GetMouseButtonUp_m726EDCD35F8DECF774810AB1E9ED590B85DB10F1 ();
+extern "C" void Input_get_mousePresent_m6C4F111FD2FF94D43CAF601582052EA6AB77BEF4 ();
+extern "C" void Input_get_touchSupported_m503BA3C7F60A70AB01BC7A9152F4A142BA4E60C0 ();
 extern "C" void DefaultValueAttribute_Equals_mD9073A5C537D4DBDFBD5E3616BC5A05B5D0C51B2 ();
 extern "C" void Logger_IsLogTypeAllowed_m7B2A793443A642C8CA0759D1DD0FBDFAED4E1FCB ();
 extern "C" void Logger_get_logEnabled_m5AE50375671516B8E1171838E34C63C3A326E927 ();
+extern "C" void Material_HasProperty_m901DE6C516A0D2C986B849C7B44F679AE21B8927 ();
+extern "C" void Material_HasProperty_m8611FACA6F9D9B2B5C3E92B6D93D2D514B443512 ();
 extern "C" void Mathf_Approximately_m91AF00403E0D2DEA1AAE68601AD218CFAD70DF7E ();
+extern "C" void Matrix4x4_Equals_m7FB9C1A249956C6CDE761838B92097C525596D31_AdjustorThunk ();
+extern "C" void Matrix4x4_Equals_mF8358F488D95A9C2E5A9F69F31EC7EA0F4640E51_AdjustorThunk ();
+extern "C" void Mesh_CheckCanAccessSubmesh_mF86EBD1C9EC3FE557880FA138510F7761585D227 ();
+extern "C" void Mesh_CheckCanAccessSubmeshIndices_m81DF83B1676084AF0B70A36BC7621ADB08430722 ();
+extern "C" void Mesh_CheckCanAccessSubmeshTriangles_m214B5F30F7461C620D03F10F6CF1CAF53DBEE509 ();
+extern "C" void Mesh_HasChannel_mF94FB364044F2A0812AF6DDDC811318159D2D4AD ();
+extern "C" void Mesh_get_canAccess_m1E0020EA7961227FBC0D90D851A49BCF7EB1E194 ();
 extern "C" void MonoBehaviour_Internal_IsInvokingAll_m44707A3C084E2CABC98FBCAF3531E547C6D59644 ();
 extern "C" void MonoBehaviour_IsInvoking_mD0C27BE34FB97F408191450A702FA016E19997E5 ();
 extern "C" void MonoBehaviour_IsInvoking_mCA9E133D28B55AE0CE0E8EDBB183081DEEE57FBC ();
@@ -1322,10 +1452,13 @@ extern "C" void PhysicsScene_Internal_RaycastTest_Injected_m544D0227B2312D7431A9
 extern "C" void PhysicsScene_Internal_Raycast_Injected_m039B99FEFE39873FF8B0F60F44DE817BF43D48DA ();
 extern "C" void PhysicsScene_Raycast_mA90972A8E828722A26EBC754EABB3086BE6E2336_AdjustorThunk ();
 extern "C" void PhysicsScene_Raycast_m90D1AE1F641D9344BEBEF32E7AC0BAC883024C0B_AdjustorThunk ();
+extern "C" void Plane_Raycast_m04E61D7C78A5DA70F4F73F9805ABB54177B799A9_AdjustorThunk ();
 extern "C" void Playable_Equals_m1EC7E8B579C862BA8C979BD616224EC1B3364DD1_AdjustorThunk ();
 extern "C" void PlayableHandle_CompareVersion_m24BEA91E99FF5FD3472B1A71CB78296D99F808A9 ();
 extern "C" void PlayableHandle_Equals_m7D3DC594EE8EE029E514FF9505C5E7A820D2435E_AdjustorThunk ();
 extern "C" void PlayableHandle_Equals_mBCBD135BA1DBB6B5F8884A21EE55FDD5EADB555C_AdjustorThunk ();
+extern "C" void PlayableHandle_IsValid_mDA0A998EA6E2442C5F3B6CDFAF07EBA9A6873059_AdjustorThunk ();
+extern "C" void PlayableHandle_IsValid_Injected_mCCEEB80CD0855FD683299F6DBD4F9BA864C58C31 ();
 extern "C" void PlayableHandle_op_Equality_mBA774AE123AF794A1EB55148206CDD52DAFA42DF ();
 extern "C" void PlayableOutput_Equals_m458689DD056559A7460CCE496BF6BEC45EB47C5B_AdjustorThunk ();
 extern "C" void PlayableOutputHandle_CompareVersion_m4DD52E80EDD984F824FE235F35B849C5BA9B4964 ();
@@ -1341,9 +1474,21 @@ extern "C" void PropertyName_Equals_m1CA96DE357EEF70D3171B14B4836F121DA3B09A6_Ad
 extern "C" void PropertyName_op_Equality_m15312EA01DB9104A41667A1F7CFF6841E31DBD68 ();
 extern "C" void Quaternion_Equals_m099618C36B86DC63B2E7C89673C8566B18E5996E_AdjustorThunk ();
 extern "C" void Quaternion_Equals_m0A269A9B77E915469801463C8BBEF7A06EF94A09_AdjustorThunk ();
+extern "C" void Quaternion_IsEqualUsingDot_mA5E0CF75CBB488E3EC55BE9397FC3C92439A0BEF ();
+extern "C" void Quaternion_op_Equality_m0DBCE8FE48EEF2D7C79741E498BFFB984DF4956F ();
+extern "C" void Quaternion_op_Inequality_mDA6D2E63A498C8A9AB9A11DD7EA3B96567390C70 ();
 extern "C" void Rect_Contains_m5072228CE6251E7C754F227BA330F9ADA95C1495_AdjustorThunk ();
 extern "C" void Rect_Equals_m76E3B7E2E5CC43299C4BF4CB2EA9EF6E989E23E3_AdjustorThunk ();
 extern "C" void Rect_Equals_mC8430F80283016D0783FB6C4E7461BEED4B55C82_AdjustorThunk ();
+extern "C" void Rect_Overlaps_m2FE484659899E54C13772AB7D9E202239A637559_AdjustorThunk ();
+extern "C" void Rect_Overlaps_m4FFECCEAB3FBF23ED5A51B2E26220F035B942B4B_AdjustorThunk ();
+extern "C" void Rect_op_Equality_mFBE3505CEDD6B73F66276E782C1B02E0E5633563 ();
+extern "C" void Rect_op_Inequality_mAF9DC03779A7C3E1B430D7FFA797F2C4CEAD1FC7 ();
+extern "C" void RectTransformUtility_PointInRectangle_m31A8C0A3CFCC0B584A33C3A3F2692EF09D303CEE ();
+extern "C" void RectTransformUtility_PointInRectangle_Injected_m42DCFCCED1ABCAE24B543ABD1903291A3A186B2D ();
+extern "C" void RectTransformUtility_RectangleContainsScreenPoint_mDED32A2F3CD5C623FBA3FFE2C49AEB861D33DE14 ();
+extern "C" void RectTransformUtility_ScreenPointToLocalPointInRectangle_m2C389D4DCBB3CADB51A793702F13DF7CE837E153 ();
+extern "C" void RectTransformUtility_ScreenPointToWorldPointInRectangle_m821FF925C5B70477F153B4C053AE9E36A04A774F ();
 extern "C" void Scene_Equals_mD5738AF0B92757DED12A90F136716A5E2DDE3F54_AdjustorThunk ();
 extern "C" void HitInfo_Compare_mC384070B712CA297173CE07100F51F843F569702 ();
 extern "C" void HitInfo_op_Implicit_m71B30D67B83FAF0C9FA3662F0A942A8CEF287C15 ();
@@ -1359,28 +1504,154 @@ extern "C" void Achievement_get_hidden_mE1167D6D8357A194DC5C222F431B5ABB54AA141E
 extern "C" void AchievementDescription_get_hidden_mE5B473E83CC02D5AABA40AEA744E4E8906CC84DC ();
 extern "C" void LocalUser_get_authenticated_m62396464F588B23B14B84B260A25DF2614CAC88E ();
 extern "C" void UserProfile_get_isFriend_m0D329A8C808B89CD8FA7913C9C37E2D859B58E0C ();
+extern "C" void Sprite_get_packed_m501A9E7D2C44867665FB579FD1A8C5D397C872C3 ();
 extern "C" void SystemInfo_HasRenderTextureNative_mF35AF7764E483A7FA75DBC06ED64A8588509C468 ();
 extern "C" void SystemInfo_IsFormatSupported_m6941B7C4566DEE1EFFD7F6DCB7BFA701ECF9C1D6 ();
 extern "C" void SystemInfo_IsValidEnumValue_m112F964C57B2311EA910CCA5CE0FFABFFF906740 ();
 extern "C" void SystemInfo_SupportsRenderTextureFormat_m74D259714A97501D28951CA48298D9F0AE3B5907 ();
 extern "C" void SystemInfo_SupportsTextureFormat_m1FCBD02367A45D11CAA6503715F3AAE24CA98B79 ();
 extern "C" void SystemInfo_SupportsTextureFormatNative_mD028594492646D7AB78A4C2F51CA06F63E665210 ();
+extern "C" void TextGenerationSettings_CompareColors_m41313F2A332F5780C5BD6F8134EBB14473CC5C66_AdjustorThunk ();
+extern "C" void TextGenerationSettings_CompareVector2_m27AE82F513B8E6D4A529A02B1A3806A85E710F1C_AdjustorThunk ();
+extern "C" void TextGenerationSettings_Equals_m39912D195B0384AADC5C274659324EC8720C4F7D_AdjustorThunk ();
+extern "C" void TextGenerator_Populate_m15553808C8FA017AA1AC23D2818C30DAFD654A04 ();
+extern "C" void TextGenerator_PopulateWithErrors_m1F1851B3C2B2EBEFD81C83DC124FB376C926B933 ();
+extern "C" void TextGenerator_Populate_Internal_mCA54081A0855AED6EC6345265603409FE330985C ();
+extern "C" void TextGenerator_Populate_Internal_m42F7FED165D62BFD9C006D19A0FCE5B70C1EF92B ();
+extern "C" void TextGenerator_Populate_Internal_Injected_mC1D6A0A0A9E0BFDB146EA921DA459D83FF33DEDE ();
 extern "C" void Texture2D_Internal_CreateImpl_mD3BC6187168CEDAFAC59DFA2EA1DCE102071C548 ();
+extern "C" void Texture2D_get_isReadable_mCF446A169E1D8BF244235F4E9B35DDC4F5E696AD ();
 extern "C" void Texture2DArray_Internal_CreateImpl_m11961106A999012827B209B1A32CEDA633F59E8B ();
+extern "C" void Texture2DArray_get_isReadable_mB2E454ED94BB334E77B42E6CD9DABC0B1D679C1A ();
 extern "C" void Texture3D_Internal_CreateImpl_mFEE8F9464580C55553DFB6F051FE793DD040B206 ();
+extern "C" void Texture3D_get_isReadable_m2793D34A645AA2A88B903D7C0CBC05BC180A489F ();
 extern "C" void Texture_ValidateFormat_mA62E75B693BFABECB7CB732C165139B8492DE0ED ();
 extern "C" void Texture_ValidateFormat_m12332BF76D9B5BBFFCE74D855928AEA01984DF6C ();
 extern "C" void Texture_ValidateFormat_m23ED49E24864EE9D1C4EF775002A91EE049561B1 ();
+extern "C" void Texture_get_isReadable_mFB3D8E8799AC5EFD9E1AB68386DA16F3607631BD ();
+extern "C" void TouchScreenKeyboard_get_active_m35A2928E54273BF16CB19D11665989D894D5C79D ();
+extern "C" void TouchScreenKeyboard_get_canGetSelection_m8EEC32EA25638ACB54F698EA72450B51BEC9A362 ();
+extern "C" void TouchScreenKeyboard_get_canSetSelection_m3C9574749CA28A6677C77B8FBE6292B80DF88A10 ();
+extern "C" void TouchScreenKeyboard_get_isSupported_m9163BAF0764DCDD9CB87E75A296D820D629D31CA ();
+extern "C" void TrackedReference_Equals_mB1E157BE74CB5240DA6C4D3A38047A015B067C20 ();
+extern "C" void TrackedReference_op_Equality_m6176AA0B99576B1734E9A9D7DDA0A27ECACBAA96 ();
 extern "C" void Enumerator_MoveNext_mF27E895DC4BB3826D2F00E9484A9ECC635770031 ();
+extern "C" void Transform_IsChildOf_mCB98BA14F7FB82B6AF6AE961E84C47AE1D99AA80 ();
+extern "C" void SpriteAtlas_CanBindTo_m6CE0E011A4C5F489F9A62317380FB35F20DF7016 ();
 extern "C" void SpriteAtlasManager_RequestAtlas_m792F61C44C634D9E8F1E15401C8CECB7A12F5DDE ();
+extern "C" void U3COnFinishSubmitU3Ec__Iterator0_MoveNext_mE9C0CB584CBFC3430A8FFD39F4875504AF27A063 ();
+extern "C" void CanvasUpdateRegistry_InternalRegisterCanvasElementForGraphicRebuild_mFDE01264F481F2B1DE51EE6E4314DE393BC85C7C ();
+extern "C" void CanvasUpdateRegistry_InternalRegisterCanvasElementForLayoutRebuild_mECAAD4E5318FBE9BD5CDA16426BDC21E277E577D ();
+extern "C" void CanvasUpdateRegistry_IsRebuildingGraphics_mD20E7085AB0526F569AF01009E72FC489CFF631C ();
+extern "C" void CanvasUpdateRegistry_IsRebuildingLayout_m929E0B5A783EDE7D3FA23FE8CE5D9E62FA29983C ();
+extern "C" void CanvasUpdateRegistry_ObjectValidForUpdate_mD80379550F8B6226CB2076F687314010EB8F8712 ();
+extern "C" void CanvasUpdateRegistry_TryRegisterCanvasElementForGraphicRebuild_m6C82DD2B3D12895658CF84C1010675782D90ED56 ();
+extern "C" void CanvasUpdateRegistry_TryRegisterCanvasElementForLayoutRebuild_m1F0BF3A80FBED68DFD573AE8D5605FBD0CA19F91 ();
+extern "C" void ColorBlock_Equals_m77C135F8EBD050328F874088E7E51F07169BAC3A_AdjustorThunk ();
+extern "C" void ColorBlock_Equals_m6393CE86568CF89148754BCBB02A6D22D424BFEA_AdjustorThunk ();
+extern "C" void ColorBlock_op_Equality_m8C659F98080A0171D95EFB252B75A794470C0F41 ();
+extern "C" void ColorBlock_op_Inequality_mB9B7314D7E6DC4D5F5089035B2B1C1DE45B71C5A ();
+extern "C" void ColorTween_GetIgnoreTimescale_mC411FDA85FDAD4D6A583E0CE5334F831342F0ED2_AdjustorThunk ();
+extern "C" void ColorTween_ValidTarget_m847E9D6C8B97F1C9039BF80AD69EEFC74C989079_AdjustorThunk ();
+extern "C" void ColorTween_get_ignoreTimeScale_mD27F5C7D70D340DBDFAE972BBE3857A26E29747A_AdjustorThunk ();
+extern "C" void FloatTween_GetIgnoreTimescale_mA9A830D9AA73DD1FA171E26E0FA02F4D3A32C97D_AdjustorThunk ();
+extern "C" void FloatTween_ValidTarget_m921F88A58CCB09A4D55DBB714F3538677363FAE6_AdjustorThunk ();
+extern "C" void FloatTween_get_ignoreTimeScale_mCA3DA664CF6F78735BF3ED6301900FB849B49C34_AdjustorThunk ();
+extern "C" void U3CDelayedDestroyDropdownListU3Ec__Iterator0_MoveNext_m2D46D242828952C39678AAE41D761CE53333CB3D ();
+extern "C" void FontData_get_alignByGeometry_mCC530B0476EB56DE58ED92B72CE185A282A607F5 ();
+extern "C" void FontData_get_bestFit_m7E2EBE3BAAC9B2C1DED0232A9EABBD1FDAA4BDD8 ();
+extern "C" void FontData_get_richText_m66288C8E8AAA093B00C64F9FB0103492780C8FCB ();
+extern "C" void Graphic_Raycast_m75191B1F3728F9E268184275D852F386373B878E ();
+extern "C" void Graphic_get_raycastTarget_m56E45907D977F55C28A91B7B7923F6570EF428B8 ();
+extern "C" void Graphic_get_useLegacyMeshGeneration_mB06447249999DEF9CB0F09ED4735003135BB4948 ();
+extern "C" void GraphicRaycaster_get_ignoreReversedGraphics_mF3F12BFC40043F08FD666D28AA471B1108619285 ();
+extern "C" void HorizontalOrVerticalLayoutGroup_get_childControlHeight_m2803CDF004F52CAAE20E7FAE16615602DCF03374 ();
+extern "C" void HorizontalOrVerticalLayoutGroup_get_childControlWidth_m56B3CB45954F068DF3EB4DBBE44E059CB361D955 ();
+extern "C" void HorizontalOrVerticalLayoutGroup_get_childForceExpandHeight_m6B4EDA2EC3535A52BC3AA5B8D8DA12A417C9E12A ();
+extern "C" void HorizontalOrVerticalLayoutGroup_get_childForceExpandWidth_mD4A2A2666348A01635E5801CE88FA00723BBE16A ();
+extern "C" void Image_IsRaycastLocationValid_mB6CA490B732B87469C7F4D5C25583FE90924A133 ();
+extern "C" void Image_RadialCut_mAC4BCEA42C4138EC8C9A4D97114799FEA178DB94 ();
+extern "C" void Image_get_fillCenter_mDDEF763220A0BCBC989F870DD51993850BE7E007 ();
+extern "C" void Image_get_fillClockwise_mEEAC96C77DE73D7C8A6DF27619076BA4D75ECE6A ();
+extern "C" void Image_get_hasBorder_m128DE63221C85D7F5189EDA655D96B93C6DBE15E ();
+extern "C" void Image_get_preserveAspect_m59D72AF4F9F1C4D3BD63A1E3246A7CAEF66FC68F ();
+extern "C" void Image_get_useSpriteMesh_mAF999DF6AE4E12EFFAC86EE01783E1989321B08F ();
+extern "C" void U3CCaretBlinkU3Ec__Iterator0_MoveNext_m040892848ACE419047F53AD7FD0EDAD55A23225D ();
+extern "C" void U3CMouseDragOutsideRectU3Ec__Iterator1_MoveNext_m9162A78798C76BD1E7F101A71BF7F7CE9B55494E ();
+extern "C" void InputField_InPlaceEditing_mB3304460E9F6425D6B147206BD365E10306DB92E ();
+extern "C" void InputField_IsSelectionVisible_mEE4512021A72DA3C210AB291264F7A89EF38B632 ();
+extern "C" void InputField_IsValidChar_mDE89A89683151A4FD77B8D79366FF639388716F9 ();
+extern "C" void InputField_MayDrag_m543B9B612726672FBB9D7282C3A163DFE8C8FA9D ();
+extern "C" void InputField_get_customCaretColor_mEC07436E3A83CD0947B7B1EBEBFA7785AE3E2888 ();
+extern "C" void InputField_get_hasSelection_mA91D28086485AFBE38B17F53572AE84F3A8FDB14 ();
+extern "C" void InputField_get_isFocused_mF88F0ACF39637451E4DBE95357E401DE4C7FC549 ();
+extern "C" void InputField_get_multiLine_mCD9C5841D42FE8BD8EE9A00244266EF7F4DCF4A5 ();
+extern "C" void InputField_get_readOnly_mEF9A855541B21F5B0200C1555D8BF4F9C02A0936 ();
+extern "C" void InputField_get_shouldActivateOnSelect_mD5010D982AC37EFA5F95876021153A06D7A068A9 ();
+extern "C" void InputField_get_shouldHideMobileInput_mB5AA2536E44DD781BF3685DFEE51257279D19321 ();
+extern "C" void InputField_get_wasCanceled_mAAB79BA27DF68F29F940C299E74400CD291A37A1 ();
+extern "C" void LayoutElement_get_ignoreLayout_m0BDC36A9DB867B5AF21038A68B452F2A3FCBECCA ();
+extern "C" void U3CDelayedSetDirtyU3Ec__Iterator0_MoveNext_mA29E0BEF77909ADFB629D1F57A7072653CA3BF1C ();
+extern "C" void LayoutGroup_get_isRootLayoutGroup_m2D50A95B981D97E77D9AEDF98869C8CE3C471121 ();
+extern "C" void LayoutRebuilder_U3CStripDisabledBehavioursFromListU3Em__1_mB3FC59921ACDA12A0005AC6B8E06D575FF8493BE ();
+extern "C" void LayoutRebuilder_Equals_m76052424C7D897C350B6682F7886365EBF22FD19 ();
+extern "C" void LayoutRebuilder_IsDestroyed_m6A4E58415FC0747ACAF6537E648792B377046721 ();
+extern "C" void LayoutRebuilder_ValidController_m5BFB2E3627F838ED4FE821EBEFDCE1518D52E5BE ();
+extern "C" void Mask_IsRaycastLocationValid_mCEFC456F9717450B5FB7F2745FB41C55AF84290A ();
+extern "C" void Mask_MaskEnabled_m97F3F14FF2AE56EF8B3EAB81C552DB0BE02A49F1 ();
+extern "C" void Mask_get_showMaskGraphic_mA46ECB66512291539B3D60EEF4CBE9756E10BEE8 ();
+extern "C" void MaskUtilities_IsDescendantOrSelf_m4F6F3C28C829F569D4DEC908FB6E389221DFDDD0 ();
+extern "C" void MaskableGraphic_get_maskable_mE1F4C8D6B4DBE70FB56DC952443492A5EBEC490F ();
+extern "C" void MultipleDisplayUtilities_GetRelativeMousePositionForDrag_m889380BC62A1265BF18958BD37379EFD2506991C ();
+extern "C" void Navigation_Equals_mCA33D841B71B088B49847DA2C509E0908B47FE26_AdjustorThunk ();
+extern "C" void RectMask2D_IsRaycastLocationValid_m1D33E4E51586692E54EE44BB2AA61D8AF2DBB0E0 ();
+extern "C" void Raycast3DCallback_EndInvoke_mEE3F8016449CA1D46FCE66A5AC337B306CF201BF ();
+extern "C" void Raycast3DCallback_Invoke_m78D8946CAC9B31F37E08A01A5D59A66E4686228A ();
+extern "C" void ScrollRect_IsActive_mA7ED9B98406AAA016672AC27D30E03E36D6B40DA ();
+extern "C" void ScrollRect_get_hScrollingNeeded_m9E9F24A62A6DFFB29945220571F18895FD3A89ED ();
+extern "C" void ScrollRect_get_horizontal_m3C425B54CC4D554FE60F9FB9D64F568365E13555 ();
+extern "C" void ScrollRect_get_inertia_m410F1BE3424427CB7DA5894D73EFE6C81758304E ();
+extern "C" void ScrollRect_get_vScrollingNeeded_mCDDFDB0A99A2FFBCDE0B082CB0996425F58FBC18 ();
+extern "C" void ScrollRect_get_vertical_m010D0DB8D4D160DF8A820E8D212896798B48C075 ();
+extern "C" void U3CClickRepeatU3Ec__Iterator0_MoveNext_m330E68C2DAC2BB415E071E78665CED47B4A7FDE0 ();
+extern "C" void Scrollbar_MayDrag_m4F37B713558CD03270EDF7B012875A1CAF2E84A7 ();
+extern "C" void Scrollbar_get_reverseValue_m8E80AE020BC43B88A2F53EB4999CD2707C7E86B9 ();
+extern "C" void Selectable_IsHighlighted_m94D25810B3FFD4BC41B72CFA24A278D112E04FF8 ();
+extern "C" void Selectable_IsInteractable_mD75AC34F072C2D47A06D636CBD7A877C0D5C6DE7 ();
+extern "C" void Selectable_IsPressed_m332040CFA7F7D9F5656703F8CB715BB0C0B07E68 ();
+extern "C" void Selectable_IsPressed_m9C34D4952A9B4F2CE3D4635DADDEAF3FA8A67474 ();
+extern "C" void Selectable_get_hasSelection_m98240D41F9504A11054BB735599D9D4CC8F0BB32 ();
+extern "C" void Selectable_get_interactable_mDDE14EAF3219D9F4E34E2A9E13F9328D2D26CC4F ();
+extern "C" void Selectable_get_isPointerDown_m67159C6CB1524289CA13ED6D54069F8D81BB4F03 ();
+extern "C" void Selectable_get_isPointerInside_m635EAD5952BCA4869A7D53E64886320C3EEE5788 ();
+extern "C" void SetPropertyUtility_SetColor_m819EEFFDF77F3D8F61608CE3B999A3DFA6BFC569 ();
+extern "C" void Shadow_get_useGraphicAlpha_mFF218B561B05F82984D15C0B615146AD5C9F8148 ();
+extern "C" void Slider_MayDrag_m2A826BD495C6FCCF86D4FA344B88823764995D28 ();
+extern "C" void Slider_get_reverseValue_m8EC94E0E93A2D030223121F9383D13DE347B9D17 ();
+extern "C" void Slider_get_wholeNumbers_mDA6BE70470B14F7A318B1D8B26F8F4AD11075C8D ();
+extern "C" void SpriteState_Equals_m9062D8F4AC3D2227E56451358F0509153059B961_AdjustorThunk ();
+extern "C" void Text_get_alignByGeometry_mF901BCD5C66A08F1209F3267ACFD474BEBAAC659 ();
+extern "C" void Text_get_resizeTextForBestFit_m7B4A245A26DEC10728618E462A8DDCEA83DE27C0 ();
+extern "C" void Text_get_supportRichText_m682251B82F8DB16E7C1ED3023A91B013D825C85D ();
+extern "C" void Toggle_get_isOn_mE13D628534F60138373B3E52CC93301DE59DB616 ();
+extern "C" void ToggleGroup_U3CActiveTogglesU3Em__1_m33037FC3D2B6477C7EE1EEC4DED10E474BBD9211 ();
+extern "C" void ToggleGroup_U3CAnyTogglesOnU3Em__0_mEA917603E1EA6BF2E58517CFE3CE887232007100 ();
+extern "C" void ToggleGroup_AnyTogglesOn_mA3F306262DA16C53E30981AC2A26BE716700BB49 ();
+extern "C" void ToggleGroup_get_allowSwitchOff_mCA978DB0EA4EA0DB9B0122E7BFDB5F8B4A8D95E6 ();
 extern "C" void UnitySynchronizationContext_ExecutePendingTasks_m74DCC56A938FEECD533CFE58CAC4B8B9ED001122 ();
 extern "C" void UnitySynchronizationContext_HasPendingTasks_mBFCAC1697C6B71584E72079A6EDB83D52EC1700A ();
 extern "C" void Vector2_Equals_m4A2A75BC3D09933321220BCEF21219B38AF643AE_AdjustorThunk ();
 extern "C" void Vector2_Equals_mD6BF1A738E3CAF57BB46E604B030C072728F4EEB_AdjustorThunk ();
+extern "C" void Vector2_op_Equality_m0E86E1B1038DDB8554A8A0D58729A7788D989588 ();
+extern "C" void Vector2_op_Inequality_mC16161C640C89D98A00800924F83FF09FD7C100E ();
 extern "C" void Vector3_Equals_m1F74B1FB7EE51589FFFA61D894F616B8F258C056_AdjustorThunk ();
 extern "C" void Vector3_Equals_m6B991540378DB8541CEB9472F7ED2BF5FF72B5DB_AdjustorThunk ();
 extern "C" void Vector3_op_Equality_mA9E2F96E98E71AE7ACCE74766D700D41F0404806 ();
 extern "C" void Vector3_op_Inequality_mFEEAA4C4BF743FB5B8A47FF4967A5E2C73273D6E ();
+extern "C" void Vector4_Equals_m552ECA9ECD220D6526D8ECC9902016B6FC6D49B5_AdjustorThunk ();
+extern "C" void Vector4_Equals_mB9894C2D4EE56C6E8FDF6CC40DCE0CE16BA4F7BF_AdjustorThunk ();
+extern "C" void Vector4_op_Equality_m9AE0D09EC7E02201F94AE469ADE9F416D0E20441 ();
+extern "C" void WaitForSecondsRealtime_get_keepWaiting_mC257FFC53D5734250B919A8B6BE460A6D8A7CD99 ();
 extern "C" void MSCompatUnicodeTable_Category_m4DECB878B26F26AFA6B96C2BC397CA6314CB5267 ();
 extern "C" void MSCompatUnicodeTable_Level1_m810D77124E45F055EF36150E0FFD14CBB1EA9599 ();
 extern "C" void MSCompatUnicodeTable_Level2_mEAC597EC7FA890B86B685FA9DEBC9E6A11511046 ();
@@ -1447,8 +1718,8 @@ extern "C" void ASN1_get_Value_m9BD6239E12A6148AF9507C2F58058C6B8147A079 ();
 extern "C" void BitConverterLE_GetBytes_m406ADCCE048705851CA952B5103A9020BBBDFBDA ();
 extern "C" void BitConverterLE_GetBytes_m1207548B6BC0E2D49DD06D5B3A3AC19C001BDB35 ();
 extern "C" void BitConverterLE_GetBytes_m9428D4A01AC77E50E16D9B738098F2954E5964E0 ();
-extern "C" void BitConverterLE_GetUIntBytes_m2B688B5F912B4453DD14F1043A3C8E3E171FFF41 ();
 extern "C" void BitConverterLE_GetUIntBytes_m871281C3039A5B7DFB56E0F3EBBE22F74135997C ();
+extern "C" void BitConverterLE_GetUIntBytes_m2B688B5F912B4453DD14F1043A3C8E3E171FFF41 ();
 extern "C" void BitConverterLE_GetULongBytes_mEA155106F6785491F8070F485963C96DA55B83F0 ();
 extern "C" void AppDomain_GetMarshalledDomainObjRef_m2579B1B9662ED4CC23EF52B27B10D955D6DB4C2D ();
 extern "C" void BitConverter_GetBytes_mB7DFC7C4705F916C40527A87C9AA6D0EABC23512 ();
@@ -1504,8 +1775,10 @@ extern "C" void Boolean_System_IConvertible_ToChar_mE18F3277483F7811F304D4E99EA7
 extern "C" void Byte_System_IConvertible_ToChar_m10B7CBD2706B3503DA799C558B07E48092AD78B5_AdjustorThunk ();
 extern "C" void Char_Parse_mD55168D7D07F3B2336263A978C44F1E8F6D965EB ();
 extern "C" void Char_System_IConvertible_ToChar_mFC5D9E072E60CB2493F51AD5230291F847673562_AdjustorThunk ();
+extern "C" void Char_ToLower_mEC53192820FB75E0714C1C874F6BC1E89BDBBC74 ();
 extern "C" void Char_ToLower_m10AA9F9260876F97230F7BAA4C070AD23ABBC160 ();
 extern "C" void Char_ToLowerInvariant_m691DAE5E85A00BC3A653CB4F3C0045BF1528641D ();
+extern "C" void Char_ToUpper_m5D0AC7F9601D2981E2BCC8710BED485D804CE4DA ();
 extern "C" void Char_ToUpper_m7DB88D6BD4EB66188E540B0BF985DE410B660F02 ();
 extern "C" void Char_ToUpperInvariant_m2FF95DAB0D20E1EB1E34ECE24F85253269017915 ();
 extern "C" void CharEnumerator_get_Current_m2C9590C1375021CA10C3049823690BB0E26BE3A9 ();
@@ -1575,6 +1848,11 @@ extern "C" void UInt32_System_IConvertible_ToChar_mC0A386C36A0EBC656E6F887A1CCD5
 extern "C" void UInt64_System_IConvertible_ToChar_mBB0EEBDF5CB12C5CE93ECD9C39124D33F221A523_AdjustorThunk ();
 extern "C" void UriHelper_EscapedAscii_m06D556717795E649EBBB30E4CBCF3D221C1FEB78 ();
 extern "C" void __DTString_GetChar_m15E6D62E27D5EC6E7E726D2E6A719A95A521CAE6_AdjustorThunk ();
+extern "C" void Event_get_character_m78B46D412357B71233F3D41842928A19B290915C ();
+extern "C" void OnValidateInput_EndInvoke_mAB770AE895D1805E679C0C25B83C024D229040CF ();
+extern "C" void OnValidateInput_Invoke_m73A9F2DB58DE24B74FE88632E339712EA910BED9 ();
+extern "C" void InputField_Validate_m1991C3B32DCC0AFD0CD95E067A1A8B14C1A61076 ();
+extern "C" void InputField_get_asteriskChar_m74790D5118E1227B45DDA971743B0493BD8543C2 ();
 extern "C" void Number_MatchChars_m7EE86D2BE9EC4117EE64EF821DB270C0A717ACAC ();
 extern "C" void Number_MatchChars_mB3DAD884D42368A0428DACB98B14EAF4E223FAEA ();
 extern "C" void BinaryReader_ReadChars_m4034E6EE2BB5C32AEB49AE234334076A934F952B ();
@@ -1613,6 +1891,7 @@ extern "C" void Statics_GetProperties_m5DFC41E95E0807B7F0EE158533B1B386AC80FAD1 
 extern "C" void FileSystemEnumerableFactory_CreateFileNameIterator_m8794115F2FA85BF0EAD65285717FC65C2003F47C ();
 extern "C" void ActivityFilter_GetFilterAsTuple_m2F34BA17CE7D2F693C2EF1469EECB6CEFB0483CD ();
 extern "C" void PlayableAsset_get_outputs_mD839CEB7A22543AC17FAE1C3C4BCD9A7B8DA82B1 ();
+extern "C" void ToggleGroup_ActiveToggles_m1FAB0E80675545C764FB81906BE09AE712BE0005 ();
 extern "C" void String_System_Collections_Generic_IEnumerableU3CSystem_CharU3E_GetEnumerator_mCCA9FB17E5DF531285AD2F35B6C7715072C201CF ();
 extern "C" void EventPayload_GetEnumerator_m91136E6A7D5A3E74FA5366E3347F2E6AD853770D ();
 extern "C" void ResourceFallbackManager_GetEnumerator_m93C691CB0FA9F2824CE37039D41B41B15349D8B2 ();
@@ -1634,6 +1913,10 @@ extern "C" void RuntimeType_GetCustomAttributesData_m4303E3A8954020D0E3503AB1E2C
 extern "C" void CustomAttributeData_get_NamedArguments_mF9B5751168B176A3B806887678448E66BFEE3752 ();
 extern "C" void CustomAttributeData_get_ConstructorArguments_m8DE989579D9B4EF02F826FC7B8326591F8871B33 ();
 extern "C" void ManifestBuilder_get_Errors_m38AD987BCFCAC441E35B1407D0E6E07C42AB822E ();
+extern "C" void GraphicRegistry_GetGraphicsForCanvas_mB0EC55A290AB24FBE0F1112293BC892D58FE63BE ();
+extern "C" void TextGenerator_get_characters_m716FE1EF0738A1E6B3FBF4A1DBC46244B9594C7B ();
+extern "C" void TextGenerator_get_lines_m40303E6BF9508DD46E04A21B5F5510F0FB9437CD ();
+extern "C" void TextGenerator_get_verts_mD0B3D877BE872CDE4BE3791685B8B5EF0AAC6120 ();
 extern "C" void IPv6AddressHelper_FindCompressionRange_mE70B131DDA05D3059325246A5AB7F6029B6EF6BD ();
 extern "C" void U3CGetEnumeratorU3Ed__17_System_Collections_Generic_IEnumeratorU3CSystem_Collections_Generic_KeyValuePairU3CSystem_StringU2CSystem_ObjectU3EU3E_get_Current_mCB8BFBA2C812898BE240722FD9588935DC4CEFD1 ();
 extern "C" void TimeZoneInfo_ParseTransitions_mDF9E7750AF2BFA9992708A02AE9429EFC4CF00FE ();
@@ -1642,8 +1925,14 @@ extern "C" void SerializationEvents_GetMethodsWithAttribute_m19F287113784C4EBB11
 extern "C" void TimeZoneInfo_CreateAdjustmentRule_m91309BB1DD028055DF1162AF2C32E3B49B205217 ();
 extern "C" void TimeZoneInfo_GetSystemTimeZonesWinRTFallback_m6A927CC8A8AC235866DC2399C990A32C6BF846D0 ();
 extern "C" void EventProvider_GetSessions_mF76C5CED507D8F8C66063D65255AA7AA46ED76AD ();
+extern "C" void RaycasterManager_GetRaycasters_mC012BA818045A764CA81B7FE812312ED8D4724D9 ();
+extern "C" void EventTrigger_get_triggers_m89CFFFA0D9858804EC5B3612D58E346BB5A89083 ();
 extern "C" void InvokableCallList_PrepareInvoke_m5BB28A5FBF10C84ECF5B52EBC52F9FCCDC840DC1 ();
 extern "C" void UnityEventBase_PrepareInvoke_mFA3E2C97DB776A1089DCC85C9F1DA75C295032AE ();
+extern "C" void LayoutGroup_get_rectChildren_m0DF5653E3FC488B553826E1D5E75D90FCDCA237F ();
+extern "C" void OptionDataList_get_options_mFE97692E7835C863B40C95B8F76CF9E4F384C2BB ();
+extern "C" void Dropdown_get_options_m936486EEAB117AAB3539EE9443D9EB099EDEE9FD ();
+extern "C" void Selectable_get_allSelectables_m640C12344CEEF36F2F1227C1D11EAE4EBD62D77D ();
 extern "C" void Hashtable_Synchronized_mC8C9F5D223078C699FD738B48A4A760549C2221E ();
 extern "C" void Environment_GetEnvironmentVariablesNoCase_m96643C3EE79581997F046EE52069B19E8369D63E ();
 extern "C" void ChannelData_get_CustomProperties_m424F115BDBF6DB10425D1731692DB54E73ABB248 ();
@@ -1697,7 +1986,14 @@ extern "C" void OidCollection_System_Collections_IEnumerable_GetEnumerator_m3FD3
 extern "C" void Evidence_GetEnumerator_m03EB4131E670C6BAFA8C155ABCD98637699AA43E ();
 extern "C" void String_System_Collections_IEnumerable_GetEnumerator_mB1587886EA519A21EF4833A08FF1AF715497C1BF ();
 extern "C" void XmlNode_System_Collections_IEnumerable_GetEnumerator_mC8BE3ACFBE87B8F5ABAE7B797FAF48A900679B27 ();
+extern "C" void GUISkin_GetEnumerator_m3F6D91C1C038E5DC24C38F6D23C95DEE03173987 ();
 extern "C" void Transform_GetEnumerator_mE98B6C5F644AE362EC1D58C10506327D6A5878FC ();
+extern "C" void Button_OnFinishSubmit_m8E4F41D33C11DA8D12C16D98337CAF58AED8663F ();
+extern "C" void Dropdown_DelayedDestroyDropdownList_m79D390D9F0CA7559A9B00B0010E50F697504B753 ();
+extern "C" void InputField_CaretBlink_mB9934B3773B849265F888BE7EE3AC2408DFB1421 ();
+extern "C" void InputField_MouseDragOutsideRect_mD483AD06A2FFDB2C296BD4F7796787171A1C32FF ();
+extern "C" void LayoutGroup_DelayedSetDirty_mC18B459AAF9A04E73282AC0E5154B445883709FE ();
+extern "C" void Scrollbar_ClickRepeat_m6CA8353EA47CC889A26BDA6A6C3B09D7E9D5C701 ();
 extern "C" void CompatibleComparer_get_HashCodeProvider_m53653737058DB625DEE0F23D24129D0052BE0530 ();
 extern "C" void SinkProviderData_get_Children_mF6D7D2A347FEF0D37EA4B92AB87608178049DA8B ();
 extern "C" void ConstructionCall_get_ContextProperties_mF309E2D852CA4EA619B15CB3267E9CD2755F7EA7 ();
@@ -1875,6 +2171,7 @@ extern "C" void Statics_CreateDelegate_mF1C37CC7EA4839A092250B6E298BC5D6155F51E6
 extern "C" void MulticastDelegate_CombineImpl_m722E5D3AD0B2C04F4EDAD82FAFB0733CACAF28B9 ();
 extern "C" void MulticastDelegate_RemoveImpl_mEC70774A4A3E151E86CE936D0A06829B79FCB547 ();
 extern "C" void NetFxCoreExtensions_CreateDelegate_m8FD387039F907982CB716046CB4501160B16D381 ();
+extern "C" void ScriptingUtils_CreateDelegate_m39ACEF00FC1B3EEDD481DB66250804E4DEBBCBEC ();
 extern "C" void Delegate_GetInvocationList_mE6EAF33B900B8842AD6635CFC69629F5FD970AAE ();
 extern "C" void MulticastDelegate_GetInvocationList_m3B9C8F9FA6E7721D588ED947018372A96871EB97 ();
 extern "C" void StackTrace_GetFrame_mD3B073DD2D452B894A5D215C8EB3ED2B859DE2B3 ();
@@ -1957,8 +2254,15 @@ extern "C" void BinaryReader_ReadDouble_mF89A68C872D32C02C10E9F4477EEABFC619ED4E
 extern "C" void Int16_System_IConvertible_ToDouble_mA60DE1A6D594144BE9DB9959314D2722064305CA_AdjustorThunk ();
 extern "C" void Int32_System_IConvertible_ToDouble_mA689675733A81D913A74373B805F68CCA6BEB53E_AdjustorThunk ();
 extern "C" void Int64_System_IConvertible_ToDouble_mBF9D431716723F0B8614D0C3C7906D447788431E_AdjustorThunk ();
+extern "C" void Math_Acos_mA015FB00E4C265D5FAD2D17E52C16A828472D666 ();
+extern "C" void Math_Ceiling_m379E37FEB7C1DC30F53CBFA8896E0DD0804C44C7 ();
+extern "C" void Math_Cos_m2A56736FA0ADF035FA2F54813C6C6E21D6C05F4C ();
+extern "C" void Math_Floor_mC3101A845FDA61AA1E9D4AC3C613F2A3F54332D8 ();
+extern "C" void Math_Log_mD51F54D254E1380E2317F19403E67DFB15008CD9 ();
+extern "C" void Math_Log_m5C457D6A666677B3E260C571049528D5BE93B7AF ();
 extern "C" void Math_Pow_m9CD842663B1A2FA4C66EEFFC6F0D705B40BE46F1 ();
 extern "C" void Math_Round_m92CC19B936A3FC72826AD3950A90E5D9EB7513FE ();
+extern "C" void Math_Sin_m70D30E020E871902B8610553CD000D7826B8B1DF ();
 extern "C" void Math_Sqrt_mB2008A97F28A0FC333E8DA31C6B1731D015BF5D2 ();
 extern "C" void Number_ParseDouble_m1114DFDF930B69AB3222044E9818855F131B5672 ();
 extern "C" void Random_Sample_m1CCBC99EFFC1F61BABA8EFB3935311C8F82673AF ();
@@ -2140,12 +2444,14 @@ extern "C" void WaitCallback_BeginInvoke_m6D50CA2A74AF60AE847EC36236F0E836CFF74B
 extern "C" void WaitOrTimerCallback_BeginInvoke_m86C8EC9E231C1076272729D07B6331A3253150CF ();
 extern "C" void UnhandledExceptionEventHandler_BeginInvoke_m685D3D37FBE53A62A290C06A727BA6E2559F1B54 ();
 extern "C" void SessionStateChanged_BeginInvoke_mD75E6832EC29F8B01CEEAAACD5DC54322F03D4B3 ();
+extern "C" void OnOverrideControllerDirtyCallback_BeginInvoke_m35CE43BF7D40E88192183CF666F2BB7EFE8C6F9D ();
 extern "C" void LogCallback_BeginInvoke_mECA20C96EB7E35915BC9202F833685D0ED5F66A7 ();
 extern "C" void LowMemoryCallback_BeginInvoke_m4686E95B4CF6EDE103DB0448FC54354BAE5F1745 ();
 extern "C" void PCMReaderCallback_BeginInvoke_m94035E11B2B9BD6114EF3D7F4B7E367572E7AE1F ();
 extern "C" void PCMSetPositionCallback_BeginInvoke_m88CDF70D75854621CA69ED3D53CD53B8206A5093 ();
 extern "C" void AudioConfigurationChangeHandler_BeginInvoke_mB0B0ACF6281B999FA11037CA130CA3C72BEC7827 ();
 extern "C" void CameraCallback_BeginInvoke_m46CF0E3E7E6A18868CBEBEA62D012713B20A8B14 ();
+extern "C" void WillRenderCanvases_BeginInvoke_mEFF75BC062DE3E7888B23BE447DD9CBDF9F307F3 ();
 extern "C" void StateChanged_BeginInvoke_m5BD458B36BF2E71F4FB19444B0FAAA1B87BF8912 ();
 extern "C" void DisplaysUpdatedDelegate_BeginInvoke_m5DA06B0A901673F809EA597946702A73F9436BFF ();
 extern "C" void UnityAction_BeginInvoke_m6819B1057D192033B17EB15C9E34305720F0401C ();
@@ -2153,9 +2459,18 @@ extern "C" void ConsumeSampleFramesNativeFunction_BeginInvoke_mCFD45D186107B1FD8
 extern "C" void SampleFramesHandler_BeginInvoke_mE516B77CCC50738663D10DDD2D7BDB4391FDFF92 ();
 extern "C" void UpdateFunction_BeginInvoke_m21EE5E68A5F0F9C8CE27D16BDCD77A593F6F48A7 ();
 extern "C" void FontTextureRebuildCallback_BeginInvoke_m53EF837EFEA71B83AEA6706E2EB8F83062E43880 ();
+extern "C" void WindowFunction_BeginInvoke_m522A6C91248FC9E44284AAB8909F83E5DB2960A2 ();
+extern "C" void SkinChangedDelegate_BeginInvoke_mB7F9F676B52F8A8108956D2DA04E8C0ECD5C3824 ();
 extern "C" void CreateOutputMethod_BeginInvoke_m4FC768B14DF77F9DB8847F3FAF1CBFD11048030D ();
 extern "C" void ReapplyDrivenProperties_BeginInvoke_m5C352648167A36402E86BEDDCAE8FA4784C03604 ();
 extern "C" void UpdatedEventHandler_BeginInvoke_m45D924AF948243AD8BD8D2E403DD57544E34507E ();
+extern "C" void OnValidateInput_BeginInvoke_mC6A163302E1E78067C012058393298474060DE05 ();
+extern "C" void GetRayIntersectionAllCallback_BeginInvoke_m8047DB3A43ADADC78A70F4A185C16145C1113AA4 ();
+extern "C" void GetRayIntersectionAllNonAllocCallback_BeginInvoke_mFE60577F4CFE854DF555E6B18F41C159199F7682 ();
+extern "C" void GetRaycastNonAllocCallback_BeginInvoke_mDBE7E69D77ED2B0AF5B590E725DC0BC7FA84E3A7 ();
+extern "C" void Raycast2DCallback_BeginInvoke_m34549BAA5CFE2A0AE80306E93140A8611FF18C84 ();
+extern "C" void Raycast3DCallback_BeginInvoke_mD8E5491EE88965786FA2A2EA517E90A759BB39C5 ();
+extern "C" void RaycastAllCallback_BeginInvoke_m2F3169A29EA8A3FE86F85211E197362244734562 ();
 extern "C" void ConsoleDriver_CreateNullConsoleDriver_mEBAC4A508B85C44CCA50312BDB64A1A1B30FDA17 ();
 extern "C" void ConsoleDriver_CreateTermInfoDriver_m93B83A6BC60910A8FDFA247BE56A30055E687342 ();
 extern "C" void ConsoleDriver_CreateWindowsConsoleDriver_mB2C43CDD6BD7C2159D7B939D8EEBEA9BFC07F5DF ();
@@ -2834,6 +3149,7 @@ extern "C" void String_LastIndexOf_mDF56BBDC42F73974249076AC735626C00C5FD6AD ();
 extern "C" void String_LastIndexOf_m074A70E0C63246B664CC26F4D0B5203424B2BCF7 ();
 extern "C" void String_LastIndexOf_mA235A9DBC602A4C97D8708F51720E0BAE3CD7D84 ();
 extern "C" void String_LastIndexOfAny_mF16934C2FD438FE77DEF59BF748E438675844892 ();
+extern "C" void String_LastIndexOfAny_mF62DEBFAAA527076E8B6FA4225F58767BA5DC792 ();
 extern "C" void String_LastIndexOfAny_m9B9377146D8647E41FD5FEF9FBFD4E3D1B494DA4 ();
 extern "C" void String_LastIndexOfAnyUnchecked_mA3A1DC659A0EE64BB09329716FB2F9C13AA5C405 ();
 extern "C" void String_LastIndexOfUnchecked_m7593A36970F2640F8CD07CAD1C86CF889C269918 ();
@@ -3136,6 +3452,7 @@ extern "C" void AttributeHelperEngine_GetDefaultExecutionOrderFor_m0972E47FA03C9
 extern "C" void AttributeHelperEngine_GetExecuteMode_mDE99262C53FA67B470B8668A13F968B4D5A8E0A1 ();
 extern "C" void AudioListener_GetNumExtensionProperties_m25EA8050804F66436031AE390FD6A8675511C260 ();
 extern "C" void AudioSource_GetNumExtensionProperties_m587290B91EE48986EC862690A77A609CAEEA4E67 ();
+extern "C" void Bounds_GetHashCode_m9F5F751E9D52F99FCC3DC07407410078451F06AC_AdjustorThunk ();
 extern "C" void Camera_GetAllCameras_m500A4F27E7BE1C259E9EAA0AEBB1E1B35893059C ();
 extern "C" void Camera_GetAllCamerasCount_mBA721F43F94AA5DB555461DE11351CBAF8267662 ();
 extern "C" void Camera_GetAllCamerasImpl_mC93829FFC53391EA6C5012E5FA3817BA20DBEA89 ();
@@ -3143,14 +3460,61 @@ extern "C" void Camera_get_allCamerasCount_mF6CDC46D6F61B1F1A0337A9AD7DFA485E408
 extern "C" void Camera_get_cullingMask_m0992E96D87A4221E38746EBD882780CEFF7C2BCD ();
 extern "C" void Camera_get_eventMask_m1D85900090AF34244340C69B53A42CDE5E9669D3 ();
 extern "C" void Camera_get_targetDisplay_m2C318D2EB9A016FEC76B13F7F7AE382F443FB731 ();
+extern "C" void Canvas_get_renderOrder_m673818EDB7D1F75F70B7FFFC1B909F1CDBA52F8D ();
+extern "C" void Canvas_get_sortingLayerID_mD0EB8964D1C7E68F429F83B5C5AF58426D354C75 ();
+extern "C" void Canvas_get_sortingOrder_mA3FC1159A6594B522A7B682F5792845E2DC7C540 ();
+extern "C" void Canvas_get_targetDisplay_m80D9D93CA075084BDD3B05AF5F880698D7BB235D ();
+extern "C" void CanvasRenderer_get_absoluteDepth_mCE62152F19926BC6A2864E23E5070641E18A27E7 ();
+extern "C" void CanvasRenderer_get_materialCount_m5C0C1E7CC3DAE4B14E29A36E9890F92C0DACC3F5 ();
+extern "C" void Color_GetHashCode_m88317C719D2DAA18E293B3F5CD17B9FB80E26CF1_AdjustorThunk ();
 extern "C" void ComputeShader_FindKernel_m4CEBD37F96732810C4C370A6249CF460BE1F93A3 ();
 extern "C" void DefaultExecutionOrder_get_order_mFD2CD99AEF550E218FAFC6CB3DDA3CE8D78614A9 ();
 extern "C" void Display_RelativeMouseAtImpl_mDC1A8A011C9B7FF7BC9A53A10FEDE8D817D68CDB ();
+extern "C" void Display_get_renderingHeight_m1496BF9D66501280B4F75A31A515D8CF416838B0 ();
+extern "C" void Display_get_renderingWidth_mA02F65BF724686D7A0CD0C192954CA22592C3B12 ();
 extern "C" void Display_get_systemHeight_m0D7950CB39015167C175634EF8A5E0C52FBF5EC7 ();
 extern "C" void Display_get_systemWidth_mA14AF2D3B017CF4BA2C2990DC2398E528AF83413 ();
+extern "C" void Event_GetHashCode_m043035C02793F794E13286466579F09F87D7AA9D ();
+extern "C" void BaseInput_get_touchCount_m60B5BAD15149059C24929FB7622364612FF2F073 ();
+extern "C" void BaseRaycaster_get_priority_m9504BF8D372452B1819B72F4CAA0EAAD29428DAA ();
+extern "C" void BaseRaycaster_get_renderOrderPriority_m92A523388D1E131102D5A6555697D099486D5C88 ();
+extern "C" void BaseRaycaster_get_sortOrderPriority_mA367A5C7877D18DB9034C6A3993A3AE6CD4D0CDB ();
+extern "C" void EventSystem_RaycastComparer_m32BE45B706577EF3EC2768A799B40CA39526A600 ();
+extern "C" void EventSystem_get_pixelDragThreshold_m65D5C447AB7779D85F20AE3557985D66ECE15DAB ();
+extern "C" void PhysicsRaycaster_U3CRaycastU3Em__0_m73A18F73DD07B29DC82FE7542E8D88E2EDF3C989 ();
+extern "C" void PhysicsRaycaster_get_depth_mB9E91E8ED99740B180603DC441710284253B0380 ();
+extern "C" void PhysicsRaycaster_get_finalEventMask_mC5DFCA00BC1CA1EF9D0CDED5D13CBCD54AA05C18 ();
+extern "C" void PhysicsRaycaster_get_maxRayIntersections_m1CDE013379C6D0A5A7FE2B5355A20DA978AB35E5 ();
+extern "C" void PointerEventData_get_clickCount_m7684E207D87BDEE77E768E177BCD32497CCAF67C ();
+extern "C" void PointerEventData_get_pointerId_m2E7B8CD923977019C2697ED57519F14E4F2ADB3F ();
 extern "C" void ArgumentCache_get_intArgument_mD9D072A7856D998847F159350EAD0D9AA552F76B ();
+extern "C" void Font_get_fontSize_m75A71EFC3D6483AD1A8C6F38133648BDFF1618A5 ();
+extern "C" void GUILayoutEntry_get_marginBottom_mC821B992F1AA7AF24533D9DAC2E46632950AA1BD ();
+extern "C" void GUILayoutEntry_get_marginHorizontal_m1FB1B936E7C702BAD92FE4CA1EEC529A2BECCEC4 ();
+extern "C" void GUILayoutEntry_get_marginLeft_mD09358867AB85C7555C5F36B21AA8701EBF7A47A ();
+extern "C" void GUILayoutEntry_get_marginRight_m2449285F6E78BB275246C7382A0F25584A057E83 ();
+extern "C" void GUILayoutEntry_get_marginTop_mA7DC694C92F152BEC3A8CCC470B24E9351338708 ();
+extern "C" void GUILayoutEntry_get_marginVertical_mBFB3FD56025F4627378E5A339379CFF720196EB0 ();
+extern "C" void GUILayoutGroup_get_marginBottom_m47E83C97B7052E8C3A15C11E23C05C7B4FF31460 ();
+extern "C" void GUILayoutGroup_get_marginLeft_m987BDD5E6CE4A143F56120E1953291A27F43AA4F ();
+extern "C" void GUILayoutGroup_get_marginRight_m12265D01788B2A60664CD21B887AFEC72C6A0855 ();
+extern "C" void GUILayoutGroup_get_marginTop_m5A7ACD924C4728C19C2DE52E3155A1D098646023 ();
+extern "C" void GUITargetAttribute_GetGUITargetAttrValue_mED49CA9A9696B0D52CD6C6D7BA7344EA1F019590 ();
+extern "C" void GUIUtility_get_guiDepth_m927893DDBCD8D8F88CA9F70A7D1A7BDB59B4F395 ();
+extern "C" void GameObject_get_layer_m0DE90D8A3D3AA80497A3A80FBEAC2D207C16B9C8 ();
 extern "C" void Gradient_GetHashCode_m2596E6672ACDAD829961AB1FBD3EB649A908DE64 ();
+extern "C" void Input_get_touchCount_m2A22A8E963E14F1221F768412663C8D11F806CD6 ();
 extern "C" void DefaultValueAttribute_GetHashCode_m4782E2C5A005991FA7E705110A690DD5E0E52D50 ();
+extern "C" void LayerMask_op_Implicit_m2AFFC7F931005437E8F356C953F439829AF4CFA5 ();
+extern "C" void Mathf_CeilToInt_m0230CCC7CC9266F18125D9425C38A25D1CA4275B ();
+extern "C" void Mathf_Clamp_mE1EA15D719BF2F632741D42DF96F0BC797A20389 ();
+extern "C" void Mathf_FloorToInt_m0C42B64571CE92A738AD7BB82388CE12FBE7457C ();
+extern "C" void Mathf_Max_mBDE4C6F1883EE3215CD7AE62550B2AC90592BC3F ();
+extern "C" void Mathf_Min_m1A2CC204E361AE13C329B6535165179798D3313A ();
+extern "C" void Mathf_RoundToInt_m0EAD8BD38FCB72FA1D8A04E96337C820EC83F041 ();
+extern "C" void Matrix4x4_GetHashCode_m6627C82FBE2092AE4711ABA909D0E2C3C182028F_AdjustorThunk ();
+extern "C" void Mesh_DefaultDimensionForChannel_mF943AF434BB9F54DBB3B3DE65F7B816E617A89C9 ();
+extern "C" void Mesh_get_subMeshCount_m6BE7CFB52CE84AEE45B4E5A704E865954397F52F ();
 extern "C" void Object_GetHashCode_mCF9141C6640C2989CD354118673711D5F3741984 ();
 extern "C" void Physics_RaycastNonAlloc_m9CC4B976EA1936076FFA1339BF6FBE78A2DA593F ();
 extern "C" void Physics_RaycastNonAlloc_m0A9CEF12FB7EE9C790609A15CBFE975725365CF9 ();
@@ -3172,7 +3536,14 @@ extern "C" void PropertyName_GetHashCode_mBFB70A344042610A7EC9532BFBD83BB6623B12
 extern "C" void Quaternion_GetHashCode_m43BDCF3A72E31FA4063C1DEB770890FF47033458_AdjustorThunk ();
 extern "C" void Random_RandomRangeInt_m4D223ACEC78BCC435D90A7D3696775DE973D324E ();
 extern "C" void Random_Range_mD0C8F37FF3CAB1D87AAA6C45130BD59626BD6780 ();
+extern "C" void RangeInt_get_end_m7A5182161CC5454E1C200E0173668572BA7FAAFD_AdjustorThunk ();
 extern "C" void Rect_GetHashCode_mA23F5D7C299F7E05A0390DF2FA663F5A003799C6_AdjustorThunk ();
+extern "C" void RectOffset_get_bottom_mE5162CADD266B59539E3EE1967EE9A74705E5632 ();
+extern "C" void RectOffset_get_horizontal_m9274B965D5D388F6F750D127B3E57F70DF0D89C1 ();
+extern "C" void RectOffset_get_left_mA86EC00866C1940134873E3A1565A1F700DE67AD ();
+extern "C" void RectOffset_get_right_m9B05958C3C1B31F1FAB8675834A492C7208F6C96 ();
+extern "C" void RectOffset_get_top_mBA813D4147BFBC079933054018437F411B6B41E1 ();
+extern "C" void RectOffset_get_vertical_m89ED337C8D303C8994B2B056C05368E4286CFC5E ();
 extern "C" void RenderTexture_get_height_m26FBCCE11E1C6C9A47566CC4421258BAF5F35CE6 ();
 extern "C" void RenderTexture_get_width_m246F1304B26711BE9D18EE186F130590B9EDADDB ();
 extern "C" void RenderTextureDescriptor_get_depthBufferBits_m51E82C47A0CA0BD8B20F90D43169C956C4F24996_AdjustorThunk ();
@@ -3180,19 +3551,78 @@ extern "C" void RenderTextureDescriptor_get_height_m947A620B3D28090A57A5DC0D6A12
 extern "C" void RenderTextureDescriptor_get_msaaSamples_mEBE0D743E17068D1898DAE2D281C913E39A33616_AdjustorThunk ();
 extern "C" void RenderTextureDescriptor_get_volumeDepth_mBC82F4621E4158E3D2F2457487D1C220AA782AC6_AdjustorThunk ();
 extern "C" void RenderTextureDescriptor_get_width_m225FBFD7C33BD02D6879A93F1D57997BC251F3F5_AdjustorThunk ();
+extern "C" void Renderer_get_sortingLayerID_m2E204E68869EDA3176C334AE1C62219F380A5D85 ();
+extern "C" void Renderer_get_sortingOrder_m33DD50ED293AA672FDAD862B4A4865666B5FEBAF ();
 extern "C" void Scene_GetHashCode_m65BBB604A5496CF1F2C129860F45D0E437499E34_AdjustorThunk ();
 extern "C" void Scene_get_handle_mFAB5C41D41B90B9CEBB3918A6F3638BD41E980C9_AdjustorThunk ();
 extern "C" void SceneManager_get_sceneCount_m21F0C1A9DB4F6105154E7FAEE9461805F3EFAD84 ();
 extern "C" void Screen_get_height_mF5B64EBC4CDE0EAAA5713C1452ED2CE475F25150 ();
 extern "C" void Screen_get_width_m8ECCEF7FF17395D1237BC0193D7A6640A3FEEAD3 ();
+extern "C" void Shader_PropertyToID_m831E5B48743620DB9E3E3DD15A8DEA483981DD45 ();
 extern "C" void AchievementDescription_get_points_mF84D543E614C28818ABA12E7F8C5F4C4628CA1BF ();
+extern "C" void SortingLayer_GetLayerValueFromID_m564F9C83200E5EC3E9578A75854CB943CE5546F8 ();
+extern "C" void Sprite_GetPacked_mBDE07283B07E7FB8892D309C5EDC81584C849BCC ();
+extern "C" void Sprite_GetPackingMode_mF0507D88752CDA45A9283445067070092E524317 ();
+extern "C" void TextGenerator_get_characterCount_m2A8F9764A7BD2AD1287D3721638FB6114D6BDDC7 ();
+extern "C" void TextGenerator_get_characterCountVisible_mD0E9AA8120947F5AED58F512C0978C2E82ED1182 ();
+extern "C" void TextGenerator_get_lineCount_m7A3CC9D67099CDC4723A683716BE5FBC623EE9C4 ();
 extern "C" void Texture_GetDataHeight_m3E5739F25B967D6AF703541F236F0B1F3F8F939E ();
 extern "C" void Texture_GetDataWidth_m862817D573E6B1BAE31E9412DB1F1C9B3A15B21D ();
 extern "C" void Texture_get_height_m3A004CD1FA238B3D0B32FE7030634B9038EC4AA0 ();
 extern "C" void Texture_get_width_mEF9D208720B8FB3E7A29F3A5A5C381B56E657ED2 ();
+extern "C" void Touch_get_fingerId_mB67BC98260E26816F875277BE9BC2A5037AF62A7_AdjustorThunk ();
+extern "C" void TrackedReference_GetHashCode_mFA57A6A43AAB04ACB6FFB4038646B4BCC56FA1D6 ();
 extern "C" void Transform_get_childCount_m7665D779DCDB6B175FB52A254276CDF0C384A724 ();
+extern "C" void CanvasUpdateRegistry_ParentCount_m085EA145C7229F45589EF06909716EF94F736AD7 ();
+extern "C" void CanvasUpdateRegistry_SortLayoutList_m779E942CC778974023FBD9AC8B5904BF639E8CCC ();
+extern "C" void ColorBlock_GetHashCode_m3768567035F950E7951EF5DF2D33F0C41EB0CC75_AdjustorThunk ();
+extern "C" void Dropdown_get_value_m3A30496E29F9BD3925B083157083717CE907940B ();
+extern "C" void FontData_get_fontSize_m7390DFE98F634DB4E5F069EF2CFFDAB239F87337 ();
+extern "C" void FontData_get_maxSize_mE8E33F352211C58C6E480D78E1FF3277AACAB1B4 ();
+extern "C" void FontData_get_minSize_m9A996E23462C060BEB088FCB401C1B36691A2A60 ();
+extern "C" void Graphic_get_depth_m5361FEBC0B269A9FEE17B2517AEBCF327AFE59F4 ();
+extern "C" void GraphicRaycaster_U3CRaycastU3Em__0_m4A25DE036229835A88AF3CDA26D191F1EBE74807 ();
+extern "C" void GraphicRaycaster_get_renderOrderPriority_mEEAA6F787DBCDD6AAEF4EC8F727B10D66BB6147F ();
+extern "C" void GraphicRaycaster_get_sortOrderPriority_m0D90EA994ECD258C4987E601A156F780C5C6C485 ();
+extern "C" void GridLayoutGroup_get_constraintCount_m004BB8FCDEB1D3968FF105754E6DF35ECF935209 ();
+extern "C" void Image_get_fillOrigin_mFCC875AAC1609D86CCF62A6C7328B4C117422E1F ();
+extern "C" void Image_get_layoutPriority_m5652D121B101AC2B111F04130CBBC39DF42255A4 ();
+extern "C" void InputField_DetermineCharacterLine_m68C3B405D39E8B95AE7D3CF7D204B8621193A4CB ();
+extern "C" void InputField_FindtNextWordBegin_m6729E369472336777A80B533487B241F09BE174E ();
+extern "C" void InputField_FindtPrevWordBegin_m91F792CD06FBF0B8AB7EBA94C18291CE6DB6F2D6 ();
+extern "C" void InputField_GetCharacterIndexFromPosition_m7CE001C919D29111D212A2C74F28B1AE59ED46AC ();
+extern "C" void InputField_GetLineEndPosition_mBBA9CD8A24DCA0EE030EA9157CFBCF144A0DD258 ();
+extern "C" void InputField_GetLineStartPosition_m8A0CFE3AC0D832A6746DA7B4CE9AF8DC56F669E5 ();
+extern "C" void InputField_GetUnclampedCharacterLineFromPosition_mF0CC8C9A41FBAF96BA89DD50CA103E22BC058E85 ();
+extern "C" void InputField_LineDownCharacterPosition_m07D28FCBCD8CDDD2914A667AB169EE6BA5840E52 ();
+extern "C" void InputField_LineUpCharacterPosition_m24F296DE40A422BC6366A8EF44BC620689D616B0 ();
+extern "C" void InputField_get_caretPosition_m8F6BDD3FA0F328776067F062FC1752005E0BD1C1 ();
+extern "C" void InputField_get_caretPositionInternal_m3FFFB8BA2D8072F253FA327DAEEA8C8BCABCB1AA ();
+extern "C" void InputField_get_caretSelectPositionInternal_m416E00D11550F343CCACCFD7B60D3D9F20076BEE ();
+extern "C" void InputField_get_caretWidth_m447C4FFFEBC53403076A6BFD06928817CE51B851 ();
+extern "C" void InputField_get_characterLimit_m6CAD1DA4D407A3FB783741BD57AA537DF5D42B5D ();
+extern "C" void InputField_get_layoutPriority_m31A949FFF557CFF92F15E0A0AE60369F8D4972D4 ();
+extern "C" void InputField_get_selectionAnchorPosition_mCCC8DBCFD6FFDC1D4E67BE74920FE8AFA71E372B ();
+extern "C" void InputField_get_selectionFocusPosition_mC675800E70A84CB0F926B5AD353CAE31BFBDEA61 ();
+extern "C" void LayoutElement_get_layoutPriority_mBD2B7110243EDA061AF1C812E70B5EC2C543FA1B ();
+extern "C" void LayoutGroup_get_layoutPriority_mC9AC0B65F298715E00CE5076F3222D80FADA4EA5 ();
+extern "C" void LayoutRebuilder_GetHashCode_m15889CC7A4A097869BACAC41CF98EE27744EEB0D ();
+extern "C" void MaskUtilities_GetStencilDepth_mEF5CC3E39674E3634197B10CC5821A38A7B773F8 ();
+extern "C" void GetRayIntersectionAllNonAllocCallback_EndInvoke_m8F8DB533C1E5A3570D4FE629AED7DAA2D2125486 ();
+extern "C" void GetRayIntersectionAllNonAllocCallback_Invoke_mE8C1C89478AFE338F0607231CAE10362D7076FCE ();
+extern "C" void GetRaycastNonAllocCallback_EndInvoke_mE29DAD1F419163849202F1D11D6FBF0745C6C81A ();
+extern "C" void GetRaycastNonAllocCallback_Invoke_mB4F2F90265BCD10AF00FF81133D674F666DB7C88 ();
+extern "C" void ScrollRect_get_layoutPriority_mEA746BAF15E839F0B063E747A05B491363A4E0E5 ();
+extern "C" void Scrollbar_get_numberOfSteps_m06336C76DBA5D3AEF7DFCB819DDD375C241DEDEE ();
+extern "C" void Text_get_fontSize_mE47E908642FD1E441659B2B8E25217891C2929C7 ();
+extern "C" void Text_get_layoutPriority_m9C61E3B617CDB0F99BF9B13A79DB607B62711B4C ();
+extern "C" void Text_get_resizeTextMaxSize_m5B5FBBBABBCF63A8A00C11B6AC31078C78A055F5 ();
+extern "C" void Text_get_resizeTextMinSize_mA24F43BB941B3A77E3DAE9E3499BDBF7D2F730B4 ();
+extern "C" void VertexHelper_get_currentIndexCount_mB59A41B2CB38B0C017BE090282ABBA9B1399818B ();
+extern "C" void VertexHelper_get_currentVertCount_m48ADC86AE4361D491966D86AD6D1CD9D22FD69B6 ();
 extern "C" void Vector2_GetHashCode_m028AB6B14EBC6D668CFA45BF6EDEF17E2C44EA54_AdjustorThunk ();
 extern "C" void Vector3_GetHashCode_m6C42B4F413A489535D180E8A99BE0298AD078B0B_AdjustorThunk ();
+extern "C" void Vector4_GetHashCode_m7329FEA2E90CDBDBF4F09F51D92C87E08F5DC92E_AdjustorThunk ();
 extern "C" void Decimal_GetBits_m581C2DB9823AC9CD84817738A740E8A7D39609BF ();
 extern "C" void CultureData_get_CalendarIds_m3A2F9565FF53E46549322C7AE151A6CE11453A68 ();
 extern "C" void DateTimeFormatInfo_get_OptionalCalendars_mB11829E50DB2A41ED276806EDEEDD8D21255D345 ();
@@ -3204,6 +3634,9 @@ extern "C" void NumberFormatInfo_get_NumberGroupSizes_m565821165B43AA202D8F644E4
 extern "C" void NumberFormatInfo_get_PercentGroupSizes_m4E8851281AB5160EC0EE06F633B08235440DF4C8 ();
 extern "C" void TaiwanCalendar_get_Eras_m225F604174076A8AA0818EC9CCFBA30F8F11A608 ();
 extern "C" void ValueTypeFixupInfo_get_ParentIndex_m6B7ADD6FF8AC73C8DDBF4FAA49AF2CA484EE7816 ();
+extern "C" void Mesh_GetIndices_m2FD8417547E7595F590CE55D381E0D13A8D72AA5 ();
+extern "C" void Mesh_GetIndices_m4260DCF1026449C4E8C4C40229D12AF8CAB26EAF ();
+extern "C" void Mesh_GetIndicesImpl_m2118C6CA196093FD19BB05E5258C0DCE06FEAD30 ();
 extern "C" void KeyHandler_GetRegisteredBootTime_m1F69BE3CD6B428F2F617FA9B445850AD87F2DBE0 ();
 extern "C" void KeyHandler_GetSystemBootTime_m7D1219BB4D48ECF1151016FD223461EB2E81DDC7 ();
 extern "C" void Array_GetLongLength_m86426B9200B4FCD2C1867FCD9356AA75550D7633 ();
@@ -3355,9 +3788,17 @@ extern "C" void NativeEventCalls_CreateEvent_internal_m1114FA21E3BA0AB05FAE7EC2E
 extern "C" void Thread_Thread_internal_m43DFA96F34ADF78F99F0F24267EC34A8E7A57849 ();
 extern "C" void WindowsConsoleDriver_GetStdHandle_m411672A3E27D4266E946FF166C9DA279A75B3FB5 ();
 extern "C" void AnimationCurve_Internal_Create_mA7A2A0191C4AAE7BD5B18F0DCC05AD4290D1691B ();
+extern "C" void Event_Internal_Create_m93F047D4FC3B4B76FD4F80439D0F7EE131EE1E6B ();
+extern "C" void GUIStyle_GetRectOffsetPtr_m780608811770308EFDE095993756D8AA0BD37BF8 ();
+extern "C" void GUIStyle_GetStyleStatePtr_m9EB2842B5EDEC03D6F7A0050A4E9DBB7103EA5C5 ();
+extern "C" void GUIStyle_Internal_Create_m9641BC84B2A6E34A801EED919EF412E4A1C444C8 ();
+extern "C" void GUIStyleState_Init_m24D7A3BD60709BA6C36D21F86E8FBCA3AD7756D9 ();
 extern "C" void Gradient_Init_m56D09BE88E111535F8D2278E03BE81C9D70EFAAD ();
 extern "C" void Object_GetCachedPtr_m8CCFA6D419ADFBA8F9EF83CB45DFD75C2704C4A0 ();
+extern "C" void RectOffset_InternalCreate_m6638B085A0DA1CB1DA37B7C91CAC98DCF2CF7A16 ();
 extern "C" void GcLeaderboard_GcLeaderboard_LoadScores_mB8A35B585F85E2BEBC3157A957200CA3CDED4000 ();
+extern "C" void TextGenerator_Internal_Create_m127DBEDE47D3028812950FD9184A18C9F3A5E994 ();
+extern "C" void TouchScreenKeyboard_TouchScreenKeyboard_InternalConstructorHelper_mD608B3B2A2159D17A8DF7961FA4EB1694A416973 ();
 extern "C" void LocalDataStoreHolder_get_Store_m2C6F36680CF6788220C9A3F029576541763FB8B5 ();
 extern "C" void Context_get_MyLocalStore_m2CB15CE56C68E84BE69D008E507E58D9380E962D ();
 extern "C" void LocalDataStore_PopulateElement_m16D54E54CB4EA8F2F385B162B3011C8B3EB2568E ();
@@ -3424,6 +3865,7 @@ extern "C" void HashtableEnumerator_Clone_m3BF3723B676C488836A3AFEF387027B930BED
 extern "C" void HashtableEnumerator_get_Current_m3C665E408D870A47554A7552A087CB881C969618 ();
 extern "C" void HashtableEnumerator_get_Key_m09B7F9811379917D1101DFF85FA577133A62AD6A ();
 extern "C" void HashtableEnumerator_get_Value_mEB78D8A682883CABCBAFD20B340BD827CB71561E ();
+extern "C" void KeyCollection_get_SyncRoot_mD8E3C1BAD19C5AB1FD13E8411D65B6F0FBFBDCB6 ();
 extern "C" void SyncHashtable_Clone_m13B484BC6DD78F6EBD4E2C23F242B660CD5C3EFD ();
 extern "C" void SyncHashtable_get_Item_m54489F4AB8D10BEDDC41F851DAE27F95A2781146 ();
 extern "C" void SyncHashtable_get_SyncRoot_m9DA0217F2FC0343D3248F98FC16A2DF1D591A947 ();
@@ -3436,6 +3878,7 @@ extern "C" void Queue_Clone_m8827A33C420FB6B1432366B24D98FE7280729D66 ();
 extern "C" void Queue_Dequeue_m76B0ECD1EFE53DF0AAFEB184912007322CDE7EB4 ();
 extern "C" void Queue_GetElement_m612CFE182D43EF6A21EB21CDF53F80F4BC36816C ();
 extern "C" void Queue_Peek_m494EF9110AE8F89DC0999577445BD8FBBCA79BB4 ();
+extern "C" void Queue_get_SyncRoot_m498B47192FC69A5493708D478CAFEB16B5B3E676 ();
 extern "C" void SortedListEnumerator_Clone_mCDD985F3FA021A7105B1690CE22EE0B38FEDCC99 ();
 extern "C" void SortedListEnumerator_get_Current_mD1C66071084DE980DC97EABCE7BFBCCF96066120 ();
 extern "C" void SortedListEnumerator_get_Key_mDE6E5D038A0212BB14DCBB9D73F831233EAC826E ();
@@ -3443,11 +3886,16 @@ extern "C" void SortedListEnumerator_get_Value_mA1FF92895EE42234163A72D61DA3D6CF
 extern "C" void SortedList_Clone_m764F0897536D23F33ECE5691E3009C24D551F78C ();
 extern "C" void SortedList_GetByIndex_m607E058040C2B336081FC368D6CEE51AE5D69957 ();
 extern "C" void SortedList_GetKey_m07A9F7D84DDBDC427636D5BAA4513C7E510006FC ();
+extern "C" void SortedList_get_SyncRoot_m9B6378B572BC8CEF951E5C477EB24EAFBE6A894B ();
 extern "C" void StackEnumerator_Clone_mA509B6C10DEE0D9D7BB94621F3A5311A49BDBD36 ();
 extern "C" void StackEnumerator_get_Current_m648842035EE50845BF314430E0FFBF33A4983C22 ();
 extern "C" void Stack_Clone_m970E7DDDA2100E11F01BF22FDC51B59A0058BB65 ();
 extern "C" void Stack_Peek_mEAC45FC37790CF917154F27345E106C2EE38346C ();
 extern "C" void Stack_Pop_m5419FBFC126E7004A81612F90B8137C5629F7CDE ();
+extern "C" void Stack_get_SyncRoot_mD2CA98A101E2F7EF48457FA8496700E438054EB6 ();
+extern "C" void StandardValuesCollection_System_Collections_ICollection_get_SyncRoot_mF42D50E0E5A77DD85C897C37352834E2D4023810 ();
+extern "C" void ConfigurationElementCollection_get_SyncRoot_m9AF9A3529CAF268BE69B95ACD13FEE0A64FACCAD ();
+extern "C" void ConfigurationPropertyCollection_get_SyncRoot_m9C5F4616FF01536A643161A98B57D8343A1B0876 ();
 extern "C" void Convert_ChangeType_m4F879F3D17C11FA0B648C99C6D3C42DD33F40926 ();
 extern "C" void Convert_ChangeType_m249060C66D575F9C00BEE88FB15788CFED9AD492 ();
 extern "C" void Convert_DefaultToType_m899D5F6B9FE3E8B878BC56172C6BFE788B6C1BE3 ();
@@ -3599,6 +4047,7 @@ extern "C" void DictionaryEnumerator_get_Current_m6DDDCF2A497034F7A84013A02B3B04
 extern "C" void DictionaryEnumerator_get_Key_m6163DE37159F891C0E722A803C3C06A89A09A6B2 ();
 extern "C" void DictionaryEnumerator_get_Value_m074C822A494B3676EB679A4F7DA4CDB795766963 ();
 extern "C" void MessageDictionary_GetMethodProperty_m92F3D0F028D6A1FA220E457A49513E448ACF6D4B ();
+extern "C" void MessageDictionary_get_SyncRoot_mCB84F67A54BE3A90370EC8B528FCB7BD77DBE514 ();
 extern "C" void MethodCall_GetArg_mC2E3B1DB0D5C675C1F9BD6B7A2DE751B3D52BD3C ();
 extern "C" void MethodCall_get_MethodSignature_m6BA4F427D1BA7C19D7B4EA05D56BA92EFD6C818E ();
 extern "C" void MethodResponse_GetArg_mDF875D945B84ED5A74393EE049A0539BF5CE1568 ();
@@ -3677,8 +4126,10 @@ extern "C" void RuntimeType_InvokeMember_m1BD41C2683491F7590CD2ED46DA0FCADF32D2A
 extern "C" void RuntimeType_IsConvertibleToPrimitiveType_m82E475866745432850F06D2FF6BE73BAEE8CA849 ();
 extern "C" void RuntimeType_TryConvertToType_m0F3AD0C2FEB8CC0D670F267FA2EC284E3CBD82A0 ();
 extern "C" void SByte_System_IConvertible_ToType_m066E07D82EE6341B5B3BEF5117EFCBEB6987EE51_AdjustorThunk ();
+extern "C" void OidCollection_get_SyncRoot_m6C13949F67338F684C29DD162C8228986DAB6850 ();
 extern "C" void OidEnumerator_System_Collections_IEnumerator_get_Current_mF11B1F886842EA79EDB215BD5106D0C4C65EBE53 ();
 extern "C" void EvidenceEnumerator_get_Current_m375A68A8EB0A859A10B82241A0A12BDD1904432B ();
+extern "C" void Evidence_get_SyncRoot_m24503624DA5215B747062C31DE72D39251039B78 ();
 extern "C" void Single_System_IConvertible_ToType_mF7580516A3EBBE7ECCD84D585A3D3244F564DBEC_AdjustorThunk ();
 extern "C" void String_Clone_m349B701D5D4BD0C801FB9B7F40A792604EA4025D ();
 extern "C" void String_System_IConvertible_ToType_mABFC10EEF12F462FAAEE8779E62533DA348CD43A ();
@@ -3707,10 +4158,24 @@ extern "C" void Version_Clone_mC9305AB873E1FF41BA1B81C2988F0C113CC11035 ();
 extern "C" void WeakReference_get_Target_mF924E58A87EF45E9D2A464FAA36B7A6079F10B1F ();
 extern "C" void XmlChildEnumerator_System_Collections_IEnumerator_get_Current_m2E52170DBEF6245A93126D3C7FF60ED17DDE2BD1 ();
 extern "C" void XmlNode_System_ICloneable_Clone_m7208212A0F30077B18060E4D12B3C83D172D3D39 ();
+extern "C" void CustomYieldInstruction_get_Current_m9B2B482ED92A58E85B4D90A5AC7C89DFF87E33DC ();
+extern "C" void GUIUtility_Internal_GetDefaultSkin_m1D4A53896309F1A4A54AF15D7E5F4DC61451276E ();
 extern "C" void DefaultValueAttribute_get_Value_m1E1505D5F1838C28CA4C52DED4A20E81F81BFCC3 ();
 extern "C" void PlayableBehaviour_Clone_m2BB70A16D658FD18307D084EFFFE4A7B1BB234FD ();
 extern "C" void SetupCoroutine_InvokeMember_m0F2AD1D817B8E221C0DCAB9A81DA8359B20A8EFB ();
 extern "C" void Enumerator_get_Current_mD91FA41B0959224F24BF83051D46FCF3AF82F773 ();
+extern "C" void U3COnFinishSubmitU3Ec__Iterator0_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_mD08D9070FDE03F3E394A4A5C64E0D01AC81654B1 ();
+extern "C" void U3COnFinishSubmitU3Ec__Iterator0_System_Collections_IEnumerator_get_Current_m0CA6C7AD053C4B24E9086459B4F98A49937AD509 ();
+extern "C" void U3CDelayedDestroyDropdownListU3Ec__Iterator0_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_mB37E441378A386A715138ACCF66401A112973E92 ();
+extern "C" void U3CDelayedDestroyDropdownListU3Ec__Iterator0_System_Collections_IEnumerator_get_Current_m34600FE2B25D5F378D7AD55B39CA52ACF46B3CCA ();
+extern "C" void U3CCaretBlinkU3Ec__Iterator0_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m034BEC3863B981CA5923B82A37DA05192312BBC4 ();
+extern "C" void U3CCaretBlinkU3Ec__Iterator0_System_Collections_IEnumerator_get_Current_m5821D45B97FCDFDCDF9922729B72B52409A38EBD ();
+extern "C" void U3CMouseDragOutsideRectU3Ec__Iterator1_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m6728AE9C8EA3282BEC644BCDBA6DC92CD4A72051 ();
+extern "C" void U3CMouseDragOutsideRectU3Ec__Iterator1_System_Collections_IEnumerator_get_Current_mB6FD2064BA49DD96CB581B7F40B9EA6429FFFF5C ();
+extern "C" void U3CDelayedSetDirtyU3Ec__Iterator0_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m31D86FC688AC65FB6D30CADE5169A7ADE1D23D54 ();
+extern "C" void U3CDelayedSetDirtyU3Ec__Iterator0_System_Collections_IEnumerator_get_Current_mE118779782CAB21BE0427D7FA9E786177BD7A9D2 ();
+extern "C" void U3CClickRepeatU3Ec__Iterator0_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_mFE35DE612E8009FDBBB23A6448F1F017BCDF1C09 ();
+extern "C" void U3CClickRepeatU3Ec__Iterator0_System_Collections_IEnumerator_get_Current_mA1B2E11B5BD5A1FC864D5D69D875E869E423AAB7 ();
 extern "C" void ArrayList_ToArray_m94739ABC95D4D300E757047A082400297FDD8FA5 ();
 extern "C" void EventSource_SerializeEventArgs_m05C56910CA41D15C484C0357CD6845ED0E36CAAB ();
 extern "C" void MonoCustomAttrs_GetCustomAttributes_m6CA0C6509BA75EC908CC1D8B8D66ABAE6B7D6B03 ();
@@ -3961,6 +4426,7 @@ extern "C" void RuntimeType_GetMethodImpl_m48990A1621406A4DE26F448B87DAA261B9CFB
 extern "C" void Type_GetMethod_mB8368D44E32C205D279BA3BB9E6FE1D09D45A6DE ();
 extern "C" void Type_GetMethod_m9EC42D4B1F765B882F516EE6D7970D51CF5D80DD ();
 extern "C" void Type_GetMethod_m694F07057F23808980BF6B1637544F34852759FA ();
+extern "C" void Type_GetMethod_m54E1EF62AFF44AA621E074D123C5C0B3E73A7DD5 ();
 extern "C" void UnityEvent_FindMethod_Impl_mC96F40A83BB4D1430E254DAE9B091E27E42E8796 ();
 extern "C" void UnityEventBase_FindMethod_m82A135403D677ECE42CEE42A322E15EB2EA53797 ();
 extern "C" void UnityEventBase_FindMethod_m4E838DE0D107C86C7CAA5B05D4683066E9EB9C32 ();
@@ -4349,7 +4815,13 @@ extern "C" void X509KeyUsageExtension_get_KeyUsages_m9544DC0FAAD02C53D6C649E1831
 extern "C" void SecurityParser_ToXml_m200668D8B0CA2E947D3F6EDEF2A41FCA886AE160 ();
 extern "C" void SecurityElement_FromString_m07EA8AEA09583663AA62C6545644CE60ABF461F9 ();
 extern "C" void SecurityElement_GetAttribute_m3804598A273DE130113F280A0932F40117FD826A ();
+extern "C" void DynamicJoystick_get_MoveThreshold_m475CED919EFA09D7DBC1815BE0B92B55E5E3DD92 ();
 extern "C" void GM_getBallSizeFactor_m04AC6465F122D359437FF5BFC65A79BAA4DCF0BD ();
+extern "C" void Joystick_SnapFloat_mCEF2520CAC111659A65B73C418F5E6FF1CFF05C2 ();
+extern "C" void Joystick_get_DeadZone_m56376929F8539F977418D4ACB3A468758515DA85 ();
+extern "C" void Joystick_get_HandleRange_m3D14494BB31EF5C716DE54CBF4ED30284AEE855F ();
+extern "C" void Joystick_get_Horizontal_mD2CEADF3C7AD02BA60F7990F1A39BC67C6D8819B ();
+extern "C" void Joystick_get_Vertical_m2326D40EF66E0A5E2B34F9CF02A53C05CCAFDED0 ();
 extern "C" void BitConverterLE_ToSingle_m73CD02EB647B7C0C11C0D5E743425BC7DFA799BE ();
 extern "C" void Boolean_System_IConvertible_ToSingle_m97A3DC1A7593925D02E2DDCD7C5118775BB9EF2E_AdjustorThunk ();
 extern "C" void Byte_System_IConvertible_ToSingle_mBA74CDD13CAC5DE3EA580A8989F36DCE519AB5A8_AdjustorThunk ();
@@ -4379,6 +4851,8 @@ extern "C" void Int16_System_IConvertible_ToSingle_m0835ED262A97BD626712668A2147
 extern "C" void Int32_System_IConvertible_ToSingle_mD0F2590754E9373E5EF9F56DA2772BF9DD2BA7C1_AdjustorThunk ();
 extern "C" void Int64_System_IConvertible_ToSingle_m282A94EF4F2EBA18296B2824CB143B35F4F07A86_AdjustorThunk ();
 extern "C" void Math_Abs_mF0B5B265075406BE063F1D0E561DC17779EC5174 ();
+extern "C" void Math_Max_m545895C37C1F738BBB653CA1F65E50FF1D197675 ();
+extern "C" void Math_Min_mB77A95F6A1FE3B8E7CD784F20AF4E1C908B5E9CD ();
 extern "C" void Number_ParseSingle_mF8DD4A8C88973C759A7700C1A9B126566AFAFC4B ();
 extern "C" void FormatterConverter_ToSingle_m242880157B5D2C2B92138E8D1DFD87DAE5436EA8 ();
 extern "C" void __BinaryParser_ReadSingle_m4ED961B2E46245C8891E59101C3802E107B0AEC9 ();
@@ -4398,12 +4872,42 @@ extern "C" void AudioListener_ReadExtensionPropertyValue_m35EFD2B46A6541295B00D5
 extern "C" void AudioListenerExtension_ReadExtensionProperty_mB76B1DFD58F53977751D2D2024051A76618603E3 ();
 extern "C" void AudioSource_ReadExtensionPropertyValue_m4160AE7E016E58B1D17767A105AB453148DDC0DB ();
 extern "C" void AudioSourceExtension_ReadExtensionProperty_m78D048633DA14DC61E16486B26E564FE2818A120 ();
+extern "C" void Camera_get_depth_m436C49A1C7669E4AD5665A1F1107BDFBA38742CD ();
 extern "C" void Camera_get_farClipPlane_mF51F1FF5BE87719CFAC293E272B1138DC1EFFD4B ();
 extern "C" void Camera_get_nearClipPlane_mD9D3E3D27186BBAC2CC354CE3609E6118A5BF66C ();
+extern "C" void Canvas_get_referencePixelsPerUnit_mF824215754F9A66CE59F57A3F282384124EB9BAB ();
+extern "C" void Canvas_get_scaleFactor_m0F6D59E75F7605ABD2AFF6AF32A1097226CE060A ();
+extern "C" void CanvasGroup_get_alpha_mF6AFB387E643765758F1461369A65F59BA06D26E ();
+extern "C" void BaseInput_GetAxisRaw_m7FD54C7FFCE64A508570FCF0860BBD8C4946D788 ();
+extern "C" void PointerEventData_get_clickTime_m0BD723CF92024DF33AFC6D4EEE7DCBEBDCE71936 ();
+extern "C" void StandaloneInputModule_get_inputActionsPerSecond_m410CAC6D0162C2DBCED4D387F1055D4EBFD3B908 ();
+extern "C" void StandaloneInputModule_get_repeatDelay_m52337CBE0B7CC57992F907F1B747A7012D5BCFC6 ();
 extern "C" void ArgumentCache_get_floatArgument_mDDAD91A992319CF1FFFDD4F0F87C5D162BFF187A ();
+extern "C" void GUIStyle_get_fixedHeight_m9B5589C95B27C5590219413E8D7E9E1E95EB7708 ();
+extern "C" void GUIStyle_get_fixedWidth_mEACB70758F83DCD64CE363143849CC40E49B8D8D ();
+extern "C" void GUIUtility_get_pixelsPerPoint_m6B4AB38F60A0AC54034A62043F74E06A613E4D56 ();
+extern "C" void Input_GetAxisRaw_m35430CD9260C960DFE19F809D5410BA0DBFDE0F7 ();
 extern "C" void Mathf_Abs_mD852D98E3D4846B45F57D0AD4A8C6E00EF272662 ();
+extern "C" void Mathf_Acos_mF3B88F0C8A5AE43F4C4A42676C8D3DE67B3EAF82 ();
+extern "C" void Mathf_Clamp_m033DD894F89E6DCCDAFC580091053059C86A4507 ();
+extern "C" void Mathf_Clamp01_m1E5F736941A7E6DC4DBCA88A1E38FE9FBFE0C42B ();
+extern "C" void Mathf_Cos_mC5ECAE74D1FE9AF6F6EFF50AD3CD6BA1941B267A ();
+extern "C" void Mathf_Floor_mD447D35DE1D81DE09C2EFE21A75F0444E2AEF9E1 ();
+extern "C" void Mathf_InverseLerp_m7054CDF25056E9B27D2467F91C95D628508F1F31 ();
+extern "C" void Mathf_Lerp_m9A74C5A0C37D0CDF45EE66E7774D12A9B93B1364 ();
+extern "C" void Mathf_Log_mD0CFD1242805BD697B5156AA46FBB43E7636A19B ();
 extern "C" void Mathf_Max_m670AE0EC1B09ED1A56FF9606B0F954670319CB65 ();
+extern "C" void Mathf_Min_mCF9BE0E9CAC9F18D207692BB2DAC7F3E1D4E1CB7 ();
+extern "C" void Mathf_Pow_mC1BFA8F6235567CBB31F3D9507A6275635A38B5F ();
+extern "C" void Mathf_Repeat_m8459F4AAFF92DB770CC892BF71EE9438D9D0F779 ();
+extern "C" void Mathf_Round_mC8FAD403F9E68B0339CF65C8F63BFA3107DB3FC9 ();
+extern "C" void Mathf_Sign_m6FA1D12786BEE0419D4B9426E5E4955F286BC8D3 ();
+extern "C" void Mathf_Sin_m5275643192EFB3BD27A722901C6A4228A0DB8BB6 ();
+extern "C" void Mathf_SmoothDamp_m00F6830F4979901CACDE66A7CEECD8AA467342C8 ();
 extern "C" void Mathf_Sqrt_mF1FBD3142F5A3BCC5C35DFB922A14765BC0A8E2B ();
+extern "C" void Quaternion_Dot_m0C931CC8127C5461E5B8A857BDE2CE09297E468B ();
+extern "C" void RaycastHit2D_get_distance_m2D9F391717ECACFDA8E01A4126E0F8F59F7E774F_AdjustorThunk ();
+extern "C" void RaycastHit_get_distance_m1CBA60855C35F29BBC348D374BBC76386A243543_AdjustorThunk ();
 extern "C" void Rect_get_height_m088C36990E0A255C5D7DCE36575DCE23ABB364B5_AdjustorThunk ();
 extern "C" void Rect_get_width_m54FF69FC2C086E2DC349ED091FD0D6576BFB1484_AdjustorThunk ();
 extern "C" void Rect_get_x_mC51A461F546D14832EB96B11A7198DADDE2597B7_AdjustorThunk ();
@@ -4412,9 +4916,135 @@ extern "C" void Rect_get_xMin_mFDFA74F66595FD2B8CE360183D1A92B575F0A76E_Adjustor
 extern "C" void Rect_get_y_m53E3E4F62D9840FBEA751A66293038F1F5D1D45C_AdjustorThunk ();
 extern "C" void Rect_get_yMax_m8AA5E92C322AF3FF571330F00579DA864F33341B_AdjustorThunk ();
 extern "C" void Rect_get_yMin_m31EDC3262BE39D2F6464B15397F882237E6158C3_AdjustorThunk ();
+extern "C" void Screen_get_dpi_m92A755DE9E23ABA717B5594F4F52AFB0FBEAC1D3 ();
+extern "C" void Sprite_get_pixelsPerUnit_m54E3B43BD3D255D18CAE3DC8D963A81846983030 ();
+extern "C" void TextGenerator_GetPreferredHeight_mC2F191D9E9CF2365545D0A3F1EBD0F105DB27963 ();
+extern "C" void TextGenerator_GetPreferredWidth_mBF228094564195BBB66669F4ECC6EE1B0B05BAAA ();
+extern "C" void Time_get_deltaTime_m16F98FC9BA931581236008C288E3B25CBCB7C81E ();
+extern "C" void Time_get_fixedDeltaTime_m76C241EDB6F824713AF57DCECD5765871770FA4C ();
+extern "C" void Time_get_realtimeSinceStartup_mCA1086EC9DFCF135F77BC46D3B7127711EA3DE03 ();
+extern "C" void Time_get_unscaledDeltaTime_mA0AE7A144C88AE8AABB42DF17B0F3F0714BA06B2 ();
+extern "C" void Time_get_unscaledTime_m57F78B855097C5BA632CF9BE60667A9DEBCAA472 ();
+extern "C" void AspectRatioFitter_GetSizeDeltaToProduceSize_mC3922C14050AB660C751D28C05D4FE82B0ACD789 ();
+extern "C" void AspectRatioFitter_get_aspectRatio_mBE7526D1C31A194E96EF4AA54092A6D9E9A6EF25 ();
+extern "C" void CanvasScaler_get_defaultSpriteDPI_mB71D63E9E0CB1A7D735A31513FB6C176ADE08A88 ();
+extern "C" void CanvasScaler_get_dynamicPixelsPerUnit_m1A4E11FBBEBDE2D4BEC4FB05A9D15D5286AE12C6 ();
+extern "C" void CanvasScaler_get_fallbackScreenDPI_mBF6F603D6FA967ACB7A61D6E367576FC115AF833 ();
+extern "C" void CanvasScaler_get_matchWidthOrHeight_m8514D826EB52649998BCC98F488694118747190E ();
+extern "C" void CanvasScaler_get_referencePixelsPerUnit_mFAD1FEE2C025E1EA451D39FE49B95C5A9A81E9F6 ();
+extern "C" void CanvasScaler_get_scaleFactor_m76F53AD902C67A20225DC2398CAAE6695851ECFF ();
+extern "C" void ColorBlock_get_colorMultiplier_m287777DFF10C22298EF25619E2ABC26B495FA42B_AdjustorThunk ();
+extern "C" void ColorBlock_get_fadeDuration_m01EEDBB4B16043DC079E5B486CADA136A24BFEA9_AdjustorThunk ();
+extern "C" void ColorTween_GetDuration_m7BF2F133F75CC7A6355F4D00304355993DC94333_AdjustorThunk ();
+extern "C" void ColorTween_get_duration_mE4A9B4FFAB11CCF25EAACF5777991AB6749020B0_AdjustorThunk ();
+extern "C" void FloatTween_GetDuration_m26DC3E2F4525D41EE7BB3BE723B5A6E522F25360_AdjustorThunk ();
+extern "C" void FloatTween_get_duration_mBC42C5053BCB1A1315430E3E21ECE1597BB0B314_AdjustorThunk ();
+extern "C" void FloatTween_get_startValue_mB0724F053ED5114B9537A95598924068C4150C4B_AdjustorThunk ();
+extern "C" void FloatTween_get_targetValue_m492021971EC849403F0B4BA51E4E18E10EEDEB1B_AdjustorThunk ();
+extern "C" void FontData_get_lineSpacing_m46145F4C95664769BA15DCA1F6F8367E59D6A6ED ();
+extern "C" void HorizontalOrVerticalLayoutGroup_get_spacing_m28F5717667A4B061E7F6B399E67377E0AD20C730 ();
+extern "C" void Image_get_alphaHitTestMinimumThreshold_m415D9C2C31EA1C430D01034124AA3288DA41C71A ();
+extern "C" void Image_get_eventAlphaThreshold_mF11A61B3F7A15AF69697817C977F729410A6D79F ();
+extern "C" void Image_get_fillAmount_mF13692C689AFBE2C747C19232EEC27A955B166E4 ();
+extern "C" void Image_get_flexibleHeight_mC381612D70580F9C1828E3CF68DF2A83F07C25A3 ();
+extern "C" void Image_get_flexibleWidth_mAA79E4AAEEE13DDD0725F0402A0127575F58D174 ();
+extern "C" void Image_get_minHeight_m10AB0FCA41AB3D28873CC31E1FC56826BA3BDC16 ();
+extern "C" void Image_get_minWidth_mFA816D18C702122046468FB152BD4F508F9B787C ();
+extern "C" void Image_get_pixelsPerUnit_mCB9366C250CB2A844EBF38989D82483D0E4003BB ();
+extern "C" void Image_get_preferredHeight_mCBA774E6022E3C01329AECC47852FDA9C49DEA21 ();
+extern "C" void Image_get_preferredWidth_m8F50D88A8CC41266DB7528B7D88268F9EB225EA4 ();
+extern "C" void InputField_get_caretBlinkRate_m34B7821F29A28D001C5FD0E3D1112EE42258E6C2 ();
+extern "C" void InputField_get_flexibleHeight_mAA7E29FE8AAB450C493136D0902A26C3E61ED38B ();
+extern "C" void InputField_get_flexibleWidth_m1625C05B9B5F25906AA7FA379B094189BF4C62A1 ();
+extern "C" void InputField_get_minHeight_mF3BFD89BDEBEECC8EE6D2252701428CF8EFFD3BD ();
+extern "C" void InputField_get_minWidth_m5DC7CC4E72B0F13FE0111F24A5E2B0C3F21D6A80 ();
+extern "C" void InputField_get_preferredHeight_mAB9E22057BCE8C9A7585C99EF614CFE11AD43992 ();
+extern "C" void InputField_get_preferredWidth_mF18A23A94855B4ACAF18473199AB50F0629F1DBD ();
+extern "C" void LayoutElement_get_flexibleHeight_m9FEE7835ED8E42C319E285A5FF7141221F2E2587 ();
+extern "C" void LayoutElement_get_flexibleWidth_mBAF5EEF9A2CCBC584E9A1F488683EA79EA5B8BC4 ();
+extern "C" void LayoutElement_get_minHeight_mAD7754F45542D38A20BD9F547D37341AC40E3CBF ();
+extern "C" void LayoutElement_get_minWidth_m54615FF05F0007ED1A4AECF5C76198504A49B269 ();
+extern "C" void LayoutElement_get_preferredHeight_mB6C08E0D0261696AE81C2728680C3B832D2B44B5 ();
+extern "C" void LayoutElement_get_preferredWidth_mE7A85E714C694B559B74302916EE725CECD6DCAD ();
+extern "C" void LayoutGroup_GetAlignmentOnAxis_m6D5CFF17F70C61066D471D0E9DEDF01B812D04C2 ();
+extern "C" void LayoutGroup_GetStartOffset_mB56764D001D16944812FF06AD495620011EF2AB3 ();
+extern "C" void LayoutGroup_GetTotalFlexibleSize_mF320F4390B1ADD958E5D633272518BCBF8527D82 ();
+extern "C" void LayoutGroup_GetTotalMinSize_m0D0994D982E9CE1D76CE312E1D82982F01BFF4F4 ();
+extern "C" void LayoutGroup_GetTotalPreferredSize_m0604672716B73F7360F42E51301C979EEF6AC26D ();
+extern "C" void LayoutGroup_get_flexibleHeight_m19E911B7903B7247215D2622424372A8B0275EB4 ();
+extern "C" void LayoutGroup_get_flexibleWidth_mA0706CB9D6A877661D0B1B38876F767D299C19C3 ();
+extern "C" void LayoutGroup_get_minHeight_mA262734F4F50D2B9119FC096E3BCB9D215A85964 ();
+extern "C" void LayoutGroup_get_minWidth_m74C29B211590F6591007850C41BDC5D4AA5CDB30 ();
+extern "C" void LayoutGroup_get_preferredHeight_mB1C65B5710C9956EDCDB482CF2C9E227EB63C407 ();
+extern "C" void LayoutGroup_get_preferredWidth_m97401D0229B0BE9B834E4206C0BA2789EDF1003A ();
+extern "C" void LayoutUtility_U3CGetFlexibleHeightU3Em__7_m902945778174E636DD23BE8E33CC1B7A5587E45E ();
+extern "C" void LayoutUtility_U3CGetFlexibleWidthU3Em__3_m0900F28B02E23A32923B040209026047D79F8CE4 ();
+extern "C" void LayoutUtility_U3CGetMinHeightU3Em__4_m8AF12BEF1591169489043905497BF5E79F5B6643 ();
+extern "C" void LayoutUtility_U3CGetMinWidthU3Em__0_m26329C6558740A422DF27A0854D17FE16E1AEE3B ();
+extern "C" void LayoutUtility_U3CGetPreferredHeightU3Em__5_m3AAF9AE0660820D41AF766B0769458B1B523A25A ();
+extern "C" void LayoutUtility_U3CGetPreferredHeightU3Em__6_m7813DE2A0A44C5D9EC50C51AB5591171EE80CA48 ();
+extern "C" void LayoutUtility_U3CGetPreferredWidthU3Em__1_mFB976F5212E8FA38BBA7EABAD1F6A9CFC40CE127 ();
+extern "C" void LayoutUtility_U3CGetPreferredWidthU3Em__2_m7DE42EB0180254A8731AB5F9D9A6CF9BEC80C21B ();
+extern "C" void LayoutUtility_GetFlexibleHeight_m4AF4591DDD44CCB2CBB58B525A3834D369F16CEE ();
+extern "C" void LayoutUtility_GetFlexibleSize_mE6D608D88E3E16926F576D785E54D5136DBBF4CC ();
+extern "C" void LayoutUtility_GetFlexibleWidth_mF425A566DC8455AD968EBB6AF89FF870AE882447 ();
+extern "C" void LayoutUtility_GetLayoutProperty_m3BBDEF22BD7B48ED6403196319D29708D64532A7 ();
+extern "C" void LayoutUtility_GetLayoutProperty_m8F3BC69B6A027C2FDE0DEE16BC62B130C61E4FCD ();
+extern "C" void LayoutUtility_GetMinHeight_m67EE7015AEBB86311A269F682B770BCCB1111287 ();
+extern "C" void LayoutUtility_GetMinSize_m575E99CF90D246E410E9CFF7DF89A80525F51545 ();
+extern "C" void LayoutUtility_GetMinWidth_m4F9EB632AF47CF3770598F7FED826E66EF909230 ();
+extern "C" void LayoutUtility_GetPreferredHeight_mF12040E2BAEECB20D214EF11543858237DF25278 ();
+extern "C" void LayoutUtility_GetPreferredSize_m1707DA4F98CDB6F4136CB9A7D45D63F6DC083673 ();
+extern "C" void LayoutUtility_GetPreferredWidth_mF6B8011860E9D514AD3D18D5498F0A77C5F7BCA8 ();
+extern "C" void ScrollRect_RubberDelta_m63F9188FB35534CF5D9D88FFC8A707CB1395FBFA ();
+extern "C" void ScrollRect_get_decelerationRate_m9625097937ED93D3A10804AD33EE31108B0E7182 ();
+extern "C" void ScrollRect_get_elasticity_m8632600C4FFF2BE4152E9C9A0C8F07CF14803272 ();
+extern "C" void ScrollRect_get_flexibleHeight_mC95EB0AFF223A7BE2F93932808FF33EF56F42D68 ();
+extern "C" void ScrollRect_get_flexibleWidth_mFCF6F913E62F89238ABA8CF5B646138A3F793AC1 ();
+extern "C" void ScrollRect_get_horizontalNormalizedPosition_m760073B7807A1DD045CEF373783B50FE8C8222DE ();
+extern "C" void ScrollRect_get_horizontalScrollbarSpacing_mE0882DD796914402B924882626DF9A51CBB896CF ();
+extern "C" void ScrollRect_get_minHeight_m28836F9AB3A859B6E4C10130E00595BD4CFA10C1 ();
+extern "C" void ScrollRect_get_minWidth_m6BDD545EB381B2B30CB96EA72533A5E43E2B2311 ();
+extern "C" void ScrollRect_get_preferredHeight_mD6DFFDA19E4998A14105ACD4D8EF1C5ED011BB84 ();
+extern "C" void ScrollRect_get_preferredWidth_m6930D94D05209390C4C82398B43099B875010386 ();
+extern "C" void ScrollRect_get_scrollSensitivity_mA54ED4D4552EDB65A5D9FDA612E3299379313446 ();
+extern "C" void ScrollRect_get_verticalNormalizedPosition_mFE7B3C5E9FD7734F3C5872FDC8AAF65CEF66DD2C ();
+extern "C" void ScrollRect_get_verticalScrollbarSpacing_mDBF27F81E37CAF424BD23EF8421C168A0549E50D ();
+extern "C" void Scrollbar_get_size_m583A70834FEFE275D92425CB1BDDF4BBB000BD11 ();
+extern "C" void Scrollbar_get_stepSize_mE2C8B2DC9DA6C4102861FA6034D4C4A8FE5E84B8 ();
+extern "C" void Scrollbar_get_value_mB275E7CA81154BBBEBBF645488BB826139E89660 ();
+extern "C" void Slider_ClampValue_m46D3D908AB9800FB0485CBB537C189FAA0329EE4 ();
+extern "C" void Slider_get_maxValue_m0160A8C060F0EB74F10D599FFE715629EDD85240 ();
+extern "C" void Slider_get_minValue_m38EA4AF6F4E0425E43B4DDF714CE68E04E32FCF1 ();
+extern "C" void Slider_get_normalizedValue_m6D81A9FD06F9E39ED08F772300075D7761E977EA ();
+extern "C" void Slider_get_stepSize_m103018BC9BB0283984C9DB84CD055B9B600948BA ();
+extern "C" void Slider_get_value_mCC8AAFA1D4595213F76E865F3F6585E78F170295 ();
+extern "C" void Text_get_flexibleHeight_mE1E00EE2C1D41990386623BFA66090A0D9B65B8C ();
+extern "C" void Text_get_flexibleWidth_mD164002BF05FFB596464206938E460068403A5E8 ();
+extern "C" void Text_get_lineSpacing_m466DF67FD695C49FAFEB1B0F70142C721535AFB1 ();
+extern "C" void Text_get_minHeight_mECB6D1810722F49EAAE5C24F23B1BB8495FDA69E ();
+extern "C" void Text_get_minWidth_m95161D2ABAEA3E404D9BF2F660417C2761E7C4C4 ();
+extern "C" void Text_get_pixelsPerUnit_m0714914560BD82737D7E21AA653FEDFE7A687AB4 ();
+extern "C" void Text_get_preferredHeight_m43B3E341B4FD608451B58F8833603CA736BD2268 ();
+extern "C" void Text_get_preferredWidth_m8B44F6952FAE8CF60E824A5EEE678A3E9FCC0F53 ();
+extern "C" void Vector2_Angle_mC4A140B49B9E737C9FC6B52763468C5662A8B4AC ();
+extern "C" void Vector2_Dot_m34F6A75BE3FC6F728233811943AC4406C7D905BA ();
+extern "C" void Vector2_get_Item_m67344A67120E48C32D9419E24BA7AED29F063379_AdjustorThunk ();
+extern "C" void Vector2_get_magnitude_m66097AFDF9696BD3E88467D4398D4F82B8A4C7DF_AdjustorThunk ();
+extern "C" void Vector2_get_sqrMagnitude_mAEE10A8ECE7D5754E10727BA8C9068A759AD7002_AdjustorThunk ();
+extern "C" void Vector3_Distance_mE316E10B9B319A5C2A29F86E028740FD528149E7 ();
+extern "C" void Vector3_Dot_m0C530E1C51278DE28B77906D56356506232272C1 ();
 extern "C" void Vector3_Magnitude_m3958BE20951093E6B035C5F90493027063B39437 ();
 extern "C" void Vector3_SqrMagnitude_mBE7ED92F28BBE09310975CDF329913C04EA9500E ();
+extern "C" void Vector3_get_Item_mC3B9D35C070A91D7CA5C5B47280BD0EA3E148AC6_AdjustorThunk ();
 extern "C" void Vector3_get_magnitude_m9A750659B60C5FE0C30438A7F9681775D5DB1274_AdjustorThunk ();
+extern "C" void Vector3_get_sqrMagnitude_m1C6E190B4A933A183B308736DEC0DD64B0588968_AdjustorThunk ();
+extern "C" void Vector4_Dot_m9FAE8FE89CF99841AD8D2113DFCDB8764F9FBB18 ();
+extern "C" void Vector4_SqrMagnitude_mC2577C7119B10D3211BEF8BD3D8C0736274D1C10 ();
+extern "C" void Vector4_get_Item_m39878FDA732B20347BB37CD1485560E9267EDC98_AdjustorThunk ();
+extern "C" void Vector4_get_sqrMagnitude_m6B2707CBD31D237605D066A5925E6419D28B5397_AdjustorThunk ();
+extern "C" void WaitForSecondsRealtime_get_waitTime_m6D1B0EDEAFA3DBBBFE1A0CC2D372BAB8EA82E2FB ();
+extern "C" void VariableJoystick_get_MoveThreshold_m7680F75A6FE65378FA1882A60F1D2D7C10E1585F ();
 extern "C" void Locale_GetText_m41F0CB4E76BAAB1E97D9D92D109C846A8ECC1324 ();
 extern "C" void Locale_GetText_m315FCDCAB2E9BB0B34A5901B7552D17D741C74DF ();
 extern "C" void ExpandString_Expand_m425728B465F26244124F2D4F38D072C792170503 ();
@@ -5185,22 +5815,47 @@ extern "C" void AssertionMessageUtil_GetMessage_mA6DC7467BAF09543EA091FC63587C90
 extern "C" void AssertionMessageUtil_GetMessage_m97506B9B19E9F75E8FE164BF64085466FC96EA18 ();
 extern "C" void AudioSettings_GetAmbisonicDecoderPluginName_mA1D556DB7A558388778C7610BB300BBE654FBCFE ();
 extern "C" void AudioSettings_GetSpatializerPluginName_mB972ACF5EF94BF57E3C59B0237B7722345896ACC ();
+extern "C" void Bounds_ToString_m4637EA7C58B9C75651A040182471E9BAB9295666_AdjustorThunk ();
+extern "C" void Color32_ToString_m217F2AD5C02E630E37BE5CFB0933630F6D0C3555_AdjustorThunk ();
+extern "C" void Color_ToString_m17A27E0CFB20D9946D130DAEDB5BDCACA5A4473F_AdjustorThunk ();
+extern "C" void Event_ToString_m2843623B66F30AC141175B1D16F1B112D3835A65 ();
+extern "C" void Event_get_commandName_m119D9F8B0A7BA18B849B958CFAF249C970C00BF1 ();
+extern "C" void BaseInput_get_compositionString_mAF78C537B75217FADA21AB9C7CCA9A378BFA802A ();
+extern "C" void BaseRaycaster_ToString_mA5A3415283E372F274B9AD6EB2AA08DF45DC6E92 ();
+extern "C" void EventSystem_ToString_m0AB5022336D70414DB9902C681D42FC2F6CF27E6 ();
+extern "C" void PointerEventData_ToString_m2098AEE62138E4F542765892D247189AF0968070 ();
+extern "C" void PointerInputModule_ToString_m147594E0978D0469A5E1CC897553AD1097139F56 ();
+extern "C" void RaycastResult_ToString_m0064730ADA2A6E14F845BC0D709277EDCC9BEAA8_AdjustorThunk ();
+extern "C" void StandaloneInputModule_get_cancelButton_mCD51C97F526A2C4D1009356BFF2AAC3741EAE81E ();
+extern "C" void StandaloneInputModule_get_horizontalAxis_m001E63F2FC471F1E2409AC37DF9673219AF815EC ();
+extern "C" void StandaloneInputModule_get_submitButton_m6994D63E2EB8F94D5EAC485A86D04DEB1986F881 ();
+extern "C" void StandaloneInputModule_get_verticalAxis_m2F0E33E6E8095D102CD05EE3121E53298F3682F5 ();
+extern "C" void TouchInputModule_ToString_mD9F0317AA1E27B8B02FC6591A6069B0DF0394D4F ();
 extern "C" void ArgumentCache_get_stringArgument_mCD1D05766E21EEFDFD03D4DE66C088CF29F84D00 ();
 extern "C" void ArgumentCache_get_unityObjectArgumentAssemblyTypeName_mD54EA1424879A2E07B179AE93D374100259FF534 ();
 extern "C" void PersistentCall_get_methodName_m164BE545C327516CABE9464D88A417B7F00010E1 ();
 extern "C" void UnityEventBase_ToString_m7672D78CA070AC49FFF04E645523864C300DD66D ();
+extern "C" void GUILayoutEntry_ToString_mCDA5CD14A39ADAD29F6B450B98FDB80E37AC95D5 ();
+extern "C" void GUILayoutGroup_ToString_mF66B820B07A33FFA240FBBE20A6F39C492B52372 ();
+extern "C" void GUIStyle_ToString_mE73FFC6A93F4F7BC2560EADEB074F0E81F77CB07 ();
+extern "C" void GUIStyle_get_name_m111D8AB0173E1EBA46A9664EBABBC82AFE3ED71E ();
+extern "C" void GUIUtility_get_systemCopyBuffer_m5C4EE0A0FDE696D4A1337480B20AF300E6A5624E ();
 extern "C" void GameObject_get_tag_mA9DC75D3D591B5E7D1ADAD14EA66CC4186580275 ();
+extern "C" void Input_get_compositionString_mAE7E520D248E55E8C99827380E1AB586C03C757E ();
 extern "C" void Logger_GetString_m0078CBA4ADAE877152C264A4BEA5408BAB1DC514 ();
+extern "C" void Matrix4x4_ToString_m7E29D2447E2FC1EAB3D8565B7DCAFB9037C69E1D_AdjustorThunk ();
 extern "C" void MonoBehaviour_GetScriptClassName_mB38B7D00E1629DF772709F844EDB4C20074A208F ();
 extern "C" void Object_GetName_m1691C0D50AEBC1C86229AEAC2FBC1EE2DC6B67AF ();
 extern "C" void Object_ToString_m4EBF621C98D5BFA9C0522C27953BB45AB2430FE1 ();
 extern "C" void Object_ToString_m7A4BBACD14901DD0181038A25BED62520D273EDC ();
 extern "C" void Object_get_name_mA2D400141CB3C991C87A2556429781DE961A83CE ();
 extern "C" void PhysicsScene_ToString_m192392A2C486E2F76AAC736C519CB117BD187BE9_AdjustorThunk ();
+extern "C" void Plane_ToString_mF92ABB5136759C7DFBC26FD3957532B3C26F2099_AdjustorThunk ();
 extern "C" void PropertyName_ToString_mBB9266CFD39F9DDF58BECC30B5C85467C55E21C8_AdjustorThunk ();
 extern "C" void Quaternion_ToString_m38DF4A1C05A91331D0A208F45CE74AF005AB463D_AdjustorThunk ();
 extern "C" void Ray_ToString_m73B5291E29C9C691773B44590C467A0D4FBE0EC1_AdjustorThunk ();
 extern "C" void Rect_ToString_m045E7857658F27052323E301FBA3867AD13A6FE5_AdjustorThunk ();
+extern "C" void RectOffset_ToString_m6852E54822C1FACE624F3306DD9DC71628E91F93 ();
 extern "C" void Resolution_ToString_m42289CE0FC4ED41A9DC62B398F46F7954BC52F04_AdjustorThunk ();
 extern "C" void GameCenterPlatform_Internal_UserID_m9F210A0D743A528E4B17A8656E5E15486CB17010 ();
 extern "C" void GameCenterPlatform_Internal_UserName_m6AC7C02E903C355E24AB0AD703C1CDDC1F663638 ();
@@ -5220,9 +5875,22 @@ extern "C" void UserProfile_get_id_m8288816F2E75AB08541CEC21853FA578040D8D01 ();
 extern "C" void UserProfile_get_userName_m767405E576E7AC1CFA320AF99B84F1FB9B91B652 ();
 extern "C" void StackTraceUtility_ExtractFormattedStackTrace_m02A2ACEEF753617FAAA08B4EA840A49263901660 ();
 extern "C" void StackTraceUtility_ExtractStackTrace_mEDFB4ECA329B87BC7DF2AA3EF7F9A31DAC052DC0 ();
+extern "C" void TouchScreenKeyboard_get_text_mC025B2F295D315E1A18E7AA54B013A8072A8FEB0 ();
+extern "C" void AnimationTriggers_get_disabledTrigger_mAFD454C24CB2C129EA456D171F8584C9F6F45C43 ();
+extern "C" void AnimationTriggers_get_highlightedTrigger_mDEB27C95E2242771B4E37F5841B2B6D39E31DD05 ();
+extern "C" void AnimationTriggers_get_normalTrigger_m0ECEE19A906633334E1E323239DC78062ECC653B ();
+extern "C" void AnimationTriggers_get_pressedTrigger_mB9E151CDD338D8384732E922918FABAE30EECE18 ();
+extern "C" void OptionData_get_text_m49A1C0F5E4C4AFE1833CB7EE217F0F8826651006 ();
+extern "C" void InputField_GetSelectedString_mBB6D1FCA9835317428FF0D8CBBD021ED593A7217 ();
+extern "C" void InputField_get_clipboard_mFA7B2FBD9DE76B73081AFDCC4298B63AEA36D757 ();
+extern "C" void InputField_get_compositionString_mBC180C2EE0AD8102425A6AFAEE7CB4726450F742 ();
+extern "C" void InputField_get_text_m83A3F1698F82ECB7B763E786D1FB1F04D767F1E7 ();
+extern "C" void LayoutRebuilder_ToString_mADBFEAF2340C483ED424372B032B55BD1E5CBF73 ();
+extern "C" void Text_get_text_mB6389118C605BC236DEE9A96BEC87CB400AB77EF ();
 extern "C" void UnityString_Format_m415056ECF8DA7B3EC6A8456E299D0C2002177387 ();
 extern "C" void Vector2_ToString_m83C7C331834382748956B053E252AE3BD21807C4_AdjustorThunk ();
 extern "C" void Vector3_ToString_m2682D27AB50CD1CE4677C38D0720A302D582348D_AdjustorThunk ();
+extern "C" void Vector4_ToString_m769402E3F7CBD6C92464D916527CC87BBBA53EF9_AdjustorThunk ();
 extern "C" void TypeInferenceRuleAttribute_ToString_m49343B52ED0F3E75B3E56E37CF523F63E5A746F6 ();
 extern "C" void WebRequestUtils_RedirectTo_m8AC7C0BFC562550118F6FF4AE218898717E922C1 ();
 extern "C" void StringComparer_get_CurrentCultureIgnoreCase_m1900DE3D696056A54A108E11FE8991A677305F60 ();
@@ -5700,6 +6368,8 @@ extern "C" void TypeSpec_Resolve_mCE50015512C48D97F6D5558A2001825102BDDBF7 ();
 extern "C" void UnitySerializationHolder_MakeElementTypes_m53847C6D77B4D1F96596279EBF443F521CAD7B24 ();
 extern "C" void AttributeHelperEngine_GetParentTypeDisallowingMultipleInclusion_m716999F8F469E9398A275432AA5C68E81DD8DB24 ();
 extern "C" void AudioExtensionDefinition_GetExtensionType_mA3CC9D2F26A5188863150BCC39CD6EBE6D175260 ();
+extern "C" void PlayableHandle_GetPlayableType_m962BE384C093FF07EAF156DA373806C2D6EF1AD1_AdjustorThunk ();
+extern "C" void PlayableHandle_GetPlayableType_Injected_m65C3EB2DEC74C0A02707B6A61D25B3BFEC91DB66 ();
 extern "C" void ReflectionExtensions_GetTypeCode_m55D509078B5566EA871D7C211EDE34AE45661BBD ();
 extern "C" void Boolean_GetTypeCode_mDA98DB5F00159689F46329C57C3A888F7DB37B88_AdjustorThunk ();
 extern "C" void Byte_GetTypeCode_m043F4E13AF78380223AD83B1A86A028020F7A724_AdjustorThunk ();
@@ -5801,6 +6471,7 @@ extern "C" void UInt64_System_IConvertible_ToUInt16_m6B443639CDAEEDBE636A47EF6D0
 extern "C" void Uri_CheckAuthorityHelper_m5046CE781115A54CAE3ACD2C03987F526A761387 ();
 extern "C" void Uri_ParseSchemeCheckImplicitFile_m92A658AE6C04E038058AD8E9581A41B06B6D6243 ();
 extern "C" void Uri_get_SecuredPathIndex_mC59A2366D6F3667017F677351C4350C9541905AA ();
+extern "C" void Sprite_get_triangles_m3B0A097930B40C800E0591E5B095D118D2A33D2E ();
 extern "C" void U3CPrivateImplementationDetailsU3E_ComputeStringHash_m7C7DB27BC4297A74A96AC53E1EDD3E7415DFB874 ();
 extern "C" void U3CPrivateImplementationDetailsU3E_ComputeStringHash_m5C1A2CA6703F0D94CE54FF9003154837BB1CDF9A ();
 extern "C" void ManifestEtw_EventRegister_mE0FD847E8BE55184054D11D9CB65145D5DD7EC9A ();
@@ -5820,6 +6491,7 @@ extern "C" void Convert_ToUInt32_mB7F4B7176295B3AA240199C4C2E7E59C3B74E6AF ();
 extern "C" void Convert_ToUInt32_mC305AB953ECDC1EDEC3F76C2ED9C2898A6A2D8A8 ();
 extern "C" void Convert_ToUInt32_mA22ABF80925CA54B6B4869939964184C7F344B41 ();
 extern "C" void Convert_ToUInt32_mD1B91075B4D330E0D2D4600A6D5283C2FA1586E4 ();
+extern "C" void Convert_ToUInt32_m5CD74B1562CFEE536D3E9A9A89CEC1CB38CED427 ();
 extern "C" void Convert_ToUInt32_mB53B83E03C15DCD785806793ACC3083FCC7F4BCA ();
 extern "C" void Convert_ToUInt32_m78245CD2AE3D0369F5A99FF013AF73FFBB8CF869 ();
 extern "C" void Convert_ToUInt32_mE576F9C14D9BA51A0E3471521033BF798781CCE7 ();
@@ -5931,10 +6603,41 @@ extern "C" void ResourceManagerMediator_ObtainSatelliteContractVersion_m4846347F
 extern "C" void ResourceManagerMediator_get_SatelliteContractVersion_mFB0B0520B532EE1DA3A8977663F4B7D99D9D2F46 ();
 extern "C" void ResourceManager_GetSatelliteContractVersion_mCB84CB98869B7E101080CAB51164BCBA002E003C ();
 extern "C" void Version_Parse_mAF74E042711BB851C4659BF71E09B9E79A9AC848 ();
+extern "C" void DynamicJoystick__ctor_mD87E098A06147EABDFDB7F80162B114A799F9D4A ();
+extern "C" void DynamicJoystick_HandleInput_mB6316E3D97C617061C01DC49DD829C0C4E91BB27 ();
+extern "C" void DynamicJoystick_OnPointerDown_mF71D95263661D939DBE2E5C17C73A599E60778B9 ();
+extern "C" void DynamicJoystick_OnPointerUp_mC38FD6A7ADB9CDAB0BF04235DA5110A37B10E771 ();
+extern "C" void DynamicJoystick_Start_m28FAB53F804FC3AEAA7DB62E75DA0BE645C1B494 ();
+extern "C" void DynamicJoystick_set_MoveThreshold_m41DF6070CB77AD666C343C6FCD04F2D013FF7171 ();
+extern "C" void FixedJoystick__ctor_mC91231670E4D4850A5BFB905300F155AA2DE60FD ();
+extern "C" void FloatingJoystick__ctor_mFE6173BF4B5A37A9E365D8322334FF90AA0DE960 ();
+extern "C" void FloatingJoystick_OnPointerDown_m2DB74D40D3D0D670E92442E24851FF5995CCE764 ();
+extern "C" void FloatingJoystick_OnPointerUp_m31F698F0F60ECAAB34D55DF8B1FF2E533B818DEA ();
+extern "C" void FloatingJoystick_Start_m0F34B432F4B1DF7D2A84264E9C5E8553A4E7F0DE ();
 extern "C" void GM__cctor_mD53B668ABFFBBC9F1AAFF7A9627A57C8826EFEC6 ();
 extern "C" void GM__ctor_mFA2F4298AD8F0DB32ADD0BAAFE66D6EDFAC80F46 ();
 extern "C" void GM_Start_m54B0B8EBAE909DD1645FA3FED01E0F93E3B7A8A2 ();
 extern "C" void GM_Update_m67496681FA3877B3F60C5059F0DD1EF03B8D3E51 ();
+extern "C" void Joystick__ctor_m0CEC3DFCF02C69B8020F600539EB02297E26D1CE ();
+extern "C" void Joystick_FormatInput_mDE5D2FB4C4FB309B92816E806756B01F61FF26D5 ();
+extern "C" void Joystick_HandleInput_mA2FF5AE57290471865DC02DC2ED3BDA3FDBA2506 ();
+extern "C" void Joystick_OnDrag_m5C8DBE5110822CAF8A7DEDDE6AC240D2C1BDD7C4 ();
+extern "C" void Joystick_OnPointerDown_m408D43BE6A49862DFD49B5198E0B61B85A162703 ();
+extern "C" void Joystick_OnPointerUp_m771F7519F51F02DAADA7DE0A562F82710FA721BC ();
+extern "C" void Joystick_Start_mA4B921AF2FEC7B830AC4F0D5E49AF8934ECAD201 ();
+extern "C" void Joystick_set_AxisOptions_m3194AF6B83B35084063737EBA7D8C10C652241F8 ();
+extern "C" void Joystick_set_DeadZone_mF8F4688B5A32363F2EF7DE0A0FF90B7D65F11C8B ();
+extern "C" void Joystick_set_HandleRange_m93B28B83AB3DC010C509C16A76BE34896C27B647 ();
+extern "C" void Joystick_set_SnapX_mACA46808CD8386CABE024E9F55A407F0C8A138F0 ();
+extern "C" void Joystick_set_SnapY_mA985E49A53EBD417CF06948C805588612C0395C1 ();
+extern "C" void JoystickPlayerExample__ctor_m49F04D0D45C4CBE5F904177CF3AB4A60249AD854 ();
+extern "C" void JoystickPlayerExample_FixedUpdate_m01D558819D864B0B36B12AECB92B7A9FE76D63B3 ();
+extern "C" void JoystickSetterExample__ctor_mE68D37B29683A04E3232D4A023093BD65336413C ();
+extern "C" void JoystickSetterExample_AxisChanged_m67CF795BA1CEA14B6B2AE3E71191E5E980EB03F1 ();
+extern "C" void JoystickSetterExample_ModeChanged_mA0A6156A4DF33D8F0AD6FD106A7A38F33A0F2BBD ();
+extern "C" void JoystickSetterExample_SnapX_mC53461B29C19CDB0FF5E75A9D257B9CF0B1E0CCE ();
+extern "C" void JoystickSetterExample_SnapY_m35C5092C9B62F6BB55D45FF5ECEA2C7F742F1EDB ();
+extern "C" void JoystickSetterExample_Update_m27F40165A6AE141735CD9680F90F53599D2CFFC2 ();
 extern "C" void ExpandString__ctor_m40914C70C00DE83914E2279B74C3E83A1ED80F67 ();
 extern "C" void KeyHandler__cctor_m269E0CC25BE7E94E5CCA5535C982CAD816C42953 ();
 extern "C" void KeyHandler__ctor_m4BB2A9EE90F10C82AA2A63A0BD3827C38EEE58F8 ();
@@ -7503,6 +8206,7 @@ extern "C" void UnmanagedMemoryStreamForModule_Dispose_mD8755196D3FC9A3BDB553EB3
 extern "C" void Assembly__ctor_m41300BAA3154BEAFEB427974120BA78C393E5DCB ();
 extern "C" void Assembly_GetObjectData_m4D7E3527DBE4C4FE28966630DD35E9A6CB0EAE04 ();
 extern "C" void AssemblyCompanyAttribute__ctor_m3088A5531C90B80A43C0F65689CB2663263FA806 ();
+extern "C" void AssemblyConfigurationAttribute__ctor_m581F06B414718310B736519898F5069A0CE71132 ();
 extern "C" void AssemblyCopyrightAttribute__ctor_mB0836615C175FAAE019DFC1CDFF84C14AD983C9B ();
 extern "C" void AssemblyDefaultAliasAttribute__ctor_m99B4C847D97B15003F5EC75BBAEE5DB078A24302 ();
 extern "C" void AssemblyDelaySignAttribute__ctor_m871AA899D387487CD021ACA02966BF3D47D5BD6B ();
@@ -7524,6 +8228,7 @@ extern "C" void AssemblyName_set_Name_mC3FBA6D29B4DAFE0EEA244853146DB7F08B9C93A 
 extern "C" void AssemblyName_set_Version_m41C659EA105905CB03C594648F05AEC91DFA28D9 ();
 extern "C" void AssemblyProductAttribute__ctor_mAA824DFBD053BB066CD1F5D6E6FB01257EA6F588 ();
 extern "C" void AssemblyTitleAttribute__ctor_m629E14EAA0DD77FDFD7C806AC703D262D7C3E791 ();
+extern "C" void AssemblyTrademarkAttribute__ctor_mED3DDAEFE422C33614EE6439949BF5BE084D6C77 ();
 extern "C" void Binder__ctor_m64E1D14D089E10DB9DAD79A4DC5873472008E99E ();
 extern "C" void ConstructorInfo__cctor_mE7FF76E2518E432483251CF1DDEC896BAECF331A ();
 extern "C" void ConstructorInfo__ctor_mB0149250348ADBEF3F0D48AE0671A156097A8F75 ();
@@ -8577,6 +9282,7 @@ extern "C" void X509SubjectKeyIdentifierExtension__ctor_m98571FC543622A4BD3EA778
 extern "C" void X509SubjectKeyIdentifierExtension__ctor_mF692F46CE97CB60AF86C1A74E709E8276B7D9AB1 ();
 extern "C" void X509SubjectKeyIdentifierExtension__ctor_m95DD08883D5E284C15820274737324063C4E4432 ();
 extern "C" void X509SubjectKeyIdentifierExtension_CopyFrom_m45E7EB4E976E4759046077C79FBC4A820C9A95EC ();
+extern "C" void SecurityPermissionAttribute_set_SkipVerification_m1A284EDF78B6996F4CDF56A6FDEAA18B821DE765 ();
 extern "C" void EvidenceEnumerator__ctor_mD4153081415054237617C4E5AFAA036445E6A43B ();
 extern "C" void Evidence__ctor_mF2BFE39AA27373124E9DE283733ACF3C52BB7392 ();
 extern "C" void Evidence_CopyTo_m1450F3905052BFEBD0F9CED1B855EB81CC867356 ();
@@ -9443,9 +10149,11 @@ extern "C" void __Filters__cctor_mAC913CDF08E7AB6541101C4B96483BF49C6E2F14 ();
 extern "C" void __Filters__ctor_mA9DEA9B853B953C85A78E101A8001E9EE0E66B35 ();
 extern "C" void __Il2CppComDelegate_Finalize_m893C22F7BEDFBDF8F015EA584CC1419D144D2187 ();
 extern "C" void __Il2CppComObject_Finalize_m98123DBAAA7974D2616F9E90F2574955714CA9A9 ();
+extern "C" void ThrowStub_ThrowNotSupportedException_mF0DAFE591641D359313AB87E6900E4B05E42390A ();
 extern "C" void ThrowStub_ThrowNotSupportedException_mF1DE187697F740D8C18B8966BBEB276878CD86FD ();
 extern "C" void ThrowStub_ThrowNotSupportedException_mA248D7D785682F31CDF02FDC1FAB3173EE1B1E19 ();
-extern "C" void ThrowStub_ThrowNotSupportedException_mF0DAFE591641D359313AB87E6900E4B05E42390A ();
+extern "C" void AddComponentMenu__ctor_m33A9DE8FEE9BC9C12F67CF58BFEBECA372C236A3 ();
+extern "C" void AddComponentMenu__ctor_m78D1D62B91D88424AE2175501B17E4609EF645EA ();
 extern "C" void SessionStateChanged__ctor_m596C4D6873E1F9841C454BA7542D468F53A2DB25 ();
 extern "C" void SessionStateChanged_EndInvoke_m1BE07B322DE61DE095B2E2F0D99F41D125F95E42 ();
 extern "C" void SessionStateChanged_Invoke_m04E35EE6755FE675385F783A6FA7096BACD96740 ();
@@ -9454,6 +10162,30 @@ extern "C" void AnimationCurve__ctor_mA12B39D1FD275B9A8150227B24805C7B218CDF2C (
 extern "C" void AnimationCurve__ctor_mE9462D171C06A2A746B9DA1B0A6B0F4FC7DB94CF ();
 extern "C" void AnimationCurve_Finalize_mDF0DECA505DA883A56B2E3FCE1EF19CC3959F11D ();
 extern "C" void AnimationCurve_Internal_Destroy_m295BAECEF97D64ACFE55D7EA91B9E9C077DB6A7C ();
+extern "C" void AnimationEvent__ctor_m6C228EB716B6B53DE2665091C056428EFB90897F ();
+extern "C" void AnimationLayerMixerPlayable__cctor_m3712A5D44F275E70624C0D734C9CED9BD12D0AC9 ();
+extern "C" void AnimationLayerMixerPlayable__ctor_mA2156DFDEA435F14446528098837ED3FF6B7147C_AdjustorThunk ();
+extern "C" void AnimationMixerPlayable__cctor_m820F56C1D4257D4F5446BD66402D4428E0DF8E3E ();
+extern "C" void AnimationMixerPlayable__ctor_mD446E3257F803A3D4C04D394A75AA5376533CF43_AdjustorThunk ();
+extern "C" void AnimationMotionXToDeltaPlayable__cctor_mCB948CE31E0AAEC53CB1D6746D091604413C5EEE ();
+extern "C" void AnimationMotionXToDeltaPlayable__ctor_mC51D5F76DD0CE29B305932303A4A5AA42ACCD9E6_AdjustorThunk ();
+extern "C" void AnimationOffsetPlayable__cctor_m174AD41778526FA15E41C6A11303A4F190A4CEA6 ();
+extern "C" void AnimationOffsetPlayable__ctor_m380B4761BE82E4684F82A18933DBBC79E3D5F607_AdjustorThunk ();
+extern "C" void AnimationPosePlayable__cctor_mDE42A26BC2624427AA8086C4AB69FB531949153F ();
+extern "C" void AnimationPosePlayable__ctor_mF02468DCD2C8C0226C89C4DF90454DD9D230595D_AdjustorThunk ();
+extern "C" void AnimationRemoveScalePlayable__cctor_m7BA13559FDA2BF8E061839B333085C402DED6829 ();
+extern "C" void AnimationRemoveScalePlayable__ctor_mB06216973E6B635E7F4A3C8E372E5F7E89D327E1_AdjustorThunk ();
+extern "C" void AnimatorControllerPlayable__cctor_m6FCC197F3BF33EAFC37D5217617FCDC64E8B304E ();
+extern "C" void AnimatorControllerPlayable__ctor_m739B1BFC592B6C160410141057F1B2BA1B971897_AdjustorThunk ();
+extern "C" void AnimatorControllerPlayable_SetHandle_m2CAE8DABC4B19AB6BD90249D0D7FC7A9E07C3A96_AdjustorThunk ();
+extern "C" void Animator_ResetTrigger_m70120C9A00EA482BF0880D2C02EC814CE3D71FD1 ();
+extern "C" void Animator_ResetTriggerString_m31B233F948D7551D220FEDA56B002E6724B89851 ();
+extern "C" void Animator_SetTrigger_m68D29B7FA54C2F230F5AD780D462612B18E74245 ();
+extern "C" void Animator_SetTriggerString_m77CE57996467D0C973FA2D0CB4DF87BD062C8A1E ();
+extern "C" void OnOverrideControllerDirtyCallback__ctor_m9277DED194C85B1C3B4C7ABBB1D54CCB43C724D8 ();
+extern "C" void OnOverrideControllerDirtyCallback_EndInvoke_m39CFD9FD2CC3035CFF6809F56447932B1394C08E ();
+extern "C" void OnOverrideControllerDirtyCallback_Invoke_m002CFC2CE3C42A058380BE98F015E654D5F9F177 ();
+extern "C" void AnimatorOverrideController_OnInvalidateOverrideController_mA538F1349FCF3968C5042F2D8860114F51818CB2 ();
 extern "C" void LogCallback__ctor_mF61E7CECD9E360B0B8A992720860F9816E165731 ();
 extern "C" void LogCallback_EndInvoke_m03CD6E28DACBF36E7A756F8CC653E546CBF3FD54 ();
 extern "C" void LogCallback_Invoke_mCB0C38C44CBF8BBE88690BE6C0382011C5D5B61F ();
@@ -9521,9 +10253,12 @@ extern "C" void AudioSourceExtension_set_audioSource_m62B17CFE5F303CC29EE023B36D
 extern "C" void BeforeRenderHelper__cctor_mAF1DF30E8F7C2CE586303CAA41303230FE2DEB0D ();
 extern "C" void BeforeRenderHelper_Invoke_m5CADC9F58196CF3F11CB1203AEAF40003C7D4ADD ();
 extern "C" void Behaviour__ctor_m409AEC21511ACF9A4CC0654DF4B8253E0D81D22C ();
+extern "C" void Behaviour_set_enabled_m9755D3B17D7022D23D1E4C618BD9A6B66A5ADC6B ();
 extern "C" void FreeFunctionAttribute__ctor_m69E4EBDD649729C9473BA68585097AF48D06B83D ();
 extern "C" void FreeFunctionAttribute__ctor_m18D7DE98494E55663EB23287EE6DB00E6649241F ();
 extern "C" void FreeFunctionAttribute__ctor_m54898E27CB62607552A0612FA26165A18CB3F444 ();
+extern "C" void IgnoreAttribute__ctor_m4B78BE44704DA9040A683AC928187E1DAE6BC885 ();
+extern "C" void IgnoreAttribute_set_DoesNotContributeToSize_mF507E8A0ADF588062014330B44B9BD674D7A75AA ();
 extern "C" void NativeConditionalAttribute__ctor_mBF34AC3E165A50B3BE9F49520DDE1851DC7CFF13 ();
 extern "C" void NativeConditionalAttribute_set_Condition_m0BD35F77FDBCC278203543FB3CAC35A8227474B5 ();
 extern "C" void NativeConditionalAttribute_set_Enabled_m3584B9F0F4BD7F3F8B8C49595D1900EF01B3C1E0 ();
@@ -9542,6 +10277,8 @@ extern "C" void NativeNameAttribute__ctor_m85D49395E6305D8C6CFA8C39A83653F36A8FC
 extern "C" void NativeNameAttribute_set_Name_m8559126FDC09CB14ADF9AF9D03E6102908738FD3 ();
 extern "C" void NativePropertyAttribute__ctor_mC9AA5DB9519961A6AA76C71968B7E4F9649235FF ();
 extern "C" void NativePropertyAttribute__ctor_m92618E6DC14A2AD87A9CB3A2BB3DFCDA1A431164 ();
+extern "C" void NativePropertyAttribute__ctor_m2584E9D08E56EFB31AE671E6488046168A3911D3 ();
+extern "C" void NativePropertyAttribute_set_TargetType_m8705F4754AA0C953CDA6DDCB95B0276F51FE0146 ();
 extern "C" void NativeThrowsAttribute__ctor_m4EBDA91A1EBCABBD08DF5A91E216578B8CD76EDB ();
 extern "C" void NativeThrowsAttribute_set_ThrowsException_m563468CF2C9D8B2D745373285B67150C734F363F ();
 extern "C" void NativeTypeAttribute__ctor_mC6578F8A8AD3F4778CCC17248E32746D9BCD7C1F ();
@@ -9551,6 +10288,8 @@ extern "C" void NativeTypeAttribute__ctor_mF0E347C64A5AAF78A6FDB8EF2FDC39C0753B0
 extern "C" void NativeTypeAttribute_set_CodegenOptions_m25EC23287090E27AA2344F376BABD52DE4D4A23D ();
 extern "C" void NativeTypeAttribute_set_Header_m1CC3A47E66E54E5E7A87C5C5911B8EE9D0E8657B ();
 extern "C" void NativeTypeAttribute_set_IntermediateScriptingStructName_m6409CEAAEE1D910DE284325904215DAE9104DDFE ();
+extern "C" void NativeWritableSelfAttribute__ctor_m827940BA28BA2267BA715EADC657E4638C1FF780 ();
+extern "C" void NativeWritableSelfAttribute_set_WritableSelf_mB6A7EF77A83E5B77DAE7BBA1F8A63BBB44C1529B ();
 extern "C" void NotNullAttribute__ctor_m8F88B3030D52285AA10334E4E117151630BEC045 ();
 extern "C" void StaticAccessorAttribute__ctor_m6698A0204830E258A0D9881AFA7368196C179782 ();
 extern "C" void StaticAccessorAttribute__ctor_m8F492CF3D710FAE0D63BB8C2640D271264C84448 ();
@@ -9559,18 +10298,70 @@ extern "C" void StaticAccessorAttribute_set_Type_m85233B66B145700BD66145EB0AA31D
 extern "C" void ThreadSafeAttribute__ctor_mC3058002BD52E2EB8475B8115A1AC5FFCA53E1DD ();
 extern "C" void UnmarshalledAttribute__ctor_m7E224B875755FD7109EDFB2CBA2A2F7F617A1191 ();
 extern "C" void VisibleToOtherModulesAttribute__ctor_m82D98B6D202548277D803878EB2BE3A82722CC74 ();
+extern "C" void VisibleToOtherModulesAttribute__ctor_mEC52A33ADE6FEA527A467F9F64BF966F2A63A942 ();
 extern "C" void BootConfigData__ctor_m6C109EB48CAE91C89BB6C4BFD10C77EA6723E5AE ();
+extern "C" void Bounds__ctor_m294E77A20EC1A3E96985FE1A925CB271D1B5266D_AdjustorThunk ();
+extern "C" void Bounds_Encapsulate_mD1F1DAC416D7147E07BF54D87CA7FF84C1088D8D_AdjustorThunk ();
+extern "C" void Bounds_SetMinMax_m04969DE5CBC7F9843C12926ADD5F591159C86CA6_AdjustorThunk ();
+extern "C" void Bounds_set_center_mAD29DD80FD631F83AF4E7558BB27A0398E8FD841_AdjustorThunk ();
+extern "C" void Bounds_set_extents_mC83719146B06D0575A160CDDE9997202A1192B35_AdjustorThunk ();
+extern "C" void Bounds_set_size_m70855AC67A54062D676174B416FB06019226B39A_AdjustorThunk ();
 extern "C" void CameraCallback__ctor_m7CAE962B355F00AB2868577DC302A1FA80939C50 ();
 extern "C" void CameraCallback_EndInvoke_m3B1E210D6A4F41F0FF74B187B3D7CB64C302D146 ();
 extern "C" void CameraCallback_Invoke_m2B4F10A7BF2620A9BBF1C071D5B4EE828FFE821F ();
+extern "C" void Camera__ctor_mD07AB17467A910BC7A4EE32BB9DD546748E31254 ();
 extern "C" void Camera_FireOnPostRender_m17457A692D59CBDDDBBE0E4C441D393DAD58654B ();
 extern "C" void Camera_FireOnPreCull_m7E8B65875444B1DE75170805AE22908ADE52301E ();
 extern "C" void Camera_FireOnPreRender_m996699B5D50FC3D0AB05EED9F9CE581CCDC2FF67 ();
 extern "C" void Camera_ScreenPointToRay_Injected_m1135D2C450C7DED657837BEFE5AD7FAFB9B99387 ();
+extern "C" void Camera_ScreenToViewportPoint_Injected_m407A30EDD4AC317DE3DD0B4361664F438E5A6639 ();
+extern "C" void Camera_WorldToScreenPoint_Injected_m640C6AFA68F6C2AD25AFD9E06C1AEFEAC5B48B01 ();
 extern "C" void Camera_get_pixelRect_Injected_mDE6A7F125BC1DD2BCFEA3CB03DFA948E5635E631 ();
+extern "C" void WillRenderCanvases__ctor_m9AB0D8B934BE573C4B3ABBAA313984B054B4B885 ();
+extern "C" void WillRenderCanvases_EndInvoke_mD86D55F1B1B76055B8992CE306C56BFDA735B935 ();
+extern "C" void WillRenderCanvases_Invoke_m115F44E08A802F1800D79D3B92EE1A575AD08834 ();
+extern "C" void Canvas__ctor_m83621E7EFCEFA5A0EDC886CB878FE10E7281B951 ();
+extern "C" void Canvas_ForceUpdateCanvases_mB23FF44265E49BE388A79267533EA482F08C0755 ();
+extern "C" void Canvas_SendWillRenderCanvases_mD38081FE3172AC7A884B8ED459E90633167B2D10 ();
+extern "C" void Canvas_add_willRenderCanvases_mACABFF4EAFB7DCFF4B9A33357D496EC3010D7E6B ();
+extern "C" void Canvas_remove_willRenderCanvases_m9A5F0E946B4549D576EDAD5618FEA2D532377831 ();
+extern "C" void Canvas_set_overrideSorting_m446842097ED576AB8706B9980E85AECC24C13015 ();
+extern "C" void Canvas_set_referencePixelsPerUnit_m16AF69DA4801579FD03A220D3D6293421671F341 ();
+extern "C" void Canvas_set_scaleFactor_m40359EE941E1573107542A2377E87BEB17C10163 ();
+extern "C" void Canvas_set_sortingLayerID_m9FE5A69A22DB3316964C9D5CD49E5B4352550747 ();
+extern "C" void Canvas_set_sortingOrder_m4387540EBDF2716DFAE26F27074DBF15F32382E7 ();
+extern "C" void CanvasGroup_set_alpha_m7E3C4DCD13E6B1FD43C797EFF9698BACA1FBEC3D ();
+extern "C" void CanvasRenderer_AddUIVertexStream_m58722DF8AED39532C201A0A79A84F10BEC9C7EAB ();
+extern "C" void CanvasRenderer_Clear_m8D621D571EEE6C2609F18ADF888008273A5A29AC ();
+extern "C" void CanvasRenderer_CreateUIVertexStream_m1826F08D237884FD9817F2E0251FF0F813A2C1CA ();
+extern "C" void CanvasRenderer_CreateUIVertexStreamInternal_m5BC57F4F9325EC398216AEA1E53CC21E5C6CA920 ();
+extern "C" void CanvasRenderer_DisableRectClipping_m67C4FF4EF6888518AC4B9B8CE256DC761DF08D42 ();
+extern "C" void CanvasRenderer_EnableRectClipping_m7C409436632B57EEC761606E22408355D8197397 ();
+extern "C" void CanvasRenderer_EnableRectClipping_Injected_mB430FAA285D77D2EA776CA90D3B1179DE637B20D ();
+extern "C" void CanvasRenderer_GetColor_Injected_mD90AE649D248DA886C8DB085FC27B7134399F68A ();
+extern "C" void CanvasRenderer_SetAlphaTexture_m0DF53B597582D8661411DF84ABF25F995540F34E ();
+extern "C" void CanvasRenderer_SetColor_mD19F4B2314FD9820902AF6ED1F0392FC78447C06 ();
+extern "C" void CanvasRenderer_SetColor_Injected_mA64D7935C130EDFCB8D9C1DF27F67C8EF6F36CCE ();
+extern "C" void CanvasRenderer_SetMaterial_m9851A87FA12E2CD1321BB971953E899292EC4707 ();
+extern "C" void CanvasRenderer_SetMaterial_mD407C670DBA743283F32581586B5DD51272B08C7 ();
+extern "C" void CanvasRenderer_SetMesh_mC87C841A52339C33E5B1C644C70FC9CC9C560988 ();
+extern "C" void CanvasRenderer_SetPopMaterial_m4772792D80E04FF3B3F5BA0B65AF94F3BE326A2C ();
+extern "C" void CanvasRenderer_SetTexture_m406C073585AF48FD2A880D73419F6E1069BEEA84 ();
+extern "C" void CanvasRenderer_SplitIndicesStreamsInternal_mE13C66217A4A26239D601CC5FDD1AB8B302D487B ();
+extern "C" void CanvasRenderer_SplitUIVertexStreams_m6398634C55BA494F2D2AE13FC3878E698330AB9F ();
+extern "C" void CanvasRenderer_SplitUIVertexStreamsInternal_m845727DA732141F79E070AABA87C4468C3D9AFE4 ();
+extern "C" void CanvasRenderer_set_cull_m71618AE8E7F24B7B7B04F75641295ECD84F9AFA1 ();
+extern "C" void CanvasRenderer_set_hasPopInstruction_m3432A1568931473F691261A90D82AFD4063E27E5 ();
+extern "C" void CanvasRenderer_set_materialCount_m124AD7592DD6078E097C9FD6CBC5676341DBCA9E ();
+extern "C" void CanvasRenderer_set_popMaterialCount_m238C5CF7919510F3A9FE70AC502D9C3F0C2BFE6A ();
 extern "C" void ClassLibraryInitializer_Init_mB8588C1A9DD9CB6B5CE77DB1F79AE301C46E0CE7 ();
+extern "C" void Color32__ctor_m1AEF46FBBBE4B522E6984D081A3D158198E10AA2_AdjustorThunk ();
+extern "C" void Color__ctor_mC9AEEB3931D5B8C37483A884DD8EB40DC8946369_AdjustorThunk ();
+extern "C" void Color__ctor_m20DF490CEB364C4FC36D7EE392640DF5B7420D7C_AdjustorThunk ();
 extern "C" void Component__ctor_m5E2740C0ACA4B368BC460315FAA2EDBFEAC0B8EF ();
 extern "C" void Component_GetComponentFastPath_mDEB49C6B56084E436C7FC3D555339FA16949937E ();
+extern "C" void Component_GetComponents_m1ACBE6B9A75ECC898BA3B21D59AA7B3339D7735A ();
+extern "C" void Component_GetComponentsForListInternal_m469B4C3A883942213BEA0EAAA54629219A042480 ();
 extern "C" void Coroutine__ctor_mCA679040DA81B31D1E341400E98F6CF569269201 ();
 extern "C" void Coroutine_Finalize_mACCDC3AFBA7F1D247231AA875B5099200AF9ECC5 ();
 extern "C" void Coroutine_ReleaseCoroutine_mD33DD220788EEA099B98DD1258D6332A46D3D571 ();
@@ -9590,18 +10381,24 @@ extern "C" void CullingGroup_DisposeInternal_m50A7ADA8944DDE68D1D10A7CFFEB37EE2F
 extern "C" void CullingGroup_Finalize_m67D1F84462EC91AACBB9899B859D26CAD5BE24AB ();
 extern "C" void CullingGroup_FinalizerFailure_mB9C9DC09F2124724B22C0726B6B1EA2957D87973 ();
 extern "C" void CullingGroup_SendEvents_m08EBF10EEFF49CF9894BA940FD969C8F53F807E7 ();
+extern "C" void CustomYieldInstruction__ctor_m06E2B5BC73763FE2E734FAA600D567701EA21EC5 ();
 extern "C" void Debug__cctor_m9BFDFB65B30AA2962FDACD15F36FC666471D1C5E ();
 extern "C" void Debug_Log_m4B7C70BAFD477C6BDB59C88A0934F0B018D03708 ();
 extern "C" void Debug_LogAssertion_m2A8940871EC1BD01A405103429F2FCE2AFB12506 ();
 extern "C" void Debug_LogError_m3BCF9B78263152261565DCA9DB7D55F0C391ED29 ();
 extern "C" void Debug_LogError_m97139CB2EE76D5CD8308C1AD0499A5F163FC7F51 ();
+extern "C" void Debug_LogErrorFormat_m994E4759C25BF0E9DD4179C10E3979558137CCF0 ();
 extern "C" void Debug_LogException_mBAA6702C240E37B2A834AA74E4FDC15A3A5589A9 ();
+extern "C" void Debug_LogException_m3CC9A37CD398E5B7F2305896F0969939F1BD1E3E ();
+extern "C" void Debug_LogWarning_m37338644DC81F640CCDFEAE35A223F0E965F0568 ();
 extern "C" void Debug_LogWarning_mD417697331190AC1D21C463F412C475103A7256E ();
+extern "C" void Debug_LogWarningFormat_m4A02CCF91F3A9392F4AA93576DCE2222267E5945 ();
 extern "C" void DebugLogHandler__ctor_mE9664BE5E6020FB88C6A301465811C80DEDFA392 ();
 extern "C" void DebugLogHandler_Internal_Log_m446B23490CD04C8EE311FC1C2020DD0B88A57EA6 ();
 extern "C" void DebugLogHandler_Internal_LogException_m8400B0D97B8D4A155A449BD28A32C68373A1A856 ();
 extern "C" void DebugLogHandler_LogException_m816CF2DDA84DFC1D1715B24F9626BD623FF05416 ();
 extern "C" void DebugLogHandler_LogFormat_m3C9B0AD4B5CDFF5AF195F9AA9FCBA908053BA41D ();
+extern "C" void DisallowMultipleComponent__ctor_m108E5D8C0DB938F0A747C6D2BA481B4FA9CDECB3 ();
 extern "C" void DisplaysUpdatedDelegate__ctor_m976C17F642CEF8A7F95FA4C414B17BF0EC025197 ();
 extern "C" void DisplaysUpdatedDelegate_EndInvoke_m470B70745AF2631D69A51A3883D774E9B49DD2E2 ();
 extern "C" void DisplaysUpdatedDelegate_Invoke_mBCC82165E169B27958A8FD4E5A90B83A108DAE89 ();
@@ -9609,8 +10406,182 @@ extern "C" void Display__cctor_mC1A1851D26DD51ECF2C09DBB1147A7CF05EEEC9D ();
 extern "C" void Display__ctor_m1E66361E430C3698C98D242CEB6820E9B4FC7EB8 ();
 extern "C" void Display__ctor_mE84D2B0874035D8A772F4BAE78E0B8A2C7008E46 ();
 extern "C" void Display_FireDisplaysUpdated_m1655DF7464EA901E47BCDD6C3BBB9AFF52757D86 ();
+extern "C" void Display_GetRenderingExtImpl_m14405A2EC3C99F90D5CD080F3262BB7B4AC2BA49 ();
 extern "C" void Display_GetSystemExtImpl_m946E5A2D11FC99291208F123B660978106C0B5C6 ();
 extern "C" void Display_RecreateDisplayList_mA7E2B69AF4BD88A0C45B9A0BB7E1FFDDA5C60FE8 ();
+extern "C" void DrivenRectTransformTracker_Add_m51059F302FBD574E93820E8116283D1608D1AB5A_AdjustorThunk ();
+extern "C" void DrivenRectTransformTracker_Clear_m328659F339A4FB519C9A208A685DDED106B6FC89_AdjustorThunk ();
+extern "C" void Event__ctor_m7226316A4024A3C5EBAE7BB7975194CE2B766A3B ();
+extern "C" void Event__ctor_mF8E4029007206A6CAAB28422355BA208C0728FB9 ();
+extern "C" void Event_Finalize_m71EE3F6BC6C0A99F849EC39C0E47B7305BB9EB3D ();
+extern "C" void Event_Internal_Destroy_m30C46F30A51ABAC5EC270FB75A9856676AA3515C ();
+extern "C" void Event_Internal_MakeMasterEventCurrent_mAD78377C8BB08EFB5DF3D3E3A4F1089F2FC2BA48 ();
+extern "C" void Event_Internal_SetNativeEvent_mDD8C9E3F062FD112ED996FA4E45C1BFBB8C4E950 ();
+extern "C" void Event_get_mousePosition_Injected_mE71FE88F6E27190A534BD5862941E5887D6BE632 ();
+extern "C" void Event_set_displayIndex_mF73CEED3B26A4BCADB099E5E6685FE6AC2CF7289 ();
+extern "C" void AbstractEventData__ctor_m969154D10B39C49147120C39714F23A14691B2D4 ();
+extern "C" void AbstractEventData_Reset_mE06ACEA1DE2CDBA974FF3D6416884B78250399AD ();
+extern "C" void AbstractEventData_Use_mB9B648733478469B390F4A9A8481DFA5BF708D83 ();
+extern "C" void AxisEventData__ctor_m0FCBFC3B464354D9235E152791F9356352F68640 ();
+extern "C" void AxisEventData_set_moveDir_m7AC36D4C2C91BB089B3A9057B5FD757B8A0847E7 ();
+extern "C" void AxisEventData_set_moveVector_m48650D1E5F041E8E5977FEB65EA02FF8ACFA228B ();
+extern "C" void BaseEventData__ctor_mC75A9C17C2DA9A310BA6F14AFD471B70009091E8 ();
+extern "C" void BaseEventData_set_selectedObject_m9C85F7B4B720E2B140B5BAD3FDA2F4324A59C61D ();
+extern "C" void BaseInput__ctor_m3F4F8D08DE717052927824CC9766B87371BF86E3 ();
+extern "C" void BaseInput_set_compositionCursorPos_m42735A0606A476FFE7B4AB697B41F7FA542AD8F2 ();
+extern "C" void BaseInput_set_imeCompositionMode_mE4381D49523B1EFCFD855B9B146159A41F7B4D4D ();
+extern "C" void BaseInputModule__ctor_m752B420C9A5152F35B96D056706ED6A2B28BD3D2 ();
+extern "C" void BaseInputModule_ActivateModule_m9A042EC6B05375CAFAC80A26DED73A5F169E65DB ();
+extern "C" void BaseInputModule_DeactivateModule_m595BBDFCEAFE9D2D41B6C27EE56D6F437E473A6B ();
+extern "C" void BaseInputModule_HandlePointerExitAndEnter_m4B3C04B585155E4BFA588A7CF96180ACF761815A ();
+extern "C" void BaseInputModule_OnDisable_mE6411D9E2C20ED0033963F7CBCA14C27BA8BB5DB ();
+extern "C" void BaseInputModule_OnEnable_m2FF5F0C5625FB11D80B07D777520C49B092A063F ();
+extern "C" void BaseInputModule_UpdateModule_m97A8F1882DF8FF345FD3AB40687CD2BACB0F7285 ();
+extern "C" void BaseInputModule_set_inputOverride_mCC7E9DA9E7573BF5B1538D1EC61724EA8A4A286B ();
+extern "C" void BaseRaycaster__ctor_m2BD9948456E8CED7A4D76FEF5155AE9DE6A08D2A ();
+extern "C" void BaseRaycaster_OnDisable_mEC294CBC0665FC0B8DC0C6E1214C168A04E34BC7 ();
+extern "C" void BaseRaycaster_OnEnable_m10F9F61D78156FC112DDCE39E8401DF01D8405D6 ();
+extern "C" void EventSystem__cctor_m3127C1F125757864A48CEAE64942C22C155E35B4 ();
+extern "C" void EventSystem__ctor_m6121F5C3C678311B30A0094F147FEF8F32861D43 ();
+extern "C" void EventSystem_ChangeEventModule_m47867794B1E0C5B80DEB3CDF572555EF8BEF9EA4 ();
+extern "C" void EventSystem_OnApplicationFocus_mC45D77F75329DC1E29FE260AB9C68E8763E13249 ();
+extern "C" void EventSystem_OnDisable_m721829FE23FC41DAD57D1601EA7445BCA51462DC ();
+extern "C" void EventSystem_OnEnable_m932AC09984810F445CF34D8C89FF8D592B8561CF ();
+extern "C" void EventSystem_RaycastAll_m69D6D670BD389053B4AA701482114D31D77B6A2E ();
+extern "C" void EventSystem_SetSelectedGameObject_mB309881930DF5D4B389D2B502AAF70AD568D839F ();
+extern "C" void EventSystem_SetSelectedGameObject_m9710F78638EA033F2CE1E073E15FF274A296789E ();
+extern "C" void EventSystem_TickModules_m2E28DDD49233F33A9020CB854AB9FC4F82C655E5 ();
+extern "C" void EventSystem_Update_m2AA0E7A2674C3782CECEF5E3AF38D5F025F18E24 ();
+extern "C" void EventSystem_UpdateModules_mDECFBFFBD7F507BEBE2C7C0C0EA167A05C961E75 ();
+extern "C" void EventSystem_set_current_mD64153A8C99301ADB345E2B1FEE70C6B7CBD741F ();
+extern "C" void EventSystem_set_firstSelectedGameObject_m5CC98792FA9B98182652A8AD677C341B9565E503 ();
+extern "C" void EventSystem_set_pixelDragThreshold_m5689776AEAAE26C5C6A218B024EF196B61DBDD2A ();
+extern "C" void EventSystem_set_sendNavigationEvents_m86EE3B7C8AF2A73C2A2CEE056325561CEB02B36A ();
+extern "C" void Entry__ctor_m26AFF9BE5327C259400E2BF9FF94DE5ED821DEB2 ();
+extern "C" void TriggerEvent__ctor_m03658E93AD5085FAEC528D80DB5247BA45BF17BC ();
+extern "C" void EventTrigger__ctor_m589B8593DD6E453DEF615531E3B5253B5FCA482E ();
+extern "C" void EventTrigger_Execute_m47103F4725D2207CB2F9470D4225F5D2DBC8CB57 ();
+extern "C" void EventTrigger_OnBeginDrag_m22ECE3C0B91CC4B2AB3B72595C3C9A2E349958BD ();
+extern "C" void EventTrigger_OnCancel_m7D0456276283B3F021B16000241CACE08DCB9809 ();
+extern "C" void EventTrigger_OnDeselect_m8CA29B196C1719456467B08C7661F9DE0D91561B ();
+extern "C" void EventTrigger_OnDrag_m450CDDF522FE4D6676AD2E130B00C016B4F25C9C ();
+extern "C" void EventTrigger_OnDrop_m2E6A159AC0D38D36475A8B1CD4C89AF711F7EB0C ();
+extern "C" void EventTrigger_OnEndDrag_m08055A4C67F0871AEF88B84B1F9E7D74CD79B1B5 ();
+extern "C" void EventTrigger_OnInitializePotentialDrag_m5830F75A8E0E57E31BBBDF6A5E561A5B7336125B ();
+extern "C" void EventTrigger_OnMove_m933066503DA85C6515C0960A4402AC96EB1C0D7B ();
+extern "C" void EventTrigger_OnPointerClick_mA34ED344EECC0707E39C041E203E490E260BFDBB ();
+extern "C" void EventTrigger_OnPointerDown_m705F75BB7443E1ADF47D5D7E28630496802EDEBF ();
+extern "C" void EventTrigger_OnPointerEnter_mF26CEB1CEC3B61B7E4BC2416F3EE8A3DC3089261 ();
+extern "C" void EventTrigger_OnPointerExit_m294B0A8CB0496CDBEBFE5C4EE7CBB3A813C2C05C ();
+extern "C" void EventTrigger_OnPointerUp_m636C7A08260929D264113FE2D1C9237349A5812C ();
+extern "C" void EventTrigger_OnScroll_m4C907E81EE6314AE25AE846C07DCE79664E829DB ();
+extern "C" void EventTrigger_OnSelect_m32BC10ABCB3C77F6831D838AAD54562242DE12CB ();
+extern "C" void EventTrigger_OnSubmit_mC8F73FB1FB1C856A942DA28890749ED608978C02 ();
+extern "C" void EventTrigger_OnUpdateSelected_m3A7BC36FE8FFAB3369EDD25FA4CA6D70023540F1 ();
+extern "C" void EventTrigger_set_triggers_m4E057EA25F6A515C765B4C98BDAF5D44FDBA2F0D ();
+extern "C" void ExecuteEvents__cctor_m681117B3C3994340A824526A7621701871D563D2 ();
+extern "C" void ExecuteEvents_U3Cs_HandlerListPoolU3Em__0_m373AC09BC4CA897A4A29EB107DF91A5EB7642416 ();
+extern "C" void ExecuteEvents_Execute_mB9966CCB0FB8235FB765C2AF46AE9240B5A9FD77 ();
+extern "C" void ExecuteEvents_Execute_m7A31C70F22EE2199B53DF07310C91B870203A253 ();
+extern "C" void ExecuteEvents_Execute_m4E67DE4FA1460F0998B285AAFA2C59770F18A73B ();
+extern "C" void ExecuteEvents_Execute_m0EE18A01DB04170DB3A9B8FEB8B1E176C732808E ();
+extern "C" void ExecuteEvents_Execute_mE66336C4B77CDA59E73A5C1A6C9425A43C73FD10 ();
+extern "C" void ExecuteEvents_Execute_m0A0C0D25CCBAB5022C900B032B22DB99756EF91C ();
+extern "C" void ExecuteEvents_Execute_m9D37B24595868905E835C219DD00C7D721D3F758 ();
+extern "C" void ExecuteEvents_Execute_mBBDED58C9A81F1F2F9A253BEDF4DDAD8480FB2D7 ();
+extern "C" void ExecuteEvents_Execute_mEFA02CE3245AECED33FABADFDD33A412DD7D21C5 ();
+extern "C" void ExecuteEvents_Execute_m32137BEEDB1FC9B1CCC6A13E92006D8F8621B537 ();
+extern "C" void ExecuteEvents_Execute_m491E72B5865562438B8FC6F6CB49C024D86E6C30 ();
+extern "C" void ExecuteEvents_Execute_mCA3F8C0FF395F5CCB40B1B7128F52FD67209378B ();
+extern "C" void ExecuteEvents_Execute_m1E459108391C9448C99C1BE5DB9524090753A147 ();
+extern "C" void ExecuteEvents_Execute_m2D13C063E7BCC3CB9986DEAACB3743256014CE49 ();
+extern "C" void ExecuteEvents_Execute_mBD8EC83DB4C0E057699EC5AA77277ED94D73D447 ();
+extern "C" void ExecuteEvents_Execute_m9AB3FEE94B24C3A16DC72A03476E266DAA56A4F2 ();
+extern "C" void ExecuteEvents_Execute_m7741321B31ED68845A90FB2B1ED5294384D28750 ();
+extern "C" void ExecuteEvents_GetEventChain_m640191F67AEB374A5E6FD9B1E6CC48CF31FFDCAD ();
+extern "C" void Physics2DRaycaster__ctor_m27655C6E407A561678AD9498BFA255EDD7DBFFB8 ();
+extern "C" void Physics2DRaycaster_Raycast_mB036AD25FA3666E92FFF52662631F121F18879A6 ();
+extern "C" void PhysicsRaycaster__ctor_m025728D4A189DF3D6F3EF1865A565B364802F180 ();
+extern "C" void PhysicsRaycaster_Raycast_mB720C45CB0B13D85D1EF7535338B76F663E409FB ();
+extern "C" void PhysicsRaycaster_set_eventMask_m37E5C20297F5DB01DE3791CDA8C9649F59E797C7 ();
+extern "C" void PhysicsRaycaster_set_maxRayIntersections_mEF384C71FAA8E44BF22642FAC1046B0085B2DC13 ();
+extern "C" void PointerEventData__ctor_m0C53BF90396464F33D24246FCB43CCD6C10279E0 ();
+extern "C" void PointerEventData_set_button_m54E873C59314566824687FDCFF60733354796836 ();
+extern "C" void PointerEventData_set_clickCount_m4B1BA127DD2F1A2BC6137FA644F2E7C4C56E635C ();
+extern "C" void PointerEventData_set_clickTime_m1FEE7D0A72D7CEC6D12F7F700ED746D46C164CBD ();
+extern "C" void PointerEventData_set_delta_mC465A762DB5BBA323969FCCADAC62CE470D67F56 ();
+extern "C" void PointerEventData_set_dragging_m8A3F0551EC534BF500DF349F2029AB48BC8CC126 ();
+extern "C" void PointerEventData_set_eligibleForClick_m01058124CBA9FEF9702BAFFA42B0C05536213DBE ();
+extern "C" void PointerEventData_set_lastPress_mE5BC36930052B09871B698E6933B16ED70784B63 ();
+extern "C" void PointerEventData_set_pointerCurrentRaycast_m49EA409CDFCDE80E197EF699BDFA76CEBD834CCB ();
+extern "C" void PointerEventData_set_pointerDrag_mBBE81D7D8978E6574F5D82C9DF05294CDA1A10FF ();
+extern "C" void PointerEventData_set_pointerEnter_mAFA065EA0A1139DEA26BD75AD775B08065023B96 ();
+extern "C" void PointerEventData_set_pointerId_mA3720F5C305189ED23CCD948471EBA6147E3E857 ();
+extern "C" void PointerEventData_set_pointerPress_m68451188748DC3D510B4C95E1B480C61E5A014E5 ();
+extern "C" void PointerEventData_set_pointerPressRaycast_mA79E81D3E68FEE3C5583150648DF735B32C67722 ();
+extern "C" void PointerEventData_set_position_m4A3628048789D0260B4E5FB26258E91E38A5BA69 ();
+extern "C" void PointerEventData_set_pressPosition_m61BDF7F70221FDAB986397C19BAD6C6AF808821F ();
+extern "C" void PointerEventData_set_rawPointerPress_m631FBEB248D64D43A3FAE09DD30F67B4D85CF322 ();
+extern "C" void PointerEventData_set_scrollDelta_m94EBC5B529EFA6530A50A72E4432701F58CFE3EE ();
+extern "C" void PointerEventData_set_useDragThreshold_m6E359AD2766A55A31BC53DE373BAED0709AA343D ();
+extern "C" void PointerEventData_set_worldNormal_mBAB69375B707748BC720D64E7AAEE8B138BA42F6 ();
+extern "C" void PointerEventData_set_worldPosition_m735F354BD21EA7D7EE816041310CEF67E529304B ();
+extern "C" void ButtonState__ctor_m3A40307CD629FFD47717C24A30BF5CAED652627F ();
+extern "C" void ButtonState_set_button_m71A6048CA1053ADBBEBF1B1A97BF9ED0D7ABF3AF ();
+extern "C" void ButtonState_set_eventData_m5BC72CF0AD5CF0AC9B3DBBEA877DCC54AAD8297E ();
+extern "C" void MouseButtonEventData__ctor_m828B1CF2F1B493FB9A965901D9A35D9025D5C39B ();
+extern "C" void MouseState__ctor_m00FE417DE1D9F6DF250D6914CC6E09D1C1CD15B7 ();
+extern "C" void MouseState_SetButtonState_m9FD225E0F7167C46886F6A6CFAAAC09C33F1B1A5 ();
+extern "C" void PointerInputModule__ctor_m906B66508CD14DBEFE1433F6011177117BCCAF7A ();
+extern "C" void PointerInputModule_ClearSelection_m8AC589A5ADBB002008F0F619D1E3D354417C2A85 ();
+extern "C" void PointerInputModule_CopyFromTo_mF63ED455A5F3CC1F2A761B38D4E2B5F99E866B23 ();
+extern "C" void PointerInputModule_DeselectIfSelectionChanged_mEF38C3E28982933198403D8DC48CA0DDBAA994AE ();
+extern "C" void PointerInputModule_ProcessDrag_m7856F014151740D2CB268E7F6D4D7107B7EFE963 ();
+extern "C" void PointerInputModule_ProcessMove_m31F63D1FBE42E7794E3DE9877BF49C1C605C8F00 ();
+extern "C" void PointerInputModule_RemovePointerData_mD2FB032581DABA6134423CD21C23CD8A4F63E1B8 ();
+extern "C" void RaycastResult_Clear_m36B7EA9745051208182EFCD4CBC1772A6810D6DB_AdjustorThunk ();
+extern "C" void RaycastResult_set_gameObject_m31B7E59B8611A79C9EE16CF32D4EC8A6EE742403_AdjustorThunk ();
+extern "C" void RaycasterManager__cctor_m6C24AD55466B5EFFA31A9C4E4BB5E09D5BA4C4AF ();
+extern "C" void RaycasterManager_AddRaycaster_mD07AE3FE5DA15D14D661C66E2B22D1BAC1438BE7 ();
+extern "C" void RaycasterManager_RemoveRaycasters_m675FA0C1615A4D566D1499371287276E77CAF8B3 ();
+extern "C" void StandaloneInputModule__ctor_m132938697291C4DE7B00375297A4736FC939310C ();
+extern "C" void StandaloneInputModule_ActivateModule_mBBECF270C64919259CA47A6A12930595F363CB16 ();
+extern "C" void StandaloneInputModule_DeactivateModule_m09F5C32215E742AFF0A556D0098AF3D78B617A14 ();
+extern "C" void StandaloneInputModule_Process_mDFF8B9EF1AF451E850E161B5C0BEE5A021DB0DC9 ();
+extern "C" void StandaloneInputModule_ProcessMouseEvent_mC10681AC93ED7763CD88F09936BB56DA6D55D5F0 ();
+extern "C" void StandaloneInputModule_ProcessMouseEvent_mE62801E846D02A3444D611601B052FB4DABE8248 ();
+extern "C" void StandaloneInputModule_ProcessMousePress_mBC9CB92C1B0B382C04E66001A3BBB9845AF9D56C ();
+extern "C" void StandaloneInputModule_ProcessTouchPress_m6D785DFE91DB756A2D9337FE2F1CB26C1EAA38C0 ();
+extern "C" void StandaloneInputModule_UpdateModule_m38AD4C6DA29C91488D297A126801AF37B310BDB7 ();
+extern "C" void StandaloneInputModule_set_allowActivationOnMobileDevice_mE426AE101F065929A3966A98EA31A76A59711CFE ();
+extern "C" void StandaloneInputModule_set_cancelButton_m9762F38B1A56D234D03C0D799CAC3060FF555409 ();
+extern "C" void StandaloneInputModule_set_forceModuleActive_m5DC13F958DD0E0F2434AB5614E2AE9B84302F333 ();
+extern "C" void StandaloneInputModule_set_horizontalAxis_mB53A2BFDCAF0AD35CC666E25D352438757C1F82C ();
+extern "C" void StandaloneInputModule_set_inputActionsPerSecond_mCC7E425583C9F01A55EDB439B8B7F9DABEE396CD ();
+extern "C" void StandaloneInputModule_set_repeatDelay_m4CBD0BAD844872275B696C9A8D020482F190BF93 ();
+extern "C" void StandaloneInputModule_set_submitButton_mD5F7D21294457904C1A3AE104461F0BD9AFBA6E8 ();
+extern "C" void StandaloneInputModule_set_verticalAxis_m4BA109DFCBD1995F4AE163B47C6DC87C51465B96 ();
+extern "C" void TouchInputModule__ctor_mD04A302105DD29E2B94E757CC1F1D5619532B33C ();
+extern "C" void TouchInputModule_DeactivateModule_mBC7CCA0B1DE415E1A5CF6277FFFC1E4DD5E70E0F ();
+extern "C" void TouchInputModule_FakeTouches_mB22224D6CA9E9A2B7F694EE10C55A2EA402EFFB6 ();
+extern "C" void TouchInputModule_Process_m00C76893C9202BF2167ED29D533722213B9957F7 ();
+extern "C" void TouchInputModule_ProcessTouchEvents_m84540F3130772F8E557750BFAE9F09D79665CCBF ();
+extern "C" void TouchInputModule_ProcessTouchPress_m80DC42001F194832D7ED05305A75E78939116CC2 ();
+extern "C" void TouchInputModule_UpdateModule_mBD673416EF1E503A8325A14CA6600E03A4FA5AD4 ();
+extern "C" void TouchInputModule_set_allowActivationOnStandalone_mEB39F9B62D80693AD63CF1157DC7DA7B25CDE27D ();
+extern "C" void TouchInputModule_set_forceModuleActive_mE2898B8EF758B0722FF6D7C4A970F968EE5520F2 ();
+extern "C" void UIBehaviour__ctor_mED41F1FD6DA85A4D40E088635B56EADCA9B966CE ();
+extern "C" void UIBehaviour_Awake_mCCC65A98E4219648D4BEFA7CD23E2426CAEF1DE2 ();
+extern "C" void UIBehaviour_OnBeforeTransformParentChanged_m40D40EBD8BC111DAE8D26DC04780E34864093AE2 ();
+extern "C" void UIBehaviour_OnCanvasGroupChanged_m6A6DF20B585869BF5C3243092B6898A928E4679B ();
+extern "C" void UIBehaviour_OnCanvasHierarchyChanged_m9148AEF03C6049C549B3A8F41176323E639C609A ();
+extern "C" void UIBehaviour_OnDestroy_m4972A2A5CFECE666D574D51EA6664BD29E92530C ();
+extern "C" void UIBehaviour_OnDidApplyAnimationProperties_mC5DD8424E467DA0CFB062DB119B1CCBC4C22401D ();
+extern "C" void UIBehaviour_OnDisable_m3CC4CD541E2FAB097CB56BA36D96D7D198D0CCE3 ();
+extern "C" void UIBehaviour_OnEnable_m16C0E48B946CBF1B50BD7315E4CE58EDB1AA9588 ();
+extern "C" void UIBehaviour_OnRectTransformDimensionsChange_mE0E4056A622DB66A0E54B803DED67E64B036897E ();
+extern "C" void UIBehaviour_OnTransformParentChanged_m8B60AE85CA8C3782E43BAA65C365FA4589BBC50D ();
+extern "C" void UIBehaviour_Start_m7B2A6AC2AEAA2EA898B2DE16675219F4F367E03E ();
 extern "C" void ArgumentCache__ctor_m9618D660E40F991782873643F0FDCACA32A63541 ();
 extern "C" void ArgumentCache_OnAfterDeserialize_m59072D771A42C518FECECBE2CE7EE9E15F4BE55F ();
 extern "C" void ArgumentCache_OnBeforeSerialize_mCBE8301FE0DDE2E516A18051BBE3DC983BC80FBC ();
@@ -9618,6 +10589,7 @@ extern "C" void ArgumentCache_TidyAssemblyTypeName_m2D4AFE74BEB5F32B14165BB52F6A
 extern "C" void BaseInvokableCall__ctor_m232CE2068209113988BB35B50A2965FC03FC4A58 ();
 extern "C" void BaseInvokableCall__ctor_m71AC21A8840CE45C2600FF784E8B0B556D7B2BA5 ();
 extern "C" void InvokableCall__ctor_m2F9F0CD09FCFFEBCBBA87EC75D9BA50058C5B873 ();
+extern "C" void InvokableCall__ctor_m77F593E751D2119119A5F3FD39F8F5D3B653102B ();
 extern "C" void InvokableCall_Invoke_m0B9E7F14A2C67AB51F01745BD2C6C423114C9394 ();
 extern "C" void InvokableCall_Invoke_mDB8C26B441658DDA48AC3AF259F4A0EBCF673FD0 ();
 extern "C" void InvokableCall_add_Delegate_mCE91CE04CF7A8B962FF566B018C8C516351AD0F3 ();
@@ -9634,6 +10606,8 @@ extern "C" void UnityAction__ctor_mEFC4B92529CE83DF72501F92E07EC5598C54BDAC ();
 extern "C" void UnityAction_EndInvoke_m9C465516D5977EF185DCEB6CA81D0B90EDAD7370 ();
 extern "C" void UnityAction_Invoke_mC9FF5AA1F82FDE635B3B6644CE71C94C31C3E71A ();
 extern "C" void UnityEvent__ctor_m2F8C02F28E289CA65598FF4FA8EAB84D955FF028 ();
+extern "C" void UnityEvent_AddListener_m31973FDDC5BB0B2828AB6EF519EC4FD6563499C9 ();
+extern "C" void UnityEvent_Invoke_mB2FA1C76256FE34D5E7F84ABE528AC61CE8A0325 ();
 extern "C" void UnityEventBase__ctor_m57AF08DAFA9C1B4F4C8DA855116900BAE8DF9595 ();
 extern "C" void UnityEventBase_AddCall_mD45F68C1A40E2BD9B0754490B7709846B84E8075 ();
 extern "C" void UnityEventBase_DirtyPersistentCalls_m31D9B2D3B265718318F4D7E87373E53F249E65EB ();
@@ -9643,6 +10617,10 @@ extern "C" void UnityEventBase_UnityEngine_ISerializationCallbackReceiver_OnAfte
 extern "C" void UnityEventBase_UnityEngine_ISerializationCallbackReceiver_OnBeforeSerialize_m147F610873545A23E9005CCB35CA6A05887E7599 ();
 extern "C" void ExcludeFromObjectFactoryAttribute__ctor_mE0437C73993AD36DCB7A002D70AC988340742CD0 ();
 extern "C" void ExcludeFromPresetAttribute__ctor_mB8BE49E17E4360DDB485784D219AE49847A85FB2 ();
+extern "C" void ExecuteAlways__ctor_m6199E1FB2E787ABEE85C19153D3C90B815572092 ();
+extern "C" void ExecuteInEditMode__ctor_m9A67409D4A11562F23F928655D9A3EFB7A69BB81 ();
+extern "C" void AnimationScriptPlayable__cctor_mC78B0B27BE44BD802817190E620DB326D730BF70 ();
+extern "C" void AnimationScriptPlayable__ctor_mCEAA71DEFF829CA9D60EFB004CC0278FE8C58EF7_AdjustorThunk ();
 extern "C" void ConsumeSampleFramesNativeFunction__ctor_m10D2C92ADC2CC0F2731CC790036CF84E7E6E97F6 ();
 extern "C" void SampleFramesHandler__ctor_mFDA0769E55F136D1B8EC8AA4B40EF43069934EB5 ();
 extern "C" void SampleFramesHandler_EndInvoke_mF5305B3BA179CE3C49836790DE3FEB02EB088D28 ();
@@ -9677,19 +10655,139 @@ extern "C" void SupportedRenderingFeatures_IsLightmapBakeTypeSupportedByRef_m9A6
 extern "C" void SupportedRenderingFeatures_IsLightmapsModeSupportedByRef_m92A8F7C9885372C3522C905367982EA93F5591A3 ();
 extern "C" void SupportedRenderingFeatures_IsMixedLightingModeSupportedByRef_mE538F76FB56392AF2B73DC35676AE043438B9776 ();
 extern "C" void SupportedRenderingFeatures_set_active_mC309073994D2B5EABC79130408458A51683F90A9 ();
+extern "C" void VertexHelperExtension_AddVert_m02926227BAA55044A57CB2C4D3C713DE097E8E06 ();
 extern "C" void ExtensionOfNativeClassAttribute__ctor_m2D759F6D70D6FE632D8872A7D7C3E7ECFF83EE46 ();
 extern "C" void FontTextureRebuildCallback__ctor_m83BD4ACFF1FDA3D203ABA140B0CA2B4B0064A3A3 ();
 extern "C" void FontTextureRebuildCallback_EndInvoke_m8EEDB9652F6D2358523057E1164740820D2AE93C ();
 extern "C" void FontTextureRebuildCallback_Invoke_m4E6CFDE11932BA7F129C9A2C4CAE294562B07480 ();
 extern "C" void Font_InvokeTextureRebuilt_Internal_m2D4C9D99B6137EF380A19EC72D6EE8CBFF7B4062 ();
+extern "C" void Font_add_textureRebuilt_m031EFCD3B164273920B133A8689C18ED87C9B18F ();
+extern "C" void Font_remove_textureRebuilt_mBEF163DAE27CA126D400646E850AAEE4AE8DAAB4 ();
+extern "C" void WindowFunction__ctor_m216C357C45DF9A8ABE74056B8BDB1B7F94EE2D81 ();
+extern "C" void WindowFunction_EndInvoke_m66738B73219CEB120C356497204151BCB432B2A2 ();
+extern "C" void WindowFunction_Invoke_m08350FBFB60BC55246725A4840931AED2CAFF9AD ();
+extern "C" void GUI__cctor_m9A902CA13649D04BFB54D86C051A09AC5301ED63 ();
+extern "C" void GUI_CallWindowDelegate_m49D5A2E2DAEF525772FAAAA9A840244137BB9175 ();
+extern "C" void GUI_DoSetSkin_mC72F1980793E86E8F33D641A207D2AAB409A71F7 ();
+extern "C" void GUI_set_changed_m8BDF5085BBFDF8E61C12926C8E51C67B22B629AE ();
+extern "C" void GUI_set_nextScrollStepTime_m0EBE9A3F5960CD23334E4678D9CF6F5E15CBDE23 ();
+extern "C" void GUI_set_skin_mFC9EC2E88A46A7F42664C6C41D8CCD9B9BA4DBA0 ();
+extern "C" void GUIContent__cctor_m5AF68CD5FB2E47506F7FF1A6F46ADAD5C8BC927C ();
+extern "C" void GUIContent__ctor_m939CDEFF44061020E997A0F0640ADDF2740B0C38 ();
+extern "C" void GUIContent__ctor_m8EE36BB9048C2A279E7EAD258D63F2A1BDEA8A81 ();
+extern "C" void GUIContent__ctor_m2805872C5E7E66C3ABF83607DC02BEB1BEFA82DA ();
+extern "C" void GUIContent_ClearStaticCache_m567DA736612F9E6E66262CC630952AB2E22BC933 ();
+extern "C" void GUIContent_set_image_m85ABAF5AE045BDD9C09EA75243094D16222DB38C ();
+extern "C" void GUIContent_set_text_m866E0C5690119816D87D83124C81BDC0A0ED4316 ();
+extern "C" void GUIContent_set_tooltip_mDFC634B0DF68DB6A02F294106BC261EFC0FD0A67 ();
 extern "C" void GUIElement__ctor_mE051D576736D1BEAED89D1775B3B8D43A54860E6 ();
+extern "C" void GUILayoutEntry__cctor_m7425E2D0EE5771858B9823BBD024333CE7CAD3F9 ();
+extern "C" void GUILayoutEntry__ctor_mC640CA08AEBCC7E479DB6AF5B208436A98AB75B2 ();
+extern "C" void GUILayoutEntry_ApplyOptions_m2002EBD9FE42B9787544D204A71C8BEF3F671F5B ();
+extern "C" void GUILayoutEntry_ApplyStyleSettings_m5516B497544317E3B720CE7867CA960076E2AF47 ();
+extern "C" void GUILayoutEntry_CalcHeight_m476C8ECE96A5ACC4AEA6427EA2432F0ED7E3CFF4 ();
+extern "C" void GUILayoutEntry_CalcWidth_mBBA8647ED6695100D8D41CE12CA4586DBD02D993 ();
+extern "C" void GUILayoutEntry_SetHorizontal_m46A5D9344EE72AF9AA7D07C77C30745F9FE97DE8 ();
+extern "C" void GUILayoutEntry_SetVertical_mC0E71E5E431907DD1900C707BD3E2E1D0795DDD0 ();
+extern "C" void GUILayoutEntry_set_style_mEDD232A6CDB1B76ABC33EA06A05235316A180E2D ();
+extern "C" void GUILayoutGroup__ctor_m14D8B35B4A89F6688D354A534ED871860905BA3B ();
+extern "C" void GUILayoutGroup_ApplyOptions_mCBAF4F0DA13F941ABF47886054A3443247767A97 ();
+extern "C" void GUILayoutGroup_ApplyStyleSettings_mEC5D7325E4DC8993207671A95F6F0ED7D75B7F6C ();
+extern "C" void GUILayoutGroup_CalcHeight_m0511BD2172BC13D54ABC8DB5887A91C17E9F21BB ();
+extern "C" void GUILayoutGroup_CalcWidth_m0D2819C659392B14175C2B163DD889AD35794A9B ();
+extern "C" void GUILayoutGroup_ResetCursor_mD159DD9E101F6F348249D27D95709E1DC5C0A13F ();
+extern "C" void GUILayoutGroup_SetHorizontal_m0AFB617E7BB6B32431BA65873B27660E6E5C9E51 ();
+extern "C" void GUILayoutGroup_SetVertical_m29D8744D2D1464EF4E6E4008CD21F5E44D6CB146 ();
+extern "C" void GUILayoutOption__ctor_m965FDA1345FD7146596EFA90F03D0C645FB3FD5D ();
+extern "C" void LayoutCache__ctor_mF66D53540321BFD98CA89285D2E8FFDA5014A9CE ();
+extern "C" void GUILayoutUtility__cctor_m6C436C771D62B8982AE0E47DD5D41C607988395F ();
+extern "C" void GUILayoutUtility_Begin_m6876A33199599688408A4AD364069090E833B237 ();
+extern "C" void GUILayoutUtility_BeginWindow_mB3475D9BE89CF26AB0E6F0D46B1930F1874EB132 ();
+extern "C" void GUILayoutUtility_Internal_GetWindowRect_Injected_mE78DA4F8B25471CEFFCB6F43E37C7966FE436EEE ();
+extern "C" void GUILayoutUtility_Internal_MoveWindow_mFCB2DFE399B833D263138CF0A57626AFF52CB037 ();
+extern "C" void GUILayoutUtility_Internal_MoveWindow_Injected_mD80D56182A5684AC3BDA2B50AC8191974A064ABE ();
+extern "C" void GUILayoutUtility_Layout_mB01F00635FD538214B47A545C53E4F8C682491B5 ();
+extern "C" void GUILayoutUtility_LayoutFreeGroup_m890E6BD9614C48B151D61F197251E3DBAC637967 ();
+extern "C" void GUILayoutUtility_LayoutFromEditorWindow_mBE82BE965B54F68E7090952684C86BFF0538AB52 ();
+extern "C" void GUILayoutUtility_LayoutSingleGroup_m0BE91E195E4E2FC8B5B491783AFACBD1310F15A1 ();
+extern "C" void GUIScrollGroup__ctor_m02640E287AFD4B19EA03F7867247ED9D0836F41D ();
+extern "C" void GUIScrollGroup_CalcHeight_mD3A3C0B44A1E4DC567D1E8C20A68E1DD786EC196 ();
+extern "C" void GUIScrollGroup_CalcWidth_mA061AA4FA5BDE43DF862D57E7BF7C2A13147AA86 ();
+extern "C" void GUIScrollGroup_SetHorizontal_m89C0FEDC0F240656C2E692503321EFFF6E6107DA ();
+extern "C" void GUIScrollGroup_SetVertical_m4EF0255426047DF9A3E4C63C1ACBF3FE0690A7AB ();
+extern "C" void GUISettings__ctor_m6D2D6608CE04A741235BF0C8E134195B196F116D ();
+extern "C" void SkinChangedDelegate__ctor_m106EBB63DA6B078DD50D230BAC7535923307F2FA ();
+extern "C" void SkinChangedDelegate_EndInvoke_mFB33D8790DB1DAA2CC1B927ADAE992FF3C89B149 ();
+extern "C" void SkinChangedDelegate_Invoke_mE18CA4219F24151D8FC8A8A8B261F3FD860B007F ();
+extern "C" void GUISkin__ctor_mD75B370774F1DA0C871C8C642299E8DB4B0FABFF ();
+extern "C" void GUISkin_Apply_mA93B0EEE3C2DE1F8D867A472130CDA98814C8A49 ();
+extern "C" void GUISkin_BuildStyleCache_m2C68BB5521EAF11FC98C86D7E60008901D61866A ();
+extern "C" void GUISkin_CleanupRoots_m00D215E556265ACF704EA1C31399298DB092BA02 ();
+extern "C" void GUISkin_MakeCurrent_m42FAF8090F6B57648678704D86A6451DB917CF2D ();
+extern "C" void GUISkin_OnEnable_mD8DE1BF0D0D0DA01EF240CE80C8B890DC03D30D0 ();
+extern "C" void GUISkin_set_box_m6D6D19E122461C6B2945349AA6ECD53E355702B0 ();
+extern "C" void GUISkin_set_button_m6DE2099849A8911FA77BE275B2552E48A356A67E ();
+extern "C" void GUISkin_set_customStyles_m4F3203A3237CDA3799A0A4C440EF8A54B059EEC5 ();
+extern "C" void GUISkin_set_font_m2602A62DF6F035C7DA9BF4411C5F117022B5C07F ();
+extern "C" void GUISkin_set_horizontalScrollbar_m4F2E03DEC3A2004F2912F53610D8F84EE62ACFF0 ();
+extern "C" void GUISkin_set_horizontalScrollbarLeftButton_mBB8EE6C404FD9BF0C9BD9B4B6FD036086C044BA3 ();
+extern "C" void GUISkin_set_horizontalScrollbarRightButton_mA7B3670FAB6323B7E3F7F2A15640263BB0F3685A ();
+extern "C" void GUISkin_set_horizontalScrollbarThumb_mEF470A49847D208F6B190FDBDF7704FFDFD23359 ();
+extern "C" void GUISkin_set_horizontalSlider_m761A767684EB3014E2D50D377C2B381B46FCF931 ();
+extern "C" void GUISkin_set_horizontalSliderThumb_mEA4D61F20729CCBC6E3CBCC7E0AD5A48E37DF056 ();
+extern "C" void GUISkin_set_label_m7EC231FDB8DEC9A5CD794578D70BB76A1978F508 ();
+extern "C" void GUISkin_set_scrollView_m6B28717B83555F80AB3EA1798FDE15C2A2645C72 ();
+extern "C" void GUISkin_set_textArea_m3C0C4795FC031AA0E8815FA9E0CAD304E1266157 ();
+extern "C" void GUISkin_set_textField_m641D44C99CFC17A18BC0F094D4C810742222D0D2 ();
+extern "C" void GUISkin_set_toggle_mD80DC18C72883EE616583CB75FA6C83F5C4C29F8 ();
+extern "C" void GUISkin_set_verticalScrollbar_mE5B8C6F35870AA16403FB8202B36D56F2314F9B7 ();
+extern "C" void GUISkin_set_verticalScrollbarDownButton_m7B0275CBF0BCE8F95B8FF3436466A6490E0B7D62 ();
+extern "C" void GUISkin_set_verticalScrollbarThumb_mF1A3CE45DA1A0FE4022BF95B9F8FD6B9733B48AA ();
+extern "C" void GUISkin_set_verticalScrollbarUpButton_m6407C9BFD7172E7E3A8583C34451EE331705AA6A ();
+extern "C" void GUISkin_set_verticalSlider_m66ED35A0709DDE6CD08065C6951AD32582B0A784 ();
+extern "C" void GUISkin_set_verticalSliderThumb_m0920AB66A75D6CE103EBA218BB8FEEEF9306DC1D ();
+extern "C" void GUISkin_set_window_m2284011FEDEADF15D6AA2ACD636244B74C5A6F3A ();
+extern "C" void GUIStyle__cctor_mA7579A59C320A9202F6E83B39DADC06C10231D6F ();
+extern "C" void GUIStyle__ctor_m8AA3D5AA506A252687923D0DA80741862AA83805 ();
+extern "C" void GUIStyle_Finalize_m06DC9D0C766664ACF0D2C8D6BE214756E6361BA4 ();
+extern "C" void GUIStyle_Internal_Destroy_mFA13F1C8E929FB9429825F2F176D4E3DE9C131E2 ();
+extern "C" void GUIStyle_SetDefaultFont_m09D149F682E885D7058E3C48EB42C9E62363E381 ();
+extern "C" void GUIStyle_set_name_m3D232D5A8EAD7B29F1F2DA3ADD01B99EFF83F1D7 ();
+extern "C" void GUIStyle_set_stretchHeight_mE11B46969A8498FB3B7443B4C54254F0C9A71A6E ();
+extern "C" void GUIStyleState__ctor_mD260F6A32800A135DB0AA6441D990A8FEC752AFD ();
+extern "C" void GUIStyleState__ctor_m88DEBFEA9F9D54F4E6732A6ACE729079A79833B8 ();
+extern "C" void GUIStyleState_Cleanup_mB92C1A0564E1D841A37DD43D6B6E1AD27BAD5A49 ();
+extern "C" void GUIStyleState_Finalize_m68F554CD5B53E9BFC8B952E371D1E18D96D4C626 ();
+extern "C" void GUIStyleState_set_textColor_m2B235845A292C22ABEDEFBB2FD798DEB4E104983 ();
+extern "C" void GUIStyleState_set_textColor_Injected_m09DA402A33A2E28F9B8BB37AEF6EA05B58F7C475 ();
+extern "C" void GUIUtility_BeginGUI_m9981BDF2828246EBE4EDA43447EF6DAA74B54C91 ();
+extern "C" void GUIUtility_CheckOnGUI_mBFC764B475683BC50E40BD249248CE43DA754873 ();
+extern "C" void GUIUtility_EndGUI_mE93B54A19231BCC9DFC68DF54CE7C29DE41A3414 ();
+extern "C" void GUIUtility_Internal_ExitGUI_mC6B22D4CC318E08171B3565919458F337351ACCC ();
+extern "C" void GUIUtility_MarkGUIChanged_m624187E89EC5D08B052B8F74B8BFD803EEE53956 ();
+extern "C" void GUIUtility_RemoveCapture_m37B735649012E93EBEA50DB8708FB6D39DFA4FE9 ();
+extern "C" void GUIUtility_ResetGlobalState_m192C9FAE2A4B87F34CB051C4967B8A919A902A5C ();
+extern "C" void GUIUtility_TakeCapture_mE32A66FEEF1DFA8A3DDF3CE310D1C93397B31221 ();
+extern "C" void GUIUtility_set_guiIsExiting_m16D5DFFB64483BC588CA6BEA0FAA618E4A227960 ();
+extern "C" void GUIUtility_set_systemCopyBuffer_m8C87AFD05D32AB0C30A2203005A64A86DFE18BE6 ();
 extern "C" void GameObject__ctor_mA4DFA8F4471418C248E95B55070665EF344B4B2D ();
+extern "C" void GameObject__ctor_mBB454E679AD9CF0B84D3609A01E6A9753ACF4686 ();
+extern "C" void GameObject__ctor_m20BE06980A232E1D64016957059A9DD834173F68 ();
+extern "C" void GameObject_GetComponentFastPath_m5B276335DD94F6B307E604272A26C15B997C3CD4 ();
 extern "C" void GameObject_Internal_CreateGameObject_m9DC9E92BD086A7ADD9ABCE858646A951FA77F437 ();
 extern "C" void GameObject_SendMessage_mB9147E503F1F55C4F3BC2816C0BDA8C21EA22E95 ();
+extern "C" void GameObject_SetActive_m25A39F6D9FB68C51F13313F9804E85ACC937BC04 ();
+extern "C" void GameObject_set_layer_mDAC8037FCFD0CE62DB66004C4342EA20CF604907 ();
 extern "C" void Gradient__ctor_m297B6B928FDA6BD99A142736017F5C0E2B30BE7F ();
 extern "C" void Gradient_Cleanup_mD38D8100E8FAAC7FBD5047380555802E638DF718 ();
 extern "C" void Gradient_Finalize_mB8CB38D86D7935F98000B5F4A0EBF419BD859210 ();
+extern "C" void Input_GetTouch_Injected_m9183BBE1F72252D2DC1E6CDCFC14F05DDC1832A4 ();
+extern "C" void Input_get_compositionCursorPos_Injected_mFDCB28875A4B97807978EC524EFEB6D0410B4AC0 ();
 extern "C" void Input_get_mousePosition_Injected_m3545F7128BAF38244AFA318CB440FFAC6FAD750F ();
+extern "C" void Input_get_mouseScrollDelta_Injected_m98E2A81250CF1BEF26E015E91EE7E8CE8D122036 ();
+extern "C" void Input_set_compositionCursorPos_m2FBB434ABF1961EE12CD4CE79CF0C4C6B477BF66 ();
+extern "C" void Input_set_compositionCursorPos_Injected_m9631D1E7F883BB461FE11EBC65C8DACB25B9F42F ();
+extern "C" void Input_set_imeCompositionMode_mC4C275EE8A2A8683145A4AD0E92987AA5E407C5E ();
 extern "C" void DefaultValueAttribute__ctor_m2E914CFCFD82ACAB447480971570E5763C42DAAD ();
 extern "C" void ExcludeFromDocsAttribute__ctor_m01F11706D334D5D31B0C59630DB1674ECFBFAF04 ();
 extern "C" void Logger__ctor_m447215F90AA8D1508924BFB1CD1E49AFCCE04FFE ();
@@ -9711,9 +10809,32 @@ extern "C" void Material__ctor_m81E76B5C1316004F25D4FE9CEC0E78A7428DABA8 ();
 extern "C" void Material_CreateWithMaterial_mD3140BCB57EBB406D063C7A7B0B9D1A4C74DA3F2 ();
 extern "C" void Material_CreateWithShader_m41F159D25DC785C3BB43E6908057BB2BD1D2CB7F ();
 extern "C" void Material_CreateWithString_mCF4047522DD7D38087CF9AF121766E0D69B9BB55 ();
+extern "C" void Material_DisableKeyword_m2ACBFC5D28ED46FF2CF5532F00D702FF62C02ED3 ();
+extern "C" void Material_EnableKeyword_m7466758182CBBC40134C9048CDF682DF46F32FA9 ();
+extern "C" void Material_SetFloatImpl_mFD6022220F625E704EC4F27691F496166E590094 ();
+extern "C" void Material_SetInt_m1FCBDBB985E6A299AE11C3D8AF29BB4D7C7DF278 ();
 extern "C" void Mathf__cctor_m4855BF06F66120E2029CFA4F3E82FBDB197A86EC ();
+extern "C" void Matrix4x4__cctor_mC5A7950045F0C8DBAD83A45D08812BEDBC6E159E ();
+extern "C" void Matrix4x4__ctor_mC7C5A4F0791B2A3ADAFE1E6C491B7705B6492B12_AdjustorThunk ();
 extern "C" void Mesh__ctor_m3AEBC82AB71D4F9498F6E254174BEBA8372834B4 ();
+extern "C" void Mesh_Clear_mB750E1DCAB658124AAD81A02B93DED7601047B60 ();
+extern "C" void Mesh_ClearImpl_mFFD3A4748AF067B75DBD646B4A64B3D9A2F3EE14 ();
 extern "C" void Mesh_Internal_Create_mF1F8E9F726EAC9A087D49C81E2F1609E8266649E ();
+extern "C" void Mesh_PrintErrorCantAccessChannel_m2E8A25959739B006557A94F7E460E8BE0B3ABB19 ();
+extern "C" void Mesh_PrintErrorCantAccessIndices_mA45D3609288655A328AEB0F2F436403B1ECE5077 ();
+extern "C" void Mesh_RecalculateBounds_m1BF701FE2CEA4E8E1183FF878B812808ED1EBA49 ();
+extern "C" void Mesh_RecalculateBoundsImpl_m43DE3DEFC2DADC090DC6FD2C27F44D6DBB88CEF6 ();
+extern "C" void Mesh_SetArrayForChannelImpl_mEF2432246258E82C90015832073A7B3BC77A31A2 ();
+extern "C" void Mesh_SetColors_m237E41213E82D4BB882ED96FD81A17D9366590CF ();
+extern "C" void Mesh_SetIndicesImpl_mF0FAE821CA0269526BDA766E9A2DC12778A2CB55 ();
+extern "C" void Mesh_SetNormals_m76D71A949B9288FA8ED17DDADC530365307B9797 ();
+extern "C" void Mesh_SetSizedArrayForChannel_mCC8ABD25EDD3EF7237B8B8ADE4E649F95055EFEC ();
+extern "C" void Mesh_SetTangents_m6EEAB861C9286B1DA4935B87A883045ADD3955E5 ();
+extern "C" void Mesh_SetTriangles_m6A43D705DE751C622CCF88EC31C4EF1B53578BE5 ();
+extern "C" void Mesh_SetTriangles_m39FB983B90F36D724CC1C21BA7821C9697F86116 ();
+extern "C" void Mesh_SetTrianglesImpl_m8EDF09F91CF1F2FE8B6095E7C73685FA36ABCECD ();
+extern "C" void Mesh_SetUVs_m0210150B0387289B823488D421BDF9CBF9769116 ();
+extern "C" void Mesh_SetVertices_m5F487FC255C9CAF4005B75CFE67A88C8C0E7BB06 ();
 extern "C" void MeshFilter_DontStripMeshFilter_m7FBA33F8214DB646F74E00F7CEFFDF2D0018004C ();
 extern "C" void MeshRenderer_DontStripMeshRenderer_mC5359CA39BA768EBDB3C90D4FAE999F4EB1B6B24 ();
 extern "C" void MonoBehaviour__ctor_mEAEC84B222C60319D593E456D769B3311DFCEF97 ();
@@ -9770,8 +10891,14 @@ extern "C" void Object__ctor_m091EBAEBC7919B0391ABDAFB7389ADC12206525B ();
 extern "C" void Object_CheckNullArgument_m8D42F516655D770DFEEAA13CF86A2612214AAA9B ();
 extern "C" void Object_Destroy_m23B4562495BA35A74266D4372D45368F8C05109A ();
 extern "C" void Object_Destroy_m09F51D8BDECFD2E8C618498EF7377029B669030D ();
+extern "C" void Object_DestroyImmediate_mF6F4415EF22249D6E650FAA40E403283F19B7446 ();
+extern "C" void Object_DestroyImmediate_mFCE7947857C832BCBB366FCCE50072ACAD9A4C51 ();
+extern "C" void Object_SetName_m2CBABC30BA2B93EFF6A39B3295A7AB85901E60E8 ();
 extern "C" void Object_set_hideFlags_mB0B45A19A5871EF407D7B09E0EB76003496BA4F0 ();
+extern "C" void Object_set_name_m538711B144CDE30F929376BCF72D0DC8F85D0826 ();
+extern "C" void Physics2D__cctor_mC0D622F2EAF13BF0513DB2969E50EEC5631CDBFC ();
 extern "C" void Physics_get_defaultPhysicsScene_Injected_mEAB07CA5307D0DDB331A31E6A6BA28CF83009262 ();
+extern "C" void Plane__ctor_m6535EAD5E675627C2533962F1F7890CBFA2BA44A_AdjustorThunk ();
 extern "C" void Playable__cctor_m5655D443F6D04230DB5D37BF7D5EDCA71FD85A32 ();
 extern "C" void Playable__ctor_m24C6ED455A921F585698BFFEC5CCED397205543E_AdjustorThunk ();
 extern "C" void PlayableAsset__ctor_m669F459CFACFE65873346E428F206C457B488167 ();
@@ -9808,6 +10935,7 @@ extern "C" void PlayerConnectionInternal_UnregisterInternal_m675B2C87E01FCBBF5CB
 extern "C" void PreloadData_PreloadDataDontStripMe_m68DF1A35E18F9FC43A63F2F990EA9970D4E4A78B ();
 extern "C" void MemoryProfiler_FinalizeSnapshot_m48FD62744888BBF0A9B13826622041226C8B9AD7 ();
 extern "C" void MetaData__ctor_m1852CAF4EDFB43F1ABCE37819D9963CEE959A620 ();
+extern "C" void PropertyAttribute__ctor_m7F5C473F39D5601486C1127DA0D52F2DC293FC35 ();
 extern "C" void PropertyName__ctor_m5D82851FB4D2B749CCFB4FF48024EC5EEC5ED04E_AdjustorThunk ();
 extern "C" void PropertyName__ctor_mE0853FF14F978FFAF3EEE0B98DA973E17C962B37_AdjustorThunk ();
 extern "C" void PropertyName__ctor_mF8DCC97F6EC552F9313CE85ACC9D3357F45FA16D_AdjustorThunk ();
@@ -9816,11 +10944,56 @@ extern "C" void Quaternion__cctor_m026361EBBB33BB651A59FC7BC6128195AEDCF935 ();
 extern "C" void Quaternion__ctor_m7502F0C38E04C6DE24C965D1CAF278DDD02B9D61_AdjustorThunk ();
 extern "C" void Quaternion_Internal_FromEulerRad_Injected_m2197C7F75B2DB8B99C1947CD7C92714FE8D0099D ();
 extern "C" void Quaternion_Inverse_Injected_m1CD79ADF97C60D5645C15C5F04219021EE4654DD ();
+extern "C" void RangeAttribute__ctor_mB9CC43849A074C59DD99F154215A755131D47D89 ();
+extern "C" void RangeInt__ctor_mACFE54DF73DE3F62053F851423525DB5AC1B100E_AdjustorThunk ();
 extern "C" void Ray__ctor_m695D219349B8AA4C82F96C55A27D384C07736F6B_AdjustorThunk ();
+extern "C" void Rect__ctor_m50B92C75005C9C5A0D05E6E0EBB43AFAF7C66280_AdjustorThunk ();
+extern "C" void Rect_set_height_mF4CB5A97D4706696F1C9EA31A5D8C466E48050D6_AdjustorThunk ();
+extern "C" void Rect_set_width_mC81EF602AC91E0C615C12FCE060254A461A152B8_AdjustorThunk ();
+extern "C" void Rect_set_x_m49EFE25263C03A48D52499C3E9C097298E0EA3A6_AdjustorThunk ();
+extern "C" void Rect_set_xMax_m1775041FCD5CA22C77D75CC780D158CD2B31CEAF_AdjustorThunk ();
+extern "C" void Rect_set_xMin_mD8F9BF59F4F33F9C3AB2FEFF32D8C16756B51E34_AdjustorThunk ();
+extern "C" void Rect_set_y_mCFDB9BD77334EF9CD896F64BE63C755777D7CCD5_AdjustorThunk ();
+extern "C" void Rect_set_yMax_m4F1C5632CD4836853A22E979C810C279FBB20B95_AdjustorThunk ();
+extern "C" void Rect_set_yMin_m58C137C81F3D098CF81498964E1B5987882883A7_AdjustorThunk ();
+extern "C" void RectOffset__ctor_m4A29807F411591FC06BE9367167B8F417EF73828 ();
+extern "C" void RectOffset__ctor_m23620FE61AAF476219462230C6839B86736B80BA ();
+extern "C" void RectOffset_Destroy_mE1A6BDB23EC0B1A51AD5365CEF0055F7856AA533 ();
+extern "C" void RectOffset_Finalize_m69453D37706F46DD3A2A6F39A018D371A5E7072C ();
+extern "C" void RectOffset_InternalDestroy_m4FAB64D6AECF15082E19BDC4F22913152D5C6FA1 ();
 extern "C" void ReapplyDrivenProperties__ctor_m0633C1B8E1B058DF2C3648C96D3E4DC006A76CA7 ();
 extern "C" void ReapplyDrivenProperties_EndInvoke_mC8DF7BD47EC8976C477491961F44912BA4C0CD7C ();
 extern "C" void ReapplyDrivenProperties_Invoke_m37F24671E6F3C60B3D0C7E0CE234B8E125D5928A ();
+extern "C" void RectTransform_GetLocalCorners_m8761EA5FFE1F36041809D10D8AD7BC40CF06A520 ();
+extern "C" void RectTransform_GetWorldCorners_m073AA4D13C51C5654A5983EE3FE7E2E60F7761B6 ();
 extern "C" void RectTransform_SendReapplyDrivenProperties_m231712A8CDDCA340752CB72690FE808111286653 ();
+extern "C" void RectTransform_SetInsetAndSizeFromParentEdge_m4ED849AA88D194A7AA6B1021DF119B926F322146 ();
+extern "C" void RectTransform_SetSizeWithCurrentAnchors_m6F93CD5B798E4A53F2085862EA1B4021AEAA6745 ();
+extern "C" void RectTransform_add_reapplyDrivenProperties_mDA1F055B02E43F9041D4198D446D89E00381851E ();
+extern "C" void RectTransform_get_anchorMax_Injected_m61CE870627E5CB0EFAD38D5F207BC36879378DDD ();
+extern "C" void RectTransform_get_anchorMin_Injected_m11D468B602FFF89A8CC25685C71ACAA36609EF94 ();
+extern "C" void RectTransform_get_anchoredPosition_Injected_mCCBAEBA5DD529E03D42194FDE9C2AD1FBA8194E8 ();
+extern "C" void RectTransform_get_pivot_Injected_m23095C3331BE90EB3EEFFDAE0DAD791E79485F7F ();
+extern "C" void RectTransform_get_rect_Injected_m94E98A7B55F470FD170EBDA2D47E44CF919CD89F ();
+extern "C" void RectTransform_get_sizeDelta_Injected_m225C77C72E97B59C07693E339E0132E9547F8982 ();
+extern "C" void RectTransform_remove_reapplyDrivenProperties_m65A8DB93E1A247A5C8CD880906FF03FEA89E7CEB ();
+extern "C" void RectTransform_set_anchorMax_m55EEF00D9E42FE542B5346D7CEDAF9248736F7D3 ();
+extern "C" void RectTransform_set_anchorMax_Injected_m6BC717A6F528E130AD92994FB9A3614195FBFFB2 ();
+extern "C" void RectTransform_set_anchorMin_mE965F5B0902C2554635010A5752728414A57020A ();
+extern "C" void RectTransform_set_anchorMin_Injected_m8BACA1B777D070E5FF42D1D8B1D7A52FFCD59E40 ();
+extern "C" void RectTransform_set_anchoredPosition_m4DD45DB1A97734A1F3A81E5F259638ECAF35962F ();
+extern "C" void RectTransform_set_anchoredPosition_Injected_mCAEE3D22ADA5AF1CB4E37813EB68BF554220DAEF ();
+extern "C" void RectTransform_set_offsetMax_mD55D44AD4740C79B5C2C83C60B0C38BF1090501C ();
+extern "C" void RectTransform_set_offsetMin_m7455ED64FF16C597E648E022BA768CFDCF4531AC ();
+extern "C" void RectTransform_set_pivot_mB791A383B3C870B9CBD7BC51B2C95711C88E9DCF ();
+extern "C" void RectTransform_set_pivot_Injected_m2914C16D5516DE065A932CB43B61C6EEA3C5D3D3 ();
+extern "C" void RectTransform_set_sizeDelta_m7729BA56325BA667F0F7D60D642124F7909F1302 ();
+extern "C" void RectTransform_set_sizeDelta_Injected_mD2B6AE8C7BB4DE09F1C62B4A853E592EEF9E8399 ();
+extern "C" void RectTransformUtility__cctor_m1DCF0D49797698D7D4FBF3EF83B5DEC9A5F42851 ();
+extern "C" void RectTransformUtility_FlipLayoutAxes_mF5D9BF9F0EACBC972A22C937FD21B610410EB956 ();
+extern "C" void RectTransformUtility_FlipLayoutOnAxis_mFECCA330C80845D0B75829C7DD242688911006AE ();
+extern "C" void RectTransformUtility_PixelAdjustPoint_Injected_m7F2640515030E47B1B8227306BFED31F733C9B8B ();
+extern "C" void RectTransformUtility_PixelAdjustRect_Injected_m2172A105E834E9F0B292508EF544A68ED257A317 ();
 extern "C" void ReflectionProbe_CallReflectionProbeEvent_mA6273CE84793FD3CC7AA0506C525EED4F4935B62 ();
 extern "C" void ReflectionProbe_CallSetDefaultReflection_m97EFBE5F8A57BB7C8CA65C65FF4BD9889060325D ();
 extern "C" void RemoteConfigSettings_Destroy_m91215D772DF190B8AD9A73C8165DEDBE129C7A10 ();
@@ -9854,6 +11027,9 @@ extern "C" void RenderTexture_set_width_m10EF29F6167493A1C5826869ACB10EA9C7A5BDC
 extern "C" void RenderTextureDescriptor__cctor_mA5675E6684E1E8C26E848D2390FB2ABE8E3C11FD ();
 extern "C" void RequireComponent__ctor_m27819B55F8BD1517378CEFECA00FB183A13D9397 ();
 extern "C" void RequireComponent__ctor_m2833BC8FBE2C72EE6F0CA08C4617BF84CB7D5BE6 ();
+extern "C" void Rigidbody_AddForce_mD64ACF772614FE36CFD8A477A07A407B35DF1A54 ();
+extern "C" void Rigidbody_AddForce_Injected_mEB8DB621D03BE740C5CBD472E873FF8B6EF6C119 ();
+extern "C" void Rigidbody_get_velocity_Injected_m61C1628D08B48C8971E476FCBB9323CB5EB73DAC ();
 extern "C" void Rigidbody_set_velocity_m8D129E88E62AD02AB81CFC8BE694C4A5A2B2B380 ();
 extern "C" void Rigidbody_set_velocity_Injected_mA0CBA4077CADA05CF30404564E8D6260EF60E07D ();
 extern "C" void RuntimeInitializeOnLoadMethodAttribute__ctor_mB64D0D2B5788BC105D3640A22A70FCD5183CB413 ();
@@ -9866,12 +11042,18 @@ extern "C" void SceneManager_Internal_SceneUnloaded_m32721E87A02DAC634DD4B985709
 extern "C" void SceneManager_LoadScene_mFC850AC783E5EA05D6154976385DFECC251CDFB9 ();
 extern "C" void ScriptableObject__ctor_m6E2B3821A4A361556FC12E9B1C71E1D5DC002C5B ();
 extern "C" void ScriptableObject_CreateScriptableObject_m0DEEBEC415354F586C010E7863AEA64D2F628D0B ();
+extern "C" void MovedFromAttribute__ctor_mF87685F9D527910B31D3EF58F0EAA297E1944B42 ();
+extern "C" void MovedFromAttribute__ctor_mDA989E5C278F39B0045F3BCA5153BB2A40BAD52A ();
+extern "C" void MovedFromAttribute_set_IsInDifferentAssembly_m6A7A22FAD0547328CABA2D949D1E61E0D2822E0D ();
+extern "C" void MovedFromAttribute_set_Namespace_m4A1CFA5322A807FBFA70CE7A209DF7E7F3093089 ();
 extern "C" void GeneratedByOldBindingsGeneratorAttribute__ctor_m16915B4C437B4BE69681DD9A0A368FCD6155EB81 ();
 extern "C" void PreserveAttribute__ctor_mD842EE86496947B39FE0FBC67393CE4401AC53AA ();
 extern "C" void RequiredByNativeCodeAttribute__ctor_mD8B976753773E00BB7E1E63DF6C23A1EB3054422 ();
 extern "C" void RequiredByNativeCodeAttribute_set_GenerateProxy_m8B647BCD03460AD81F920CEF4CC51B499B5AFE55 ();
 extern "C" void RequiredByNativeCodeAttribute_set_Optional_m995DE99A803BC2D6FE66CCB370AEBE5ACF706955 ();
 extern "C" void UsedByNativeCodeAttribute__ctor_m599B42E9BBC333CDA57CD8154C902AB7594B80AD ();
+extern "C" void ScrollViewState__ctor_mBD3229B13A482BEE165EE9CACA85F716122F3BD4 ();
+extern "C" void SelectionBaseAttribute__ctor_mD7E83E67AFD9920E70551A353A33CC94D0584E8E ();
 extern "C" void HitInfo_SendMessage_m28CF2E475D145CB7142DF0BEA985EC943DB1CD41_AdjustorThunk ();
 extern "C" void SendMouseEvents__cctor_mCC790EB2DADBEAB9D6E06D79FA77634C68F17B2B ();
 extern "C" void SendMouseEvents_DoSendMouseEvents_m95F30F16C9E28757678B2A6CBB09B4929F1EA72C ();
@@ -9881,6 +11063,7 @@ extern "C" void SendMouseEvents_SetMouseMoved_m860C81AB05FE646EB58219CE6AF1C5AE1
 extern "C" void FormerlySerializedAsAttribute__ctor_m770651B828F499F804DB06A777E8A4103A3ED2BD ();
 extern "C" void SerializeField__ctor_mEE7F6BB7A9643562D8CEF189848925B74F87DA27 ();
 extern "C" void SetupCoroutine_InvokeMoveNext_m9106BA4E8AE0E794B17F184F1021A53F1D071F31 ();
+extern "C" void SliderState__ctor_m8CBFEE8D20C2D8EB0B68B1B171D9396DE84B605E ();
 extern "C" void U3CUnityEngine_SocialPlatforms_ISocialPlatform_AuthenticateU3Ec__AnonStorey0__ctor_m3DDB5F2C53FE0FD0CDA1EC3CB48DFF2D84FFEE55 ();
 extern "C" void U3CUnityEngine_SocialPlatforms_ISocialPlatform_AuthenticateU3Ec__AnonStorey0_U3CU3Em__0_mAE3CBA445CA0E4065D9B08741339C4ED0AFED9EF ();
 extern "C" void GameCenterPlatform__cctor_mD90E0FFB8A51FB44B2F162864C16F5B05794BC69 ();
@@ -9976,13 +11159,54 @@ extern "C" void UserProfile_SetImage_mA0A53EC856BFB207ED300DF5C533B5E3F532A358 (
 extern "C" void UserProfile_SetUserID_m498F118E4303653235C8BB13F2645B86101514CF ();
 extern "C" void UserProfile_SetUserName_mC279B9030E4C28E041B21CACEA9A31E339199AC3 ();
 extern "C" void Range__ctor_m464C0B9EC4D5509770E152A5D935EDF1B3A325D0_AdjustorThunk ();
+extern "C" void SpaceAttribute__ctor_m645A0DE9B507F2AFD8C67853D788F5F419D547C7 ();
+extern "C" void SpaceAttribute__ctor_mA70DC7F5FDC5474223B45E0F71A9003BBED1EFD0 ();
 extern "C" void Sprite__ctor_m8559FBC54BD7CDA181B190797CC8AC6FB1310F9E ();
+extern "C" void Sprite_GetInnerUVs_Injected_m19AF3A32647EE2153374B4B58CB248A5E3715F6B ();
+extern "C" void Sprite_GetOuterUVs_Injected_m57E56A2D7686D47E6948511F102AF8135E98B2B0 ();
+extern "C" void Sprite_GetPadding_Injected_m843873F288F8CBC4BDDF1BBE20211405039ABBDC ();
+extern "C" void Sprite_GetTextureRect_Injected_m3D0143FD7E689267FAE3164F7C149DB5FF3384C2 ();
+extern "C" void Sprite_get_border_Injected_mA56DD9A38B61783341DF35C808FBFE93A1BD4BB6 ();
+extern "C" void Sprite_get_bounds_Injected_m6422C2DBFD84A7B7F921DCA14BDFF2157738194B ();
+extern "C" void Sprite_get_pivot_Injected_m526201DCD812D7AB10AACE35E4195F7E53B633EC ();
+extern "C" void Sprite_get_rect_Injected_mABF4FCC2AEDD9EE874797E35EDEFF023A52F5830 ();
 extern "C" void StackTraceUtility__cctor_mDDEE2A2B6EBEDB75E0C28C81AFEDB1E9C372A165 ();
 extern "C" void StackTraceUtility_ExtractStringFromExceptionInternal_m1FB3D6414E31C313AC633A24653DA4B1FB59C975 ();
 extern "C" void StackTraceUtility_SetProjectFolder_m05FBBB2FF161F2F9F8551EB67D44B50F7CC98E21 ();
+extern "C" void StateMachineBehaviour__ctor_m60289315ADCB494227D881EEFA6C4458BACA79DB ();
+extern "C" void StateMachineBehaviour_OnStateEnter_mAB25325C96611ADDF93038EC6792EC4F76AEF4EE ();
+extern "C" void StateMachineBehaviour_OnStateEnter_mAAD23D49A3F84438928677D2FA3F8E26CFDE2522 ();
+extern "C" void StateMachineBehaviour_OnStateExit_m83F9656CE5265BD15F3B5D1AB91411A211922730 ();
+extern "C" void StateMachineBehaviour_OnStateExit_m43A13AA682B9E86F6D2952338F47CE1B2BF9D4A7 ();
+extern "C" void StateMachineBehaviour_OnStateIK_mB977958BB73727EF2F721BB449DFEA781529785B ();
+extern "C" void StateMachineBehaviour_OnStateIK_m09D6AC0300060ACF7B82283AD947E9A260585576 ();
+extern "C" void StateMachineBehaviour_OnStateMachineEnter_m5497D76EAE53BEF94431E3C1AAD0B58B89E745C7 ();
+extern "C" void StateMachineBehaviour_OnStateMachineEnter_m6DE0F767D565EFC33361BA13A6DCC65AC89D3D07 ();
+extern "C" void StateMachineBehaviour_OnStateMachineExit_m8A0744B8E90157AE466269DF324C44BFCBB47FF3 ();
+extern "C" void StateMachineBehaviour_OnStateMachineExit_m01575716EA20F88A56C3CB778FACE2CBDA68EF26 ();
+extern "C" void StateMachineBehaviour_OnStateMove_mAE38B3B50B0A495AF30E6711F52381668B63DAA2 ();
+extern "C" void StateMachineBehaviour_OnStateMove_mD8060C6C70456CDC4D678184723C05A7750846F3 ();
+extern "C" void StateMachineBehaviour_OnStateUpdate_mE12079F72B209DDFFAB4088B2B210EA20C2C4266 ();
+extern "C" void StateMachineBehaviour_OnStateUpdate_mF1E4E77449D427AE5DDD68FD8EECCAD1E54E1EE9 ();
+extern "C" void TextAreaAttribute__ctor_m6134ACE5D232B16A9433AA1F47081FAA9BAC1BA1 ();
+extern "C" void TextEditor__ctor_m279158A237B393882E3CC2834C1F7CA7679F79CC ();
+extern "C" void TextGenerator__ctor_mD3956FF7D10DC470522A6363E7D6EC243415098A ();
+extern "C" void TextGenerator__ctor_m86E01E7BB9DC1B28F04961E482ED4D7065062BCE ();
+extern "C" void TextGenerator_Finalize_m6E9076F61F7B4DD5E56207F39E8F5FD85F188D8A ();
+extern "C" void TextGenerator_GetCharacters_mBB7980F2FE8BE65A906A39B5559EC54B1CEF4131 ();
+extern "C" void TextGenerator_GetCharactersInternal_m4383B9A162CF10430636BFD248DDBDDB4D64E967 ();
+extern "C" void TextGenerator_GetLines_mC31F7918A9159908EA914D01B2E32644B046E2B5 ();
+extern "C" void TextGenerator_GetLinesInternal_mA54A05D512EE1CED958F73E0024FB913E648EDAD ();
+extern "C" void TextGenerator_GetVertices_m6FA34586541514ED7396990542BDAC536C10A4F2 ();
+extern "C" void TextGenerator_GetVerticesInternal_mB794B94982BA35D2CDB8F3AA77880B33AEB42B9A ();
+extern "C" void TextGenerator_Internal_Destroy_mB7FE56C2FAAE16938DE8BC7256EB44643E1845A5 ();
+extern "C" void TextGenerator_Invalidate_m5C360AB470CB728BAA03B34BE33C75CBB55B673E ();
+extern "C" void TextGenerator_System_IDisposable_Dispose_m9D3291DC086282AF57A115B39D3C17BD0074FA3D ();
+extern "C" void TextGenerator_get_rectExtents_Injected_mD8FC9E47642590C7AC78DA83B583E5F4271842D0 ();
 extern "C" void TextMesh_set_text_m64242AB987CF285F432E7AED38F24FF855E9B220 ();
 extern "C" void Texture2D__ctor_m0C86A87871AA8075791EF98499D34DA95ACB0E35 ();
 extern "C" void Texture2D__ctor_m185B87D9FE6E39A890C667FCAA8A15A0D93AFCA6 ();
+extern "C" void Texture2D_GetPixelBilinearImpl_Injected_m120BD9810D176C39E874FFDAF53AD3AC3B6ADF85 ();
 extern "C" void Texture2D_Internal_Create_m8CD51387F8BEF8ACCBC2BACA532EE7C6DC7F0E10 ();
 extern "C" void Texture2DArray__ctor_mD92521FF6DA05FF47471B741DDC7E4D5B3C3F4E2 ();
 extern "C" void Texture2DArray__ctor_mE0F6B7F60470C479258E1CC295456BCA103E66BF ();
@@ -9992,21 +11216,46 @@ extern "C" void Texture3D__ctor_m080D4201C72C73ECB718F44491858309CDCCBF40 ();
 extern "C" void Texture3D__ctor_m7086160504490544C327FF1C7823830B44441466 ();
 extern "C" void Texture3D_Internal_Create_mC9DE34B29A25742A7443EF94E1233587D2311212 ();
 extern "C" void Texture__ctor_m19850F4654F76731DD82B99217AD5A2EB6974C6C ();
+extern "C" void Texture_get_texelSize_Injected_m812BEA61C30039FF16BE6A2E174C81DCB40000DE ();
 extern "C" void Texture_set_height_m601E103C6E803353701370B161F992A5B0C89AB6 ();
 extern "C" void Texture_set_width_m9E42C8B8ED703644B85F54D8DCFB51BF954F56DA ();
 extern "C" void ThreadAndSerializationSafeAttribute__ctor_mCB8D8FEED836D6472A4FB90C69969F0D99C39619 ();
+extern "C" void TooltipAttribute__ctor_m13242D6EEE484B1CCA7B3A8FA720C5BCC44AF5DF ();
+extern "C" void TouchScreenKeyboard__ctor_mDF71D45DC0F867825BEB1CDF728927FBB0E07F86 ();
+extern "C" void TouchScreenKeyboard_Destroy_m916AE9DA740DBD435A5EDD93C6BC55CCEC8310C3 ();
+extern "C" void TouchScreenKeyboard_Finalize_m684570CC561058F48B51F7E21A144299FBCE4C76 ();
+extern "C" void TouchScreenKeyboard_GetSelection_mED761F9161A43CC8E507EA27DB1BD11127C6C896 ();
+extern "C" void TouchScreenKeyboard_Internal_Destroy_m6CD4E2343AB4FE54BC23DCFE62A50180CB3634E0 ();
+extern "C" void TouchScreenKeyboard_SetSelection_mB728B6A7B07AC33987FB30F7950B3D31E3BA5FBF ();
+extern "C" void TouchScreenKeyboard_set_active_m8D5FDCFA997C5EAD7896F7EB456165498727792D ();
+extern "C" void TouchScreenKeyboard_set_characterLimit_m97F392EB376881A77F5210CFA6736F0A49F5D57B ();
+extern "C" void TouchScreenKeyboard_set_hideInput_mA9729B01B360BF98153F40B96DDED39534B94840 ();
+extern "C" void TouchScreenKeyboard_set_selection_m27C5DE6B9DBBBFE2CCA68FA80A600D94337215C7 ();
+extern "C" void TouchScreenKeyboard_set_text_mF72A794EEC3FC19A9701B61A70BCF392D53B0D38 ();
 extern "C" void Enumerator__ctor_mBF5A46090D26A1DD98484C00389566FD8CB80770 ();
 extern "C" void Transform__ctor_mE8E10A06C8922623BAC6053550D19B2E297C2F35 ();
+extern "C" void Transform_InverseTransformPoint_Injected_m320ED08EABA9713FDF7BDAD425630D567D39AB1D ();
 extern "C" void Transform_Rotate_mEEA80F3DA5A4C93611D7165DF54763E578477EF9 ();
 extern "C" void Transform_Rotate_m3424566A0D19A1487AE3A82B08C47F2A2D2A26CB ();
+extern "C" void Transform_SetAsFirstSibling_m2CAD80F7C9D89EE145BC9D3D0937D6EBEE909531 ();
+extern "C" void Transform_SetParent_mFAF9209CAB6A864552074BA065D740924A4BF979 ();
+extern "C" void Transform_SetParent_m268E3814921D90882EFECE244A797264DE2A5E35 ();
+extern "C" void Transform_TransformPoint_Injected_mB697D04DF989E68C8AAFAE6BFBBE718B68CB477D ();
+extern "C" void Transform_get_localPosition_Injected_mC1E8F9DAC652621188ABFB58571782157E4C8FBA ();
 extern "C" void Transform_get_localRotation_Injected_m1ADF4910B326BAA828892B3ADC5AD1A332DE963B ();
 extern "C" void Transform_get_localScale_Injected_mA8987BAB5DA11154A22E2B36995C7328792371BE ();
+extern "C" void Transform_get_localToWorldMatrix_Injected_mF5629FA21895EB6851367E1636283C7FB70333A9 ();
 extern "C" void Transform_get_position_Injected_mFD1BD0E2D17761BA08289ABBB4F87EDFFF7C1EBB ();
 extern "C" void Transform_get_rotation_Injected_m41BEC8ACE323E571978CED341997B1174340701B ();
+extern "C" void Transform_get_worldToLocalMatrix_Injected_mFEC701DE6F97A22DF1718EB82FBE3C3E62447936 ();
+extern "C" void Transform_set_localPosition_m275F5550DD939F83AFEB5E8D681131172E2E1728 ();
+extern "C" void Transform_set_localPosition_Injected_m8B4E45BAADCDD69683EB6424992FC9B9045927DE ();
 extern "C" void Transform_set_localRotation_mE2BECB0954FFC1D93FB631600D9A9BEFF41D9C8A ();
 extern "C" void Transform_set_localRotation_Injected_mF84F8CFA00AABFB7520AB782BA8A6E4BBF24FDD5 ();
 extern "C" void Transform_set_localScale_m7ED1A6E5A87CD1D483515B99D6D3121FB92B0556 ();
 extern "C" void Transform_set_localScale_Injected_m9BF22FF0CD55A5008834951B58BB8E70D6982AB2 ();
+extern "C" void Transform_set_parent_m65B8E4660B2C554069C57A957D9E55FECA7AA73E ();
+extern "C" void Transform_set_parentInternal_m8534EFFADCF054FFA081769F84256F9921B0258C ();
 extern "C" void Transform_set_position_mDA89E4893F14ECA5CBEEE7FB80A5BF7C1B8EA6DC ();
 extern "C" void Transform_set_position_Injected_mB6BEBF6B460A566E933ED59C4470ED58D81B3226 ();
 extern "C" void Transform_set_rotation_m429694E264117C6DC682EC6AF45C7864E5155935 ();
@@ -10014,10 +11263,740 @@ extern "C" void Transform_set_rotation_Injected_m1B409EA2BBF0C5DEE05153F4CD51346
 extern "C" void SpriteAtlasManager__cctor_m826C9096AB53C9C6CFCF342FA9FDC345A726B6C6 ();
 extern "C" void SpriteAtlasManager_PostRegisteredAtlas_m2FCA85EDC754279C0A90CC3AF5E12C3E8F6A61CB ();
 extern "C" void SpriteAtlasManager_Register_m2C324F6E122AF09D44E4EE3F8F024323663670D2 ();
+extern "C" void SpriteAtlasManager_add_atlasRegistered_m6742D91F217B69CC2A65D80B5F25CFA372A1E2DA ();
+extern "C" void SpriteAtlasManager_remove_atlasRegistered_m55564CC2797E687E4B966DC1797D059ABBB04051 ();
+extern "C" void AnimationTriggers__ctor_m5AA317D9A9FFB191D992B3FBC702A6A2BBE16ADE ();
+extern "C" void AnimationTriggers_set_disabledTrigger_m37B1BDC569AF2B798F51C78F6ABC736ADDBEBF6F ();
+extern "C" void AnimationTriggers_set_highlightedTrigger_mDBDF2797BAD41A6D02078F433BBD2D938DFD2E06 ();
+extern "C" void AnimationTriggers_set_normalTrigger_m8B272F6A217DA1DE6032C2FF43ABBA20227CB08F ();
+extern "C" void AnimationTriggers_set_pressedTrigger_mFC5DA0BBC29801845BB1B1868828BF5CA00253AB ();
+extern "C" void AspectRatioFitter__ctor_mD9565904E9B26C1B175F3D728318245C3F44AB26 ();
+extern "C" void AspectRatioFitter_OnDisable_m76C31DB4383D9A2DE2AE1C780A06CFFCCCEADA9E ();
+extern "C" void AspectRatioFitter_OnEnable_mDE8C390FB2E99F1F7611583FDBD84B3DA35071AB ();
+extern "C" void AspectRatioFitter_OnRectTransformDimensionsChange_mD340D18666970469F276D51E70952B8F785426E4 ();
+extern "C" void AspectRatioFitter_SetDirty_m8906860D76995C42C75C6D596E75A7B14079C0B2 ();
+extern "C" void AspectRatioFitter_SetLayoutHorizontal_m1738F5CFACBFDC9E65E707AAA8273EE6EF18BBE0 ();
+extern "C" void AspectRatioFitter_SetLayoutVertical_m16A353F8CFFC825B0492CEF70F081381C181A09D ();
+extern "C" void AspectRatioFitter_Update_mE105C6DD67A867C5DBFBA02EAF2ABEE5F65DD774 ();
+extern "C" void AspectRatioFitter_UpdateRect_m48B78A1C8CBAE90726B1FA9311D0A94E525ABEB4 ();
+extern "C" void AspectRatioFitter_set_aspectMode_mAD5882D6867315E5DA24D7F6F79FEED5CF6960E4 ();
+extern "C" void AspectRatioFitter_set_aspectRatio_m97D43C307087AAF9130ABF35AED9748CD8B50084 ();
+extern "C" void BaseMeshEffect__ctor_mDAF9031F104E899963B63B3157E2F9CFF9A67B53 ();
+extern "C" void BaseMeshEffect_ModifyMesh_m33E7051E994174202728BD2DB2FC6A15369543E8 ();
+extern "C" void BaseMeshEffect_OnDidApplyAnimationProperties_m22DC2B8D71EA7B6759DCBD65BC86CA7DFFEA3CA4 ();
+extern "C" void BaseMeshEffect_OnDisable_mB6887AEE4389AD8A7D1887ADBDAB8F2323A59761 ();
+extern "C" void BaseMeshEffect_OnEnable_m87A0A7C1776A45241C5B79E0798D701998A3AC06 ();
+extern "C" void BaseVertexEffect__ctor_m78E987B6C2DCF87E2CC3EA6F02A4FF784EF8DE16 ();
+extern "C" void U3COnFinishSubmitU3Ec__Iterator0__ctor_m499DA899F2DA84791D010E1E10C43F04AF808073 ();
+extern "C" void U3COnFinishSubmitU3Ec__Iterator0_Dispose_m2C0B56AB78E4CE0A7EFBD29FC8424E00F23CE468 ();
+extern "C" void U3COnFinishSubmitU3Ec__Iterator0_Reset_mBCC64A2E586D434CA73B76F6973AFCE6F97F195E ();
+extern "C" void ButtonClickedEvent__ctor_m428E0258D725DDFE6DD10318AC943F690A263F56 ();
+extern "C" void Button__ctor_mED2BC0DA246D78116445D1095284B1AE9B3D390D ();
+extern "C" void Button_OnPointerClick_m3A39FE51F04BE14A4CB7C546C7B873845BA17B4E ();
+extern "C" void Button_OnSubmit_m4A3CB8F3C52440CAD7AAB223B8D8801B87039F3F ();
+extern "C" void Button_Press_m0C24A5004238FAD62C22F7737EAA535DD21A1D5A ();
+extern "C" void Button_set_onClick_mC1A5C8D1C9A2887AFAFB554F8DEFB506E02FD922 ();
+extern "C" void CanvasScaler__ctor_mA69A6F38BE3098458A7472D73D81F95E1D99A11B ();
+extern "C" void CanvasScaler_Handle_m189FD9436635FCDEB6F35253B3817CD3A0A8B166 ();
+extern "C" void CanvasScaler_HandleConstantPhysicalSize_mB0173D2440F14B901B4FFAF419BDCDA2EB43A94B ();
+extern "C" void CanvasScaler_HandleConstantPixelSize_mF3662B3CBD7E1D64978099B85608010296B79173 ();
+extern "C" void CanvasScaler_HandleScaleWithScreenSize_m1DD61433B67405576320940534A8FC0FA1911C8F ();
+extern "C" void CanvasScaler_HandleWorldCanvas_mF5BD30AADCEA605A130315BE12F44205AC8D5003 ();
+extern "C" void CanvasScaler_OnDisable_m18076416BA69F91463CBEB7BA9140A1A7E33623F ();
+extern "C" void CanvasScaler_OnEnable_m8749E386D81BA203418FC433BD0BA5DD04EF14FD ();
+extern "C" void CanvasScaler_SetReferencePixelsPerUnit_m02C40AB796242295B4A4685DDB0D4456BDEEBA8E ();
+extern "C" void CanvasScaler_SetScaleFactor_m431BE2C381FEEFDFD69EF620EA665ED8C615C0A7 ();
+extern "C" void CanvasScaler_Update_mBAAA59BA0D76851C0236E0779F369B119099F274 ();
+extern "C" void CanvasScaler_set_defaultSpriteDPI_m47244B69D6FC8C67B1CC5E3C828F5DD3FFB8C47A ();
+extern "C" void CanvasScaler_set_dynamicPixelsPerUnit_m6966A409824F98E3027005BFF3655798933766DA ();
+extern "C" void CanvasScaler_set_fallbackScreenDPI_m31031EA416ADD8D4C500D6C13752B5736FB3B51A ();
+extern "C" void CanvasScaler_set_matchWidthOrHeight_mC2F74E7F12A88022550390D9994C74825BAC0713 ();
+extern "C" void CanvasScaler_set_physicalUnit_m2C611B8BFBD49A8BD41968665137431E6ACAF7BC ();
+extern "C" void CanvasScaler_set_referencePixelsPerUnit_m5518D8E47850348219FD599E9AC6361F3512A7EF ();
+extern "C" void CanvasScaler_set_referenceResolution_m474B06B6CAEBFD1CC161D2035EEE62AEEAECCF79 ();
+extern "C" void CanvasScaler_set_scaleFactor_m427E135035F84574DD6D9DCC63331F9BE85ECE00 ();
+extern "C" void CanvasScaler_set_screenMatchMode_mADCC387FC2DB22A23D6E1F3C1BEAB62FACEAB2E7 ();
+extern "C" void CanvasScaler_set_uiScaleMode_mFFDB7212B2527D3B93CD2214B75814BFA5607F1C ();
+extern "C" void CanvasUpdateRegistry__cctor_mF173D376F15F2222F022D75E1E08625DE6363A25 ();
+extern "C" void CanvasUpdateRegistry__ctor_mF8EBE47C9664695C7DAF567C70AF4EDBA7B4D7FA ();
+extern "C" void CanvasUpdateRegistry_CleanInvalidItems_mEE44512237D965F1E37DBC512C138FF080026883 ();
+extern "C" void CanvasUpdateRegistry_InternalUnRegisterCanvasElementForGraphicRebuild_m70F9919EC8944366C9615EAA6782A45F13CEA1F2 ();
+extern "C" void CanvasUpdateRegistry_InternalUnRegisterCanvasElementForLayoutRebuild_mE56DF5AC0A2A22E636AA33DAEC298BC7AC2069CA ();
+extern "C" void CanvasUpdateRegistry_PerformUpdate_m27FCC7819543791FFD7C17E9A0A0599D9FABA3AD ();
+extern "C" void CanvasUpdateRegistry_RegisterCanvasElementForGraphicRebuild_m58474E8CE6625C2C25A46F49BD519A170F89D68F ();
+extern "C" void CanvasUpdateRegistry_RegisterCanvasElementForLayoutRebuild_m87299C15D1574DDED781874EF4AEE4D606AC4572 ();
+extern "C" void CanvasUpdateRegistry_UnRegisterCanvasElementForRebuild_mA600C1B4AC0D08675F45C90CC77BE23EBECF9854 ();
+extern "C" void ClipperRegistry__ctor_m015FF17B0FD41C8FC8E10CD5CEC2571D024BA5EE ();
+extern "C" void ClipperRegistry_Cull_m91E882B7B95D7BAA22F8CC4695EC25B2CC2C38AA ();
+extern "C" void ClipperRegistry_Register_mE7CB7501971618F5A7EA9B6586585A13DACC968B ();
+extern "C" void ClipperRegistry_Unregister_m9B2FB87C9FF8D8CBCFE58EF9B8300563C5F73507 ();
+extern "C" void ColorBlock_set_colorMultiplier_m85525FA1ECB9BA7EC2DAE11875DE1972062457F3_AdjustorThunk ();
+extern "C" void ColorBlock_set_disabledColor_m30578F817DB13CFD86B9498019EEC1A3D8BC9017_AdjustorThunk ();
+extern "C" void ColorBlock_set_fadeDuration_m07D8B9D347B41426EFD5D98DBD11A231BF1FB203_AdjustorThunk ();
+extern "C" void ColorBlock_set_highlightedColor_m04EFF0EF809F0AB42ECAE0E6EFB459DA6ED7A191_AdjustorThunk ();
+extern "C" void ColorBlock_set_normalColor_mE4DF3EEB1D307B8B103D9FE8CD9ADE83C6DBF41A_AdjustorThunk ();
+extern "C" void ColorBlock_set_pressedColor_m74751B216396D22726458C62377A0D900E40667B_AdjustorThunk ();
+extern "C" void ContentSizeFitter__ctor_m63F0277FC60425018D97C02830328370811060A5 ();
+extern "C" void ContentSizeFitter_HandleSelfFittingAlongAxis_m09EE5CFBE7DBFC2AE26957683E32B0008C956C0E ();
+extern "C" void ContentSizeFitter_OnDisable_m25089ED74FF4FC426A95FB6842F378C37BC73680 ();
+extern "C" void ContentSizeFitter_OnEnable_mDB19DDA81BC8A676E2EE5315A54EFE18A9FDEB1D ();
+extern "C" void ContentSizeFitter_OnRectTransformDimensionsChange_m7039CA2EF86F3C8C66EB41B3821189DC23F0E77D ();
+extern "C" void ContentSizeFitter_SetDirty_m82600E20D2D8D3F79FAAD0C07FAEEB63D7952885 ();
+extern "C" void ContentSizeFitter_SetLayoutHorizontal_mE95C6BEFC8C4F7392D526B7642B4C51976EB06B6 ();
+extern "C" void ContentSizeFitter_SetLayoutVertical_mE17A4D49E0D7E1845D465943A26AC39CE0260092 ();
+extern "C" void ContentSizeFitter_set_horizontalFit_m662A4AA5A3C7EE1BDE349BB5C428D5E2FB82D8E2 ();
+extern "C" void ContentSizeFitter_set_verticalFit_m9F051952E986B4C4E6DE74F4DA06A781EF45C2F8 ();
+extern "C" void ColorTweenCallback__ctor_m41EF6BF9A6B5F8031B51E59C04C2A2AB701975DE ();
+extern "C" void ColorTween_AddOnChangedCallback_mA50B8288FB823E4C45998A5DD4F2525E3B146E2F_AdjustorThunk ();
+extern "C" void ColorTween_TweenValue_mF6B10FEA49EB758AD37D95A7DD577D6AA9C32110_AdjustorThunk ();
+extern "C" void ColorTween_set_duration_mFF853A4E3F2F5975CD37526A483F027FE6CC549F_AdjustorThunk ();
+extern "C" void ColorTween_set_ignoreTimeScale_m030D10E281A17F0E3BA0A87EFD0829CC94A6E27B_AdjustorThunk ();
+extern "C" void ColorTween_set_startColor_mFBD959749B11BEFB3C76B379CB1CF9D63C837491_AdjustorThunk ();
+extern "C" void ColorTween_set_targetColor_mA9B42BCD97F4DCA902A5F41B439E65276F1ADCAB_AdjustorThunk ();
+extern "C" void ColorTween_set_tweenMode_mC18F42D36425106EB484E261128118F257FC36D4_AdjustorThunk ();
+extern "C" void FloatTweenCallback__ctor_m406C3AE3B2E5E09831B28E3944F68800FD8B4C84 ();
+extern "C" void FloatTween_AddOnChangedCallback_mF56A6612A7B8C7E7CBC94F3FBB958942D28C811C_AdjustorThunk ();
+extern "C" void FloatTween_TweenValue_m4ADF9CF3356268D7AD1CFF358BA252F1E52226F3_AdjustorThunk ();
+extern "C" void FloatTween_set_duration_mC1ADE5DCEEB20ED9B3AADD0FC04FF65C4A443950_AdjustorThunk ();
+extern "C" void FloatTween_set_ignoreTimeScale_mA660DAD4BFDCF099BCB1DF6648478700F1D65E58_AdjustorThunk ();
+extern "C" void FloatTween_set_startValue_mC561A7F050624AB42057E3BBF846DF3603E8BB2E_AdjustorThunk ();
+extern "C" void FloatTween_set_targetValue_m67AB57F47FF9EFD0E6DB8CD3C2D93ED53B8AB88A_AdjustorThunk ();
+extern "C" void DefaultControls__cctor_m703C2BF46100D8A4F4261F14654D5BCBB555295A ();
+extern "C" void DefaultControls_SetDefaultColorTransitionValues_m540576C1FD3A072FB3AB76185EFEF51AC82A3A99 ();
+extern "C" void DefaultControls_SetDefaultTextValues_mDFFC3500869C75750237DAD9E36F538DDDA38E3C ();
+extern "C" void DefaultControls_SetLayerRecursively_mE00076387B2664117F029ACE51F51ED8EE335FA3 ();
+extern "C" void DefaultControls_SetParentAndAlign_mD0F6F8FC6E5E67CF17AD8D1142BCE756539ED00B ();
+extern "C" void U3CDelayedDestroyDropdownListU3Ec__Iterator0__ctor_m19959F2B7C95149839C035713AC87A64B43F6669 ();
+extern "C" void U3CDelayedDestroyDropdownListU3Ec__Iterator0_Dispose_m23073AFD244DA950A3418AFD083C9EA87909FB7D ();
+extern "C" void U3CDelayedDestroyDropdownListU3Ec__Iterator0_Reset_mB28F4F42910BBC13D59BDA288BA4AB958E97399F ();
+extern "C" void U3CShowU3Ec__AnonStorey1__ctor_m76F98EBB90DECA7C32112ED2CF688D56B9112123 ();
+extern "C" void U3CShowU3Ec__AnonStorey1_U3CU3Em__0_mDBC3EEE294D7F8C45861EA31E17C31780FCD01DD ();
+extern "C" void DropdownEvent__ctor_mD747B0927F6C34D2AB68BAC21F91DE87B34A2E3F ();
+extern "C" void DropdownItem__ctor_m2F4AA14C68A7C57783784F47517188F5D1CE1AA5 ();
+extern "C" void DropdownItem_OnCancel_m1A584237B9A3EADE8779F001DD17851E75DF354E ();
+extern "C" void DropdownItem_OnPointerEnter_mF4835DA9D8EBCDA5B7C90B1BF525BDB3E37CB7F0 ();
+extern "C" void DropdownItem_set_image_mB9BDE4CD2F5FC4F75F87F7E857BBFCBBA34809CB ();
+extern "C" void DropdownItem_set_rectTransform_m36B3019046FAA455656F46152AF6936725E12487 ();
+extern "C" void DropdownItem_set_text_m04E545C6CCEEFDB01ED3B895349DBB5669E66CCE ();
+extern "C" void DropdownItem_set_toggle_m3DB6684889DCBEA5585912835FE5E7DA954F7DDB ();
+extern "C" void OptionData__ctor_m0DC02A63D7D2BB7C6072732878E698B8986F0F40 ();
+extern "C" void OptionData__ctor_m69CAD829768421DCBDA28D44BAFFB40BB5603589 ();
+extern "C" void OptionData__ctor_m6548A03ECC5EA4D36234DE9BB911E1BD76011630 ();
+extern "C" void OptionData__ctor_mD9CCAB8CF2FE8005278184157D3D8FC587A666A3 ();
+extern "C" void OptionData_set_image_m793D57CB0FF99F9A87C6B599E796A1B43C346CFE ();
+extern "C" void OptionData_set_text_m787A15FACF23F61FE6AE3EAEDCF54EB7129D1C8C ();
+extern "C" void OptionDataList__ctor_m50DB0DC9111F3482056A386D8D8E19D4F159F717 ();
+extern "C" void OptionDataList_set_options_m40E97384F3B6010BE85094984F624F898FE02272 ();
+extern "C" void Dropdown__cctor_m6620A9152DCC1C4026C535C91D567F9F9623424E ();
+extern "C" void Dropdown__ctor_mB398E648BF9BF446A2A312B12411B151874DA33F ();
+extern "C" void Dropdown_AddOptions_m5D4F2F638D58DE96D419D4334AEA416FC609A590 ();
+extern "C" void Dropdown_AddOptions_m3BE3C1348652C4EC0BB9C241847957E21C3DB3B6 ();
+extern "C" void Dropdown_AddOptions_m39E3EC790C6E2646D61856B7F4B70704725EB2F5 ();
+extern "C" void Dropdown_AlphaFadeList_m507C9D5098A6DF112F5ADE786C76E2A4D579E445 ();
+extern "C" void Dropdown_AlphaFadeList_m56863A69185C43B85E6722D1EDE26A9F98D95976 ();
+extern "C" void Dropdown_Awake_mA0DAA5AD5985CE4E20921291B238EA22DBE739A6 ();
+extern "C" void Dropdown_ClearOptions_m28F6FE67544AE0B1515B1F2A718E0519C2BD4E9A ();
+extern "C" void Dropdown_DestroyBlocker_m2677E1AB5152C1FFAABB53436E1FDCAE2CBC401D ();
+extern "C" void Dropdown_DestroyDropdownList_mFD3FA17F7806793D36C30DA5763C4C61C7E77915 ();
+extern "C" void Dropdown_DestroyItem_m22EC3178D8A02B0058FD979136D7886583EC3E0B ();
+extern "C" void Dropdown_Hide_mBFF60EE895F021B158F05DD88A16825A04610D53 ();
+extern "C" void Dropdown_OnCancel_m9C7B72091EE52736BAE6F1C16EDC5C3378C381C9 ();
+extern "C" void Dropdown_OnPointerClick_mEBE992B281AA485F6E05E3AF5E0A9F6200FA2BFC ();
+extern "C" void Dropdown_OnSelectItem_m08F27561CC8872CAA3FF545F69CFF6D975583A9D ();
+extern "C" void Dropdown_OnSubmit_m9927C90FB105A5297626DEBBBC7087A8EE14CB9C ();
+extern "C" void Dropdown_RefreshShownValue_mB219A39DC42848B3072346B236EB153927ABA0FB ();
+extern "C" void Dropdown_SetAlpha_m649690A3F42311868E09EC146FE3C74D341093DB ();
+extern "C" void Dropdown_SetupTemplate_m58C9F8005E8206EED4E032B9418C313374E508E1 ();
+extern "C" void Dropdown_Show_m60BCA279B8E130E8BCF74986F780554FE68DF4B8 ();
+extern "C" void Dropdown_Start_mAF430A87391F04D8A05B851212CCB05072BE795E ();
+extern "C" void Dropdown_set_captionImage_m63D967AFE979BD91EBEB6EB9237413E388A5A68D ();
+extern "C" void Dropdown_set_captionText_m64240655BA724BB8E06516D320D16999444F9437 ();
+extern "C" void Dropdown_set_itemImage_m1B4136F34B337BD81613C9D0E1287A702BC349BE ();
+extern "C" void Dropdown_set_itemText_mFD00DA97DDC9EA00D6A1911BF00025B6EDA8AFE1 ();
+extern "C" void Dropdown_set_onValueChanged_mB92BC100C7B04472D4B07464AE5A0CD24867E3AA ();
+extern "C" void Dropdown_set_options_m1243254CDB3A327539C1384BB885E0772C5DBF67 ();
+extern "C" void Dropdown_set_template_mD10A88138AD366B8978E202B44B89F138597AA4F ();
+extern "C" void Dropdown_set_value_mDBD1A4939AF46E0CC72936F4C15FD807FF95FC4F ();
+extern "C" void FontData__ctor_mFD790963D4168AD52BAC0B5921569B9B5209A45A ();
+extern "C" void FontData_UnityEngine_ISerializationCallbackReceiver_OnAfterDeserialize_mBD1AFF6C5AB78BFAF7078CFF357AAFE3FFB6D756 ();
+extern "C" void FontData_UnityEngine_ISerializationCallbackReceiver_OnBeforeSerialize_mE4A31BB9B1939551D224218F1A8006B090E33F82 ();
+extern "C" void FontData_set_alignByGeometry_m28C65382E1E2A47C87717F4AB15D1097DA35D170 ();
+extern "C" void FontData_set_alignment_m36B01D832401C1B87F8417190191D450D0AE9FC7 ();
+extern "C" void FontData_set_bestFit_m1D7BBA139FD4C6A48E2822F7A8CA661EA717DCBD ();
+extern "C" void FontData_set_font_m8A75A483DE9334E11D12E1346591BF1AFF2A333D ();
+extern "C" void FontData_set_fontSize_m9F05B5BCBBF3D6C1EB5407D71671967B3E512A20 ();
+extern "C" void FontData_set_fontStyle_m6B8EAECA536FBDA6BC36BFEB00E6D313AC6D8273 ();
+extern "C" void FontData_set_horizontalOverflow_m071E0F1A53FF5F550AC9A267C3700EE0C4751D6D ();
+extern "C" void FontData_set_lineSpacing_mBE1A4AF0A7B8E2CA8D78AF83288347C0331250E6 ();
+extern "C" void FontData_set_maxSize_m3915625FD5A320AFA43CF70640C8AD89FF3C9B0E ();
+extern "C" void FontData_set_minSize_m530EFA610441B4857E37B1945815B229657DEEBE ();
+extern "C" void FontData_set_richText_m6C23BE3C4E5B0918660A45EE1011123E1B724AC6 ();
+extern "C" void FontData_set_verticalOverflow_m2E8FDE648096E29BF2D387CBD877E003C21EA0F5 ();
+extern "C" void FontUpdateTracker__cctor_m2D43EBE1020F273AD9AEE38E30ED0907DC3567D4 ();
+extern "C" void FontUpdateTracker_RebuildForFont_mBF8207B81E8717DB6448C9217E3F514CCD9A73C1 ();
+extern "C" void FontUpdateTracker_TrackText_m3BD8BCCFDA8898C08C8500A0D8C9E9D7F25A678F ();
+extern "C" void FontUpdateTracker_UntrackText_m9E2B86F8E6CA2BDEAD4C6D2AC4163F42516FE90E ();
+extern "C" void Graphic__cctor_m42163762F91D92FB46647B5E70A24B22E3AB24A5 ();
+extern "C" void Graphic__ctor_m3CB42754C13B369A0E1B475D8AC3D54649DBA669 ();
+extern "C" void Graphic_CacheCanvas_mEB2D840C9F337E74B03E044E5451C65213FDF939 ();
+extern "C" void Graphic_CrossFadeAlpha_mAD4D2771E1353C3DC873A3B630CC580FC1FF6421 ();
+extern "C" void Graphic_CrossFadeColor_mDA94035726F09CFB0161970E1F8CB5ACA42C2496 ();
+extern "C" void Graphic_CrossFadeColor_m22AE1630CE4BD5E4A237430ADD154D0D378FDFA5 ();
+extern "C" void Graphic_DoLegacyMeshGeneration_m5BA5F54A453B149C68D68D2804552F03AD320678 ();
+extern "C" void Graphic_DoMeshGeneration_m348793968DC725255110ADDA0E571D31C7DB12BA ();
+extern "C" void Graphic_GraphicUpdateComplete_m95032AF36CD01FA8489CC8693F8CCCC84FA10711 ();
+extern "C" void Graphic_LayoutComplete_m83C255189B8486248FF968F2AF448F49962FB6FD ();
+extern "C" void Graphic_OnBeforeTransformParentChanged_m7D69CADD76CE53E73F9FADC9629FC54BB9554F86 ();
+extern "C" void Graphic_OnCanvasHierarchyChanged_mB2D634FD5B99AD82F3C436D482A960572BE4F978 ();
+extern "C" void Graphic_OnCullingChanged_m6674563B3E50C0DCECF03B37DCF68D6C38E6D002 ();
+extern "C" void Graphic_OnDidApplyAnimationProperties_mA6F138F05CAA3ED5F9852DC32935895BE3F09ACD ();
+extern "C" void Graphic_OnDisable_m264706F5ECA9ED68FD02FB5D179E56B7642D9BA6 ();
+extern "C" void Graphic_OnEnable_mDA7EE77D9D01A23F86C7DC1DF02ED6EF20D77FD2 ();
+extern "C" void Graphic_OnFillVBO_m9B0B45C6ECCA4B470CD8EF79622593EBDCFCB96A ();
+extern "C" void Graphic_OnPopulateMesh_m601B30C623889357FC8682C241FC1A853FAA8CB1 ();
+extern "C" void Graphic_OnPopulateMesh_mC25D45C5B729EEB66D7E128B57094612CFA02280 ();
+extern "C" void Graphic_OnRectTransformDimensionsChange_m7FE3380FA21B65EC7D7527594CD8E0371A4A8F72 ();
+extern "C" void Graphic_OnTransformParentChanged_m18625CACC6E1ADD69B1A1C756E335C3E98517A76 ();
+extern "C" void Graphic_Rebuild_m74DA0BB10638EC5C58439C3BC07FB879A1014E40 ();
+extern "C" void Graphic_RegisterDirtyLayoutCallback_mABB502AA4DDBA36F42490B0AC6BBC81447A9553E ();
+extern "C" void Graphic_RegisterDirtyMaterialCallback_mD17F009F779D01BCC4A2A2FE3738C774057102CC ();
+extern "C" void Graphic_RegisterDirtyVerticesCallback_m6D34A3771C0D615F23FE1FC7D52C5143CC23C9F9 ();
+extern "C" void Graphic_SetAllDirty_m63021E6CA13C20EE00FFBE9609DA74B29063D014 ();
+extern "C" void Graphic_SetLayoutDirty_mFF11645D1F9FBD1583D9D5193EEC59B8E2E2D685 ();
+extern "C" void Graphic_SetMaterialDirty_m95BD80F24F393CD8A0E4E4380C6C11CB92EFE12A ();
+extern "C" void Graphic_SetNativeSize_m1FCEF278A6085454204A8857D474537CD9705F9E ();
+extern "C" void Graphic_SetVerticesDirty_m886B74290CC91F444A28F1BC401D63D01A6AD09C ();
+extern "C" void Graphic_UnregisterDirtyLayoutCallback_mBCE46D7D422BA27CAA13D7083E630BFEE8AF270E ();
+extern "C" void Graphic_UnregisterDirtyMaterialCallback_m0BFA5B1860353558E86795743F4896B35A668EB5 ();
+extern "C" void Graphic_UnregisterDirtyVerticesCallback_m14A6165292E9F9BE72EB0BB064EFC93C4B06279F ();
+extern "C" void Graphic_UpdateGeometry_m0A6108B982C5CB2E2864B4689698514E934BD6AF ();
+extern "C" void Graphic_UpdateMaterial_m9B0F1B47C1FE7D2949A6EBA7A4AD5920C0E606F0 ();
+extern "C" void Graphic_set_color_mE9FC8CBC7DE689F82B70098A66F53AE275CCBA5E ();
+extern "C" void Graphic_set_material_mFC1ADBBF0FE4776BB40F8353AD152C2D12095FFF ();
+extern "C" void Graphic_set_raycastTarget_mA1A316D2C3D7688A17FA8EF1745476482DF986F1 ();
+extern "C" void Graphic_set_useLegacyMeshGeneration_m6CFFA9BECC14B51AE0344363E0E17F829485840A ();
+extern "C" void GraphicRaycaster__cctor_mB208E342B76362820CBE2D3695EE0E24B3EA1355 ();
+extern "C" void GraphicRaycaster__ctor_mAB7CB358C5114F61496127DD39CB19F1017A0EEE ();
+extern "C" void GraphicRaycaster_Raycast_m0AF4F5B71DBC06A1F21E3856548C9672409FF145 ();
+extern "C" void GraphicRaycaster_Raycast_m8A2C034CC5082160FDF3C9AD2E564A05B876CFAC ();
+extern "C" void GraphicRaycaster_set_blockingObjects_m4E227161F674397A8752714F9085799CE90A0399 ();
+extern "C" void GraphicRaycaster_set_ignoreReversedGraphics_m746E9E0A97FF5B9B43E6DEABA151B806C6B2C3E5 ();
+extern "C" void GraphicRegistry__cctor_m5887F584C3B4BDCC037FC63A3FF0D3A32AF71D5E ();
+extern "C" void GraphicRegistry__ctor_m4D404430A898123ECEE1F5E170C52D38D58A2C5C ();
+extern "C" void GraphicRegistry_RegisterGraphicForCanvas_mDD9DCBA00CC415C35567519A6108E8CADCB73F56 ();
+extern "C" void GraphicRegistry_UnregisterGraphicForCanvas_m99943BE77863531F9DB7968E2BA64A8196BB9AC9 ();
+extern "C" void GridLayoutGroup__ctor_m80F9336574F7967053FD44057C68D2E34CF2049A ();
+extern "C" void GridLayoutGroup_CalculateLayoutInputHorizontal_mA0AA7538F56DED5C4A2AC3EDC82FCAFFFF58C5AB ();
+extern "C" void GridLayoutGroup_CalculateLayoutInputVertical_m7FBB8161855C386BB93B193987C02002A96B3844 ();
+extern "C" void GridLayoutGroup_SetCellsAlongAxis_m28318B2B97F1801079491929FC40CA1BEF05EBFC ();
+extern "C" void GridLayoutGroup_SetLayoutHorizontal_mE1D3BD7E4AE7ABF5F73A0DAA0A562BC6998051E7 ();
+extern "C" void GridLayoutGroup_SetLayoutVertical_m259437B4AD0423867491AA6E0E19151D07D02B61 ();
+extern "C" void GridLayoutGroup_set_cellSize_m5ECC6A4D8CF14FD1D926506AA330E3C64346DF47 ();
+extern "C" void GridLayoutGroup_set_constraint_mDF8484AA28816C061C0018DF1A1FDD33642066AC ();
+extern "C" void GridLayoutGroup_set_constraintCount_mD5543F4340EF0EB00A858CDAA20133980A618535 ();
+extern "C" void GridLayoutGroup_set_spacing_m8CBD8B43E0EBABF437BD52F673516B3EFA6BE920 ();
+extern "C" void GridLayoutGroup_set_startAxis_m2B02EE8338589764B0148A7B22FFDF89C453BC2D ();
+extern "C" void GridLayoutGroup_set_startCorner_mF9F911D133EB4EB49DFA5906751076893D98EBFF ();
+extern "C" void HorizontalLayoutGroup__ctor_mCC90F197A50618F572931AB8A241298650B5D1C7 ();
+extern "C" void HorizontalLayoutGroup_CalculateLayoutInputHorizontal_m6B516103DF09B8C2237301AB7DF0FF59F4665E71 ();
+extern "C" void HorizontalLayoutGroup_CalculateLayoutInputVertical_mBE56B75D70D13D862412E0F64F5017F9F3F12ED9 ();
+extern "C" void HorizontalLayoutGroup_SetLayoutHorizontal_mF969611596C5756F137F0BA12A0FD82756EA1F16 ();
+extern "C" void HorizontalLayoutGroup_SetLayoutVertical_m97ABBB7EB1E30FB691A6F6175F48FB22239E5966 ();
+extern "C" void HorizontalOrVerticalLayoutGroup__ctor_mB5A4A35A5BE3FE1278AFBBC8121AFC6E35EA175D ();
+extern "C" void HorizontalOrVerticalLayoutGroup_CalcAlongAxis_m35F0EC164222C3962EDAF3400ED98485D8070F1E ();
+extern "C" void HorizontalOrVerticalLayoutGroup_GetChildSizes_m0E7E2E091C033B13F72C5E56AA18727A3187D871 ();
+extern "C" void HorizontalOrVerticalLayoutGroup_SetChildrenAlongAxis_m51F74CE5A0B39F3C724F995C2B572E17899ED27D ();
+extern "C" void HorizontalOrVerticalLayoutGroup_set_childControlHeight_m90DCC87EC183B83AB9864B015B57EE9EBC71695E ();
+extern "C" void HorizontalOrVerticalLayoutGroup_set_childControlWidth_m871125E304E881EF8A1E01B5E73AE42727D438DF ();
+extern "C" void HorizontalOrVerticalLayoutGroup_set_childForceExpandHeight_mDD637E406B1C51337BA146C9172C97C5A0D4B7E0 ();
+extern "C" void HorizontalOrVerticalLayoutGroup_set_childForceExpandWidth_mAE3992F63CC88A9630C847E31769CD4EE3992CA6 ();
+extern "C" void HorizontalOrVerticalLayoutGroup_set_spacing_mEEAA828F580B60DB8478CAE2D55A735DCA545825 ();
+extern "C" void Image__cctor_m8D2B966BD76E190B61568F691118F87281BD7CAB ();
+extern "C" void Image__ctor_m326643CC73BAB9E7B3DD815B2045DCC86A8AAC5E ();
+extern "C" void Image_AddQuad_m28015E276D438F8BC128708557BAF735F587E16C ();
+extern "C" void Image_AddQuad_m5B9725A14963CBAB146822E31E9ED0333F264663 ();
+extern "C" void Image_CalculateLayoutInputHorizontal_m2B730895E657B0684EB0FD1FCF8EC5BFE8B93ED1 ();
+extern "C" void Image_CalculateLayoutInputVertical_m045DA04BA9A348B778153D198A9860A4A4110F6C ();
+extern "C" void Image_GenerateFilledSprite_m5AF12A9EF09B006B57F54A80B9AC3D1CC100EEED ();
+extern "C" void Image_GenerateSimpleSprite_m16304EAC4A752C278E330EA8B91FC4CB5CAFF570 ();
+extern "C" void Image_GenerateSlicedSprite_mDE8E73B68EB0D58476423BEE3E90F911A656B502 ();
+extern "C" void Image_GenerateSprite_mE43E2B3C3CE18A823EE8AA966CC6AD38A87E54B6 ();
+extern "C" void Image_GenerateTiledSprite_m0EDC1AE6BA4A78EA6D5758564D8B08C8210737EF ();
+extern "C" void Image_OnAfterDeserialize_mB9DDB1C47620165E57E5C19937AB26B433AADB17 ();
+extern "C" void Image_OnBeforeSerialize_m19CA996A862D93EDAC7079C5104AA9B12704B4BC ();
+extern "C" void Image_OnDisable_m1E2A02432D6875802C47536A5B3D319572252AC9 ();
+extern "C" void Image_OnEnable_mDE04865785AF5A9E9BC91C76B9AC3DA37587DB94 ();
+extern "C" void Image_OnPopulateMesh_mC2A2EA41F970EC452614C8F1A567468FB91AB950 ();
+extern "C" void Image_PreserveSpriteAspectRatio_m8906C1278975FD19A14B3AECF6E908D58CB5C975 ();
+extern "C" void Image_RadialCut_m1F2874BB2EE7882B9F9AD1EAA4E330942D6738AA ();
+extern "C" void Image_RebuildImage_mB4AA47E0011889F0491C290A025B1FDC53F53743 ();
+extern "C" void Image_SetNativeSize_mC4EC17A96AE2CE84D6B045EBD76641BA54B56BAE ();
+extern "C" void Image_TrackImage_m19E5FB509E87ABFEEDF51184B24C79E6AC44B16D ();
+extern "C" void Image_TrackSprite_mED807D966D944B6AEC74CFAB5956015CEF870C70 ();
+extern "C" void Image_UnTrackImage_m9CB6B3D64784B97230F91B993DBC3C7977321FDE ();
+extern "C" void Image_UpdateMaterial_m030CE0D83632B93B57142FCE5F7EDC60C124C8AD ();
+extern "C" void Image_set_alphaHitTestMinimumThreshold_m159F3B4631C1837391C3D514B3A7FA5B3FC2262D ();
+extern "C" void Image_set_eventAlphaThreshold_mFFEF42F7E06708898D84617AD540C6D07F99F0BC ();
+extern "C" void Image_set_fillAmount_mA775A069067A26F0F506F6590D05337C2F08A030 ();
+extern "C" void Image_set_fillCenter_m15392BE1DA59B1B82DE677533F366FDDF062507F ();
+extern "C" void Image_set_fillClockwise_mA1914C480A905C132BB3E3E71D84ED37078A97D4 ();
+extern "C" void Image_set_fillMethod_mF114F3CCE7E900EAD093987BFE7E711384BA2F6B ();
+extern "C" void Image_set_fillOrigin_mD5DC976E21246EFDA27663F3B6F55AA31D8D4A99 ();
+extern "C" void Image_set_material_m409F710A26937E4FD6A4CF7E9EB4F555653D578F ();
+extern "C" void Image_set_overrideSprite_m768A8407C3F0C85D18AED6CC01D000D90630DB66 ();
+extern "C" void Image_set_preserveAspect_mEA84AABACD50ACFD4E2CC08F51E1F44CDEB889C4 ();
+extern "C" void Image_set_sprite_m51F205B44430C8FF8BB0AF1BA7D825978EE663F9 ();
+extern "C" void Image_set_type_mE931CE3DC1C447C31D794025BF0AEE9DEA9049A4 ();
+extern "C" void Image_set_useSpriteMesh_m8ADE537936154B26E0A7C238D5DDD9AF3CB08BAA ();
+extern "C" void U3CCaretBlinkU3Ec__Iterator0__ctor_m7B401A8090F0A450CDA80416F2E8EAB94777E04B ();
+extern "C" void U3CCaretBlinkU3Ec__Iterator0_Dispose_m9B6B3C1697F9418460302F2E267578573020D34D ();
+extern "C" void U3CCaretBlinkU3Ec__Iterator0_Reset_m3EC3359DC46D35B767BCC7E6C72E9C9FEB609481 ();
+extern "C" void U3CMouseDragOutsideRectU3Ec__Iterator1__ctor_mABF533592ED846F7FAE8BE98E94D193AC1BCAF80 ();
+extern "C" void U3CMouseDragOutsideRectU3Ec__Iterator1_Dispose_mA14FEFFFE2EAC94C38A35D6CA0794AF68D1C2F2F ();
+extern "C" void U3CMouseDragOutsideRectU3Ec__Iterator1_Reset_mBDFCEAEB2A27B3E10507F07B232EAD8159C56F87 ();
+extern "C" void OnChangeEvent__ctor_m0DEC366EFE12AADB7E0C36BFFF5C46F928B1A5C2 ();
+extern "C" void OnValidateInput__ctor_mA651BE018E1E4A947D2EFC57B1A40F3B815BABF0 ();
+extern "C" void SubmitEvent__ctor_m607B6C5AA9A942BE21BA65311A3B0DEE54A04005 ();
+extern "C" void InputField__cctor_mB1D6D28AF8256BFDF82B8519C7547B4B3DBB1B7F ();
+extern "C" void InputField__ctor_mBEBC75F431BED533EE03D57C060EFA5B15F9A9F0 ();
+extern "C" void InputField_ActivateInputField_mDCEFAB8D4D49E3F4BE14DCABD49B210442B3C77D ();
+extern "C" void InputField_ActivateInputFieldInternal_mA885D055A94CD304E0A6599330D209459AB49826 ();
+extern "C" void InputField_Append_m54F2D9F387218C2980FC3364DE334F1040B2CD7B ();
+extern "C" void InputField_Append_m9EA5B5ED6DA285D8F3F4FA4C5CB08811A5F3B5ED ();
+extern "C" void InputField_AssignPositioningIfNeeded_m54BDDDBD76AE2450E447F530B12F6C70DE95C2C0 ();
+extern "C" void InputField_Backspace_mD97BEF7207DA62F6FBF961D8D457614E56470148 ();
+extern "C" void InputField_CalculateLayoutInputHorizontal_m199468757717B10C6B3ECD52333DF6010D48427A ();
+extern "C" void InputField_CalculateLayoutInputVertical_m38DD34176A89D2EB5D093A4CBDA337EC02E8CFD2 ();
+extern "C" void InputField_ClampPos_mE412B922D40EC1BF479BC8EF31F52AD8B8461491 ();
+extern "C" void InputField_CreateCursorVerts_mB9B053D4B9619B498D95A3236DB51929F1F3A7CB ();
+extern "C" void InputField_DeactivateInputField_m5258CB71BEE2BE6A13931FDD43EF0125CF9C51B7 ();
+extern "C" void InputField_Delete_m709CE7426C8947964CB842F9FC0B7B2A3372E2FC ();
+extern "C" void InputField_DoStateTransition_mFE073011E73276ADD72A17BFECDCFA3BDF2A9243 ();
+extern "C" void InputField_EnforceContentType_m7B99D7AA14C72AC0D71DFCF4F4BAD323C9C603C3 ();
+extern "C" void InputField_EnforceTextHOverflow_m41007147838D56CC3AEABB4761904B8F0AEE66DD ();
+extern "C" void InputField_ForceLabelUpdate_m79AAE3336B8DC3CB80656114A7533367CF774356 ();
+extern "C" void InputField_ForwardSpace_m260433BF349A45254CF6D258491D5E19D33ABB4D ();
+extern "C" void InputField_GenerateCaret_m7AE49FB93F5866BC808176A963692E82D3A7982A ();
+extern "C" void InputField_GenerateHightlight_m5F3682091FDC4125931F4FD80293FEFA8807239E ();
+extern "C" void InputField_GraphicUpdateComplete_m402CDA8FD18F6080F542BDD09BD35F75F975A72F ();
+extern "C" void InputField_Insert_m766215A2326DAC526A1C2FC524E6FEE1EB390F09 ();
+extern "C" void InputField_LateUpdate_m5CCD2B58D09D9E8A7C8157FE79299FBB9DE38840 ();
+extern "C" void InputField_LayoutComplete_m265ED0D9E614FF4A12C275F11A6C75A5348E5D51 ();
+extern "C" void InputField_MarkGeometryAsDirty_m96294EE08DFEB220DE02B9357D3DDEF7FA735C4C ();
+extern "C" void InputField_MoveDown_m02B12081C9C3014580276BD1926E96A502E0A6DA ();
+extern "C" void InputField_MoveDown_m63497B183EB440E7D68BB5F64BB4F1B17A8F99BC ();
+extern "C" void InputField_MoveLeft_mB3B0A8C17BC35006BCF33765D3EDBE7EBC90BDA5 ();
+extern "C" void InputField_MoveRight_mDE718A627022F918F4BD3E54254428341DC5293B ();
+extern "C" void InputField_MoveTextEnd_mAF0384456CE395DD15CBC9597BD9128D3B74912D ();
+extern "C" void InputField_MoveTextStart_m6659C875E1412BE932D390BC8921DCB54E308864 ();
+extern "C" void InputField_MoveUp_m897F9B5C57B75AC0AD1F8A87B6E4E26E24EBC0F4 ();
+extern "C" void InputField_MoveUp_m42D8FD6A24ECB02C5E1C96FBDA279C9E4324496D ();
+extern "C" void InputField_OnBeginDrag_mC56F46BBFB752C91E66D8D76696B5B8F4C5B274B ();
+extern "C" void InputField_OnDeselect_mEF7F1339EAFBE21AA7080996D4C9AED994559D50 ();
+extern "C" void InputField_OnDisable_m758F6F9B5CB27B188689C5E70DC886A1A5F831E7 ();
+extern "C" void InputField_OnDrag_mB23EA9836DC789A7E238E14314BD24729E82561A ();
+extern "C" void InputField_OnEnable_mBC3428E3F86D28AE58F102A202809275DD8987A2 ();
+extern "C" void InputField_OnEndDrag_m6075E95173D31515CAB5CFB891E15771080D3025 ();
+extern "C" void InputField_OnFillVBO_m596030D59DA4F6982BB0A31A1B2AE52544494710 ();
+extern "C" void InputField_OnFocus_mD5388C4899122D2FDAF36269B4AA422F0A31C7A3 ();
+extern "C" void InputField_OnPointerClick_mF689FC2505382B5FC364229BE194F9D3476AC614 ();
+extern "C" void InputField_OnPointerDown_m84C2CE923D7FA0B021021B3199B4CD56B81DECB4 ();
+extern "C" void InputField_OnSelect_mF72DC77714F53C0B3BC4815761464B52948ABA0A ();
+extern "C" void InputField_OnSubmit_m0842367DF1CBE1D7586649AE0366365330F1C14F ();
+extern "C" void InputField_OnUpdateSelected_m32961891EC88E5E3BEFEF8A9C3FEB20789F437B0 ();
+extern "C" void InputField_ProcessEvent_m657E3D1ECA76F747C46388F63C1F890CBFAB53E2 ();
+extern "C" void InputField_Rebuild_m0522884BE20E845749E5AD7D7FF5F439E5D7505A ();
+extern "C" void InputField_SelectAll_m39CA09FA7A4221D0E698D4AB1B30E0141D96A794 ();
+extern "C" void InputField_SendOnSubmit_m69CDA5C7AFA0906604D078D42834A4358E954E17 ();
+extern "C" void InputField_SendOnValueChanged_m932044A0410C99486B006223B57A41F54CF07649 ();
+extern "C" void InputField_SendOnValueChangedAndUpdateLabel_m252411F96C5728D7C6F3F9D386CCA41EE4E8CB75 ();
+extern "C" void InputField_SetCaretActive_m1335754046726CF88F62801E0F6583F4A6F302B5 ();
+extern "C" void InputField_SetCaretVisible_m79B9820354C09DF8B08D966286E12BFC9E245CA1 ();
+extern "C" void InputField_SetDrawRangeToContainCaretPosition_mDC17D88F9E4170FEB998EE6B28E3C963E7AF6213 ();
+extern "C" void InputField_SetToCustom_mAEB805BFB2B1B042844B6D904FE3772A24BCB852 ();
+extern "C" void InputField_SetToCustomIfContentTypeIsNot_mA249BA32D017A4C2B1AA5A3BD7E00D504F13721A ();
+extern "C" void InputField_UpdateCaretFromKeyboard_m93855726C472C446792BBF48D889A24DC1449A87 ();
+extern "C" void InputField_UpdateCaretMaterial_m9105C510740CE700E016136FCDF74DA0CC705A33 ();
+extern "C" void InputField_UpdateGeometry_mD6976E2625AB2016B26CDD13D1D115F35C63F739 ();
+extern "C" void InputField_UpdateLabel_mD079B454890CB89B48B4B0946B66068F27FE71BE ();
+extern "C" void InputField_set_asteriskChar_m346A1D428BA0B0B28887CF1B2958115656C025DD ();
+extern "C" void InputField_set_caretBlinkRate_m4BDC2C94C654485AAB05ADBD493CD3EB464ED62B ();
+extern "C" void InputField_set_caretColor_m5429C9774682079CC2B12CE8C85A4972A7503280 ();
+extern "C" void InputField_set_caretPosition_mCFBA6871FB92074C29B437223789590DDF215A5C ();
+extern "C" void InputField_set_caretPositionInternal_mD0FE1B2874131429578E7D1D2A6F36AE04D47244 ();
+extern "C" void InputField_set_caretSelectPositionInternal_m856FDE73880EC4F72BFEBDC0E76B5F5C90A8D80C ();
+extern "C" void InputField_set_caretWidth_m19265826DDE892044F9ECB0CAC9D50984F96A3D1 ();
+extern "C" void InputField_set_characterLimit_m8C6108C8CFB5B01F6299A86BE3322E38C87D89E9 ();
+extern "C" void InputField_set_characterValidation_mA90E18D158EB8F70E107AAA2741CA570C2FDC82E ();
+extern "C" void InputField_set_clipboard_m89E3A7CF3DAD3F578C2580FAB3A48EAE8F7BC6C5 ();
+extern "C" void InputField_set_contentType_m6D0A2D0020190C1EA7930B219E7C9062E7FBA2DD ();
+extern "C" void InputField_set_customCaretColor_mBA553B9AC42596A7B20F777BF46836F44310D571 ();
+extern "C" void InputField_set_inputType_mE792B56508E222577EB8FD36AE660FDB5C6085EB ();
+extern "C" void InputField_set_keyboardType_m35599371AD057B36E983EC33455AC3E8A90E8C0C ();
+extern "C" void InputField_set_lineType_m3F7A0A68007A2175F888834BD87787804869F827 ();
+extern "C" void InputField_set_onEndEdit_mBAE579766EC56679C4537696708008FE19E9F86D ();
+extern "C" void InputField_set_onValidateInput_mD28A6118CBF33933A9CB8BFB3046FEB5C5F871C2 ();
+extern "C" void InputField_set_onValueChange_mD2FD3B024484BD014B3D79206F3CAB57DB7D4BD7 ();
+extern "C" void InputField_set_onValueChanged_m4342BBE5846B858FF1D4EF58EA9D93B1E326492A ();
+extern "C" void InputField_set_placeholder_mAFD2C074CBC978DE0FE7211E23B86944E3241CF1 ();
+extern "C" void InputField_set_readOnly_m123DF697ED482C582BF393370B4E0999AD5E0393 ();
+extern "C" void InputField_set_selectionAnchorPosition_m38DFE92879F9A755658B33AC96005879C221E0A5 ();
+extern "C" void InputField_set_selectionColor_m2AB6B8373ACA4DDFDF130811A3FE57FD6E7C76D6 ();
+extern "C" void InputField_set_selectionFocusPosition_m11F0F9DDE36518D7558D937F0D8326471CAED105 ();
+extern "C" void InputField_set_shouldHideMobileInput_m544F4483E827B0401FF94EF26B6250B5A19EED5C ();
+extern "C" void InputField_set_text_mB4B4573F3DD8E2D1430A09E42B1777AC4A94AA2B ();
+extern "C" void InputField_set_textComponent_m2DB2B1767C53637D3960F57364B531FE6813ACD1 ();
+extern "C" void LayoutElement__ctor_m09766D6232C0BC861EC3F761FFEF5F365ABFE00F ();
+extern "C" void LayoutElement_CalculateLayoutInputHorizontal_m137D043CE1C392B712EBA1B3C76EB756E027BE7E ();
+extern "C" void LayoutElement_CalculateLayoutInputVertical_mD8EB59EB227AFBB0764E660322A810D8DBDE3B09 ();
+extern "C" void LayoutElement_OnBeforeTransformParentChanged_mFBB19AF308F9798D3553865EBF0A8A2EA78FD545 ();
+extern "C" void LayoutElement_OnDidApplyAnimationProperties_m10E4319B74BA4272A7F7F7667E9A3FC8BD4BDA29 ();
+extern "C" void LayoutElement_OnDisable_mB3AE855DDBC404D0A4D4C26035DDAAA859D5910E ();
+extern "C" void LayoutElement_OnEnable_mB7BC4C5EA27ED483D262D876B32C71D0C5F6B2D9 ();
+extern "C" void LayoutElement_OnTransformParentChanged_m11EDED872ECAD53BF8B3473D2AD1340D4D75EDF8 ();
+extern "C" void LayoutElement_SetDirty_mEB83D3C3CC26463A7417E768D7EEB84D6D95E2F0 ();
+extern "C" void LayoutElement_set_flexibleHeight_m7D8FA2992B565F9A36EA8DB169FC017A767F0A3E ();
+extern "C" void LayoutElement_set_flexibleWidth_m37673A4A7937C69CBEB870815BAB0CFF0177CF0D ();
+extern "C" void LayoutElement_set_ignoreLayout_mF7F5AF45F69E2ACB44614A65B1B3D3439E2B701D ();
+extern "C" void LayoutElement_set_layoutPriority_m9BDAE517CE812380BC4D1DE1A4F6E758FFBD3FDC ();
+extern "C" void LayoutElement_set_minHeight_m4560A37F0857BE3ED7F25815F780CBD41B11328E ();
+extern "C" void LayoutElement_set_minWidth_mC81EAFB6308A076E587E99357480FEC60DE20DDE ();
+extern "C" void LayoutElement_set_preferredHeight_mA166DBFC22ADAAB4630B6E0C854701F1D1673C94 ();
+extern "C" void LayoutElement_set_preferredWidth_mCAC34EF378C5ADAD0F74CC1C6B866BC340AF240F ();
+extern "C" void U3CDelayedSetDirtyU3Ec__Iterator0__ctor_mBFE7C2C109C72A8C02CD1B8D0EA48BAB30D119C3 ();
+extern "C" void U3CDelayedSetDirtyU3Ec__Iterator0_Dispose_mFDF5D2CF19F7A8C0EA3F66F4700C7E87B23F7030 ();
+extern "C" void U3CDelayedSetDirtyU3Ec__Iterator0_Reset_m7EC7865D9B6EFBFDE5FE3CBA6C43DDD2A256A8D7 ();
+extern "C" void LayoutGroup__ctor_m3D45131F2BE39688BA9C9D3996924F6B99A04D23 ();
+extern "C" void LayoutGroup_CalculateLayoutInputHorizontal_mAB1D93890FB765721FE662D8E55D26D9E0D9C64F ();
+extern "C" void LayoutGroup_OnDidApplyAnimationProperties_mF7BB77899F8A71688275AE509D1C85D9C8C3A0F2 ();
+extern "C" void LayoutGroup_OnDisable_mB211850F66C14A69E6F9596B30AA9E6F8B290A92 ();
+extern "C" void LayoutGroup_OnEnable_m3A0469A02878D4E8252246B85C5E952B86A5AEF5 ();
+extern "C" void LayoutGroup_OnRectTransformDimensionsChange_m3011B08BC26217B19990C52673AD8BE293139D12 ();
+extern "C" void LayoutGroup_OnTransformChildrenChanged_m03D8C11B9CECB1EB6C3B3897A6D9CCBE5A5D635C ();
+extern "C" void LayoutGroup_SetChildAlongAxis_mD344E200B6725CA7EE05AE197E4D6D2B1E6824FC ();
+extern "C" void LayoutGroup_SetChildAlongAxis_m13A390FD17E381285CC3B9892C33B20C8FBC4D69 ();
+extern "C" void LayoutGroup_SetDirty_m2B0A4797C6B8E9DCD0F3B2899D4E7EA266EED1C3 ();
+extern "C" void LayoutGroup_SetLayoutInputForAxis_mF994AA82D00AE1A1937B5A597FC68AAF9F2621A5 ();
+extern "C" void LayoutGroup_set_childAlignment_m651BB94D16D8C212381802CDB155B425FFB50B56 ();
+extern "C" void LayoutGroup_set_padding_m1EC3E8262743CD4FD32B7F68D3A1E2EFF0B25F48 ();
+extern "C" void LayoutRebuilder__cctor_mF4518F757E1BC345EBE61551826F0341022F999A ();
+extern "C" void LayoutRebuilder__ctor_m5B65FBE4A08DDBEA16A278E03B266BF9325ED0C9 ();
+extern "C" void LayoutRebuilder_U3CRebuildU3Em__2_m9912AF9EFEB29868BEACBB1B3C98DEABBCB8F02D ();
+extern "C" void LayoutRebuilder_U3CRebuildU3Em__3_mCCF74BA462EAB3E11EC22152CF089595DDDE9D7B ();
+extern "C" void LayoutRebuilder_U3CRebuildU3Em__4_m8BA49344F1EC9C15D94956BD12767A563390CCF1 ();
+extern "C" void LayoutRebuilder_U3CRebuildU3Em__5_m7F5E06A41E54C542FCFB01C7733957629959D96E ();
+extern "C" void LayoutRebuilder_U3Cs_RebuildersU3Em__0_m4402B6EEF97E674576EBAF0DBA2BE8072CD09F85 ();
+extern "C" void LayoutRebuilder_Clear_m5C8EFD52BD73D0E8E7FAAD00811E5CB823513902 ();
+extern "C" void LayoutRebuilder_ForceRebuildLayoutImmediate_m73D406C1175B6206688FE956EC87BA1AC3907183 ();
+extern "C" void LayoutRebuilder_GraphicUpdateComplete_m95894002478C879F92C5E981D7225B370427BA82 ();
+extern "C" void LayoutRebuilder_Initialize_m7F3ABF27204B01F5EF9FCD7AA2164B61E3B17392 ();
+extern "C" void LayoutRebuilder_LayoutComplete_mAFA17D26324F75D0618CC0E630CDB61C8BB280A7 ();
+extern "C" void LayoutRebuilder_MarkLayoutForRebuild_m7E400684496267636B78BDE1512E5723EE118DC9 ();
+extern "C" void LayoutRebuilder_MarkLayoutRootForRebuild_mD80599A1B79ED484A44A602D0F13DFE487826414 ();
+extern "C" void LayoutRebuilder_PerformLayoutCalculation_m2A36849672979F336134167F65D6060954436942 ();
+extern "C" void LayoutRebuilder_PerformLayoutControl_m4B8C5E83587737A64542A3B421DA7FBFA19C7D9D ();
+extern "C" void LayoutRebuilder_ReapplyDrivenProperties_m6B3D923F434C3EBCB5682F9BE9379194D797A1AA ();
+extern "C" void LayoutRebuilder_Rebuild_mA2B32A4244C8FE3006EB1C80E2AD67AA7A53E562 ();
+extern "C" void LayoutRebuilder_StripDisabledBehavioursFromList_m5A824D8626E002D32C6A260A9697597D850ECBFD ();
+extern "C" void Mask__ctor_m21B4BACED2C322FFC8928EC34CE164E4E2F7D0AA ();
+extern "C" void Mask_OnDisable_m43D73C56AC0F1DED2A72E80D5290F13763C4B00A ();
+extern "C" void Mask_OnEnable_mEB2FD67F4FE1F6E6C3FEC20DC27366BB0B4FF154 ();
+extern "C" void Mask_OnSiblingGraphicEnabledDisabled_m7B3645842D5436CA3A44471907AC8FBBC378F396 ();
+extern "C" void Mask_set_showMaskGraphic_m0B66683FAD35E5C9E48FBCFD7D0773087CBD49D5 ();
+extern "C" void MaskUtilities__ctor_m199F80D664F57921B264C2D2CDE5E58569EFE726 ();
+extern "C" void MaskUtilities_GetRectMasksForClip_mE89DC32506F59708CAC368D222DAE3250FD5A4A0 ();
+extern "C" void MaskUtilities_Notify2DMaskStateChanged_m8CEF7E6D00AF2DC82D8D3DE3D45DEDF63D9FEE74 ();
+extern "C" void MaskUtilities_NotifyStencilStateChanged_mCCE62AA2B84ECCF4801A6C4D1DB5352E3AE5AC42 ();
+extern "C" void CullStateChangedEvent__ctor_m589D3CD46DAFE6410869A7C7B4E518DBEB42FE60 ();
+extern "C" void MaskableGraphic__ctor_m083A4DEA182F691B7CF17AA47596314F1F02BF0F ();
+extern "C" void MaskableGraphic_Cull_m209520B58633A44E70B3176331B78B8F60D19066 ();
+extern "C" void MaskableGraphic_OnCanvasHierarchyChanged_m23AD995392375068B45527F59B2D21E484B92D6B ();
+extern "C" void MaskableGraphic_OnDisable_mBAAE2E8D9B6328310FA62C0C4979D8ADD8C707BB ();
+extern "C" void MaskableGraphic_OnEnable_m98CB2B02A73E1CF22B8A90B9B5EA6D32F2A1B65A ();
+extern "C" void MaskableGraphic_OnTransformParentChanged_m6851EF361EC92F6BBE48B109DF46BBA72310797A ();
+extern "C" void MaskableGraphic_ParentMaskStateChanged_m31EB24EA1311C8A14E9999B2AAC5641F6A0244A7 ();
+extern "C" void MaskableGraphic_RecalculateClipping_mEBD195F458F2A49C78D2DB7A9A76986CB772F787 ();
+extern "C" void MaskableGraphic_RecalculateMasking_mB1DD4305DA274C7A1EFB76579A756AC630E2B4F7 ();
+extern "C" void MaskableGraphic_SetClipRect_m624289BDDF45D4224950ED069A3FC4FCFFAF2B15 ();
+extern "C" void MaskableGraphic_UpdateClipParent_m91DECA865BB7901839C11DF0AEBA63C8BB054590 ();
+extern "C" void MaskableGraphic_UpdateCull_m96DF3559305337C7CDF5E0F3BBC9E0551B2F14B8 ();
+extern "C" void MaskableGraphic_set_maskable_m70B1006B4C935DB24BB91264450D6413629E1812 ();
+extern "C" void MaskableGraphic_set_onCullStateChanged_m03D128147438F0F617EAE635AE03D55F7BD42358 ();
+extern "C" void Misc_Destroy_m0D1FE137DFE990D9E1B36902016DE0C9032D7A85 ();
+extern "C" void Misc_DestroyImmediate_m788F46582B17F2D3061C610D2B112E3DF9B5FB0B ();
+extern "C" void Navigation_set_mode_m352F710C904809D8291F9DC2215FE04593ADCBE5_AdjustorThunk ();
+extern "C" void Navigation_set_selectOnDown_mCFC5C64F5DD87A5C5EC18CA9437534A4D8527C67_AdjustorThunk ();
+extern "C" void Navigation_set_selectOnLeft_mF8E320DE42A81C45F940253FC33B9EBE44C721BF_AdjustorThunk ();
+extern "C" void Navigation_set_selectOnRight_m6F80CB7DFAEBB50258CB48C9B117AEE58233A4A8_AdjustorThunk ();
+extern "C" void Navigation_set_selectOnUp_mB494823CCEB26834DD848CA376DF2593489D782E_AdjustorThunk ();
+extern "C" void Outline__ctor_m62F0A5048C002B6C42DBE9B39C72B525C8CC17C9 ();
+extern "C" void Outline_ModifyMesh_m379E46A484FDA0471A5531E253FD413222A62FB0 ();
+extern "C" void PositionAsUV1__ctor_m9F0C78EC024AAAE5464CEEA21AADFA364273F50C ();
+extern "C" void PositionAsUV1_ModifyMesh_m133B0482983A55DE1D8E7AB9FC6D6C1587EC9A1B ();
+extern "C" void RawImage__ctor_m9C69814EC2E8E295A3CDEF79789EF5A4C670CF72 ();
+extern "C" void RawImage_OnPopulateMesh_m4202163B103774FD550A4E907F61102F9E40539B ();
+extern "C" void RawImage_SetNativeSize_m74FF708BE5427A9D7F35D7DF2E265B36A0CF2D32 ();
+extern "C" void RawImage_set_texture_m897BC65663AFF15258A611CC6E3480B078F41D23 ();
+extern "C" void RawImage_set_uvRect_m0C4FD071254CE84AED3E4940945C4AAA34959C4C ();
+extern "C" void RectMask2D__ctor_m024E0402BBAB7F3B3711041E8EBF2664323F2F8A ();
+extern "C" void RectMask2D_AddClippable_mA04EE8340518A8501A30DDB9824E39CA5D8321B9 ();
+extern "C" void RectMask2D_OnCanvasHierarchyChanged_m1D9B7A803BB092B3D5C1FF53A6CF889084D2944C ();
+extern "C" void RectMask2D_OnDisable_m7FA4F15595A783AA5C1C30BD32A2ED58E56D2646 ();
+extern "C" void RectMask2D_OnEnable_mFCBDD5698452738E4DF2740BD65DA2CA58A6EAD8 ();
+extern "C" void RectMask2D_OnTransformParentChanged_mD12CDE42BDBAFFE9F3F00D549E56B9F416FB7CD6 ();
+extern "C" void RectMask2D_PerformClipping_m1C5B2C1A0D3445F797A4B22E11D22C093954A5FF ();
+extern "C" void RectMask2D_RemoveClippable_m03ECFE5D464321D02FD5BD68A2B360413E8928D8 ();
+extern "C" void RectangularVertexClipper__ctor_mBC961D022ED33F92704BA80EA192ED4EC6D9754D ();
+extern "C" void GetRayIntersectionAllCallback__ctor_mDECED18E2D290B332B0CC4AEBFC2A6C33A25CF58 ();
+extern "C" void GetRayIntersectionAllNonAllocCallback__ctor_mE5117C8C25CAB250B86B19FFC86E77F4FD141AB8 ();
+extern "C" void GetRaycastNonAllocCallback__ctor_m73752B951D35EECCAED3F9E05BB43EC5919DA36B ();
+extern "C" void Raycast2DCallback__ctor_mF10C8F22977BFC131115DDDA93DD6C541BB2B198 ();
+extern "C" void Raycast3DCallback__ctor_mE0CE52A6EF670A201E2640C2E690F6F861D5B610 ();
+extern "C" void RaycastAllCallback__ctor_mF30FF6ED5AAB4B88EA33C67FB8924CFDCC644580 ();
+extern "C" void ReflectionMethodsCache__cctor_mFC4F8CA1D5CF93BAB63CDA91FD06C7F2A606C41C ();
+extern "C" void ReflectionMethodsCache__ctor_mA8DFDCFFC9666D1F3F7423C14314B459BB0E5E6A ();
+extern "C" void ScrollRectEvent__ctor_mCF315D53383F177C469105FD8E954255805FB078 ();
+extern "C" void ScrollRect__ctor_mF52021678539C2E3BDCBF413CB692A9B92A86B01 ();
+extern "C" void ScrollRect_AdjustBounds_m2CF762FCCA17458C8B9CE8A9B320524A148CD8AC ();
+extern "C" void ScrollRect_CalculateLayoutInputHorizontal_mCF3EF9E86118E91A7486ED0694E0348066C733F4 ();
+extern "C" void ScrollRect_CalculateLayoutInputVertical_mCF660BA9A06A70E7D093836B5B1995381B3A35CE ();
+extern "C" void ScrollRect_EnsureLayoutHasRebuilt_m9B19F9D3F790C03A1CCA5954CEF4597E91C5F151 ();
+extern "C" void ScrollRect_GraphicUpdateComplete_m39CBCD9DBCF4060E479291783748137AE51D432D ();
+extern "C" void ScrollRect_LateUpdate_mF968CFA447E8D19FB1BABB9E857BFD6CA5995C95 ();
+extern "C" void ScrollRect_LayoutComplete_mAE4C61E3A9CB3E3E581400BBDBDF8AAD30DF4D04 ();
+extern "C" void ScrollRect_OnBeginDrag_mB6874C168BAAC512CD752DF7BC4D84CDF5FD806A ();
+extern "C" void ScrollRect_OnDisable_m8E8408F6F5E498D38986E057EEC3C30CC8E14713 ();
+extern "C" void ScrollRect_OnDrag_m28D2335942D9624305CA7843B50B480F2DD4622B ();
+extern "C" void ScrollRect_OnEnable_mC7A1135ADBEDC351D8AA7690A7F68F839B23FD31 ();
+extern "C" void ScrollRect_OnEndDrag_mE4CCB58AE22DAA792A0AA8AC009D7EBD8D1A4500 ();
+extern "C" void ScrollRect_OnInitializePotentialDrag_mF9CE1C1BC211E9514966E666E11F02C1A0FC25D3 ();
+extern "C" void ScrollRect_OnRectTransformDimensionsChange_m0BB0CD9780346131E9FE41C6E54249B74BB3C73C ();
+extern "C" void ScrollRect_OnScroll_m42B3DDD7AC8A01D3F3730F0303BF700D239B0DAE ();
+extern "C" void ScrollRect_Rebuild_m21262D3A766822F8074A127B9FE1D878C49730CB ();
+extern "C" void ScrollRect_SetContentAnchoredPosition_mFB298AEEE511B09C4B98507883BF4ACF8003A43E ();
+extern "C" void ScrollRect_SetDirty_mAEB52AC5C9A8B2A2564C27F28B5BCCD7AC67B2B0 ();
+extern "C" void ScrollRect_SetDirtyCaching_m560418235DF4825E4B0E12988348B6435F566310 ();
+extern "C" void ScrollRect_SetHorizontalNormalizedPosition_mEF9A200F6625433F51C121273CD2F046858AAFD1 ();
+extern "C" void ScrollRect_SetLayoutHorizontal_mA78FDB80B3BA1EB7FE79477101A70492F10E96D2 ();
+extern "C" void ScrollRect_SetLayoutVertical_m912423AB4057840ED0EF1C73A45D876937275639 ();
+extern "C" void ScrollRect_SetNormalizedPosition_m23F8F3EA2E039C49A4CDEA12FA26FBD6C8F65625 ();
+extern "C" void ScrollRect_SetVerticalNormalizedPosition_m89732408A431F29CBE354A9CB03952F80D3BE8E5 ();
+extern "C" void ScrollRect_StopMovement_m8A1FD87CF259F34D677161F2686A2D0EC52BFADC ();
+extern "C" void ScrollRect_UpdateBounds_m64AD256E1BF3ED2AA9ECD8A71A7FA75CABBD4685 ();
+extern "C" void ScrollRect_UpdateCachedData_mBA51AC06FF29BF72EBF470DE00361A0DDD858841 ();
+extern "C" void ScrollRect_UpdateOneScrollbarVisibility_m4DB223B5340C269206467DA94B8BD917251F731A ();
+extern "C" void ScrollRect_UpdatePrevData_mB386F432395FDFF7141DB5BAE9ED72C28F5836FA ();
+extern "C" void ScrollRect_UpdateScrollbarLayout_m8267AFEAB72E362ECC807A03BFC759FF64A7FDAF ();
+extern "C" void ScrollRect_UpdateScrollbarVisibility_mCB2714FF6CD206EE276094C7DF2FCDD4B7EC54F3 ();
+extern "C" void ScrollRect_UpdateScrollbars_m60756E79515458D8471A0628DFC01B95C1CD05AE ();
+extern "C" void ScrollRect_set_content_m7AEEFBBBD97A03F4729F3F3EF257DF3F808CF70F ();
+extern "C" void ScrollRect_set_decelerationRate_m6A8B8A60DCFE84AA49D872C82C0EE114975D85DC ();
+extern "C" void ScrollRect_set_elasticity_mB8D33F1B610727424A96D5BF6FA60F984BD3239D ();
+extern "C" void ScrollRect_set_horizontal_m4C9F1891E338DD3DE4C12C6FF9CF132B49E8E2B9 ();
+extern "C" void ScrollRect_set_horizontalNormalizedPosition_m682F373A94978061CDF938A9E2D2C50EABB87C0A ();
+extern "C" void ScrollRect_set_horizontalScrollbar_m650A3A51EF70EEDAE3D9B621B0675FCF4E2E1E6D ();
+extern "C" void ScrollRect_set_horizontalScrollbarSpacing_m0226FCED33423E1962A24517188D8464179B3ED1 ();
+extern "C" void ScrollRect_set_horizontalScrollbarVisibility_mA7700244746F9F1C97BCD7A58124EC10CEDEF040 ();
+extern "C" void ScrollRect_set_inertia_m0054EBF021FB3EF4E982E0E45C5234CBFF00D31E ();
+extern "C" void ScrollRect_set_movementType_m8271F7B2C697E3A53E9666E7C0E0508682DCDE50 ();
+extern "C" void ScrollRect_set_normalizedPosition_m9B1A5E02AE4512DD1340D64D88ADF2B0C0F7FD27 ();
+extern "C" void ScrollRect_set_onValueChanged_m6554A19014F7F5176FC620DFABE0472EB96EAAE9 ();
+extern "C" void ScrollRect_set_scrollSensitivity_m2718B33CCD14F1785B4E7C9EF69AA3F78A717D14 ();
+extern "C" void ScrollRect_set_velocity_m3A4A92A1F4ECBEA2648BA11F9F6857B56FC5BF64 ();
+extern "C" void ScrollRect_set_vertical_m88623F933530D68DB98B487663E5125619D15A03 ();
+extern "C" void ScrollRect_set_verticalNormalizedPosition_m7265E6532301EF1F5D285370BC3FBA9A58636BC6 ();
+extern "C" void ScrollRect_set_verticalScrollbar_mC1EEDFA08A477C1B5A27E2AB4A6124CA6B9C8D27 ();
+extern "C" void ScrollRect_set_verticalScrollbarSpacing_mA03A396F29DD92C6410157997C4F173851B6EF24 ();
+extern "C" void ScrollRect_set_verticalScrollbarVisibility_m6DA3B95F798110C0A778E96B41D3E9D1468AAED7 ();
+extern "C" void ScrollRect_set_viewport_mFC1A36FAB24DCB5B17B05B249127425093AC4E7D ();
+extern "C" void U3CClickRepeatU3Ec__Iterator0__ctor_mBA19CC1217EFA094618FB9451C88EAEB75D9A5ED ();
+extern "C" void U3CClickRepeatU3Ec__Iterator0_Dispose_m37399231F89D33EE35EC12FD0713A098AFA06473 ();
+extern "C" void U3CClickRepeatU3Ec__Iterator0_Reset_m6BB917D87B5919C9978C05C078B0861A58FDECE8 ();
+extern "C" void ScrollEvent__ctor_m57B48E758DA259EFD37D36C2E822CDDE0EB0D327 ();
+extern "C" void Scrollbar__ctor_m7ADE49080D7228788648A54BD34D88B497252476 ();
+extern "C" void Scrollbar_GraphicUpdateComplete_m347F9D1842D0EC8F179DEED9BBB316FCE73BF61E ();
+extern "C" void Scrollbar_LayoutComplete_mEC4BB9C20DCF68FC7348C4ABFC3AFAF8C428FDD8 ();
+extern "C" void Scrollbar_OnBeginDrag_m6DA9E7055796D8EE7CE4BD0FD013E289B55DB40D ();
+extern "C" void Scrollbar_OnDisable_mE1B498F3F7D037D4B4FEE7B1865B214D1ED3AFB2 ();
+extern "C" void Scrollbar_OnDrag_m7AC63EE8BC0D90003E55946E7267DBEFD345C8DF ();
+extern "C" void Scrollbar_OnEnable_m1CE8A8EAC515D4DE99E6D75ACD10BA85667949B4 ();
+extern "C" void Scrollbar_OnInitializePotentialDrag_mB192062EB62D8AD9A8CBEB31F50534F34FEAB10A ();
+extern "C" void Scrollbar_OnMove_mFC5E2D34AF47C6042DE0EF5765DEB886991BDEA1 ();
+extern "C" void Scrollbar_OnPointerDown_mFF6FEF012693CBF8174E615BC8CCA6D07C91E94B ();
+extern "C" void Scrollbar_OnPointerUp_m57D516FD92F59A104D5BCAEA2B6DA3224CA06463 ();
+extern "C" void Scrollbar_OnRectTransformDimensionsChange_mEEE2F0B1ABF34DB4276EE40ECE52D11B3CD8166C ();
+extern "C" void Scrollbar_Rebuild_m7ADD4A145161976613E868B0B957E1747A5F5AAA ();
+extern "C" void Scrollbar_Set_mAD0BA4AF84AC6C5A7BA488A67BAFD879FF810564 ();
+extern "C" void Scrollbar_Set_m11355F7B0FD424955223A2AF2304E86894148F43 ();
+extern "C" void Scrollbar_SetDirection_mBB35F712BDD1A3855FAAE42D12B760B8EE1AE68D ();
+extern "C" void Scrollbar_UpdateCachedReferences_m40A31FF732875EDCC599DEB593C73A7DC549E62D ();
+extern "C" void Scrollbar_UpdateDrag_mE8B199B19A5942CBA82E3840A6126D59054129FC ();
+extern "C" void Scrollbar_UpdateVisuals_m1D878262ED9E2352A223212690C52E8CB6F2FAAB ();
+extern "C" void Scrollbar_set_direction_m5B03A56846073AC48D2CDDC5FD67189C0EF1E329 ();
+extern "C" void Scrollbar_set_handleRect_mE1534719B898AF071D67CBDACB42668013766303 ();
+extern "C" void Scrollbar_set_numberOfSteps_mFB129074E47807F490E3ACBAB25C9600033A5D68 ();
+extern "C" void Scrollbar_set_onValueChanged_m25E52DAC96B9990159F1E092F1B5B7A3D84DBE56 ();
+extern "C" void Scrollbar_set_size_m5F078A8D54DBD8859076A119C177786A5D7529BC ();
+extern "C" void Scrollbar_set_value_m9AE3F1ECEB1ABAFD7390C237AA10C30CCDE802C5 ();
+extern "C" void Selectable__cctor_mAD0E5E180C52A89008DBF31BE769D0D7B85E0EE5 ();
+extern "C" void Selectable__ctor_mBD4ABD29364130A94AFCE637F55A9A7E060A4998 ();
+extern "C" void Selectable_Awake_m00FEEACAD69C0C1431DE1D943D9BAD242060D237 ();
+extern "C" void Selectable_DoSpriteSwap_m945F050FB0ADD6D6EB86BD62196EC8C88B01368F ();
+extern "C" void Selectable_DoStateTransition_m10BB6A589042BC2348AA26B23BFE8BDA7FA2A015 ();
+extern "C" void Selectable_EvaluateAndTransitionToSelectionState_m59AE8588925C9EA196F1871AEB3482A11DDAE958 ();
+extern "C" void Selectable_InstantClearState_m7B707053C25F8C158A896237F0B4D8E557179381 ();
+extern "C" void Selectable_InternalEvaluateAndTransitionToSelectionState_m5B2218BC4398EF690E0D1273B3D082FF6937FDD5 ();
+extern "C" void Selectable_Navigate_m9EDE62D4E73C8D0DDF15FD11CBA8AA687113F209 ();
+extern "C" void Selectable_OnCanvasGroupChanged_m10C2FF31D55B5795F8290F56EED7CDD088AFFD6E ();
+extern "C" void Selectable_OnDeselect_mF9FFDF6060D5998D3CC34A3D9370465DC84A0EE0 ();
+extern "C" void Selectable_OnDidApplyAnimationProperties_mBC51729A0658D31002D6E64499DC899C4A9DABBA ();
+extern "C" void Selectable_OnDisable_m4634C727F40884946EF3D789CD98BA6BB2E3C9F3 ();
+extern "C" void Selectable_OnEnable_m352652EBB5663AACFBA5DF569B69688195B2D67A ();
+extern "C" void Selectable_OnMove_m4C727C7903C354BA3BD5A8BBE0B01A81D0AB3640 ();
+extern "C" void Selectable_OnPointerDown_mB422F4AA51DAAFC28EFA7B1B44B12FC3C77F315A ();
+extern "C" void Selectable_OnPointerEnter_m6296AF10FDA50D3ABCC54C3FA9D1C34A51DE0CDF ();
+extern "C" void Selectable_OnPointerExit_mB7EF6DA645C52193A03C366A0C3A8111B5C9E0BE ();
+extern "C" void Selectable_OnPointerUp_mD9B21EB27CDCF610DCC6EFE191CB67933D207927 ();
+extern "C" void Selectable_OnSelect_mB45924EA3EEA317E851C1718110D6D591CBCEE35 ();
+extern "C" void Selectable_OnSetProperty_m4C8CA731A11111633A0AD55E35F50F504852E700 ();
+extern "C" void Selectable_OnTransformParentChanged_m7407DE1690F15DB716A517D98389546BFE9674A7 ();
+extern "C" void Selectable_Select_mFABD479F56CEA6F3F788CCE40A56F1CFE1BC503A ();
+extern "C" void Selectable_StartColorTween_m4FDDF247EB1F3FF3523AD9701104CF15FC7BE7EF ();
+extern "C" void Selectable_TriggerAnimation_m3041F858E7AE274FCDF090695EB3A03656F35BCD ();
+extern "C" void Selectable_UpdateSelectionState_m68F6EFC8DCE122782E6DC6727026FCA4991E512A ();
+extern "C" void Selectable_set_animationTriggers_m8E417E803453619B75A48E4368CCE49721A70E7F ();
+extern "C" void Selectable_set_colors_m9B2153394F840E4C092F5E15890AE18BDE5D803C ();
+extern "C" void Selectable_set_hasSelection_m4201E39DA59215B5F25316B88F7FB58A96BAEAF6 ();
+extern "C" void Selectable_set_image_mEB48171E4A9B0856EF9495731DA0E77B32022371 ();
+extern "C" void Selectable_set_interactable_mD5096017CC3058D280066EB9ABDDF5062983A94F ();
+extern "C" void Selectable_set_isPointerDown_m07D70BBBF74BBE93260C8764A35AB2CF01D9285B ();
+extern "C" void Selectable_set_isPointerInside_m438C811BF8AC629C8B178CCBB8B4AE3104D3BFC4 ();
+extern "C" void Selectable_set_navigation_mC71C23884778E7CBD965CD03F4BB98C57B193D6D ();
+extern "C" void Selectable_set_spriteState_m0E5F0F2E2C60D7552C9A5A2C7DD7624A739BD3E8 ();
+extern "C" void Selectable_set_targetGraphic_mBFC447AB7EA85CB420A62F73C9FC04C258459AAD ();
+extern "C" void Selectable_set_transition_mDD3BD497C0E4CEE5383D4D8D21345E9FDC99E6EC ();
+extern "C" void Shadow__ctor_m6638F4524D0C59C8097EB4B29485D6FF29CD2181 ();
+extern "C" void Shadow_ApplyShadow_m758C3387E9BF5D18111E88CAC3EFAE84BF8A4B5C ();
+extern "C" void Shadow_ApplyShadowZeroAlloc_m4125D36896DA665F099A344030160FA3043CC937 ();
+extern "C" void Shadow_ModifyMesh_mD0147B7AC10F6443E866DE4FB707D7D36B0B88FA ();
+extern "C" void Shadow_set_effectColor_m73C48D317DC07054A1B639D5A8AC5FD412A7D3AD ();
+extern "C" void Shadow_set_effectDistance_mB25607DC42BC57346AE38C073BADE761986C109E ();
+extern "C" void Shadow_set_useGraphicAlpha_m88EC1CB36CFDA044427BBA3BA301EF835BD2E332 ();
+extern "C" void SliderEvent__ctor_mA5E056137D29D8DAB5479CFB516B8350F81B0C0F ();
+extern "C" void Slider__ctor_mF1438A44978B9AF7425B50934AC90138A6DBB605 ();
+extern "C" void Slider_GraphicUpdateComplete_m320BDF39CD12251BA2AC72EBB148B4785CE08CB4 ();
+extern "C" void Slider_LayoutComplete_m5EF8F0FB486F80303C1DA17B79EFB999C0A8D28D ();
+extern "C" void Slider_OnDidApplyAnimationProperties_mB5DCC8BFA833602C4DE2BB1A43BC5637CBE38C42 ();
+extern "C" void Slider_OnDisable_m1820CD0C81E18B6E208F7C2B61B8130D465F4DD0 ();
+extern "C" void Slider_OnDrag_m11F76D7574A7343BC4771D8EE650E19FE4212E51 ();
+extern "C" void Slider_OnEnable_m260CC9BF41956E4A2BE5AA65735A498B48AC1F20 ();
+extern "C" void Slider_OnInitializePotentialDrag_m4D8CBBFBA2F1E7B4BE83A8E9456CE410B7657F6A ();
+extern "C" void Slider_OnMove_mC1D271B37D6115AA109F331630FEC513A4F3B68D ();
+extern "C" void Slider_OnPointerDown_mE6AF7C1DED6CE3A59B1C01E413852B2DC252E855 ();
+extern "C" void Slider_OnRectTransformDimensionsChange_mDA61F90CF7F7F65347166FFE8E53CCC47A19B581 ();
+extern "C" void Slider_Rebuild_m60BD5CE28919730B71DC5E75B4A62B9E13EC0917 ();
+extern "C" void Slider_Set_mAC56863EBF0D01C1290778D2AD7F3623E9EA9CFC ();
+extern "C" void Slider_Set_mD0D742FFFDC05C2F3C1E0924C28C964AB95F8C39 ();
+extern "C" void Slider_SetDirection_m80673A915F4D6CBC8257721CECE8BC0C49C2AA82 ();
+extern "C" void Slider_UpdateCachedReferences_mF03146161CC6034FB5511A0D82557EC40B945DDE ();
+extern "C" void Slider_UpdateDrag_m3245C20C3E52659020A6D00BAD7B13F62C77D6C3 ();
+extern "C" void Slider_UpdateVisuals_mA0CAD28317391E855707C570091DA9F71C60B7C8 ();
+extern "C" void Slider_set_direction_m4009DEBB23A079650774717B4463C08D7CAFF853 ();
+extern "C" void Slider_set_fillRect_mA18A75B4CA594BF9622465584E851F86DA083359 ();
+extern "C" void Slider_set_handleRect_m8B4188B88934222BB4C4220929A5CC75FB4A1472 ();
+extern "C" void Slider_set_maxValue_m2CCC2B6906B140BE5C537BFC08CC8961342F92D8 ();
+extern "C" void Slider_set_minValue_mDA0D477A52DA1A66497A4F46807D60A8040C0122 ();
+extern "C" void Slider_set_normalizedValue_mE5F625759AF63BB756D0506B9E38365DCA86B308 ();
+extern "C" void Slider_set_onValueChanged_m33DFE6F9A0F16DB828610F99283A5DCB4E10ECAF ();
+extern "C" void Slider_set_value_mD7E3DE3C9CDEBA5740C0B924D19D20404AEB6898 ();
+extern "C" void Slider_set_wholeNumbers_m77FD1FF5AFF43A719A2FCC33994223310F185720 ();
+extern "C" void SpriteState_set_disabledSprite_mA251CF8DF922DD506049D83C63879C3D6698B317_AdjustorThunk ();
+extern "C" void SpriteState_set_highlightedSprite_mB6F76814A30F2FD3C379FAA3E5CD250176D9B241_AdjustorThunk ();
+extern "C" void SpriteState_set_pressedSprite_mD78D10C0B5372329BB042932132416AD812C9BC5_AdjustorThunk ();
+extern "C" void MatEntry__ctor_m72C34F04FBA9E45278AEC5A484EBF78FD7748089 ();
+extern "C" void StencilMaterial__cctor_mDE710919ED4BAF28418921D59421CEEF8795B59B ();
+extern "C" void StencilMaterial_ClearAll_mCE4F6E8266056EA7E2A77B3EA6618188A93C5131 ();
+extern "C" void StencilMaterial_Remove_mAD3015D7E6D81CA4F11F4B19EE328B60ECC92EF9 ();
+extern "C" void Text__cctor_m713223F660E2573ACF3AB0E01C79282AA1851BFA ();
+extern "C" void Text__ctor_m80A4B0795946280BD6D532BA6922CAEC18A82748 ();
+extern "C" void Text_AssignDefaultFont_m018120862E32324EAD5E109C45FEA56E626FEEB9 ();
+extern "C" void Text_CalculateLayoutInputHorizontal_m1200BC41E8B74593FF77EE5A981BD0F6ECA99C16 ();
+extern "C" void Text_CalculateLayoutInputVertical_mA34082970A62973ECF341AB7EA0F486B07F0E608 ();
+extern "C" void Text_FontTextureChanged_mA0FFEE8B273208F83D2C55BA4D994D148EB12F22 ();
+extern "C" void Text_OnDisable_mBFEF0A0F544B2B834683E34EF5F56F5C4E1F59A1 ();
+extern "C" void Text_OnEnable_mE4498B042D13B7E35B9E48161939783671D97260 ();
+extern "C" void Text_OnPopulateMesh_m14AF4CC8E68737D1A2EB3874DBA97C26FDC8C30B ();
+extern "C" void Text_UpdateGeometry_mFF09CAB338C7321779D30F5F4611390A4D677249 ();
+extern "C" void Text_set_alignByGeometry_m41CC432AC80913E7E5F589E9E97AA596CAF4725C ();
+extern "C" void Text_set_alignment_mB0AAD0C5B768E551ED0CFEDB3B065D53B378CF05 ();
+extern "C" void Text_set_font_mD3CE7BCE58B5B0C3CBE51CE1AC74CBA662DFCF5C ();
+extern "C" void Text_set_fontSize_m02F0192F052A3815C17428F4C2BE51A03B3E15B7 ();
+extern "C" void Text_set_fontStyle_m14F5E99F2F56B22FE1A913EAACF43060F258C144 ();
+extern "C" void Text_set_horizontalOverflow_m25F75A139DC41E64534F6AFBC015BC8981EF6EF3 ();
+extern "C" void Text_set_lineSpacing_m1E45DAE6F3EB6A8D50A6067F84C854B0563F4C6D ();
+extern "C" void Text_set_resizeTextForBestFit_m5C2AE30EC63988D878AD0FC3D10EC26E91B572FB ();
+extern "C" void Text_set_resizeTextMaxSize_m2FE7CC9C76174E594B32A33DD1A34AFB88EC3566 ();
+extern "C" void Text_set_resizeTextMinSize_m9931CA2C3B3E4A48643C7FA96781AE473DAD6745 ();
+extern "C" void Text_set_supportRichText_m1DBDCBC909CE6430E36B823BA63D24EECD9D21C8 ();
+extern "C" void Text_set_text_mBE035FDBA5FF5D79CC1A6C191D52D6BB94794C36 ();
+extern "C" void Text_set_verticalOverflow_mF2BD206D52AC35E80E44A307DCE7CB2D0036E25D ();
+extern "C" void ToggleEvent__ctor_m42B79CF4D48552D2EA68AC29FB3CC70CDBC72193 ();
+extern "C" void Toggle__ctor_m9778262FDAA7AB9F4DC36B8383E3636EB4181121 ();
+extern "C" void Toggle_GraphicUpdateComplete_m83FD4545ED1789E0FFC2B9672717B97621C427DE ();
+extern "C" void Toggle_InternalToggle_m39B460402208214BF289E3A070D3CC47CFBF2034 ();
+extern "C" void Toggle_LayoutComplete_m111A3DDCBB052478A11F1F29DAC102DC3B2ED383 ();
+extern "C" void Toggle_OnDidApplyAnimationProperties_m8B921A3B898C4E4FD1137902794F7DDA46C592BC ();
+extern "C" void Toggle_OnDisable_m9852243BB788EE79582CD63E8EEDD6F5AA969E30 ();
+extern "C" void Toggle_OnEnable_m06EB9BAD5A0B0BBEA8F7BB8E7700F9314580D349 ();
+extern "C" void Toggle_OnPointerClick_m5F3C48B188ECE1BD50FC1DDC4339A5CFCB78614B ();
+extern "C" void Toggle_OnSubmit_m3D39E47544FC6B6C18F29C6CE0015376EAD53395 ();
+extern "C" void Toggle_PlayEffect_m8915ECD3CBCF477FF9499DB5C7C58122AF6CA0E7 ();
+extern "C" void Toggle_Rebuild_mDA0831CFE6AB7ACDE44FA5A196D503207C533CA6 ();
+extern "C" void Toggle_Set_m3DDB6517A78DEDF31B639FEAAB30D031BBDE8DA8 ();
+extern "C" void Toggle_Set_m792B2A0D3ECBC3FD11A172A855C03A9E4524BA4D ();
+extern "C" void Toggle_SetToggleGroup_m7309BDC38EBBE8578600696DBA86EEF179FB7734 ();
+extern "C" void Toggle_Start_mD7422F4AC7E97A3274DC47750C9C32918F971950 ();
+extern "C" void Toggle_set_group_mC2AC854926A3826395400C3D4B592F2BADD800E9 ();
+extern "C" void Toggle_set_isOn_m7537DFD6189521B15A9ABFF448CB1390BB9A7342 ();
+extern "C" void ToggleGroup__ctor_m4191FA153CF9F46EC5CAE2332DD772C084430AB0 ();
+extern "C" void ToggleGroup_NotifyToggleOn_mC008E9CCB6D5F828873B777CEE2C8B63A98294F1 ();
+extern "C" void ToggleGroup_RegisterToggle_m52D8EE41CA0839CFD5F67AD8750677101DB08232 ();
+extern "C" void ToggleGroup_SetAllTogglesOff_m679B91ED02BCDE097E44D110BE1E9E546460CA78 ();
+extern "C" void ToggleGroup_UnregisterToggle_m4B579EEFF42C812F607EE4E682C15FA8910B32DD ();
+extern "C" void ToggleGroup_ValidateToggleIsInGroup_m53EC5A85EC2474E5D879409D5956C17B18BE4420 ();
+extern "C" void ToggleGroup_set_allowSwitchOff_m7BE26641720AA4F656DE834C96C8FDAE532FD5D6 ();
+extern "C" void VertexHelper__cctor_m185B909015F60EB6AED4C36F28C31EA4FD0C4528 ();
+extern "C" void VertexHelper__ctor_m4BDD6FD690593D484081F26AD01CF12CF25FDA71 ();
+extern "C" void VertexHelper__ctor_m334422D478B532AAAD6511EC5BF6791D7A83BA94 ();
+extern "C" void VertexHelper_AddTriangle_mE080F1D93001ED42D0A4791EA6602EBD5BCB3EEE ();
+extern "C" void VertexHelper_AddUIVertexQuad_m858D269D2EADF04CCC280E7AC87B0440BD6F2664 ();
+extern "C" void VertexHelper_AddUIVertexStream_m7ADED3E3F94821F2A24EB69A44E485E221B31B7C ();
+extern "C" void VertexHelper_AddUIVertexTriangleStream_m8EFEB045B63ABF1496FA90F6559BB9BA07390FCE ();
+extern "C" void VertexHelper_AddVert_mB332A958E9CC2BE8A158724AE6A03620FEE72EF9 ();
+extern "C" void VertexHelper_AddVert_m4BD3CA0EFB385C202A37712C41D6B502B3611A8D ();
+extern "C" void VertexHelper_AddVert_m9D2E883EB0BFCB9EA78AA93F7FD56EE99DC703B2 ();
+extern "C" void VertexHelper_AddVert_mD2074FDCD0CF9500A05102448EF72D8C7ADDCF83 ();
+extern "C" void VertexHelper_Clear_m811CC2BB4DBD7778A9708FCEE04BAA2107721BD7 ();
+extern "C" void VertexHelper_Dispose_m5DC2F2F2415811228A23AEABB06274A88B6C7513 ();
+extern "C" void VertexHelper_FillMesh_mE949EFAAA38E753FC2B160E07988ADE8467A2F31 ();
+extern "C" void VertexHelper_GetUIVertexStream_m45F8CEA87695DC3AF455389F174A6AE574A7C798 ();
+extern "C" void VertexHelper_InitializeListIfRequired_m58C8C9423DFD8C5C542958C43B358A06D650C14B ();
+extern "C" void VertexHelper_PopulateUIVertex_m72B419E337C302E1307A90517561746425989160 ();
+extern "C" void VertexHelper_SetUIVertex_m34A2517745A635BBBD0F95AAFC3CF275D73AC4D3 ();
+extern "C" void VerticalLayoutGroup__ctor_m3EC63506FC41844092A548135D20A460E7E4E6A3 ();
+extern "C" void VerticalLayoutGroup_CalculateLayoutInputHorizontal_mBD58CD0DB5FC62541B9138F1A2F06DD13891C09E ();
+extern "C" void VerticalLayoutGroup_CalculateLayoutInputVertical_mF06FF0EF1AA383EF8A9D373D3AD8F65E302D6C55 ();
+extern "C" void VerticalLayoutGroup_SetLayoutHorizontal_mDBAB0E860D28A07621CFF5FD811FE46681835454 ();
+extern "C" void VerticalLayoutGroup_SetLayoutVertical_m0C9CCFE9C74945FF3F45073528EEE427260B79C8 ();
+extern "C" void UISystemProfilerApi_AddMarker_m9193DB5B08C1B7DD35835D6F0E2DF9DD20483FFA ();
+extern "C" void UISystemProfilerApi_BeginSample_m43EF1B2F9606D5F0C99DF84505C5498AA0CDBB1B ();
+extern "C" void UISystemProfilerApi_EndSample_mB7DD865D72832D3558931B4E6801999B23F0429A ();
+extern "C" void UIVertex__cctor_m86F60F5BB996D3C59B19B80C4BFB5770802BFB30 ();
 extern "C" void UnhandledExceptionHandler_HandleUnhandledException_m09FC7ACFE0E555A5815A790856FBF5B0CA50819E ();
 extern "C" void UnhandledExceptionHandler_PrintException_m4CBE36F17C3F2B72205DB96B6D1377E4B3D11C77 ();
 extern "C" void UnhandledExceptionHandler_RegisterUECatcher_mE45C6A0301C35F6193F5774B7683683EF78D21DA ();
 extern "C" void UnhandledExceptionHandler_iOSNativeUnhandledExceptionHandler_mD7444FEA5E5A468B81682D0C10831FD62ED60DC6 ();
+extern "C" void UnityAPICompatibilityVersionAttribute__ctor_m396699681ECFF3E716BF37E25CCF6A38960549C9 ();
 extern "C" void UnityEngineModuleAssembly__ctor_m791D74EDFEF6B1368540E376C7DCA131C2528993 ();
 extern "C" void UnityException__ctor_m68C827240B217197615D8DA06FD3A443127D81DE ();
 extern "C" void UnityException__ctor_m27B11548FE152B9AB9402E54CB6A50A2EE6FFE31 ();
@@ -10040,8 +12019,18 @@ extern "C" void UnitySynchronizationContext_Post_mB4E900B6E9350E8E944011B6BF3D16
 extern "C" void UnitySynchronizationContext_Send_m25CDC5B5ABF8D55B70EB314AA46923E3CF2AD4B9 ();
 extern "C" void Vector2__cctor_m13D18E02B3AC28597F5049D2F54830C9E4BDBE84 ();
 extern "C" void Vector2__ctor_mEE8FB117AB1F8DB746FB8B3EB4C0DA3BF2A230D0_AdjustorThunk ();
+extern "C" void Vector2_Normalize_m99A2CC6E4CB65C1B9231F898D5B7A12B6D72E722_AdjustorThunk ();
+extern "C" void Vector2_set_Item_m2335DC41E2BB7E64C21CDF0EEDE64FFB56E7ABD1_AdjustorThunk ();
 extern "C" void Vector3__cctor_m83F3F89A8A8AFDBB54273660ABCA2E5AE1EAFDBD ();
+extern "C" void Vector3__ctor_m6AD8F21FFCC7723C6F507CCF2E4E2EFFC4871584_AdjustorThunk ();
 extern "C" void Vector3__ctor_m08F61F548AA5836D8789843ACB4A81E4963D2EE1_AdjustorThunk ();
+extern "C" void Vector3_set_Item_m89FF112CEC0D9ED43F1C4FE01522C75394B30AE6_AdjustorThunk ();
+extern "C" void Vector4__cctor_m478FA6A83B8E23F8323F150FF90B1FB934B1C251 ();
+extern "C" void Vector4__ctor_m545458525879607A5392A10B175D0C19B2BC715D_AdjustorThunk ();
+extern "C" void Vector4_set_Item_m56FB3A149299FEF1C0CF638CFAF71C7F0685EE45_AdjustorThunk ();
+extern "C" void WaitForEndOfFrame__ctor_m6CDB79476A4A84CEC62947D36ADED96E907BA20B ();
+extern "C" void WaitForSecondsRealtime__ctor_m775503EC1F4963D8E5BBDD7989B40F6A000E0525 ();
+extern "C" void WaitForSecondsRealtime_set_waitTime_m867F4482BEE354E33A6FD9191344D74B9CC8C790 ();
 extern "C" void WritableAttribute__ctor_m58A5D24131EC67D50A7BF2804568DCB607BD97D6 ();
 extern "C" void YieldInstruction__ctor_mA72AD367FB081E0C2493649C6E8F7CFC592AB620 ();
 extern "C" void LocalNotification__cctor_m9E47ADEC8F786289F7C94ACC65A44C318FF59685 ();
@@ -10049,24 +12038,36 @@ extern "C" void LocalNotification_Finalize_m3B080FBFB1E51F3C5570B6097958CFA834A0
 extern "C" void NotificationHelper_DestroyLocal_m31A83960AAC3E5D3C5AF4B945B6F51E890E15E6C ();
 extern "C" void NotificationHelper_DestroyRemote_m8DC26FA325608161850486E8F4BF16B67EF90E79 ();
 extern "C" void RemoteNotification_Finalize_m4D3F34A965DDE64EEC2F3AC3AC1750AED0CE1C2F ();
+extern "C" void GenericStack__ctor_m0659B84DB6B093AF1F01F566686C510DDEEAE848 ();
 extern "C" void MathfInternal__cctor_m885D4921B8E928763E7ABB4466659665780F860F ();
 extern "C" void TypeInferenceRuleAttribute__ctor_m34920F979AA071F4973CEEEF6F91B5B6A53E5765 ();
 extern "C" void TypeInferenceRuleAttribute__ctor_m389751AED6740F401AC8DFACD5914C13AB24D8A6 ();
 extern "C" void WebRequestUtils__cctor_m31EB3E45EC49AB6B33C7A10F79F1CD4FF2BE715A ();
+extern "C" void VariableJoystick__ctor_m8A6171BB962558D6833C6CF80E3E0092DF768D84 ();
+extern "C" void VariableJoystick_HandleInput_m83CA8AFC5C395DE4C684F2C478D1DE36CAD0BF19 ();
+extern "C" void VariableJoystick_OnPointerDown_m066F12E7818D1CD22977EAEA9FE4AEC0DD179FAC ();
+extern "C" void VariableJoystick_OnPointerUp_m42B201EDAB1B3A2F2ED747FA7A4773E2654DA061 ();
+extern "C" void VariableJoystick_SetMode_m222D977BBDA4E253D4EAF1E55925FAD333EA7CAE ();
+extern "C" void VariableJoystick_Start_m5BB1A8FE9E2EBC394C4AC8B4E495AB653F61E8E2 ();
+extern "C" void VariableJoystick_set_MoveThreshold_m70CF65250847566A28B2A418C3EE55004987552F ();
 extern "C" void effects__ctor_m8C079941378174A0F7196CC15AEEFC5D06874FCE ();
 extern "C" void effects_Start_mA574349921ADB85F16DD1F581B0B23D9CEF87E61 ();
 extern "C" void effects_Update_m1C5CC6CACBF2BCC0450032A8865CDECD15D24D47 ();
+extern "C" void moveByTouch__cctor_m4E084AF71FEEEAFF5547A4D1B2E932F087AEA7FE ();
+extern "C" void moveByTouch__ctor_mE3E6E765528ED00273DD4CC35FD0BF353588D36E ();
+extern "C" void moveByTouch_OnCollisionEnter_m9B8F4B155063466200E33CB42E4147B9B0E9A1C5 ();
+extern "C" void moveByTouch_OnTriggerEnter_m8A7D54DE4DB736833717AA2DC862FA8010339241 ();
+extern "C" void moveByTouch_Start_m2B1AC9186446BC045254A636686316BCD047B015 ();
+extern "C" void moveByTouch_Update_m9BFA7D9CD285CD6EC3513F0E59B0244C3155C7F1 ();
 extern "C" void moveCam__ctor_m422C43FE6216F689B9C1D0E5EC0DAE719A64027E ();
 extern "C" void moveCam_LateUpdate_mBF8CF872A16F5081BAA8EA36FB7660F5FA7FE26B ();
 extern "C" void moveCam_Start_mC5E45E424C6615D44240527359BC09C573FC1911 ();
-extern "C" void moveorb__ctor_mC29A891CBDC7F260EAFB3BCDDB09499AE9236E87 ();
-extern "C" void moveorb_OnCollisionEnter_m61FB2444C972DF150425C486F1CC43CC84C932EA ();
-extern "C" void moveorb_OnTriggerEnter_m3C6ADA77B66A208AA4C7780C503A275FEE9F0F47 ();
-extern "C" void moveorb_Start_m50BA1BC52FB121D4EB4BF066B4AAC16A89EB3A4C ();
-extern "C" void moveorb_Update_m9D8C77E0FD0EFA1662CCF4B2A8B9A25B787E8F3A ();
 extern "C" void status__ctor_mBC252DFFB1E07105F23DC48C76F1C2AFF2C2F6C9 ();
 extern "C" void status_Start_m5A1F7258688847CF905624B33584AA2E5BCECEEA ();
 extern "C" void status_Update_m6A040A0B6F4AE46AFCDAE8A8ADB1560D26B51B44 ();
+extern "C" void upDateCoinNum__ctor_m850B6653C31C4E10F73DC3B217600FEE6EEAC967 ();
+extern "C" void upDateCoinNum_Start_mA21ED9D51395D131E65196C1915A4FCFC9B3A3E7 ();
+extern "C" void upDateCoinNum_Update_mE7958A05004556106D130C5998DC5B85A5DB51FE ();
 extern "C" void IntPtr_ToPointer_mC56A17E597E9F767B889DA10DB866F0B96CF0D65_AdjustorThunk ();
 extern "C" void IntPtr_op_Explicit_mB8A512095BCE1A23B2840310C8A27C928ADAD027 ();
 extern "C" void XmlNode_get_LastNode_mAB2DD7365BF9428D4F8AC4C3AFAE7F229FCB1B08 ();
@@ -10075,6 +12076,7 @@ extern "C" void XmlLinkedNode_get_NextSibling_m6F858A5E1ED045F63D7885A243CD10FFD
 extern "C" void XmlNode_get_FirstChild_m43F741CF5C0565011D515B92103F04E033952410 ();
 extern "C" void XmlNode_get_NextSibling_m86E032192785FDB070EE88E07675B2FF304E383B ();
 extern "C" void XmlNode_get_ParentNode_m6AC4A7F4FEE5B469A86490C129F011C12201C3E6 ();
+extern "C" void Selectable_get_animator_m44D968240801D850FE50F5B95C95D394448AA58D ();
 extern "C" void SceneManager_LoadSceneAsyncNameIndexInternal_m542937B4FCCE8B1AAC326E1E1F9060ECEDCB6159 ();
 extern "C" void SceneManager_LoadSceneAsyncNameIndexInternal_Injected_mD19FD493D2C36D33EE8E8A997467DB05C10CE6D1 ();
 extern "C" void AudioSource_get_clip_m773ECEF5566EA64C74E316D7EF1A63AA01604643 ();
@@ -10087,18 +12089,115 @@ extern "C" void AudioExtensionManager_AddSpatializerExtension_m308292561D9B4CAF4
 extern "C" void AudioSource_AddAmbisonicExtension_m7D073528C0FAF70863AF8F14761ED4DA2CD986EF ();
 extern "C" void AudioSource_AddSpatializerExtension_mEA48D6DCCBFA6EF941158C6A0AF5844519AC3DA7 ();
 extern "C" void BootConfigData_WrapBootConfigData_m7C2DCB60E1456C2B7748ECFAAEB492611A5D7690 ();
+extern "C" void Sprite_get_bounds_mD440465B889CCD2D80D118F9174FD5EAB19AE874 ();
+extern "C" void ScrollRect_GetBounds_m1434EA6AC230851FBEEE36B1293EA41174124807 ();
+extern "C" void ScrollRect_InternalGetBounds_m7470ECE11BD59E50A86CFAB8BAD2A3D681936484 ();
+extern "C" void Camera_get_main_m9256A9F84F92D7ED73F3E6C4E2694030AD8B61FA ();
+extern "C" void Canvas_get_worldCamera_m36F1A8DBFC4AB34278125DA017CACDC873F53409 ();
+extern "C" void PhysicsRaycaster_get_eventCamera_mAFA0D5F17761DBDDC9BD06135CF444758BCC4B90 ();
+extern "C" void PointerEventData_get_enterEventCamera_m577E1776C18402B74EA29030B2C19D29A0A09949 ();
+extern "C" void PointerEventData_get_pressEventCamera_m67D6A0046313FF44CD3071EA68691846203C1756 ();
+extern "C" void GraphicRaycaster_get_eventCamera_mC92A047B1C0ECD373E1531BB04472EA6B9C4EF1A ();
 extern "C" void Camera_get_clearFlags_m1D02BA1ABD7310269F6121C58AF41DCDEF1E0266 ();
+extern "C" void Canvas_get_rootCanvas_mFC5752C1955AF10E71AA6160A3A1880586116123 ();
+extern "C" void Graphic_get_canvas_m318739758379A567A35585728E2E1361599199F8 ();
+extern "C" void GraphicRaycaster_get_canvas_m4F25BBF846EB4BAB9E9F509E92D1B05F49626933 ();
+extern "C" void RectMask2D_get_Canvas_m191FA3C371666B3D37727E7737AC0778AE61B3E2 ();
+extern "C" void Graphic_get_canvasRenderer_m3CCAFCDBCEB38A281BAAB89F2832171BB3D348A6 ();
+extern "C" void RaycastHit_get_collider_mE70B84C4312B567344F60992A6067855F2C3A7A9_AdjustorThunk ();
+extern "C" void RaycastHit2D_get_collider_m6A7EC53B2E179C2EFF4F29018A132B2979CBE976_AdjustorThunk ();
+extern "C" void CanvasRenderer_GetColor_m841EC074805A87FBD6D3EF7A17BEA2476AEBA31D ();
+extern "C" void Color32_op_Implicit_mA89CAD76E78975F51DF7374A67D18A5F6EF8DA61 ();
+extern "C" void Color_Lerp_mD37EF718F1BAC65A7416655F0BC902CE76559C46 ();
+extern "C" void Color_get_black_mEB3C91F45F8AA7E4842238DFCC578BB322723DAF ();
+extern "C" void Color_get_clear_m419239BDAEB3D3C4B4291BF2C6EF09A7D7D81360 ();
+extern "C" void Color_get_red_m5562DD438931CF0D1FBBBB29BF7F8B752AF38957 ();
+extern "C" void Color_get_white_mE7F3AC4FF0D6F35E48049C73116A222CBE96D905 ();
+extern "C" void Color_op_Multiply_mF36917AD6235221537542FD079817CAB06CB1934 ();
+extern "C" void Texture2D_GetPixelBilinear_m3E0E9A22A0989E99A7295BC6FE6999728F290A78 ();
+extern "C" void Texture2D_GetPixelBilinearImpl_m950AB40E4151F10B6AA6C5759903BA07348114FB ();
+extern "C" void ColorBlock_get_disabledColor_m92AA8A3A936AA2F5BCB49A6ED24A7DA18D710856_AdjustorThunk ();
+extern "C" void ColorBlock_get_highlightedColor_mA4848B61041E78E7650300221F8A6EBBC801319B_AdjustorThunk ();
+extern "C" void ColorBlock_get_normalColor_m56E5827F34618598261AFDD0A3EBA5FF98F8D907_AdjustorThunk ();
+extern "C" void ColorBlock_get_pressedColor_m49A09AF1A1D08B552F83F4BD8A9D7E7F9EFC6021_AdjustorThunk ();
+extern "C" void ColorTween_get_startColor_m1F5DF90D6FF8CEB5F77056AC05E24D946CF829AE_AdjustorThunk ();
+extern "C" void ColorTween_get_targetColor_m906C2208EFE6DD67DE838E2FCBE12CDD1B75024B_AdjustorThunk ();
+extern "C" void Graphic_CreateColorFromAlpha_m935A0559C2575F212FE7B90D17C0EFFA3A272E3D ();
+extern "C" void Graphic_get_color_mD59FBB0BF5D0F358A4AD18CFB0621EA9194C1778 ();
+extern "C" void InputField_get_caretColor_m4ACCD57D727CF29B21159403AA20621893679049 ();
+extern "C" void InputField_get_selectionColor_m6DF998776B7FCF8EC7D4EC218D24A84A3C352439 ();
+extern "C" void Shadow_get_effectColor_mF2BFAE37844448601DE6F2DB6C3ED8DAE0542DD5 ();
+extern "C" void Color32_op_Implicit_m52B034473369A651C8952BD916A2AB193E0E5B30 ();
+extern "C" void Mesh_get_colors32_m24C6C6BC1A40B7F09FF390F304A96728A4C99246 ();
 extern "C" void QualitySettings_get_activeColorSpace_m13DBB3B679AA5D5CEA05C2B4517A1FDE1B2CF9B0 ();
+extern "C" void Component_GetComponent_m5E75925F29811EEC97BD17CDC7D4BD8460F3090F ();
+extern "C" void Component_GetComponentInChildren_mEF7890FAC10EA2F776464285B0DCC58B8C373D34 ();
+extern "C" void Component_GetComponentInParent_mFD9A8F6311ABAF986CA0DA556662F89FD9234E7D ();
+extern "C" void GameObject_AddComponent_m489C9D5426F2050795FA696CD478BB49AAE4BD70 ();
+extern "C" void GameObject_GetComponent_mECB756C7EB39F6BB79F8C065AB0013354763B151 ();
+extern "C" void GameObject_GetComponentInChildren_mBC5C12CDA1749A827D136DABBF10498B1096A086 ();
+extern "C" void GameObject_GetComponentInParent_mA5BF9DFCA90C9003EB8F392CD64C45DFCB80F988 ();
+extern "C" void GameObject_Internal_AddComponentWithType_m452B72618245B846503E5CA7DEA4662A77FB9896 ();
 extern "C" void MonoBehaviour_StartCoroutine_mBF8044CE06A35D76A69669ADD8977D05956616B7 ();
 extern "C" void MonoBehaviour_StartCoroutine_m590A0A7F161D579C18E678B4C5ACCE77B1B318DD ();
 extern "C" void MonoBehaviour_StartCoroutine_mCD250A96284E3C39D579CEC447432681DE8D1E44 ();
 extern "C" void MonoBehaviour_StartCoroutineManaged_m53873D1C040DB245BF13B74D2781072015B1EB66 ();
 extern "C" void MonoBehaviour_StartCoroutineManaged2_m114327BBBA9F208E8BA2F8BBF71FA0E8E996F7B8 ();
 extern "C" void MonoBehaviour_StartCoroutine_Auto_m5002506E1DE4625F7FEACC4D7F0ED8595E3B3AB5 ();
+extern "C" void Cursor_get_lockState_mE0C93F496E3AA120AD168ED30371C35ED79C9DF1 ();
+extern "C" void Display_get_main_mDC0ED8AD60BF5BC3C83384E9C5131403E7033AFA ();
+extern "C" void Event_get_current_m072CEE599D11B8A9A916697E57C0F561188CDB2B ();
+extern "C" void Event_get_modifiers_m4D1BDE843A9379F50C3F32CB78CCDAD84B779108 ();
+extern "C" void BaseInputModule_GetAxisEventData_m7C98B82EDBDE4A002728A5EAB569B23F9EE6C6E1 ();
+extern "C" void BaseInputModule_GetBaseEventData_mB945B5DF7A5C2B825C7D542D944A7795D8F5F93F ();
+extern "C" void EventSystem_get_baseEventDataCache_m2B14076E5EF918BE1A94F16DE1A827AC1401BC89 ();
+extern "C" void BaseInputModule_get_input_m385A99609A705346D5288D047EE17374ED406BE7 ();
+extern "C" void BaseInputModule_get_inputOverride_m3C63C410A33009ACB7EAFB776066F734110391B8 ();
+extern "C" void InputField_get_input_mAF4210F766099F23FA8695F12CA970CC8E5CA80A ();
+extern "C" void BaseEventData_get_currentInputModule_m0887B0CB20374A4AA10D4C1B480E305581533512 ();
+extern "C" void EventSystem_get_currentInputModule_mAA917C940E32ECAC4324D6824A9E0A951F16D891 ();
+extern "C" void BaseInputModule_get_eventSystem_mEF6DEC17FF56D786AA217A52FCCFE8C6F38546BE ();
+extern "C" void EventSystem_get_current_m3151477735829089F66A3E46AD6DAB14CFDDE7BD ();
+extern "C" void ExecuteEvents_get_beginDragHandler_m7F238765714F73899EAFDF0BA203D9A8A57AED31 ();
+extern "C" void ExecuteEvents_get_cancelHandler_m5DB4A9513FB8B9248AE555F7D8E8043175B8D995 ();
+extern "C" void ExecuteEvents_get_deselectHandler_mEAA9E3701CC972EFDD20B30E9B3CD9302B2FD668 ();
+extern "C" void ExecuteEvents_get_dragHandler_m41B7D77771806788CD773C83C2E5A53D5ED5B179 ();
+extern "C" void ExecuteEvents_get_dropHandler_mC2362B96C6CD3628B83722F4B7C73E707C6C1EAF ();
+extern "C" void ExecuteEvents_get_endDragHandler_m23B60D3E3873043263069A3C3145393475690769 ();
+extern "C" void ExecuteEvents_get_initializePotentialDrag_m5B3D899EB08DA227EFBFC67778DDB98D7505C6D4 ();
+extern "C" void ExecuteEvents_get_moveHandler_m113A4222FC10723B2E38398E182C02F6624D6F24 ();
+extern "C" void ExecuteEvents_get_pointerClickHandler_mA657195AEC7D0A42036CBCAC9AD48F215C3C69E3 ();
+extern "C" void ExecuteEvents_get_pointerDownHandler_m8AE9CA906C86BBBEB75BA2D05F5DAB01F62519E3 ();
+extern "C" void ExecuteEvents_get_pointerEnterHandler_mFD5296E38EB1C5EB6D16CB83913430FEEBF889A5 ();
+extern "C" void ExecuteEvents_get_pointerExitHandler_mE5EC9537676A055EEE178A4E6B58D96F9B4AC301 ();
+extern "C" void ExecuteEvents_get_pointerUpHandler_m7EDDD1128DC04344CECEBCB9B6B7CD064F7FAED2 ();
+extern "C" void ExecuteEvents_get_scrollHandler_m48E5B17388986BD59EC7A7BF27E3D30A9FD057F7 ();
+extern "C" void ExecuteEvents_get_selectHandler_m26186C0D78CA4A8AFA0789A09F488F7E186BE1C8 ();
+extern "C" void ExecuteEvents_get_submitHandler_m734C2BE2F7CDA7F5C42897E3C8023D3C7E1EDF88 ();
+extern "C" void ExecuteEvents_get_updateSelectedHandler_mE18DBB058B1EDC75D4F690A1E35003749BBC0567 ();
+extern "C" void AxisEventData_get_moveDir_mD9CF8343509BAE60C581138D824F9C53659DBBD4 ();
+extern "C" void BaseInputModule_DetermineMoveDirection_m405D909925AE1C0008A90F0E9B71951BEA440610 ();
+extern "C" void BaseInputModule_DetermineMoveDirection_m8C9EA8541DF26F7CC4EC5FAB595E952C02D21132 ();
+extern "C" void PointerInputModule_GetLastPointerEventData_m5EA18AB20393345C66994CF2BB9AA8B5F71A7BC9 ();
+extern "C" void PointerInputModule_GetTouchPointerEventData_mA854E0BF0798BC85F11FFE8637C167B8DB97CB76 ();
+extern "C" void PointerInputModule_StateForMouseButton_m444A7772B383C141F28817295BAD2BCBF7BB0F80 ();
+extern "C" void PointerEventData_get_button_mC662D5DAC02F0ED6AE9205259116CC91BB92BD3E ();
+extern "C" void ButtonState_get_button_mB538B2D483C482A7E628D26BA390449A54C958A3 ();
+extern "C" void MouseState_GetButtonState_m0C2884609F720A284C72EAEF061C781F4874CCAE ();
+extern "C" void ButtonState_get_eventData_mA9D054D526473A2481A997758CDDEB022E67351D ();
+extern "C" void PointerInputModule_GetMousePointerEventData_mA8B6C810AE130118AA18CD4BD35F8F5BCE0D7E07 ();
+extern "C" void PointerInputModule_GetMousePointerEventData_m9CAE6C19EEED79D131BCF76386300A883DFD4643 ();
+extern "C" void BaseInputModule_FindFirstRaycast_mA20A40BA641EB3BCA259C48722183D4FFA07D051 ();
+extern "C" void PointerEventData_get_pointerCurrentRaycast_mE58F786484E13AF2E6C2706E20C889E7453E3A7A ();
+extern "C" void PointerEventData_get_pointerPressRaycast_m722BCA823E0405C9DF20312CDFBBEB5B1B05B7AE ();
+extern "C" void StandaloneInputModule_get_inputMode_m9E4FF00674C049A7F600D0CC5D278F474232B3D4 ();
+extern "C" void Event_get_rawType_m4139BB74440F552F5FD31F56215938E227EF0CD9 ();
+extern "C" void Event_get_type_mAABE4A35E5658E0079A1518D318AF2592F51D6FA ();
 extern "C" void PersistentCall_get_arguments_m53AFE12B586F0C8948D60852866EC71F38B3BAE1 ();
 extern "C" void PersistentCall_GetObjectCall_m895EBE1B8E2A4FB297A8C268371CA4CD320F72C9 ();
 extern "C" void PersistentCall_GetRuntimeCall_m68F27109F868C451A47DAC3863B27839C515C3A6 ();
 extern "C" void UnityEvent_GetDelegate_m8D277E2D713BB3605B3D46E5A3DB708B6A338EB0 ();
+extern "C" void UnityEvent_GetDelegate_mDFBD636D71E24D75D0851959256A3B97BA842865 ();
 extern "C" void PersistentCall_get_mode_mC88324F8D18B5E4E79045AE1F99DF3EB36CEE644 ();
 extern "C" void PlayerEditorConnectionEvents_AddAndCreate_mB5A51595E4A5DA3B9F353AC72F7B0484C675B7D3 ();
 extern "C" void BuiltinRuntimeReflectionSystem_Internal_BuiltinRuntimeReflectionSystem_New_m1B6EE7816B71869B7F874488A51FF0093F1FF8CB ();
@@ -10110,33 +12209,139 @@ extern "C" void ScriptableRuntimeReflectionSystemSettings_get_Internal_Scriptabl
 extern "C" void SupportedRenderingFeatures_get_active_mC122A0A25049511A9E7BE571D825FDE533836957 ();
 extern "C" void SupportedRenderingFeatures_get_defaultMixedLightingMode_m3EC298E6D422433F0EAF5A7E0176BFE8C5A9BF07 ();
 extern "C" void SupportedRenderingFeatures_get_supportedMixedLightingModes_m328FAF1059311E7D64585D49974C973B68EEF87F ();
+extern "C" void GUISkin_get_font_m54200DFAF834B835CE6598E1BA5B41382BC33AD5 ();
+extern "C" void FontData_get_font_m7ED4B63312F1F12B743447B796580049AE9563B2 ();
+extern "C" void Text_get_font_m2C5D760FE226B7AD1B8340FE827945B44B817E8F ();
+extern "C" void FontData_get_fontStyle_mC9E6D0C2C67FE798E4677D3AA62E4F303DE914C9 ();
+extern "C" void Text_get_fontStyle_m753370F4A58FFF2B8D465892092E884344FC2DA2 ();
 extern "C" void GUILayer_HitTest_m8C36C21249CBDA2579E84608932F6EBF015D953D ();
 extern "C" void GUILayer_HitTest_mD44413399C4E2DE830CBF4BECBE42BA2AB8FE350 ();
 extern "C" void GUILayer_HitTest_Injected_m7CE3813363D0141DB2112C83C1E958189CBB6609 ();
+extern "C" void GUILayout_Height_mA5A24D5490022AC6449BBAED9C5A1647184B4026 ();
+extern "C" void GUILayout_Width_mDA8F26D92E788474E09AECA1541E8C920C72DA10 ();
+extern "C" void GUILayoutUtility_SelectIDList_m230ED9206897C92C5B090B3BBFC9B408603E56FD ();
+extern "C" void GUISkin_get_settings_m32E805AA73BD4CD9EC4E731A68D0F72377C859DA ();
+extern "C" void GUI_get_skin_mF6804BE33CFD74FF0665C1185AC7B5C1687AE866 ();
+extern "C" void GUIUtility_GetDefaultSkin_m2F1B580445522074FF41CF9906531DBEAB034365 ();
+extern "C" void GUILayoutEntry_get_style_m70E386A3289ACFEC515B1358827AB2FBF6314BA4 ();
+extern "C" void GUISkin_FindStyle_m977BAAD9DE35AC43C9FA2DB52C6C0BDF83EE4706 ();
+extern "C" void GUISkin_GetStyle_mD292E6470E961CA986674875B78746A1859D5FEC ();
+extern "C" void GUISkin_get_box_m7305FA20CDC5A31518AE753AEF7B9075F6242B11 ();
+extern "C" void GUISkin_get_button_m015FA6A0418D94F03B5F12131DED65CCFDCA8F7A ();
+extern "C" void GUISkin_get_error_m40FBD0C57353CBFD8EE75B796E3EADBF9033C47F ();
+extern "C" void GUISkin_get_horizontalScrollbar_m6C3C35BE443E12CA9AA4B7915C4FF704315D6D0F ();
+extern "C" void GUISkin_get_horizontalScrollbarLeftButton_mFB71A2ABCB046937048320741EED4C0F0573A126 ();
+extern "C" void GUISkin_get_horizontalScrollbarRightButton_m375017416DFEBFB9D964BC377990D8A71F04EB39 ();
+extern "C" void GUISkin_get_horizontalScrollbarThumb_mDBF72BAF3A76876F1913BC77DFD913198606415F ();
+extern "C" void GUISkin_get_horizontalSlider_mDC40C8921B044801488863EC52002C84C68E570B ();
+extern "C" void GUISkin_get_horizontalSliderThumb_m0906181E7D7A364A784031556658BC2AB14A49DD ();
+extern "C" void GUISkin_get_label_mC5C9D4CD377D7F5BB970B01E665EE077565AFF72 ();
+extern "C" void GUISkin_get_scrollView_m65256AD31599E1AEE8B9424EE9BA5385CEF9144F ();
+extern "C" void GUISkin_get_textArea_m865E5C1D39519731718B66C9C993DFDEE0299C92 ();
+extern "C" void GUISkin_get_textField_m7C206D0A044A8D5DD00E63BCD7958089E77419E9 ();
+extern "C" void GUISkin_get_toggle_mB5459058B1C84826D47FA9BFE9CC9D05BB074030 ();
+extern "C" void GUISkin_get_verticalScrollbar_mCA438980059FF28128B638E6BF442E104BACE20B ();
+extern "C" void GUISkin_get_verticalScrollbarDownButton_m6204382C228748A2535AA0E6640407A062F14004 ();
+extern "C" void GUISkin_get_verticalScrollbarThumb_m4D613B4477826F86001B59CB3AD41466AF8C06EF ();
+extern "C" void GUISkin_get_verticalScrollbarUpButton_m46DD4FA65B21D3C9FFFD1A1B1A6852B020C94AB5 ();
+extern "C" void GUISkin_get_verticalSlider_m42A66BFEEF219C34908FA492CD9604252FC270D9 ();
+extern "C" void GUISkin_get_verticalSliderThumb_m0E0CCACBEE8D9ECF5AF19D310A14F156B1F85D18 ();
+extern "C" void GUISkin_get_window_mD0E9B84DBBDF7CA3FB566849E4507B5E4C6490B9 ();
+extern "C" void GUIStyle_get_none_m2B48FA4E2FA2B9BB7A458DF25B1391F9C7BB8B7B ();
+extern "C" void GUIStyle_get_normal_mC5CB22EED8113DEC86C54FB42F757B635D09DD2F ();
+extern "C" void GUIStyleState_GetGUIStyleState_m207443170D2CA9E48BAB05FF74B30C76C6D63F68 ();
+extern "C" void GUISkin_get_customStyles_mC004E300635814033B6074ADCCCCCCC2B8F56D3C ();
 extern "C" void Camera_RaycastTry_m7D27141875E309214FED1E3F1D0E3DE580183C0A ();
 extern "C" void Camera_RaycastTry2D_m5C5FE62B732A123048EBFA3241BBBEC7BA409C0F ();
 extern "C" void Camera_RaycastTry2D_Injected_m080224D8887AEBF79BE0BCE901072165FDE9689C ();
 extern "C" void Camera_RaycastTry_Injected_mC7826C45813D590987CE8B615D37FCDC4DB33E40 ();
 extern "C" void Collision_get_gameObject_m9A7069ABE50D4BB957A8ED76E5F4A59ACEC57C49 ();
 extern "C" void Component_get_gameObject_m0B0570BA8DDD3CD78A9DB568EA18D7317686603C ();
+extern "C" void BaseEventData_get_selectedObject_m96190D702E2ED04ED3A7942965BACA1819F41A5D ();
+extern "C" void BaseInputModule_FindCommonRoot_m51202982DA69F0F0C44A6B3DD4B9B4B1D64C5260 ();
+extern "C" void EventSystem_get_currentSelectedGameObject_m123CA3964D5B02E6C13C9F99FF4E11A3F63E9E3D ();
+extern "C" void EventSystem_get_firstSelectedGameObject_m558887C11E0A49D1AA57CAD4B7A768BC7950E754 ();
+extern "C" void EventSystem_get_lastSelectedGameObject_m4C5B0E99F0327973D69983BE1D3B64556BFCC00B ();
+extern "C" void PointerEventData_get_lastPress_m2DC90D62F7B0D4B3CBB17F6F33FFA3FBEF7B923D ();
+extern "C" void PointerEventData_get_pointerDrag_mC2C575B6385B2DA82FAD1EF1033870DADB849E0A ();
+extern "C" void PointerEventData_get_pointerEnter_mB03227311AE1BBBFE8CBC97C4291408AB7FBB674 ();
+extern "C" void PointerEventData_get_pointerPress_m04F5D527CD6A531DF5FE49AA6C2956670975303F ();
+extern "C" void PointerEventData_get_rawPointerPress_mB0F14CF8A3DB6EB9F7FD0C6175F0723C8936E547 ();
+extern "C" void RaycastResult_get_gameObject_mCC534CC86C322274EB5F16F18F7EA05AE4D607CB_AdjustorThunk ();
+extern "C" void StandaloneInputModule_GetCurrentFocusedGameObject_mBDB165A96D51A408C316B865C102EFFDB68222DF ();
+extern "C" void DefaultControls_CreateButton_mE5CDFA82D74296197F5D8B3A91FB346DD3DA4E03 ();
+extern "C" void DefaultControls_CreateDropdown_mFE4AF431C77AE60738AD9183A408C8AE4F9F7503 ();
+extern "C" void DefaultControls_CreateImage_mD638DBB5E944463B15349498252D2CEF72FA1772 ();
+extern "C" void DefaultControls_CreateInputField_m5EDD7C065B925082705F591BD42B56F98BC085A7 ();
+extern "C" void DefaultControls_CreatePanel_m2EF80F2F19F3F5BFFB45F77BB7594C0F3B0948CC ();
+extern "C" void DefaultControls_CreateRawImage_mDE0A318B0EC5DAA84FB7B42DB42295339FDE495D ();
+extern "C" void DefaultControls_CreateScrollView_m8A61AF253921CAAD0C9090592BFAE41FA3DF4441 ();
+extern "C" void DefaultControls_CreateScrollbar_mAC4EAFFD776F8E8431D1AACC10AEA2C90EDDABE2 ();
+extern "C" void DefaultControls_CreateSlider_m3CCD86D7B1E172E55A10DDA7F7623B091A1CF5DD ();
+extern "C" void DefaultControls_CreateText_mB0ECD94C8383D467A91C891B1A81607E105E943F ();
+extern "C" void DefaultControls_CreateToggle_mC1F848C3CC1B87F797E2CBDDA31C4F5828CA79A6 ();
+extern "C" void DefaultControls_CreateUIElementRoot_m1AF41DB29282712B0E2A853EE68D8AE0B1D4C5E2 ();
+extern "C" void DefaultControls_CreateUIObject_m0F2CA6745763967BA2788D8273B1405D8D5BAF22 ();
+extern "C" void Dropdown_CreateBlocker_m1BF89A448798AC093C01F31284A5C367DDC8FE8D ();
+extern "C" void Dropdown_CreateDropdownList_m490E200C8C4FEBB23F4BEDFA3FA378323934A049 ();
+extern "C" void MaskableGraphic_UnityEngine_UI_IClippable_get_gameObject_m0A5507EBFF6EED36B77BF85C198D61EB3537334B ();
+extern "C" void FontData_get_horizontalOverflow_m6BCB57983E70C5B750A6ED33E233B2C348FF752E ();
+extern "C" void Text_get_horizontalOverflow_mEE12180937CCEF1E6253D5F9A7284804111BC35D ();
 extern "C" void Logger_get_logHandler_m0C450B6FE86FA1B07422A1359CF278D1F5945CCD ();
 extern "C" void Debug_get_unityLogger_mFA75EC397E067D09FD66D56B4E7692C3FCC3E960 ();
+extern "C" void BaseInput_get_imeCompositionMode_m3FEE67F35ED8FBC6A4247C63B11B3CE613FC067C ();
+extern "C" void Input_get_imeCompositionMode_m358914AB46A723090EFC19382B6109FE4F4F8F75 ();
 extern "C" void PlayerConnection_GetConnectionNativeApi_mC88D9972FDF9D4FF15CC8C4BB6CA633FB114D918 ();
+extern "C" void Event_get_keyCode_m8B0AAD347861E322E91D2B7320A99E04D39575CF ();
+extern "C" void PhysicsRaycaster_get_eventMask_m173FFCC684C9491D89069B34A17C3C42D01CD8F8 ();
+extern "C" void LayerMask_op_Implicit_m3F256A7D96C66548F5B62C4621B9725301850300 ();
 extern "C" void SupportedRenderingFeatures_get_supportedLightmapBakeTypes_m1F326CD46A9A786B67FA91B72EE6A93BD709325F ();
 extern "C" void SupportedRenderingFeatures_get_supportedLightmapsModes_m9BA71EDABDFB79F5613A65BB951064009BF438AE ();
 extern "C" void Logger_get_filterLogType_mD850DE3FD8CC67E4B076FCC6B05F8FA603B5B38B ();
+extern "C" void Canvas_GetDefaultCanvasMaterial_m972CD867F8C777A55C35A735ACE85BADC628233B ();
+extern "C" void Canvas_GetETC1SupportedCanvasMaterial_m99A6CABFF2B919C2B84F703A8DAC64C76F5E2C52 ();
+extern "C" void Font_get_material_m92A995029540A5FACAEA3A2FE792FFDAC294827D ();
+extern "C" void Graphic_get_defaultGraphicMaterial_mED2DFEBA683470F883848ECAD8BDAED9B2ADB1F8 ();
+extern "C" void Graphic_get_defaultMaterial_m71DC530DC5B2CD334275F8C4D043652DA81984DF ();
+extern "C" void Graphic_get_material_mF883FC0B18E59FEBFAB2411F9E30BE8062763AF8 ();
+extern "C" void Graphic_get_materialForRendering_m6DB21BE3220AA57ECD1DE9F29071D3C6723663FB ();
+extern "C" void Image_get_defaultETC1GraphicMaterial_mE2D50B6109EA0A1383B535853D29223481D41EDE ();
+extern "C" void Image_get_material_mE65367C590A17904E4F9ED7A8C3DB212D9020D27 ();
+extern "C" void Mask_GetModifiedMaterial_mFE9F9C4520459769A372194373E9A51E99E04CD6 ();
+extern "C" void MaskableGraphic_GetModifiedMaterial_m67C4BCE8DAF19DFBA6C06EC2FD61A384F39F32D3 ();
+extern "C" void StencilMaterial_Add_m4F9F65E2FC1C15A75FE8FF7B7DDAB10CA54DCB40 ();
+extern "C" void StencilMaterial_Add_m5F37EE6B20F3CE476A00BB21BE2612500365BA46 ();
+extern "C" void StencilMaterial_Add_mC19552F6DF05D4C1E20F41BA0AAED09883058053 ();
+extern "C" void Transform_get_localToWorldMatrix_mBC86B8C7BA6F53DAB8E0120D77729166399A0EED ();
+extern "C" void Transform_get_worldToLocalMatrix_m4791F881839B1087B17DC126FC0CA7F9A596073E ();
+extern "C" void Graphic_get_workerMesh_m7CAD6B3E0D973514DB740D89EBACEC1CD8AFEDD5 ();
+extern "C" void InputField_get_mesh_m6EC79273A8D5D2B44E255189FAA8F492FFAFA3EA ();
 extern "C" void PlayerConnection_CreateInstance_m6325767D9D05B530116767E164CDCBE613A5787F ();
 extern "C" void PlayerConnection_get_instance_mF51FB76C702C7CDD0BAEAD466060E3BDF23D390F ();
 extern "C" void AudioExtensionManager_GetAudioListener_mF0FA3E4A19A7785E698D33E163CFBCBB882C3595 ();
 extern "C" void ArgumentCache_get_unityObjectArgument_m89597514712FB91B443B9FB1A44D099F021DCFA5 ();
 extern "C" void PersistentCall_get_target_mCAD7D486F28743D49DCF268B791721313A7FC8C5 ();
+extern "C" void Object_FindObjectFromInstanceID_m7594ED98F525AAE38FEC80052729ECAF3E821350 ();
 extern "C" void Object_Instantiate_mAF9C2662167396DEE640598515B60BE41B9D5082 ();
+extern "C" void Object_Internal_CloneSingle_m4231A0B9138AC40B76655B772F687CC7E6160C06 ();
 extern "C" void Object_Internal_InstantiateSingle_mCC3EB0F918934D233D43DFDB457605C4B248738D ();
 extern "C" void Object_Internal_InstantiateSingle_Injected_m04E25C97D5848B7AA54178A5448744A0DEB1B62E ();
+extern "C" void Resources_GetBuiltinResource_m73DDAC485E1E06C925628AA7285AC63D0797BD0A ();
+extern "C" void SystemInfo_GetOperatingSystemFamily_mD20DAFF3A6E6649299A3BCFC845E7EB41BFA1D93 ();
+extern "C" void SystemInfo_get_operatingSystemFamily_mA35FE1FF2DD6240B2880DC5F642D4A0CC2B58D8D ();
 extern "C" void Physics_get_defaultPhysicsScene_mEA96CE906577479223C956BFF0B8D0B79BB47B30 ();
 extern "C" void Playable_get_Null_m1641F4B851ACAA6CBCC9BB400EC783EDEAF1A48D ();
+extern "C" void AnimationClipPlayable_GetHandle_mB1B706B9ADB194766DC938C332469AC698AD0D9E_AdjustorThunk ();
+extern "C" void AnimationLayerMixerPlayable_GetHandle_mD4159505D29B17D507599ED6FA3BEC1370691DB8_AdjustorThunk ();
+extern "C" void AnimationMixerPlayable_GetHandle_mC5939239D7C47C6E0FF4EC72021EE793863BC567_AdjustorThunk ();
+extern "C" void AnimationMotionXToDeltaPlayable_GetHandle_mE36F0671962333EAF5B434A062930D9E76A79076_AdjustorThunk ();
+extern "C" void AnimationOffsetPlayable_GetHandle_m5213878A6D7F29801F74CD3A8B866D444793665E_AdjustorThunk ();
+extern "C" void AnimationPosePlayable_GetHandle_m9D856E83755A447ABCD6C0D8FE011AFF659A016E_AdjustorThunk ();
+extern "C" void AnimationRemoveScalePlayable_GetHandle_mA5063F10E01C8546F88E9ABE07B71373BF290EED_AdjustorThunk ();
+extern "C" void AnimatorControllerPlayable_GetHandle_mB83731910E1534BECA36F64BA22AA68A71D08CA8_AdjustorThunk ();
 extern "C" void AudioClipPlayable_GetHandle_mEE8F62E9DA2A0DDDB064A9AA2391909C425CB3B1_AdjustorThunk ();
 extern "C" void AudioMixerPlayable_GetHandle_mDBC7135DF653E0E19675B6694EA89958E609587D_AdjustorThunk ();
+extern "C" void AnimationScriptPlayable_GetHandle_mE9B490654A320F11EFBB0E3180C6CF647E384C80_AdjustorThunk ();
 extern "C" void CameraPlayable_GetHandle_mC710651CAEE2596697CFFC01014BEB041C67E2B4_AdjustorThunk ();
 extern "C" void MaterialEffectPlayable_GetHandle_mB0F6F324656489CE4DE4EFA8ACCE37458D292439_AdjustorThunk ();
 extern "C" void TextureMixerPlayable_GetHandle_mBC5D38A23834675B7A8D5314DCF4655C83AE649C_AdjustorThunk ();
@@ -10159,9 +12364,15 @@ extern "C" void Quaternion_Inverse_mC3A78571A826F05CE179637E675BD25F8B203E0C ();
 extern "C" void Quaternion_op_Multiply_mDB9F738AA8160E3D85549F4FEDA23BC658B5A790 ();
 extern "C" void Transform_get_localRotation_mEDA319E1B42EF12A19A95AC0824345B6574863FE ();
 extern "C" void Transform_get_rotation_m3AB90A67403249AECCA5E02BC70FCE8C90FE9FB9 ();
+extern "C" void TouchScreenKeyboard_get_selection_m9E2AB5FF388968D946B15A3ECDAE1C3C97115AAD ();
 extern "C" void Camera_ScreenPointToRay_m84C3D8E0A4E8390A353C2361A0900372742065A0 ();
 extern "C" void Camera_ScreenPointToRay_m27638E78502DB6D6D7113F81AF7C210773B828F3 ();
 extern "C" void Camera_ScreenPointToRay_m7069BC09C3D802595AC1FBAEFB3C59C8F1FE5FE2 ();
+extern "C" void RectTransformUtility_ScreenPointToRay_mB74CED011944E1E7CE3A24C433B9B660C5BADC73 ();
+extern "C" void Raycast2DCallback_EndInvoke_m635444684C80D557E29A51490CD34C2809C5A37C ();
+extern "C" void Raycast2DCallback_Invoke_mC072BE588EBA8AB5B6D5727D9C07F9CF369EAD51 ();
+extern "C" void GetRayIntersectionAllCallback_EndInvoke_m4BAEE2BB03070D4D2FAA42E6D7537FC8A7D1941A ();
+extern "C" void GetRayIntersectionAllCallback_Invoke_m71D07917A72FF1D02C6FF4119E432BE63FFCDD06 ();
 extern "C" void Physics_Internal_RaycastAll_m366801D3E9D3DE8E9A94C5243D1FB2132DFDD851 ();
 extern "C" void Physics_Internal_RaycastAll_Injected_m1FD369E67F19BB09F85967481F69EB24B5247913 ();
 extern "C" void Physics_RaycastAll_m37C7F423486CE3ACBAB4F1A326B9EBD7572B4056 ();
@@ -10172,11 +12383,51 @@ extern "C" void Physics_RaycastAll_mE2ED29FCF8983C212F2628A8934CFAEBA4B683DE ();
 extern "C" void Physics_RaycastAll_m93B94F31C64E8F64ACE18231FC85168D519B7F04 ();
 extern "C" void Physics_RaycastAll_m4FC397E4B7FEF7B5C9D172F95D6FB32CFC0F66FC ();
 extern "C" void Physics_RaycastAll_m6627435AE46B6720066FEEA5A80923420EE8FD2D ();
+extern "C" void RaycastAllCallback_EndInvoke_m1DB016EE5E5197383DE81060D894473B1649A939 ();
+extern "C" void RaycastAllCallback_Invoke_m1C5BC50A8B21548971D4D3F48CECDDF4F8D2CAD4 ();
 extern "C" void Camera_get_pixelRect_mBA87D6C23FD7A5E1A7F3CE0E8F9B86A9318B5317 ();
+extern "C" void GUILayoutUtility_Internal_GetWindowRect_mE35BED0433EE8BD928CD52681620519E647A1DA9 ();
+extern "C" void Rect_OrderMinMax_m1BE37D433FE6B7FB0FB73652E166A4FB887214CD ();
+extern "C" void Rect_get_zero_m4CF0F9AD904132829A6EFCA85A1BF52794E7E56B ();
+extern "C" void RectTransform_get_rect_mE5F283FCB99A66403AC1F0607CA49C156D73A15E ();
+extern "C" void RectTransformUtility_PixelAdjustRect_m320399756E1AD411CFECB3E11867806E73A0DE49 ();
+extern "C" void Sprite_GetTextureRect_mE506ABF33181E32E82B75479EE4A0910350B1BF9 ();
+extern "C" void Sprite_get_rect_mF1D59ED35D077D9B5075E2114605FDEB728D3AFF ();
+extern "C" void Sprite_get_textureRect_m8CDA38796589CB967909F78076E7138907814DCD ();
+extern "C" void TextGenerator_get_rectExtents_m55F6A6727406C54BEFB7628751555B7C58BEC9B1 ();
+extern "C" void Clipping_FindCullAndClipWorldRect_m62A1D614218104F682E7B6DDC60F9A94BC290CD7 ();
+extern "C" void Clipping_RectIntersect_m90C96502693AC446BAEEDB628FD78F469A5F737B ();
+extern "C" void Graphic_GetPixelAdjustedRect_m3A21C77CAE311C9CC07AF2AC30FACFF45F3E4245 ();
+extern "C" void MaskableGraphic_get_rootCanvasRect_mEB7FD518AB4D1A9AEF9FA63D6D226153B0514B69 ();
+extern "C" void RawImage_get_uvRect_m2E084DF666C593CD78D7DD130DCCB37E60DBE1CB ();
+extern "C" void RectMask2D_get_canvasRect_m042F5C1D290755B4F91C1731D99E64DF3178C333 ();
+extern "C" void RectMask2D_get_rootCanvasRect_m2BD97A00DF76450E2DA6FBFB4BD554BF1289243C ();
+extern "C" void RectangularVertexClipper_GetCanvasRect_m1368CD1A7984C6BA00C6550E01D283785DF91887 ();
+extern "C" void GUIStyle_get_margin_mFC3EA0FA030A6334AC03BDDFA4AC80419C9E5BAA ();
+extern "C" void GUIStyle_get_padding_m5DF76AA03A313366D0DD8D577731DAC4FB83053A ();
+extern "C" void LayoutGroup_get_padding_mCCAD817837EE81B5208C934F15108D57FB0BFFD5 ();
+extern "C" void AspectRatioFitter_get_rectTransform_mE1041AD9708EF0E2B89485FF0CCF9C52630A5D29 ();
+extern "C" void ContentSizeFitter_get_rectTransform_mE621E002E8AD09040752E78F4E9FCA09C3C0AAAC ();
+extern "C" void DropdownItem_get_rectTransform_mBEE0135D6E76F71A5D5FD1D8EB0813BAF8DDA4AB ();
+extern "C" void Dropdown_get_template_mC783252F7FBB1B094671B7623E22D859AE07A7A3 ();
+extern "C" void Graphic_get_rectTransform_m127FCBF38F4F0D4B264D892013A3AD9A507936DE ();
+extern "C" void LayoutGroup_get_rectTransform_m9F2C7D3D7CA8FC2D1CAFCD0B5A0E3832136D8D88 ();
+extern "C" void Mask_get_rectTransform_mEC02B0D5AFE442DE6FA575CEA05BED67E11F72DB ();
+extern "C" void RectMask2D_get_rectTransform_m125DA86C0969BD7622E36B7E7663DEB3CC255028 ();
+extern "C" void ScrollRect_get_content_mAE7E101E869F55952F04866EEC6F95AAB474DDB6 ();
+extern "C" void ScrollRect_get_rectTransform_m7B88231FA757B90F357F2034325AA8291E75542D ();
+extern "C" void ScrollRect_get_viewRect_m68B3877837B2DFF4FD24DB5A02731D539005F753 ();
+extern "C" void ScrollRect_get_viewport_m81BBE5BD5EAC551F278CF2BC08BE60844EF8F281 ();
+extern "C" void Scrollbar_get_handleRect_mBCDC8DD31E32F943852ADFB6FAEF1321B8BA2B21 ();
+extern "C" void Slider_get_fillRect_m10082FA06055F2E0D236F94056CB20EAC671EA2D ();
+extern "C" void Slider_get_handleRect_m7F824486CE72A8089CEF1A3EC88B5E637CCF3499 ();
+extern "C" void Canvas_get_renderMode_mAF68701B143F01C7D19B6C7D3033E3B34ECB2FC8 ();
 extern "C" void Camera_get_targetTexture_m1E776560FAC888D8210D49CEE310BB39D34A3FDC ();
 extern "C" void RenderTexture_GetDescriptor_mBDAE7C44038663205A31293B7C4C5AE763CD1128 ();
 extern "C" void RenderTexture_get_descriptor_m67E7BCFA6A50634F6E3863E2F5BA1D4923E4DD00 ();
 extern "C" void GraphicsFormatUtility_GetRenderTextureFormat_m4A8B97E7A7BD031B38EE1C5DA0C93B0F65016468 ();
+extern "C" void Mesh_GetUVChannel_m15BB0A6CC8E32867621A78627CD5FF2CAEA163CC ();
+extern "C" void Application_get_platform_m6AFFFF3B077F4D5CA1F71CF14ABA86A83FC71672 ();
 extern "C" void SceneManager_GetSceneAt_m2D4105040A31A5A42E79A4E617028E84FC357C8A ();
 extern "C" void SceneManager_LoadScene_m4641E278E1E9A1690A46900F1787B6F1070188CF ();
 extern "C" void ScriptableObject_CreateInstance_mDC77B7257A5E276CB272D3475B9B473B23A7128D ();
@@ -10192,26 +12443,279 @@ extern "C" void Leaderboard_get_range_m5E964AEA16E5A443357BA8656DA09CCF8283B4F3 
 extern "C" void Leaderboard_get_timeScope_mEC73B36FA70E5C16B86EFB1F589791990D55939C ();
 extern "C" void Leaderboard_get_userScope_m861E532FA53D0C073A0CFD53E94978C008233F22 ();
 extern "C" void UserProfile_get_state_m5804D7408C593440C394DFCE25738F87F84A7083 ();
+extern "C" void OptionData_get_image_m3942EBED87375AED7D4DB0DC44A3223878355BCA ();
+extern "C" void Image_get_activeSprite_m34F21C0982888A580F01003122421D40F45A536E ();
+extern "C" void Image_get_overrideSprite_mCBFEB26E00A6EEDFBFE10CA12875BB952DD62C8D ();
+extern "C" void Image_get_sprite_mE7474EFC8201ADE07965629C74CAA420DAEAA752 ();
+extern "C" void SpriteState_get_disabledSprite_mFC4F907199F9155422A1876480EFB26E501BC34E_AdjustorThunk ();
+extern "C" void SpriteState_get_highlightedSprite_m320B06E1D3FE9515D60F5706487229A0CCBD464E_AdjustorThunk ();
+extern "C" void SpriteState_get_pressedSprite_m1D2A0EDCF57DCAF1E4AEE5E0E53823893386699D_AdjustorThunk ();
+extern "C" void Sprite_get_packingMode_m1B5AA0F5476DAEADFF14F65E99944B54940D869F ();
+extern "C" void FontData_get_alignment_m8236D7F26B81D591DDD09971B762915EB2115E7C ();
+extern "C" void LayoutGroup_get_childAlignment_mA35B9D37B4CF14AA1830ECB48CE7EDC6A604A2D5 ();
+extern "C" void Text_get_alignment_mE7785D3AE08A958FC2504F9B10A5C702A4CC3384 ();
+extern "C" void TextGenerator_PopulateAlways_m8DCF389A51877975F29FAB9B6E800DFDC1E0B8DF ();
+extern "C" void TextGenerator_PopulateWithError_m24D1DA75F0563582E228C6F4982D0913C58E1D7D ();
+extern "C" void TextGenerator_ValidatedSettings_m167131680BB6CD53B929EF189520F9FCF71FB1D3 ();
+extern "C" void Text_GetGenerationSettings_m594A7D1505D89B4FA343E25A36D4656F79E585A4 ();
+extern "C" void InputField_get_cachedInputTextGenerator_m5A9C4630C95E6F1E4F97872521E60F3D51A53E70 ();
+extern "C" void Text_get_cachedTextGenerator_m8BB75D38962D0D11C0095A1D20FDBDE8465362C6 ();
+extern "C" void Text_get_cachedTextGeneratorForLayout_m636D4317F3A3E0E62C9A9F1B5CD1D00E1ED6F277 ();
+extern "C" void Material_GetTexture_mCD6B822EA19773B8D39368FF1A285E7B69043896 ();
+extern "C" void Material_GetTextureImpl_m19D8CE6C5701AC4B69A6D5354E08240DF6C036D2 ();
+extern "C" void Material_get_mainTexture_mE85CF647728AD145D7E03A172EFD5930773E514E ();
+extern "C" void Graphic_get_mainTexture_mFE296D762A3247E278E64BF1FCE73B01B1EBC0FB ();
+extern "C" void Image_get_mainTexture_m85D29E76ADD44FFDC999A2470C89BC6101F2F0BF ();
+extern "C" void RawImage_get_mainTexture_m74EDB2F5CF7A15C414AB4C1B5ADC8CF7A637EA06 ();
+extern "C" void RawImage_get_texture_mA902F1297E6D0EB804AB7F8FF211C377A69C61AD ();
+extern "C" void Text_get_mainTexture_m41C2BF53D45482A684903DBBE46EA4AC2AEBF3DA ();
 extern "C" void GameCenterPlatform_GetUserImage_m71B11BAA34D99DEF16629C8B825AF0CBD319ABE3 ();
+extern "C" void Sprite_get_associatedAlphaSplitTexture_m2EF38CF62616FBBBBAE7876ECBCC596DB3F42156 ();
+extern "C" void Sprite_get_texture_mA1FF8462BBB398DC8B3F0F92B2AB41BDA6AF69A5 ();
+extern "C" void Texture2D_get_whiteTexture_mF447523DE8957109355641ECE0DD3D3C8D2F6C41 ();
 extern "C" void Texture2D_get_format_mF0EE5CEB9F84280D4E722B71546BBBA577101E9F ();
+extern "C" void Texture_get_wrapMode_mC21054C7BC6E958937B7459DAF1D17654284B07A ();
+extern "C" void BaseInput_GetTouch_mE216B2EE2C34A28BA06DF122E1601EE628178A0C ();
+extern "C" void Input_GetTouch_m1ABE5E9866FD4C5FDFC5DD8FF4E7DCEDE2DD9313 ();
+extern "C" void Touch_get_phase_m667014ED67F37A6EB459FB904D2041E270995419_AdjustorThunk ();
+extern "C" void TouchScreenKeyboard_Open_mF795EEBFEF7DF5E5418CF2BACA02D1C62291B93A ();
+extern "C" void InputField_get_touchScreenKeyboard_m0FFFD0CE4AC573DC5A91ABEC8A0B3607966F2607 ();
+extern "C" void TouchScreenKeyboard_get_status_m17CF606283E9BAF02D76ADC813F63F036FAE33F2 ();
+extern "C" void InputField_get_keyboardType_m4498894CD489D1C71EC55C8E5BD8D98C068CB7E7 ();
+extern "C" void Touch_get_type_m24677B3E265C31B31BF4C55CF874272D28EB0AEC_AdjustorThunk ();
 extern "C" void Component_get_transform_m00F05BD782F920C301A7EBA480F3B7A904C07EC9 ();
 extern "C" void GameObject_get_transform_mA5C38857137F137CB96C69FAA624199EB1C2FB2C ();
 extern "C" void Transform_GetChild_mC86B9B61E4EC086A571B09EA7A33FFBF50DF52D3 ();
+extern "C" void Transform_GetParent_m1C9AFA68C014287E3D62A496A5F9AE16EF9BD7E6 ();
+extern "C" void Transform_get_parent_m8FA24E38A1FA29D90CBF3CDC9F9F017C65BB3403 ();
+extern "C" void Transform_get_parentInternal_mEE407FBF144B4EE785164788FD455CAA82DC7C2E ();
+extern "C" void Graphic_UnityEngine_UI_ICanvasElement_get_transform_m82BDB6E36C7611A3659420B28115374115D83DDC ();
+extern "C" void InputField_UnityEngine_UI_ICanvasElement_get_transform_mFAABCBD5202F9EE2EC846716FE1045B2CB6EC3B6 ();
+extern "C" void LayoutRebuilder_get_transform_m2373E98B4D90C0CEA7B78015E5B608842F2EC36D ();
+extern "C" void MaskUtilities_FindRootSortOverrideCanvas_mEF84A013C3054C3AA33168294F7555AEBA5A9976 ();
+extern "C" void ScrollRect_UnityEngine_UI_ICanvasElement_get_transform_mC69CA8DF8FEA95D6DA8157ADA405833DED32F16E ();
+extern "C" void Scrollbar_UnityEngine_UI_ICanvasElement_get_transform_mAAF75F444197A05035818A54B2BB7E299C539180 ();
+extern "C" void Slider_UnityEngine_UI_ICanvasElement_get_transform_mB0B1E8ED327E6F1E2AC845FA98C9BEE4CFB5392F ();
+extern "C" void Toggle_UnityEngine_UI_ICanvasElement_get_transform_m5D490666565864D891A2D78A8E1EE95B16F53318 ();
+extern "C" void Selectable_get_animationTriggers_m6F8F01A53FACD447624E24686E89F05EBEBF64E3 ();
+extern "C" void AspectRatioFitter_get_aspectMode_m9DC7F64E9AB97AAB413EEF9931EDEDF90ACE0B75 ();
+extern "C" void Button_get_onClick_m77E8CA6917881760CC7900930F4C789F3E2F8817 ();
+extern "C" void CanvasScaler_get_uiScaleMode_m8D75124B20A8598DFEF27665EBE9C5925CB25301 ();
+extern "C" void CanvasScaler_get_screenMatchMode_mD1444EF5D606499AE030E88AEACD0D4319C394F2 ();
+extern "C" void CanvasScaler_get_physicalUnit_m2F6DD4DFDDA3DE8652A5F295C1E66060D0D8E94A ();
+extern "C" void CanvasUpdateRegistry_get_instance_m6A2150EA4C8C74AF18E53B3CF22BF6EAF70FF927 ();
+extern "C" void ClipperRegistry_get_instance_mE4E214237577A08B2A6C8AF9DD7CDAE1B75E387B ();
+extern "C" void ColorBlock_get_defaultColorBlock_mD3AEFDABCF5F714D81FB2047A744930650EC223E ();
+extern "C" void Selectable_get_colors_m9E63E13A7B6C40CB0F20414FFBE15873BE5F3E4E ();
+extern "C" void ContentSizeFitter_get_horizontalFit_mB775F652AC10946108F7D44BB52C57413086F524 ();
+extern "C" void ContentSizeFitter_get_verticalFit_m937F784A1D950E72A561B7DF96206ADA5F1FC490 ();
+extern "C" void ColorTween_get_tweenMode_m908DEFB153497AC18AD08CB73AFF655C1F6D05FB_AdjustorThunk ();
+extern "C" void Dropdown_get_onValueChanged_m4EE82DC9AE8618C52CECA362EBDE6284F41E88FE ();
+extern "C" void Dropdown_AddItem_mF1368C1AC4667C050C8EE4AA3FFD7C6B2765990A ();
+extern "C" void Dropdown_CreateItem_m591B3B4546D13786893F9930BE702F3A9AAE3CDC ();
+extern "C" void FontData_get_defaultFontData_m395A2BA13B11A53C4BD4E8F1B7D97E9E278D6063 ();
+extern "C" void BaseMeshEffect_get_graphic_mDD7D8CD6F220B9DE656145A1346EA9799255BE21 ();
+extern "C" void InputField_get_placeholder_mBDB090222F665AE8A1C96F1F375732346F177EEB ();
+extern "C" void Mask_get_graphic_m5B49E746A9E93A4D1BAAFD83F9ACB7C90633B5B3 ();
+extern "C" void Selectable_get_targetGraphic_mB12CA26D04922ADB483397992561CA3941E78F92 ();
+extern "C" void GraphicRaycaster_get_blockingObjects_m65760F738BEBB63000DD47E0E5E1FF8BA0AE49AF ();
+extern "C" void GraphicRegistry_get_instance_mC44355C0B339CE448FE227149CEE9E1469DEA198 ();
+extern "C" void GridLayoutGroup_get_startAxis_mAA66BAC768514A784F891AF3771952CFDE713E7D ();
+extern "C" void GridLayoutGroup_get_constraint_mD3C4128F573301158661CC38EB13105D2A3CD0F8 ();
+extern "C" void GridLayoutGroup_get_startCorner_m8D842137857E7AD45EE6AC346E0413A8F392729F ();
+extern "C" void DropdownItem_get_image_m2879EEFCAB097FBA79BC4DA41ECBA4EBE3CB6185 ();
+extern "C" void Dropdown_get_captionImage_mB846CCDC2F81DEC05EFC9FA1E38505409B428253 ();
+extern "C" void Dropdown_get_itemImage_m3B115ACA023FC279CAE1757FD4AB0DF91242BA50 ();
+extern "C" void Selectable_get_image_m74FFCB0802A2E8380B33314F53A9748370D1C9F7 ();
+extern "C" void Image_get_fillMethod_m0F319641FE800193CB9FC939F4A4767D230D23F3 ();
+extern "C" void Image_get_type_mBF4695569A2C6FEBCDE60AB80A386F39D5708D6A ();
+extern "C" void InputField_get_characterValidation_m3BA91CE0FC3845B40E1D43D6F0E36C5DB1D3EC29 ();
+extern "C" void InputField_get_contentType_mBDEC121EFB7451BE3F56D8A2F68BF78FC28D2329 ();
+extern "C" void InputField_KeyPressed_m155D70A5FB8DAE216B941863C02E56AF2663BBD6 ();
+extern "C" void InputField_get_inputType_m1B9C2C98A32BBD27759C950DC4C65F0FD69329CF ();
+extern "C" void InputField_get_lineType_mAFC713A8DC2FABB2FFC6902A767DAE2932A5BDBE ();
+extern "C" void InputField_get_onValueChange_mC6364A9208DD2811E7DFF5F0A1225246A278BCD7 ();
+extern "C" void InputField_get_onValueChanged_m1AE46D57FF8D96F53F2039722DE9CDDB6AB58CA1 ();
+extern "C" void InputField_get_onValidateInput_mCF04910E2F6920903CD095B86C1D61DA4C01B553 ();
+extern "C" void InputField_get_onEndEdit_m912D9CA48D579EE1A68544EA58EF5EEB633148C1 ();
+extern "C" void MaskableGraphic_get_onCullStateChanged_m9CF82537F28EEEC73E48B437DF49EA0B2312BDE8 ();
+extern "C" void Navigation_get_defaultNavigation_m00087A1157696556EB1D34E20D7324DE4788F6C6 ();
+extern "C" void Selectable_get_navigation_mE0FE811B11269EFDEE21C98701059F786580FB50 ();
+extern "C" void Navigation_get_mode_m3C77554140D0A56ACD06B1E6DB2D016F080FB95E_AdjustorThunk ();
+extern "C" void MaskUtilities_GetRectMaskForClippable_mA22FA75F79D98E00CF0B0A41DFBD0FC2D4DC2F28 ();
+extern "C" void ReflectionMethodsCache_get_Singleton_m6C50C55DEEA425161B73545918267BB90B7FCB9B ();
+extern "C" void ScrollRect_get_movementType_m96D7F76863CD4288A6E36481A9ED3028EA37CFFC ();
+extern "C" void ScrollRect_get_onValueChanged_mB59CCC8D8CD14BEB23018EDEE69EDB1EEE32C08B ();
+extern "C" void ScrollRect_get_horizontalScrollbarVisibility_mC43D0E4908D8876D399B15F36A8D98B827C77DDC ();
+extern "C" void ScrollRect_get_verticalScrollbarVisibility_m8D671BA3821D2F3F263DAC0C7FE1487333326DA9 ();
+extern "C" void ScrollRect_get_horizontalScrollbar_m258E5BA6988FD113301575E1107A37D506515273 ();
+extern "C" void ScrollRect_get_verticalScrollbar_m0A9EBD87C90FBC567C11D37ECEBD2E6A7218BD0E ();
+extern "C" void Scrollbar_get_axis_m45122AD4E1A73A6555181B4A6A9C86DE2EE07EE3 ();
+extern "C" void Scrollbar_get_direction_m9DE22D72DE14200D3B7F70410865872034DB3C26 ();
+extern "C" void Scrollbar_get_onValueChanged_mC58EA55182B24E42CEBC360FBA3F0533B3CF0FF8 ();
+extern "C" void Navigation_get_selectOnDown_mC9469ADD19689D5D263A39861E70E43A75BB9398_AdjustorThunk ();
+extern "C" void Navigation_get_selectOnLeft_m1B2D71E749D06A2D89855AE6715DBD253BC623FA_AdjustorThunk ();
+extern "C" void Navigation_get_selectOnRight_mD44071FB2CBE195EBD6EBF37437C3F5BBFA5B328_AdjustorThunk ();
+extern "C" void Navigation_get_selectOnUp_m8E3A8A4358C862B402C322E93062E10F22371A0E_AdjustorThunk ();
+extern "C" void Scrollbar_FindSelectableOnDown_m3A2776AE65F7CDFE6F3AF88B607F06A39B35C7D2 ();
+extern "C" void Scrollbar_FindSelectableOnLeft_m374B5705442CC40C149835019C9EAB55C079F6BB ();
+extern "C" void Scrollbar_FindSelectableOnRight_mC2CAC3EB7EA1FC16155EF3E90B6E088B5E09FD5B ();
+extern "C" void Scrollbar_FindSelectableOnUp_m9ADBB11544C5D9D09414A397C4B22B19E60C252F ();
+extern "C" void Selectable_FindSelectable_m9FD1E72CE35CCB75F9DF4F9CED3C67B83FD0A0D8 ();
+extern "C" void Selectable_FindSelectableOnDown_m2EC533E6757FC29A2FABAB68A5E8D56394FE2637 ();
+extern "C" void Selectable_FindSelectableOnLeft_m501FD2B988BBFFDAD318800A4D164FB21F1AE315 ();
+extern "C" void Selectable_FindSelectableOnRight_mA5550ED566545FF1E5113E935F4F57B63F3760FA ();
+extern "C" void Selectable_FindSelectableOnUp_m26D12F3EBE3D07C4D69C639DE4D219B40886E8FA ();
+extern "C" void Slider_FindSelectableOnDown_mD2F38D581CB5AFA849AFE901EA512579A2799E6D ();
+extern "C" void Slider_FindSelectableOnLeft_m1712ADA199F792D4C30D0094AA9A43D3441C7471 ();
+extern "C" void Slider_FindSelectableOnRight_m42B9D352422ABEB7719BD3F63821A6166261C646 ();
+extern "C" void Slider_FindSelectableOnUp_mC66B25E4FB7290FCF82048F6AA857F0C6ECC3FA7 ();
+extern "C" void Selectable_get_currentSelectionState_m37B79D51884A49924B92D1AE1BAA354C55CA1FD0 ();
+extern "C" void Selectable_get_transition_mC5883DD4A0EC4A58F41285A8684B018309041D9E ();
+extern "C" void Slider_get_axis_m9F710E0C68A9BB669EEAEC975162175F7739EB0D ();
+extern "C" void Slider_get_direction_mE9A02803187D68D400284913BC6F93F587610022 ();
+extern "C" void Slider_get_onValueChanged_m9D9177CDBF349783372AABF032F2D2B3178A84D6 ();
+extern "C" void Selectable_get_spriteState_m0A341E18A903DAEF82259637F2D09B1CEC4DFD85 ();
+extern "C" void DropdownItem_get_text_mABB014D2DEE9F6B24515DE71A08EBFA82BB44829 ();
+extern "C" void Dropdown_get_captionText_m3E3FF20006F7EC8A8FD7ABBB7F9F723A0E3CD5FF ();
+extern "C" void Dropdown_get_itemText_m1AEEFE1ACF751CD3483659F5E5B703239C28C7D5 ();
+extern "C" void InputField_get_textComponent_mC1FC063C41D84947A3B0BE349C6E937EDF0EB19E ();
+extern "C" void DropdownItem_get_toggle_m6DAC29FD2E711343DBCDF240B3218BD6211886DE ();
+extern "C" void Toggle_get_group_m8A53B9EF413E699F639789C84035237AA9E6F614 ();
+extern "C" void Texture_CreateNonReadableException_m66E69BE853119A5A9FE2C27EA788B62BF7CFE34D ();
+extern "C" void Joystick_ScreenPointToAnchoredPosition_mE4C429E76D0FA78FD1567EB1361AF68141706201 ();
+extern "C" void Joystick_get_Direction_mF64961ED5359C8E31E79CAA306019CB66DF50F3E ();
+extern "C" void Event_get_mousePosition_m92AD98489A626864E9B179273270802EB1D2C085 ();
+extern "C" void AxisEventData_get_moveVector_m53A58D79217EDB5A9929EEDC00E3AB826985D02B ();
+extern "C" void BaseInput_get_compositionCursorPos_mB42FA4200B70CEA2F13B2E6957A22DB7F98B9BC7 ();
+extern "C" void BaseInput_get_mousePosition_m2258471375AE9452D9AB2998E40EC3E92BF4400C ();
+extern "C" void BaseInput_get_mouseScrollDelta_m87BB011137341FB891A417EF09AF7EAA30634A21 ();
+extern "C" void PointerEventData_get_delta_m70E69337BC484503C037D1D292C37E6926B6F3A7 ();
+extern "C" void PointerEventData_get_position_m00FFBA0CB6385B8E8B82BE9C8AAC45E027B2D061 ();
+extern "C" void PointerEventData_get_pressPosition_mE1E2B1338B0D26582BC270EBC12014B9894A346C ();
+extern "C" void PointerEventData_get_scrollDelta_m7F3FD249A5E9A3F7441FECE3EE18BFECC565EB09 ();
+extern "C" void StandaloneInputModule_GetRawMoveVector_mE51848C77C5B8C578850FA06C2C02D2E683ECC4A ();
+extern "C" void Input_get_compositionCursorPos_m1DFC4FC12CDE4988C9277065313478C9879C1FDF ();
+extern "C" void Input_get_mouseScrollDelta_mC314425F4261A9D7E8EA72705F7AF8CB110D5B94 ();
+extern "C" void RaycastHit2D_get_normal_m9F0974E4514AD56C00FCF6FF4CDF10AED62FE6E4_AdjustorThunk ();
+extern "C" void RaycastHit2D_get_point_mC567E234B1B673C3A9819023C3DC97C781443098_AdjustorThunk ();
+extern "C" void Rect_get_center_mA6E659EAAACC32132022AB199793BF641B3068CB_AdjustorThunk ();
+extern "C" void Rect_get_max_m3BFB033D741F205FB04EF163A9D5785E7E020756_AdjustorThunk ();
+extern "C" void Rect_get_min_m17345668569CF57C5F1D2B2DADD05DD4220A5950_AdjustorThunk ();
+extern "C" void Rect_get_position_m54A2ACD2F97988561D6C83FCEF7D082BC5226D4C_AdjustorThunk ();
+extern "C" void Rect_get_size_m731642B8F03F6CE372A2C9E2E4A925450630606C_AdjustorThunk ();
+extern "C" void RectTransform_GetParentSize_mFD24CC863A4D7DFBFFE23C982E9A11E9B010D25D ();
+extern "C" void RectTransform_get_anchorMax_m1E51C211FBB32326C884375C9F1E8E8221E5C086 ();
+extern "C" void RectTransform_get_anchorMin_mB62D77CAC5A2A086320638AE7DF08135B7028744 ();
+extern "C" void RectTransform_get_anchoredPosition_mCB2171DBADBC572F354CCFE3ACA19F9506F97907 ();
+extern "C" void RectTransform_get_pivot_mA5BEEE2069ACA7C0C717530EED3E7D811D46C463 ();
+extern "C" void RectTransform_get_sizeDelta_mDA0A3E73679143B1B52CE2F9A417F90CB9F3DAFF ();
+extern "C" void RectTransformUtility_GetTransposed_m405847E48935C6439CFADED4188B6F3BEE55FC14 ();
+extern "C" void RectTransformUtility_PixelAdjustPoint_m9B5E7F4F2EB55A49670316CBE4D8923154054573 ();
+extern "C" void RectTransformUtility_WorldToScreenPoint_m114DFD961456722DED0FFB2F8DCB46A04C2CCA20 ();
+extern "C" void Sprite_get_pivot_m8E3D24C208E01EC8464B0E63FBF3FB9429E4C1D9 ();
+extern "C" void DataUtility_GetMinSize_m8031F50000ACDDD00E1CE4C765FA4B0A2E9255AD ();
+extern "C" void Texture_get_texelSize_m89BA9E4CF5276F4FDBAAD6B497809F3E6DB1E30C ();
+extern "C" void Touch_get_position_mC0913727A83103C5E2B56A5D76AB8F911A79D1E9_AdjustorThunk ();
+extern "C" void AspectRatioFitter_GetParentSize_m08FFC7E23AD5F493AA1D060143C98421781BEEE7 ();
+extern "C" void CanvasScaler_get_referenceResolution_mDA587A4FB4470BE513F42FFE7CEEBB51E9AD448C ();
+extern "C" void Graphic_PixelAdjustPoint_mFD4D39703D2EB0EA52341334BD449E0EB97851A6 ();
+extern "C" void GridLayoutGroup_get_cellSize_m22377B45E6D5C0E3AB1F5FF2172C65FACDA0D4E8 ();
+extern "C" void GridLayoutGroup_get_spacing_mA516C72E49DEB5EA0F51F449A328708D78475EB1 ();
+extern "C" void Image_MapCoordinate_mC78B5EDECC97AEE156F0C9ED849235B280381AD7 ();
+extern "C" void InputField_ScreenToLocal_m368862E1697D0D76427AFA8AC96041F962236D9A ();
+extern "C" void MultipleDisplayUtilities_GetMousePositionRelativeToMainDisplayResolution_m057D147B428AAE94DF8A1A67888088F1A3490583 ();
+extern "C" void ScrollRect_CalculateOffset_m57DAE6F9CA6987679656A58C55EACCB991A1B127 ();
+extern "C" void ScrollRect_InternalCalculateOffset_m717A54F1FA344998DFC23B2F82DAA06868DB115D ();
+extern "C" void ScrollRect_get_normalizedPosition_m6250B0B395AED2E2ED6E9AE6658C597E430FAB50 ();
+extern "C" void ScrollRect_get_velocity_m0BBDB216B24A5268A6E59BBA7BBF97B1BE9C6EA9 ();
+extern "C" void Shadow_get_effectDistance_m803B4F3FACAEBFACCE4FA17606DA6C44A0C5383D ();
+extern "C" void Text_GetTextAnchorPivot_m5888428084EA7FF9051BA852BE52922970A48424 ();
+extern "C" void Vector2_Scale_m7AA97B65C683CB3B0BCBC61270A7F1A6350355A2 ();
+extern "C" void Vector2_get_normalized_m058E75C38C6FC66E178D7C8EF1B6298DE8F0E14B_AdjustorThunk ();
+extern "C" void Vector2_get_one_m6E01BE09CEA40781CB12CCB6AF33BBDA0F60CEED ();
+extern "C" void Vector2_get_right_mB4BD67462D579461853F297C0DE85D81E07E911E ();
+extern "C" void Vector2_get_up_mC4548731D5E7C71164D18C390A1AC32501DAE441 ();
+extern "C" void Vector2_get_zero_mFE0C3213BB698130D6C5247AB4B887A59074D0A8 ();
+extern "C" void Vector2_op_Addition_m81A4D928B8E399DA3A4E3ACD8937EDFDCB014682 ();
+extern "C" void Vector2_op_Division_m0961A935168EE6701E098E2B37013DFFF46A5077 ();
+extern "C" void Vector2_op_Division_mEF4FA1379564288637A7CF5E73BA30CA2259E591 ();
 extern "C" void Vector2_op_Implicit_mEA1F75961E3D368418BA8CEB9C40E55C25BA3C28 ();
+extern "C" void Vector2_op_Multiply_m8A843A37F2F3199EBE99DC7BDABC1DC2EE01AF56 ();
+extern "C" void Vector2_op_Multiply_mEDF9FDDF3BFFAEC997FBCDE5FA34871F2955E7C4 ();
+extern "C" void Vector2_op_Subtraction_m2B347E4311EDBBBF27573E34899D2492E6B063C0 ();
+extern "C" void Mesh_get_uv_m0EBA5CA4644C9D5F1B2125AF3FE3873EFC8A4616 ();
+extern "C" void Mesh_get_uv2_m3E70D5DD7A5C6910A074A78296269EBF2CBAE97F ();
+extern "C" void Mesh_get_uv3_mC56484D8B69A65DA948C7F23B06ED490BCFBE8B0 ();
+extern "C" void Mesh_get_uv4_m1C5734938A443D8004339E8D8DDDC33B3E0935F6 ();
+extern "C" void Sprite_get_uv_mBD484CDCD2DF54AAE452ADBA927806193CB0FE84 ();
+extern "C" void Sprite_get_vertices_mD858385A07239A56691D1559728B1B5765C32722 ();
+extern "C" void Bounds_get_center_m4FB6E99F0533EE2D432988B08474D6DC9B8B744B_AdjustorThunk ();
+extern "C" void Bounds_get_extents_mBA4B2196036DD5A858BDAD53BC71A778B41841C9_AdjustorThunk ();
+extern "C" void Bounds_get_max_mC3BE43C2A865BAC138D117684BC01E289892549B_AdjustorThunk ();
+extern "C" void Bounds_get_min_m2D48F74D29BF904D1AF19C562932E34ACAE2467C_AdjustorThunk ();
+extern "C" void Bounds_get_size_m0739F2686AE2D3416A33AEF892653091347FD4A6_AdjustorThunk ();
+extern "C" void Camera_ScreenToViewportPoint_m52ABFA35ADAA0B4FF3A7EE675F92F8F483E821FD ();
+extern "C" void Camera_WorldToScreenPoint_m880F9611E4848C11F21FDF1A1D307B401C61B1BF ();
+extern "C" void Camera_WorldToScreenPoint_m315B44D111E92F6C81C39B7B0927622289C1BC52 ();
 extern "C" void Display_RelativeMouseAt_mABDA4BAC2C1B328A2C6A205D552AA5488BFFAA93 ();
+extern "C" void PointerEventData_get_worldNormal_m097228E46EC400D658261A050E03DCF31D8C4866 ();
+extern "C" void PointerEventData_get_worldPosition_mCEE3389DFE9AC3C853FA7AF7CD93C33E2A0223E6 ();
 extern "C" void Input_get_mousePosition_mC8B181E5125330ECFB9F8C5D94AA8F4AD1ABD10C ();
+extern "C" void Matrix4x4_MultiplyPoint_mD5D082585C5B3564A5EFC90A3C5CAFFE47E45B65_AdjustorThunk ();
+extern "C" void Matrix4x4_MultiplyPoint3x4_m7C872FDCC9E3378E00A40977F641A45A24994E9A_AdjustorThunk ();
+extern "C" void Quaternion_op_Multiply_mD5999DE317D808808B72E58E7A978C4C0995879C ();
+extern "C" void Ray_GetPoint_mE8830D3BA68A184AD70514428B75F5664105ED08_AdjustorThunk ();
 extern "C" void Ray_get_direction_m9E6468CD87844B437FC4B93491E63D388322F76E_AdjustorThunk ();
 extern "C" void Ray_get_origin_m3773CA7B1E2F26F6F1447652B485D86C0BEC5187_AdjustorThunk ();
+extern "C" void RaycastHit_get_normal_mF736A6D09D98D63AB7E5BF10F38AEBFC177A1D94_AdjustorThunk ();
+extern "C" void RaycastHit_get_point_m0E564B2A72C7A744B889AE9D596F3EFA55059001_AdjustorThunk ();
+extern "C" void Rigidbody_get_velocity_m584A6D79C3657C21AE9CAA56BEE05582B8D5A2B8 ();
+extern "C" void Transform_InverseTransformPoint_mB6E3145F20B531B4A781C194BAC43A8255C96C47 ();
+extern "C" void Transform_TransformPoint_mA96DC2A20EE7F4F915F7509863A18D99F5DD76CB ();
+extern "C" void Transform_get_forward_m0BE1E88B86049ADA39391C3ACED2314A624BC67F ();
+extern "C" void Transform_get_localPosition_m812D43318E05BDCB78310EB7308785A13D85EFD8 ();
 extern "C" void Transform_get_localScale_mD8F631021C2D62B7C341B1A17FA75491F64E13DA ();
 extern "C" void Transform_get_position_mF54C3A064F7C8E24F1C56EE128728B2E4485E294 ();
+extern "C" void Selectable_GetPointOnRectEdge_m8596C7C83FA78419A6FCAFDB64DFF9F7F99172A6 ();
+extern "C" void Vector2_op_Implicit_mD152B6A34B4DB7FFECC2844D74718568FE867D6F ();
+extern "C" void Vector3_Lerp_m5BA75496B803820CC64079383956D73C6FD4A8A1 ();
+extern "C" void Vector3_Max_m78495079CA1E29B0658699B856AFF22E23180F36 ();
+extern "C" void Vector3_Min_m0D0997E6CDFF77E5177C8D4E0A21C592C63F747E ();
 extern "C" void Vector3_Normalize_mDEA51D0C131125535DA2B49B7281E0086ED583DC ();
+extern "C" void Vector3_get_back_mE7EF8625637E6F8B9E6B42A6AE140777C51E02F7 ();
+extern "C" void Vector3_get_down_m3F76A48E5B7C82B35EE047375538AFD91A305F55 ();
+extern "C" void Vector3_get_forward_m3E2E192B3302130098738C308FA1EE1439449D0D ();
+extern "C" void Vector3_get_left_m74B52D8CFD8C62138067B2EB6846B6E9E51B7C20 ();
 extern "C" void Vector3_get_normalized_mE20796F1D2D36244FACD4D14DADB245BE579849B_AdjustorThunk ();
+extern "C" void Vector3_get_one_mA11B83037CB269C6076CBCF754E24C8F3ACEC2AB ();
+extern "C" void Vector3_get_right_m6DD9559CA0C75BBA42D9140021C4C2A9AAA9B3F5 ();
+extern "C" void Vector3_get_up_m6309EBC4E42D6D0B3D28056BD23D0331275306F7 ();
 extern "C" void Vector3_get_zero_m3CDDCAE94581DF3BB16C4B40A100E28E9C6649C2 ();
 extern "C" void Vector3_op_Addition_m929F9C17E5D11B94D50B4AFF1D730B70CB59B50E ();
 extern "C" void Vector3_op_Division_mDF34F1CC445981B4D1137765BC6277419E561624 ();
 extern "C" void Vector3_op_Multiply_m1C5F07723615156ACF035D88A1280A9E8F35A04E ();
 extern "C" void Vector3_op_Subtraction_mF9846B723A5034F8B9F5F5DCB78E3D67649143D3 ();
-extern const Il2CppMethodPointer g_MethodPointers[10192] = 
+extern "C" void Mesh_get_normals_m3CE4668899836CBD17C3F85EB24261CBCEB3EABB ();
+extern "C" void Mesh_get_vertices_m7D07DC0F071C142B87F675B148FC0F7A243238B9 ();
+extern "C" void Color_op_Implicit_m653C1CE2391B0A04114B9132C37E41AC92B33AFE ();
+extern "C" void Matrix4x4_GetColumn_m34D9081FB464BB7CF124C50BB5BE4C22E2DBFA9E_AdjustorThunk ();
+extern "C" void Sprite_GetInnerUVs_m273E051E7DF38ED3D6077781D75A1C1019CABA25 ();
+extern "C" void Sprite_GetOuterUVs_mD78E47470B4D8AD231F194E256136B0094ECEBC5 ();
+extern "C" void Sprite_GetPadding_m5781452D40FAE3B7D0CE78BF8808637FBFE78105 ();
+extern "C" void Sprite_get_border_m940E803CAD380B3B1B88371D7A4E74DF9A48604F ();
+extern "C" void DataUtility_GetInnerUV_m19FC4FF27A6733C9595B63F265EFBEC3BC183732 ();
+extern "C" void DataUtility_GetOuterUV_mB7DEA861925EECF861EEB643145C54E8BF449213 ();
+extern "C" void DataUtility_GetPadding_mE967167C8AB44F752F7C3A7B9D0A2789F5BD7034 ();
+extern "C" void Image_GetAdjustedBorders_mF1F67092B4B4468C8889DB295BE42BB06F4D8380 ();
+extern "C" void Image_GetDrawingDimensions_m706DDDA02781E2AC1BF1A552E4A566EF4D3DE7D8 ();
+extern "C" void Vector4_get_zero_m42821248DDFA4F9A3E0B2E84CBCB737BE9DCE3E9 ();
+extern "C" void Vector4_op_Division_m1D1BD7FFEF0CDBB7CE063CA139C22210A0B76689 ();
+extern "C" void Vector4_op_Subtraction_m2D5AED6DD0324E479548A9346AE29DAB489A8250 ();
+extern "C" void Mesh_get_tangents_mFF92BD7D6EBA8C7EB8340E1529B1CB98006F44DD ();
+extern "C" void FontData_get_verticalOverflow_m2D3EF54A919DB4D650EE21F343AE96C48974307E ();
+extern "C" void Text_get_verticalOverflow_mE451223DCF16B3E00FB3BD427DDC42885174089C ();
+extern const Il2CppMethodPointer g_MethodPointers[12696] = 
 {
 	U3CPrivateImplementationDetailsU3E_ComputeStringHash_m5C1A2CA6703F0D94CE54FF9003154837BB1CDF9A,
 	Locale_GetText_m41F0CB4E76BAAB1E97D9D92D109C846A8ECC1324,
@@ -10912,11 +13416,15 @@ extern const Il2CppMethodPointer g_MethodPointers[10192] =
 	Char_IsLetter_mCC7F387F16C2DE7C85B6A1A0C5BC75D92A813DFE,
 	Char_IsWhiteSpaceLatin1_m13356CA19562C77A7D5FE447D9D0D5FAC2663CE0,
 	Char_IsWhiteSpace_m8AE1C4157A1E1D8F5022630F4229AB26223BDC6B,
+	Char_IsUpper_m94DFB4B66A46914F0588FB7EB42E9BB4A14C3513,
+	Char_IsLower_mE89996F09044C07A991164C7E6A4A9C02867CC90,
 	Char_CheckLetterOrDigit_m6494ECB3F3B19DC41364285D1E12B83BC0132CB9,
 	Char_IsLetterOrDigit_mD7307B3157DFA4EC20D58F68ACB6A9793D3A8292,
 	Char_ToUpper_m7DB88D6BD4EB66188E540B0BF985DE410B660F02,
+	Char_ToUpper_m5D0AC7F9601D2981E2BCC8710BED485D804CE4DA,
 	Char_ToUpperInvariant_m2FF95DAB0D20E1EB1E34ECE24F85253269017915,
 	Char_ToLower_m10AA9F9260876F97230F7BAA4C070AD23ABBC160,
+	Char_ToLower_mEC53192820FB75E0714C1C874F6BC1E89BDBBC74,
 	Char_ToLowerInvariant_m691DAE5E85A00BC3A653CB4F3C0045BF1528641D,
 	Char_GetTypeCode_m7A1E2062075E3B10C48060D3CB572D7A753B907D_AdjustorThunk,
 	Char_System_IConvertible_ToBoolean_m4B3E7F71862B0AA10F450EEBA622EA1DE2C11777_AdjustorThunk,
@@ -10958,7 +13466,9 @@ extern const Il2CppMethodPointer g_MethodPointers[10192] =
 	ArrayList__ctor_m5BD62A8348AB3A2F573860E81A181B5376AF8FA1,
 	ArrayList_set_Capacity_m37AF3E266AF9C2FCF18521954F8990191441F8FB,
 	ArrayList_get_Count_m6EF826A52A07CB62C96D882BEEB5C617A925D47E,
+	ArrayList_get_IsFixedSize_m330C11D43A42002EABFA78E2CE8A8F262392AC99,
 	ArrayList_get_IsReadOnly_m872F6CBFA59DA8ABF64E52802DEED7E7DBD08BEC,
+	ArrayList_get_IsSynchronized_m3FD213444148DDE20199149E073A3C1E2D1C7123,
 	ArrayList_get_SyncRoot_mBEA7D650600CCD432BA113764EF8D3641400F8E9,
 	ArrayList_get_Item_m1BA9F33368DA08EB91C1077010214C4D47113126,
 	ArrayList_set_Item_m7FFC94448E2745B19E0D3A4621E7B68AF5D1A379,
@@ -11070,6 +13580,7 @@ extern const Il2CppMethodPointer g_MethodPointers[10192] =
 	Hashtable_System_Collections_IEnumerable_GetEnumerator_m0EB021D95A8CCD7551ABDCED313551726FD5BF58,
 	Hashtable_GetEnumerator_mB0ADCB33B48CAFAC8FFD293A6B9A52FAB04E86BC,
 	Hashtable_GetHash_m3C9E2CA3CD91D77A371C95CD6A779007D5737524,
+	Hashtable_get_IsSynchronized_mEF9A5B16329878D2B5E5940C8DF5A7133F5889DE,
 	Hashtable_KeyEquals_mA81BC468DA574BB7F49C21FA7DDFB29756715D1E,
 	Hashtable_get_Keys_m45C0AA6F70F3225F84E144BD91DCE789F7FB4AC1,
 	Hashtable_Insert_m15DAFCB62349BF0CCEF2BEA970CFB40E24A75CB4,
@@ -11090,11 +13601,14 @@ extern const Il2CppMethodPointer g_MethodPointers[10192] =
 	KeyCollection__ctor_m58E48C20C50744A6E711BA0504B8520945C5DD4B,
 	KeyCollection_CopyTo_mAC93A19478D6F9168EF9ADFBE68C5E45C453BC79,
 	KeyCollection_GetEnumerator_mDDD12D3A054E820FB09D8F856F3630766EC5A79B,
+	KeyCollection_get_IsSynchronized_m5C76390DFB2BD8E3884F6C83440CD9350BA729A4,
+	KeyCollection_get_SyncRoot_mD8E3C1BAD19C5AB1FD13E8411D65B6F0FBFBDCB6,
 	KeyCollection_get_Count_mDEA3CE26546610822E3225D7CE19111868F8F32E,
 	SyncHashtable__ctor_m2CA4BAD2FE04F356B41CB54032144A6F577D960F,
 	SyncHashtable__ctor_m818995791B476F454D5EF898AF16DE75CC0C2EB1,
 	SyncHashtable_GetObjectData_m893D45F4B0C1EE87E4A89A8EF33ED30978A29C38,
 	SyncHashtable_get_Count_m0A64365E31BB57BA25E85DCFCACB2798BC109B8C,
+	SyncHashtable_get_IsSynchronized_mF15EAEFC1C5A4AB01CE2AA2692108DC6608FE0FF,
 	SyncHashtable_get_Item_m54489F4AB8D10BEDDC41F851DAE27F95A2781146,
 	SyncHashtable_set_Item_m90C21E6C2BC7687F3F83818E62754FF171EE1049,
 	SyncHashtable_get_SyncRoot_m9DA0217F2FC0343D3248F98FC16A2DF1D591A947,
@@ -11118,6 +13632,8 @@ extern const Il2CppMethodPointer g_MethodPointers[10192] =
 	Queue__ctor_m9D54C0C05803263517B6B75FC6BF08371A28EC52,
 	Queue_get_Count_m7F1BFE3590F56D54B20B3A2041486E1F42399C65,
 	Queue_Clone_m8827A33C420FB6B1432366B24D98FE7280729D66,
+	Queue_get_IsSynchronized_mDB1FCF1611C2B50D77A508A235F8571E07F9049D,
+	Queue_get_SyncRoot_m498B47192FC69A5493708D478CAFEB16B5B3E676,
 	Queue_CopyTo_m83969DA0BA9A261DC4E1737B704BB161754242F5,
 	Queue_Enqueue_mAB96DA7B967CCF88384C288A1104B4375ADC1D92,
 	Queue_GetEnumerator_m8730E4BCDE57279CFC39992DB55CA7D6E508E2E6,
@@ -11138,6 +13654,8 @@ extern const Il2CppMethodPointer g_MethodPointers[10192] =
 	SortedList_get_Capacity_mB44EDBBD56AB14D512FCD334E9167DF03D7AEFA3,
 	SortedList_set_Capacity_mBE3FA4CD3FFF4D79E340C95007ED475AC96EFB52,
 	SortedList_get_Count_m29CA1E35CAEF31A67D6C774546EC01898DEFF64C,
+	SortedList_get_IsSynchronized_m6440118E5D3C3B00089657685A4C6A414D557626,
+	SortedList_get_SyncRoot_m9B6378B572BC8CEF951E5C477EB24EAFBE6A894B,
 	SortedList_Clone_m764F0897536D23F33ECE5691E3009C24D551F78C,
 	SortedList_CopyTo_m3A86A44F4E73C76B75A868FCD4CF94E023F43E61,
 	SortedList_EnsureCapacity_m70B0336FC9612C2932F3CABF925355D4245D7C85,
@@ -11160,6 +13678,8 @@ extern const Il2CppMethodPointer g_MethodPointers[10192] =
 	Stack__ctor_m98F99FFBF373762F139506711349267D5354FE08,
 	Stack__ctor_mAA16105AE32299FABCBCCB6D912C220816030193,
 	Stack_get_Count_mA3966F522AE357ACCE3537FBDF82A919B509D6C0,
+	Stack_get_IsSynchronized_m1DE2ABB7B9C97434B1AAC9B51D069F32AD3B0A65,
+	Stack_get_SyncRoot_mD2CA98A101E2F7EF48457FA8496700E438054EB6,
 	Stack_Clear_m9B8C5F26A38E15BD96ADFA5D3DF38227BDD91041,
 	Stack_Clone_m970E7DDDA2100E11F01BF22FDC51B59A0058BB65,
 	Stack_CopyTo_mFE62429D1F2E385D31D8AFEE165327B33628BDF4,
@@ -11322,6 +13842,7 @@ extern const Il2CppMethodPointer g_MethodPointers[10192] =
 	Convert_ToInt32_m1A048B98439E87B6AA81AEA091F8F515D3EF730C,
 	Convert_ToInt32_m4D644EB3F03017202A65F4CADB3382BF81FF5D71,
 	Convert_ToInt32_mB68D58347DE1545BF338A8435E2567C9EAB5905E,
+	Convert_ToUInt32_m5CD74B1562CFEE536D3E9A9A89CEC1CB38CED427,
 	Convert_ToUInt32_mB53B83E03C15DCD785806793ACC3083FCC7F4BCA,
 	Convert_ToUInt32_m0A1093A798B8004A58C7905A23886132BDC347ED,
 	Convert_ToUInt32_m123C758E6CB699FCFD9E8ABCF1042C1CD70DE944,
@@ -12360,6 +14881,7 @@ extern const Il2CppMethodPointer g_MethodPointers[10192] =
 	DllNotFoundException__ctor_mA1F672A4786BB96B15A06425687CDB421671C685,
 	DllNotFoundException__ctor_m10DFBF836175342A3DE8B778EE5EFC439C3BE8F0,
 	DllNotFoundException__ctor_m814CD75482C2010BF3FEA4F5E213C73EDAD87472,
+	Double_IsPositiveInfinity_m45537C58204CD5AA96F39D42F4CB8DADA128C77B,
 	Double_IsNaN_m5DFBBD58036879B687FEC248C50EACBABE205AB3,
 	Double_CompareTo_mB0A2B8C7C5FAC5BE56944B11D254507588407EB5_AdjustorThunk,
 	Double_CompareTo_m569906D5264ACFD3D0D5A1BAD116DC2CBCA0F4B1_AdjustorThunk,
@@ -13823,14 +16345,23 @@ extern const Il2CppMethodPointer g_MethodPointers[10192] =
 	MarshalByRefObject_set_ObjectIdentity_mE1E420865553E02EA38D821EF08642EC35E891B2,
 	MarshalByRefObject_CreateObjRef_m5710DD1277B24CE674482A6672D8DF1CA7AE0C16,
 	MarshalByRefObject_InitializeLifetimeService_m9DA40CE045D04935ED21EA83D2AF57CD1EBF6B9D,
+	Math_Acos_mA015FB00E4C265D5FAD2D17E52C16A828472D666,
+	Math_Ceiling_m379E37FEB7C1DC30F53CBFA8896E0DD0804C44C7,
+	Math_Cos_m2A56736FA0ADF035FA2F54813C6C6E21D6C05F4C,
+	Math_Floor_mC3101A845FDA61AA1E9D4AC3C613F2A3F54332D8,
+	Math_Sin_m70D30E020E871902B8610553CD000D7826B8B1DF,
 	Math_Round_m92CC19B936A3FC72826AD3950A90E5D9EB7513FE,
 	Math_Sqrt_mB2008A97F28A0FC333E8DA31C6B1731D015BF5D2,
+	Math_Log_mD51F54D254E1380E2317F19403E67DFB15008CD9,
 	Math_Pow_m9CD842663B1A2FA4C66EEFFC6F0D705B40BE46F1,
 	Math_Abs_m7F5374AE27F11C3FFBB648DA0EE075317C37C097,
 	Math_AbsHelper_mBB53E92A37FF9A4AD65D354BBAC103F935C20802,
 	Math_Abs_mF0B5B265075406BE063F1D0E561DC17779EC5174,
 	Math_Max_mA99E48BB021F2E4B62D4EA9F52EA6928EED618A2,
+	Math_Max_m545895C37C1F738BBB653CA1F65E50FF1D197675,
 	Math_Min_mC950438198519FB2B0260FCB91220847EE4BB525,
+	Math_Min_mB77A95F6A1FE3B8E7CD784F20AF4E1C908B5E9CD,
+	Math_Log_m5C457D6A666677B3E260C571049528D5BE93B7AF,
 	Math__cctor_m74DAC117CAF47A5126D22880C729D8B4991DC62E,
 	MemberAccessException__ctor_mDD27777FCB5B591E3A785846CB00EC52CBDEA4D7,
 	MemberAccessException__ctor_m9190C2717422BB9A0C877B8C1493A75521AB8101,
@@ -14182,6 +16713,7 @@ extern const Il2CppMethodPointer g_MethodPointers[10192] =
 	UnmanagedMemoryStreamForModule__ctor_mE3CB189987A7048429C52EE0130177D84FF74D41,
 	UnmanagedMemoryStreamForModule_Dispose_mD8755196D3FC9A3BDB553EB3D33AC0C138DCE79F,
 	AssemblyCompanyAttribute__ctor_m3088A5531C90B80A43C0F65689CB2663263FA806,
+	AssemblyConfigurationAttribute__ctor_m581F06B414718310B736519898F5069A0CE71132,
 	AssemblyCopyrightAttribute__ctor_mB0836615C175FAAE019DFC1CDFF84C14AD983C9B,
 	AssemblyDefaultAliasAttribute__ctor_m99B4C847D97B15003F5EC75BBAEE5DB078A24302,
 	AssemblyDelaySignAttribute__ctor_m871AA899D387487CD021ACA02966BF3D47D5BD6B,
@@ -14218,6 +16750,7 @@ extern const Il2CppMethodPointer g_MethodPointers[10192] =
 	AssemblyName_Create_m770DA7358D03C405E5B1CB07D5F6D4962054C4C5,
 	AssemblyProductAttribute__ctor_mAA824DFBD053BB066CD1F5D6E6FB01257EA6F588,
 	AssemblyTitleAttribute__ctor_m629E14EAA0DD77FDFD7C806AC703D262D7C3E791,
+	AssemblyTrademarkAttribute__ctor_mED3DDAEFE422C33614EE6439949BF5BE084D6C77,
 	Binder__ctor_m64E1D14D089E10DB9DAD79A4DC5873472008E99E,
 	ConstructorInfo__ctor_mB0149250348ADBEF3F0D48AE0671A156097A8F75,
 	ConstructorInfo_get_MemberType_m729EF1D14D8702918B7FD60C44437EC0D63D2327,
@@ -15499,6 +18032,8 @@ extern const Il2CppMethodPointer g_MethodPointers[10192] =
 	MessageDictionary_get_Values_m6AB0F8B7CC24C6956F1B01B94712A15AE0FC7621,
 	MessageDictionary_Add_m015064027A6721BD583B7FAC2B1CF75BF809F8E9,
 	MessageDictionary_get_Count_m4E0EA9F682B531893F0FBF7BBE4D49809EE2B831,
+	MessageDictionary_get_IsSynchronized_mC1E75EE4A9D812DDD49F50F8B3AF95204073464C,
+	MessageDictionary_get_SyncRoot_mCB84F67A54BE3A90370EC8B528FCB7BD77DBE514,
 	MessageDictionary_CopyTo_mB806B4F6D7CE553EC083A77DC72314DA362368C9,
 	MessageDictionary_System_Collections_IEnumerable_GetEnumerator_mC933029C5A9432CEF0A34961C55676C6BFB7E84B,
 	MessageDictionary_GetEnumerator_m31594679B0048F59513DF2318E7ABF28774E31A5,
@@ -16632,6 +19167,7 @@ extern const Il2CppMethodPointer g_MethodPointers[10192] =
 	RuntimeTypeHandle_IsInstanceOfType_m0365B2D0D74E056282F0D71C0CCDF827AF50C21D,
 	RuntimeTypeHandle_IsPointer_mEDAD86E1DA9B0BB0858C96B1DBE0D3A2FCB024A9,
 	RuntimeTypeHandle_IsPrimitive_mBA29ADD06A595A2843936453B85D8F033C7E3AA6,
+	RuntimeTypeHandle_HasReferences_m71822B61531288291A39FCF9B42B8076164939A3,
 	RuntimeTypeHandle_IsComObject_m6BEC1E54C1ECA6622CB12AD31CA804665198A39A,
 	RuntimeTypeHandle_IsContextful_mD024680B6E93CA092931774150AC1E150A3E85F4,
 	RuntimeTypeHandle_IsEquivalentTo_m356C4E5D763BAF26689FECDFAD439D134B6FDEB9,
@@ -16720,8 +19256,11 @@ extern const Il2CppMethodPointer g_MethodPointers[10192] =
 	SHA1Internal_FillBuff_m89617E6F772A48B783C252E2B13CF7EC332D47A5,
 	SHA1Internal_ProcessFinalBlock_mBF97ABC1C27E7C6067DBC3D982F71A47BFCBCC55,
 	SHA1Internal_AddLength_mF753A968068F3E32B94624249E572656FFF505DC,
+	SecurityPermissionAttribute_set_SkipVerification_m1A284EDF78B6996F4CDF56A6FDEAA18B821DE765,
 	Evidence__ctor_mF2BFE39AA27373124E9DE283733ACF3C52BB7392,
 	Evidence_get_Count_m6BEA32B3B94D8EDCD21A040DA69D69F3D34B0513,
+	Evidence_get_IsSynchronized_mFE3D5D7B7FAC76C47D6C49034E55FDC830655561,
+	Evidence_get_SyncRoot_m24503624DA5215B747062C31DE72D39251039B78,
 	Evidence_CopyTo_m1450F3905052BFEBD0F9CED1B855EB81CC867356,
 	Evidence_GetEnumerator_m03EB4131E670C6BAFA8C155ABCD98637699AA43E,
 	EvidenceEnumerator__ctor_mD4153081415054237617C4E5AFAA036445E6A43B,
@@ -16851,6 +19390,7 @@ extern const Il2CppMethodPointer g_MethodPointers[10192] =
 	String_CompareTo_mC250D5F34FBB95D3F4BDFA96BE88D1C611913ACA,
 	String_CompareTo_m9FAB33E920810E148EDAA4F64E37F231412312AB,
 	String_CompareOrdinal_m172D84EDDE0823F53EAB60857C07EA7F85600068,
+	String_Contains_m4488034AF8CB3EEA9A205EB8A1F25D438FF8704B,
 	String_EndsWith_mE4F039DCC2A9FCB8C1ED2D04B00A35E3CE16DE99,
 	String_EndsWith_m80B198568050D692B70AD8949AC6EDC3044ED811,
 	String_EndsWith_m2281A2B36765C493DEDB28A9B0E22BEFFE2E9AC1,
@@ -16864,6 +19404,7 @@ extern const Il2CppMethodPointer g_MethodPointers[10192] =
 	String_LastIndexOf_m76C37E3915E802044761572007B8FB0635995F59,
 	String_LastIndexOf_mC378BF6308D9D6A19AFA397CBD7046B2ED9B340B,
 	String_LastIndexOfAny_mF16934C2FD438FE77DEF59BF748E438675844892,
+	String_LastIndexOfAny_mF62DEBFAAA527076E8B6FA4225F58767BA5DC792,
 	String_LastIndexOf_mA235A9DBC602A4C97D8708F51720E0BAE3CD7D84,
 	String_LastIndexOf_m074A70E0C63246B664CC26F4D0B5203424B2BCF7,
 	String_PadRight_mDC890E71A75C12F96DC1430CF94B1B7C1ED839B0,
@@ -18392,6 +20933,7 @@ extern const Il2CppMethodPointer g_MethodPointers[10192] =
 	Type_GetConstructor_m53CF9E12A23096404A64D1BB7B894657C9063A07,
 	Type_GetConstructor_m4371D7AD6A8E15067C698696B0167323CBC7F3DA,
 	Type_GetMethod_m694F07057F23808980BF6B1637544F34852759FA,
+	Type_GetMethod_m54E1EF62AFF44AA621E074D123C5C0B3E73A7DD5,
 	Type_GetMethod_m9EC42D4B1F765B882F516EE6D7970D51CF5D80DD,
 	Type_GetMethod_mB8368D44E32C205D279BA3BB9E6FE1D09D45A6DE,
 	Type_GetMethods_m50864CCA29AC38E53711C885031DB3793D4C8C60,
@@ -18702,25 +21244,6 @@ extern const Il2CppMethodPointer g_MethodPointers[10192] =
 	__Il2CppComDelegate_Finalize_m893C22F7BEDFBDF8F015EA584CC1419D144D2187,
 	__Il2CppComObject_Finalize_m98123DBAAA7974D2616F9E90F2574955714CA9A9,
 	ThrowStub_ThrowNotSupportedException_mA248D7D785682F31CDF02FDC1FAB3173EE1B1E19,
-	ASN1__ctor_m6DD2E5BD0B12A6BFA95E1822A55B2294B8C237BC,
-	ASN1__ctor_mAB2593792CB61AD1542F4F9D6FB6E8BB96DE007E,
-	ASN1__ctor_mE005F52336402C3D41EAD9E28A95910B3C0865DA,
-	ASN1_get_Count_m5A0E71B4C4A2257C0875AE1041AAA953C5B12A19,
-	ASN1_get_Tag_m1346989AC839D85A9E0A211525A6B551974E4862,
-	ASN1_get_Value_m9BD6239E12A6148AF9507C2F58058C6B8147A079,
-	ASN1_set_Value_m225FF9AC03EA872809C7742070A34A264C58588E,
-	ASN1_Add_mF6ED0416BB021A1C333F99E42F8B17AF8B26639B,
-	ASN1_GetBytes_m4ABC0EF4CBE8CF6BE65CEC52CDB02BB59E2E9AE4,
-	ASN1_Decode_m94E3A6F94EDACE796521D04E6A832D99592F1149,
-	ASN1_DecodeTLV_m30440B1DE0A8C4236AA9658DEBF2808FD3BC00C3,
-	ASN1_get_Item_m88B75C57A7E130A02A709AE8FFD2E0972E71FC08,
-	ASN1_ToString_mF3953615856548F00889AD245391D09FBE782CBA,
-	ASN1Convert_FromInt32_m59FF0922659B0A323026CCC0876BC33020C4FC9A,
-	ASN1Convert_ToInt32_mA2A8761F965979408D46FBEB946DB59F36137A5E,
-	ASN1Convert_ToOid_mFFA93B4BBEFCA8E4E86DAE87CDB998E78BFB2D5A,
-	BitConverterLE_GetUIntBytes_m871281C3039A5B7DFB56E0F3EBBE22F74135997C,
-	BitConverterLE_GetBytes_m1207548B6BC0E2D49DD06D5B3A3AC19C001BDB35,
-	CryptoConvert_ToHex_m2FB6183AFF3B31424407BB7D767A844E3464B411,
 	Res_GetString_m47B81D62E4B5E4C48C06BCC7995B9ED5218EE7A2,
 	XmlChildEnumerator__ctor_m9D966497AE59A0784E4FE7CB883226B7A332F311,
 	XmlChildEnumerator_System_Collections_IEnumerator_MoveNext_m42A648E7F0B79C7F47D7EF9CE5095D54EA372EDB,
@@ -18744,12 +21267,16 @@ extern const Il2CppMethodPointer g_MethodPointers[10192] =
 	ConfigurationElement_Reset_m39498D76FA0912DA725E3224537BBF7FA5B0FC1A,
 	ConfigurationElement_ResetModified_m6AAF1F8A88CEF6F993A6666E3B4D4B2456024989,
 	ConfigurationElementCollection_get_Count_m58EFBCAA164C912FEBD007AACF85784B80C54EFA,
+	ConfigurationElementCollection_get_IsSynchronized_m01A1041417359C9558B7BD6BBE38A079B1290C59,
+	ConfigurationElementCollection_get_SyncRoot_m9AF9A3529CAF268BE69B95ACD13FEE0A64FACCAD,
 	ConfigurationElementCollection_GetEnumerator_m9BAC931AF7292090D4A17FB6BE425A87698B615B,
 	ConfigurationElementCollection_IsModified_m8CE9100FF55419730D78D1399847C4AA31596769,
 	ConfigurationElementCollection_Reset_mCAD4115E5753AFD91A9980F1727F19C2820CFC5A,
 	ConfigurationElementCollection_ResetModified_m0E48AB9040D7A874EB16EABBD66DE7A5C9682C3E,
 	ConfigurationElementCollection_System_Collections_ICollection_CopyTo_m0F4E4D3C5BC76BFC9246418F4F9930BCFCB88175,
 	ConfigurationPropertyCollection_get_Count_mCD54D7BF7C9539EC577F6B1AC88C53A67FEFD844,
+	ConfigurationPropertyCollection_get_IsSynchronized_mC9C67CAB13360A77A9EC5DA5474900997EAAC474,
+	ConfigurationPropertyCollection_get_SyncRoot_m9C5F4616FF01536A643161A98B57D8343A1B0876,
 	ConfigurationPropertyCollection_GetEnumerator_mC0049DA2728B41148DB85EA951D5708F732731C3,
 	ConfigurationPropertyCollection_System_Collections_ICollection_CopyTo_mA43D6C442A7E2B71FF5338B36485FAB2861E5E9D,
 	ConfigurationSection_DeserializeSection_mC39769C65F7E36F2B33E155B4D8ACADB83377B5F,
@@ -18764,6 +21291,25 @@ extern const Il2CppMethodPointer g_MethodPointers[10192] =
 	IgnoreSection_ResetModified_mE7AEAA166BBA055767C5AFA05C9F223E1D0FB070,
 	IgnoreSection_SerializeSection_m03CB506F46AEA369F5FCAEC048509461D907FEE9,
 	ThrowStub_ThrowNotSupportedException_mF0DAFE591641D359313AB87E6900E4B05E42390A,
+	ASN1__ctor_m6DD2E5BD0B12A6BFA95E1822A55B2294B8C237BC,
+	ASN1__ctor_mAB2593792CB61AD1542F4F9D6FB6E8BB96DE007E,
+	ASN1__ctor_mE005F52336402C3D41EAD9E28A95910B3C0865DA,
+	ASN1_get_Count_m5A0E71B4C4A2257C0875AE1041AAA953C5B12A19,
+	ASN1_get_Tag_m1346989AC839D85A9E0A211525A6B551974E4862,
+	ASN1_get_Value_m9BD6239E12A6148AF9507C2F58058C6B8147A079,
+	ASN1_set_Value_m225FF9AC03EA872809C7742070A34A264C58588E,
+	ASN1_Add_mF6ED0416BB021A1C333F99E42F8B17AF8B26639B,
+	ASN1_GetBytes_m4ABC0EF4CBE8CF6BE65CEC52CDB02BB59E2E9AE4,
+	ASN1_Decode_m94E3A6F94EDACE796521D04E6A832D99592F1149,
+	ASN1_DecodeTLV_m30440B1DE0A8C4236AA9658DEBF2808FD3BC00C3,
+	ASN1_get_Item_m88B75C57A7E130A02A709AE8FFD2E0972E71FC08,
+	ASN1_ToString_mF3953615856548F00889AD245391D09FBE782CBA,
+	ASN1Convert_FromInt32_m59FF0922659B0A323026CCC0876BC33020C4FC9A,
+	ASN1Convert_ToInt32_mA2A8761F965979408D46FBEB946DB59F36137A5E,
+	ASN1Convert_ToOid_mFFA93B4BBEFCA8E4E86DAE87CDB998E78BFB2D5A,
+	BitConverterLE_GetUIntBytes_m871281C3039A5B7DFB56E0F3EBBE22F74135997C,
+	BitConverterLE_GetBytes_m1207548B6BC0E2D49DD06D5B3A3AC19C001BDB35,
+	CryptoConvert_ToHex_m2FB6183AFF3B31424407BB7D767A844E3464B411,
 	U3CPrivateImplementationDetailsU3E_ComputeStringHash_m7C7DB27BC4297A74A96AC53E1EDD3E7415DFB874,
 	SR_GetString_m9548BD6DD52DFDB46372F211078AE57FA2401E39,
 	SR_GetString_m9D671CBA422B18D15B8FF59B22DCCEB32E3D16E2,
@@ -18790,6 +21336,8 @@ extern const Il2CppMethodPointer g_MethodPointers[10192] =
 	StandardValuesCollection_CopyTo_mA319F11A11360C258FCEEF3C9EFA53D504BD7C3E,
 	StandardValuesCollection_GetEnumerator_m40E0D69CDEDD7EDE2D9454C4A18AA4C91A96B95F,
 	StandardValuesCollection_System_Collections_ICollection_get_Count_m3B04852950AC738A4E8AF41974DA6AFB1CC2BAD6,
+	StandardValuesCollection_System_Collections_ICollection_get_IsSynchronized_m9A74F835BFD37AA9DC9458A0B7D3FE739612F9EA,
+	StandardValuesCollection_System_Collections_ICollection_get_SyncRoot_mF42D50E0E5A77DD85C897C37352834E2D4023810,
 	StandardValuesCollection_System_Collections_ICollection_CopyTo_m27D62D0B27B9151F55B3F3069E72B1B8ABEC5447,
 	StandardValuesCollection_System_Collections_IEnumerable_GetEnumerator_m017DACA9E9C081C4964887FF9E1F7D8A36B7BD8F,
 	TypeConverterAttribute__ctor_mD0795A29B6FD59978CAAC6DAF3AC7EC564C519A5,
@@ -18929,6 +21477,8 @@ extern const Il2CppMethodPointer g_MethodPointers[10192] =
 	OidCollection_get_Count_m6AC0709CDD68451F4CAC942CE94A5A97F3C294B2,
 	OidCollection_System_Collections_IEnumerable_GetEnumerator_m3FD3A96DFF93BD88A3B28E35A4DEF57AF25ECB30,
 	OidCollection_System_Collections_ICollection_CopyTo_mE508CB1FD9E56CCFE5A4BDD5251D815BF78AC5A9,
+	OidCollection_get_IsSynchronized_m1300193FE08B13D161AAFB69DA709B41BA7A0FC2,
+	OidCollection_get_SyncRoot_m6C13949F67338F684C29DD162C8228986DAB6850,
 	OidEnumerator__ctor_mCA4FBC8408E2B04FD0A524E256E284E8A44E0797,
 	OidEnumerator_System_Collections_IEnumerator_get_Current_mF11B1F886842EA79EDB215BD5106D0C4C65EBE53,
 	OidEnumerator_MoveNext_m073D94D5D3254D53DF53429ACAD0AA9BD682221D,
@@ -19324,6 +21874,8 @@ extern const Il2CppMethodPointer g_MethodPointers[10192] =
 	FreeFunctionAttribute__ctor_m69E4EBDD649729C9473BA68585097AF48D06B83D,
 	FreeFunctionAttribute__ctor_m18D7DE98494E55663EB23287EE6DB00E6649241F,
 	FreeFunctionAttribute__ctor_m54898E27CB62607552A0612FA26165A18CB3F444,
+	IgnoreAttribute__ctor_m4B78BE44704DA9040A683AC928187E1DAE6BC885,
+	IgnoreAttribute_set_DoesNotContributeToSize_mF507E8A0ADF588062014330B44B9BD674D7A75AA,
 	NativeConditionalAttribute__ctor_mBF34AC3E165A50B3BE9F49520DDE1851DC7CFF13,
 	NativeConditionalAttribute_set_Condition_m0BD35F77FDBCC278203543FB3CAC35A8227474B5,
 	NativeConditionalAttribute_set_Enabled_m3584B9F0F4BD7F3F8B8C49595D1900EF01B3C1E0,
@@ -19342,6 +21894,8 @@ extern const Il2CppMethodPointer g_MethodPointers[10192] =
 	NativeNameAttribute_set_Name_m8559126FDC09CB14ADF9AF9D03E6102908738FD3,
 	NativePropertyAttribute__ctor_mC9AA5DB9519961A6AA76C71968B7E4F9649235FF,
 	NativePropertyAttribute__ctor_m92618E6DC14A2AD87A9CB3A2BB3DFCDA1A431164,
+	NativePropertyAttribute__ctor_m2584E9D08E56EFB31AE671E6488046168A3911D3,
+	NativePropertyAttribute_set_TargetType_m8705F4754AA0C953CDA6DDCB95B0276F51FE0146,
 	NativeThrowsAttribute__ctor_m4EBDA91A1EBCABBD08DF5A91E216578B8CD76EDB,
 	NativeThrowsAttribute_set_ThrowsException_m563468CF2C9D8B2D745373285B67150C734F363F,
 	NativeTypeAttribute__ctor_mC6578F8A8AD3F4778CCC17248E32746D9BCD7C1F,
@@ -19351,6 +21905,8 @@ extern const Il2CppMethodPointer g_MethodPointers[10192] =
 	NativeTypeAttribute_set_Header_m1CC3A47E66E54E5E7A87C5C5911B8EE9D0E8657B,
 	NativeTypeAttribute_set_IntermediateScriptingStructName_m6409CEAAEE1D910DE284325904215DAE9104DDFE,
 	NativeTypeAttribute_set_CodegenOptions_m25EC23287090E27AA2344F376BABD52DE4D4A23D,
+	NativeWritableSelfAttribute__ctor_m827940BA28BA2267BA715EADC657E4638C1FF780,
+	NativeWritableSelfAttribute_set_WritableSelf_mB6A7EF77A83E5B77DAE7BBA1F8A63BBB44C1529B,
 	NotNullAttribute__ctor_m8F88B3030D52285AA10334E4E117151630BEC045,
 	StaticAccessorAttribute__ctor_m6698A0204830E258A0D9881AFA7368196C179782,
 	StaticAccessorAttribute__ctor_m8F492CF3D710FAE0D63BB8C2640D271264C84448,
@@ -19359,6 +21915,7 @@ extern const Il2CppMethodPointer g_MethodPointers[10192] =
 	ThreadSafeAttribute__ctor_mC3058002BD52E2EB8475B8115A1AC5FFCA53E1DD,
 	UnmarshalledAttribute__ctor_m7E224B875755FD7109EDFB2CBA2A2F7F617A1191,
 	VisibleToOtherModulesAttribute__ctor_m82D98B6D202548277D803878EB2BE3A82722CC74,
+	VisibleToOtherModulesAttribute__ctor_mEC52A33ADE6FEA527A467F9F64BF966F2A63A942,
 	NativeClassAttribute__ctor_m814DCB23A54C2AE01ACDB1930DDF06277CAD9DE8,
 	NativeClassAttribute__ctor_mFAF14B283CE2D27EA4A98E118CB5ED55A2232F92,
 	NativeClassAttribute_set_QualifiedNativeName_m4649657DC46E04FAE4BED6D53EBB7C82CEE4FC31,
@@ -19372,6 +21929,8 @@ extern const Il2CppMethodPointer g_MethodPointers[10192] =
 	UnityEngineModuleAssembly__ctor_m791D74EDFEF6B1368540E376C7DCA131C2528993,
 	UnityString_Format_m415056ECF8DA7B3EC6A8456E299D0C2002177387,
 	WritableAttribute__ctor_m58A5D24131EC67D50A7BF2804568DCB607BD97D6,
+	AddComponentMenu__ctor_m33A9DE8FEE9BC9C12F67CF58BFEBECA372C236A3,
+	AddComponentMenu__ctor_m78D1D62B91D88424AE2175501B17E4609EF645EA,
 	AnimationCurve__ctor_mE9462D171C06A2A746B9DA1B0A6B0F4FC7DB94CF,
 	AnimationCurve__ctor_mA12B39D1FD275B9A8150227B24805C7B218CDF2C,
 	AnimationCurve_Internal_Destroy_m295BAECEF97D64ACFE55D7EA91B9E9C077DB6A7C,
@@ -19381,8 +21940,11 @@ extern const Il2CppMethodPointer g_MethodPointers[10192] =
 	AnimationCurve_Equals_m5E3528A0595AC6714584CAD54549D756C9B3DDD5,
 	AnimationCurve_Equals_m60310C21F9B109BAC9BA4FACE9BEF88931B22DED,
 	AnimationCurve_GetHashCode_m22EEE795E7C76841C40A1563E3E90CBB089B19A6,
+	Application_get_isPlaying_mF43B519662E7433DD90D883E5AE22EC3CFB65CA5,
+	Application_get_platform_m6AFFFF3B077F4D5CA1F71CF14ABA86A83FC71672,
 	Application_CallLowMemory_m4C6693BD717D61DB33C2FB061FDA8CE055966E75,
 	Application_CallLogCallback_mCA351E4FBE7397C3D09A7FBD8A9B074A4745ED89,
+	Application_get_isEditor_m347E6EE16E5109EF613C83ED98DB1EC6E3EF5E26,
 	Application_Internal_ApplicationWantsToQuit_mDF35192EF816ECD73F0BD4AFBCDE1460EF06442A,
 	Application_Internal_ApplicationQuit_mC9ACAA5CB0800C837DBD9925E1E389FB918F3DED,
 	Application_InvokeOnBeforeRender_mF2E1F3E67C1D160AD1209C1DBC1EC91E8FB88C97,
@@ -19418,21 +21980,46 @@ extern const Il2CppMethodPointer g_MethodPointers[10192] =
 	BeforeRenderHelper__cctor_mAF1DF30E8F7C2CE586303CAA41303230FE2DEB0D,
 	Behaviour__ctor_m409AEC21511ACF9A4CC0654DF4B8253E0D81D22C,
 	Behaviour_get_enabled_mAA0C9ED5A3D1589C1C8AA22636543528DB353CFB,
+	Behaviour_set_enabled_m9755D3B17D7022D23D1E4C618BD9A6B66A5ADC6B,
+	Behaviour_get_isActiveAndEnabled_mC42DFCC1ECC2C94D52928FFE446CE7E266CA8B61,
 	BootConfigData__ctor_m6C109EB48CAE91C89BB6C4BFD10C77EA6723E5AE,
 	BootConfigData_WrapBootConfigData_m7C2DCB60E1456C2B7748ECFAAEB492611A5D7690,
+	Bounds__ctor_m294E77A20EC1A3E96985FE1A925CB271D1B5266D_AdjustorThunk,
+	Bounds_GetHashCode_m9F5F751E9D52F99FCC3DC07407410078451F06AC_AdjustorThunk,
+	Bounds_Equals_m1ECFAEFE19BAFB61FFECA5C0B8AE068483A39C61_AdjustorThunk,
+	Bounds_Equals_mC2E2B04AB16455E2C17CD0B3C1497835DEA39859_AdjustorThunk,
+	Bounds_get_center_m4FB6E99F0533EE2D432988B08474D6DC9B8B744B_AdjustorThunk,
+	Bounds_set_center_mAD29DD80FD631F83AF4E7558BB27A0398E8FD841_AdjustorThunk,
+	Bounds_get_size_m0739F2686AE2D3416A33AEF892653091347FD4A6_AdjustorThunk,
+	Bounds_set_size_m70855AC67A54062D676174B416FB06019226B39A_AdjustorThunk,
+	Bounds_get_extents_mBA4B2196036DD5A858BDAD53BC71A778B41841C9_AdjustorThunk,
+	Bounds_set_extents_mC83719146B06D0575A160CDDE9997202A1192B35_AdjustorThunk,
+	Bounds_get_min_m2D48F74D29BF904D1AF19C562932E34ACAE2467C_AdjustorThunk,
+	Bounds_get_max_mC3BE43C2A865BAC138D117684BC01E289892549B_AdjustorThunk,
+	Bounds_op_Equality_m8168B65BF71D8E5B2F0181677ED79957DD754FF4,
+	Bounds_op_Inequality_mA6EBEDD980A41D5E206CBE009731EB1CA0B25502,
+	Bounds_SetMinMax_m04969DE5CBC7F9843C12926ADD5F591159C86CA6_AdjustorThunk,
+	Bounds_Encapsulate_mD1F1DAC416D7147E07BF54D87CA7FF84C1088D8D_AdjustorThunk,
+	Bounds_ToString_m4637EA7C58B9C75651A040182471E9BAB9295666_AdjustorThunk,
+	Camera__ctor_mD07AB17467A910BC7A4EE32BB9DD546748E31254,
 	Camera_get_nearClipPlane_mD9D3E3D27186BBAC2CC354CE3609E6118A5BF66C,
 	Camera_get_farClipPlane_mF51F1FF5BE87719CFAC293E272B1138DC1EFFD4B,
+	Camera_get_depth_m436C49A1C7669E4AD5665A1F1107BDFBA38742CD,
 	Camera_get_cullingMask_m0992E96D87A4221E38746EBD882780CEFF7C2BCD,
 	Camera_get_eventMask_m1D85900090AF34244340C69B53A42CDE5E9669D3,
 	Camera_get_clearFlags_m1D02BA1ABD7310269F6121C58AF41DCDEF1E0266,
 	Camera_get_pixelRect_mBA87D6C23FD7A5E1A7F3CE0E8F9B86A9318B5317,
 	Camera_get_targetTexture_m1E776560FAC888D8210D49CEE310BB39D34A3FDC,
 	Camera_get_targetDisplay_m2C318D2EB9A016FEC76B13F7F7AE382F443FB731,
+	Camera_WorldToScreenPoint_m315B44D111E92F6C81C39B7B0927622289C1BC52,
+	Camera_WorldToScreenPoint_m880F9611E4848C11F21FDF1A1D307B401C61B1BF,
+	Camera_ScreenToViewportPoint_m52ABFA35ADAA0B4FF3A7EE675F92F8F483E821FD,
 	Camera_ScreenPointToRay_m84C3D8E0A4E8390A353C2361A0900372742065A0,
 	Camera_ScreenPointToRay_m7069BC09C3D802595AC1FBAEFB3C59C8F1FE5FE2,
 	Camera_ScreenPointToRay_m27638E78502DB6D6D7113F81AF7C210773B828F3,
 	Camera_RaycastTry_m7D27141875E309214FED1E3F1D0E3DE580183C0A,
 	Camera_RaycastTry2D_m5C5FE62B732A123048EBFA3241BBBEC7BA409C0F,
+	Camera_get_main_m9256A9F84F92D7ED73F3E6C4E2694030AD8B61FA,
 	Camera_GetAllCamerasCount_mBA721F43F94AA5DB555461DE11351CBAF8267662,
 	Camera_GetAllCamerasImpl_mC93829FFC53391EA6C5012E5FA3817BA20DBEA89,
 	Camera_get_allCamerasCount_mF6CDC46D6F61B1F1A0337A9AD7DFA485E408E6A1,
@@ -19441,6 +22028,8 @@ extern const Il2CppMethodPointer g_MethodPointers[10192] =
 	Camera_FireOnPreRender_m996699B5D50FC3D0AB05EED9F9CE581CCDC2FF67,
 	Camera_FireOnPostRender_m17457A692D59CBDDDBBE0E4C441D393DAD58654B,
 	Camera_get_pixelRect_Injected_mDE6A7F125BC1DD2BCFEA3CB03DFA948E5635E631,
+	Camera_WorldToScreenPoint_Injected_m640C6AFA68F6C2AD25AFD9E06C1AEFEAC5B48B01,
+	Camera_ScreenToViewportPoint_Injected_m407A30EDD4AC317DE3DD0B4361664F438E5A6639,
 	Camera_ScreenPointToRay_Injected_m1135D2C450C7DED657837BEFE5AD7FAFB9B99387,
 	Camera_RaycastTry_Injected_mC7826C45813D590987CE8B615D37FCDC4DB33E40,
 	Camera_RaycastTry2D_Injected_m080224D8887AEBF79BE0BCE901072165FDE9689C,
@@ -19449,10 +22038,33 @@ extern const Il2CppMethodPointer g_MethodPointers[10192] =
 	CameraCallback_BeginInvoke_m46CF0E3E7E6A18868CBEBEA62D012713B20A8B14,
 	CameraCallback_EndInvoke_m3B1E210D6A4F41F0FF74B187B3D7CB64C302D146,
 	ClassLibraryInitializer_Init_mB8588C1A9DD9CB6B5CE77DB1F79AE301C46E0CE7,
+	Color__ctor_m20DF490CEB364C4FC36D7EE392640DF5B7420D7C_AdjustorThunk,
+	Color__ctor_mC9AEEB3931D5B8C37483A884DD8EB40DC8946369_AdjustorThunk,
+	Color_ToString_m17A27E0CFB20D9946D130DAEDB5BDCACA5A4473F_AdjustorThunk,
+	Color_GetHashCode_m88317C719D2DAA18E293B3F5CD17B9FB80E26CF1_AdjustorThunk,
+	Color_Equals_m63ECBA87A0F27CD7D09EEA36BCB697652E076F4E_AdjustorThunk,
+	Color_Equals_mA81EEDDC4250DE67C2F43BC88A102EA32A138052_AdjustorThunk,
+	Color_op_Multiply_mF36917AD6235221537542FD079817CAB06CB1934,
+	Color_op_Equality_m71B1A2F64AD6228F10E20149EF6440460D2C748E,
+	Color_Lerp_mD37EF718F1BAC65A7416655F0BC902CE76559C46,
+	Color_get_red_m5562DD438931CF0D1FBBBB29BF7F8B752AF38957,
+	Color_get_white_mE7F3AC4FF0D6F35E48049C73116A222CBE96D905,
+	Color_get_black_mEB3C91F45F8AA7E4842238DFCC578BB322723DAF,
+	Color_get_clear_m419239BDAEB3D3C4B4291BF2C6EF09A7D7D81360,
+	Color_op_Implicit_m653C1CE2391B0A04114B9132C37E41AC92B33AFE,
+	Color32__ctor_m1AEF46FBBBE4B522E6984D081A3D158198E10AA2_AdjustorThunk,
+	Color32_op_Implicit_m52B034473369A651C8952BD916A2AB193E0E5B30,
+	Color32_op_Implicit_mA89CAD76E78975F51DF7374A67D18A5F6EF8DA61,
+	Color32_ToString_m217F2AD5C02E630E37BE5CFB0933630F6D0C3555_AdjustorThunk,
 	Component__ctor_m5E2740C0ACA4B368BC460315FAA2EDBFEAC0B8EF,
 	Component_get_transform_m00F05BD782F920C301A7EBA480F3B7A904C07EC9,
 	Component_get_gameObject_m0B0570BA8DDD3CD78A9DB568EA18D7317686603C,
+	Component_GetComponent_m5E75925F29811EEC97BD17CDC7D4BD8460F3090F,
 	Component_GetComponentFastPath_mDEB49C6B56084E436C7FC3D555339FA16949937E,
+	Component_GetComponentInChildren_mEF7890FAC10EA2F776464285B0DCC58B8C373D34,
+	Component_GetComponentInParent_mFD9A8F6311ABAF986CA0DA556662F89FD9234E7D,
+	Component_GetComponentsForListInternal_m469B4C3A883942213BEA0EAAA54629219A042480,
+	Component_GetComponents_m1ACBE6B9A75ECC898BA3B21D59AA7B3339D7735A,
 	ComputeShader_FindKernel_m4CEBD37F96732810C4C370A6249CF460BE1F93A3,
 	Coroutine__ctor_mCA679040DA81B31D1E341400E98F6CF569269201,
 	Coroutine_Finalize_mACCDC3AFBA7F1D247231AA875B5099200AF9ECC5,
@@ -19462,9 +22074,11 @@ extern const Il2CppMethodPointer g_MethodPointers[10192] =
 	Cubemap__ctor_mB0430DC19209C90736915B41A670C7AC65698D71,
 	Cubemap_Internal_CreateImpl_m49FA4B17DCF892870B138FD61BAB2430B353A9FE,
 	Cubemap_Internal_Create_m4D10B8768898CB441A144D7CCCBA760AC18CAA5E,
+	Cubemap_get_isReadable_m97956094F4DBC9C67A86AEC8CCE73AB237694121,
 	CubemapArray__ctor_m390539598EAAEE1AAE0B89D2241A60EE6BD1B219,
 	CubemapArray__ctor_mE9E5A417064CB9CF4283C8A82F4AE5C463C4014E,
 	CubemapArray__ctor_mD52A7D884A01A8DF05B40D820584C1F3869317AC,
+	CubemapArray_get_isReadable_mBE24F088422FA9FE007086C36C7D16A6D6377919,
 	CubemapArray_Internal_CreateImpl_m062A29BE58FCC9687B9D08EE9DF44043525B1CF6,
 	CubemapArray_Internal_Create_m3E0A1749E733FFAB557EDA308F636F1739577E90,
 	CullingGroup_Finalize_m67D1F84462EC91AACBB9899B859D26CAD5BE24AB,
@@ -19476,12 +22090,20 @@ extern const Il2CppMethodPointer g_MethodPointers[10192] =
 	StateChanged_Invoke_m2E371D6B1AD1F23F20038D0DEEEFED15D76BC545,
 	StateChanged_BeginInvoke_m5BD458B36BF2E71F4FB19444B0FAAA1B87BF8912,
 	StateChanged_EndInvoke_mBC050D5602C1F3EC3F8137908D81894E646F5212,
+	Cursor_get_lockState_mE0C93F496E3AA120AD168ED30371C35ED79C9DF1,
+	CustomYieldInstruction__ctor_m06E2B5BC73763FE2E734FAA600D567701EA21EC5,
+	CustomYieldInstruction_get_Current_m9B2B482ED92A58E85B4D90A5AC7C89DFF87E33DC,
+	CustomYieldInstruction_MoveNext_m7EA6BAAEF6A01DC791D0B013D5AB5C377F9A6990,
 	Debug_get_unityLogger_mFA75EC397E067D09FD66D56B4E7692C3FCC3E960,
 	Debug_Log_m4B7C70BAFD477C6BDB59C88A0934F0B018D03708,
 	Debug_LogError_m3BCF9B78263152261565DCA9DB7D55F0C391ED29,
 	Debug_LogError_m97139CB2EE76D5CD8308C1AD0499A5F163FC7F51,
+	Debug_LogErrorFormat_m994E4759C25BF0E9DD4179C10E3979558137CCF0,
 	Debug_LogException_mBAA6702C240E37B2A834AA74E4FDC15A3A5589A9,
+	Debug_LogException_m3CC9A37CD398E5B7F2305896F0969939F1BD1E3E,
+	Debug_LogWarning_m37338644DC81F640CCDFEAE35A223F0E965F0568,
 	Debug_LogWarning_mD417697331190AC1D21C463F412C475103A7256E,
+	Debug_LogWarningFormat_m4A02CCF91F3A9392F4AA93576DCE2222267E5945,
 	Debug_LogAssertion_m2A8940871EC1BD01A405103429F2FCE2AFB12506,
 	Debug__cctor_m9BFDFB65B30AA2962FDACD15F36FC666471D1C5E,
 	DebugLogHandler__ctor_mE9664BE5E6020FB88C6A301465811C80DEDFA392,
@@ -19490,20 +22112,27 @@ extern const Il2CppMethodPointer g_MethodPointers[10192] =
 	DebugLogHandler_LogFormat_m3C9B0AD4B5CDFF5AF195F9AA9FCBA908053BA41D,
 	DebugLogHandler_LogException_m816CF2DDA84DFC1D1715B24F9626BD623FF05416,
 	DefaultExecutionOrder_get_order_mFD2CD99AEF550E218FAFC6CB3DDA3CE8D78614A9,
+	DisallowMultipleComponent__ctor_m108E5D8C0DB938F0A747C6D2BA481B4FA9CDECB3,
 	Display__ctor_m1E66361E430C3698C98D242CEB6820E9B4FC7EB8,
 	Display__ctor_mE84D2B0874035D8A772F4BAE78E0B8A2C7008E46,
+	Display_get_renderingWidth_mA02F65BF724686D7A0CD0C192954CA22592C3B12,
+	Display_get_renderingHeight_m1496BF9D66501280B4F75A31A515D8CF416838B0,
 	Display_get_systemWidth_mA14AF2D3B017CF4BA2C2990DC2398E528AF83413,
 	Display_get_systemHeight_m0D7950CB39015167C175634EF8A5E0C52FBF5EC7,
 	Display_RelativeMouseAt_mABDA4BAC2C1B328A2C6A205D552AA5488BFFAA93,
+	Display_get_main_mDC0ED8AD60BF5BC3C83384E9C5131403E7033AFA,
 	Display_RecreateDisplayList_mA7E2B69AF4BD88A0C45B9A0BB7E1FFDDA5C60FE8,
 	Display_FireDisplaysUpdated_m1655DF7464EA901E47BCDD6C3BBB9AFF52757D86,
 	Display_GetSystemExtImpl_m946E5A2D11FC99291208F123B660978106C0B5C6,
+	Display_GetRenderingExtImpl_m14405A2EC3C99F90D5CD080F3262BB7B4AC2BA49,
 	Display_RelativeMouseAtImpl_mDC1A8A011C9B7FF7BC9A53A10FEDE8D817D68CDB,
 	Display__cctor_mC1A1851D26DD51ECF2C09DBB1147A7CF05EEEC9D,
 	DisplaysUpdatedDelegate__ctor_m976C17F642CEF8A7F95FA4C414B17BF0EC025197,
 	DisplaysUpdatedDelegate_Invoke_mBCC82165E169B27958A8FD4E5A90B83A108DAE89,
 	DisplaysUpdatedDelegate_BeginInvoke_m5DA06B0A901673F809EA597946702A73F9436BFF,
 	DisplaysUpdatedDelegate_EndInvoke_m470B70745AF2631D69A51A3883D774E9B49DD2E2,
+	DrivenRectTransformTracker_Add_m51059F302FBD574E93820E8116283D1608D1AB5A_AdjustorThunk,
+	DrivenRectTransformTracker_Clear_m328659F339A4FB519C9A208A685DDED106B6FC89_AdjustorThunk,
 	ArgumentCache__ctor_m9618D660E40F991782873643F0FDCACA32A63541,
 	ArgumentCache_get_unityObjectArgument_m89597514712FB91B443B9FB1A44D099F021DCFA5,
 	ArgumentCache_get_unityObjectArgumentAssemblyTypeName_mD54EA1424879A2E07B179AE93D374100259FF534,
@@ -19518,6 +22147,7 @@ extern const Il2CppMethodPointer g_MethodPointers[10192] =
 	BaseInvokableCall__ctor_m71AC21A8840CE45C2600FF784E8B0B556D7B2BA5,
 	BaseInvokableCall_AllowInvoke_m0B193EBF1EF138FC5354933974DD702D3D9FF091,
 	InvokableCall__ctor_m2F9F0CD09FCFFEBCBBA87EC75D9BA50058C5B873,
+	InvokableCall__ctor_m77F593E751D2119119A5F3FD39F8F5D3B653102B,
 	InvokableCall_add_Delegate_mCE91CE04CF7A8B962FF566B018C8C516351AD0F3,
 	InvokableCall_remove_Delegate_m0CFD9A25842A757309236C500089752BF544E3C7,
 	InvokableCall_Invoke_mDB8C26B441658DDA48AC3AF259F4A0EBCF673FD0,
@@ -19544,8 +22174,11 @@ extern const Il2CppMethodPointer g_MethodPointers[10192] =
 	UnityAction_BeginInvoke_m6819B1057D192033B17EB15C9E34305720F0401C,
 	UnityAction_EndInvoke_m9C465516D5977EF185DCEB6CA81D0B90EDAD7370,
 	UnityEvent__ctor_m2F8C02F28E289CA65598FF4FA8EAB84D955FF028,
+	UnityEvent_AddListener_m31973FDDC5BB0B2828AB6EF519EC4FD6563499C9,
 	UnityEvent_FindMethod_Impl_mC96F40A83BB4D1430E254DAE9B091E27E42E8796,
 	UnityEvent_GetDelegate_m8D277E2D713BB3605B3D46E5A3DB708B6A338EB0,
+	UnityEvent_GetDelegate_mDFBD636D71E24D75D0851959256A3B97BA842865,
+	UnityEvent_Invoke_mB2FA1C76256FE34D5E7F84ABE528AC61CE8A0325,
 	UnityEventBase__ctor_m57AF08DAFA9C1B4F4C8DA855116900BAE8DF9595,
 	UnityEventBase_UnityEngine_ISerializationCallbackReceiver_OnBeforeSerialize_m147F610873545A23E9005CCB35CA6A05887E7599,
 	UnityEventBase_UnityEngine_ISerializationCallbackReceiver_OnAfterDeserialize_m3A87E89948C5FF32BD5BA1BDD1A4D791738A141E,
@@ -19560,6 +22193,8 @@ extern const Il2CppMethodPointer g_MethodPointers[10192] =
 	UnityEventBase_GetValidMethodInfo_m4521621AB72C7265A2C0EC6911BE4DC42A99B6A5,
 	ExcludeFromObjectFactoryAttribute__ctor_mE0437C73993AD36DCB7A002D70AC988340742CD0,
 	ExcludeFromPresetAttribute__ctor_mB8BE49E17E4360DDB485784D219AE49847A85FB2,
+	ExecuteAlways__ctor_m6199E1FB2E787ABEE85C19153D3C90B815572092,
+	ExecuteInEditMode__ctor_m9A67409D4A11562F23F928655D9A3EFB7A69BB81,
 	UpdateFunction__ctor_mE9482A4124209C27A666B5D0080EEE63E81478AE,
 	UpdateFunction_Invoke_m947E91D565C20FCCD7681BBD18998152C70EF0A6,
 	UpdateFunction_BeginInvoke_m21EE5E68A5F0F9C8CE27D16BDCD77A593F6F48A7,
@@ -19615,8 +22250,22 @@ extern const Il2CppMethodPointer g_MethodPointers[10192] =
 	GUILayer_HitTest_mD44413399C4E2DE830CBF4BECBE42BA2AB8FE350,
 	GUILayer_HitTest_m8C36C21249CBDA2579E84608932F6EBF015D953D,
 	GUILayer_HitTest_Injected_m7CE3813363D0141DB2112C83C1E958189CBB6609,
+	GameObject__ctor_mBB454E679AD9CF0B84D3609A01E6A9753ACF4686,
 	GameObject__ctor_mA4DFA8F4471418C248E95B55070665EF344B4B2D,
+	GameObject__ctor_m20BE06980A232E1D64016957059A9DD834173F68,
+	GameObject_GetComponent_mECB756C7EB39F6BB79F8C065AB0013354763B151,
+	GameObject_GetComponentFastPath_m5B276335DD94F6B307E604272A26C15B997C3CD4,
+	GameObject_GetComponentInChildren_mBC5C12CDA1749A827D136DABBF10498B1096A086,
+	GameObject_GetComponentInParent_mA5BF9DFCA90C9003EB8F392CD64C45DFCB80F988,
+	GameObject_GetComponentsInternal_mAB759217A3AD0831ABD9387163126D391459E1B8,
+	GameObject_Internal_AddComponentWithType_m452B72618245B846503E5CA7DEA4662A77FB9896,
+	GameObject_AddComponent_m489C9D5426F2050795FA696CD478BB49AAE4BD70,
 	GameObject_get_transform_mA5C38857137F137CB96C69FAA624199EB1C2FB2C,
+	GameObject_get_layer_m0DE90D8A3D3AA80497A3A80FBEAC2D207C16B9C8,
+	GameObject_set_layer_mDAC8037FCFD0CE62DB66004C4342EA20CF604907,
+	GameObject_SetActive_m25A39F6D9FB68C51F13313F9804E85ACC937BC04,
+	GameObject_get_activeSelf_mFE1834886CAE59884AC2BE707A3B821A1DB61F44,
+	GameObject_get_activeInHierarchy_mDEE60F1B28281974BA9880EC448682F3DAABB1EF,
 	GameObject_get_tag_mA9DC75D3D591B5E7D1ADAD14EA66CC4186580275,
 	GameObject_SendMessage_mB9147E503F1F55C4F3BC2816C0BDA8C21EA22E95,
 	GameObject_Internal_CreateGameObject_m9DC9E92BD086A7ADD9ABCE858646A951FA77F437,
@@ -19628,17 +22277,34 @@ extern const Il2CppMethodPointer g_MethodPointers[10192] =
 	Gradient_Equals_m0A13AD7938F81F21CC380609A506A39B37CF2097,
 	Gradient_Equals_m7F23C7692189DDD94FC31758493D4C99C2F3FB1E,
 	Gradient_GetHashCode_m2596E6672ACDAD829961AB1FBD3EB649A908DE64,
-	Input_GetKeyInt_mCAE84934A2A069329005CB582E2B038FA5DDFF12,
+	Input_GetAxisRaw_m35430CD9260C960DFE19F809D5410BA0DBFDE0F7,
+	Input_GetButtonDown_mBCFF01DD979D2BE061A8F47082060258F2C4458B,
 	Input_GetMouseButton_mFA83B0C0BABD3113D1AAB38FBB953C91EA7FFA30,
 	Input_GetMouseButtonDown_mBC5947EA49ED797F0DB1830BFC13AF6514B765FD,
-	Input_GetKey_m54DC93F781FFEAB1DCDFAA3D15FA2FC01BF7667A,
+	Input_GetMouseButtonUp_m726EDCD35F8DECF774810AB1E9ED590B85DB10F1,
+	Input_GetTouch_m1ABE5E9866FD4C5FDFC5DD8FF4E7DCEDE2DD9313,
 	Input_get_mousePosition_mC8B181E5125330ECFB9F8C5D94AA8F4AD1ABD10C,
+	Input_get_mouseScrollDelta_mC314425F4261A9D7E8EA72705F7AF8CB110D5B94,
+	Input_get_imeCompositionMode_m358914AB46A723090EFC19382B6109FE4F4F8F75,
+	Input_set_imeCompositionMode_mC4C275EE8A2A8683145A4AD0E92987AA5E407C5E,
+	Input_get_compositionString_mAE7E520D248E55E8C99827380E1AB586C03C757E,
+	Input_get_compositionCursorPos_m1DFC4FC12CDE4988C9277065313478C9879C1FDF,
+	Input_set_compositionCursorPos_m2FBB434ABF1961EE12CD4CE79CF0C4C6B477BF66,
+	Input_get_mousePresent_m6C4F111FD2FF94D43CAF601582052EA6AB77BEF4,
+	Input_get_touchCount_m2A22A8E963E14F1221F768412663C8D11F806CD6,
+	Input_get_touchSupported_m503BA3C7F60A70AB01BC7A9152F4A142BA4E60C0,
+	Input_GetTouch_Injected_m9183BBE1F72252D2DC1E6CDCFC14F05DDC1832A4,
 	Input_get_mousePosition_Injected_m3545F7128BAF38244AFA318CB440FFAC6FAD750F,
+	Input_get_mouseScrollDelta_Injected_m98E2A81250CF1BEF26E015E91EE7E8CE8D122036,
+	Input_get_compositionCursorPos_Injected_mFDCB28875A4B97807978EC524EFEB6D0410B4AC0,
+	Input_set_compositionCursorPos_Injected_m9631D1E7F883BB461FE11EBC65C8DACB25B9F42F,
 	DefaultValueAttribute__ctor_m2E914CFCFD82ACAB447480971570E5763C42DAAD,
 	DefaultValueAttribute_get_Value_m1E1505D5F1838C28CA4C52DED4A20E81F81BFCC3,
 	DefaultValueAttribute_Equals_mD9073A5C537D4DBDFBD5E3616BC5A05B5D0C51B2,
 	DefaultValueAttribute_GetHashCode_m4782E2C5A005991FA7E705110A690DD5E0E52D50,
 	ExcludeFromDocsAttribute__ctor_m01F11706D334D5D31B0C59630DB1674ECFBFAF04,
+	LayerMask_op_Implicit_m2AFFC7F931005437E8F356C953F439829AF4CFA5,
+	LayerMask_op_Implicit_m3F256A7D96C66548F5B62C4621B9725301850300,
 	Logger__ctor_m447215F90AA8D1508924BFB1CD1E49AFCCE04FFE,
 	Logger_get_logHandler_m0C450B6FE86FA1B07422A1359CF278D1F5945CCD,
 	Logger_set_logHandler_m891099050CB8C36A01ECA861E4820441B7080C73,
@@ -19663,13 +22329,89 @@ extern const Il2CppMethodPointer g_MethodPointers[10192] =
 	Material_CreateWithShader_m41F159D25DC785C3BB43E6908057BB2BD1D2CB7F,
 	Material_CreateWithMaterial_mD3140BCB57EBB406D063C7A7B0B9D1A4C74DA3F2,
 	Material_CreateWithString_mCF4047522DD7D38087CF9AF121766E0D69B9BB55,
+	Material_get_mainTexture_mE85CF647728AD145D7E03A172EFD5930773E514E,
+	Material_HasProperty_m901DE6C516A0D2C986B849C7B44F679AE21B8927,
+	Material_HasProperty_m8611FACA6F9D9B2B5C3E92B6D93D2D514B443512,
+	Material_EnableKeyword_m7466758182CBBC40134C9048CDF682DF46F32FA9,
+	Material_DisableKeyword_m2ACBFC5D28ED46FF2CF5532F00D702FF62C02ED3,
+	Material_SetFloatImpl_mFD6022220F625E704EC4F27691F496166E590094,
+	Material_GetTextureImpl_m19D8CE6C5701AC4B69A6D5354E08240DF6C036D2,
+	Material_SetInt_m1FCBDBB985E6A299AE11C3D8AF29BB4D7C7DF278,
+	Material_GetTexture_mCD6B822EA19773B8D39368FF1A285E7B69043896,
+	Mathf_Sin_m5275643192EFB3BD27A722901C6A4228A0DB8BB6,
+	Mathf_Cos_mC5ECAE74D1FE9AF6F6EFF50AD3CD6BA1941B267A,
+	Mathf_Acos_mF3B88F0C8A5AE43F4C4A42676C8D3DE67B3EAF82,
 	Mathf_Sqrt_mF1FBD3142F5A3BCC5C35DFB922A14765BC0A8E2B,
 	Mathf_Abs_mD852D98E3D4846B45F57D0AD4A8C6E00EF272662,
+	Mathf_Min_mCF9BE0E9CAC9F18D207692BB2DAC7F3E1D4E1CB7,
+	Mathf_Min_m1A2CC204E361AE13C329B6535165179798D3313A,
 	Mathf_Max_m670AE0EC1B09ED1A56FF9606B0F954670319CB65,
+	Mathf_Max_mBDE4C6F1883EE3215CD7AE62550B2AC90592BC3F,
+	Mathf_Pow_mC1BFA8F6235567CBB31F3D9507A6275635A38B5F,
+	Mathf_Log_mD0CFD1242805BD697B5156AA46FBB43E7636A19B,
+	Mathf_Floor_mD447D35DE1D81DE09C2EFE21A75F0444E2AEF9E1,
+	Mathf_Round_mC8FAD403F9E68B0339CF65C8F63BFA3107DB3FC9,
+	Mathf_CeilToInt_m0230CCC7CC9266F18125D9425C38A25D1CA4275B,
+	Mathf_FloorToInt_m0C42B64571CE92A738AD7BB82388CE12FBE7457C,
+	Mathf_RoundToInt_m0EAD8BD38FCB72FA1D8A04E96337C820EC83F041,
+	Mathf_Sign_m6FA1D12786BEE0419D4B9426E5E4955F286BC8D3,
+	Mathf_Clamp_m033DD894F89E6DCCDAFC580091053059C86A4507,
+	Mathf_Clamp_mE1EA15D719BF2F632741D42DF96F0BC797A20389,
+	Mathf_Clamp01_m1E5F736941A7E6DC4DBCA88A1E38FE9FBFE0C42B,
+	Mathf_Lerp_m9A74C5A0C37D0CDF45EE66E7774D12A9B93B1364,
 	Mathf_Approximately_m91AF00403E0D2DEA1AAE68601AD218CFAD70DF7E,
+	Mathf_SmoothDamp_m00F6830F4979901CACDE66A7CEECD8AA467342C8,
+	Mathf_Repeat_m8459F4AAFF92DB770CC892BF71EE9438D9D0F779,
+	Mathf_InverseLerp_m7054CDF25056E9B27D2467F91C95D628508F1F31,
 	Mathf__cctor_m4855BF06F66120E2029CFA4F3E82FBDB197A86EC,
+	Matrix4x4__ctor_mC7C5A4F0791B2A3ADAFE1E6C491B7705B6492B12_AdjustorThunk,
+	Matrix4x4_GetHashCode_m6627C82FBE2092AE4711ABA909D0E2C3C182028F_AdjustorThunk,
+	Matrix4x4_Equals_m7FB9C1A249956C6CDE761838B92097C525596D31_AdjustorThunk,
+	Matrix4x4_Equals_mF8358F488D95A9C2E5A9F69F31EC7EA0F4640E51_AdjustorThunk,
+	Matrix4x4_GetColumn_m34D9081FB464BB7CF124C50BB5BE4C22E2DBFA9E_AdjustorThunk,
+	Matrix4x4_MultiplyPoint_mD5D082585C5B3564A5EFC90A3C5CAFFE47E45B65_AdjustorThunk,
+	Matrix4x4_MultiplyPoint3x4_m7C872FDCC9E3378E00A40977F641A45A24994E9A_AdjustorThunk,
+	Matrix4x4_ToString_m7E29D2447E2FC1EAB3D8565B7DCAFB9037C69E1D_AdjustorThunk,
+	Matrix4x4__cctor_mC5A7950045F0C8DBAD83A45D08812BEDBC6E159E,
 	Mesh__ctor_m3AEBC82AB71D4F9498F6E254174BEBA8372834B4,
 	Mesh_Internal_Create_mF1F8E9F726EAC9A087D49C81E2F1609E8266649E,
+	Mesh_GetIndicesImpl_m2118C6CA196093FD19BB05E5258C0DCE06FEAD30,
+	Mesh_SetIndicesImpl_mF0FAE821CA0269526BDA766E9A2DC12778A2CB55,
+	Mesh_PrintErrorCantAccessChannel_m2E8A25959739B006557A94F7E460E8BE0B3ABB19,
+	Mesh_HasChannel_mF94FB364044F2A0812AF6DDDC811318159D2D4AD,
+	Mesh_SetArrayForChannelImpl_mEF2432246258E82C90015832073A7B3BC77A31A2,
+	Mesh_GetAllocArrayFromChannelImpl_m965F3844FBD29C866754948D036A6BC6ECF89334,
+	Mesh_get_canAccess_m1E0020EA7961227FBC0D90D851A49BCF7EB1E194,
+	Mesh_get_subMeshCount_m6BE7CFB52CE84AEE45B4E5A704E865954397F52F,
+	Mesh_ClearImpl_mFFD3A4748AF067B75DBD646B4A64B3D9A2F3EE14,
+	Mesh_RecalculateBoundsImpl_m43DE3DEFC2DADC090DC6FD2C27F44D6DBB88CEF6,
+	Mesh_GetUVChannel_m15BB0A6CC8E32867621A78627CD5FF2CAEA163CC,
+	Mesh_DefaultDimensionForChannel_mF943AF434BB9F54DBB3B3DE65F7B816E617A89C9,
+	Mesh_SetSizedArrayForChannel_mCC8ABD25EDD3EF7237B8B8ADE4E649F95055EFEC,
+	Mesh_get_vertices_m7D07DC0F071C142B87F675B148FC0F7A243238B9,
+	Mesh_get_normals_m3CE4668899836CBD17C3F85EB24261CBCEB3EABB,
+	Mesh_get_tangents_mFF92BD7D6EBA8C7EB8340E1529B1CB98006F44DD,
+	Mesh_get_uv_m0EBA5CA4644C9D5F1B2125AF3FE3873EFC8A4616,
+	Mesh_get_uv2_m3E70D5DD7A5C6910A074A78296269EBF2CBAE97F,
+	Mesh_get_uv3_mC56484D8B69A65DA948C7F23B06ED490BCFBE8B0,
+	Mesh_get_uv4_m1C5734938A443D8004339E8D8DDDC33B3E0935F6,
+	Mesh_get_colors32_m24C6C6BC1A40B7F09FF390F304A96728A4C99246,
+	Mesh_SetVertices_m5F487FC255C9CAF4005B75CFE67A88C8C0E7BB06,
+	Mesh_SetNormals_m76D71A949B9288FA8ED17DDADC530365307B9797,
+	Mesh_SetTangents_m6EEAB861C9286B1DA4935B87A883045ADD3955E5,
+	Mesh_SetColors_m237E41213E82D4BB882ED96FD81A17D9366590CF,
+	Mesh_SetUVs_m0210150B0387289B823488D421BDF9CBF9769116,
+	Mesh_PrintErrorCantAccessIndices_mA45D3609288655A328AEB0F2F436403B1ECE5077,
+	Mesh_CheckCanAccessSubmesh_mF86EBD1C9EC3FE557880FA138510F7761585D227,
+	Mesh_CheckCanAccessSubmeshTriangles_m214B5F30F7461C620D03F10F6CF1CAF53DBEE509,
+	Mesh_CheckCanAccessSubmeshIndices_m81DF83B1676084AF0B70A36BC7621ADB08430722,
+	Mesh_GetIndices_m2FD8417547E7595F590CE55D381E0D13A8D72AA5,
+	Mesh_GetIndices_m4260DCF1026449C4E8C4C40229D12AF8CAB26EAF,
+	Mesh_SetTrianglesImpl_m8EDF09F91CF1F2FE8B6095E7C73685FA36ABCECD,
+	Mesh_SetTriangles_m6A43D705DE751C622CCF88EC31C4EF1B53578BE5,
+	Mesh_SetTriangles_m39FB983B90F36D724CC1C21BA7821C9697F86116,
+	Mesh_Clear_mB750E1DCAB658124AAD81A02B93DED7601047B60,
+	Mesh_RecalculateBounds_m1BF701FE2CEA4E8E1183FF878B812808ED1EBA49,
 	MeshFilter_DontStripMeshFilter_m7FBA33F8214DB646F74E00F7CEFFDF2D0018004C,
 	MeshRenderer_DontStripMeshRenderer_mC5359CA39BA768EBDB3C90D4FAE999F4EB1B6B24,
 	MonoBehaviour__ctor_mEAEC84B222C60319D593E456D769B3311DFCEF97,
@@ -19740,6 +22482,7 @@ extern const Il2CppMethodPointer g_MethodPointers[10192] =
 	MessageTypeSubscribers__ctor_mD26A2485EA3ECACFA2CB35D08A48256CE9DFE825,
 	MessageTypeSubscribers_get_MessageTypeId_mE7DD7E800436C92A325A1080AF60663AE1100D25,
 	MessageTypeSubscribers_set_MessageTypeId_m294A7B621AAF1984D886D2569CF1206E4F469115,
+	NoAllocHelpers_ExtractArrayFromList_mB4B8B76B4F160975C949FB3E15C1D497DBAE8EDC,
 	Object__ctor_m091EBAEBC7919B0391ABDAFB7389ADC12206525B,
 	Object_GetHashCode_mCF9141C6640C2989CD354118673711D5F3741984,
 	Object_Equals_m813F5A9FF65C9BC0D6907570C2A9913507D58F32,
@@ -19748,19 +22491,28 @@ extern const Il2CppMethodPointer g_MethodPointers[10192] =
 	Object_IsNativeObjectAlive_m683A8A1607CB2FF5E56EC09C5D150A8DA7D3FF08,
 	Object_GetCachedPtr_m8CCFA6D419ADFBA8F9EF83CB45DFD75C2704C4A0,
 	Object_get_name_mA2D400141CB3C991C87A2556429781DE961A83CE,
+	Object_set_name_m538711B144CDE30F929376BCF72D0DC8F85D0826,
 	Object_Instantiate_mAF9C2662167396DEE640598515B60BE41B9D5082,
 	Object_Destroy_m09F51D8BDECFD2E8C618498EF7377029B669030D,
 	Object_Destroy_m23B4562495BA35A74266D4372D45368F8C05109A,
+	Object_DestroyImmediate_mFCE7947857C832BCBB366FCCE50072ACAD9A4C51,
+	Object_DestroyImmediate_mF6F4415EF22249D6E650FAA40E403283F19B7446,
 	Object_set_hideFlags_mB0B45A19A5871EF407D7B09E0EB76003496BA4F0,
 	Object_CheckNullArgument_m8D42F516655D770DFEEAA13CF86A2612214AAA9B,
 	Object_ToString_m4EBF621C98D5BFA9C0522C27953BB45AB2430FE1,
 	Object_op_Equality_mBC2401774F3BE33E8CF6F0A8148E66C95D6CFF1C,
 	Object_op_Inequality_m31EF58E217E8F4BDD3E409DEF79E1AEE95874FC1,
+	Object_Internal_CloneSingle_m4231A0B9138AC40B76655B772F687CC7E6160C06,
 	Object_Internal_InstantiateSingle_mCC3EB0F918934D233D43DFDB457605C4B248738D,
 	Object_ToString_m7A4BBACD14901DD0181038A25BED62520D273EDC,
 	Object_GetName_m1691C0D50AEBC1C86229AEAC2FBC1EE2DC6B67AF,
+	Object_SetName_m2CBABC30BA2B93EFF6A39B3295A7AB85901E60E8,
+	Object_FindObjectFromInstanceID_m7594ED98F525AAE38FEC80052729ECAF3E821350,
 	Object__cctor_m14515D6A9B514D3A8590E2CAE4372A0956E8976C,
 	Object_Internal_InstantiateSingle_Injected_m04E25C97D5848B7AA54178A5448744A0DEB1B62E,
+	Plane__ctor_m6535EAD5E675627C2533962F1F7890CBFA2BA44A_AdjustorThunk,
+	Plane_Raycast_m04E61D7C78A5DA70F4F73F9805ABB54177B799A9_AdjustorThunk,
+	Plane_ToString_mF92ABB5136759C7DFBC26FD3957532B3C26F2099_AdjustorThunk,
 	Playable__ctor_m24C6ED455A921F585698BFFEC5CCED397205543E_AdjustorThunk,
 	Playable_get_Null_m1641F4B851ACAA6CBCC9BB400EC783EDEAF1A48D,
 	Playable_GetHandle_m952F17BACFC90BEACD3CB9880E65E69B3271108A_AdjustorThunk,
@@ -19792,7 +22544,11 @@ extern const Il2CppMethodPointer g_MethodPointers[10192] =
 	PlayableHandle_Equals_mBCBD135BA1DBB6B5F8884A21EE55FDD5EADB555C_AdjustorThunk,
 	PlayableHandle_GetHashCode_mFEF967B1397A1DC2EE05FC8DBB9C5E13161E3C45_AdjustorThunk,
 	PlayableHandle_CompareVersion_m24BEA91E99FF5FD3472B1A71CB78296D99F808A9,
+	PlayableHandle_IsValid_mDA0A998EA6E2442C5F3B6CDFAF07EBA9A6873059_AdjustorThunk,
+	PlayableHandle_GetPlayableType_m962BE384C093FF07EAF156DA373806C2D6EF1AD1_AdjustorThunk,
 	PlayableHandle__cctor_m6FA486FD9ECB91B10F04E59EFE993EC7663B6EA3,
+	PlayableHandle_IsValid_Injected_mCCEEB80CD0855FD683299F6DBD4F9BA864C58C31,
+	PlayableHandle_GetPlayableType_Injected_m65C3EB2DEC74C0A02707B6A61D25B3BFEC91DB66,
 	PlayableOutput__ctor_m881EC9E4BAD358971373EE1D6BF9C37DDB7A4943_AdjustorThunk,
 	PlayableOutput_GetHandle_m079ADC0139E95AA914CD7502F27EC79BB1A876F3_AdjustorThunk,
 	PlayableOutput_Equals_m458689DD056559A7460CCE496BF6BEC45EB47C5B_AdjustorThunk,
@@ -19827,6 +22583,7 @@ extern const Il2CppMethodPointer g_MethodPointers[10192] =
 	MemoryProfiler_WriteStringToByteArray_mCAC0D283F16F612E4796C539994FDB487A048332,
 	MemoryProfiler_FinalizeSnapshot_m48FD62744888BBF0A9B13826622041226C8B9AD7,
 	MetaData__ctor_m1852CAF4EDFB43F1ABCE37819D9963CEE959A620,
+	PropertyAttribute__ctor_m7F5C473F39D5601486C1127DA0D52F2DC293FC35,
 	PropertyName__ctor_mE0853FF14F978FFAF3EEE0B98DA973E17C962B37_AdjustorThunk,
 	PropertyName__ctor_mF8DCC97F6EC552F9313CE85ACC9D3357F45FA16D_AdjustorThunk,
 	PropertyName__ctor_m5D82851FB4D2B749CCFB4FF48024EC5EEC5ED04E_AdjustorThunk,
@@ -19844,6 +22601,11 @@ extern const Il2CppMethodPointer g_MethodPointers[10192] =
 	Quaternion_Inverse_mC3A78571A826F05CE179637E675BD25F8B203E0C,
 	Quaternion_Internal_FromEulerRad_mC6AB58E2F3C37DFE2089A38D578E862B3430E755,
 	Quaternion_op_Multiply_mDB9F738AA8160E3D85549F4FEDA23BC658B5A790,
+	Quaternion_op_Multiply_mD5999DE317D808808B72E58E7A978C4C0995879C,
+	Quaternion_IsEqualUsingDot_mA5E0CF75CBB488E3EC55BE9397FC3C92439A0BEF,
+	Quaternion_op_Equality_m0DBCE8FE48EEF2D7C79741E498BFFB984DF4956F,
+	Quaternion_op_Inequality_mDA6D2E63A498C8A9AB9A11DD7EA3B96567390C70,
+	Quaternion_Dot_m0C931CC8127C5461E5B8A857BDE2CE09297E468B,
 	Quaternion_Euler_m537DD6CEAE0AD4274D8A84414C24C30730427D05,
 	Quaternion_GetHashCode_m43BDCF3A72E31FA4063C1DEB770890FF47033458_AdjustorThunk,
 	Quaternion_Equals_m099618C36B86DC63B2E7C89673C8566B18E5996E_AdjustorThunk,
@@ -19854,24 +22616,92 @@ extern const Il2CppMethodPointer g_MethodPointers[10192] =
 	Quaternion_Internal_FromEulerRad_Injected_m2197C7F75B2DB8B99C1947CD7C92714FE8D0099D,
 	Random_Range_mD0C8F37FF3CAB1D87AAA6C45130BD59626BD6780,
 	Random_RandomRangeInt_m4D223ACEC78BCC435D90A7D3696775DE973D324E,
+	RangeAttribute__ctor_mB9CC43849A074C59DD99F154215A755131D47D89,
+	RangeInt__ctor_mACFE54DF73DE3F62053F851423525DB5AC1B100E_AdjustorThunk,
+	RangeInt_get_end_m7A5182161CC5454E1C200E0173668572BA7FAAFD_AdjustorThunk,
 	Ray__ctor_m695D219349B8AA4C82F96C55A27D384C07736F6B_AdjustorThunk,
 	Ray_get_origin_m3773CA7B1E2F26F6F1447652B485D86C0BEC5187_AdjustorThunk,
 	Ray_get_direction_m9E6468CD87844B437FC4B93491E63D388322F76E_AdjustorThunk,
+	Ray_GetPoint_mE8830D3BA68A184AD70514428B75F5664105ED08_AdjustorThunk,
 	Ray_ToString_m73B5291E29C9C691773B44590C467A0D4FBE0EC1_AdjustorThunk,
+	Rect__ctor_m50B92C75005C9C5A0D05E6E0EBB43AFAF7C66280_AdjustorThunk,
+	Rect_get_zero_m4CF0F9AD904132829A6EFCA85A1BF52794E7E56B,
 	Rect_get_x_mC51A461F546D14832EB96B11A7198DADDE2597B7_AdjustorThunk,
+	Rect_set_x_m49EFE25263C03A48D52499C3E9C097298E0EA3A6_AdjustorThunk,
 	Rect_get_y_m53E3E4F62D9840FBEA751A66293038F1F5D1D45C_AdjustorThunk,
+	Rect_set_y_mCFDB9BD77334EF9CD896F64BE63C755777D7CCD5_AdjustorThunk,
+	Rect_get_position_m54A2ACD2F97988561D6C83FCEF7D082BC5226D4C_AdjustorThunk,
+	Rect_get_center_mA6E659EAAACC32132022AB199793BF641B3068CB_AdjustorThunk,
+	Rect_get_min_m17345668569CF57C5F1D2B2DADD05DD4220A5950_AdjustorThunk,
+	Rect_get_max_m3BFB033D741F205FB04EF163A9D5785E7E020756_AdjustorThunk,
 	Rect_get_width_m54FF69FC2C086E2DC349ED091FD0D6576BFB1484_AdjustorThunk,
+	Rect_set_width_mC81EF602AC91E0C615C12FCE060254A461A152B8_AdjustorThunk,
 	Rect_get_height_m088C36990E0A255C5D7DCE36575DCE23ABB364B5_AdjustorThunk,
+	Rect_set_height_mF4CB5A97D4706696F1C9EA31A5D8C466E48050D6_AdjustorThunk,
+	Rect_get_size_m731642B8F03F6CE372A2C9E2E4A925450630606C_AdjustorThunk,
 	Rect_get_xMin_mFDFA74F66595FD2B8CE360183D1A92B575F0A76E_AdjustorThunk,
+	Rect_set_xMin_mD8F9BF59F4F33F9C3AB2FEFF32D8C16756B51E34_AdjustorThunk,
 	Rect_get_yMin_m31EDC3262BE39D2F6464B15397F882237E6158C3_AdjustorThunk,
+	Rect_set_yMin_m58C137C81F3D098CF81498964E1B5987882883A7_AdjustorThunk,
 	Rect_get_xMax_mA16D7C3C2F30F8608719073ED79028C11CE90983_AdjustorThunk,
+	Rect_set_xMax_m1775041FCD5CA22C77D75CC780D158CD2B31CEAF_AdjustorThunk,
 	Rect_get_yMax_m8AA5E92C322AF3FF571330F00579DA864F33341B_AdjustorThunk,
+	Rect_set_yMax_m4F1C5632CD4836853A22E979C810C279FBB20B95_AdjustorThunk,
 	Rect_Contains_m5072228CE6251E7C754F227BA330F9ADA95C1495_AdjustorThunk,
+	Rect_OrderMinMax_m1BE37D433FE6B7FB0FB73652E166A4FB887214CD,
+	Rect_Overlaps_m2FE484659899E54C13772AB7D9E202239A637559_AdjustorThunk,
+	Rect_Overlaps_m4FFECCEAB3FBF23ED5A51B2E26220F035B942B4B_AdjustorThunk,
+	Rect_op_Inequality_mAF9DC03779A7C3E1B430D7FFA797F2C4CEAD1FC7,
+	Rect_op_Equality_mFBE3505CEDD6B73F66276E782C1B02E0E5633563,
 	Rect_GetHashCode_mA23F5D7C299F7E05A0390DF2FA663F5A003799C6_AdjustorThunk,
 	Rect_Equals_m76E3B7E2E5CC43299C4BF4CB2EA9EF6E989E23E3_AdjustorThunk,
 	Rect_Equals_mC8430F80283016D0783FB6C4E7461BEED4B55C82_AdjustorThunk,
 	Rect_ToString_m045E7857658F27052323E301FBA3867AD13A6FE5_AdjustorThunk,
+	RectOffset__ctor_m4A29807F411591FC06BE9367167B8F417EF73828,
+	RectOffset__ctor_m23620FE61AAF476219462230C6839B86736B80BA,
+	RectOffset_InternalCreate_m6638B085A0DA1CB1DA37B7C91CAC98DCF2CF7A16,
+	RectOffset_InternalDestroy_m4FAB64D6AECF15082E19BDC4F22913152D5C6FA1,
+	RectOffset_get_left_mA86EC00866C1940134873E3A1565A1F700DE67AD,
+	RectOffset_get_right_m9B05958C3C1B31F1FAB8675834A492C7208F6C96,
+	RectOffset_get_top_mBA813D4147BFBC079933054018437F411B6B41E1,
+	RectOffset_get_bottom_mE5162CADD266B59539E3EE1967EE9A74705E5632,
+	RectOffset_get_horizontal_m9274B965D5D388F6F750D127B3E57F70DF0D89C1,
+	RectOffset_get_vertical_m89ED337C8D303C8994B2B056C05368E4286CFC5E,
+	RectOffset_Finalize_m69453D37706F46DD3A2A6F39A018D371A5E7072C,
+	RectOffset_ToString_m6852E54822C1FACE624F3306DD9DC71628E91F93,
+	RectOffset_Destroy_mE1A6BDB23EC0B1A51AD5365CEF0055F7856AA533,
+	RectTransform_add_reapplyDrivenProperties_mDA1F055B02E43F9041D4198D446D89E00381851E,
+	RectTransform_remove_reapplyDrivenProperties_m65A8DB93E1A247A5C8CD880906FF03FEA89E7CEB,
+	RectTransform_get_rect_mE5F283FCB99A66403AC1F0607CA49C156D73A15E,
+	RectTransform_get_anchorMin_mB62D77CAC5A2A086320638AE7DF08135B7028744,
+	RectTransform_set_anchorMin_mE965F5B0902C2554635010A5752728414A57020A,
+	RectTransform_get_anchorMax_m1E51C211FBB32326C884375C9F1E8E8221E5C086,
+	RectTransform_set_anchorMax_m55EEF00D9E42FE542B5346D7CEDAF9248736F7D3,
+	RectTransform_get_anchoredPosition_mCB2171DBADBC572F354CCFE3ACA19F9506F97907,
+	RectTransform_set_anchoredPosition_m4DD45DB1A97734A1F3A81E5F259638ECAF35962F,
+	RectTransform_get_sizeDelta_mDA0A3E73679143B1B52CE2F9A417F90CB9F3DAFF,
+	RectTransform_set_sizeDelta_m7729BA56325BA667F0F7D60D642124F7909F1302,
+	RectTransform_get_pivot_mA5BEEE2069ACA7C0C717530EED3E7D811D46C463,
+	RectTransform_set_pivot_mB791A383B3C870B9CBD7BC51B2C95711C88E9DCF,
+	RectTransform_set_offsetMin_m7455ED64FF16C597E648E022BA768CFDCF4531AC,
+	RectTransform_set_offsetMax_mD55D44AD4740C79B5C2C83C60B0C38BF1090501C,
+	RectTransform_GetLocalCorners_m8761EA5FFE1F36041809D10D8AD7BC40CF06A520,
+	RectTransform_GetWorldCorners_m073AA4D13C51C5654A5983EE3FE7E2E60F7761B6,
+	RectTransform_SetInsetAndSizeFromParentEdge_m4ED849AA88D194A7AA6B1021DF119B926F322146,
+	RectTransform_SetSizeWithCurrentAnchors_m6F93CD5B798E4A53F2085862EA1B4021AEAA6745,
 	RectTransform_SendReapplyDrivenProperties_m231712A8CDDCA340752CB72690FE808111286653,
+	RectTransform_GetParentSize_mFD24CC863A4D7DFBFFE23C982E9A11E9B010D25D,
+	RectTransform_get_rect_Injected_m94E98A7B55F470FD170EBDA2D47E44CF919CD89F,
+	RectTransform_get_anchorMin_Injected_m11D468B602FFF89A8CC25685C71ACAA36609EF94,
+	RectTransform_set_anchorMin_Injected_m8BACA1B777D070E5FF42D1D8B1D7A52FFCD59E40,
+	RectTransform_get_anchorMax_Injected_m61CE870627E5CB0EFAD38D5F207BC36879378DDD,
+	RectTransform_set_anchorMax_Injected_m6BC717A6F528E130AD92994FB9A3614195FBFFB2,
+	RectTransform_get_anchoredPosition_Injected_mCCBAEBA5DD529E03D42194FDE9C2AD1FBA8194E8,
+	RectTransform_set_anchoredPosition_Injected_mCAEE3D22ADA5AF1CB4E37813EB68BF554220DAEF,
+	RectTransform_get_sizeDelta_Injected_m225C77C72E97B59C07693E339E0132E9547F8982,
+	RectTransform_set_sizeDelta_Injected_mD2B6AE8C7BB4DE09F1C62B4A853E592EEF9E8399,
+	RectTransform_get_pivot_Injected_m23095C3331BE90EB3EEFFDAE0DAD791E79485F7F,
+	RectTransform_set_pivot_Injected_m2914C16D5516DE065A932CB43B61C6EEA3C5D3D3,
 	ReapplyDrivenProperties__ctor_m0633C1B8E1B058DF2C3648C96D3E4DC006A76CA7,
 	ReapplyDrivenProperties_Invoke_m37F24671E6F3C60B3D0C7E0CE234B8E125D5928A,
 	ReapplyDrivenProperties_BeginInvoke_m5C352648167A36402E86BEDDCAE8FA4784C03604,
@@ -19905,9 +22735,12 @@ extern const Il2CppMethodPointer g_MethodPointers[10192] =
 	RenderTextureDescriptor_get_volumeDepth_mBC82F4621E4158E3D2F2457487D1C220AA782AC6_AdjustorThunk,
 	RenderTextureDescriptor_get_depthBufferBits_m51E82C47A0CA0BD8B20F90D43169C956C4F24996_AdjustorThunk,
 	RenderTextureDescriptor__cctor_mA5675E6684E1E8C26E848D2390FB2ABE8E3C11FD,
+	Renderer_get_sortingLayerID_m2E204E68869EDA3176C334AE1C62219F380A5D85,
+	Renderer_get_sortingOrder_m33DD50ED293AA672FDAD862B4A4865666B5FEBAF,
 	RequireComponent__ctor_m27819B55F8BD1517378CEFECA00FB183A13D9397,
 	RequireComponent__ctor_m2833BC8FBE2C72EE6F0CA08C4617BF84CB7D5BE6,
 	Resolution_ToString_m42289CE0FC4ED41A9DC62B398F46F7954BC52F04_AdjustorThunk,
+	Resources_GetBuiltinResource_m73DDAC485E1E06C925628AA7285AC63D0797BD0A,
 	RuntimeInitializeOnLoadMethodAttribute__ctor_mB64D0D2B5788BC105D3640A22A70FCD5183CB413,
 	RuntimeInitializeOnLoadMethodAttribute_set_loadType_m99C91FFBB561C344A90B86F6AF9ED8642CB87532,
 	LoadSceneParameters__ctor_m2E00BEC64DCC48351831B7BE9088D9B6AF62102A_AdjustorThunk,
@@ -19926,11 +22759,17 @@ extern const Il2CppMethodPointer g_MethodPointers[10192] =
 	SceneManager_LoadSceneAsyncNameIndexInternal_Injected_mD19FD493D2C36D33EE8E8A997467DB05C10CE6D1,
 	Screen_get_width_m8ECCEF7FF17395D1237BC0193D7A6640A3FEEAD3,
 	Screen_get_height_mF5B64EBC4CDE0EAAA5713C1452ED2CE475F25150,
+	Screen_get_dpi_m92A755DE9E23ABA717B5594F4F52AFB0FBEAC1D3,
 	ScriptableObject__ctor_m6E2B3821A4A361556FC12E9B1C71E1D5DC002C5B,
 	ScriptableObject_CreateInstance_mDC77B7257A5E276CB272D3475B9B473B23A7128D,
 	ScriptableObject_CreateScriptableObject_m0DEEBEC415354F586C010E7863AEA64D2F628D0B,
 	ScriptableObject_CreateScriptableObjectInstanceFromType_mD6C4C28F14371B87C376B4AD30F95FC24963E696,
+	MovedFromAttribute__ctor_mF87685F9D527910B31D3EF58F0EAA297E1944B42,
+	MovedFromAttribute__ctor_mDA989E5C278F39B0045F3BCA5153BB2A40BAD52A,
+	MovedFromAttribute_set_Namespace_m4A1CFA5322A807FBFA70CE7A209DF7E7F3093089,
+	MovedFromAttribute_set_IsInDifferentAssembly_m6A7A22FAD0547328CABA2D949D1E61E0D2822E0D,
 	PreserveAttribute__ctor_mD842EE86496947B39FE0FBC67393CE4401AC53AA,
+	SelectionBaseAttribute__ctor_mD7E83E67AFD9920E70551A353A33CC94D0584E8E,
 	SendMouseEvents_SetMouseMoved_m860C81AB05FE646EB58219CE6AF1C5AE1D31958F,
 	SendMouseEvents_HitTestLegacyGUI_mF845548CB3F7DD7C32AEA6AEB9E4EAD9F1A01CF8,
 	SendMouseEvents_DoSendMouseEvents_m95F30F16C9E28757678B2A6CBB09B4929F1EA72C,
@@ -19943,18 +22782,56 @@ extern const Il2CppMethodPointer g_MethodPointers[10192] =
 	SerializeField__ctor_mEE7F6BB7A9643562D8CEF189848925B74F87DA27,
 	SetupCoroutine_InvokeMoveNext_m9106BA4E8AE0E794B17F184F1021A53F1D071F31,
 	SetupCoroutine_InvokeMember_m0F2AD1D817B8E221C0DCAB9A81DA8359B20A8EFB,
+	Shader_PropertyToID_m831E5B48743620DB9E3E3DD15A8DEA483981DD45,
+	SortingLayer_GetLayerValueFromID_m564F9C83200E5EC3E9578A75854CB943CE5546F8,
+	SpaceAttribute__ctor_m645A0DE9B507F2AFD8C67853D788F5F419D547C7,
+	SpaceAttribute__ctor_mA70DC7F5FDC5474223B45E0F71A9003BBED1EFD0,
 	Sprite__ctor_m8559FBC54BD7CDA181B190797CC8AC6FB1310F9E,
+	Sprite_GetPackingMode_mF0507D88752CDA45A9283445067070092E524317,
+	Sprite_GetPacked_mBDE07283B07E7FB8892D309C5EDC81584C849BCC,
+	Sprite_GetTextureRect_mE506ABF33181E32E82B75479EE4A0910350B1BF9,
+	Sprite_GetInnerUVs_m273E051E7DF38ED3D6077781D75A1C1019CABA25,
+	Sprite_GetOuterUVs_mD78E47470B4D8AD231F194E256136B0094ECEBC5,
+	Sprite_GetPadding_m5781452D40FAE3B7D0CE78BF8808637FBFE78105,
+	Sprite_get_bounds_mD440465B889CCD2D80D118F9174FD5EAB19AE874,
+	Sprite_get_rect_mF1D59ED35D077D9B5075E2114605FDEB728D3AFF,
+	Sprite_get_border_m940E803CAD380B3B1B88371D7A4E74DF9A48604F,
+	Sprite_get_texture_mA1FF8462BBB398DC8B3F0F92B2AB41BDA6AF69A5,
+	Sprite_get_pixelsPerUnit_m54E3B43BD3D255D18CAE3DC8D963A81846983030,
+	Sprite_get_associatedAlphaSplitTexture_m2EF38CF62616FBBBBAE7876ECBCC596DB3F42156,
+	Sprite_get_pivot_m8E3D24C208E01EC8464B0E63FBF3FB9429E4C1D9,
+	Sprite_get_packed_m501A9E7D2C44867665FB579FD1A8C5D397C872C3,
+	Sprite_get_packingMode_m1B5AA0F5476DAEADFF14F65E99944B54940D869F,
+	Sprite_get_textureRect_m8CDA38796589CB967909F78076E7138907814DCD,
+	Sprite_get_vertices_mD858385A07239A56691D1559728B1B5765C32722,
+	Sprite_get_triangles_m3B0A097930B40C800E0591E5B095D118D2A33D2E,
+	Sprite_get_uv_mBD484CDCD2DF54AAE452ADBA927806193CB0FE84,
+	Sprite_GetTextureRect_Injected_m3D0143FD7E689267FAE3164F7C149DB5FF3384C2,
+	Sprite_GetInnerUVs_Injected_m19AF3A32647EE2153374B4B58CB248A5E3715F6B,
+	Sprite_GetOuterUVs_Injected_m57E56A2D7686D47E6948511F102AF8135E98B2B0,
+	Sprite_GetPadding_Injected_m843873F288F8CBC4BDDF1BBE20211405039ABBDC,
+	Sprite_get_bounds_Injected_m6422C2DBFD84A7B7F921DCA14BDFF2157738194B,
+	Sprite_get_rect_Injected_mABF4FCC2AEDD9EE874797E35EDEFF023A52F5830,
+	Sprite_get_border_Injected_mA56DD9A38B61783341DF35C808FBFE93A1BD4BB6,
+	Sprite_get_pivot_Injected_m526201DCD812D7AB10AACE35E4195F7E53B633EC,
+	DataUtility_GetInnerUV_m19FC4FF27A6733C9595B63F265EFBEC3BC183732,
+	DataUtility_GetOuterUV_mB7DEA861925EECF861EEB643145C54E8BF449213,
+	DataUtility_GetPadding_mE967167C8AB44F752F7C3A7B9D0A2789F5BD7034,
+	DataUtility_GetMinSize_m8031F50000ACDDD00E1CE4C765FA4B0A2E9255AD,
 	StackTraceUtility_SetProjectFolder_m05FBBB2FF161F2F9F8551EB67D44B50F7CC98E21,
 	StackTraceUtility_ExtractStackTrace_mEDFB4ECA329B87BC7DF2AA3EF7F9A31DAC052DC0,
 	StackTraceUtility_ExtractStringFromExceptionInternal_m1FB3D6414E31C313AC633A24653DA4B1FB59C975,
 	StackTraceUtility_ExtractFormattedStackTrace_m02A2ACEEF753617FAAA08B4EA840A49263901660,
 	StackTraceUtility__cctor_mDDEE2A2B6EBEDB75E0C28C81AFEDB1E9C372A165,
+	SystemInfo_get_operatingSystemFamily_mA35FE1FF2DD6240B2880DC5F642D4A0CC2B58D8D,
 	SystemInfo_IsValidEnumValue_m112F964C57B2311EA910CCA5CE0FFABFFF906740,
 	SystemInfo_SupportsRenderTextureFormat_m74D259714A97501D28951CA48298D9F0AE3B5907,
 	SystemInfo_SupportsTextureFormat_m1FCBD02367A45D11CAA6503715F3AAE24CA98B79,
+	SystemInfo_GetOperatingSystemFamily_mD20DAFF3A6E6649299A3BCFC845E7EB41BFA1D93,
 	SystemInfo_HasRenderTextureNative_mF35AF7764E483A7FA75DBC06ED64A8588509C468,
 	SystemInfo_SupportsTextureFormatNative_mD028594492646D7AB78A4C2F51CA06F63E665210,
 	SystemInfo_IsFormatSupported_m6941B7C4566DEE1EFFD7F6DCB7BFA701ECF9C1D6,
+	TextAreaAttribute__ctor_m6134ACE5D232B16A9433AA1F47081FAA9BAC1BA1,
 	Texture__ctor_m19850F4654F76731DD82B99217AD5A2EB6974C6C,
 	Texture_GetDataWidth_m862817D573E6B1BAE31E9412DB1F1C9B3A15B21D,
 	Texture_GetDataHeight_m3E5739F25B967D6AF703541F236F0B1F3F8F939E,
@@ -19962,50 +22839,120 @@ extern const Il2CppMethodPointer g_MethodPointers[10192] =
 	Texture_set_width_m9E42C8B8ED703644B85F54D8DCFB51BF954F56DA,
 	Texture_get_height_m3A004CD1FA238B3D0B32FE7030634B9038EC4AA0,
 	Texture_set_height_m601E103C6E803353701370B161F992A5B0C89AB6,
+	Texture_get_isReadable_mFB3D8E8799AC5EFD9E1AB68386DA16F3607631BD,
+	Texture_get_wrapMode_mC21054C7BC6E958937B7459DAF1D17654284B07A,
+	Texture_get_texelSize_m89BA9E4CF5276F4FDBAAD6B497809F3E6DB1E30C,
 	Texture_ValidateFormat_m12332BF76D9B5BBFFCE74D855928AEA01984DF6C,
 	Texture_ValidateFormat_m23ED49E24864EE9D1C4EF775002A91EE049561B1,
 	Texture_ValidateFormat_mA62E75B693BFABECB7CB732C165139B8492DE0ED,
+	Texture_CreateNonReadableException_m66E69BE853119A5A9FE2C27EA788B62BF7CFE34D,
+	Texture_get_texelSize_Injected_m812BEA61C30039FF16BE6A2E174C81DCB40000DE,
 	Texture2D__ctor_m185B87D9FE6E39A890C667FCAA8A15A0D93AFCA6,
 	Texture2D__ctor_m0C86A87871AA8075791EF98499D34DA95ACB0E35,
 	Texture2D_get_format_mF0EE5CEB9F84280D4E722B71546BBBA577101E9F,
+	Texture2D_get_whiteTexture_mF447523DE8957109355641ECE0DD3D3C8D2F6C41,
 	Texture2D_Internal_CreateImpl_mD3BC6187168CEDAFAC59DFA2EA1DCE102071C548,
 	Texture2D_Internal_Create_m8CD51387F8BEF8ACCBC2BACA532EE7C6DC7F0E10,
+	Texture2D_get_isReadable_mCF446A169E1D8BF244235F4E9B35DDC4F5E696AD,
+	Texture2D_GetPixelBilinearImpl_m950AB40E4151F10B6AA6C5759903BA07348114FB,
 	Texture2D_GetRawTextureData_m387AAB1686E27DA77F4065A2111DF18934AFB364,
+	Texture2D_GetPixelBilinear_m3E0E9A22A0989E99A7295BC6FE6999728F290A78,
+	Texture2D_GetPixelBilinearImpl_Injected_m120BD9810D176C39E874FFDAF53AD3AC3B6ADF85,
 	Texture2DArray__ctor_mD92521FF6DA05FF47471B741DDC7E4D5B3C3F4E2,
 	Texture2DArray__ctor_mEDE73B65A89EACA4B487FFBA92B155ED5B09970F,
 	Texture2DArray__ctor_mE0F6B7F60470C479258E1CC295456BCA103E66BF,
+	Texture2DArray_get_isReadable_mB2E454ED94BB334E77B42E6CD9DABC0B1D679C1A,
 	Texture2DArray_Internal_CreateImpl_m11961106A999012827B209B1A32CEDA633F59E8B,
 	Texture2DArray_Internal_Create_m01110342339A90ABB2DB4ED1E79C84CBE1DD794D,
 	Texture3D__ctor_m080D4201C72C73ECB718F44491858309CDCCBF40,
 	Texture3D__ctor_m7086160504490544C327FF1C7823830B44441466,
+	Texture3D_get_isReadable_m2793D34A645AA2A88B903D7C0CBC05BC180A489F,
 	Texture3D_Internal_CreateImpl_mFEE8F9464580C55553DFB6F051FE793DD040B206,
 	Texture3D_Internal_Create_mC9DE34B29A25742A7443EF94E1233587D2311212,
+	Time_get_deltaTime_m16F98FC9BA931581236008C288E3B25CBCB7C81E,
+	Time_get_unscaledTime_m57F78B855097C5BA632CF9BE60667A9DEBCAA472,
+	Time_get_unscaledDeltaTime_mA0AE7A144C88AE8AABB42DF17B0F3F0714BA06B2,
+	Time_get_fixedDeltaTime_m76C241EDB6F824713AF57DCECD5765871770FA4C,
+	Time_get_realtimeSinceStartup_mCA1086EC9DFCF135F77BC46D3B7127711EA3DE03,
+	TooltipAttribute__ctor_m13242D6EEE484B1CCA7B3A8FA720C5BCC44AF5DF,
+	Touch_get_fingerId_mB67BC98260E26816F875277BE9BC2A5037AF62A7_AdjustorThunk,
+	Touch_get_position_mC0913727A83103C5E2B56A5D76AB8F911A79D1E9_AdjustorThunk,
+	Touch_get_phase_m667014ED67F37A6EB459FB904D2041E270995419_AdjustorThunk,
+	Touch_get_type_m24677B3E265C31B31BF4C55CF874272D28EB0AEC_AdjustorThunk,
+	TouchScreenKeyboard__ctor_mDF71D45DC0F867825BEB1CDF728927FBB0E07F86,
+	TouchScreenKeyboard_Internal_Destroy_m6CD4E2343AB4FE54BC23DCFE62A50180CB3634E0,
+	TouchScreenKeyboard_Destroy_m916AE9DA740DBD435A5EDD93C6BC55CCEC8310C3,
+	TouchScreenKeyboard_Finalize_m684570CC561058F48B51F7E21A144299FBCE4C76,
+	TouchScreenKeyboard_TouchScreenKeyboard_InternalConstructorHelper_mD608B3B2A2159D17A8DF7961FA4EB1694A416973,
+	TouchScreenKeyboard_get_isSupported_m9163BAF0764DCDD9CB87E75A296D820D629D31CA,
+	TouchScreenKeyboard_Open_mF795EEBFEF7DF5E5418CF2BACA02D1C62291B93A,
+	TouchScreenKeyboard_get_text_mC025B2F295D315E1A18E7AA54B013A8072A8FEB0,
+	TouchScreenKeyboard_set_text_mF72A794EEC3FC19A9701B61A70BCF392D53B0D38,
+	TouchScreenKeyboard_set_hideInput_mA9729B01B360BF98153F40B96DDED39534B94840,
+	TouchScreenKeyboard_get_active_m35A2928E54273BF16CB19D11665989D894D5C79D,
+	TouchScreenKeyboard_set_active_m8D5FDCFA997C5EAD7896F7EB456165498727792D,
+	TouchScreenKeyboard_get_status_m17CF606283E9BAF02D76ADC813F63F036FAE33F2,
+	TouchScreenKeyboard_set_characterLimit_m97F392EB376881A77F5210CFA6736F0A49F5D57B,
+	TouchScreenKeyboard_get_canGetSelection_m8EEC32EA25638ACB54F698EA72450B51BEC9A362,
+	TouchScreenKeyboard_get_canSetSelection_m3C9574749CA28A6677C77B8FBE6292B80DF88A10,
+	TouchScreenKeyboard_get_selection_m9E2AB5FF388968D946B15A3ECDAE1C3C97115AAD,
+	TouchScreenKeyboard_set_selection_m27C5DE6B9DBBBFE2CCA68FA80A600D94337215C7,
+	TouchScreenKeyboard_GetSelection_mED761F9161A43CC8E507EA27DB1BD11127C6C896,
+	TouchScreenKeyboard_SetSelection_mB728B6A7B07AC33987FB30F7950B3D31E3BA5FBF,
+	TrackedReference_op_Equality_m6176AA0B99576B1734E9A9D7DDA0A27ECACBAA96,
+	TrackedReference_Equals_mB1E157BE74CB5240DA6C4D3A38047A015B067C20,
+	TrackedReference_GetHashCode_mFA57A6A43AAB04ACB6FFB4038646B4BCC56FA1D6,
 	Transform__ctor_mE8E10A06C8922623BAC6053550D19B2E297C2F35,
 	Transform_get_position_mF54C3A064F7C8E24F1C56EE128728B2E4485E294,
 	Transform_set_position_mDA89E4893F14ECA5CBEEE7FB80A5BF7C1B8EA6DC,
+	Transform_get_localPosition_m812D43318E05BDCB78310EB7308785A13D85EFD8,
+	Transform_set_localPosition_m275F5550DD939F83AFEB5E8D681131172E2E1728,
+	Transform_get_forward_m0BE1E88B86049ADA39391C3ACED2314A624BC67F,
 	Transform_get_rotation_m3AB90A67403249AECCA5E02BC70FCE8C90FE9FB9,
 	Transform_set_rotation_m429694E264117C6DC682EC6AF45C7864E5155935,
 	Transform_get_localRotation_mEDA319E1B42EF12A19A95AC0824345B6574863FE,
 	Transform_set_localRotation_mE2BECB0954FFC1D93FB631600D9A9BEFF41D9C8A,
 	Transform_get_localScale_mD8F631021C2D62B7C341B1A17FA75491F64E13DA,
 	Transform_set_localScale_m7ED1A6E5A87CD1D483515B99D6D3121FB92B0556,
+	Transform_get_parent_m8FA24E38A1FA29D90CBF3CDC9F9F017C65BB3403,
+	Transform_set_parent_m65B8E4660B2C554069C57A957D9E55FECA7AA73E,
+	Transform_get_parentInternal_mEE407FBF144B4EE785164788FD455CAA82DC7C2E,
+	Transform_set_parentInternal_m8534EFFADCF054FFA081769F84256F9921B0258C,
+	Transform_GetParent_m1C9AFA68C014287E3D62A496A5F9AE16EF9BD7E6,
+	Transform_SetParent_mFAF9209CAB6A864552074BA065D740924A4BF979,
+	Transform_SetParent_m268E3814921D90882EFECE244A797264DE2A5E35,
+	Transform_get_worldToLocalMatrix_m4791F881839B1087B17DC126FC0CA7F9A596073E,
+	Transform_get_localToWorldMatrix_mBC86B8C7BA6F53DAB8E0120D77729166399A0EED,
 	Transform_Rotate_m3424566A0D19A1487AE3A82B08C47F2A2D2A26CB,
 	Transform_Rotate_mEEA80F3DA5A4C93611D7165DF54763E578477EF9,
+	Transform_TransformPoint_mA96DC2A20EE7F4F915F7509863A18D99F5DD76CB,
+	Transform_InverseTransformPoint_mB6E3145F20B531B4A781C194BAC43A8255C96C47,
 	Transform_get_childCount_m7665D779DCDB6B175FB52A254276CDF0C384A724,
+	Transform_SetAsFirstSibling_m2CAD80F7C9D89EE145BC9D3D0937D6EBEE909531,
+	Transform_IsChildOf_mCB98BA14F7FB82B6AF6AE961E84C47AE1D99AA80,
 	Transform_GetEnumerator_mE98B6C5F644AE362EC1D58C10506327D6A5878FC,
 	Transform_GetChild_mC86B9B61E4EC086A571B09EA7A33FFBF50DF52D3,
 	Transform_get_position_Injected_mFD1BD0E2D17761BA08289ABBB4F87EDFFF7C1EBB,
 	Transform_set_position_Injected_mB6BEBF6B460A566E933ED59C4470ED58D81B3226,
+	Transform_get_localPosition_Injected_mC1E8F9DAC652621188ABFB58571782157E4C8FBA,
+	Transform_set_localPosition_Injected_m8B4E45BAADCDD69683EB6424992FC9B9045927DE,
 	Transform_get_rotation_Injected_m41BEC8ACE323E571978CED341997B1174340701B,
 	Transform_set_rotation_Injected_m1B409EA2BBF0C5DEE05153F4CD5134669AA2E5C0,
 	Transform_get_localRotation_Injected_m1ADF4910B326BAA828892B3ADC5AD1A332DE963B,
 	Transform_set_localRotation_Injected_mF84F8CFA00AABFB7520AB782BA8A6E4BBF24FDD5,
 	Transform_get_localScale_Injected_mA8987BAB5DA11154A22E2B36995C7328792371BE,
 	Transform_set_localScale_Injected_m9BF22FF0CD55A5008834951B58BB8E70D6982AB2,
+	Transform_get_worldToLocalMatrix_Injected_mFEC701DE6F97A22DF1718EB82FBE3C3E62447936,
+	Transform_get_localToWorldMatrix_Injected_mF5629FA21895EB6851367E1636283C7FB70333A9,
+	Transform_TransformPoint_Injected_mB697D04DF989E68C8AAFAE6BFBBE718B68CB477D,
+	Transform_InverseTransformPoint_Injected_m320ED08EABA9713FDF7BDAD425630D567D39AB1D,
 	Enumerator__ctor_mBF5A46090D26A1DD98484C00389566FD8CB80770,
 	Enumerator_get_Current_mD91FA41B0959224F24BF83051D46FCF3AF82F773,
 	Enumerator_MoveNext_mF27E895DC4BB3826D2F00E9484A9ECC635770031,
+	SpriteAtlas_CanBindTo_m6CE0E011A4C5F489F9A62317380FB35F20DF7016,
 	SpriteAtlasManager_RequestAtlas_m792F61C44C634D9E8F1E15401C8CECB7A12F5DDE,
+	SpriteAtlasManager_add_atlasRegistered_m6742D91F217B69CC2A65D80B5F25CFA372A1E2DA,
+	SpriteAtlasManager_remove_atlasRegistered_m55564CC2797E687E4B966DC1797D059ABBB04051,
 	SpriteAtlasManager_PostRegisteredAtlas_m2FCA85EDC754279C0A90CC3AF5E12C3E8F6A61CB,
 	SpriteAtlasManager_Register_m2C324F6E122AF09D44E4EE3F8F024323663670D2,
 	SpriteAtlasManager__cctor_m826C9096AB53C9C6CFCF342FA9FDC345A726B6C6,
@@ -20013,6 +22960,7 @@ extern const Il2CppMethodPointer g_MethodPointers[10192] =
 	UnhandledExceptionHandler_HandleUnhandledException_m09FC7ACFE0E555A5815A790856FBF5B0CA50819E,
 	UnhandledExceptionHandler_PrintException_m4CBE36F17C3F2B72205DB96B6D1377E4B3D11C77,
 	UnhandledExceptionHandler_iOSNativeUnhandledExceptionHandler_mD7444FEA5E5A468B81682D0C10831FD62ED60DC6,
+	UnityAPICompatibilityVersionAttribute__ctor_m396699681ECFF3E716BF37E25CCF6A38960549C9,
 	UnityException__ctor_m68C827240B217197615D8DA06FD3A443127D81DE,
 	UnityException__ctor_mE42363D886E6DD7F075A6AEA689434C8E96722D9,
 	UnityException__ctor_m27B11548FE152B9AB9402E54CB6A50A2EE6FFE31,
@@ -20036,22 +22984,60 @@ extern const Il2CppMethodPointer g_MethodPointers[10192] =
 	WorkRequest__ctor_mE19AE1779B544378C8CB488F1576BDE618548599_AdjustorThunk,
 	WorkRequest_Invoke_m67D71A48794EEBB6B9793E6F1E015DE90C03C1ED_AdjustorThunk,
 	Vector2__ctor_mEE8FB117AB1F8DB746FB8B3EB4C0DA3BF2A230D0_AdjustorThunk,
+	Vector2_get_Item_m67344A67120E48C32D9419E24BA7AED29F063379_AdjustorThunk,
+	Vector2_set_Item_m2335DC41E2BB7E64C21CDF0EEDE64FFB56E7ABD1_AdjustorThunk,
+	Vector2_Scale_m7AA97B65C683CB3B0BCBC61270A7F1A6350355A2,
+	Vector2_Normalize_m99A2CC6E4CB65C1B9231F898D5B7A12B6D72E722_AdjustorThunk,
+	Vector2_get_normalized_m058E75C38C6FC66E178D7C8EF1B6298DE8F0E14B_AdjustorThunk,
 	Vector2_ToString_m83C7C331834382748956B053E252AE3BD21807C4_AdjustorThunk,
 	Vector2_GetHashCode_m028AB6B14EBC6D668CFA45BF6EDEF17E2C44EA54_AdjustorThunk,
 	Vector2_Equals_m4A2A75BC3D09933321220BCEF21219B38AF643AE_AdjustorThunk,
 	Vector2_Equals_mD6BF1A738E3CAF57BB46E604B030C072728F4EEB_AdjustorThunk,
+	Vector2_Dot_m34F6A75BE3FC6F728233811943AC4406C7D905BA,
+	Vector2_get_magnitude_m66097AFDF9696BD3E88467D4398D4F82B8A4C7DF_AdjustorThunk,
+	Vector2_get_sqrMagnitude_mAEE10A8ECE7D5754E10727BA8C9068A759AD7002_AdjustorThunk,
+	Vector2_Angle_mC4A140B49B9E737C9FC6B52763468C5662A8B4AC,
+	Vector2_op_Addition_m81A4D928B8E399DA3A4E3ACD8937EDFDCB014682,
+	Vector2_op_Subtraction_m2B347E4311EDBBBF27573E34899D2492E6B063C0,
+	Vector2_op_Multiply_mEDF9FDDF3BFFAEC997FBCDE5FA34871F2955E7C4,
+	Vector2_op_Division_mEF4FA1379564288637A7CF5E73BA30CA2259E591,
+	Vector2_op_Multiply_m8A843A37F2F3199EBE99DC7BDABC1DC2EE01AF56,
+	Vector2_op_Division_m0961A935168EE6701E098E2B37013DFFF46A5077,
+	Vector2_op_Equality_m0E86E1B1038DDB8554A8A0D58729A7788D989588,
+	Vector2_op_Inequality_mC16161C640C89D98A00800924F83FF09FD7C100E,
 	Vector2_op_Implicit_mEA1F75961E3D368418BA8CEB9C40E55C25BA3C28,
+	Vector2_op_Implicit_mD152B6A34B4DB7FFECC2844D74718568FE867D6F,
+	Vector2_get_zero_mFE0C3213BB698130D6C5247AB4B887A59074D0A8,
+	Vector2_get_one_m6E01BE09CEA40781CB12CCB6AF33BBDA0F60CEED,
+	Vector2_get_up_mC4548731D5E7C71164D18C390A1AC32501DAE441,
+	Vector2_get_right_mB4BD67462D579461853F297C0DE85D81E07E911E,
 	Vector2__cctor_m13D18E02B3AC28597F5049D2F54830C9E4BDBE84,
 	Vector3__ctor_m08F61F548AA5836D8789843ACB4A81E4963D2EE1_AdjustorThunk,
+	Vector3__ctor_m6AD8F21FFCC7723C6F507CCF2E4E2EFFC4871584_AdjustorThunk,
+	Vector3_Lerp_m5BA75496B803820CC64079383956D73C6FD4A8A1,
+	Vector3_get_Item_mC3B9D35C070A91D7CA5C5B47280BD0EA3E148AC6_AdjustorThunk,
+	Vector3_set_Item_m89FF112CEC0D9ED43F1C4FE01522C75394B30AE6_AdjustorThunk,
 	Vector3_GetHashCode_m6C42B4F413A489535D180E8A99BE0298AD078B0B_AdjustorThunk,
 	Vector3_Equals_m1F74B1FB7EE51589FFFA61D894F616B8F258C056_AdjustorThunk,
 	Vector3_Equals_m6B991540378DB8541CEB9472F7ED2BF5FF72B5DB_AdjustorThunk,
 	Vector3_Normalize_mDEA51D0C131125535DA2B49B7281E0086ED583DC,
 	Vector3_get_normalized_mE20796F1D2D36244FACD4D14DADB245BE579849B_AdjustorThunk,
+	Vector3_Dot_m0C530E1C51278DE28B77906D56356506232272C1,
+	Vector3_Distance_mE316E10B9B319A5C2A29F86E028740FD528149E7,
 	Vector3_Magnitude_m3958BE20951093E6B035C5F90493027063B39437,
 	Vector3_get_magnitude_m9A750659B60C5FE0C30438A7F9681775D5DB1274_AdjustorThunk,
 	Vector3_SqrMagnitude_mBE7ED92F28BBE09310975CDF329913C04EA9500E,
+	Vector3_get_sqrMagnitude_m1C6E190B4A933A183B308736DEC0DD64B0588968_AdjustorThunk,
+	Vector3_Min_m0D0997E6CDFF77E5177C8D4E0A21C592C63F747E,
+	Vector3_Max_m78495079CA1E29B0658699B856AFF22E23180F36,
 	Vector3_get_zero_m3CDDCAE94581DF3BB16C4B40A100E28E9C6649C2,
+	Vector3_get_one_mA11B83037CB269C6076CBCF754E24C8F3ACEC2AB,
+	Vector3_get_forward_m3E2E192B3302130098738C308FA1EE1439449D0D,
+	Vector3_get_back_mE7EF8625637E6F8B9E6B42A6AE140777C51E02F7,
+	Vector3_get_up_m6309EBC4E42D6D0B3D28056BD23D0331275306F7,
+	Vector3_get_down_m3F76A48E5B7C82B35EE047375538AFD91A305F55,
+	Vector3_get_left_m74B52D8CFD8C62138067B2EB6846B6E9E51B7C20,
+	Vector3_get_right_m6DD9559CA0C75BBA42D9140021C4C2A9AAA9B3F5,
 	Vector3_op_Addition_m929F9C17E5D11B94D50B4AFF1D730B70CB59B50E,
 	Vector3_op_Subtraction_mF9846B723A5034F8B9F5F5DCB78E3D67649143D3,
 	Vector3_op_Multiply_m1C5F07723615156ACF035D88A1280A9E8F35A04E,
@@ -20060,18 +23046,149 @@ extern const Il2CppMethodPointer g_MethodPointers[10192] =
 	Vector3_op_Inequality_mFEEAA4C4BF743FB5B8A47FF4967A5E2C73273D6E,
 	Vector3_ToString_m2682D27AB50CD1CE4677C38D0720A302D582348D_AdjustorThunk,
 	Vector3__cctor_m83F3F89A8A8AFDBB54273660ABCA2E5AE1EAFDBD,
+	Vector4__ctor_m545458525879607A5392A10B175D0C19B2BC715D_AdjustorThunk,
+	Vector4_get_Item_m39878FDA732B20347BB37CD1485560E9267EDC98_AdjustorThunk,
+	Vector4_set_Item_m56FB3A149299FEF1C0CF638CFAF71C7F0685EE45_AdjustorThunk,
+	Vector4_GetHashCode_m7329FEA2E90CDBDBF4F09F51D92C87E08F5DC92E_AdjustorThunk,
+	Vector4_Equals_m552ECA9ECD220D6526D8ECC9902016B6FC6D49B5_AdjustorThunk,
+	Vector4_Equals_mB9894C2D4EE56C6E8FDF6CC40DCE0CE16BA4F7BF_AdjustorThunk,
+	Vector4_Dot_m9FAE8FE89CF99841AD8D2113DFCDB8764F9FBB18,
+	Vector4_get_sqrMagnitude_m6B2707CBD31D237605D066A5925E6419D28B5397_AdjustorThunk,
+	Vector4_get_zero_m42821248DDFA4F9A3E0B2E84CBCB737BE9DCE3E9,
+	Vector4_op_Subtraction_m2D5AED6DD0324E479548A9346AE29DAB489A8250,
+	Vector4_op_Division_m1D1BD7FFEF0CDBB7CE063CA139C22210A0B76689,
+	Vector4_op_Equality_m9AE0D09EC7E02201F94AE469ADE9F416D0E20441,
+	Vector4_ToString_m769402E3F7CBD6C92464D916527CC87BBBA53EF9_AdjustorThunk,
+	Vector4_SqrMagnitude_mC2577C7119B10D3211BEF8BD3D8C0736274D1C10,
+	Vector4__cctor_m478FA6A83B8E23F8323F150FF90B1FB934B1C251,
+	WaitForEndOfFrame__ctor_m6CDB79476A4A84CEC62947D36ADED96E907BA20B,
+	WaitForSecondsRealtime__ctor_m775503EC1F4963D8E5BBDD7989B40F6A000E0525,
+	WaitForSecondsRealtime_get_waitTime_m6D1B0EDEAFA3DBBBFE1A0CC2D372BAB8EA82E2FB,
+	WaitForSecondsRealtime_set_waitTime_m867F4482BEE354E33A6FD9191344D74B9CC8C790,
+	WaitForSecondsRealtime_get_keepWaiting_mC257FFC53D5734250B919A8B6BE460A6D8A7CD99,
 	YieldInstruction__ctor_mA72AD367FB081E0C2493649C6E8F7CFC592AB620,
 	LocalNotification_Finalize_m3B080FBFB1E51F3C5570B6097958CFA834A0594B,
 	LocalNotification__cctor_m9E47ADEC8F786289F7C94ACC65A44C318FF59685,
 	NotificationHelper_DestroyLocal_m31A83960AAC3E5D3C5AF4B945B6F51E890E15E6C,
 	NotificationHelper_DestroyRemote_m8DC26FA325608161850486E8F4BF16B67EF90E79,
 	RemoteNotification_Finalize_m4D3F34A965DDE64EEC2F3AC3AC1750AED0CE1C2F,
+	GenericStack__ctor_m0659B84DB6B093AF1F01F566686C510DDEEAE848,
 	MathfInternal__cctor_m885D4921B8E928763E7ABB4466659665780F860F,
 	NetFxCoreExtensions_CreateDelegate_m8FD387039F907982CB716046CB4501160B16D381,
 	NetFxCoreExtensions_GetMethodInfo_m648EA8E13DAFFCBF92AA46F62AF5124386A905A0,
+	ScriptingUtils_CreateDelegate_m39ACEF00FC1B3EEDD481DB66250804E4DEBBCBEC,
 	TypeInferenceRuleAttribute__ctor_m389751AED6740F401AC8DFACD5914C13AB24D8A6,
 	TypeInferenceRuleAttribute__ctor_m34920F979AA071F4973CEEEF6F91B5B6A53E5765,
 	TypeInferenceRuleAttribute_ToString_m49343B52ED0F3E75B3E56E37CF523F63E5A746F6,
+	Font_add_textureRebuilt_m031EFCD3B164273920B133A8689C18ED87C9B18F,
+	Font_remove_textureRebuilt_mBEF163DAE27CA126D400646E850AAEE4AE8DAAB4,
+	Font_get_material_m92A995029540A5FACAEA3A2FE792FFDAC294827D,
+	Font_get_dynamic_m14C7E59606E317C5952A69F05CC44BF399CFFE2E,
+	Font_get_fontSize_m75A71EFC3D6483AD1A8C6F38133648BDFF1618A5,
+	Font_InvokeTextureRebuilt_Internal_m2D4C9D99B6137EF380A19EC72D6EE8CBFF7B4062,
+	Font_HasCharacter_m23CC7E1E37BCA115DC130B841CF3207212E2802E,
+	Font_HasCharacter_m59FF574F1E4A2F9807CCF0C5D56C29E68D514D51,
+	FontTextureRebuildCallback__ctor_m83BD4ACFF1FDA3D203ABA140B0CA2B4B0064A3A3,
+	FontTextureRebuildCallback_Invoke_m4E6CFDE11932BA7F129C9A2C4CAE294562B07480,
+	FontTextureRebuildCallback_BeginInvoke_m53EF837EFEA71B83AEA6706E2EB8F83062E43880,
+	FontTextureRebuildCallback_EndInvoke_m8EEDB9652F6D2358523057E1164740820D2AE93C,
+	TextGenerationSettings_CompareColors_m41313F2A332F5780C5BD6F8134EBB14473CC5C66_AdjustorThunk,
+	TextGenerationSettings_CompareVector2_m27AE82F513B8E6D4A529A02B1A3806A85E710F1C_AdjustorThunk,
+	TextGenerationSettings_Equals_m39912D195B0384AADC5C274659324EC8720C4F7D_AdjustorThunk,
+	TextGenerator__ctor_mD3956FF7D10DC470522A6363E7D6EC243415098A,
+	TextGenerator__ctor_m86E01E7BB9DC1B28F04961E482ED4D7065062BCE,
+	TextGenerator_Finalize_m6E9076F61F7B4DD5E56207F39E8F5FD85F188D8A,
+	TextGenerator_System_IDisposable_Dispose_m9D3291DC086282AF57A115B39D3C17BD0074FA3D,
+	TextGenerator_get_characterCountVisible_mD0E9AA8120947F5AED58F512C0978C2E82ED1182,
+	TextGenerator_ValidatedSettings_m167131680BB6CD53B929EF189520F9FCF71FB1D3,
+	TextGenerator_Invalidate_m5C360AB470CB728BAA03B34BE33C75CBB55B673E,
+	TextGenerator_GetCharacters_mBB7980F2FE8BE65A906A39B5559EC54B1CEF4131,
+	TextGenerator_GetLines_mC31F7918A9159908EA914D01B2E32644B046E2B5,
+	TextGenerator_GetVertices_m6FA34586541514ED7396990542BDAC536C10A4F2,
+	TextGenerator_GetPreferredWidth_mBF228094564195BBB66669F4ECC6EE1B0B05BAAA,
+	TextGenerator_GetPreferredHeight_mC2F191D9E9CF2365545D0A3F1EBD0F105DB27963,
+	TextGenerator_PopulateWithErrors_m1F1851B3C2B2EBEFD81C83DC124FB376C926B933,
+	TextGenerator_Populate_m15553808C8FA017AA1AC23D2818C30DAFD654A04,
+	TextGenerator_PopulateWithError_m24D1DA75F0563582E228C6F4982D0913C58E1D7D,
+	TextGenerator_PopulateAlways_m8DCF389A51877975F29FAB9B6E800DFDC1E0B8DF,
+	TextGenerator_get_verts_mD0B3D877BE872CDE4BE3791685B8B5EF0AAC6120,
+	TextGenerator_get_characters_m716FE1EF0738A1E6B3FBF4A1DBC46244B9594C7B,
+	TextGenerator_get_lines_m40303E6BF9508DD46E04A21B5F5510F0FB9437CD,
+	TextGenerator_get_rectExtents_m55F6A6727406C54BEFB7628751555B7C58BEC9B1,
+	TextGenerator_get_characterCount_m2A8F9764A7BD2AD1287D3721638FB6114D6BDDC7,
+	TextGenerator_get_lineCount_m7A3CC9D67099CDC4723A683716BE5FBC623EE9C4,
+	TextGenerator_Internal_Create_m127DBEDE47D3028812950FD9184A18C9F3A5E994,
+	TextGenerator_Internal_Destroy_mB7FE56C2FAAE16938DE8BC7256EB44643E1845A5,
+	TextGenerator_Populate_Internal_mCA54081A0855AED6EC6345265603409FE330985C,
+	TextGenerator_Populate_Internal_m42F7FED165D62BFD9C006D19A0FCE5B70C1EF92B,
+	TextGenerator_GetVerticesInternal_mB794B94982BA35D2CDB8F3AA77880B33AEB42B9A,
+	TextGenerator_GetCharactersInternal_m4383B9A162CF10430636BFD248DDBDDB4D64E967,
+	TextGenerator_GetLinesInternal_mA54A05D512EE1CED958F73E0024FB913E648EDAD,
+	TextGenerator_get_rectExtents_Injected_mD8FC9E47642590C7AC78DA83B583E5F4271842D0,
+	TextGenerator_Populate_Internal_Injected_mC1D6A0A0A9E0BFDB146EA921DA459D83FF33DEDE,
+	TextMesh_set_text_m64242AB987CF285F432E7AED38F24FF855E9B220,
+	UIVertex__cctor_m86F60F5BB996D3C59B19B80C4BFB5770802BFB30,
+	AnimationEvent__ctor_m6C228EB716B6B53DE2665091C056428EFB90897F,
+	AnimationClipPlayable_GetHandle_mB1B706B9ADB194766DC938C332469AC698AD0D9E_AdjustorThunk,
+	AnimationClipPlayable_Equals_m06BA3E1C3AE0CC205C8531CCF6596C99C8D927EE_AdjustorThunk,
+	AnimationLayerMixerPlayable__ctor_mA2156DFDEA435F14446528098837ED3FF6B7147C_AdjustorThunk,
+	AnimationLayerMixerPlayable_GetHandle_mD4159505D29B17D507599ED6FA3BEC1370691DB8_AdjustorThunk,
+	AnimationLayerMixerPlayable_Equals_m0A6A86FEDCE98E63B84BD01D0D362D03EA733E59_AdjustorThunk,
+	AnimationLayerMixerPlayable__cctor_m3712A5D44F275E70624C0D734C9CED9BD12D0AC9,
+	AnimationMixerPlayable__ctor_mD446E3257F803A3D4C04D394A75AA5376533CF43_AdjustorThunk,
+	AnimationMixerPlayable_GetHandle_mC5939239D7C47C6E0FF4EC72021EE793863BC567_AdjustorThunk,
+	AnimationMixerPlayable_Equals_m7CB1B61B74A6BE00A35AD072490F07D4C7A17B0F_AdjustorThunk,
+	AnimationMixerPlayable__cctor_m820F56C1D4257D4F5446BD66402D4428E0DF8E3E,
+	AnimationMotionXToDeltaPlayable__ctor_mC51D5F76DD0CE29B305932303A4A5AA42ACCD9E6_AdjustorThunk,
+	AnimationMotionXToDeltaPlayable_GetHandle_mE36F0671962333EAF5B434A062930D9E76A79076_AdjustorThunk,
+	AnimationMotionXToDeltaPlayable_Equals_m53B4AAB54D7F3633C3954056F8C334BB8B7D590E_AdjustorThunk,
+	AnimationMotionXToDeltaPlayable__cctor_mCB948CE31E0AAEC53CB1D6746D091604413C5EEE,
+	AnimationOffsetPlayable__ctor_m380B4761BE82E4684F82A18933DBBC79E3D5F607_AdjustorThunk,
+	AnimationOffsetPlayable_GetHandle_m5213878A6D7F29801F74CD3A8B866D444793665E_AdjustorThunk,
+	AnimationOffsetPlayable_Equals_m30B207FC6287EABF6FC1FDA47784322A3ABB98DF_AdjustorThunk,
+	AnimationOffsetPlayable__cctor_m174AD41778526FA15E41C6A11303A4F190A4CEA6,
+	AnimationPosePlayable__ctor_mF02468DCD2C8C0226C89C4DF90454DD9D230595D_AdjustorThunk,
+	AnimationPosePlayable_GetHandle_m9D856E83755A447ABCD6C0D8FE011AFF659A016E_AdjustorThunk,
+	AnimationPosePlayable_Equals_m4417430115DCF9B39D3E4B64424120CE7E555961_AdjustorThunk,
+	AnimationPosePlayable__cctor_mDE42A26BC2624427AA8086C4AB69FB531949153F,
+	AnimationRemoveScalePlayable__ctor_mB06216973E6B635E7F4A3C8E372E5F7E89D327E1_AdjustorThunk,
+	AnimationRemoveScalePlayable_GetHandle_mA5063F10E01C8546F88E9ABE07B71373BF290EED_AdjustorThunk,
+	AnimationRemoveScalePlayable_Equals_m58B139243E3B27CE86CA4CC470895BF719CD9BAD_AdjustorThunk,
+	AnimationRemoveScalePlayable__cctor_m7BA13559FDA2BF8E061839B333085C402DED6829,
+	AnimatorControllerPlayable__ctor_m739B1BFC592B6C160410141057F1B2BA1B971897_AdjustorThunk,
+	AnimatorControllerPlayable_GetHandle_mB83731910E1534BECA36F64BA22AA68A71D08CA8_AdjustorThunk,
+	AnimatorControllerPlayable_SetHandle_m2CAE8DABC4B19AB6BD90249D0D7FC7A9E07C3A96_AdjustorThunk,
+	AnimatorControllerPlayable_Equals_m04685CCA5A5FC388A0387D3453A677C0CB47D173_AdjustorThunk,
+	AnimatorControllerPlayable__cctor_m6FCC197F3BF33EAFC37D5217617FCDC64E8B304E,
+	Animator_SetTrigger_m68D29B7FA54C2F230F5AD780D462612B18E74245,
+	Animator_ResetTrigger_m70120C9A00EA482BF0880D2C02EC814CE3D71FD1,
+	Animator_get_hasBoundPlayables_m283AF0BA9B841E3FD1ADC5541C41B936A9D1EB05,
+	Animator_SetTriggerString_m77CE57996467D0C973FA2D0CB4DF87BD062C8A1E,
+	Animator_ResetTriggerString_m31B233F948D7551D220FEDA56B002E6724B89851,
+	AnimatorOverrideController_OnInvalidateOverrideController_mA538F1349FCF3968C5042F2D8860114F51818CB2,
+	OnOverrideControllerDirtyCallback__ctor_m9277DED194C85B1C3B4C7ABBB1D54CCB43C724D8,
+	OnOverrideControllerDirtyCallback_Invoke_m002CFC2CE3C42A058380BE98F015E654D5F9F177,
+	OnOverrideControllerDirtyCallback_BeginInvoke_m35CE43BF7D40E88192183CF666F2BB7EFE8C6F9D,
+	OnOverrideControllerDirtyCallback_EndInvoke_m39CFD9FD2CC3035CFF6809F56447932B1394C08E,
+	AnimationScriptPlayable__ctor_mCEAA71DEFF829CA9D60EFB004CC0278FE8C58EF7_AdjustorThunk,
+	AnimationScriptPlayable_GetHandle_mE9B490654A320F11EFBB0E3180C6CF647E384C80_AdjustorThunk,
+	AnimationScriptPlayable_Equals_m39A1F71C360404625ABD1EAD32DCAEDD7736E1B3_AdjustorThunk,
+	AnimationScriptPlayable__cctor_mC78B0B27BE44BD802817190E620DB326D730BF70,
+	StateMachineBehaviour__ctor_m60289315ADCB494227D881EEFA6C4458BACA79DB,
+	StateMachineBehaviour_OnStateEnter_mAB25325C96611ADDF93038EC6792EC4F76AEF4EE,
+	StateMachineBehaviour_OnStateUpdate_mE12079F72B209DDFFAB4088B2B210EA20C2C4266,
+	StateMachineBehaviour_OnStateExit_m83F9656CE5265BD15F3B5D1AB91411A211922730,
+	StateMachineBehaviour_OnStateMove_mAE38B3B50B0A495AF30E6711F52381668B63DAA2,
+	StateMachineBehaviour_OnStateIK_mB977958BB73727EF2F721BB449DFEA781529785B,
+	StateMachineBehaviour_OnStateMachineEnter_m5497D76EAE53BEF94431E3C1AAD0B58B89E745C7,
+	StateMachineBehaviour_OnStateMachineExit_m8A0744B8E90157AE466269DF324C44BFCBB47FF3,
+	StateMachineBehaviour_OnStateEnter_mAAD23D49A3F84438928677D2FA3F8E26CFDE2522,
+	StateMachineBehaviour_OnStateUpdate_mF1E4E77449D427AE5DDD68FD8EECCAD1E54E1EE9,
+	StateMachineBehaviour_OnStateExit_m43A13AA682B9E86F6D2952338F47CE1B2BF9D4A7,
+	StateMachineBehaviour_OnStateMove_mD8060C6C70456CDC4D678184723C05A7750846F3,
+	StateMachineBehaviour_OnStateIK_m09D6AC0300060ACF7B82283AD947E9A260585576,
+	StateMachineBehaviour_OnStateMachineEnter_m6DE0F767D565EFC33361BA13A6DCC65AC89D3D07,
+	StateMachineBehaviour_OnStateMachineExit_m01575716EA20F88A56C3CB778FACE2CBDA68EF26,
 	AudioClipPlayable_GetHandle_mEE8F62E9DA2A0DDDB064A9AA2391909C425CB3B1_AdjustorThunk,
 	AudioClipPlayable_Equals_mEB47B5F2E1C643D403FA916C8961F117593DCFC0_AdjustorThunk,
 	AudioMixerPlayable_GetHandle_mDBC7135DF653E0E19675B6694EA89958E609587D_AdjustorThunk,
@@ -20304,6 +23421,216 @@ extern const Il2CppMethodPointer g_MethodPointers[10192] =
 	UserProfile_get_isFriend_m0D329A8C808B89CD8FA7913C9C37E2D859B58E0C,
 	UserProfile_get_state_m5804D7408C593440C394DFCE25738F87F84A7083,
 	Range__ctor_m464C0B9EC4D5509770E152A5D935EDF1B3A325D0_AdjustorThunk,
+	Event__ctor_m7226316A4024A3C5EBAE7BB7975194CE2B766A3B,
+	Event__ctor_mF8E4029007206A6CAAB28422355BA208C0728FB9,
+	Event_get_rawType_m4139BB74440F552F5FD31F56215938E227EF0CD9,
+	Event_get_mousePosition_m92AD98489A626864E9B179273270802EB1D2C085,
+	Event_get_modifiers_m4D1BDE843A9379F50C3F32CB78CCDAD84B779108,
+	Event_get_character_m78B46D412357B71233F3D41842928A19B290915C,
+	Event_get_keyCode_m8B0AAD347861E322E91D2B7320A99E04D39575CF,
+	Event_set_displayIndex_mF73CEED3B26A4BCADB099E5E6685FE6AC2CF7289,
+	Event_get_type_mAABE4A35E5658E0079A1518D318AF2592F51D6FA,
+	Event_get_commandName_m119D9F8B0A7BA18B849B958CFAF249C970C00BF1,
+	Event_Internal_Create_m93F047D4FC3B4B76FD4F80439D0F7EE131EE1E6B,
+	Event_Internal_Destroy_m30C46F30A51ABAC5EC270FB75A9856676AA3515C,
+	Event_PopEvent_m8D01FDDC4C7423FCCD7EF3F1B13340C857BE4E4F,
+	Event_Internal_SetNativeEvent_mDD8C9E3F062FD112ED996FA4E45C1BFBB8C4E950,
+	Event_Internal_MakeMasterEventCurrent_mAD78377C8BB08EFB5DF3D3E3A4F1089F2FC2BA48,
+	Event_Finalize_m71EE3F6BC6C0A99F849EC39C0E47B7305BB9EB3D,
+	Event_get_current_m072CEE599D11B8A9A916697E57C0F561188CDB2B,
+	Event_get_isKey_m17D185B6CD336242BC5FB9BAB025EE8FA7771E90,
+	Event_get_isMouse_m5923637C4A5E3BD642C3E88A428D5B39F0A85AB6,
+	Event_GetHashCode_m043035C02793F794E13286466579F09F87D7AA9D,
+	Event_Equals_m1DEF4FB843B631FC437B1366F0F78CEF7A739070,
+	Event_ToString_m2843623B66F30AC141175B1D16F1B112D3835A65,
+	Event_get_mousePosition_Injected_mE71FE88F6E27190A534BD5862941E5887D6BE632,
+	GUI__cctor_m9A902CA13649D04BFB54D86C051A09AC5301ED63,
+	GUI_set_changed_m8BDF5085BBFDF8E61C12926C8E51C67B22B629AE,
+	GUI_set_nextScrollStepTime_m0EBE9A3F5960CD23334E4678D9CF6F5E15CBDE23,
+	GUI_set_skin_mFC9EC2E88A46A7F42664C6C41D8CCD9B9BA4DBA0,
+	GUI_get_skin_mF6804BE33CFD74FF0665C1185AC7B5C1687AE866,
+	GUI_DoSetSkin_mC72F1980793E86E8F33D641A207D2AAB409A71F7,
+	GUI_CallWindowDelegate_m49D5A2E2DAEF525772FAAAA9A840244137BB9175,
+	WindowFunction__ctor_m216C357C45DF9A8ABE74056B8BDB1B7F94EE2D81,
+	WindowFunction_Invoke_m08350FBFB60BC55246725A4840931AED2CAFF9AD,
+	WindowFunction_BeginInvoke_m522A6C91248FC9E44284AAB8909F83E5DB2960A2,
+	WindowFunction_EndInvoke_m66738B73219CEB120C356497204151BCB432B2A2,
+	GUIContent__ctor_m939CDEFF44061020E997A0F0640ADDF2740B0C38,
+	GUIContent__ctor_m8EE36BB9048C2A279E7EAD258D63F2A1BDEA8A81,
+	GUIContent__ctor_m2805872C5E7E66C3ABF83607DC02BEB1BEFA82DA,
+	GUIContent_set_text_m866E0C5690119816D87D83124C81BDC0A0ED4316,
+	GUIContent_set_image_m85ABAF5AE045BDD9C09EA75243094D16222DB38C,
+	GUIContent_set_tooltip_mDFC634B0DF68DB6A02F294106BC261EFC0FD0A67,
+	GUIContent_ClearStaticCache_m567DA736612F9E6E66262CC630952AB2E22BC933,
+	GUIContent__cctor_m5AF68CD5FB2E47506F7FF1A6F46ADAD5C8BC927C,
+	GUILayout_Width_mDA8F26D92E788474E09AECA1541E8C920C72DA10,
+	GUILayout_Height_mA5A24D5490022AC6449BBAED9C5A1647184B4026,
+	GUILayoutEntry__ctor_mC640CA08AEBCC7E479DB6AF5B208436A98AB75B2,
+	GUILayoutEntry_get_style_m70E386A3289ACFEC515B1358827AB2FBF6314BA4,
+	GUILayoutEntry_set_style_mEDD232A6CDB1B76ABC33EA06A05235316A180E2D,
+	GUILayoutEntry_get_marginLeft_mD09358867AB85C7555C5F36B21AA8701EBF7A47A,
+	GUILayoutEntry_get_marginRight_m2449285F6E78BB275246C7382A0F25584A057E83,
+	GUILayoutEntry_get_marginTop_mA7DC694C92F152BEC3A8CCC470B24E9351338708,
+	GUILayoutEntry_get_marginBottom_mC821B992F1AA7AF24533D9DAC2E46632950AA1BD,
+	GUILayoutEntry_get_marginHorizontal_m1FB1B936E7C702BAD92FE4CA1EEC529A2BECCEC4,
+	GUILayoutEntry_get_marginVertical_mBFB3FD56025F4627378E5A339379CFF720196EB0,
+	GUILayoutEntry_CalcWidth_mBBA8647ED6695100D8D41CE12CA4586DBD02D993,
+	GUILayoutEntry_CalcHeight_m476C8ECE96A5ACC4AEA6427EA2432F0ED7E3CFF4,
+	GUILayoutEntry_SetHorizontal_m46A5D9344EE72AF9AA7D07C77C30745F9FE97DE8,
+	GUILayoutEntry_SetVertical_mC0E71E5E431907DD1900C707BD3E2E1D0795DDD0,
+	GUILayoutEntry_ApplyStyleSettings_m5516B497544317E3B720CE7867CA960076E2AF47,
+	GUILayoutEntry_ApplyOptions_m2002EBD9FE42B9787544D204A71C8BEF3F671F5B,
+	GUILayoutEntry_ToString_mCDA5CD14A39ADAD29F6B450B98FDB80E37AC95D5,
+	GUILayoutEntry__cctor_m7425E2D0EE5771858B9823BBD024333CE7CAD3F9,
+	GUILayoutGroup__ctor_m14D8B35B4A89F6688D354A534ED871860905BA3B,
+	GUILayoutGroup_get_marginLeft_m987BDD5E6CE4A143F56120E1953291A27F43AA4F,
+	GUILayoutGroup_get_marginRight_m12265D01788B2A60664CD21B887AFEC72C6A0855,
+	GUILayoutGroup_get_marginTop_m5A7ACD924C4728C19C2DE52E3155A1D098646023,
+	GUILayoutGroup_get_marginBottom_m47E83C97B7052E8C3A15C11E23C05C7B4FF31460,
+	GUILayoutGroup_ApplyOptions_mCBAF4F0DA13F941ABF47886054A3443247767A97,
+	GUILayoutGroup_ApplyStyleSettings_mEC5D7325E4DC8993207671A95F6F0ED7D75B7F6C,
+	GUILayoutGroup_ResetCursor_mD159DD9E101F6F348249D27D95709E1DC5C0A13F,
+	GUILayoutGroup_CalcWidth_m0D2819C659392B14175C2B163DD889AD35794A9B,
+	GUILayoutGroup_SetHorizontal_m0AFB617E7BB6B32431BA65873B27660E6E5C9E51,
+	GUILayoutGroup_CalcHeight_m0511BD2172BC13D54ABC8DB5887A91C17E9F21BB,
+	GUILayoutGroup_SetVertical_m29D8744D2D1464EF4E6E4008CD21F5E44D6CB146,
+	GUILayoutGroup_ToString_mF66B820B07A33FFA240FBBE20A6F39C492B52372,
+	GUILayoutOption__ctor_m965FDA1345FD7146596EFA90F03D0C645FB3FD5D,
+	GUILayoutUtility_Internal_GetWindowRect_mE35BED0433EE8BD928CD52681620519E647A1DA9,
+	GUILayoutUtility_Internal_MoveWindow_mFCB2DFE399B833D263138CF0A57626AFF52CB037,
+	GUILayoutUtility_SelectIDList_m230ED9206897C92C5B090B3BBFC9B408603E56FD,
+	GUILayoutUtility_Begin_m6876A33199599688408A4AD364069090E833B237,
+	GUILayoutUtility_BeginWindow_mB3475D9BE89CF26AB0E6F0D46B1930F1874EB132,
+	GUILayoutUtility_Layout_mB01F00635FD538214B47A545C53E4F8C682491B5,
+	GUILayoutUtility_LayoutFromEditorWindow_mBE82BE965B54F68E7090952684C86BFF0538AB52,
+	GUILayoutUtility_LayoutFreeGroup_m890E6BD9614C48B151D61F197251E3DBAC637967,
+	GUILayoutUtility_LayoutSingleGroup_m0BE91E195E4E2FC8B5B491783AFACBD1310F15A1,
+	GUILayoutUtility__cctor_m6C436C771D62B8982AE0E47DD5D41C607988395F,
+	GUILayoutUtility_Internal_GetWindowRect_Injected_mE78DA4F8B25471CEFFCB6F43E37C7966FE436EEE,
+	GUILayoutUtility_Internal_MoveWindow_Injected_mD80D56182A5684AC3BDA2B50AC8191974A064ABE,
+	LayoutCache__ctor_mF66D53540321BFD98CA89285D2E8FFDA5014A9CE,
+	GUIScrollGroup__ctor_m02640E287AFD4B19EA03F7867247ED9D0836F41D,
+	GUIScrollGroup_CalcWidth_mA061AA4FA5BDE43DF862D57E7BF7C2A13147AA86,
+	GUIScrollGroup_SetHorizontal_m89C0FEDC0F240656C2E692503321EFFF6E6107DA,
+	GUIScrollGroup_CalcHeight_mD3A3C0B44A1E4DC567D1E8C20A68E1DD786EC196,
+	GUIScrollGroup_SetVertical_m4EF0255426047DF9A3E4C63C1ACBF3FE0690A7AB,
+	GUISettings__ctor_m6D2D6608CE04A741235BF0C8E134195B196F116D,
+	GUISkin__ctor_mD75B370774F1DA0C871C8C642299E8DB4B0FABFF,
+	GUISkin_OnEnable_mD8DE1BF0D0D0DA01EF240CE80C8B890DC03D30D0,
+	GUISkin_CleanupRoots_m00D215E556265ACF704EA1C31399298DB092BA02,
+	GUISkin_get_font_m54200DFAF834B835CE6598E1BA5B41382BC33AD5,
+	GUISkin_set_font_m2602A62DF6F035C7DA9BF4411C5F117022B5C07F,
+	GUISkin_get_box_m7305FA20CDC5A31518AE753AEF7B9075F6242B11,
+	GUISkin_set_box_m6D6D19E122461C6B2945349AA6ECD53E355702B0,
+	GUISkin_get_label_mC5C9D4CD377D7F5BB970B01E665EE077565AFF72,
+	GUISkin_set_label_m7EC231FDB8DEC9A5CD794578D70BB76A1978F508,
+	GUISkin_get_textField_m7C206D0A044A8D5DD00E63BCD7958089E77419E9,
+	GUISkin_set_textField_m641D44C99CFC17A18BC0F094D4C810742222D0D2,
+	GUISkin_get_textArea_m865E5C1D39519731718B66C9C993DFDEE0299C92,
+	GUISkin_set_textArea_m3C0C4795FC031AA0E8815FA9E0CAD304E1266157,
+	GUISkin_get_button_m015FA6A0418D94F03B5F12131DED65CCFDCA8F7A,
+	GUISkin_set_button_m6DE2099849A8911FA77BE275B2552E48A356A67E,
+	GUISkin_get_toggle_mB5459058B1C84826D47FA9BFE9CC9D05BB074030,
+	GUISkin_set_toggle_mD80DC18C72883EE616583CB75FA6C83F5C4C29F8,
+	GUISkin_get_window_mD0E9B84DBBDF7CA3FB566849E4507B5E4C6490B9,
+	GUISkin_set_window_m2284011FEDEADF15D6AA2ACD636244B74C5A6F3A,
+	GUISkin_get_horizontalSlider_mDC40C8921B044801488863EC52002C84C68E570B,
+	GUISkin_set_horizontalSlider_m761A767684EB3014E2D50D377C2B381B46FCF931,
+	GUISkin_get_horizontalSliderThumb_m0906181E7D7A364A784031556658BC2AB14A49DD,
+	GUISkin_set_horizontalSliderThumb_mEA4D61F20729CCBC6E3CBCC7E0AD5A48E37DF056,
+	GUISkin_get_verticalSlider_m42A66BFEEF219C34908FA492CD9604252FC270D9,
+	GUISkin_set_verticalSlider_m66ED35A0709DDE6CD08065C6951AD32582B0A784,
+	GUISkin_get_verticalSliderThumb_m0E0CCACBEE8D9ECF5AF19D310A14F156B1F85D18,
+	GUISkin_set_verticalSliderThumb_m0920AB66A75D6CE103EBA218BB8FEEEF9306DC1D,
+	GUISkin_get_horizontalScrollbar_m6C3C35BE443E12CA9AA4B7915C4FF704315D6D0F,
+	GUISkin_set_horizontalScrollbar_m4F2E03DEC3A2004F2912F53610D8F84EE62ACFF0,
+	GUISkin_get_horizontalScrollbarThumb_mDBF72BAF3A76876F1913BC77DFD913198606415F,
+	GUISkin_set_horizontalScrollbarThumb_mEF470A49847D208F6B190FDBDF7704FFDFD23359,
+	GUISkin_get_horizontalScrollbarLeftButton_mFB71A2ABCB046937048320741EED4C0F0573A126,
+	GUISkin_set_horizontalScrollbarLeftButton_mBB8EE6C404FD9BF0C9BD9B4B6FD036086C044BA3,
+	GUISkin_get_horizontalScrollbarRightButton_m375017416DFEBFB9D964BC377990D8A71F04EB39,
+	GUISkin_set_horizontalScrollbarRightButton_mA7B3670FAB6323B7E3F7F2A15640263BB0F3685A,
+	GUISkin_get_verticalScrollbar_mCA438980059FF28128B638E6BF442E104BACE20B,
+	GUISkin_set_verticalScrollbar_mE5B8C6F35870AA16403FB8202B36D56F2314F9B7,
+	GUISkin_get_verticalScrollbarThumb_m4D613B4477826F86001B59CB3AD41466AF8C06EF,
+	GUISkin_set_verticalScrollbarThumb_mF1A3CE45DA1A0FE4022BF95B9F8FD6B9733B48AA,
+	GUISkin_get_verticalScrollbarUpButton_m46DD4FA65B21D3C9FFFD1A1B1A6852B020C94AB5,
+	GUISkin_set_verticalScrollbarUpButton_m6407C9BFD7172E7E3A8583C34451EE331705AA6A,
+	GUISkin_get_verticalScrollbarDownButton_m6204382C228748A2535AA0E6640407A062F14004,
+	GUISkin_set_verticalScrollbarDownButton_m7B0275CBF0BCE8F95B8FF3436466A6490E0B7D62,
+	GUISkin_get_scrollView_m65256AD31599E1AEE8B9424EE9BA5385CEF9144F,
+	GUISkin_set_scrollView_m6B28717B83555F80AB3EA1798FDE15C2A2645C72,
+	GUISkin_get_customStyles_mC004E300635814033B6074ADCCCCCCC2B8F56D3C,
+	GUISkin_set_customStyles_m4F3203A3237CDA3799A0A4C440EF8A54B059EEC5,
+	GUISkin_get_settings_m32E805AA73BD4CD9EC4E731A68D0F72377C859DA,
+	GUISkin_get_error_m40FBD0C57353CBFD8EE75B796E3EADBF9033C47F,
+	GUISkin_Apply_mA93B0EEE3C2DE1F8D867A472130CDA98814C8A49,
+	GUISkin_BuildStyleCache_m2C68BB5521EAF11FC98C86D7E60008901D61866A,
+	GUISkin_GetStyle_mD292E6470E961CA986674875B78746A1859D5FEC,
+	GUISkin_FindStyle_m977BAAD9DE35AC43C9FA2DB52C6C0BDF83EE4706,
+	GUISkin_MakeCurrent_m42FAF8090F6B57648678704D86A6451DB917CF2D,
+	GUISkin_GetEnumerator_m3F6D91C1C038E5DC24C38F6D23C95DEE03173987,
+	SkinChangedDelegate__ctor_m106EBB63DA6B078DD50D230BAC7535923307F2FA,
+	SkinChangedDelegate_Invoke_mE18CA4219F24151D8FC8A8A8B261F3FD860B007F,
+	SkinChangedDelegate_BeginInvoke_mB7F9F676B52F8A8108956D2DA04E8C0ECD5C3824,
+	SkinChangedDelegate_EndInvoke_mFB33D8790DB1DAA2CC1B927ADAE992FF3C89B149,
+	GUIStyle__ctor_m8AA3D5AA506A252687923D0DA80741862AA83805,
+	GUIStyle_get_name_m111D8AB0173E1EBA46A9664EBABBC82AFE3ED71E,
+	GUIStyle_set_name_m3D232D5A8EAD7B29F1F2DA3ADD01B99EFF83F1D7,
+	GUIStyle_get_fixedWidth_mEACB70758F83DCD64CE363143849CC40E49B8D8D,
+	GUIStyle_get_fixedHeight_m9B5589C95B27C5590219413E8D7E9E1E95EB7708,
+	GUIStyle_get_stretchWidth_m4513B313AABE48E1D10424844DC186405BC8A677,
+	GUIStyle_get_stretchHeight_m264308B18FA5F0A8400CF49945BAE1B9EFDC934F,
+	GUIStyle_set_stretchHeight_mE11B46969A8498FB3B7443B4C54254F0C9A71A6E,
+	GUIStyle_Internal_Create_m9641BC84B2A6E34A801EED919EF412E4A1C444C8,
+	GUIStyle_Internal_Destroy_mFA13F1C8E929FB9429825F2F176D4E3DE9C131E2,
+	GUIStyle_GetStyleStatePtr_m9EB2842B5EDEC03D6F7A0050A4E9DBB7103EA5C5,
+	GUIStyle_GetRectOffsetPtr_m780608811770308EFDE095993756D8AA0BD37BF8,
+	GUIStyle_SetDefaultFont_m09D149F682E885D7058E3C48EB42C9E62363E381,
+	GUIStyle_Finalize_m06DC9D0C766664ACF0D2C8D6BE214756E6361BA4,
+	GUIStyle_get_normal_mC5CB22EED8113DEC86C54FB42F757B635D09DD2F,
+	GUIStyle_get_margin_mFC3EA0FA030A6334AC03BDDFA4AC80419C9E5BAA,
+	GUIStyle_get_padding_m5DF76AA03A313366D0DD8D577731DAC4FB83053A,
+	GUIStyle_get_none_m2B48FA4E2FA2B9BB7A458DF25B1391F9C7BB8B7B,
+	GUIStyle_ToString_mE73FFC6A93F4F7BC2560EADEB074F0E81F77CB07,
+	GUIStyle__cctor_mA7579A59C320A9202F6E83B39DADC06C10231D6F,
+	GUIStyleState__ctor_mD260F6A32800A135DB0AA6441D990A8FEC752AFD,
+	GUIStyleState__ctor_m88DEBFEA9F9D54F4E6732A6ACE729079A79833B8,
+	GUIStyleState_set_textColor_m2B235845A292C22ABEDEFBB2FD798DEB4E104983,
+	GUIStyleState_Init_m24D7A3BD60709BA6C36D21F86E8FBCA3AD7756D9,
+	GUIStyleState_Cleanup_mB92C1A0564E1D841A37DD43D6B6E1AD27BAD5A49,
+	GUIStyleState_GetGUIStyleState_m207443170D2CA9E48BAB05FF74B30C76C6D63F68,
+	GUIStyleState_Finalize_m68F554CD5B53E9BFC8B952E371D1E18D96D4C626,
+	GUIStyleState_set_textColor_Injected_m09DA402A33A2E28F9B8BB37AEF6EA05B58F7C475,
+	GUITargetAttribute_GetGUITargetAttrValue_mED49CA9A9696B0D52CD6C6D7BA7344EA1F019590,
+	GUIUtility_get_pixelsPerPoint_m6B4AB38F60A0AC54034A62043F74E06A613E4D56,
+	GUIUtility_get_guiDepth_m927893DDBCD8D8F88CA9F70A7D1A7BDB59B4F395,
+	GUIUtility_get_systemCopyBuffer_m5C4EE0A0FDE696D4A1337480B20AF300E6A5624E,
+	GUIUtility_set_systemCopyBuffer_m8C87AFD05D32AB0C30A2203005A64A86DFE18BE6,
+	GUIUtility_Internal_GetDefaultSkin_m1D4A53896309F1A4A54AF15D7E5F4DC61451276E,
+	GUIUtility_Internal_ExitGUI_mC6B22D4CC318E08171B3565919458F337351ACCC,
+	GUIUtility_MarkGUIChanged_m624187E89EC5D08B052B8F74B8BFD803EEE53956,
+	GUIUtility_set_guiIsExiting_m16D5DFFB64483BC588CA6BEA0FAA618E4A227960,
+	GUIUtility_TakeCapture_mE32A66FEEF1DFA8A3DDF3CE310D1C93397B31221,
+	GUIUtility_RemoveCapture_m37B735649012E93EBEA50DB8708FB6D39DFA4FE9,
+	GUIUtility_GetDefaultSkin_m2F1B580445522074FF41CF9906531DBEAB034365,
+	GUIUtility_ProcessEvent_mA250CB35828235FE2F8BA5EA7B6592234DA2D312,
+	GUIUtility_BeginGUI_m9981BDF2828246EBE4EDA43447EF6DAA74B54C91,
+	GUIUtility_EndGUI_mE93B54A19231BCC9DFC68DF54CE7C29DE41A3414,
+	GUIUtility_EndGUIFromException_m40542B74697654BEDD0BAA656EC370D00097223E,
+	GUIUtility_EndContainerGUIFromException_m66F073A94FF85A8B7C6D8A4614B43365F0A68042,
+	GUIUtility_ResetGlobalState_m192C9FAE2A4B87F34CB051C4967B8A919A902A5C,
+	GUIUtility_IsExitGUIException_mBCCE6118666769B8B767D74496E44D2ECC7AFDD2,
+	GUIUtility_ShouldRethrowException_mCF3B04493727D6A40ED50AC2414D5617455339B6,
+	GUIUtility_CheckOnGUI_mBFC764B475683BC50E40BD249248CE43DA754873,
+	ScrollViewState__ctor_mBD3229B13A482BEE165EE9CACA85F716122F3BD4,
+	SliderState__ctor_m8CBFEE8D20C2D8EB0B68B1B171D9396DE84B605E,
+	TextEditor__ctor_m279158A237B393882E3CC2834C1F7CA7679F79CC,
+	Physics2D__cctor_mC0D622F2EAF13BF0513DB2969E50EEC5631CDBFC,
+	RaycastHit2D_get_point_mC567E234B1B673C3A9819023C3DC97C781443098_AdjustorThunk,
+	RaycastHit2D_get_normal_m9F0974E4514AD56C00FCF6FF4CDF10AED62FE6E4_AdjustorThunk,
+	RaycastHit2D_get_distance_m2D9F391717ECACFDA8E01A4126E0F8F59F7E774F_AdjustorThunk,
+	RaycastHit2D_get_collider_m6A7EC53B2E179C2EFF4F29018A132B2979CBE976_AdjustorThunk,
 	Collision_get_gameObject_m9A7069ABE50D4BB957A8ED76E5F4A59ACEC57C49,
 	Physics_get_defaultPhysicsScene_mEA96CE906577479223C956BFF0B8D0B79BB47B30,
 	Physics_Raycast_m511ECD9EF3223645EF104DDA50BB81C07F29717C,
@@ -20354,14 +23681,96 @@ extern const Il2CppMethodPointer g_MethodPointers[10192] =
 	PhysicsScene_Internal_RaycastTest_Injected_m544D0227B2312D7431A9351ADA5082B390B4ADDF,
 	PhysicsScene_Internal_Raycast_Injected_m039B99FEFE39873FF8B0F60F44DE817BF43D48DA,
 	PhysicsScene_Internal_RaycastNonAlloc_Injected_m4A5BC29FB0D0AAFC1DE827838CE144F882FE632E,
+	RaycastHit_get_collider_mE70B84C4312B567344F60992A6067855F2C3A7A9_AdjustorThunk,
+	RaycastHit_get_point_m0E564B2A72C7A744B889AE9D596F3EFA55059001_AdjustorThunk,
+	RaycastHit_get_normal_mF736A6D09D98D63AB7E5BF10F38AEBFC177A1D94_AdjustorThunk,
+	RaycastHit_get_distance_m1CBA60855C35F29BBC348D374BBC76386A243543_AdjustorThunk,
+	Rigidbody_get_velocity_m584A6D79C3657C21AE9CAA56BEE05582B8D5A2B8,
 	Rigidbody_set_velocity_m8D129E88E62AD02AB81CFC8BE694C4A5A2B2B380,
+	Rigidbody_AddForce_mD64ACF772614FE36CFD8A477A07A407B35DF1A54,
+	Rigidbody_get_velocity_Injected_m61C1628D08B48C8971E476FCBB9323CB5EB73DAC,
 	Rigidbody_set_velocity_Injected_mA0CBA4077CADA05CF30404564E8D6260EF60E07D,
-	Font_InvokeTextureRebuilt_Internal_m2D4C9D99B6137EF380A19EC72D6EE8CBFF7B4062,
-	FontTextureRebuildCallback__ctor_m83BD4ACFF1FDA3D203ABA140B0CA2B4B0064A3A3,
-	FontTextureRebuildCallback_Invoke_m4E6CFDE11932BA7F129C9A2C4CAE294562B07480,
-	FontTextureRebuildCallback_BeginInvoke_m53EF837EFEA71B83AEA6706E2EB8F83062E43880,
-	FontTextureRebuildCallback_EndInvoke_m8EEDB9652F6D2358523057E1164740820D2AE93C,
-	TextMesh_set_text_m64242AB987CF285F432E7AED38F24FF855E9B220,
+	Rigidbody_AddForce_Injected_mEB8DB621D03BE740C5CBD472E873FF8B6EF6C119,
+	Canvas__ctor_m83621E7EFCEFA5A0EDC886CB878FE10E7281B951,
+	Canvas_add_willRenderCanvases_mACABFF4EAFB7DCFF4B9A33357D496EC3010D7E6B,
+	Canvas_remove_willRenderCanvases_m9A5F0E946B4549D576EDAD5618FEA2D532377831,
+	Canvas_get_renderMode_mAF68701B143F01C7D19B6C7D3033E3B34ECB2FC8,
+	Canvas_get_isRootCanvas_mA4ADE90017884B88AF7A9DD3114FDD4FEB73918A,
+	Canvas_get_scaleFactor_m0F6D59E75F7605ABD2AFF6AF32A1097226CE060A,
+	Canvas_set_scaleFactor_m40359EE941E1573107542A2377E87BEB17C10163,
+	Canvas_get_referencePixelsPerUnit_mF824215754F9A66CE59F57A3F282384124EB9BAB,
+	Canvas_set_referencePixelsPerUnit_m16AF69DA4801579FD03A220D3D6293421671F341,
+	Canvas_get_pixelPerfect_mEB8527374734F73BE960B288095A1A619E700595,
+	Canvas_get_renderOrder_m673818EDB7D1F75F70B7FFFC1B909F1CDBA52F8D,
+	Canvas_get_overrideSorting_m5C4295223733C2195D2B6CC69721B04376C3C67C,
+	Canvas_set_overrideSorting_m446842097ED576AB8706B9980E85AECC24C13015,
+	Canvas_get_sortingOrder_mA3FC1159A6594B522A7B682F5792845E2DC7C540,
+	Canvas_set_sortingOrder_m4387540EBDF2716DFAE26F27074DBF15F32382E7,
+	Canvas_get_targetDisplay_m80D9D93CA075084BDD3B05AF5F880698D7BB235D,
+	Canvas_get_sortingLayerID_mD0EB8964D1C7E68F429F83B5C5AF58426D354C75,
+	Canvas_set_sortingLayerID_m9FE5A69A22DB3316964C9D5CD49E5B4352550747,
+	Canvas_get_rootCanvas_mFC5752C1955AF10E71AA6160A3A1880586116123,
+	Canvas_get_worldCamera_m36F1A8DBFC4AB34278125DA017CACDC873F53409,
+	Canvas_GetDefaultCanvasMaterial_m972CD867F8C777A55C35A735ACE85BADC628233B,
+	Canvas_GetETC1SupportedCanvasMaterial_m99A6CABFF2B919C2B84F703A8DAC64C76F5E2C52,
+	Canvas_ForceUpdateCanvases_mB23FF44265E49BE388A79267533EA482F08C0755,
+	Canvas_SendWillRenderCanvases_mD38081FE3172AC7A884B8ED459E90633167B2D10,
+	WillRenderCanvases__ctor_m9AB0D8B934BE573C4B3ABBAA313984B054B4B885,
+	WillRenderCanvases_Invoke_m115F44E08A802F1800D79D3B92EE1A575AD08834,
+	WillRenderCanvases_BeginInvoke_mEFF75BC062DE3E7888B23BE447DD9CBDF9F307F3,
+	WillRenderCanvases_EndInvoke_mD86D55F1B1B76055B8992CE306C56BFDA735B935,
+	CanvasGroup_get_alpha_mF6AFB387E643765758F1461369A65F59BA06D26E,
+	CanvasGroup_set_alpha_m7E3C4DCD13E6B1FD43C797EFF9698BACA1FBEC3D,
+	CanvasGroup_get_interactable_mC5CE48DEFFC97EFEC794DB695E3C906736483BA1,
+	CanvasGroup_get_blocksRaycasts_m3792CE490F35260A673C28FD29BF4B2814833DDA,
+	CanvasGroup_get_ignoreParentGroups_mD37DD35C1B20CC9750AA6CC442C00E5731157918,
+	CanvasGroup_IsRaycastLocationValid_m21C6A4F645CDD52E57D6CDBD0963E3594081782A,
+	CanvasRenderer_set_hasPopInstruction_m3432A1568931473F691261A90D82AFD4063E27E5,
+	CanvasRenderer_get_materialCount_m5C0C1E7CC3DAE4B14E29A36E9890F92C0DACC3F5,
+	CanvasRenderer_set_materialCount_m124AD7592DD6078E097C9FD6CBC5676341DBCA9E,
+	CanvasRenderer_set_popMaterialCount_m238C5CF7919510F3A9FE70AC502D9C3F0C2BFE6A,
+	CanvasRenderer_get_absoluteDepth_mCE62152F19926BC6A2864E23E5070641E18A27E7,
+	CanvasRenderer_get_hasMoved_m169212ADE7843C5721D2D4ED3567AB8299B6F073,
+	CanvasRenderer_get_cull_m3BBDA319F68D6182BF4451812A7ABC3E862356DA,
+	CanvasRenderer_set_cull_m71618AE8E7F24B7B7B04F75641295ECD84F9AFA1,
+	CanvasRenderer_SetColor_mD19F4B2314FD9820902AF6ED1F0392FC78447C06,
+	CanvasRenderer_GetColor_m841EC074805A87FBD6D3EF7A17BEA2476AEBA31D,
+	CanvasRenderer_EnableRectClipping_m7C409436632B57EEC761606E22408355D8197397,
+	CanvasRenderer_DisableRectClipping_m67C4FF4EF6888518AC4B9B8CE256DC761DF08D42,
+	CanvasRenderer_SetMaterial_m9851A87FA12E2CD1321BB971953E899292EC4707,
+	CanvasRenderer_SetPopMaterial_m4772792D80E04FF3B3F5BA0B65AF94F3BE326A2C,
+	CanvasRenderer_SetTexture_m406C073585AF48FD2A880D73419F6E1069BEEA84,
+	CanvasRenderer_SetAlphaTexture_m0DF53B597582D8661411DF84ABF25F995540F34E,
+	CanvasRenderer_SetMesh_mC87C841A52339C33E5B1C644C70FC9CC9C560988,
+	CanvasRenderer_Clear_m8D621D571EEE6C2609F18ADF888008273A5A29AC,
+	CanvasRenderer_SetMaterial_mD407C670DBA743283F32581586B5DD51272B08C7,
+	CanvasRenderer_SplitUIVertexStreams_m6398634C55BA494F2D2AE13FC3878E698330AB9F,
+	CanvasRenderer_CreateUIVertexStream_m1826F08D237884FD9817F2E0251FF0F813A2C1CA,
+	CanvasRenderer_AddUIVertexStream_m58722DF8AED39532C201A0A79A84F10BEC9C7EAB,
+	CanvasRenderer_SplitIndicesStreamsInternal_mE13C66217A4A26239D601CC5FDD1AB8B302D487B,
+	CanvasRenderer_SplitUIVertexStreamsInternal_m845727DA732141F79E070AABA87C4468C3D9AFE4,
+	CanvasRenderer_CreateUIVertexStreamInternal_m5BC57F4F9325EC398216AEA1E53CC21E5C6CA920,
+	CanvasRenderer_SetColor_Injected_mA64D7935C130EDFCB8D9C1DF27F67C8EF6F36CCE,
+	CanvasRenderer_GetColor_Injected_mD90AE649D248DA886C8DB085FC27B7134399F68A,
+	CanvasRenderer_EnableRectClipping_Injected_mB430FAA285D77D2EA776CA90D3B1179DE637B20D,
+	RectTransformUtility_RectangleContainsScreenPoint_mDED32A2F3CD5C623FBA3FFE2C49AEB861D33DE14,
+	RectTransformUtility_ScreenPointToWorldPointInRectangle_m821FF925C5B70477F153B4C053AE9E36A04A774F,
+	RectTransformUtility_ScreenPointToLocalPointInRectangle_m2C389D4DCBB3CADB51A793702F13DF7CE837E153,
+	RectTransformUtility_ScreenPointToRay_mB74CED011944E1E7CE3A24C433B9B660C5BADC73,
+	RectTransformUtility_WorldToScreenPoint_m114DFD961456722DED0FFB2F8DCB46A04C2CCA20,
+	RectTransformUtility_FlipLayoutOnAxis_mFECCA330C80845D0B75829C7DD242688911006AE,
+	RectTransformUtility_FlipLayoutAxes_mF5D9BF9F0EACBC972A22C937FD21B610410EB956,
+	RectTransformUtility_GetTransposed_m405847E48935C6439CFADED4188B6F3BEE55FC14,
+	RectTransformUtility_PixelAdjustPoint_m9B5E7F4F2EB55A49670316CBE4D8923154054573,
+	RectTransformUtility_PixelAdjustRect_m320399756E1AD411CFECB3E11867806E73A0DE49,
+	RectTransformUtility_PointInRectangle_m31A8C0A3CFCC0B584A33C3A3F2692EF09D303CEE,
+	RectTransformUtility__cctor_m1DCF0D49797698D7D4FBF3EF83B5DEC9A5F42851,
+	RectTransformUtility_PixelAdjustPoint_Injected_m7F2640515030E47B1B8227306BFED31F733C9B8B,
+	RectTransformUtility_PixelAdjustRect_Injected_m2172A105E834E9F0B292508EF544A68ED257A317,
+	RectTransformUtility_PointInRectangle_Injected_m42DCFCCED1ABCAE24B543ABD1903291A3A186B2D,
+	UISystemProfilerApi_BeginSample_m43EF1B2F9606D5F0C99DF84505C5498AA0CDBB1B,
+	UISystemProfilerApi_EndSample_mB7DD865D72832D3558931B4E6801999B23F0429A,
+	UISystemProfilerApi_AddMarker_m9193DB5B08C1B7DD35835D6F0E2DF9DD20483FFA,
 	AnalyticsSessionInfo_CallSessionStateChanged_mB5E3A42407B97BD8A6A4827FADDA91DB85B0F294,
 	SessionStateChanged__ctor_m596C4D6873E1F9841C454BA7542D468F53A2DB25,
 	SessionStateChanged_Invoke_m04E35EE6755FE675385F783A6FA7096BACD96740,
@@ -20386,23 +23795,1622 @@ extern const Il2CppMethodPointer g_MethodPointers[10192] =
 	CertificateHandler_Dispose_m9C71BAA51760FDF05AB999B6AB6E6BC71BCB8CA0,
 	WebRequestUtils_RedirectTo_m8AC7C0BFC562550118F6FF4AE218898717E922C1,
 	WebRequestUtils__cctor_m31EB3E45EC49AB6B33C7A10F79F1CD4FF2BE715A,
+	AbstractEventData__ctor_m969154D10B39C49147120C39714F23A14691B2D4,
+	AbstractEventData_Reset_mE06ACEA1DE2CDBA974FF3D6416884B78250399AD,
+	AbstractEventData_Use_mB9B648733478469B390F4A9A8481DFA5BF708D83,
+	AbstractEventData_get_used_mFE059F65AD2603FFC611BE86D065760E254BF540,
+	AxisEventData__ctor_m0FCBFC3B464354D9235E152791F9356352F68640,
+	AxisEventData_get_moveVector_m53A58D79217EDB5A9929EEDC00E3AB826985D02B,
+	AxisEventData_set_moveVector_m48650D1E5F041E8E5977FEB65EA02FF8ACFA228B,
+	AxisEventData_get_moveDir_mD9CF8343509BAE60C581138D824F9C53659DBBD4,
+	AxisEventData_set_moveDir_m7AC36D4C2C91BB089B3A9057B5FD757B8A0847E7,
+	BaseEventData__ctor_mC75A9C17C2DA9A310BA6F14AFD471B70009091E8,
+	BaseEventData_get_currentInputModule_m0887B0CB20374A4AA10D4C1B480E305581533512,
+	BaseEventData_get_selectedObject_m96190D702E2ED04ED3A7942965BACA1819F41A5D,
+	BaseEventData_set_selectedObject_m9C85F7B4B720E2B140B5BAD3FDA2F4324A59C61D,
+	BaseInput__ctor_m3F4F8D08DE717052927824CC9766B87371BF86E3,
+	BaseInput_get_compositionString_mAF78C537B75217FADA21AB9C7CCA9A378BFA802A,
+	BaseInput_get_imeCompositionMode_m3FEE67F35ED8FBC6A4247C63B11B3CE613FC067C,
+	BaseInput_set_imeCompositionMode_mE4381D49523B1EFCFD855B9B146159A41F7B4D4D,
+	BaseInput_get_compositionCursorPos_mB42FA4200B70CEA2F13B2E6957A22DB7F98B9BC7,
+	BaseInput_set_compositionCursorPos_m42735A0606A476FFE7B4AB697B41F7FA542AD8F2,
+	BaseInput_get_mousePresent_mB49E596225EC5A0874D31EF1EBBB90A6214B4C88,
+	BaseInput_GetMouseButtonDown_m69D27C6AB59F20CBA6E08212279A71FA957B90FF,
+	BaseInput_GetMouseButtonUp_m5BC8BA9572311DD7B5D0DB6D4B9B023975ADA535,
+	BaseInput_GetMouseButton_m62DF2ADFEA57FFBC63B5D570516562752634680F,
+	BaseInput_get_mousePosition_m2258471375AE9452D9AB2998E40EC3E92BF4400C,
+	BaseInput_get_mouseScrollDelta_m87BB011137341FB891A417EF09AF7EAA30634A21,
+	BaseInput_get_touchSupported_mAB9D4E60006953CDC410EC00A924232A97F459E6,
+	BaseInput_get_touchCount_m60B5BAD15149059C24929FB7622364612FF2F073,
+	BaseInput_GetTouch_mE216B2EE2C34A28BA06DF122E1601EE628178A0C,
+	BaseInput_GetAxisRaw_m7FD54C7FFCE64A508570FCF0860BBD8C4946D788,
+	BaseInput_GetButtonDown_m2A399DE11BC0F313D180331A02B5C07725563ADD,
+	BaseInputModule__ctor_m752B420C9A5152F35B96D056706ED6A2B28BD3D2,
+	BaseInputModule_get_input_m385A99609A705346D5288D047EE17374ED406BE7,
+	BaseInputModule_get_inputOverride_m3C63C410A33009ACB7EAFB776066F734110391B8,
+	BaseInputModule_set_inputOverride_mCC7E9DA9E7573BF5B1538D1EC61724EA8A4A286B,
+	BaseInputModule_get_eventSystem_mEF6DEC17FF56D786AA217A52FCCFE8C6F38546BE,
+	BaseInputModule_OnEnable_m2FF5F0C5625FB11D80B07D777520C49B092A063F,
+	BaseInputModule_OnDisable_mE6411D9E2C20ED0033963F7CBCA14C27BA8BB5DB,
+	BaseInputModule_FindFirstRaycast_mA20A40BA641EB3BCA259C48722183D4FFA07D051,
+	BaseInputModule_DetermineMoveDirection_m405D909925AE1C0008A90F0E9B71951BEA440610,
+	BaseInputModule_DetermineMoveDirection_m8C9EA8541DF26F7CC4EC5FAB595E952C02D21132,
+	BaseInputModule_FindCommonRoot_m51202982DA69F0F0C44A6B3DD4B9B4B1D64C5260,
+	BaseInputModule_HandlePointerExitAndEnter_m4B3C04B585155E4BFA588A7CF96180ACF761815A,
+	BaseInputModule_GetAxisEventData_m7C98B82EDBDE4A002728A5EAB569B23F9EE6C6E1,
+	BaseInputModule_GetBaseEventData_mB945B5DF7A5C2B825C7D542D944A7795D8F5F93F,
+	BaseInputModule_IsPointerOverGameObject_m77AA0A7A6F5FE61956760FA0471E61BB11DCF960,
+	BaseInputModule_ShouldActivateModule_m468CA6D37A7EEA87C09D12FFFB99C596A6148F53,
+	BaseInputModule_DeactivateModule_m595BBDFCEAFE9D2D41B6C27EE56D6F437E473A6B,
+	BaseInputModule_ActivateModule_m9A042EC6B05375CAFAC80A26DED73A5F169E65DB,
+	BaseInputModule_UpdateModule_m97A8F1882DF8FF345FD3AB40687CD2BACB0F7285,
+	BaseInputModule_IsModuleSupported_m6A88D17A1773D055099100F0687F761ECF933703,
+	BaseRaycaster__ctor_m2BD9948456E8CED7A4D76FEF5155AE9DE6A08D2A,
+	BaseRaycaster_get_priority_m9504BF8D372452B1819B72F4CAA0EAAD29428DAA,
+	BaseRaycaster_get_sortOrderPriority_mA367A5C7877D18DB9034C6A3993A3AE6CD4D0CDB,
+	BaseRaycaster_get_renderOrderPriority_m92A523388D1E131102D5A6555697D099486D5C88,
+	BaseRaycaster_ToString_mA5A3415283E372F274B9AD6EB2AA08DF45DC6E92,
+	BaseRaycaster_OnEnable_m10F9F61D78156FC112DDCE39E8401DF01D8405D6,
+	BaseRaycaster_OnDisable_mEC294CBC0665FC0B8DC0C6E1214C168A04E34BC7,
+	EventSystem__ctor_m6121F5C3C678311B30A0094F147FEF8F32861D43,
+	EventSystem_get_current_m3151477735829089F66A3E46AD6DAB14CFDDE7BD,
+	EventSystem_set_current_mD64153A8C99301ADB345E2B1FEE70C6B7CBD741F,
+	EventSystem_get_sendNavigationEvents_mDE210910CB9BAC7D814A4DA46C8D8F9457144059,
+	EventSystem_set_sendNavigationEvents_m86EE3B7C8AF2A73C2A2CEE056325561CEB02B36A,
+	EventSystem_get_pixelDragThreshold_m65D5C447AB7779D85F20AE3557985D66ECE15DAB,
+	EventSystem_set_pixelDragThreshold_m5689776AEAAE26C5C6A218B024EF196B61DBDD2A,
+	EventSystem_get_currentInputModule_mAA917C940E32ECAC4324D6824A9E0A951F16D891,
+	EventSystem_get_firstSelectedGameObject_m558887C11E0A49D1AA57CAD4B7A768BC7950E754,
+	EventSystem_set_firstSelectedGameObject_m5CC98792FA9B98182652A8AD677C341B9565E503,
+	EventSystem_get_currentSelectedGameObject_m123CA3964D5B02E6C13C9F99FF4E11A3F63E9E3D,
+	EventSystem_get_lastSelectedGameObject_m4C5B0E99F0327973D69983BE1D3B64556BFCC00B,
+	EventSystem_get_isFocused_mEB38A1641133D11FDF5B9D8609BA0A6AB578F1B9,
+	EventSystem_UpdateModules_mDECFBFFBD7F507BEBE2C7C0C0EA167A05C961E75,
+	EventSystem_get_alreadySelecting_m6A9B2D4446A8E5C6736FA532D005A27A4EE26C7D,
+	EventSystem_SetSelectedGameObject_m9710F78638EA033F2CE1E073E15FF274A296789E,
+	EventSystem_get_baseEventDataCache_m2B14076E5EF918BE1A94F16DE1A827AC1401BC89,
+	EventSystem_SetSelectedGameObject_mB309881930DF5D4B389D2B502AAF70AD568D839F,
+	EventSystem_RaycastComparer_m32BE45B706577EF3EC2768A799B40CA39526A600,
+	EventSystem_RaycastAll_m69D6D670BD389053B4AA701482114D31D77B6A2E,
+	EventSystem_IsPointerOverGameObject_mC987B968BDFE0A02F8368616CBCE2200792905F2,
+	EventSystem_IsPointerOverGameObject_mF58A5A42C2CBE80CBF04EBC600C71A0B46FC649D,
+	EventSystem_OnEnable_m932AC09984810F445CF34D8C89FF8D592B8561CF,
+	EventSystem_OnDisable_m721829FE23FC41DAD57D1601EA7445BCA51462DC,
+	EventSystem_TickModules_m2E28DDD49233F33A9020CB854AB9FC4F82C655E5,
+	EventSystem_OnApplicationFocus_mC45D77F75329DC1E29FE260AB9C68E8763E13249,
+	EventSystem_Update_m2AA0E7A2674C3782CECEF5E3AF38D5F025F18E24,
+	EventSystem_ChangeEventModule_m47867794B1E0C5B80DEB3CDF572555EF8BEF9EA4,
+	EventSystem_ToString_m0AB5022336D70414DB9902C681D42FC2F6CF27E6,
+	EventSystem__cctor_m3127C1F125757864A48CEAE64942C22C155E35B4,
+	EventTrigger__ctor_m589B8593DD6E453DEF615531E3B5253B5FCA482E,
+	EventTrigger_get_triggers_m89CFFFA0D9858804EC5B3612D58E346BB5A89083,
+	EventTrigger_set_triggers_m4E057EA25F6A515C765B4C98BDAF5D44FDBA2F0D,
+	EventTrigger_Execute_m47103F4725D2207CB2F9470D4225F5D2DBC8CB57,
+	EventTrigger_OnPointerEnter_mF26CEB1CEC3B61B7E4BC2416F3EE8A3DC3089261,
+	EventTrigger_OnPointerExit_m294B0A8CB0496CDBEBFE5C4EE7CBB3A813C2C05C,
+	EventTrigger_OnDrag_m450CDDF522FE4D6676AD2E130B00C016B4F25C9C,
+	EventTrigger_OnDrop_m2E6A159AC0D38D36475A8B1CD4C89AF711F7EB0C,
+	EventTrigger_OnPointerDown_m705F75BB7443E1ADF47D5D7E28630496802EDEBF,
+	EventTrigger_OnPointerUp_m636C7A08260929D264113FE2D1C9237349A5812C,
+	EventTrigger_OnPointerClick_mA34ED344EECC0707E39C041E203E490E260BFDBB,
+	EventTrigger_OnSelect_m32BC10ABCB3C77F6831D838AAD54562242DE12CB,
+	EventTrigger_OnDeselect_m8CA29B196C1719456467B08C7661F9DE0D91561B,
+	EventTrigger_OnScroll_m4C907E81EE6314AE25AE846C07DCE79664E829DB,
+	EventTrigger_OnMove_m933066503DA85C6515C0960A4402AC96EB1C0D7B,
+	EventTrigger_OnUpdateSelected_m3A7BC36FE8FFAB3369EDD25FA4CA6D70023540F1,
+	EventTrigger_OnInitializePotentialDrag_m5830F75A8E0E57E31BBBDF6A5E561A5B7336125B,
+	EventTrigger_OnBeginDrag_m22ECE3C0B91CC4B2AB3B72595C3C9A2E349958BD,
+	EventTrigger_OnEndDrag_m08055A4C67F0871AEF88B84B1F9E7D74CD79B1B5,
+	EventTrigger_OnSubmit_mC8F73FB1FB1C856A942DA28890749ED608978C02,
+	EventTrigger_OnCancel_m7D0456276283B3F021B16000241CACE08DCB9809,
+	Entry__ctor_m26AFF9BE5327C259400E2BF9FF94DE5ED821DEB2,
+	TriggerEvent__ctor_m03658E93AD5085FAEC528D80DB5247BA45BF17BC,
+	ExecuteEvents_Execute_m491E72B5865562438B8FC6F6CB49C024D86E6C30,
+	ExecuteEvents_Execute_mCA3F8C0FF395F5CCB40B1B7128F52FD67209378B,
+	ExecuteEvents_Execute_m32137BEEDB1FC9B1CCC6A13E92006D8F8621B537,
+	ExecuteEvents_Execute_m1E459108391C9448C99C1BE5DB9524090753A147,
+	ExecuteEvents_Execute_mEFA02CE3245AECED33FABADFDD33A412DD7D21C5,
+	ExecuteEvents_Execute_m9D37B24595868905E835C219DD00C7D721D3F758,
+	ExecuteEvents_Execute_mB9966CCB0FB8235FB765C2AF46AE9240B5A9FD77,
+	ExecuteEvents_Execute_m0EE18A01DB04170DB3A9B8FEB8B1E176C732808E,
+	ExecuteEvents_Execute_m0A0C0D25CCBAB5022C900B032B22DB99756EF91C,
+	ExecuteEvents_Execute_mE66336C4B77CDA59E73A5C1A6C9425A43C73FD10,
+	ExecuteEvents_Execute_m2D13C063E7BCC3CB9986DEAACB3743256014CE49,
+	ExecuteEvents_Execute_m7741321B31ED68845A90FB2B1ED5294384D28750,
+	ExecuteEvents_Execute_mBD8EC83DB4C0E057699EC5AA77277ED94D73D447,
+	ExecuteEvents_Execute_m4E67DE4FA1460F0998B285AAFA2C59770F18A73B,
+	ExecuteEvents_Execute_mBBDED58C9A81F1F2F9A253BEDF4DDAD8480FB2D7,
+	ExecuteEvents_Execute_m9AB3FEE94B24C3A16DC72A03476E266DAA56A4F2,
+	ExecuteEvents_Execute_m7A31C70F22EE2199B53DF07310C91B870203A253,
+	ExecuteEvents_get_pointerEnterHandler_mFD5296E38EB1C5EB6D16CB83913430FEEBF889A5,
+	ExecuteEvents_get_pointerExitHandler_mE5EC9537676A055EEE178A4E6B58D96F9B4AC301,
+	ExecuteEvents_get_pointerDownHandler_m8AE9CA906C86BBBEB75BA2D05F5DAB01F62519E3,
+	ExecuteEvents_get_pointerUpHandler_m7EDDD1128DC04344CECEBCB9B6B7CD064F7FAED2,
+	ExecuteEvents_get_pointerClickHandler_mA657195AEC7D0A42036CBCAC9AD48F215C3C69E3,
+	ExecuteEvents_get_initializePotentialDrag_m5B3D899EB08DA227EFBFC67778DDB98D7505C6D4,
+	ExecuteEvents_get_beginDragHandler_m7F238765714F73899EAFDF0BA203D9A8A57AED31,
+	ExecuteEvents_get_dragHandler_m41B7D77771806788CD773C83C2E5A53D5ED5B179,
+	ExecuteEvents_get_endDragHandler_m23B60D3E3873043263069A3C3145393475690769,
+	ExecuteEvents_get_dropHandler_mC2362B96C6CD3628B83722F4B7C73E707C6C1EAF,
+	ExecuteEvents_get_scrollHandler_m48E5B17388986BD59EC7A7BF27E3D30A9FD057F7,
+	ExecuteEvents_get_updateSelectedHandler_mE18DBB058B1EDC75D4F690A1E35003749BBC0567,
+	ExecuteEvents_get_selectHandler_m26186C0D78CA4A8AFA0789A09F488F7E186BE1C8,
+	ExecuteEvents_get_deselectHandler_mEAA9E3701CC972EFDD20B30E9B3CD9302B2FD668,
+	ExecuteEvents_get_moveHandler_m113A4222FC10723B2E38398E182C02F6624D6F24,
+	ExecuteEvents_get_submitHandler_m734C2BE2F7CDA7F5C42897E3C8023D3C7E1EDF88,
+	ExecuteEvents_get_cancelHandler_m5DB4A9513FB8B9248AE555F7D8E8043175B8D995,
+	ExecuteEvents_GetEventChain_m640191F67AEB374A5E6FD9B1E6CC48CF31FFDCAD,
+	ExecuteEvents__cctor_m681117B3C3994340A824526A7621701871D563D2,
+	ExecuteEvents_U3Cs_HandlerListPoolU3Em__0_m373AC09BC4CA897A4A29EB107DF91A5EB7642416,
+	Physics2DRaycaster__ctor_m27655C6E407A561678AD9498BFA255EDD7DBFFB8,
+	Physics2DRaycaster_Raycast_mB036AD25FA3666E92FFF52662631F121F18879A6,
+	PhysicsRaycaster__ctor_m025728D4A189DF3D6F3EF1865A565B364802F180,
+	PhysicsRaycaster_get_eventCamera_mAFA0D5F17761DBDDC9BD06135CF444758BCC4B90,
+	PhysicsRaycaster_get_depth_mB9E91E8ED99740B180603DC441710284253B0380,
+	PhysicsRaycaster_get_finalEventMask_mC5DFCA00BC1CA1EF9D0CDED5D13CBCD54AA05C18,
+	PhysicsRaycaster_get_eventMask_m173FFCC684C9491D89069B34A17C3C42D01CD8F8,
+	PhysicsRaycaster_set_eventMask_m37E5C20297F5DB01DE3791CDA8C9649F59E797C7,
+	PhysicsRaycaster_get_maxRayIntersections_m1CDE013379C6D0A5A7FE2B5355A20DA978AB35E5,
+	PhysicsRaycaster_set_maxRayIntersections_mEF384C71FAA8E44BF22642FAC1046B0085B2DC13,
+	PhysicsRaycaster_ComputeRayAndDistance_m38F1B20E0A1948699C2A952234705E1E74666486,
+	PhysicsRaycaster_Raycast_mB720C45CB0B13D85D1EF7535338B76F663E409FB,
+	PhysicsRaycaster_U3CRaycastU3Em__0_m73A18F73DD07B29DC82FE7542E8D88E2EDF3C989,
+	PointerEventData__ctor_m0C53BF90396464F33D24246FCB43CCD6C10279E0,
+	PointerEventData_get_pointerEnter_mB03227311AE1BBBFE8CBC97C4291408AB7FBB674,
+	PointerEventData_set_pointerEnter_mAFA065EA0A1139DEA26BD75AD775B08065023B96,
+	PointerEventData_get_lastPress_m2DC90D62F7B0D4B3CBB17F6F33FFA3FBEF7B923D,
+	PointerEventData_set_lastPress_mE5BC36930052B09871B698E6933B16ED70784B63,
+	PointerEventData_get_rawPointerPress_mB0F14CF8A3DB6EB9F7FD0C6175F0723C8936E547,
+	PointerEventData_set_rawPointerPress_m631FBEB248D64D43A3FAE09DD30F67B4D85CF322,
+	PointerEventData_get_pointerDrag_mC2C575B6385B2DA82FAD1EF1033870DADB849E0A,
+	PointerEventData_set_pointerDrag_mBBE81D7D8978E6574F5D82C9DF05294CDA1A10FF,
+	PointerEventData_get_pointerCurrentRaycast_mE58F786484E13AF2E6C2706E20C889E7453E3A7A,
+	PointerEventData_set_pointerCurrentRaycast_m49EA409CDFCDE80E197EF699BDFA76CEBD834CCB,
+	PointerEventData_get_pointerPressRaycast_m722BCA823E0405C9DF20312CDFBBEB5B1B05B7AE,
+	PointerEventData_set_pointerPressRaycast_mA79E81D3E68FEE3C5583150648DF735B32C67722,
+	PointerEventData_get_eligibleForClick_m9780B9329C18F5779EB06CCB9E6874D1A8318D7C,
+	PointerEventData_set_eligibleForClick_m01058124CBA9FEF9702BAFFA42B0C05536213DBE,
+	PointerEventData_get_pointerId_m2E7B8CD923977019C2697ED57519F14E4F2ADB3F,
+	PointerEventData_set_pointerId_mA3720F5C305189ED23CCD948471EBA6147E3E857,
+	PointerEventData_get_position_m00FFBA0CB6385B8E8B82BE9C8AAC45E027B2D061,
+	PointerEventData_set_position_m4A3628048789D0260B4E5FB26258E91E38A5BA69,
+	PointerEventData_get_delta_m70E69337BC484503C037D1D292C37E6926B6F3A7,
+	PointerEventData_set_delta_mC465A762DB5BBA323969FCCADAC62CE470D67F56,
+	PointerEventData_get_pressPosition_mE1E2B1338B0D26582BC270EBC12014B9894A346C,
+	PointerEventData_set_pressPosition_m61BDF7F70221FDAB986397C19BAD6C6AF808821F,
+	PointerEventData_get_worldPosition_mCEE3389DFE9AC3C853FA7AF7CD93C33E2A0223E6,
+	PointerEventData_set_worldPosition_m735F354BD21EA7D7EE816041310CEF67E529304B,
+	PointerEventData_get_worldNormal_m097228E46EC400D658261A050E03DCF31D8C4866,
+	PointerEventData_set_worldNormal_mBAB69375B707748BC720D64E7AAEE8B138BA42F6,
+	PointerEventData_get_clickTime_m0BD723CF92024DF33AFC6D4EEE7DCBEBDCE71936,
+	PointerEventData_set_clickTime_m1FEE7D0A72D7CEC6D12F7F700ED746D46C164CBD,
+	PointerEventData_get_clickCount_m7684E207D87BDEE77E768E177BCD32497CCAF67C,
+	PointerEventData_set_clickCount_m4B1BA127DD2F1A2BC6137FA644F2E7C4C56E635C,
+	PointerEventData_get_scrollDelta_m7F3FD249A5E9A3F7441FECE3EE18BFECC565EB09,
+	PointerEventData_set_scrollDelta_m94EBC5B529EFA6530A50A72E4432701F58CFE3EE,
+	PointerEventData_get_useDragThreshold_mC715443AE2D0DA2D6B195DC583AEF0522CFE71BE,
+	PointerEventData_set_useDragThreshold_m6E359AD2766A55A31BC53DE373BAED0709AA343D,
+	PointerEventData_get_dragging_m5D58C6A1A44088BEC5C5D3BF4F65EF402DBE3C35,
+	PointerEventData_set_dragging_m8A3F0551EC534BF500DF349F2029AB48BC8CC126,
+	PointerEventData_get_button_mC662D5DAC02F0ED6AE9205259116CC91BB92BD3E,
+	PointerEventData_set_button_m54E873C59314566824687FDCFF60733354796836,
+	PointerEventData_IsPointerMoving_m37FC040F49DFB57856117469B61C342CDB85A76B,
+	PointerEventData_IsScrolling_mF80C182B633F482EFD10317B29C6BF9F48F98093,
+	PointerEventData_get_enterEventCamera_m577E1776C18402B74EA29030B2C19D29A0A09949,
+	PointerEventData_get_pressEventCamera_m67D6A0046313FF44CD3071EA68691846203C1756,
+	PointerEventData_get_pointerPress_m04F5D527CD6A531DF5FE49AA6C2956670975303F,
+	PointerEventData_set_pointerPress_m68451188748DC3D510B4C95E1B480C61E5A014E5,
+	PointerEventData_ToString_m2098AEE62138E4F542765892D247189AF0968070,
+	PointerInputModule__ctor_m906B66508CD14DBEFE1433F6011177117BCCAF7A,
+	PointerInputModule_GetPointerData_m27E1E7AC37461EA83BD10D2572AE0D567148DD64,
+	PointerInputModule_RemovePointerData_mD2FB032581DABA6134423CD21C23CD8A4F63E1B8,
+	PointerInputModule_GetTouchPointerEventData_mA854E0BF0798BC85F11FFE8637C167B8DB97CB76,
+	PointerInputModule_CopyFromTo_mF63ED455A5F3CC1F2A761B38D4E2B5F99E866B23,
+	PointerInputModule_StateForMouseButton_m444A7772B383C141F28817295BAD2BCBF7BB0F80,
+	PointerInputModule_GetMousePointerEventData_mA8B6C810AE130118AA18CD4BD35F8F5BCE0D7E07,
+	PointerInputModule_GetMousePointerEventData_m9CAE6C19EEED79D131BCF76386300A883DFD4643,
+	PointerInputModule_GetLastPointerEventData_m5EA18AB20393345C66994CF2BB9AA8B5F71A7BC9,
+	PointerInputModule_ShouldStartDrag_m88884E8652D0D73324C01E4DB1EDF308C678E329,
+	PointerInputModule_ProcessMove_m31F63D1FBE42E7794E3DE9877BF49C1C605C8F00,
+	PointerInputModule_ProcessDrag_m7856F014151740D2CB268E7F6D4D7107B7EFE963,
+	PointerInputModule_IsPointerOverGameObject_m827551D2E47DC2C6B097DB06FCDC94D826791DE1,
+	PointerInputModule_ClearSelection_m8AC589A5ADBB002008F0F619D1E3D354417C2A85,
+	PointerInputModule_ToString_m147594E0978D0469A5E1CC897553AD1097139F56,
+	PointerInputModule_DeselectIfSelectionChanged_mEF38C3E28982933198403D8DC48CA0DDBAA994AE,
+	ButtonState__ctor_m3A40307CD629FFD47717C24A30BF5CAED652627F,
+	ButtonState_get_eventData_mA9D054D526473A2481A997758CDDEB022E67351D,
+	ButtonState_set_eventData_m5BC72CF0AD5CF0AC9B3DBBEA877DCC54AAD8297E,
+	ButtonState_get_button_mB538B2D483C482A7E628D26BA390449A54C958A3,
+	ButtonState_set_button_m71A6048CA1053ADBBEBF1B1A97BF9ED0D7ABF3AF,
+	MouseButtonEventData__ctor_m828B1CF2F1B493FB9A965901D9A35D9025D5C39B,
+	MouseButtonEventData_PressedThisFrame_m21899C9B366068C28D05030ED0742CEA48746CA4,
+	MouseButtonEventData_ReleasedThisFrame_m9ED62232E56AC9CAC793097B455FA9D927DBDB4D,
+	MouseState__ctor_m00FE417DE1D9F6DF250D6914CC6E09D1C1CD15B7,
+	MouseState_AnyPressesThisFrame_m1EAB75B7C05EF268BC2C4606CDE9A10781FE5675,
+	MouseState_AnyReleasesThisFrame_mDDFF8A7DEC3E10A4E30832FCEAFFB1F51B5830BD,
+	MouseState_GetButtonState_m0C2884609F720A284C72EAEF061C781F4874CCAE,
+	MouseState_SetButtonState_m9FD225E0F7167C46886F6A6CFAAAC09C33F1B1A5,
+	RaycastResult_get_gameObject_mCC534CC86C322274EB5F16F18F7EA05AE4D607CB_AdjustorThunk,
+	RaycastResult_set_gameObject_m31B7E59B8611A79C9EE16CF32D4EC8A6EE742403_AdjustorThunk,
+	RaycastResult_get_isValid_mEF9C1AA69A007B373CF7112EF0AB46E6846DF59E_AdjustorThunk,
+	RaycastResult_Clear_m36B7EA9745051208182EFCD4CBC1772A6810D6DB_AdjustorThunk,
+	RaycastResult_ToString_m0064730ADA2A6E14F845BC0D709277EDCC9BEAA8_AdjustorThunk,
+	RaycasterManager_AddRaycaster_mD07AE3FE5DA15D14D661C66E2B22D1BAC1438BE7,
+	RaycasterManager_GetRaycasters_mC012BA818045A764CA81B7FE812312ED8D4724D9,
+	RaycasterManager_RemoveRaycasters_m675FA0C1615A4D566D1499371287276E77CAF8B3,
+	RaycasterManager__cctor_m6C24AD55466B5EFFA31A9C4E4BB5E09D5BA4C4AF,
+	StandaloneInputModule__ctor_m132938697291C4DE7B00375297A4736FC939310C,
+	StandaloneInputModule_get_inputMode_m9E4FF00674C049A7F600D0CC5D278F474232B3D4,
+	StandaloneInputModule_get_allowActivationOnMobileDevice_m14C54726E83BB2B6CA6A52166CF8872FEDAB32DC,
+	StandaloneInputModule_set_allowActivationOnMobileDevice_mE426AE101F065929A3966A98EA31A76A59711CFE,
+	StandaloneInputModule_get_forceModuleActive_m413DAEFBC9582E515B6D757F2966F978A479765A,
+	StandaloneInputModule_set_forceModuleActive_m5DC13F958DD0E0F2434AB5614E2AE9B84302F333,
+	StandaloneInputModule_get_inputActionsPerSecond_m410CAC6D0162C2DBCED4D387F1055D4EBFD3B908,
+	StandaloneInputModule_set_inputActionsPerSecond_mCC7E425583C9F01A55EDB439B8B7F9DABEE396CD,
+	StandaloneInputModule_get_repeatDelay_m52337CBE0B7CC57992F907F1B747A7012D5BCFC6,
+	StandaloneInputModule_set_repeatDelay_m4CBD0BAD844872275B696C9A8D020482F190BF93,
+	StandaloneInputModule_get_horizontalAxis_m001E63F2FC471F1E2409AC37DF9673219AF815EC,
+	StandaloneInputModule_set_horizontalAxis_mB53A2BFDCAF0AD35CC666E25D352438757C1F82C,
+	StandaloneInputModule_get_verticalAxis_m2F0E33E6E8095D102CD05EE3121E53298F3682F5,
+	StandaloneInputModule_set_verticalAxis_m4BA109DFCBD1995F4AE163B47C6DC87C51465B96,
+	StandaloneInputModule_get_submitButton_m6994D63E2EB8F94D5EAC485A86D04DEB1986F881,
+	StandaloneInputModule_set_submitButton_mD5F7D21294457904C1A3AE104461F0BD9AFBA6E8,
+	StandaloneInputModule_get_cancelButton_mCD51C97F526A2C4D1009356BFF2AAC3741EAE81E,
+	StandaloneInputModule_set_cancelButton_m9762F38B1A56D234D03C0D799CAC3060FF555409,
+	StandaloneInputModule_ShouldIgnoreEventsOnNoFocus_mEEEEF969347F7CF25E65E8CD66416595AF391B3C,
+	StandaloneInputModule_UpdateModule_m38AD4C6DA29C91488D297A126801AF37B310BDB7,
+	StandaloneInputModule_IsModuleSupported_m5402F7286685A3F46018C5D8A382A08E6134C950,
+	StandaloneInputModule_ShouldActivateModule_m1FCC03EF5003F9D5898D62546537106516FE32D7,
+	StandaloneInputModule_ActivateModule_mBBECF270C64919259CA47A6A12930595F363CB16,
+	StandaloneInputModule_DeactivateModule_m09F5C32215E742AFF0A556D0098AF3D78B617A14,
+	StandaloneInputModule_Process_mDFF8B9EF1AF451E850E161B5C0BEE5A021DB0DC9,
+	StandaloneInputModule_ProcessTouchEvents_mBED4842DB8EB55D163C92FC142466D0DF9E28B5F,
+	StandaloneInputModule_ProcessTouchPress_m6D785DFE91DB756A2D9337FE2F1CB26C1EAA38C0,
+	StandaloneInputModule_SendSubmitEventToSelectedObject_mDF9122A384B1A2AF5E1C28F30963D7F802AB6411,
+	StandaloneInputModule_GetRawMoveVector_mE51848C77C5B8C578850FA06C2C02D2E683ECC4A,
+	StandaloneInputModule_SendMoveEventToSelectedObject_m79655668775AB4C60A0ED68ABACEB7480469E7BB,
+	StandaloneInputModule_ProcessMouseEvent_mC10681AC93ED7763CD88F09936BB56DA6D55D5F0,
+	StandaloneInputModule_ForceAutoSelect_mC34941BAE0857191D918CA7D57E5449EEC68E183,
+	StandaloneInputModule_ProcessMouseEvent_mE62801E846D02A3444D611601B052FB4DABE8248,
+	StandaloneInputModule_SendUpdateEventToSelectedObject_m0BD287423AC39711A6BAB5D7E6B49E0E6A03FB0D,
+	StandaloneInputModule_ProcessMousePress_mBC9CB92C1B0B382C04E66001A3BBB9845AF9D56C,
+	StandaloneInputModule_GetCurrentFocusedGameObject_mBDB165A96D51A408C316B865C102EFFDB68222DF,
+	TouchInputModule__ctor_mD04A302105DD29E2B94E757CC1F1D5619532B33C,
+	TouchInputModule_get_allowActivationOnStandalone_m78DC53155A9725907340E0492B161CFC0AECEA52,
+	TouchInputModule_set_allowActivationOnStandalone_mEB39F9B62D80693AD63CF1157DC7DA7B25CDE27D,
+	TouchInputModule_get_forceModuleActive_mEE351E61F06D735A1651516E8210501BDB3A0A2C,
+	TouchInputModule_set_forceModuleActive_mE2898B8EF758B0722FF6D7C4A970F968EE5520F2,
+	TouchInputModule_UpdateModule_mBD673416EF1E503A8325A14CA6600E03A4FA5AD4,
+	TouchInputModule_IsModuleSupported_m2BEDD8E24F386C31727EABC1CDC9ACCD9988D833,
+	TouchInputModule_ShouldActivateModule_mE4D58FF441BED313A7B0CD8A2316303CE27380CB,
+	TouchInputModule_UseFakeInput_mDEBB2F3226B351E4524C1A5BF29490FF715F6861,
+	TouchInputModule_Process_m00C76893C9202BF2167ED29D533722213B9957F7,
+	TouchInputModule_FakeTouches_mB22224D6CA9E9A2B7F694EE10C55A2EA402EFFB6,
+	TouchInputModule_ProcessTouchEvents_m84540F3130772F8E557750BFAE9F09D79665CCBF,
+	TouchInputModule_ProcessTouchPress_m80DC42001F194832D7ED05305A75E78939116CC2,
+	TouchInputModule_DeactivateModule_mBC7CCA0B1DE415E1A5CF6277FFFC1E4DD5E70E0F,
+	TouchInputModule_ToString_mD9F0317AA1E27B8B02FC6591A6069B0DF0394D4F,
+	UIBehaviour__ctor_mED41F1FD6DA85A4D40E088635B56EADCA9B966CE,
+	UIBehaviour_Awake_mCCC65A98E4219648D4BEFA7CD23E2426CAEF1DE2,
+	UIBehaviour_OnEnable_m16C0E48B946CBF1B50BD7315E4CE58EDB1AA9588,
+	UIBehaviour_Start_m7B2A6AC2AEAA2EA898B2DE16675219F4F367E03E,
+	UIBehaviour_OnDisable_m3CC4CD541E2FAB097CB56BA36D96D7D198D0CCE3,
+	UIBehaviour_OnDestroy_m4972A2A5CFECE666D574D51EA6664BD29E92530C,
+	UIBehaviour_IsActive_m49D11FABD06B8DCA1008BC1FF6C84991FE8F2054,
+	UIBehaviour_OnRectTransformDimensionsChange_mE0E4056A622DB66A0E54B803DED67E64B036897E,
+	UIBehaviour_OnBeforeTransformParentChanged_m40D40EBD8BC111DAE8D26DC04780E34864093AE2,
+	UIBehaviour_OnTransformParentChanged_m8B60AE85CA8C3782E43BAA65C365FA4589BBC50D,
+	UIBehaviour_OnDidApplyAnimationProperties_mC5DD8424E467DA0CFB062DB119B1CCBC4C22401D,
+	UIBehaviour_OnCanvasGroupChanged_m6A6DF20B585869BF5C3243092B6898A928E4679B,
+	UIBehaviour_OnCanvasHierarchyChanged_m9148AEF03C6049C549B3A8F41176323E639C609A,
+	UIBehaviour_IsDestroyed_m019424306A85134DDEE900D085CCF1E2AE0B9AA8,
+	VertexHelperExtension_AddVert_m02926227BAA55044A57CB2C4D3C713DE097E8E06,
+	AnimationTriggers__ctor_m5AA317D9A9FFB191D992B3FBC702A6A2BBE16ADE,
+	AnimationTriggers_get_normalTrigger_m0ECEE19A906633334E1E323239DC78062ECC653B,
+	AnimationTriggers_set_normalTrigger_m8B272F6A217DA1DE6032C2FF43ABBA20227CB08F,
+	AnimationTriggers_get_highlightedTrigger_mDEB27C95E2242771B4E37F5841B2B6D39E31DD05,
+	AnimationTriggers_set_highlightedTrigger_mDBDF2797BAD41A6D02078F433BBD2D938DFD2E06,
+	AnimationTriggers_get_pressedTrigger_mB9E151CDD338D8384732E922918FABAE30EECE18,
+	AnimationTriggers_set_pressedTrigger_mFC5DA0BBC29801845BB1B1868828BF5CA00253AB,
+	AnimationTriggers_get_disabledTrigger_mAFD454C24CB2C129EA456D171F8584C9F6F45C43,
+	AnimationTriggers_set_disabledTrigger_m37B1BDC569AF2B798F51C78F6ABC736ADDBEBF6F,
+	AspectRatioFitter__ctor_mD9565904E9B26C1B175F3D728318245C3F44AB26,
+	AspectRatioFitter_get_aspectMode_m9DC7F64E9AB97AAB413EEF9931EDEDF90ACE0B75,
+	AspectRatioFitter_set_aspectMode_mAD5882D6867315E5DA24D7F6F79FEED5CF6960E4,
+	AspectRatioFitter_get_aspectRatio_mBE7526D1C31A194E96EF4AA54092A6D9E9A6EF25,
+	AspectRatioFitter_set_aspectRatio_m97D43C307087AAF9130ABF35AED9748CD8B50084,
+	AspectRatioFitter_get_rectTransform_mE1041AD9708EF0E2B89485FF0CCF9C52630A5D29,
+	AspectRatioFitter_OnEnable_mDE8C390FB2E99F1F7611583FDBD84B3DA35071AB,
+	AspectRatioFitter_OnDisable_m76C31DB4383D9A2DE2AE1C780A06CFFCCCEADA9E,
+	AspectRatioFitter_Update_mE105C6DD67A867C5DBFBA02EAF2ABEE5F65DD774,
+	AspectRatioFitter_OnRectTransformDimensionsChange_mD340D18666970469F276D51E70952B8F785426E4,
+	AspectRatioFitter_UpdateRect_m48B78A1C8CBAE90726B1FA9311D0A94E525ABEB4,
+	AspectRatioFitter_GetSizeDeltaToProduceSize_mC3922C14050AB660C751D28C05D4FE82B0ACD789,
+	AspectRatioFitter_GetParentSize_m08FFC7E23AD5F493AA1D060143C98421781BEEE7,
+	AspectRatioFitter_SetLayoutHorizontal_m1738F5CFACBFDC9E65E707AAA8273EE6EF18BBE0,
+	AspectRatioFitter_SetLayoutVertical_m16A353F8CFFC825B0492CEF70F081381C181A09D,
+	AspectRatioFitter_SetDirty_m8906860D76995C42C75C6D596E75A7B14079C0B2,
+	BaseMeshEffect__ctor_mDAF9031F104E899963B63B3157E2F9CFF9A67B53,
+	BaseMeshEffect_get_graphic_mDD7D8CD6F220B9DE656145A1346EA9799255BE21,
+	BaseMeshEffect_OnEnable_m87A0A7C1776A45241C5B79E0798D701998A3AC06,
+	BaseMeshEffect_OnDisable_mB6887AEE4389AD8A7D1887ADBDAB8F2323A59761,
+	BaseMeshEffect_OnDidApplyAnimationProperties_m22DC2B8D71EA7B6759DCBD65BC86CA7DFFEA3CA4,
+	BaseMeshEffect_ModifyMesh_m33E7051E994174202728BD2DB2FC6A15369543E8,
+	BaseVertexEffect__ctor_m78E987B6C2DCF87E2CC3EA6F02A4FF784EF8DE16,
+	Button__ctor_mED2BC0DA246D78116445D1095284B1AE9B3D390D,
+	Button_get_onClick_m77E8CA6917881760CC7900930F4C789F3E2F8817,
+	Button_set_onClick_mC1A5C8D1C9A2887AFAFB554F8DEFB506E02FD922,
+	Button_Press_m0C24A5004238FAD62C22F7737EAA535DD21A1D5A,
+	Button_OnPointerClick_m3A39FE51F04BE14A4CB7C546C7B873845BA17B4E,
+	Button_OnSubmit_m4A3CB8F3C52440CAD7AAB223B8D8801B87039F3F,
+	Button_OnFinishSubmit_m8E4F41D33C11DA8D12C16D98337CAF58AED8663F,
+	U3COnFinishSubmitU3Ec__Iterator0__ctor_m499DA899F2DA84791D010E1E10C43F04AF808073,
+	U3COnFinishSubmitU3Ec__Iterator0_MoveNext_mE9C0CB584CBFC3430A8FFD39F4875504AF27A063,
+	U3COnFinishSubmitU3Ec__Iterator0_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_mD08D9070FDE03F3E394A4A5C64E0D01AC81654B1,
+	U3COnFinishSubmitU3Ec__Iterator0_System_Collections_IEnumerator_get_Current_m0CA6C7AD053C4B24E9086459B4F98A49937AD509,
+	U3COnFinishSubmitU3Ec__Iterator0_Dispose_m2C0B56AB78E4CE0A7EFBD29FC8424E00F23CE468,
+	U3COnFinishSubmitU3Ec__Iterator0_Reset_mBCC64A2E586D434CA73B76F6973AFCE6F97F195E,
+	ButtonClickedEvent__ctor_m428E0258D725DDFE6DD10318AC943F690A263F56,
+	CanvasScaler__ctor_mA69A6F38BE3098458A7472D73D81F95E1D99A11B,
+	CanvasScaler_get_uiScaleMode_m8D75124B20A8598DFEF27665EBE9C5925CB25301,
+	CanvasScaler_set_uiScaleMode_mFFDB7212B2527D3B93CD2214B75814BFA5607F1C,
+	CanvasScaler_get_referencePixelsPerUnit_mFAD1FEE2C025E1EA451D39FE49B95C5A9A81E9F6,
+	CanvasScaler_set_referencePixelsPerUnit_m5518D8E47850348219FD599E9AC6361F3512A7EF,
+	CanvasScaler_get_scaleFactor_m76F53AD902C67A20225DC2398CAAE6695851ECFF,
+	CanvasScaler_set_scaleFactor_m427E135035F84574DD6D9DCC63331F9BE85ECE00,
+	CanvasScaler_get_referenceResolution_mDA587A4FB4470BE513F42FFE7CEEBB51E9AD448C,
+	CanvasScaler_set_referenceResolution_m474B06B6CAEBFD1CC161D2035EEE62AEEAECCF79,
+	CanvasScaler_get_screenMatchMode_mD1444EF5D606499AE030E88AEACD0D4319C394F2,
+	CanvasScaler_set_screenMatchMode_mADCC387FC2DB22A23D6E1F3C1BEAB62FACEAB2E7,
+	CanvasScaler_get_matchWidthOrHeight_m8514D826EB52649998BCC98F488694118747190E,
+	CanvasScaler_set_matchWidthOrHeight_mC2F74E7F12A88022550390D9994C74825BAC0713,
+	CanvasScaler_get_physicalUnit_m2F6DD4DFDDA3DE8652A5F295C1E66060D0D8E94A,
+	CanvasScaler_set_physicalUnit_m2C611B8BFBD49A8BD41968665137431E6ACAF7BC,
+	CanvasScaler_get_fallbackScreenDPI_mBF6F603D6FA967ACB7A61D6E367576FC115AF833,
+	CanvasScaler_set_fallbackScreenDPI_m31031EA416ADD8D4C500D6C13752B5736FB3B51A,
+	CanvasScaler_get_defaultSpriteDPI_mB71D63E9E0CB1A7D735A31513FB6C176ADE08A88,
+	CanvasScaler_set_defaultSpriteDPI_m47244B69D6FC8C67B1CC5E3C828F5DD3FFB8C47A,
+	CanvasScaler_get_dynamicPixelsPerUnit_m1A4E11FBBEBDE2D4BEC4FB05A9D15D5286AE12C6,
+	CanvasScaler_set_dynamicPixelsPerUnit_m6966A409824F98E3027005BFF3655798933766DA,
+	CanvasScaler_OnEnable_m8749E386D81BA203418FC433BD0BA5DD04EF14FD,
+	CanvasScaler_OnDisable_m18076416BA69F91463CBEB7BA9140A1A7E33623F,
+	CanvasScaler_Update_mBAAA59BA0D76851C0236E0779F369B119099F274,
+	CanvasScaler_Handle_m189FD9436635FCDEB6F35253B3817CD3A0A8B166,
+	CanvasScaler_HandleWorldCanvas_mF5BD30AADCEA605A130315BE12F44205AC8D5003,
+	CanvasScaler_HandleConstantPixelSize_mF3662B3CBD7E1D64978099B85608010296B79173,
+	CanvasScaler_HandleScaleWithScreenSize_m1DD61433B67405576320940534A8FC0FA1911C8F,
+	CanvasScaler_HandleConstantPhysicalSize_mB0173D2440F14B901B4FFAF419BDCDA2EB43A94B,
+	CanvasScaler_SetScaleFactor_m431BE2C381FEEFDFD69EF620EA665ED8C615C0A7,
+	CanvasScaler_SetReferencePixelsPerUnit_m02C40AB796242295B4A4685DDB0D4456BDEEBA8E,
+	CanvasUpdateRegistry__ctor_mF8EBE47C9664695C7DAF567C70AF4EDBA7B4D7FA,
+	CanvasUpdateRegistry_get_instance_m6A2150EA4C8C74AF18E53B3CF22BF6EAF70FF927,
+	CanvasUpdateRegistry_ObjectValidForUpdate_mD80379550F8B6226CB2076F687314010EB8F8712,
+	CanvasUpdateRegistry_CleanInvalidItems_mEE44512237D965F1E37DBC512C138FF080026883,
+	CanvasUpdateRegistry_PerformUpdate_m27FCC7819543791FFD7C17E9A0A0599D9FABA3AD,
+	CanvasUpdateRegistry_ParentCount_m085EA145C7229F45589EF06909716EF94F736AD7,
+	CanvasUpdateRegistry_SortLayoutList_m779E942CC778974023FBD9AC8B5904BF639E8CCC,
+	CanvasUpdateRegistry_RegisterCanvasElementForLayoutRebuild_m87299C15D1574DDED781874EF4AEE4D606AC4572,
+	CanvasUpdateRegistry_TryRegisterCanvasElementForLayoutRebuild_m1F0BF3A80FBED68DFD573AE8D5605FBD0CA19F91,
+	CanvasUpdateRegistry_InternalRegisterCanvasElementForLayoutRebuild_mECAAD4E5318FBE9BD5CDA16426BDC21E277E577D,
+	CanvasUpdateRegistry_RegisterCanvasElementForGraphicRebuild_m58474E8CE6625C2C25A46F49BD519A170F89D68F,
+	CanvasUpdateRegistry_TryRegisterCanvasElementForGraphicRebuild_m6C82DD2B3D12895658CF84C1010675782D90ED56,
+	CanvasUpdateRegistry_InternalRegisterCanvasElementForGraphicRebuild_mFDE01264F481F2B1DE51EE6E4314DE393BC85C7C,
+	CanvasUpdateRegistry_UnRegisterCanvasElementForRebuild_mA600C1B4AC0D08675F45C90CC77BE23EBECF9854,
+	CanvasUpdateRegistry_InternalUnRegisterCanvasElementForLayoutRebuild_mE56DF5AC0A2A22E636AA33DAEC298BC7AC2069CA,
+	CanvasUpdateRegistry_InternalUnRegisterCanvasElementForGraphicRebuild_m70F9919EC8944366C9615EAA6782A45F13CEA1F2,
+	CanvasUpdateRegistry_IsRebuildingLayout_m929E0B5A783EDE7D3FA23FE8CE5D9E62FA29983C,
+	CanvasUpdateRegistry_IsRebuildingGraphics_mD20E7085AB0526F569AF01009E72FC489CFF631C,
+	CanvasUpdateRegistry__cctor_mF173D376F15F2222F022D75E1E08625DE6363A25,
+	ClipperRegistry__ctor_m015FF17B0FD41C8FC8E10CD5CEC2571D024BA5EE,
+	ClipperRegistry_get_instance_mE4E214237577A08B2A6C8AF9DD7CDAE1B75E387B,
+	ClipperRegistry_Cull_m91E882B7B95D7BAA22F8CC4695EC25B2CC2C38AA,
+	ClipperRegistry_Register_mE7CB7501971618F5A7EA9B6586585A13DACC968B,
+	ClipperRegistry_Unregister_m9B2FB87C9FF8D8CBCFE58EF9B8300563C5F73507,
+	Clipping_FindCullAndClipWorldRect_m62A1D614218104F682E7B6DDC60F9A94BC290CD7,
+	Clipping_RectIntersect_m90C96502693AC446BAEEDB628FD78F469A5F737B,
+	ColorBlock_get_normalColor_m56E5827F34618598261AFDD0A3EBA5FF98F8D907_AdjustorThunk,
+	ColorBlock_set_normalColor_mE4DF3EEB1D307B8B103D9FE8CD9ADE83C6DBF41A_AdjustorThunk,
+	ColorBlock_get_highlightedColor_mA4848B61041E78E7650300221F8A6EBBC801319B_AdjustorThunk,
+	ColorBlock_set_highlightedColor_m04EFF0EF809F0AB42ECAE0E6EFB459DA6ED7A191_AdjustorThunk,
+	ColorBlock_get_pressedColor_m49A09AF1A1D08B552F83F4BD8A9D7E7F9EFC6021_AdjustorThunk,
+	ColorBlock_set_pressedColor_m74751B216396D22726458C62377A0D900E40667B_AdjustorThunk,
+	ColorBlock_get_disabledColor_m92AA8A3A936AA2F5BCB49A6ED24A7DA18D710856_AdjustorThunk,
+	ColorBlock_set_disabledColor_m30578F817DB13CFD86B9498019EEC1A3D8BC9017_AdjustorThunk,
+	ColorBlock_get_colorMultiplier_m287777DFF10C22298EF25619E2ABC26B495FA42B_AdjustorThunk,
+	ColorBlock_set_colorMultiplier_m85525FA1ECB9BA7EC2DAE11875DE1972062457F3_AdjustorThunk,
+	ColorBlock_get_fadeDuration_m01EEDBB4B16043DC079E5B486CADA136A24BFEA9_AdjustorThunk,
+	ColorBlock_set_fadeDuration_m07D8B9D347B41426EFD5D98DBD11A231BF1FB203_AdjustorThunk,
+	ColorBlock_get_defaultColorBlock_mD3AEFDABCF5F714D81FB2047A744930650EC223E,
+	ColorBlock_Equals_m77C135F8EBD050328F874088E7E51F07169BAC3A_AdjustorThunk,
+	ColorBlock_Equals_m6393CE86568CF89148754BCBB02A6D22D424BFEA_AdjustorThunk,
+	ColorBlock_op_Equality_m8C659F98080A0171D95EFB252B75A794470C0F41,
+	ColorBlock_op_Inequality_mB9B7314D7E6DC4D5F5089035B2B1C1DE45B71C5A,
+	ColorBlock_GetHashCode_m3768567035F950E7951EF5DF2D33F0C41EB0CC75_AdjustorThunk,
+	ContentSizeFitter__ctor_m63F0277FC60425018D97C02830328370811060A5,
+	ContentSizeFitter_get_horizontalFit_mB775F652AC10946108F7D44BB52C57413086F524,
+	ContentSizeFitter_set_horizontalFit_m662A4AA5A3C7EE1BDE349BB5C428D5E2FB82D8E2,
+	ContentSizeFitter_get_verticalFit_m937F784A1D950E72A561B7DF96206ADA5F1FC490,
+	ContentSizeFitter_set_verticalFit_m9F051952E986B4C4E6DE74F4DA06A781EF45C2F8,
+	ContentSizeFitter_get_rectTransform_mE621E002E8AD09040752E78F4E9FCA09C3C0AAAC,
+	ContentSizeFitter_OnEnable_mDB19DDA81BC8A676E2EE5315A54EFE18A9FDEB1D,
+	ContentSizeFitter_OnDisable_m25089ED74FF4FC426A95FB6842F378C37BC73680,
+	ContentSizeFitter_OnRectTransformDimensionsChange_m7039CA2EF86F3C8C66EB41B3821189DC23F0E77D,
+	ContentSizeFitter_HandleSelfFittingAlongAxis_m09EE5CFBE7DBFC2AE26957683E32B0008C956C0E,
+	ContentSizeFitter_SetLayoutHorizontal_mE95C6BEFC8C4F7392D526B7642B4C51976EB06B6,
+	ContentSizeFitter_SetLayoutVertical_mE17A4D49E0D7E1845D465943A26AC39CE0260092,
+	ContentSizeFitter_SetDirty_m82600E20D2D8D3F79FAAD0C07FAEEB63D7952885,
+	ColorTween_get_startColor_m1F5DF90D6FF8CEB5F77056AC05E24D946CF829AE_AdjustorThunk,
+	ColorTween_set_startColor_mFBD959749B11BEFB3C76B379CB1CF9D63C837491_AdjustorThunk,
+	ColorTween_get_targetColor_m906C2208EFE6DD67DE838E2FCBE12CDD1B75024B_AdjustorThunk,
+	ColorTween_set_targetColor_mA9B42BCD97F4DCA902A5F41B439E65276F1ADCAB_AdjustorThunk,
+	ColorTween_get_tweenMode_m908DEFB153497AC18AD08CB73AFF655C1F6D05FB_AdjustorThunk,
+	ColorTween_set_tweenMode_mC18F42D36425106EB484E261128118F257FC36D4_AdjustorThunk,
+	ColorTween_get_duration_mE4A9B4FFAB11CCF25EAACF5777991AB6749020B0_AdjustorThunk,
+	ColorTween_set_duration_mFF853A4E3F2F5975CD37526A483F027FE6CC549F_AdjustorThunk,
+	ColorTween_get_ignoreTimeScale_mD27F5C7D70D340DBDFAE972BBE3857A26E29747A_AdjustorThunk,
+	ColorTween_set_ignoreTimeScale_m030D10E281A17F0E3BA0A87EFD0829CC94A6E27B_AdjustorThunk,
+	ColorTween_TweenValue_mF6B10FEA49EB758AD37D95A7DD577D6AA9C32110_AdjustorThunk,
+	ColorTween_AddOnChangedCallback_mA50B8288FB823E4C45998A5DD4F2525E3B146E2F_AdjustorThunk,
+	ColorTween_GetIgnoreTimescale_mC411FDA85FDAD4D6A583E0CE5334F831342F0ED2_AdjustorThunk,
+	ColorTween_GetDuration_m7BF2F133F75CC7A6355F4D00304355993DC94333_AdjustorThunk,
+	ColorTween_ValidTarget_m847E9D6C8B97F1C9039BF80AD69EEFC74C989079_AdjustorThunk,
+	ColorTweenCallback__ctor_m41EF6BF9A6B5F8031B51E59C04C2A2AB701975DE,
+	FloatTween_get_startValue_mB0724F053ED5114B9537A95598924068C4150C4B_AdjustorThunk,
+	FloatTween_set_startValue_mC561A7F050624AB42057E3BBF846DF3603E8BB2E_AdjustorThunk,
+	FloatTween_get_targetValue_m492021971EC849403F0B4BA51E4E18E10EEDEB1B_AdjustorThunk,
+	FloatTween_set_targetValue_m67AB57F47FF9EFD0E6DB8CD3C2D93ED53B8AB88A_AdjustorThunk,
+	FloatTween_get_duration_mBC42C5053BCB1A1315430E3E21ECE1597BB0B314_AdjustorThunk,
+	FloatTween_set_duration_mC1ADE5DCEEB20ED9B3AADD0FC04FF65C4A443950_AdjustorThunk,
+	FloatTween_get_ignoreTimeScale_mCA3DA664CF6F78735BF3ED6301900FB849B49C34_AdjustorThunk,
+	FloatTween_set_ignoreTimeScale_mA660DAD4BFDCF099BCB1DF6648478700F1D65E58_AdjustorThunk,
+	FloatTween_TweenValue_m4ADF9CF3356268D7AD1CFF358BA252F1E52226F3_AdjustorThunk,
+	FloatTween_AddOnChangedCallback_mF56A6612A7B8C7E7CBC94F3FBB958942D28C811C_AdjustorThunk,
+	FloatTween_GetIgnoreTimescale_mA9A830D9AA73DD1FA171E26E0FA02F4D3A32C97D_AdjustorThunk,
+	FloatTween_GetDuration_m26DC3E2F4525D41EE7BB3BE723B5A6E522F25360_AdjustorThunk,
+	FloatTween_ValidTarget_m921F88A58CCB09A4D55DBB714F3538677363FAE6_AdjustorThunk,
+	FloatTweenCallback__ctor_m406C3AE3B2E5E09831B28E3944F68800FD8B4C84,
+	DefaultControls_CreateUIElementRoot_m1AF41DB29282712B0E2A853EE68D8AE0B1D4C5E2,
+	DefaultControls_CreateUIObject_m0F2CA6745763967BA2788D8273B1405D8D5BAF22,
+	DefaultControls_SetDefaultTextValues_mDFFC3500869C75750237DAD9E36F538DDDA38E3C,
+	DefaultControls_SetDefaultColorTransitionValues_m540576C1FD3A072FB3AB76185EFEF51AC82A3A99,
+	DefaultControls_SetParentAndAlign_mD0F6F8FC6E5E67CF17AD8D1142BCE756539ED00B,
+	DefaultControls_SetLayerRecursively_mE00076387B2664117F029ACE51F51ED8EE335FA3,
+	DefaultControls_CreatePanel_m2EF80F2F19F3F5BFFB45F77BB7594C0F3B0948CC,
+	DefaultControls_CreateButton_mE5CDFA82D74296197F5D8B3A91FB346DD3DA4E03,
+	DefaultControls_CreateText_mB0ECD94C8383D467A91C891B1A81607E105E943F,
+	DefaultControls_CreateImage_mD638DBB5E944463B15349498252D2CEF72FA1772,
+	DefaultControls_CreateRawImage_mDE0A318B0EC5DAA84FB7B42DB42295339FDE495D,
+	DefaultControls_CreateSlider_m3CCD86D7B1E172E55A10DDA7F7623B091A1CF5DD,
+	DefaultControls_CreateScrollbar_mAC4EAFFD776F8E8431D1AACC10AEA2C90EDDABE2,
+	DefaultControls_CreateToggle_mC1F848C3CC1B87F797E2CBDDA31C4F5828CA79A6,
+	DefaultControls_CreateInputField_m5EDD7C065B925082705F591BD42B56F98BC085A7,
+	DefaultControls_CreateDropdown_mFE4AF431C77AE60738AD9183A408C8AE4F9F7503,
+	DefaultControls_CreateScrollView_m8A61AF253921CAAD0C9090592BFAE41FA3DF4441,
+	DefaultControls__cctor_m703C2BF46100D8A4F4261F14654D5BCBB555295A,
+	Dropdown__ctor_mB398E648BF9BF446A2A312B12411B151874DA33F,
+	Dropdown_get_template_mC783252F7FBB1B094671B7623E22D859AE07A7A3,
+	Dropdown_set_template_mD10A88138AD366B8978E202B44B89F138597AA4F,
+	Dropdown_get_captionText_m3E3FF20006F7EC8A8FD7ABBB7F9F723A0E3CD5FF,
+	Dropdown_set_captionText_m64240655BA724BB8E06516D320D16999444F9437,
+	Dropdown_get_captionImage_mB846CCDC2F81DEC05EFC9FA1E38505409B428253,
+	Dropdown_set_captionImage_m63D967AFE979BD91EBEB6EB9237413E388A5A68D,
+	Dropdown_get_itemText_m1AEEFE1ACF751CD3483659F5E5B703239C28C7D5,
+	Dropdown_set_itemText_mFD00DA97DDC9EA00D6A1911BF00025B6EDA8AFE1,
+	Dropdown_get_itemImage_m3B115ACA023FC279CAE1757FD4AB0DF91242BA50,
+	Dropdown_set_itemImage_m1B4136F34B337BD81613C9D0E1287A702BC349BE,
+	Dropdown_get_options_m936486EEAB117AAB3539EE9443D9EB099EDEE9FD,
+	Dropdown_set_options_m1243254CDB3A327539C1384BB885E0772C5DBF67,
+	Dropdown_get_onValueChanged_m4EE82DC9AE8618C52CECA362EBDE6284F41E88FE,
+	Dropdown_set_onValueChanged_mB92BC100C7B04472D4B07464AE5A0CD24867E3AA,
+	Dropdown_get_value_m3A30496E29F9BD3925B083157083717CE907940B,
+	Dropdown_set_value_mDBD1A4939AF46E0CC72936F4C15FD807FF95FC4F,
+	Dropdown_Awake_mA0DAA5AD5985CE4E20921291B238EA22DBE739A6,
+	Dropdown_Start_mAF430A87391F04D8A05B851212CCB05072BE795E,
+	Dropdown_RefreshShownValue_mB219A39DC42848B3072346B236EB153927ABA0FB,
+	Dropdown_AddOptions_m39E3EC790C6E2646D61856B7F4B70704725EB2F5,
+	Dropdown_AddOptions_m5D4F2F638D58DE96D419D4334AEA416FC609A590,
+	Dropdown_AddOptions_m3BE3C1348652C4EC0BB9C241847957E21C3DB3B6,
+	Dropdown_ClearOptions_m28F6FE67544AE0B1515B1F2A718E0519C2BD4E9A,
+	Dropdown_SetupTemplate_m58C9F8005E8206EED4E032B9418C313374E508E1,
+	Dropdown_OnPointerClick_mEBE992B281AA485F6E05E3AF5E0A9F6200FA2BFC,
+	Dropdown_OnSubmit_m9927C90FB105A5297626DEBBBC7087A8EE14CB9C,
+	Dropdown_OnCancel_m9C7B72091EE52736BAE6F1C16EDC5C3378C381C9,
+	Dropdown_Show_m60BCA279B8E130E8BCF74986F780554FE68DF4B8,
+	Dropdown_CreateBlocker_m1BF89A448798AC093C01F31284A5C367DDC8FE8D,
+	Dropdown_DestroyBlocker_m2677E1AB5152C1FFAABB53436E1FDCAE2CBC401D,
+	Dropdown_CreateDropdownList_m490E200C8C4FEBB23F4BEDFA3FA378323934A049,
+	Dropdown_DestroyDropdownList_mFD3FA17F7806793D36C30DA5763C4C61C7E77915,
+	Dropdown_CreateItem_m591B3B4546D13786893F9930BE702F3A9AAE3CDC,
+	Dropdown_DestroyItem_m22EC3178D8A02B0058FD979136D7886583EC3E0B,
+	Dropdown_AddItem_mF1368C1AC4667C050C8EE4AA3FFD7C6B2765990A,
+	Dropdown_AlphaFadeList_m507C9D5098A6DF112F5ADE786C76E2A4D579E445,
+	Dropdown_AlphaFadeList_m56863A69185C43B85E6722D1EDE26A9F98D95976,
+	Dropdown_SetAlpha_m649690A3F42311868E09EC146FE3C74D341093DB,
+	Dropdown_Hide_mBFF60EE895F021B158F05DD88A16825A04610D53,
+	Dropdown_DelayedDestroyDropdownList_m79D390D9F0CA7559A9B00B0010E50F697504B753,
+	Dropdown_OnSelectItem_m08F27561CC8872CAA3FF545F69CFF6D975583A9D,
+	Dropdown__cctor_m6620A9152DCC1C4026C535C91D567F9F9623424E,
+	U3CDelayedDestroyDropdownListU3Ec__Iterator0__ctor_m19959F2B7C95149839C035713AC87A64B43F6669,
+	U3CDelayedDestroyDropdownListU3Ec__Iterator0_MoveNext_m2D46D242828952C39678AAE41D761CE53333CB3D,
+	U3CDelayedDestroyDropdownListU3Ec__Iterator0_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_mB37E441378A386A715138ACCF66401A112973E92,
+	U3CDelayedDestroyDropdownListU3Ec__Iterator0_System_Collections_IEnumerator_get_Current_m34600FE2B25D5F378D7AD55B39CA52ACF46B3CCA,
+	U3CDelayedDestroyDropdownListU3Ec__Iterator0_Dispose_m23073AFD244DA950A3418AFD083C9EA87909FB7D,
+	U3CDelayedDestroyDropdownListU3Ec__Iterator0_Reset_mB28F4F42910BBC13D59BDA288BA4AB958E97399F,
+	U3CShowU3Ec__AnonStorey1__ctor_m76F98EBB90DECA7C32112ED2CF688D56B9112123,
+	U3CShowU3Ec__AnonStorey1_U3CU3Em__0_mDBC3EEE294D7F8C45861EA31E17C31780FCD01DD,
+	DropdownEvent__ctor_mD747B0927F6C34D2AB68BAC21F91DE87B34A2E3F,
+	DropdownItem__ctor_m2F4AA14C68A7C57783784F47517188F5D1CE1AA5,
+	DropdownItem_get_text_mABB014D2DEE9F6B24515DE71A08EBFA82BB44829,
+	DropdownItem_set_text_m04E545C6CCEEFDB01ED3B895349DBB5669E66CCE,
+	DropdownItem_get_image_m2879EEFCAB097FBA79BC4DA41ECBA4EBE3CB6185,
+	DropdownItem_set_image_mB9BDE4CD2F5FC4F75F87F7E857BBFCBBA34809CB,
+	DropdownItem_get_rectTransform_mBEE0135D6E76F71A5D5FD1D8EB0813BAF8DDA4AB,
+	DropdownItem_set_rectTransform_m36B3019046FAA455656F46152AF6936725E12487,
+	DropdownItem_get_toggle_m6DAC29FD2E711343DBCDF240B3218BD6211886DE,
+	DropdownItem_set_toggle_m3DB6684889DCBEA5585912835FE5E7DA954F7DDB,
+	DropdownItem_OnPointerEnter_mF4835DA9D8EBCDA5B7C90B1BF525BDB3E37CB7F0,
+	DropdownItem_OnCancel_m1A584237B9A3EADE8779F001DD17851E75DF354E,
+	OptionData__ctor_m0DC02A63D7D2BB7C6072732878E698B8986F0F40,
+	OptionData__ctor_m69CAD829768421DCBDA28D44BAFFB40BB5603589,
+	OptionData__ctor_mD9CCAB8CF2FE8005278184157D3D8FC587A666A3,
+	OptionData__ctor_m6548A03ECC5EA4D36234DE9BB911E1BD76011630,
+	OptionData_get_text_m49A1C0F5E4C4AFE1833CB7EE217F0F8826651006,
+	OptionData_set_text_m787A15FACF23F61FE6AE3EAEDCF54EB7129D1C8C,
+	OptionData_get_image_m3942EBED87375AED7D4DB0DC44A3223878355BCA,
+	OptionData_set_image_m793D57CB0FF99F9A87C6B599E796A1B43C346CFE,
+	OptionDataList__ctor_m50DB0DC9111F3482056A386D8D8E19D4F159F717,
+	OptionDataList_get_options_mFE97692E7835C863B40C95B8F76CF9E4F384C2BB,
+	OptionDataList_set_options_m40E97384F3B6010BE85094984F624F898FE02272,
+	FontData__ctor_mFD790963D4168AD52BAC0B5921569B9B5209A45A,
+	FontData_get_defaultFontData_m395A2BA13B11A53C4BD4E8F1B7D97E9E278D6063,
+	FontData_get_font_m7ED4B63312F1F12B743447B796580049AE9563B2,
+	FontData_set_font_m8A75A483DE9334E11D12E1346591BF1AFF2A333D,
+	FontData_get_fontSize_m7390DFE98F634DB4E5F069EF2CFFDAB239F87337,
+	FontData_set_fontSize_m9F05B5BCBBF3D6C1EB5407D71671967B3E512A20,
+	FontData_get_fontStyle_mC9E6D0C2C67FE798E4677D3AA62E4F303DE914C9,
+	FontData_set_fontStyle_m6B8EAECA536FBDA6BC36BFEB00E6D313AC6D8273,
+	FontData_get_bestFit_m7E2EBE3BAAC9B2C1DED0232A9EABBD1FDAA4BDD8,
+	FontData_set_bestFit_m1D7BBA139FD4C6A48E2822F7A8CA661EA717DCBD,
+	FontData_get_minSize_m9A996E23462C060BEB088FCB401C1B36691A2A60,
+	FontData_set_minSize_m530EFA610441B4857E37B1945815B229657DEEBE,
+	FontData_get_maxSize_mE8E33F352211C58C6E480D78E1FF3277AACAB1B4,
+	FontData_set_maxSize_m3915625FD5A320AFA43CF70640C8AD89FF3C9B0E,
+	FontData_get_alignment_m8236D7F26B81D591DDD09971B762915EB2115E7C,
+	FontData_set_alignment_m36B01D832401C1B87F8417190191D450D0AE9FC7,
+	FontData_get_alignByGeometry_mCC530B0476EB56DE58ED92B72CE185A282A607F5,
+	FontData_set_alignByGeometry_m28C65382E1E2A47C87717F4AB15D1097DA35D170,
+	FontData_get_richText_m66288C8E8AAA093B00C64F9FB0103492780C8FCB,
+	FontData_set_richText_m6C23BE3C4E5B0918660A45EE1011123E1B724AC6,
+	FontData_get_horizontalOverflow_m6BCB57983E70C5B750A6ED33E233B2C348FF752E,
+	FontData_set_horizontalOverflow_m071E0F1A53FF5F550AC9A267C3700EE0C4751D6D,
+	FontData_get_verticalOverflow_m2D3EF54A919DB4D650EE21F343AE96C48974307E,
+	FontData_set_verticalOverflow_m2E8FDE648096E29BF2D387CBD877E003C21EA0F5,
+	FontData_get_lineSpacing_m46145F4C95664769BA15DCA1F6F8367E59D6A6ED,
+	FontData_set_lineSpacing_mBE1A4AF0A7B8E2CA8D78AF83288347C0331250E6,
+	FontData_UnityEngine_ISerializationCallbackReceiver_OnBeforeSerialize_mE4A31BB9B1939551D224218F1A8006B090E33F82,
+	FontData_UnityEngine_ISerializationCallbackReceiver_OnAfterDeserialize_mBD1AFF6C5AB78BFAF7078CFF357AAFE3FFB6D756,
+	FontUpdateTracker_TrackText_m3BD8BCCFDA8898C08C8500A0D8C9E9D7F25A678F,
+	FontUpdateTracker_RebuildForFont_mBF8207B81E8717DB6448C9217E3F514CCD9A73C1,
+	FontUpdateTracker_UntrackText_m9E2B86F8E6CA2BDEAD4C6D2AC4163F42516FE90E,
+	FontUpdateTracker__cctor_m2D43EBE1020F273AD9AEE38E30ED0907DC3567D4,
+	Graphic__ctor_m3CB42754C13B369A0E1B475D8AC3D54649DBA669,
+	Graphic_get_defaultGraphicMaterial_mED2DFEBA683470F883848ECAD8BDAED9B2ADB1F8,
+	Graphic_get_color_mD59FBB0BF5D0F358A4AD18CFB0621EA9194C1778,
+	Graphic_set_color_mE9FC8CBC7DE689F82B70098A66F53AE275CCBA5E,
+	Graphic_get_raycastTarget_m56E45907D977F55C28A91B7B7923F6570EF428B8,
+	Graphic_set_raycastTarget_mA1A316D2C3D7688A17FA8EF1745476482DF986F1,
+	Graphic_get_useLegacyMeshGeneration_mB06447249999DEF9CB0F09ED4735003135BB4948,
+	Graphic_set_useLegacyMeshGeneration_m6CFFA9BECC14B51AE0344363E0E17F829485840A,
+	Graphic_SetAllDirty_m63021E6CA13C20EE00FFBE9609DA74B29063D014,
+	Graphic_SetLayoutDirty_mFF11645D1F9FBD1583D9D5193EEC59B8E2E2D685,
+	Graphic_SetVerticesDirty_m886B74290CC91F444A28F1BC401D63D01A6AD09C,
+	Graphic_SetMaterialDirty_m95BD80F24F393CD8A0E4E4380C6C11CB92EFE12A,
+	Graphic_OnRectTransformDimensionsChange_m7FE3380FA21B65EC7D7527594CD8E0371A4A8F72,
+	Graphic_OnBeforeTransformParentChanged_m7D69CADD76CE53E73F9FADC9629FC54BB9554F86,
+	Graphic_OnTransformParentChanged_m18625CACC6E1ADD69B1A1C756E335C3E98517A76,
+	Graphic_get_depth_m5361FEBC0B269A9FEE17B2517AEBCF327AFE59F4,
+	Graphic_get_rectTransform_m127FCBF38F4F0D4B264D892013A3AD9A507936DE,
+	Graphic_get_canvas_m318739758379A567A35585728E2E1361599199F8,
+	Graphic_CacheCanvas_mEB2D840C9F337E74B03E044E5451C65213FDF939,
+	Graphic_get_canvasRenderer_m3CCAFCDBCEB38A281BAAB89F2832171BB3D348A6,
+	Graphic_get_defaultMaterial_m71DC530DC5B2CD334275F8C4D043652DA81984DF,
+	Graphic_get_material_mF883FC0B18E59FEBFAB2411F9E30BE8062763AF8,
+	Graphic_set_material_mFC1ADBBF0FE4776BB40F8353AD152C2D12095FFF,
+	Graphic_get_materialForRendering_m6DB21BE3220AA57ECD1DE9F29071D3C6723663FB,
+	Graphic_get_mainTexture_mFE296D762A3247E278E64BF1FCE73B01B1EBC0FB,
+	Graphic_OnEnable_mDA7EE77D9D01A23F86C7DC1DF02ED6EF20D77FD2,
+	Graphic_OnDisable_m264706F5ECA9ED68FD02FB5D179E56B7642D9BA6,
+	Graphic_OnCanvasHierarchyChanged_mB2D634FD5B99AD82F3C436D482A960572BE4F978,
+	Graphic_OnCullingChanged_m6674563B3E50C0DCECF03B37DCF68D6C38E6D002,
+	Graphic_Rebuild_m74DA0BB10638EC5C58439C3BC07FB879A1014E40,
+	Graphic_LayoutComplete_m83C255189B8486248FF968F2AF448F49962FB6FD,
+	Graphic_GraphicUpdateComplete_m95032AF36CD01FA8489CC8693F8CCCC84FA10711,
+	Graphic_UpdateMaterial_m9B0F1B47C1FE7D2949A6EBA7A4AD5920C0E606F0,
+	Graphic_UpdateGeometry_m0A6108B982C5CB2E2864B4689698514E934BD6AF,
+	Graphic_DoMeshGeneration_m348793968DC725255110ADDA0E571D31C7DB12BA,
+	Graphic_DoLegacyMeshGeneration_m5BA5F54A453B149C68D68D2804552F03AD320678,
+	Graphic_get_workerMesh_m7CAD6B3E0D973514DB740D89EBACEC1CD8AFEDD5,
+	Graphic_OnFillVBO_m9B0B45C6ECCA4B470CD8EF79622593EBDCFCB96A,
+	Graphic_OnPopulateMesh_m601B30C623889357FC8682C241FC1A853FAA8CB1,
+	Graphic_OnPopulateMesh_mC25D45C5B729EEB66D7E128B57094612CFA02280,
+	Graphic_OnDidApplyAnimationProperties_mA6F138F05CAA3ED5F9852DC32935895BE3F09ACD,
+	Graphic_SetNativeSize_m1FCEF278A6085454204A8857D474537CD9705F9E,
+	Graphic_Raycast_m75191B1F3728F9E268184275D852F386373B878E,
+	Graphic_PixelAdjustPoint_mFD4D39703D2EB0EA52341334BD449E0EB97851A6,
+	Graphic_GetPixelAdjustedRect_m3A21C77CAE311C9CC07AF2AC30FACFF45F3E4245,
+	Graphic_CrossFadeColor_mDA94035726F09CFB0161970E1F8CB5ACA42C2496,
+	Graphic_CrossFadeColor_m22AE1630CE4BD5E4A237430ADD154D0D378FDFA5,
+	Graphic_CreateColorFromAlpha_m935A0559C2575F212FE7B90D17C0EFFA3A272E3D,
+	Graphic_CrossFadeAlpha_mAD4D2771E1353C3DC873A3B630CC580FC1FF6421,
+	Graphic_RegisterDirtyLayoutCallback_mABB502AA4DDBA36F42490B0AC6BBC81447A9553E,
+	Graphic_UnregisterDirtyLayoutCallback_mBCE46D7D422BA27CAA13D7083E630BFEE8AF270E,
+	Graphic_RegisterDirtyVerticesCallback_m6D34A3771C0D615F23FE1FC7D52C5143CC23C9F9,
+	Graphic_UnregisterDirtyVerticesCallback_m14A6165292E9F9BE72EB0BB064EFC93C4B06279F,
+	Graphic_RegisterDirtyMaterialCallback_mD17F009F779D01BCC4A2A2FE3738C774057102CC,
+	Graphic_UnregisterDirtyMaterialCallback_m0BFA5B1860353558E86795743F4896B35A668EB5,
+	Graphic__cctor_m42163762F91D92FB46647B5E70A24B22E3AB24A5,
+	Graphic_UnityEngine_UI_ICanvasElement_get_transform_m82BDB6E36C7611A3659420B28115374115D83DDC,
+	GraphicRaycaster__ctor_mAB7CB358C5114F61496127DD39CB19F1017A0EEE,
+	GraphicRaycaster_get_sortOrderPriority_m0D90EA994ECD258C4987E601A156F780C5C6C485,
+	GraphicRaycaster_get_renderOrderPriority_mEEAA6F787DBCDD6AAEF4EC8F727B10D66BB6147F,
+	GraphicRaycaster_get_ignoreReversedGraphics_mF3F12BFC40043F08FD666D28AA471B1108619285,
+	GraphicRaycaster_set_ignoreReversedGraphics_m746E9E0A97FF5B9B43E6DEABA151B806C6B2C3E5,
+	GraphicRaycaster_get_blockingObjects_m65760F738BEBB63000DD47E0E5E1FF8BA0AE49AF,
+	GraphicRaycaster_set_blockingObjects_m4E227161F674397A8752714F9085799CE90A0399,
+	GraphicRaycaster_get_canvas_m4F25BBF846EB4BAB9E9F509E92D1B05F49626933,
+	GraphicRaycaster_Raycast_m8A2C034CC5082160FDF3C9AD2E564A05B876CFAC,
+	GraphicRaycaster_get_eventCamera_mC92A047B1C0ECD373E1531BB04472EA6B9C4EF1A,
+	GraphicRaycaster_Raycast_m0AF4F5B71DBC06A1F21E3856548C9672409FF145,
+	GraphicRaycaster__cctor_mB208E342B76362820CBE2D3695EE0E24B3EA1355,
+	GraphicRaycaster_U3CRaycastU3Em__0_m4A25DE036229835A88AF3CDA26D191F1EBE74807,
+	GraphicRegistry__ctor_m4D404430A898123ECEE1F5E170C52D38D58A2C5C,
+	GraphicRegistry_get_instance_mC44355C0B339CE448FE227149CEE9E1469DEA198,
+	GraphicRegistry_RegisterGraphicForCanvas_mDD9DCBA00CC415C35567519A6108E8CADCB73F56,
+	GraphicRegistry_UnregisterGraphicForCanvas_m99943BE77863531F9DB7968E2BA64A8196BB9AC9,
+	GraphicRegistry_GetGraphicsForCanvas_mB0EC55A290AB24FBE0F1112293BC892D58FE63BE,
+	GraphicRegistry__cctor_m5887F584C3B4BDCC037FC63A3FF0D3A32AF71D5E,
+	GridLayoutGroup__ctor_m80F9336574F7967053FD44057C68D2E34CF2049A,
+	GridLayoutGroup_get_startCorner_m8D842137857E7AD45EE6AC346E0413A8F392729F,
+	GridLayoutGroup_set_startCorner_mF9F911D133EB4EB49DFA5906751076893D98EBFF,
+	GridLayoutGroup_get_startAxis_mAA66BAC768514A784F891AF3771952CFDE713E7D,
+	GridLayoutGroup_set_startAxis_m2B02EE8338589764B0148A7B22FFDF89C453BC2D,
+	GridLayoutGroup_get_cellSize_m22377B45E6D5C0E3AB1F5FF2172C65FACDA0D4E8,
+	GridLayoutGroup_set_cellSize_m5ECC6A4D8CF14FD1D926506AA330E3C64346DF47,
+	GridLayoutGroup_get_spacing_mA516C72E49DEB5EA0F51F449A328708D78475EB1,
+	GridLayoutGroup_set_spacing_m8CBD8B43E0EBABF437BD52F673516B3EFA6BE920,
+	GridLayoutGroup_get_constraint_mD3C4128F573301158661CC38EB13105D2A3CD0F8,
+	GridLayoutGroup_set_constraint_mDF8484AA28816C061C0018DF1A1FDD33642066AC,
+	GridLayoutGroup_get_constraintCount_m004BB8FCDEB1D3968FF105754E6DF35ECF935209,
+	GridLayoutGroup_set_constraintCount_mD5543F4340EF0EB00A858CDAA20133980A618535,
+	GridLayoutGroup_CalculateLayoutInputHorizontal_mA0AA7538F56DED5C4A2AC3EDC82FCAFFFF58C5AB,
+	GridLayoutGroup_CalculateLayoutInputVertical_m7FBB8161855C386BB93B193987C02002A96B3844,
+	GridLayoutGroup_SetLayoutHorizontal_mE1D3BD7E4AE7ABF5F73A0DAA0A562BC6998051E7,
+	GridLayoutGroup_SetLayoutVertical_m259437B4AD0423867491AA6E0E19151D07D02B61,
+	GridLayoutGroup_SetCellsAlongAxis_m28318B2B97F1801079491929FC40CA1BEF05EBFC,
+	HorizontalLayoutGroup__ctor_mCC90F197A50618F572931AB8A241298650B5D1C7,
+	HorizontalLayoutGroup_CalculateLayoutInputHorizontal_m6B516103DF09B8C2237301AB7DF0FF59F4665E71,
+	HorizontalLayoutGroup_CalculateLayoutInputVertical_mBE56B75D70D13D862412E0F64F5017F9F3F12ED9,
+	HorizontalLayoutGroup_SetLayoutHorizontal_mF969611596C5756F137F0BA12A0FD82756EA1F16,
+	HorizontalLayoutGroup_SetLayoutVertical_m97ABBB7EB1E30FB691A6F6175F48FB22239E5966,
+	HorizontalOrVerticalLayoutGroup__ctor_mB5A4A35A5BE3FE1278AFBBC8121AFC6E35EA175D,
+	HorizontalOrVerticalLayoutGroup_get_spacing_m28F5717667A4B061E7F6B399E67377E0AD20C730,
+	HorizontalOrVerticalLayoutGroup_set_spacing_mEEAA828F580B60DB8478CAE2D55A735DCA545825,
+	HorizontalOrVerticalLayoutGroup_get_childForceExpandWidth_mD4A2A2666348A01635E5801CE88FA00723BBE16A,
+	HorizontalOrVerticalLayoutGroup_set_childForceExpandWidth_mAE3992F63CC88A9630C847E31769CD4EE3992CA6,
+	HorizontalOrVerticalLayoutGroup_get_childForceExpandHeight_m6B4EDA2EC3535A52BC3AA5B8D8DA12A417C9E12A,
+	HorizontalOrVerticalLayoutGroup_set_childForceExpandHeight_mDD637E406B1C51337BA146C9172C97C5A0D4B7E0,
+	HorizontalOrVerticalLayoutGroup_get_childControlWidth_m56B3CB45954F068DF3EB4DBBE44E059CB361D955,
+	HorizontalOrVerticalLayoutGroup_set_childControlWidth_m871125E304E881EF8A1E01B5E73AE42727D438DF,
+	HorizontalOrVerticalLayoutGroup_get_childControlHeight_m2803CDF004F52CAAE20E7FAE16615602DCF03374,
+	HorizontalOrVerticalLayoutGroup_set_childControlHeight_m90DCC87EC183B83AB9864B015B57EE9EBC71695E,
+	HorizontalOrVerticalLayoutGroup_CalcAlongAxis_m35F0EC164222C3962EDAF3400ED98485D8070F1E,
+	HorizontalOrVerticalLayoutGroup_SetChildrenAlongAxis_m51F74CE5A0B39F3C724F995C2B572E17899ED27D,
+	HorizontalOrVerticalLayoutGroup_GetChildSizes_m0E7E2E091C033B13F72C5E56AA18727A3187D871,
+	Image__ctor_m326643CC73BAB9E7B3DD815B2045DCC86A8AAC5E,
+	Image_get_sprite_mE7474EFC8201ADE07965629C74CAA420DAEAA752,
+	Image_set_sprite_m51F205B44430C8FF8BB0AF1BA7D825978EE663F9,
+	Image_get_overrideSprite_mCBFEB26E00A6EEDFBFE10CA12875BB952DD62C8D,
+	Image_set_overrideSprite_m768A8407C3F0C85D18AED6CC01D000D90630DB66,
+	Image_get_activeSprite_m34F21C0982888A580F01003122421D40F45A536E,
+	Image_get_type_mBF4695569A2C6FEBCDE60AB80A386F39D5708D6A,
+	Image_set_type_mE931CE3DC1C447C31D794025BF0AEE9DEA9049A4,
+	Image_get_preserveAspect_m59D72AF4F9F1C4D3BD63A1E3246A7CAEF66FC68F,
+	Image_set_preserveAspect_mEA84AABACD50ACFD4E2CC08F51E1F44CDEB889C4,
+	Image_get_fillCenter_mDDEF763220A0BCBC989F870DD51993850BE7E007,
+	Image_set_fillCenter_m15392BE1DA59B1B82DE677533F366FDDF062507F,
+	Image_get_fillMethod_m0F319641FE800193CB9FC939F4A4767D230D23F3,
+	Image_set_fillMethod_mF114F3CCE7E900EAD093987BFE7E711384BA2F6B,
+	Image_get_fillAmount_mF13692C689AFBE2C747C19232EEC27A955B166E4,
+	Image_set_fillAmount_mA775A069067A26F0F506F6590D05337C2F08A030,
+	Image_get_fillClockwise_mEEAC96C77DE73D7C8A6DF27619076BA4D75ECE6A,
+	Image_set_fillClockwise_mA1914C480A905C132BB3E3E71D84ED37078A97D4,
+	Image_get_fillOrigin_mFCC875AAC1609D86CCF62A6C7328B4C117422E1F,
+	Image_set_fillOrigin_mD5DC976E21246EFDA27663F3B6F55AA31D8D4A99,
+	Image_get_eventAlphaThreshold_mF11A61B3F7A15AF69697817C977F729410A6D79F,
+	Image_set_eventAlphaThreshold_mFFEF42F7E06708898D84617AD540C6D07F99F0BC,
+	Image_get_alphaHitTestMinimumThreshold_m415D9C2C31EA1C430D01034124AA3288DA41C71A,
+	Image_set_alphaHitTestMinimumThreshold_m159F3B4631C1837391C3D514B3A7FA5B3FC2262D,
+	Image_get_useSpriteMesh_mAF999DF6AE4E12EFFAC86EE01783E1989321B08F,
+	Image_set_useSpriteMesh_m8ADE537936154B26E0A7C238D5DDD9AF3CB08BAA,
+	Image_get_defaultETC1GraphicMaterial_mE2D50B6109EA0A1383B535853D29223481D41EDE,
+	Image_get_mainTexture_m85D29E76ADD44FFDC999A2470C89BC6101F2F0BF,
+	Image_get_hasBorder_m128DE63221C85D7F5189EDA655D96B93C6DBE15E,
+	Image_get_pixelsPerUnit_mCB9366C250CB2A844EBF38989D82483D0E4003BB,
+	Image_get_material_mE65367C590A17904E4F9ED7A8C3DB212D9020D27,
+	Image_set_material_m409F710A26937E4FD6A4CF7E9EB4F555653D578F,
+	Image_OnBeforeSerialize_m19CA996A862D93EDAC7079C5104AA9B12704B4BC,
+	Image_OnAfterDeserialize_mB9DDB1C47620165E57E5C19937AB26B433AADB17,
+	Image_PreserveSpriteAspectRatio_m8906C1278975FD19A14B3AECF6E908D58CB5C975,
+	Image_GetDrawingDimensions_m706DDDA02781E2AC1BF1A552E4A566EF4D3DE7D8,
+	Image_SetNativeSize_mC4EC17A96AE2CE84D6B045EBD76641BA54B56BAE,
+	Image_OnPopulateMesh_mC2A2EA41F970EC452614C8F1A567468FB91AB950,
+	Image_TrackSprite_mED807D966D944B6AEC74CFAB5956015CEF870C70,
+	Image_OnEnable_mDE04865785AF5A9E9BC91C76B9AC3DA37587DB94,
+	Image_OnDisable_m1E2A02432D6875802C47536A5B3D319572252AC9,
+	Image_UpdateMaterial_m030CE0D83632B93B57142FCE5F7EDC60C124C8AD,
+	Image_GenerateSimpleSprite_m16304EAC4A752C278E330EA8B91FC4CB5CAFF570,
+	Image_GenerateSprite_mE43E2B3C3CE18A823EE8AA966CC6AD38A87E54B6,
+	Image_GenerateSlicedSprite_mDE8E73B68EB0D58476423BEE3E90F911A656B502,
+	Image_GenerateTiledSprite_m0EDC1AE6BA4A78EA6D5758564D8B08C8210737EF,
+	Image_AddQuad_m5B9725A14963CBAB146822E31E9ED0333F264663,
+	Image_AddQuad_m28015E276D438F8BC128708557BAF735F587E16C,
+	Image_GetAdjustedBorders_mF1F67092B4B4468C8889DB295BE42BB06F4D8380,
+	Image_GenerateFilledSprite_m5AF12A9EF09B006B57F54A80B9AC3D1CC100EEED,
+	Image_RadialCut_mAC4BCEA42C4138EC8C9A4D97114799FEA178DB94,
+	Image_RadialCut_m1F2874BB2EE7882B9F9AD1EAA4E330942D6738AA,
+	Image_CalculateLayoutInputHorizontal_m2B730895E657B0684EB0FD1FCF8EC5BFE8B93ED1,
+	Image_CalculateLayoutInputVertical_m045DA04BA9A348B778153D198A9860A4A4110F6C,
+	Image_get_minWidth_mFA816D18C702122046468FB152BD4F508F9B787C,
+	Image_get_preferredWidth_m8F50D88A8CC41266DB7528B7D88268F9EB225EA4,
+	Image_get_flexibleWidth_mAA79E4AAEEE13DDD0725F0402A0127575F58D174,
+	Image_get_minHeight_m10AB0FCA41AB3D28873CC31E1FC56826BA3BDC16,
+	Image_get_preferredHeight_mCBA774E6022E3C01329AECC47852FDA9C49DEA21,
+	Image_get_flexibleHeight_mC381612D70580F9C1828E3CF68DF2A83F07C25A3,
+	Image_get_layoutPriority_m5652D121B101AC2B111F04130CBBC39DF42255A4,
+	Image_IsRaycastLocationValid_mB6CA490B732B87469C7F4D5C25583FE90924A133,
+	Image_MapCoordinate_mC78B5EDECC97AEE156F0C9ED849235B280381AD7,
+	Image_RebuildImage_mB4AA47E0011889F0491C290A025B1FDC53F53743,
+	Image_TrackImage_m19E5FB509E87ABFEEDF51184B24C79E6AC44B16D,
+	Image_UnTrackImage_m9CB6B3D64784B97230F91B993DBC3C7977321FDE,
+	Image__cctor_m8D2B966BD76E190B61568F691118F87281BD7CAB,
+	InputField__ctor_mBEBC75F431BED533EE03D57C060EFA5B15F9A9F0,
+	InputField_get_input_mAF4210F766099F23FA8695F12CA970CC8E5CA80A,
+	InputField_get_compositionString_mBC180C2EE0AD8102425A6AFAEE7CB4726450F742,
+	InputField_get_mesh_m6EC79273A8D5D2B44E255189FAA8F492FFAFA3EA,
+	InputField_get_cachedInputTextGenerator_m5A9C4630C95E6F1E4F97872521E60F3D51A53E70,
+	InputField_set_shouldHideMobileInput_m544F4483E827B0401FF94EF26B6250B5A19EED5C,
+	InputField_get_shouldHideMobileInput_mB5AA2536E44DD781BF3685DFEE51257279D19321,
+	InputField_get_shouldActivateOnSelect_mD5010D982AC37EFA5F95876021153A06D7A068A9,
+	InputField_get_text_m83A3F1698F82ECB7B763E786D1FB1F04D767F1E7,
+	InputField_set_text_mB4B4573F3DD8E2D1430A09E42B1777AC4A94AA2B,
+	InputField_get_isFocused_mF88F0ACF39637451E4DBE95357E401DE4C7FC549,
+	InputField_get_caretBlinkRate_m34B7821F29A28D001C5FD0E3D1112EE42258E6C2,
+	InputField_set_caretBlinkRate_m4BDC2C94C654485AAB05ADBD493CD3EB464ED62B,
+	InputField_get_caretWidth_m447C4FFFEBC53403076A6BFD06928817CE51B851,
+	InputField_set_caretWidth_m19265826DDE892044F9ECB0CAC9D50984F96A3D1,
+	InputField_get_textComponent_mC1FC063C41D84947A3B0BE349C6E937EDF0EB19E,
+	InputField_set_textComponent_m2DB2B1767C53637D3960F57364B531FE6813ACD1,
+	InputField_get_placeholder_mBDB090222F665AE8A1C96F1F375732346F177EEB,
+	InputField_set_placeholder_mAFD2C074CBC978DE0FE7211E23B86944E3241CF1,
+	InputField_get_caretColor_m4ACCD57D727CF29B21159403AA20621893679049,
+	InputField_set_caretColor_m5429C9774682079CC2B12CE8C85A4972A7503280,
+	InputField_get_customCaretColor_mEC07436E3A83CD0947B7B1EBEBFA7785AE3E2888,
+	InputField_set_customCaretColor_mBA553B9AC42596A7B20F777BF46836F44310D571,
+	InputField_get_selectionColor_m6DF998776B7FCF8EC7D4EC218D24A84A3C352439,
+	InputField_set_selectionColor_m2AB6B8373ACA4DDFDF130811A3FE57FD6E7C76D6,
+	InputField_get_onEndEdit_m912D9CA48D579EE1A68544EA58EF5EEB633148C1,
+	InputField_set_onEndEdit_mBAE579766EC56679C4537696708008FE19E9F86D,
+	InputField_get_onValueChange_mC6364A9208DD2811E7DFF5F0A1225246A278BCD7,
+	InputField_set_onValueChange_mD2FD3B024484BD014B3D79206F3CAB57DB7D4BD7,
+	InputField_get_onValueChanged_m1AE46D57FF8D96F53F2039722DE9CDDB6AB58CA1,
+	InputField_set_onValueChanged_m4342BBE5846B858FF1D4EF58EA9D93B1E326492A,
+	InputField_get_onValidateInput_mCF04910E2F6920903CD095B86C1D61DA4C01B553,
+	InputField_set_onValidateInput_mD28A6118CBF33933A9CB8BFB3046FEB5C5F871C2,
+	InputField_get_characterLimit_m6CAD1DA4D407A3FB783741BD57AA537DF5D42B5D,
+	InputField_set_characterLimit_m8C6108C8CFB5B01F6299A86BE3322E38C87D89E9,
+	InputField_get_contentType_mBDEC121EFB7451BE3F56D8A2F68BF78FC28D2329,
+	InputField_set_contentType_m6D0A2D0020190C1EA7930B219E7C9062E7FBA2DD,
+	InputField_get_lineType_mAFC713A8DC2FABB2FFC6902A767DAE2932A5BDBE,
+	InputField_set_lineType_m3F7A0A68007A2175F888834BD87787804869F827,
+	InputField_get_inputType_m1B9C2C98A32BBD27759C950DC4C65F0FD69329CF,
+	InputField_set_inputType_mE792B56508E222577EB8FD36AE660FDB5C6085EB,
+	InputField_get_touchScreenKeyboard_m0FFFD0CE4AC573DC5A91ABEC8A0B3607966F2607,
+	InputField_get_keyboardType_m4498894CD489D1C71EC55C8E5BD8D98C068CB7E7,
+	InputField_set_keyboardType_m35599371AD057B36E983EC33455AC3E8A90E8C0C,
+	InputField_get_characterValidation_m3BA91CE0FC3845B40E1D43D6F0E36C5DB1D3EC29,
+	InputField_set_characterValidation_mA90E18D158EB8F70E107AAA2741CA570C2FDC82E,
+	InputField_get_readOnly_mEF9A855541B21F5B0200C1555D8BF4F9C02A0936,
+	InputField_set_readOnly_m123DF697ED482C582BF393370B4E0999AD5E0393,
+	InputField_get_multiLine_mCD9C5841D42FE8BD8EE9A00244266EF7F4DCF4A5,
+	InputField_get_asteriskChar_m74790D5118E1227B45DDA971743B0493BD8543C2,
+	InputField_set_asteriskChar_m346A1D428BA0B0B28887CF1B2958115656C025DD,
+	InputField_get_wasCanceled_mAAB79BA27DF68F29F940C299E74400CD291A37A1,
+	InputField_ClampPos_mE412B922D40EC1BF479BC8EF31F52AD8B8461491,
+	InputField_get_caretPositionInternal_m3FFFB8BA2D8072F253FA327DAEEA8C8BCABCB1AA,
+	InputField_set_caretPositionInternal_mD0FE1B2874131429578E7D1D2A6F36AE04D47244,
+	InputField_get_caretSelectPositionInternal_m416E00D11550F343CCACCFD7B60D3D9F20076BEE,
+	InputField_set_caretSelectPositionInternal_m856FDE73880EC4F72BFEBDC0E76B5F5C90A8D80C,
+	InputField_get_hasSelection_mA91D28086485AFBE38B17F53572AE84F3A8FDB14,
+	InputField_get_caretPosition_m8F6BDD3FA0F328776067F062FC1752005E0BD1C1,
+	InputField_set_caretPosition_mCFBA6871FB92074C29B437223789590DDF215A5C,
+	InputField_get_selectionAnchorPosition_mCCC8DBCFD6FFDC1D4E67BE74920FE8AFA71E372B,
+	InputField_set_selectionAnchorPosition_m38DFE92879F9A755658B33AC96005879C221E0A5,
+	InputField_get_selectionFocusPosition_mC675800E70A84CB0F926B5AD353CAE31BFBDEA61,
+	InputField_set_selectionFocusPosition_m11F0F9DDE36518D7558D937F0D8326471CAED105,
+	InputField_OnEnable_mBC3428E3F86D28AE58F102A202809275DD8987A2,
+	InputField_OnDisable_m758F6F9B5CB27B188689C5E70DC886A1A5F831E7,
+	InputField_CaretBlink_mB9934B3773B849265F888BE7EE3AC2408DFB1421,
+	InputField_SetCaretVisible_m79B9820354C09DF8B08D966286E12BFC9E245CA1,
+	InputField_SetCaretActive_m1335754046726CF88F62801E0F6583F4A6F302B5,
+	InputField_UpdateCaretMaterial_m9105C510740CE700E016136FCDF74DA0CC705A33,
+	InputField_OnFocus_mD5388C4899122D2FDAF36269B4AA422F0A31C7A3,
+	InputField_SelectAll_m39CA09FA7A4221D0E698D4AB1B30E0141D96A794,
+	InputField_MoveTextEnd_mAF0384456CE395DD15CBC9597BD9128D3B74912D,
+	InputField_MoveTextStart_m6659C875E1412BE932D390BC8921DCB54E308864,
+	InputField_get_clipboard_mFA7B2FBD9DE76B73081AFDCC4298B63AEA36D757,
+	InputField_set_clipboard_m89E3A7CF3DAD3F578C2580FAB3A48EAE8F7BC6C5,
+	InputField_InPlaceEditing_mB3304460E9F6425D6B147206BD365E10306DB92E,
+	InputField_UpdateCaretFromKeyboard_m93855726C472C446792BBF48D889A24DC1449A87,
+	InputField_LateUpdate_m5CCD2B58D09D9E8A7C8157FE79299FBB9DE38840,
+	InputField_ScreenToLocal_m368862E1697D0D76427AFA8AC96041F962236D9A,
+	InputField_GetUnclampedCharacterLineFromPosition_mF0CC8C9A41FBAF96BA89DD50CA103E22BC058E85,
+	InputField_GetCharacterIndexFromPosition_m7CE001C919D29111D212A2C74F28B1AE59ED46AC,
+	InputField_MayDrag_m543B9B612726672FBB9D7282C3A163DFE8C8FA9D,
+	InputField_OnBeginDrag_mC56F46BBFB752C91E66D8D76696B5B8F4C5B274B,
+	InputField_OnDrag_mB23EA9836DC789A7E238E14314BD24729E82561A,
+	InputField_MouseDragOutsideRect_mD483AD06A2FFDB2C296BD4F7796787171A1C32FF,
+	InputField_OnEndDrag_m6075E95173D31515CAB5CFB891E15771080D3025,
+	InputField_OnPointerDown_m84C2CE923D7FA0B021021B3199B4CD56B81DECB4,
+	InputField_KeyPressed_m155D70A5FB8DAE216B941863C02E56AF2663BBD6,
+	InputField_IsValidChar_mDE89A89683151A4FD77B8D79366FF639388716F9,
+	InputField_ProcessEvent_m657E3D1ECA76F747C46388F63C1F890CBFAB53E2,
+	InputField_OnUpdateSelected_m32961891EC88E5E3BEFEF8A9C3FEB20789F437B0,
+	InputField_GetSelectedString_mBB6D1FCA9835317428FF0D8CBBD021ED593A7217,
+	InputField_FindtNextWordBegin_m6729E369472336777A80B533487B241F09BE174E,
+	InputField_MoveRight_mDE718A627022F918F4BD3E54254428341DC5293B,
+	InputField_FindtPrevWordBegin_m91F792CD06FBF0B8AB7EBA94C18291CE6DB6F2D6,
+	InputField_MoveLeft_mB3B0A8C17BC35006BCF33765D3EDBE7EBC90BDA5,
+	InputField_DetermineCharacterLine_m68C3B405D39E8B95AE7D3CF7D204B8621193A4CB,
+	InputField_LineUpCharacterPosition_m24F296DE40A422BC6366A8EF44BC620689D616B0,
+	InputField_LineDownCharacterPosition_m07D28FCBCD8CDDD2914A667AB169EE6BA5840E52,
+	InputField_MoveDown_m02B12081C9C3014580276BD1926E96A502E0A6DA,
+	InputField_MoveDown_m63497B183EB440E7D68BB5F64BB4F1B17A8F99BC,
+	InputField_MoveUp_m897F9B5C57B75AC0AD1F8A87B6E4E26E24EBC0F4,
+	InputField_MoveUp_m42D8FD6A24ECB02C5E1C96FBDA279C9E4324496D,
+	InputField_Delete_m709CE7426C8947964CB842F9FC0B7B2A3372E2FC,
+	InputField_ForwardSpace_m260433BF349A45254CF6D258491D5E19D33ABB4D,
+	InputField_Backspace_mD97BEF7207DA62F6FBF961D8D457614E56470148,
+	InputField_Insert_m766215A2326DAC526A1C2FC524E6FEE1EB390F09,
+	InputField_SendOnValueChangedAndUpdateLabel_m252411F96C5728D7C6F3F9D386CCA41EE4E8CB75,
+	InputField_SendOnValueChanged_m932044A0410C99486B006223B57A41F54CF07649,
+	InputField_SendOnSubmit_m69CDA5C7AFA0906604D078D42834A4358E954E17,
+	InputField_Append_m9EA5B5ED6DA285D8F3F4FA4C5CB08811A5F3B5ED,
+	InputField_Append_m54F2D9F387218C2980FC3364DE334F1040B2CD7B,
+	InputField_UpdateLabel_mD079B454890CB89B48B4B0946B66068F27FE71BE,
+	InputField_IsSelectionVisible_mEE4512021A72DA3C210AB291264F7A89EF38B632,
+	InputField_GetLineStartPosition_m8A0CFE3AC0D832A6746DA7B4CE9AF8DC56F669E5,
+	InputField_GetLineEndPosition_mBBA9CD8A24DCA0EE030EA9157CFBCF144A0DD258,
+	InputField_SetDrawRangeToContainCaretPosition_mDC17D88F9E4170FEB998EE6B28E3C963E7AF6213,
+	InputField_ForceLabelUpdate_m79AAE3336B8DC3CB80656114A7533367CF774356,
+	InputField_MarkGeometryAsDirty_m96294EE08DFEB220DE02B9357D3DDEF7FA735C4C,
+	InputField_Rebuild_m0522884BE20E845749E5AD7D7FF5F439E5D7505A,
+	InputField_LayoutComplete_m265ED0D9E614FF4A12C275F11A6C75A5348E5D51,
+	InputField_GraphicUpdateComplete_m402CDA8FD18F6080F542BDD09BD35F75F975A72F,
+	InputField_UpdateGeometry_mD6976E2625AB2016B26CDD13D1D115F35C63F739,
+	InputField_AssignPositioningIfNeeded_m54BDDDBD76AE2450E447F530B12F6C70DE95C2C0,
+	InputField_OnFillVBO_m596030D59DA4F6982BB0A31A1B2AE52544494710,
+	InputField_GenerateCaret_m7AE49FB93F5866BC808176A963692E82D3A7982A,
+	InputField_CreateCursorVerts_mB9B053D4B9619B498D95A3236DB51929F1F3A7CB,
+	InputField_GenerateHightlight_m5F3682091FDC4125931F4FD80293FEFA8807239E,
+	InputField_Validate_m1991C3B32DCC0AFD0CD95E067A1A8B14C1A61076,
+	InputField_ActivateInputField_mDCEFAB8D4D49E3F4BE14DCABD49B210442B3C77D,
+	InputField_ActivateInputFieldInternal_mA885D055A94CD304E0A6599330D209459AB49826,
+	InputField_OnSelect_mF72DC77714F53C0B3BC4815761464B52948ABA0A,
+	InputField_OnPointerClick_mF689FC2505382B5FC364229BE194F9D3476AC614,
+	InputField_DeactivateInputField_m5258CB71BEE2BE6A13931FDD43EF0125CF9C51B7,
+	InputField_OnDeselect_mEF7F1339EAFBE21AA7080996D4C9AED994559D50,
+	InputField_OnSubmit_m0842367DF1CBE1D7586649AE0366365330F1C14F,
+	InputField_EnforceContentType_m7B99D7AA14C72AC0D71DFCF4F4BAD323C9C603C3,
+	InputField_EnforceTextHOverflow_m41007147838D56CC3AEABB4761904B8F0AEE66DD,
+	InputField_SetToCustomIfContentTypeIsNot_mA249BA32D017A4C2B1AA5A3BD7E00D504F13721A,
+	InputField_SetToCustom_mAEB805BFB2B1B042844B6D904FE3772A24BCB852,
+	InputField_DoStateTransition_mFE073011E73276ADD72A17BFECDCFA3BDF2A9243,
+	InputField_CalculateLayoutInputHorizontal_m199468757717B10C6B3ECD52333DF6010D48427A,
+	InputField_CalculateLayoutInputVertical_m38DD34176A89D2EB5D093A4CBDA337EC02E8CFD2,
+	InputField_get_minWidth_m5DC7CC4E72B0F13FE0111F24A5E2B0C3F21D6A80,
+	InputField_get_preferredWidth_mF18A23A94855B4ACAF18473199AB50F0629F1DBD,
+	InputField_get_flexibleWidth_m1625C05B9B5F25906AA7FA379B094189BF4C62A1,
+	InputField_get_minHeight_mF3BFD89BDEBEECC8EE6D2252701428CF8EFFD3BD,
+	InputField_get_preferredHeight_mAB9E22057BCE8C9A7585C99EF614CFE11AD43992,
+	InputField_get_flexibleHeight_mAA7E29FE8AAB450C493136D0902A26C3E61ED38B,
+	InputField_get_layoutPriority_m31A949FFF557CFF92F15E0A0AE60369F8D4972D4,
+	InputField__cctor_mB1D6D28AF8256BFDF82B8519C7547B4B3DBB1B7F,
+	InputField_UnityEngine_UI_ICanvasElement_get_transform_mFAABCBD5202F9EE2EC846716FE1045B2CB6EC3B6,
+	U3CCaretBlinkU3Ec__Iterator0__ctor_m7B401A8090F0A450CDA80416F2E8EAB94777E04B,
+	U3CCaretBlinkU3Ec__Iterator0_MoveNext_m040892848ACE419047F53AD7FD0EDAD55A23225D,
+	U3CCaretBlinkU3Ec__Iterator0_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m034BEC3863B981CA5923B82A37DA05192312BBC4,
+	U3CCaretBlinkU3Ec__Iterator0_System_Collections_IEnumerator_get_Current_m5821D45B97FCDFDCDF9922729B72B52409A38EBD,
+	U3CCaretBlinkU3Ec__Iterator0_Dispose_m9B6B3C1697F9418460302F2E267578573020D34D,
+	U3CCaretBlinkU3Ec__Iterator0_Reset_m3EC3359DC46D35B767BCC7E6C72E9C9FEB609481,
+	U3CMouseDragOutsideRectU3Ec__Iterator1__ctor_mABF533592ED846F7FAE8BE98E94D193AC1BCAF80,
+	U3CMouseDragOutsideRectU3Ec__Iterator1_MoveNext_m9162A78798C76BD1E7F101A71BF7F7CE9B55494E,
+	U3CMouseDragOutsideRectU3Ec__Iterator1_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m6728AE9C8EA3282BEC644BCDBA6DC92CD4A72051,
+	U3CMouseDragOutsideRectU3Ec__Iterator1_System_Collections_IEnumerator_get_Current_mB6FD2064BA49DD96CB581B7F40B9EA6429FFFF5C,
+	U3CMouseDragOutsideRectU3Ec__Iterator1_Dispose_mA14FEFFFE2EAC94C38A35D6CA0794AF68D1C2F2F,
+	U3CMouseDragOutsideRectU3Ec__Iterator1_Reset_mBDFCEAEB2A27B3E10507F07B232EAD8159C56F87,
+	OnChangeEvent__ctor_m0DEC366EFE12AADB7E0C36BFFF5C46F928B1A5C2,
+	OnValidateInput__ctor_mA651BE018E1E4A947D2EFC57B1A40F3B815BABF0,
+	OnValidateInput_Invoke_m73A9F2DB58DE24B74FE88632E339712EA910BED9,
+	OnValidateInput_BeginInvoke_mC6A163302E1E78067C012058393298474060DE05,
+	OnValidateInput_EndInvoke_mAB770AE895D1805E679C0C25B83C024D229040CF,
+	SubmitEvent__ctor_m607B6C5AA9A942BE21BA65311A3B0DEE54A04005,
+	LayoutElement__ctor_m09766D6232C0BC861EC3F761FFEF5F365ABFE00F,
+	LayoutElement_get_ignoreLayout_m0BDC36A9DB867B5AF21038A68B452F2A3FCBECCA,
+	LayoutElement_set_ignoreLayout_mF7F5AF45F69E2ACB44614A65B1B3D3439E2B701D,
+	LayoutElement_CalculateLayoutInputHorizontal_m137D043CE1C392B712EBA1B3C76EB756E027BE7E,
+	LayoutElement_CalculateLayoutInputVertical_mD8EB59EB227AFBB0764E660322A810D8DBDE3B09,
+	LayoutElement_get_minWidth_m54615FF05F0007ED1A4AECF5C76198504A49B269,
+	LayoutElement_set_minWidth_mC81EAFB6308A076E587E99357480FEC60DE20DDE,
+	LayoutElement_get_minHeight_mAD7754F45542D38A20BD9F547D37341AC40E3CBF,
+	LayoutElement_set_minHeight_m4560A37F0857BE3ED7F25815F780CBD41B11328E,
+	LayoutElement_get_preferredWidth_mE7A85E714C694B559B74302916EE725CECD6DCAD,
+	LayoutElement_set_preferredWidth_mCAC34EF378C5ADAD0F74CC1C6B866BC340AF240F,
+	LayoutElement_get_preferredHeight_mB6C08E0D0261696AE81C2728680C3B832D2B44B5,
+	LayoutElement_set_preferredHeight_mA166DBFC22ADAAB4630B6E0C854701F1D1673C94,
+	LayoutElement_get_flexibleWidth_mBAF5EEF9A2CCBC584E9A1F488683EA79EA5B8BC4,
+	LayoutElement_set_flexibleWidth_m37673A4A7937C69CBEB870815BAB0CFF0177CF0D,
+	LayoutElement_get_flexibleHeight_m9FEE7835ED8E42C319E285A5FF7141221F2E2587,
+	LayoutElement_set_flexibleHeight_m7D8FA2992B565F9A36EA8DB169FC017A767F0A3E,
+	LayoutElement_get_layoutPriority_mBD2B7110243EDA061AF1C812E70B5EC2C543FA1B,
+	LayoutElement_set_layoutPriority_m9BDAE517CE812380BC4D1DE1A4F6E758FFBD3FDC,
+	LayoutElement_OnEnable_mB7BC4C5EA27ED483D262D876B32C71D0C5F6B2D9,
+	LayoutElement_OnTransformParentChanged_m11EDED872ECAD53BF8B3473D2AD1340D4D75EDF8,
+	LayoutElement_OnDisable_mB3AE855DDBC404D0A4D4C26035DDAAA859D5910E,
+	LayoutElement_OnDidApplyAnimationProperties_m10E4319B74BA4272A7F7F7667E9A3FC8BD4BDA29,
+	LayoutElement_OnBeforeTransformParentChanged_mFBB19AF308F9798D3553865EBF0A8A2EA78FD545,
+	LayoutElement_SetDirty_mEB83D3C3CC26463A7417E768D7EEB84D6D95E2F0,
+	LayoutGroup__ctor_m3D45131F2BE39688BA9C9D3996924F6B99A04D23,
+	LayoutGroup_get_padding_mCCAD817837EE81B5208C934F15108D57FB0BFFD5,
+	LayoutGroup_set_padding_m1EC3E8262743CD4FD32B7F68D3A1E2EFF0B25F48,
+	LayoutGroup_get_childAlignment_mA35B9D37B4CF14AA1830ECB48CE7EDC6A604A2D5,
+	LayoutGroup_set_childAlignment_m651BB94D16D8C212381802CDB155B425FFB50B56,
+	LayoutGroup_get_rectTransform_m9F2C7D3D7CA8FC2D1CAFCD0B5A0E3832136D8D88,
+	LayoutGroup_get_rectChildren_m0DF5653E3FC488B553826E1D5E75D90FCDCA237F,
+	LayoutGroup_CalculateLayoutInputHorizontal_mAB1D93890FB765721FE662D8E55D26D9E0D9C64F,
+	LayoutGroup_get_minWidth_m74C29B211590F6591007850C41BDC5D4AA5CDB30,
+	LayoutGroup_get_preferredWidth_m97401D0229B0BE9B834E4206C0BA2789EDF1003A,
+	LayoutGroup_get_flexibleWidth_mA0706CB9D6A877661D0B1B38876F767D299C19C3,
+	LayoutGroup_get_minHeight_mA262734F4F50D2B9119FC096E3BCB9D215A85964,
+	LayoutGroup_get_preferredHeight_mB1C65B5710C9956EDCDB482CF2C9E227EB63C407,
+	LayoutGroup_get_flexibleHeight_m19E911B7903B7247215D2622424372A8B0275EB4,
+	LayoutGroup_get_layoutPriority_mC9AC0B65F298715E00CE5076F3222D80FADA4EA5,
+	LayoutGroup_OnEnable_m3A0469A02878D4E8252246B85C5E952B86A5AEF5,
+	LayoutGroup_OnDisable_mB211850F66C14A69E6F9596B30AA9E6F8B290A92,
+	LayoutGroup_OnDidApplyAnimationProperties_mF7BB77899F8A71688275AE509D1C85D9C8C3A0F2,
+	LayoutGroup_GetTotalMinSize_m0D0994D982E9CE1D76CE312E1D82982F01BFF4F4,
+	LayoutGroup_GetTotalPreferredSize_m0604672716B73F7360F42E51301C979EEF6AC26D,
+	LayoutGroup_GetTotalFlexibleSize_mF320F4390B1ADD958E5D633272518BCBF8527D82,
+	LayoutGroup_GetStartOffset_mB56764D001D16944812FF06AD495620011EF2AB3,
+	LayoutGroup_GetAlignmentOnAxis_m6D5CFF17F70C61066D471D0E9DEDF01B812D04C2,
+	LayoutGroup_SetLayoutInputForAxis_mF994AA82D00AE1A1937B5A597FC68AAF9F2621A5,
+	LayoutGroup_SetChildAlongAxis_mD344E200B6725CA7EE05AE197E4D6D2B1E6824FC,
+	LayoutGroup_SetChildAlongAxis_m13A390FD17E381285CC3B9892C33B20C8FBC4D69,
+	LayoutGroup_get_isRootLayoutGroup_m2D50A95B981D97E77D9AEDF98869C8CE3C471121,
+	LayoutGroup_OnRectTransformDimensionsChange_m3011B08BC26217B19990C52673AD8BE293139D12,
+	LayoutGroup_OnTransformChildrenChanged_m03D8C11B9CECB1EB6C3B3897A6D9CCBE5A5D635C,
+	LayoutGroup_SetDirty_m2B0A4797C6B8E9DCD0F3B2899D4E7EA266EED1C3,
+	LayoutGroup_DelayedSetDirty_mC18B459AAF9A04E73282AC0E5154B445883709FE,
+	U3CDelayedSetDirtyU3Ec__Iterator0__ctor_mBFE7C2C109C72A8C02CD1B8D0EA48BAB30D119C3,
+	U3CDelayedSetDirtyU3Ec__Iterator0_MoveNext_mA29E0BEF77909ADFB629D1F57A7072653CA3BF1C,
+	U3CDelayedSetDirtyU3Ec__Iterator0_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m31D86FC688AC65FB6D30CADE5169A7ADE1D23D54,
+	U3CDelayedSetDirtyU3Ec__Iterator0_System_Collections_IEnumerator_get_Current_mE118779782CAB21BE0427D7FA9E786177BD7A9D2,
+	U3CDelayedSetDirtyU3Ec__Iterator0_Dispose_mFDF5D2CF19F7A8C0EA3F66F4700C7E87B23F7030,
+	U3CDelayedSetDirtyU3Ec__Iterator0_Reset_m7EC7865D9B6EFBFDE5FE3CBA6C43DDD2A256A8D7,
+	LayoutRebuilder__cctor_mF4518F757E1BC345EBE61551826F0341022F999A,
+	LayoutRebuilder__ctor_m5B65FBE4A08DDBEA16A278E03B266BF9325ED0C9,
+	LayoutRebuilder_Initialize_m7F3ABF27204B01F5EF9FCD7AA2164B61E3B17392,
+	LayoutRebuilder_Clear_m5C8EFD52BD73D0E8E7FAAD00811E5CB823513902,
+	LayoutRebuilder_ReapplyDrivenProperties_m6B3D923F434C3EBCB5682F9BE9379194D797A1AA,
+	LayoutRebuilder_get_transform_m2373E98B4D90C0CEA7B78015E5B608842F2EC36D,
+	LayoutRebuilder_IsDestroyed_m6A4E58415FC0747ACAF6537E648792B377046721,
+	LayoutRebuilder_StripDisabledBehavioursFromList_m5A824D8626E002D32C6A260A9697597D850ECBFD,
+	LayoutRebuilder_ForceRebuildLayoutImmediate_m73D406C1175B6206688FE956EC87BA1AC3907183,
+	LayoutRebuilder_Rebuild_mA2B32A4244C8FE3006EB1C80E2AD67AA7A53E562,
+	LayoutRebuilder_PerformLayoutControl_m4B8C5E83587737A64542A3B421DA7FBFA19C7D9D,
+	LayoutRebuilder_PerformLayoutCalculation_m2A36849672979F336134167F65D6060954436942,
+	LayoutRebuilder_MarkLayoutForRebuild_m7E400684496267636B78BDE1512E5723EE118DC9,
+	LayoutRebuilder_ValidController_m5BFB2E3627F838ED4FE821EBEFDCE1518D52E5BE,
+	LayoutRebuilder_MarkLayoutRootForRebuild_mD80599A1B79ED484A44A602D0F13DFE487826414,
+	LayoutRebuilder_LayoutComplete_mAFA17D26324F75D0618CC0E630CDB61C8BB280A7,
+	LayoutRebuilder_GraphicUpdateComplete_m95894002478C879F92C5E981D7225B370427BA82,
+	LayoutRebuilder_GetHashCode_m15889CC7A4A097869BACAC41CF98EE27744EEB0D,
+	LayoutRebuilder_Equals_m76052424C7D897C350B6682F7886365EBF22FD19,
+	LayoutRebuilder_ToString_mADBFEAF2340C483ED424372B032B55BD1E5CBF73,
+	LayoutRebuilder_U3Cs_RebuildersU3Em__0_m4402B6EEF97E674576EBAF0DBA2BE8072CD09F85,
+	LayoutRebuilder_U3CStripDisabledBehavioursFromListU3Em__1_mB3FC59921ACDA12A0005AC6B8E06D575FF8493BE,
+	LayoutRebuilder_U3CRebuildU3Em__2_m9912AF9EFEB29868BEACBB1B3C98DEABBCB8F02D,
+	LayoutRebuilder_U3CRebuildU3Em__3_mCCF74BA462EAB3E11EC22152CF089595DDDE9D7B,
+	LayoutRebuilder_U3CRebuildU3Em__4_m8BA49344F1EC9C15D94956BD12767A563390CCF1,
+	LayoutRebuilder_U3CRebuildU3Em__5_m7F5E06A41E54C542FCFB01C7733957629959D96E,
+	LayoutUtility_GetMinSize_m575E99CF90D246E410E9CFF7DF89A80525F51545,
+	LayoutUtility_GetPreferredSize_m1707DA4F98CDB6F4136CB9A7D45D63F6DC083673,
+	LayoutUtility_GetFlexibleSize_mE6D608D88E3E16926F576D785E54D5136DBBF4CC,
+	LayoutUtility_GetMinWidth_m4F9EB632AF47CF3770598F7FED826E66EF909230,
+	LayoutUtility_GetPreferredWidth_mF6B8011860E9D514AD3D18D5498F0A77C5F7BCA8,
+	LayoutUtility_GetFlexibleWidth_mF425A566DC8455AD968EBB6AF89FF870AE882447,
+	LayoutUtility_GetMinHeight_m67EE7015AEBB86311A269F682B770BCCB1111287,
+	LayoutUtility_GetPreferredHeight_mF12040E2BAEECB20D214EF11543858237DF25278,
+	LayoutUtility_GetFlexibleHeight_m4AF4591DDD44CCB2CBB58B525A3834D369F16CEE,
+	LayoutUtility_GetLayoutProperty_m3BBDEF22BD7B48ED6403196319D29708D64532A7,
+	LayoutUtility_GetLayoutProperty_m8F3BC69B6A027C2FDE0DEE16BC62B130C61E4FCD,
+	LayoutUtility_U3CGetMinWidthU3Em__0_m26329C6558740A422DF27A0854D17FE16E1AEE3B,
+	LayoutUtility_U3CGetPreferredWidthU3Em__1_mFB976F5212E8FA38BBA7EABAD1F6A9CFC40CE127,
+	LayoutUtility_U3CGetPreferredWidthU3Em__2_m7DE42EB0180254A8731AB5F9D9A6CF9BEC80C21B,
+	LayoutUtility_U3CGetFlexibleWidthU3Em__3_m0900F28B02E23A32923B040209026047D79F8CE4,
+	LayoutUtility_U3CGetMinHeightU3Em__4_m8AF12BEF1591169489043905497BF5E79F5B6643,
+	LayoutUtility_U3CGetPreferredHeightU3Em__5_m3AAF9AE0660820D41AF766B0769458B1B523A25A,
+	LayoutUtility_U3CGetPreferredHeightU3Em__6_m7813DE2A0A44C5D9EC50C51AB5591171EE80CA48,
+	LayoutUtility_U3CGetFlexibleHeightU3Em__7_m902945778174E636DD23BE8E33CC1B7A5587E45E,
+	Mask__ctor_m21B4BACED2C322FFC8928EC34CE164E4E2F7D0AA,
+	Mask_get_rectTransform_mEC02B0D5AFE442DE6FA575CEA05BED67E11F72DB,
+	Mask_get_showMaskGraphic_mA46ECB66512291539B3D60EEF4CBE9756E10BEE8,
+	Mask_set_showMaskGraphic_m0B66683FAD35E5C9E48FBCFD7D0773087CBD49D5,
+	Mask_get_graphic_m5B49E746A9E93A4D1BAAFD83F9ACB7C90633B5B3,
+	Mask_MaskEnabled_m97F3F14FF2AE56EF8B3EAB81C552DB0BE02A49F1,
+	Mask_OnSiblingGraphicEnabledDisabled_m7B3645842D5436CA3A44471907AC8FBBC378F396,
+	Mask_OnEnable_mEB2FD67F4FE1F6E6C3FEC20DC27366BB0B4FF154,
+	Mask_OnDisable_m43D73C56AC0F1DED2A72E80D5290F13763C4B00A,
+	Mask_IsRaycastLocationValid_mCEFC456F9717450B5FB7F2745FB41C55AF84290A,
+	Mask_GetModifiedMaterial_mFE9F9C4520459769A372194373E9A51E99E04CD6,
+	MaskUtilities__ctor_m199F80D664F57921B264C2D2CDE5E58569EFE726,
+	MaskUtilities_Notify2DMaskStateChanged_m8CEF7E6D00AF2DC82D8D3DE3D45DEDF63D9FEE74,
+	MaskUtilities_NotifyStencilStateChanged_mCCE62AA2B84ECCF4801A6C4D1DB5352E3AE5AC42,
+	MaskUtilities_FindRootSortOverrideCanvas_mEF84A013C3054C3AA33168294F7555AEBA5A9976,
+	MaskUtilities_GetStencilDepth_mEF5CC3E39674E3634197B10CC5821A38A7B773F8,
+	MaskUtilities_IsDescendantOrSelf_m4F6F3C28C829F569D4DEC908FB6E389221DFDDD0,
+	MaskUtilities_GetRectMaskForClippable_mA22FA75F79D98E00CF0B0A41DFBD0FC2D4DC2F28,
+	MaskUtilities_GetRectMasksForClip_mE89DC32506F59708CAC368D222DAE3250FD5A4A0,
+	MaskableGraphic__ctor_m083A4DEA182F691B7CF17AA47596314F1F02BF0F,
+	MaskableGraphic_get_onCullStateChanged_m9CF82537F28EEEC73E48B437DF49EA0B2312BDE8,
+	MaskableGraphic_set_onCullStateChanged_m03D128147438F0F617EAE635AE03D55F7BD42358,
+	MaskableGraphic_get_maskable_mE1F4C8D6B4DBE70FB56DC952443492A5EBEC490F,
+	MaskableGraphic_set_maskable_m70B1006B4C935DB24BB91264450D6413629E1812,
+	MaskableGraphic_GetModifiedMaterial_m67C4BCE8DAF19DFBA6C06EC2FD61A384F39F32D3,
+	MaskableGraphic_Cull_m209520B58633A44E70B3176331B78B8F60D19066,
+	MaskableGraphic_UpdateCull_m96DF3559305337C7CDF5E0F3BBC9E0551B2F14B8,
+	MaskableGraphic_SetClipRect_m624289BDDF45D4224950ED069A3FC4FCFFAF2B15,
+	MaskableGraphic_OnEnable_m98CB2B02A73E1CF22B8A90B9B5EA6D32F2A1B65A,
+	MaskableGraphic_OnDisable_mBAAE2E8D9B6328310FA62C0C4979D8ADD8C707BB,
+	MaskableGraphic_OnTransformParentChanged_m6851EF361EC92F6BBE48B109DF46BBA72310797A,
+	MaskableGraphic_ParentMaskStateChanged_m31EB24EA1311C8A14E9999B2AAC5641F6A0244A7,
+	MaskableGraphic_OnCanvasHierarchyChanged_m23AD995392375068B45527F59B2D21E484B92D6B,
+	MaskableGraphic_get_rootCanvasRect_mEB7FD518AB4D1A9AEF9FA63D6D226153B0514B69,
+	MaskableGraphic_UpdateClipParent_m91DECA865BB7901839C11DF0AEBA63C8BB054590,
+	MaskableGraphic_RecalculateClipping_mEBD195F458F2A49C78D2DB7A9A76986CB772F787,
+	MaskableGraphic_RecalculateMasking_mB1DD4305DA274C7A1EFB76579A756AC630E2B4F7,
+	MaskableGraphic_UnityEngine_UI_IClippable_get_gameObject_m0A5507EBFF6EED36B77BF85C198D61EB3537334B,
+	CullStateChangedEvent__ctor_m589D3CD46DAFE6410869A7C7B4E518DBEB42FE60,
+	Misc_Destroy_m0D1FE137DFE990D9E1B36902016DE0C9032D7A85,
+	Misc_DestroyImmediate_m788F46582B17F2D3061C610D2B112E3DF9B5FB0B,
+	MultipleDisplayUtilities_GetRelativeMousePositionForDrag_m889380BC62A1265BF18958BD37379EFD2506991C,
+	MultipleDisplayUtilities_GetMousePositionRelativeToMainDisplayResolution_m057D147B428AAE94DF8A1A67888088F1A3490583,
+	Navigation_get_mode_m3C77554140D0A56ACD06B1E6DB2D016F080FB95E_AdjustorThunk,
+	Navigation_set_mode_m352F710C904809D8291F9DC2215FE04593ADCBE5_AdjustorThunk,
+	Navigation_get_selectOnUp_m8E3A8A4358C862B402C322E93062E10F22371A0E_AdjustorThunk,
+	Navigation_set_selectOnUp_mB494823CCEB26834DD848CA376DF2593489D782E_AdjustorThunk,
+	Navigation_get_selectOnDown_mC9469ADD19689D5D263A39861E70E43A75BB9398_AdjustorThunk,
+	Navigation_set_selectOnDown_mCFC5C64F5DD87A5C5EC18CA9437534A4D8527C67_AdjustorThunk,
+	Navigation_get_selectOnLeft_m1B2D71E749D06A2D89855AE6715DBD253BC623FA_AdjustorThunk,
+	Navigation_set_selectOnLeft_mF8E320DE42A81C45F940253FC33B9EBE44C721BF_AdjustorThunk,
+	Navigation_get_selectOnRight_mD44071FB2CBE195EBD6EBF37437C3F5BBFA5B328_AdjustorThunk,
+	Navigation_set_selectOnRight_m6F80CB7DFAEBB50258CB48C9B117AEE58233A4A8_AdjustorThunk,
+	Navigation_get_defaultNavigation_m00087A1157696556EB1D34E20D7324DE4788F6C6,
+	Navigation_Equals_mCA33D841B71B088B49847DA2C509E0908B47FE26_AdjustorThunk,
+	Outline__ctor_m62F0A5048C002B6C42DBE9B39C72B525C8CC17C9,
+	Outline_ModifyMesh_m379E46A484FDA0471A5531E253FD413222A62FB0,
+	PositionAsUV1__ctor_m9F0C78EC024AAAE5464CEEA21AADFA364273F50C,
+	PositionAsUV1_ModifyMesh_m133B0482983A55DE1D8E7AB9FC6D6C1587EC9A1B,
+	RawImage__ctor_m9C69814EC2E8E295A3CDEF79789EF5A4C670CF72,
+	RawImage_get_mainTexture_m74EDB2F5CF7A15C414AB4C1B5ADC8CF7A637EA06,
+	RawImage_get_texture_mA902F1297E6D0EB804AB7F8FF211C377A69C61AD,
+	RawImage_set_texture_m897BC65663AFF15258A611CC6E3480B078F41D23,
+	RawImage_get_uvRect_m2E084DF666C593CD78D7DD130DCCB37E60DBE1CB,
+	RawImage_set_uvRect_m0C4FD071254CE84AED3E4940945C4AAA34959C4C,
+	RawImage_SetNativeSize_m74FF708BE5427A9D7F35D7DF2E265B36A0CF2D32,
+	RawImage_OnPopulateMesh_m4202163B103774FD550A4E907F61102F9E40539B,
+	RectMask2D__ctor_m024E0402BBAB7F3B3711041E8EBF2664323F2F8A,
+	RectMask2D_get_Canvas_m191FA3C371666B3D37727E7737AC0778AE61B3E2,
+	RectMask2D_get_canvasRect_m042F5C1D290755B4F91C1731D99E64DF3178C333,
+	RectMask2D_get_rectTransform_m125DA86C0969BD7622E36B7E7663DEB3CC255028,
+	RectMask2D_OnEnable_mFCBDD5698452738E4DF2740BD65DA2CA58A6EAD8,
+	RectMask2D_OnDisable_m7FA4F15595A783AA5C1C30BD32A2ED58E56D2646,
+	RectMask2D_IsRaycastLocationValid_m1D33E4E51586692E54EE44BB2AA61D8AF2DBB0E0,
+	RectMask2D_get_rootCanvasRect_m2BD97A00DF76450E2DA6FBFB4BD554BF1289243C,
+	RectMask2D_PerformClipping_m1C5B2C1A0D3445F797A4B22E11D22C093954A5FF,
+	RectMask2D_AddClippable_mA04EE8340518A8501A30DDB9824E39CA5D8321B9,
+	RectMask2D_RemoveClippable_m03ECFE5D464321D02FD5BD68A2B360413E8928D8,
+	RectMask2D_OnTransformParentChanged_mD12CDE42BDBAFFE9F3F00D549E56B9F416FB7CD6,
+	RectMask2D_OnCanvasHierarchyChanged_m1D9B7A803BB092B3D5C1FF53A6CF889084D2944C,
+	RectangularVertexClipper__ctor_mBC961D022ED33F92704BA80EA192ED4EC6D9754D,
+	RectangularVertexClipper_GetCanvasRect_m1368CD1A7984C6BA00C6550E01D283785DF91887,
+	ReflectionMethodsCache__ctor_mA8DFDCFFC9666D1F3F7423C14314B459BB0E5E6A,
+	ReflectionMethodsCache_get_Singleton_m6C50C55DEEA425161B73545918267BB90B7FCB9B,
+	ReflectionMethodsCache__cctor_mFC4F8CA1D5CF93BAB63CDA91FD06C7F2A606C41C,
+	GetRayIntersectionAllCallback__ctor_mDECED18E2D290B332B0CC4AEBFC2A6C33A25CF58,
+	GetRayIntersectionAllCallback_Invoke_m71D07917A72FF1D02C6FF4119E432BE63FFCDD06,
+	GetRayIntersectionAllCallback_BeginInvoke_m8047DB3A43ADADC78A70F4A185C16145C1113AA4,
+	GetRayIntersectionAllCallback_EndInvoke_m4BAEE2BB03070D4D2FAA42E6D7537FC8A7D1941A,
+	GetRayIntersectionAllNonAllocCallback__ctor_mE5117C8C25CAB250B86B19FFC86E77F4FD141AB8,
+	GetRayIntersectionAllNonAllocCallback_Invoke_mE8C1C89478AFE338F0607231CAE10362D7076FCE,
+	GetRayIntersectionAllNonAllocCallback_BeginInvoke_mFE60577F4CFE854DF555E6B18F41C159199F7682,
+	GetRayIntersectionAllNonAllocCallback_EndInvoke_m8F8DB533C1E5A3570D4FE629AED7DAA2D2125486,
+	GetRaycastNonAllocCallback__ctor_m73752B951D35EECCAED3F9E05BB43EC5919DA36B,
+	GetRaycastNonAllocCallback_Invoke_mB4F2F90265BCD10AF00FF81133D674F666DB7C88,
+	GetRaycastNonAllocCallback_BeginInvoke_mDBE7E69D77ED2B0AF5B590E725DC0BC7FA84E3A7,
+	GetRaycastNonAllocCallback_EndInvoke_mE29DAD1F419163849202F1D11D6FBF0745C6C81A,
+	Raycast2DCallback__ctor_mF10C8F22977BFC131115DDDA93DD6C541BB2B198,
+	Raycast2DCallback_Invoke_mC072BE588EBA8AB5B6D5727D9C07F9CF369EAD51,
+	Raycast2DCallback_BeginInvoke_m34549BAA5CFE2A0AE80306E93140A8611FF18C84,
+	Raycast2DCallback_EndInvoke_m635444684C80D557E29A51490CD34C2809C5A37C,
+	Raycast3DCallback__ctor_mE0CE52A6EF670A201E2640C2E690F6F861D5B610,
+	Raycast3DCallback_Invoke_m78D8946CAC9B31F37E08A01A5D59A66E4686228A,
+	Raycast3DCallback_BeginInvoke_mD8E5491EE88965786FA2A2EA517E90A759BB39C5,
+	Raycast3DCallback_EndInvoke_mEE3F8016449CA1D46FCE66A5AC337B306CF201BF,
+	RaycastAllCallback__ctor_mF30FF6ED5AAB4B88EA33C67FB8924CFDCC644580,
+	RaycastAllCallback_Invoke_m1C5BC50A8B21548971D4D3F48CECDDF4F8D2CAD4,
+	RaycastAllCallback_BeginInvoke_m2F3169A29EA8A3FE86F85211E197362244734562,
+	RaycastAllCallback_EndInvoke_m1DB016EE5E5197383DE81060D894473B1649A939,
+	ScrollRect__ctor_mF52021678539C2E3BDCBF413CB692A9B92A86B01,
+	ScrollRect_get_content_mAE7E101E869F55952F04866EEC6F95AAB474DDB6,
+	ScrollRect_set_content_m7AEEFBBBD97A03F4729F3F3EF257DF3F808CF70F,
+	ScrollRect_get_horizontal_m3C425B54CC4D554FE60F9FB9D64F568365E13555,
+	ScrollRect_set_horizontal_m4C9F1891E338DD3DE4C12C6FF9CF132B49E8E2B9,
+	ScrollRect_get_vertical_m010D0DB8D4D160DF8A820E8D212896798B48C075,
+	ScrollRect_set_vertical_m88623F933530D68DB98B487663E5125619D15A03,
+	ScrollRect_get_movementType_m96D7F76863CD4288A6E36481A9ED3028EA37CFFC,
+	ScrollRect_set_movementType_m8271F7B2C697E3A53E9666E7C0E0508682DCDE50,
+	ScrollRect_get_elasticity_m8632600C4FFF2BE4152E9C9A0C8F07CF14803272,
+	ScrollRect_set_elasticity_mB8D33F1B610727424A96D5BF6FA60F984BD3239D,
+	ScrollRect_get_inertia_m410F1BE3424427CB7DA5894D73EFE6C81758304E,
+	ScrollRect_set_inertia_m0054EBF021FB3EF4E982E0E45C5234CBFF00D31E,
+	ScrollRect_get_decelerationRate_m9625097937ED93D3A10804AD33EE31108B0E7182,
+	ScrollRect_set_decelerationRate_m6A8B8A60DCFE84AA49D872C82C0EE114975D85DC,
+	ScrollRect_get_scrollSensitivity_mA54ED4D4552EDB65A5D9FDA612E3299379313446,
+	ScrollRect_set_scrollSensitivity_m2718B33CCD14F1785B4E7C9EF69AA3F78A717D14,
+	ScrollRect_get_viewport_m81BBE5BD5EAC551F278CF2BC08BE60844EF8F281,
+	ScrollRect_set_viewport_mFC1A36FAB24DCB5B17B05B249127425093AC4E7D,
+	ScrollRect_get_horizontalScrollbar_m258E5BA6988FD113301575E1107A37D506515273,
+	ScrollRect_set_horizontalScrollbar_m650A3A51EF70EEDAE3D9B621B0675FCF4E2E1E6D,
+	ScrollRect_get_verticalScrollbar_m0A9EBD87C90FBC567C11D37ECEBD2E6A7218BD0E,
+	ScrollRect_set_verticalScrollbar_mC1EEDFA08A477C1B5A27E2AB4A6124CA6B9C8D27,
+	ScrollRect_get_horizontalScrollbarVisibility_mC43D0E4908D8876D399B15F36A8D98B827C77DDC,
+	ScrollRect_set_horizontalScrollbarVisibility_mA7700244746F9F1C97BCD7A58124EC10CEDEF040,
+	ScrollRect_get_verticalScrollbarVisibility_m8D671BA3821D2F3F263DAC0C7FE1487333326DA9,
+	ScrollRect_set_verticalScrollbarVisibility_m6DA3B95F798110C0A778E96B41D3E9D1468AAED7,
+	ScrollRect_get_horizontalScrollbarSpacing_mE0882DD796914402B924882626DF9A51CBB896CF,
+	ScrollRect_set_horizontalScrollbarSpacing_m0226FCED33423E1962A24517188D8464179B3ED1,
+	ScrollRect_get_verticalScrollbarSpacing_mDBF27F81E37CAF424BD23EF8421C168A0549E50D,
+	ScrollRect_set_verticalScrollbarSpacing_mA03A396F29DD92C6410157997C4F173851B6EF24,
+	ScrollRect_get_onValueChanged_mB59CCC8D8CD14BEB23018EDEE69EDB1EEE32C08B,
+	ScrollRect_set_onValueChanged_m6554A19014F7F5176FC620DFABE0472EB96EAAE9,
+	ScrollRect_get_viewRect_m68B3877837B2DFF4FD24DB5A02731D539005F753,
+	ScrollRect_get_velocity_m0BBDB216B24A5268A6E59BBA7BBF97B1BE9C6EA9,
+	ScrollRect_set_velocity_m3A4A92A1F4ECBEA2648BA11F9F6857B56FC5BF64,
+	ScrollRect_get_rectTransform_m7B88231FA757B90F357F2034325AA8291E75542D,
+	ScrollRect_Rebuild_m21262D3A766822F8074A127B9FE1D878C49730CB,
+	ScrollRect_LayoutComplete_mAE4C61E3A9CB3E3E581400BBDBDF8AAD30DF4D04,
+	ScrollRect_GraphicUpdateComplete_m39CBCD9DBCF4060E479291783748137AE51D432D,
+	ScrollRect_UpdateCachedData_mBA51AC06FF29BF72EBF470DE00361A0DDD858841,
+	ScrollRect_OnEnable_mC7A1135ADBEDC351D8AA7690A7F68F839B23FD31,
+	ScrollRect_OnDisable_m8E8408F6F5E498D38986E057EEC3C30CC8E14713,
+	ScrollRect_IsActive_mA7ED9B98406AAA016672AC27D30E03E36D6B40DA,
+	ScrollRect_EnsureLayoutHasRebuilt_m9B19F9D3F790C03A1CCA5954CEF4597E91C5F151,
+	ScrollRect_StopMovement_m8A1FD87CF259F34D677161F2686A2D0EC52BFADC,
+	ScrollRect_OnScroll_m42B3DDD7AC8A01D3F3730F0303BF700D239B0DAE,
+	ScrollRect_OnInitializePotentialDrag_mF9CE1C1BC211E9514966E666E11F02C1A0FC25D3,
+	ScrollRect_OnBeginDrag_mB6874C168BAAC512CD752DF7BC4D84CDF5FD806A,
+	ScrollRect_OnEndDrag_mE4CCB58AE22DAA792A0AA8AC009D7EBD8D1A4500,
+	ScrollRect_OnDrag_m28D2335942D9624305CA7843B50B480F2DD4622B,
+	ScrollRect_SetContentAnchoredPosition_mFB298AEEE511B09C4B98507883BF4ACF8003A43E,
+	ScrollRect_LateUpdate_mF968CFA447E8D19FB1BABB9E857BFD6CA5995C95,
+	ScrollRect_UpdatePrevData_mB386F432395FDFF7141DB5BAE9ED72C28F5836FA,
+	ScrollRect_UpdateScrollbars_m60756E79515458D8471A0628DFC01B95C1CD05AE,
+	ScrollRect_get_normalizedPosition_m6250B0B395AED2E2ED6E9AE6658C597E430FAB50,
+	ScrollRect_set_normalizedPosition_m9B1A5E02AE4512DD1340D64D88ADF2B0C0F7FD27,
+	ScrollRect_get_horizontalNormalizedPosition_m760073B7807A1DD045CEF373783B50FE8C8222DE,
+	ScrollRect_set_horizontalNormalizedPosition_m682F373A94978061CDF938A9E2D2C50EABB87C0A,
+	ScrollRect_get_verticalNormalizedPosition_mFE7B3C5E9FD7734F3C5872FDC8AAF65CEF66DD2C,
+	ScrollRect_set_verticalNormalizedPosition_m7265E6532301EF1F5D285370BC3FBA9A58636BC6,
+	ScrollRect_SetHorizontalNormalizedPosition_mEF9A200F6625433F51C121273CD2F046858AAFD1,
+	ScrollRect_SetVerticalNormalizedPosition_m89732408A431F29CBE354A9CB03952F80D3BE8E5,
+	ScrollRect_SetNormalizedPosition_m23F8F3EA2E039C49A4CDEA12FA26FBD6C8F65625,
+	ScrollRect_RubberDelta_m63F9188FB35534CF5D9D88FFC8A707CB1395FBFA,
+	ScrollRect_OnRectTransformDimensionsChange_m0BB0CD9780346131E9FE41C6E54249B74BB3C73C,
+	ScrollRect_get_hScrollingNeeded_m9E9F24A62A6DFFB29945220571F18895FD3A89ED,
+	ScrollRect_get_vScrollingNeeded_mCDDFDB0A99A2FFBCDE0B082CB0996425F58FBC18,
+	ScrollRect_CalculateLayoutInputHorizontal_mCF3EF9E86118E91A7486ED0694E0348066C733F4,
+	ScrollRect_CalculateLayoutInputVertical_mCF660BA9A06A70E7D093836B5B1995381B3A35CE,
+	ScrollRect_get_minWidth_m6BDD545EB381B2B30CB96EA72533A5E43E2B2311,
+	ScrollRect_get_preferredWidth_m6930D94D05209390C4C82398B43099B875010386,
+	ScrollRect_get_flexibleWidth_mFCF6F913E62F89238ABA8CF5B646138A3F793AC1,
+	ScrollRect_get_minHeight_m28836F9AB3A859B6E4C10130E00595BD4CFA10C1,
+	ScrollRect_get_preferredHeight_mD6DFFDA19E4998A14105ACD4D8EF1C5ED011BB84,
+	ScrollRect_get_flexibleHeight_mC95EB0AFF223A7BE2F93932808FF33EF56F42D68,
+	ScrollRect_get_layoutPriority_mEA746BAF15E839F0B063E747A05B491363A4E0E5,
+	ScrollRect_SetLayoutHorizontal_mA78FDB80B3BA1EB7FE79477101A70492F10E96D2,
+	ScrollRect_SetLayoutVertical_m912423AB4057840ED0EF1C73A45D876937275639,
+	ScrollRect_UpdateScrollbarVisibility_mCB2714FF6CD206EE276094C7DF2FCDD4B7EC54F3,
+	ScrollRect_UpdateOneScrollbarVisibility_m4DB223B5340C269206467DA94B8BD917251F731A,
+	ScrollRect_UpdateScrollbarLayout_m8267AFEAB72E362ECC807A03BFC759FF64A7FDAF,
+	ScrollRect_UpdateBounds_m64AD256E1BF3ED2AA9ECD8A71A7FA75CABBD4685,
+	ScrollRect_AdjustBounds_m2CF762FCCA17458C8B9CE8A9B320524A148CD8AC,
+	ScrollRect_GetBounds_m1434EA6AC230851FBEEE36B1293EA41174124807,
+	ScrollRect_InternalGetBounds_m7470ECE11BD59E50A86CFAB8BAD2A3D681936484,
+	ScrollRect_CalculateOffset_m57DAE6F9CA6987679656A58C55EACCB991A1B127,
+	ScrollRect_InternalCalculateOffset_m717A54F1FA344998DFC23B2F82DAA06868DB115D,
+	ScrollRect_SetDirty_mAEB52AC5C9A8B2A2564C27F28B5BCCD7AC67B2B0,
+	ScrollRect_SetDirtyCaching_m560418235DF4825E4B0E12988348B6435F566310,
+	ScrollRect_UnityEngine_UI_ICanvasElement_get_transform_mC69CA8DF8FEA95D6DA8157ADA405833DED32F16E,
+	ScrollRectEvent__ctor_mCF315D53383F177C469105FD8E954255805FB078,
+	Scrollbar__ctor_m7ADE49080D7228788648A54BD34D88B497252476,
+	Scrollbar_get_handleRect_mBCDC8DD31E32F943852ADFB6FAEF1321B8BA2B21,
+	Scrollbar_set_handleRect_mE1534719B898AF071D67CBDACB42668013766303,
+	Scrollbar_get_direction_m9DE22D72DE14200D3B7F70410865872034DB3C26,
+	Scrollbar_set_direction_m5B03A56846073AC48D2CDDC5FD67189C0EF1E329,
+	Scrollbar_get_value_mB275E7CA81154BBBEBBF645488BB826139E89660,
+	Scrollbar_set_value_m9AE3F1ECEB1ABAFD7390C237AA10C30CCDE802C5,
+	Scrollbar_get_size_m583A70834FEFE275D92425CB1BDDF4BBB000BD11,
+	Scrollbar_set_size_m5F078A8D54DBD8859076A119C177786A5D7529BC,
+	Scrollbar_get_numberOfSteps_m06336C76DBA5D3AEF7DFCB819DDD375C241DEDEE,
+	Scrollbar_set_numberOfSteps_mFB129074E47807F490E3ACBAB25C9600033A5D68,
+	Scrollbar_get_onValueChanged_mC58EA55182B24E42CEBC360FBA3F0533B3CF0FF8,
+	Scrollbar_set_onValueChanged_m25E52DAC96B9990159F1E092F1B5B7A3D84DBE56,
+	Scrollbar_get_stepSize_mE2C8B2DC9DA6C4102861FA6034D4C4A8FE5E84B8,
+	Scrollbar_Rebuild_m7ADD4A145161976613E868B0B957E1747A5F5AAA,
+	Scrollbar_LayoutComplete_mEC4BB9C20DCF68FC7348C4ABFC3AFAF8C428FDD8,
+	Scrollbar_GraphicUpdateComplete_m347F9D1842D0EC8F179DEED9BBB316FCE73BF61E,
+	Scrollbar_OnEnable_m1CE8A8EAC515D4DE99E6D75ACD10BA85667949B4,
+	Scrollbar_OnDisable_mE1B498F3F7D037D4B4FEE7B1865B214D1ED3AFB2,
+	Scrollbar_UpdateCachedReferences_m40A31FF732875EDCC599DEB593C73A7DC549E62D,
+	Scrollbar_Set_mAD0BA4AF84AC6C5A7BA488A67BAFD879FF810564,
+	Scrollbar_Set_m11355F7B0FD424955223A2AF2304E86894148F43,
+	Scrollbar_OnRectTransformDimensionsChange_mEEE2F0B1ABF34DB4276EE40ECE52D11B3CD8166C,
+	Scrollbar_get_axis_m45122AD4E1A73A6555181B4A6A9C86DE2EE07EE3,
+	Scrollbar_get_reverseValue_m8E80AE020BC43B88A2F53EB4999CD2707C7E86B9,
+	Scrollbar_UpdateVisuals_m1D878262ED9E2352A223212690C52E8CB6F2FAAB,
+	Scrollbar_UpdateDrag_mE8B199B19A5942CBA82E3840A6126D59054129FC,
+	Scrollbar_MayDrag_m4F37B713558CD03270EDF7B012875A1CAF2E84A7,
+	Scrollbar_OnBeginDrag_m6DA9E7055796D8EE7CE4BD0FD013E289B55DB40D,
+	Scrollbar_OnDrag_m7AC63EE8BC0D90003E55946E7267DBEFD345C8DF,
+	Scrollbar_OnPointerDown_mFF6FEF012693CBF8174E615BC8CCA6D07C91E94B,
+	Scrollbar_ClickRepeat_m6CA8353EA47CC889A26BDA6A6C3B09D7E9D5C701,
+	Scrollbar_OnPointerUp_m57D516FD92F59A104D5BCAEA2B6DA3224CA06463,
+	Scrollbar_OnMove_mFC5E2D34AF47C6042DE0EF5765DEB886991BDEA1,
+	Scrollbar_FindSelectableOnLeft_m374B5705442CC40C149835019C9EAB55C079F6BB,
+	Scrollbar_FindSelectableOnRight_mC2CAC3EB7EA1FC16155EF3E90B6E088B5E09FD5B,
+	Scrollbar_FindSelectableOnUp_m9ADBB11544C5D9D09414A397C4B22B19E60C252F,
+	Scrollbar_FindSelectableOnDown_m3A2776AE65F7CDFE6F3AF88B607F06A39B35C7D2,
+	Scrollbar_OnInitializePotentialDrag_mB192062EB62D8AD9A8CBEB31F50534F34FEAB10A,
+	Scrollbar_SetDirection_mBB35F712BDD1A3855FAAE42D12B760B8EE1AE68D,
+	Scrollbar_UnityEngine_UI_ICanvasElement_get_transform_mAAF75F444197A05035818A54B2BB7E299C539180,
+	U3CClickRepeatU3Ec__Iterator0__ctor_mBA19CC1217EFA094618FB9451C88EAEB75D9A5ED,
+	U3CClickRepeatU3Ec__Iterator0_MoveNext_m330E68C2DAC2BB415E071E78665CED47B4A7FDE0,
+	U3CClickRepeatU3Ec__Iterator0_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_mFE35DE612E8009FDBBB23A6448F1F017BCDF1C09,
+	U3CClickRepeatU3Ec__Iterator0_System_Collections_IEnumerator_get_Current_mA1B2E11B5BD5A1FC864D5D69D875E869E423AAB7,
+	U3CClickRepeatU3Ec__Iterator0_Dispose_m37399231F89D33EE35EC12FD0713A098AFA06473,
+	U3CClickRepeatU3Ec__Iterator0_Reset_m6BB917D87B5919C9978C05C078B0861A58FDECE8,
+	ScrollEvent__ctor_m57B48E758DA259EFD37D36C2E822CDDE0EB0D327,
+	Selectable__ctor_mBD4ABD29364130A94AFCE637F55A9A7E060A4998,
+	Selectable_get_allSelectables_m640C12344CEEF36F2F1227C1D11EAE4EBD62D77D,
+	Selectable_get_navigation_mE0FE811B11269EFDEE21C98701059F786580FB50,
+	Selectable_set_navigation_mC71C23884778E7CBD965CD03F4BB98C57B193D6D,
+	Selectable_get_transition_mC5883DD4A0EC4A58F41285A8684B018309041D9E,
+	Selectable_set_transition_mDD3BD497C0E4CEE5383D4D8D21345E9FDC99E6EC,
+	Selectable_get_colors_m9E63E13A7B6C40CB0F20414FFBE15873BE5F3E4E,
+	Selectable_set_colors_m9B2153394F840E4C092F5E15890AE18BDE5D803C,
+	Selectable_get_spriteState_m0A341E18A903DAEF82259637F2D09B1CEC4DFD85,
+	Selectable_set_spriteState_m0E5F0F2E2C60D7552C9A5A2C7DD7624A739BD3E8,
+	Selectable_get_animationTriggers_m6F8F01A53FACD447624E24686E89F05EBEBF64E3,
+	Selectable_set_animationTriggers_m8E417E803453619B75A48E4368CCE49721A70E7F,
+	Selectable_get_targetGraphic_mB12CA26D04922ADB483397992561CA3941E78F92,
+	Selectable_set_targetGraphic_mBFC447AB7EA85CB420A62F73C9FC04C258459AAD,
+	Selectable_get_interactable_mDDE14EAF3219D9F4E34E2A9E13F9328D2D26CC4F,
+	Selectable_set_interactable_mD5096017CC3058D280066EB9ABDDF5062983A94F,
+	Selectable_get_isPointerInside_m635EAD5952BCA4869A7D53E64886320C3EEE5788,
+	Selectable_set_isPointerInside_m438C811BF8AC629C8B178CCBB8B4AE3104D3BFC4,
+	Selectable_get_isPointerDown_m67159C6CB1524289CA13ED6D54069F8D81BB4F03,
+	Selectable_set_isPointerDown_m07D70BBBF74BBE93260C8764A35AB2CF01D9285B,
+	Selectable_get_hasSelection_m98240D41F9504A11054BB735599D9D4CC8F0BB32,
+	Selectable_set_hasSelection_m4201E39DA59215B5F25316B88F7FB58A96BAEAF6,
+	Selectable_get_image_m74FFCB0802A2E8380B33314F53A9748370D1C9F7,
+	Selectable_set_image_mEB48171E4A9B0856EF9495731DA0E77B32022371,
+	Selectable_get_animator_m44D968240801D850FE50F5B95C95D394448AA58D,
+	Selectable_Awake_m00FEEACAD69C0C1431DE1D943D9BAD242060D237,
+	Selectable_OnCanvasGroupChanged_m10C2FF31D55B5795F8290F56EED7CDD088AFFD6E,
+	Selectable_IsInteractable_mD75AC34F072C2D47A06D636CBD7A877C0D5C6DE7,
+	Selectable_OnDidApplyAnimationProperties_mBC51729A0658D31002D6E64499DC899C4A9DABBA,
+	Selectable_OnEnable_m352652EBB5663AACFBA5DF569B69688195B2D67A,
+	Selectable_OnTransformParentChanged_m7407DE1690F15DB716A517D98389546BFE9674A7,
+	Selectable_OnSetProperty_m4C8CA731A11111633A0AD55E35F50F504852E700,
+	Selectable_OnDisable_m4634C727F40884946EF3D789CD98BA6BB2E3C9F3,
+	Selectable_get_currentSelectionState_m37B79D51884A49924B92D1AE1BAA354C55CA1FD0,
+	Selectable_InstantClearState_m7B707053C25F8C158A896237F0B4D8E557179381,
+	Selectable_DoStateTransition_m10BB6A589042BC2348AA26B23BFE8BDA7FA2A015,
+	Selectable_FindSelectable_m9FD1E72CE35CCB75F9DF4F9CED3C67B83FD0A0D8,
+	Selectable_GetPointOnRectEdge_m8596C7C83FA78419A6FCAFDB64DFF9F7F99172A6,
+	Selectable_Navigate_m9EDE62D4E73C8D0DDF15FD11CBA8AA687113F209,
+	Selectable_FindSelectableOnLeft_m501FD2B988BBFFDAD318800A4D164FB21F1AE315,
+	Selectable_FindSelectableOnRight_mA5550ED566545FF1E5113E935F4F57B63F3760FA,
+	Selectable_FindSelectableOnUp_m26D12F3EBE3D07C4D69C639DE4D219B40886E8FA,
+	Selectable_FindSelectableOnDown_m2EC533E6757FC29A2FABAB68A5E8D56394FE2637,
+	Selectable_OnMove_m4C727C7903C354BA3BD5A8BBE0B01A81D0AB3640,
+	Selectable_StartColorTween_m4FDDF247EB1F3FF3523AD9701104CF15FC7BE7EF,
+	Selectable_DoSpriteSwap_m945F050FB0ADD6D6EB86BD62196EC8C88B01368F,
+	Selectable_TriggerAnimation_m3041F858E7AE274FCDF090695EB3A03656F35BCD,
+	Selectable_IsHighlighted_m94D25810B3FFD4BC41B72CFA24A278D112E04FF8,
+	Selectable_IsPressed_m9C34D4952A9B4F2CE3D4635DADDEAF3FA8A67474,
+	Selectable_IsPressed_m332040CFA7F7D9F5656703F8CB715BB0C0B07E68,
+	Selectable_UpdateSelectionState_m68F6EFC8DCE122782E6DC6727026FCA4991E512A,
+	Selectable_EvaluateAndTransitionToSelectionState_m59AE8588925C9EA196F1871AEB3482A11DDAE958,
+	Selectable_InternalEvaluateAndTransitionToSelectionState_m5B2218BC4398EF690E0D1273B3D082FF6937FDD5,
+	Selectable_OnPointerDown_mB422F4AA51DAAFC28EFA7B1B44B12FC3C77F315A,
+	Selectable_OnPointerUp_mD9B21EB27CDCF610DCC6EFE191CB67933D207927,
+	Selectable_OnPointerEnter_m6296AF10FDA50D3ABCC54C3FA9D1C34A51DE0CDF,
+	Selectable_OnPointerExit_mB7EF6DA645C52193A03C366A0C3A8111B5C9E0BE,
+	Selectable_OnSelect_mB45924EA3EEA317E851C1718110D6D591CBCEE35,
+	Selectable_OnDeselect_mF9FFDF6060D5998D3CC34A3D9370465DC84A0EE0,
+	Selectable_Select_mFABD479F56CEA6F3F788CCE40A56F1CFE1BC503A,
+	Selectable__cctor_mAD0E5E180C52A89008DBF31BE769D0D7B85E0EE5,
+	SetPropertyUtility_SetColor_m819EEFFDF77F3D8F61608CE3B999A3DFA6BFC569,
+	Shadow__ctor_m6638F4524D0C59C8097EB4B29485D6FF29CD2181,
+	Shadow_get_effectColor_mF2BFAE37844448601DE6F2DB6C3ED8DAE0542DD5,
+	Shadow_set_effectColor_m73C48D317DC07054A1B639D5A8AC5FD412A7D3AD,
+	Shadow_get_effectDistance_m803B4F3FACAEBFACCE4FA17606DA6C44A0C5383D,
+	Shadow_set_effectDistance_mB25607DC42BC57346AE38C073BADE761986C109E,
+	Shadow_get_useGraphicAlpha_mFF218B561B05F82984D15C0B615146AD5C9F8148,
+	Shadow_set_useGraphicAlpha_m88EC1CB36CFDA044427BBA3BA301EF835BD2E332,
+	Shadow_ApplyShadowZeroAlloc_m4125D36896DA665F099A344030160FA3043CC937,
+	Shadow_ApplyShadow_m758C3387E9BF5D18111E88CAC3EFAE84BF8A4B5C,
+	Shadow_ModifyMesh_mD0147B7AC10F6443E866DE4FB707D7D36B0B88FA,
+	Slider__ctor_mF1438A44978B9AF7425B50934AC90138A6DBB605,
+	Slider_get_fillRect_m10082FA06055F2E0D236F94056CB20EAC671EA2D,
+	Slider_set_fillRect_mA18A75B4CA594BF9622465584E851F86DA083359,
+	Slider_get_handleRect_m7F824486CE72A8089CEF1A3EC88B5E637CCF3499,
+	Slider_set_handleRect_m8B4188B88934222BB4C4220929A5CC75FB4A1472,
+	Slider_get_direction_mE9A02803187D68D400284913BC6F93F587610022,
+	Slider_set_direction_m4009DEBB23A079650774717B4463C08D7CAFF853,
+	Slider_get_minValue_m38EA4AF6F4E0425E43B4DDF714CE68E04E32FCF1,
+	Slider_set_minValue_mDA0D477A52DA1A66497A4F46807D60A8040C0122,
+	Slider_get_maxValue_m0160A8C060F0EB74F10D599FFE715629EDD85240,
+	Slider_set_maxValue_m2CCC2B6906B140BE5C537BFC08CC8961342F92D8,
+	Slider_get_wholeNumbers_mDA6BE70470B14F7A318B1D8B26F8F4AD11075C8D,
+	Slider_set_wholeNumbers_m77FD1FF5AFF43A719A2FCC33994223310F185720,
+	Slider_get_value_mCC8AAFA1D4595213F76E865F3F6585E78F170295,
+	Slider_set_value_mD7E3DE3C9CDEBA5740C0B924D19D20404AEB6898,
+	Slider_get_normalizedValue_m6D81A9FD06F9E39ED08F772300075D7761E977EA,
+	Slider_set_normalizedValue_mE5F625759AF63BB756D0506B9E38365DCA86B308,
+	Slider_get_onValueChanged_m9D9177CDBF349783372AABF032F2D2B3178A84D6,
+	Slider_set_onValueChanged_m33DFE6F9A0F16DB828610F99283A5DCB4E10ECAF,
+	Slider_get_stepSize_m103018BC9BB0283984C9DB84CD055B9B600948BA,
+	Slider_Rebuild_m60BD5CE28919730B71DC5E75B4A62B9E13EC0917,
+	Slider_LayoutComplete_m5EF8F0FB486F80303C1DA17B79EFB999C0A8D28D,
+	Slider_GraphicUpdateComplete_m320BDF39CD12251BA2AC72EBB148B4785CE08CB4,
+	Slider_OnEnable_m260CC9BF41956E4A2BE5AA65735A498B48AC1F20,
+	Slider_OnDisable_m1820CD0C81E18B6E208F7C2B61B8130D465F4DD0,
+	Slider_OnDidApplyAnimationProperties_mB5DCC8BFA833602C4DE2BB1A43BC5637CBE38C42,
+	Slider_UpdateCachedReferences_mF03146161CC6034FB5511A0D82557EC40B945DDE,
+	Slider_ClampValue_m46D3D908AB9800FB0485CBB537C189FAA0329EE4,
+	Slider_Set_mAC56863EBF0D01C1290778D2AD7F3623E9EA9CFC,
+	Slider_Set_mD0D742FFFDC05C2F3C1E0924C28C964AB95F8C39,
+	Slider_OnRectTransformDimensionsChange_mDA61F90CF7F7F65347166FFE8E53CCC47A19B581,
+	Slider_get_axis_m9F710E0C68A9BB669EEAEC975162175F7739EB0D,
+	Slider_get_reverseValue_m8EC94E0E93A2D030223121F9383D13DE347B9D17,
+	Slider_UpdateVisuals_mA0CAD28317391E855707C570091DA9F71C60B7C8,
+	Slider_UpdateDrag_m3245C20C3E52659020A6D00BAD7B13F62C77D6C3,
+	Slider_MayDrag_m2A826BD495C6FCCF86D4FA344B88823764995D28,
+	Slider_OnPointerDown_mE6AF7C1DED6CE3A59B1C01E413852B2DC252E855,
+	Slider_OnDrag_m11F76D7574A7343BC4771D8EE650E19FE4212E51,
+	Slider_OnMove_mC1D271B37D6115AA109F331630FEC513A4F3B68D,
+	Slider_FindSelectableOnLeft_m1712ADA199F792D4C30D0094AA9A43D3441C7471,
+	Slider_FindSelectableOnRight_m42B9D352422ABEB7719BD3F63821A6166261C646,
+	Slider_FindSelectableOnUp_mC66B25E4FB7290FCF82048F6AA857F0C6ECC3FA7,
+	Slider_FindSelectableOnDown_mD2F38D581CB5AFA849AFE901EA512579A2799E6D,
+	Slider_OnInitializePotentialDrag_m4D8CBBFBA2F1E7B4BE83A8E9456CE410B7657F6A,
+	Slider_SetDirection_m80673A915F4D6CBC8257721CECE8BC0C49C2AA82,
+	Slider_UnityEngine_UI_ICanvasElement_get_transform_mB0B1E8ED327E6F1E2AC845FA98C9BEE4CFB5392F,
+	SliderEvent__ctor_mA5E056137D29D8DAB5479CFB516B8350F81B0C0F,
+	SpriteState_get_highlightedSprite_m320B06E1D3FE9515D60F5706487229A0CCBD464E_AdjustorThunk,
+	SpriteState_set_highlightedSprite_mB6F76814A30F2FD3C379FAA3E5CD250176D9B241_AdjustorThunk,
+	SpriteState_get_pressedSprite_m1D2A0EDCF57DCAF1E4AEE5E0E53823893386699D_AdjustorThunk,
+	SpriteState_set_pressedSprite_mD78D10C0B5372329BB042932132416AD812C9BC5_AdjustorThunk,
+	SpriteState_get_disabledSprite_mFC4F907199F9155422A1876480EFB26E501BC34E_AdjustorThunk,
+	SpriteState_set_disabledSprite_mA251CF8DF922DD506049D83C63879C3D6698B317_AdjustorThunk,
+	SpriteState_Equals_m9062D8F4AC3D2227E56451358F0509153059B961_AdjustorThunk,
+	StencilMaterial_Add_m4F9F65E2FC1C15A75FE8FF7B7DDAB10CA54DCB40,
+	StencilMaterial_Add_m5F37EE6B20F3CE476A00BB21BE2612500365BA46,
+	StencilMaterial_Add_mC19552F6DF05D4C1E20F41BA0AAED09883058053,
+	StencilMaterial_Remove_mAD3015D7E6D81CA4F11F4B19EE328B60ECC92EF9,
+	StencilMaterial_ClearAll_mCE4F6E8266056EA7E2A77B3EA6618188A93C5131,
+	StencilMaterial__cctor_mDE710919ED4BAF28418921D59421CEEF8795B59B,
+	MatEntry__ctor_m72C34F04FBA9E45278AEC5A484EBF78FD7748089,
+	Text__ctor_m80A4B0795946280BD6D532BA6922CAEC18A82748,
+	Text_get_cachedTextGenerator_m8BB75D38962D0D11C0095A1D20FDBDE8465362C6,
+	Text_get_cachedTextGeneratorForLayout_m636D4317F3A3E0E62C9A9F1B5CD1D00E1ED6F277,
+	Text_get_mainTexture_m41C2BF53D45482A684903DBBE46EA4AC2AEBF3DA,
+	Text_FontTextureChanged_mA0FFEE8B273208F83D2C55BA4D994D148EB12F22,
+	Text_get_font_m2C5D760FE226B7AD1B8340FE827945B44B817E8F,
+	Text_set_font_mD3CE7BCE58B5B0C3CBE51CE1AC74CBA662DFCF5C,
+	Text_get_text_mB6389118C605BC236DEE9A96BEC87CB400AB77EF,
+	Text_set_text_mBE035FDBA5FF5D79CC1A6C191D52D6BB94794C36,
+	Text_get_supportRichText_m682251B82F8DB16E7C1ED3023A91B013D825C85D,
+	Text_set_supportRichText_m1DBDCBC909CE6430E36B823BA63D24EECD9D21C8,
+	Text_get_resizeTextForBestFit_m7B4A245A26DEC10728618E462A8DDCEA83DE27C0,
+	Text_set_resizeTextForBestFit_m5C2AE30EC63988D878AD0FC3D10EC26E91B572FB,
+	Text_get_resizeTextMinSize_mA24F43BB941B3A77E3DAE9E3499BDBF7D2F730B4,
+	Text_set_resizeTextMinSize_m9931CA2C3B3E4A48643C7FA96781AE473DAD6745,
+	Text_get_resizeTextMaxSize_m5B5FBBBABBCF63A8A00C11B6AC31078C78A055F5,
+	Text_set_resizeTextMaxSize_m2FE7CC9C76174E594B32A33DD1A34AFB88EC3566,
+	Text_get_alignment_mE7785D3AE08A958FC2504F9B10A5C702A4CC3384,
+	Text_set_alignment_mB0AAD0C5B768E551ED0CFEDB3B065D53B378CF05,
+	Text_get_alignByGeometry_mF901BCD5C66A08F1209F3267ACFD474BEBAAC659,
+	Text_set_alignByGeometry_m41CC432AC80913E7E5F589E9E97AA596CAF4725C,
+	Text_get_fontSize_mE47E908642FD1E441659B2B8E25217891C2929C7,
+	Text_set_fontSize_m02F0192F052A3815C17428F4C2BE51A03B3E15B7,
+	Text_get_horizontalOverflow_mEE12180937CCEF1E6253D5F9A7284804111BC35D,
+	Text_set_horizontalOverflow_m25F75A139DC41E64534F6AFBC015BC8981EF6EF3,
+	Text_get_verticalOverflow_mE451223DCF16B3E00FB3BD427DDC42885174089C,
+	Text_set_verticalOverflow_mF2BD206D52AC35E80E44A307DCE7CB2D0036E25D,
+	Text_get_lineSpacing_m466DF67FD695C49FAFEB1B0F70142C721535AFB1,
+	Text_set_lineSpacing_m1E45DAE6F3EB6A8D50A6067F84C854B0563F4C6D,
+	Text_get_fontStyle_m753370F4A58FFF2B8D465892092E884344FC2DA2,
+	Text_set_fontStyle_m14F5E99F2F56B22FE1A913EAACF43060F258C144,
+	Text_get_pixelsPerUnit_m0714914560BD82737D7E21AA653FEDFE7A687AB4,
+	Text_OnEnable_mE4498B042D13B7E35B9E48161939783671D97260,
+	Text_OnDisable_mBFEF0A0F544B2B834683E34EF5F56F5C4E1F59A1,
+	Text_UpdateGeometry_mFF09CAB338C7321779D30F5F4611390A4D677249,
+	Text_AssignDefaultFont_m018120862E32324EAD5E109C45FEA56E626FEEB9,
+	Text_GetGenerationSettings_m594A7D1505D89B4FA343E25A36D4656F79E585A4,
+	Text_GetTextAnchorPivot_m5888428084EA7FF9051BA852BE52922970A48424,
+	Text_OnPopulateMesh_m14AF4CC8E68737D1A2EB3874DBA97C26FDC8C30B,
+	Text_CalculateLayoutInputHorizontal_m1200BC41E8B74593FF77EE5A981BD0F6ECA99C16,
+	Text_CalculateLayoutInputVertical_mA34082970A62973ECF341AB7EA0F486B07F0E608,
+	Text_get_minWidth_m95161D2ABAEA3E404D9BF2F660417C2761E7C4C4,
+	Text_get_preferredWidth_m8B44F6952FAE8CF60E824A5EEE678A3E9FCC0F53,
+	Text_get_flexibleWidth_mD164002BF05FFB596464206938E460068403A5E8,
+	Text_get_minHeight_mECB6D1810722F49EAAE5C24F23B1BB8495FDA69E,
+	Text_get_preferredHeight_m43B3E341B4FD608451B58F8833603CA736BD2268,
+	Text_get_flexibleHeight_mE1E00EE2C1D41990386623BFA66090A0D9B65B8C,
+	Text_get_layoutPriority_m9C61E3B617CDB0F99BF9B13A79DB607B62711B4C,
+	Text__cctor_m713223F660E2573ACF3AB0E01C79282AA1851BFA,
+	Toggle__ctor_m9778262FDAA7AB9F4DC36B8383E3636EB4181121,
+	Toggle_get_group_m8A53B9EF413E699F639789C84035237AA9E6F614,
+	Toggle_set_group_mC2AC854926A3826395400C3D4B592F2BADD800E9,
+	Toggle_Rebuild_mDA0831CFE6AB7ACDE44FA5A196D503207C533CA6,
+	Toggle_LayoutComplete_m111A3DDCBB052478A11F1F29DAC102DC3B2ED383,
+	Toggle_GraphicUpdateComplete_m83FD4545ED1789E0FFC2B9672717B97621C427DE,
+	Toggle_OnEnable_m06EB9BAD5A0B0BBEA8F7BB8E7700F9314580D349,
+	Toggle_OnDisable_m9852243BB788EE79582CD63E8EEDD6F5AA969E30,
+	Toggle_OnDidApplyAnimationProperties_m8B921A3B898C4E4FD1137902794F7DDA46C592BC,
+	Toggle_SetToggleGroup_m7309BDC38EBBE8578600696DBA86EEF179FB7734,
+	Toggle_get_isOn_mE13D628534F60138373B3E52CC93301DE59DB616,
+	Toggle_set_isOn_m7537DFD6189521B15A9ABFF448CB1390BB9A7342,
+	Toggle_Set_m3DDB6517A78DEDF31B639FEAAB30D031BBDE8DA8,
+	Toggle_Set_m792B2A0D3ECBC3FD11A172A855C03A9E4524BA4D,
+	Toggle_PlayEffect_m8915ECD3CBCF477FF9499DB5C7C58122AF6CA0E7,
+	Toggle_Start_mD7422F4AC7E97A3274DC47750C9C32918F971950,
+	Toggle_InternalToggle_m39B460402208214BF289E3A070D3CC47CFBF2034,
+	Toggle_OnPointerClick_m5F3C48B188ECE1BD50FC1DDC4339A5CFCB78614B,
+	Toggle_OnSubmit_m3D39E47544FC6B6C18F29C6CE0015376EAD53395,
+	Toggle_UnityEngine_UI_ICanvasElement_get_transform_m5D490666565864D891A2D78A8E1EE95B16F53318,
+	ToggleEvent__ctor_m42B79CF4D48552D2EA68AC29FB3CC70CDBC72193,
+	ToggleGroup__ctor_m4191FA153CF9F46EC5CAE2332DD772C084430AB0,
+	ToggleGroup_get_allowSwitchOff_mCA978DB0EA4EA0DB9B0122E7BFDB5F8B4A8D95E6,
+	ToggleGroup_set_allowSwitchOff_m7BE26641720AA4F656DE834C96C8FDAE532FD5D6,
+	ToggleGroup_ValidateToggleIsInGroup_m53EC5A85EC2474E5D879409D5956C17B18BE4420,
+	ToggleGroup_NotifyToggleOn_mC008E9CCB6D5F828873B777CEE2C8B63A98294F1,
+	ToggleGroup_UnregisterToggle_m4B579EEFF42C812F607EE4E682C15FA8910B32DD,
+	ToggleGroup_RegisterToggle_m52D8EE41CA0839CFD5F67AD8750677101DB08232,
+	ToggleGroup_AnyTogglesOn_mA3F306262DA16C53E30981AC2A26BE716700BB49,
+	ToggleGroup_ActiveToggles_m1FAB0E80675545C764FB81906BE09AE712BE0005,
+	ToggleGroup_SetAllTogglesOff_m679B91ED02BCDE097E44D110BE1E9E546460CA78,
+	ToggleGroup_U3CAnyTogglesOnU3Em__0_mEA917603E1EA6BF2E58517CFE3CE887232007100,
+	ToggleGroup_U3CActiveTogglesU3Em__1_m33037FC3D2B6477C7EE1EEC4DED10E474BBD9211,
+	VertexHelper__ctor_m4BDD6FD690593D484081F26AD01CF12CF25FDA71,
+	VertexHelper__ctor_m334422D478B532AAAD6511EC5BF6791D7A83BA94,
+	VertexHelper_InitializeListIfRequired_m58C8C9423DFD8C5C542958C43B358A06D650C14B,
+	VertexHelper_Dispose_m5DC2F2F2415811228A23AEABB06274A88B6C7513,
+	VertexHelper_Clear_m811CC2BB4DBD7778A9708FCEE04BAA2107721BD7,
+	VertexHelper_get_currentVertCount_m48ADC86AE4361D491966D86AD6D1CD9D22FD69B6,
+	VertexHelper_get_currentIndexCount_mB59A41B2CB38B0C017BE090282ABBA9B1399818B,
+	VertexHelper_PopulateUIVertex_m72B419E337C302E1307A90517561746425989160,
+	VertexHelper_SetUIVertex_m34A2517745A635BBBD0F95AAFC3CF275D73AC4D3,
+	VertexHelper_FillMesh_mE949EFAAA38E753FC2B160E07988ADE8467A2F31,
+	VertexHelper_AddVert_m9D2E883EB0BFCB9EA78AA93F7FD56EE99DC703B2,
+	VertexHelper_AddVert_mD2074FDCD0CF9500A05102448EF72D8C7ADDCF83,
+	VertexHelper_AddVert_m4BD3CA0EFB385C202A37712C41D6B502B3611A8D,
+	VertexHelper_AddVert_mB332A958E9CC2BE8A158724AE6A03620FEE72EF9,
+	VertexHelper_AddTriangle_mE080F1D93001ED42D0A4791EA6602EBD5BCB3EEE,
+	VertexHelper_AddUIVertexQuad_m858D269D2EADF04CCC280E7AC87B0440BD6F2664,
+	VertexHelper_AddUIVertexStream_m7ADED3E3F94821F2A24EB69A44E485E221B31B7C,
+	VertexHelper_AddUIVertexTriangleStream_m8EFEB045B63ABF1496FA90F6559BB9BA07390FCE,
+	VertexHelper_GetUIVertexStream_m45F8CEA87695DC3AF455389F174A6AE574A7C798,
+	VertexHelper__cctor_m185B909015F60EB6AED4C36F28C31EA4FD0C4528,
+	VerticalLayoutGroup__ctor_m3EC63506FC41844092A548135D20A460E7E4E6A3,
+	VerticalLayoutGroup_CalculateLayoutInputHorizontal_mBD58CD0DB5FC62541B9138F1A2F06DD13891C09E,
+	VerticalLayoutGroup_CalculateLayoutInputVertical_mF06FF0EF1AA383EF8A9D373D3AD8F65E302D6C55,
+	VerticalLayoutGroup_SetLayoutHorizontal_mDBAB0E860D28A07621CFF5FD811FE46681835454,
+	VerticalLayoutGroup_SetLayoutVertical_m0C9CCFE9C74945FF3F45073528EEE427260B79C8,
+	DynamicJoystick_get_MoveThreshold_m475CED919EFA09D7DBC1815BE0B92B55E5E3DD92,
+	DynamicJoystick_set_MoveThreshold_m41DF6070CB77AD666C343C6FCD04F2D013FF7171,
+	DynamicJoystick_Start_m28FAB53F804FC3AEAA7DB62E75DA0BE645C1B494,
+	DynamicJoystick_OnPointerDown_mF71D95263661D939DBE2E5C17C73A599E60778B9,
+	DynamicJoystick_OnPointerUp_mC38FD6A7ADB9CDAB0BF04235DA5110A37B10E771,
+	DynamicJoystick_HandleInput_mB6316E3D97C617061C01DC49DD829C0C4E91BB27,
+	DynamicJoystick__ctor_mD87E098A06147EABDFDB7F80162B114A799F9D4A,
+	FixedJoystick__ctor_mC91231670E4D4850A5BFB905300F155AA2DE60FD,
+	FloatingJoystick_Start_m0F34B432F4B1DF7D2A84264E9C5E8553A4E7F0DE,
+	FloatingJoystick_OnPointerDown_m2DB74D40D3D0D670E92442E24851FF5995CCE764,
+	FloatingJoystick_OnPointerUp_m31F698F0F60ECAAB34D55DF8B1FF2E533B818DEA,
+	FloatingJoystick__ctor_mFE6173BF4B5A37A9E365D8322334FF90AA0DE960,
 	GM_Start_m54B0B8EBAE909DD1645FA3FED01E0F93E3B7A8A2,
 	GM_Update_m67496681FA3877B3F60C5059F0DD1EF03B8D3E51,
 	GM_getBallSizeFactor_m04AC6465F122D359437FF5BFC65A79BAA4DCF0BD,
 	GM__ctor_mFA2F4298AD8F0DB32ADD0BAAFE66D6EDFAC80F46,
 	GM__cctor_mD53B668ABFFBBC9F1AAFF7A9627A57C8826EFEC6,
+	Joystick_get_Horizontal_mD2CEADF3C7AD02BA60F7990F1A39BC67C6D8819B,
+	Joystick_get_Vertical_m2326D40EF66E0A5E2B34F9CF02A53C05CCAFDED0,
+	Joystick_get_Direction_mF64961ED5359C8E31E79CAA306019CB66DF50F3E,
+	Joystick_get_HandleRange_m3D14494BB31EF5C716DE54CBF4ED30284AEE855F,
+	Joystick_set_HandleRange_m93B28B83AB3DC010C509C16A76BE34896C27B647,
+	Joystick_get_DeadZone_m56376929F8539F977418D4ACB3A468758515DA85,
+	Joystick_set_DeadZone_mF8F4688B5A32363F2EF7DE0A0FF90B7D65F11C8B,
+	Joystick_get_AxisOptions_m41669BF41810BA976B1A230E1FB3ADCDC1F4C758,
+	Joystick_set_AxisOptions_m3194AF6B83B35084063737EBA7D8C10C652241F8,
+	Joystick_get_SnapX_m8BFFB04A6377302BCD1E3106930231C756150211,
+	Joystick_set_SnapX_mACA46808CD8386CABE024E9F55A407F0C8A138F0,
+	Joystick_get_SnapY_m3B972003ED2D6D62DC433D6429AD58AEDCEE5957,
+	Joystick_set_SnapY_mA985E49A53EBD417CF06948C805588612C0395C1,
+	Joystick_Start_mA4B921AF2FEC7B830AC4F0D5E49AF8934ECAD201,
+	Joystick_OnPointerDown_m408D43BE6A49862DFD49B5198E0B61B85A162703,
+	Joystick_OnDrag_m5C8DBE5110822CAF8A7DEDDE6AC240D2C1BDD7C4,
+	Joystick_HandleInput_mA2FF5AE57290471865DC02DC2ED3BDA3FDBA2506,
+	Joystick_FormatInput_mDE5D2FB4C4FB309B92816E806756B01F61FF26D5,
+	Joystick_SnapFloat_mCEF2520CAC111659A65B73C418F5E6FF1CFF05C2,
+	Joystick_OnPointerUp_m771F7519F51F02DAADA7DE0A562F82710FA721BC,
+	Joystick_ScreenPointToAnchoredPosition_mE4C429E76D0FA78FD1567EB1361AF68141706201,
+	Joystick__ctor_m0CEC3DFCF02C69B8020F600539EB02297E26D1CE,
+	JoystickPlayerExample_FixedUpdate_m01D558819D864B0B36B12AECB92B7A9FE76D63B3,
+	JoystickPlayerExample__ctor_m49F04D0D45C4CBE5F904177CF3AB4A60249AD854,
+	JoystickSetterExample_ModeChanged_mA0A6156A4DF33D8F0AD6FD106A7A38F33A0F2BBD,
+	JoystickSetterExample_AxisChanged_m67CF795BA1CEA14B6B2AE3E71191E5E980EB03F1,
+	JoystickSetterExample_SnapX_mC53461B29C19CDB0FF5E75A9D257B9CF0B1E0CCE,
+	JoystickSetterExample_SnapY_m35C5092C9B62F6BB55D45FF5ECEA2C7F742F1EDB,
+	JoystickSetterExample_Update_m27F40165A6AE141735CD9680F90F53599D2CFFC2,
+	JoystickSetterExample__ctor_mE68D37B29683A04E3232D4A023093BD65336413C,
+	VariableJoystick_get_MoveThreshold_m7680F75A6FE65378FA1882A60F1D2D7C10E1585F,
+	VariableJoystick_set_MoveThreshold_m70CF65250847566A28B2A418C3EE55004987552F,
+	VariableJoystick_SetMode_m222D977BBDA4E253D4EAF1E55925FAD333EA7CAE,
+	VariableJoystick_Start_m5BB1A8FE9E2EBC394C4AC8B4E495AB653F61E8E2,
+	VariableJoystick_OnPointerDown_m066F12E7818D1CD22977EAEA9FE4AEC0DD179FAC,
+	VariableJoystick_OnPointerUp_m42B201EDAB1B3A2F2ED747FA7A4773E2654DA061,
+	VariableJoystick_HandleInput_m83CA8AFC5C395DE4C684F2C478D1DE36CAD0BF19,
+	VariableJoystick__ctor_m8A6171BB962558D6833C6CF80E3E0092DF768D84,
 	effects_Start_mA574349921ADB85F16DD1F581B0B23D9CEF87E61,
 	effects_Update_m1C5CC6CACBF2BCC0450032A8865CDECD15D24D47,
 	effects__ctor_m8C079941378174A0F7196CC15AEEFC5D06874FCE,
+	moveByTouch_Start_m2B1AC9186446BC045254A636686316BCD047B015,
+	moveByTouch_Update_m9BFA7D9CD285CD6EC3513F0E59B0244C3155C7F1,
+	moveByTouch_OnCollisionEnter_m9B8F4B155063466200E33CB42E4147B9B0E9A1C5,
+	moveByTouch_OnTriggerEnter_m8A7D54DE4DB736833717AA2DC862FA8010339241,
+	moveByTouch__ctor_mE3E6E765528ED00273DD4CC35FD0BF353588D36E,
+	moveByTouch__cctor_m4E084AF71FEEEAFF5547A4D1B2E932F087AEA7FE,
 	moveCam_Start_mC5E45E424C6615D44240527359BC09C573FC1911,
 	moveCam_LateUpdate_mBF8CF872A16F5081BAA8EA36FB7660F5FA7FE26B,
 	moveCam__ctor_m422C43FE6216F689B9C1D0E5EC0DAE719A64027E,
-	moveorb_Start_m50BA1BC52FB121D4EB4BF066B4AAC16A89EB3A4C,
-	moveorb_Update_m9D8C77E0FD0EFA1662CCF4B2A8B9A25B787E8F3A,
-	moveorb_OnCollisionEnter_m61FB2444C972DF150425C486F1CC43CC84C932EA,
-	moveorb_OnTriggerEnter_m3C6ADA77B66A208AA4C7780C503A275FEE9F0F47,
-	moveorb__ctor_mC29A891CBDC7F260EAFB3BCDDB09499AE9236E87,
 	status_Start_m5A1F7258688847CF905624B33584AA2E5BCECEEA,
 	status_Update_m6A040A0B6F4AE46AFCDAE8A8ADB1560D26B51B44,
 	status__ctor_mBC252DFFB1E07105F23DC48C76F1C2AFF2C2F6C9,
+	upDateCoinNum_Start_mA21ED9D51395D131E65196C1915A4FCFC9B3A3E7,
+	upDateCoinNum_Update_mE7958A05004556106D130C5998DC5B85A5DB51FE,
+	upDateCoinNum__ctor_m850B6653C31C4E10F73DC3B217600FEE6EEAC967,
 };

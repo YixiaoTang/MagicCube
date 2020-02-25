@@ -6,6 +6,9 @@ extern "C" void RegisterStaticallyLinkedModulesGranular()
 	void RegisterModule_Core();
 	RegisterModule_Core();
 
+	void RegisterModule_Animation();
+	RegisterModule_Animation();
+
 	void RegisterModule_Audio();
 	RegisterModule_Audio();
 
@@ -15,8 +18,14 @@ extern "C" void RegisterStaticallyLinkedModulesGranular()
 	void RegisterModule_TextRendering();
 	RegisterModule_TextRendering();
 
+	void RegisterModule_UI();
+	RegisterModule_UI();
+
 	void RegisterModule_UnityConnect();
 	RegisterModule_UnityConnect();
+
+	void RegisterModule_IMGUI();
+	RegisterModule_IMGUI();
 
 	void RegisterModule_UnityWebRequest();
 	RegisterModule_UnityWebRequest();
@@ -50,10 +59,10 @@ class EditorExtension; template <> void RegisterUnityClass<EditorExtension>(cons
 namespace Unity { class Component; } template <> void RegisterUnityClass<Unity::Component>(const char*);
 class Behaviour; template <> void RegisterUnityClass<Behaviour>(const char*);
 class Animation; 
-class Animator; 
+class Animator; template <> void RegisterUnityClass<Animator>(const char*);
 class AudioBehaviour; template <> void RegisterUnityClass<AudioBehaviour>(const char*);
 class AudioListener; template <> void RegisterUnityClass<AudioListener>(const char*);
-class AudioSource; 
+class AudioSource; template <> void RegisterUnityClass<AudioSource>(const char*);
 class AudioFilter; 
 class AudioChorusFilter; 
 class AudioDistortionFilter; 
@@ -63,8 +72,8 @@ class AudioLowPassFilter;
 class AudioReverbFilter; 
 class AudioReverbZone; 
 class Camera; template <> void RegisterUnityClass<Camera>(const char*);
-namespace UI { class Canvas; } 
-namespace UI { class CanvasGroup; } 
+namespace UI { class Canvas; } template <> void RegisterUnityClass<UI::Canvas>(const char*);
+namespace UI { class CanvasGroup; } template <> void RegisterUnityClass<UI::CanvasGroup>(const char*);
 namespace Unity { class Cloth; } 
 class Collider2D; 
 class BoxCollider2D; 
@@ -130,7 +139,7 @@ class Terrain;
 class VideoPlayer; 
 class VisualEffect; 
 class WindZone; 
-namespace UI { class CanvasRenderer; } 
+namespace UI { class CanvasRenderer; } template <> void RegisterUnityClass<UI::CanvasRenderer>(const char*);
 class Collider; template <> void RegisterUnityClass<Collider>(const char*);
 class BoxCollider; template <> void RegisterUnityClass<BoxCollider>(const char*);
 class CapsuleCollider; template <> void RegisterUnityClass<CapsuleCollider>(const char*);
@@ -197,16 +206,16 @@ class OcclusionCullingData;
 class PhysicMaterial; 
 class PhysicsMaterial2D; 
 class PreloadData; template <> void RegisterUnityClass<PreloadData>(const char*);
-class RuntimeAnimatorController; 
+class RuntimeAnimatorController; template <> void RegisterUnityClass<RuntimeAnimatorController>(const char*);
 class AnimatorController; 
-class AnimatorOverrideController; 
-class SampleClip; 
-class AudioClip; 
+class AnimatorOverrideController; template <> void RegisterUnityClass<AnimatorOverrideController>(const char*);
+class SampleClip; template <> void RegisterUnityClass<SampleClip>(const char*);
+class AudioClip; template <> void RegisterUnityClass<AudioClip>(const char*);
 class Shader; template <> void RegisterUnityClass<Shader>(const char*);
 class ShaderVariantCollection; 
 class SpeedTreeWindAsset; 
 class Sprite; template <> void RegisterUnityClass<Sprite>(const char*);
-class SpriteAtlas; 
+class SpriteAtlas; template <> void RegisterUnityClass<SpriteAtlas>(const char*);
 class SubstanceArchive; 
 class TerrainData; 
 class TerrainLayer; 
@@ -261,7 +270,7 @@ void RegisterAllClasses()
 {
 void RegisterBuiltinTypes();
 RegisterBuiltinTypes();
-	//Total: 62 non stripped classes
+	//Total: 72 non stripped classes
 	//0. Behaviour
 	RegisterUnityClass<Behaviour>("Core");
 	//1. Unity::Component
@@ -290,101 +299,121 @@ RegisterBuiltinTypes();
 	RegisterUnityClass<GlobalGameManager>("Core");
 	//13. GameManager
 	RegisterUnityClass<GameManager>("Core");
-	//14. Material
-	RegisterUnityClass<Material>("Core");
-	//15. MeshFilter
-	RegisterUnityClass<MeshFilter>("Core");
-	//16. MeshRenderer
-	RegisterUnityClass<MeshRenderer>("Core");
-	//17. Renderer
+	//14. Renderer
 	RegisterUnityClass<Renderer>("Core");
-	//18. Mesh
-	RegisterUnityClass<Mesh>("Core");
-	//19. MonoBehaviour
-	RegisterUnityClass<MonoBehaviour>("Core");
-	//20. ReflectionProbe
-	RegisterUnityClass<ReflectionProbe>("Core");
-	//21. ComputeShader
-	RegisterUnityClass<ComputeShader>("Core");
-	//22. Texture2D
-	RegisterUnityClass<Texture2D>("Core");
-	//23. Cubemap
-	RegisterUnityClass<Cubemap>("Core");
-	//24. Texture3D
-	RegisterUnityClass<Texture3D>("Core");
-	//25. Texture2DArray
-	RegisterUnityClass<Texture2DArray>("Core");
-	//26. CubemapArray
-	RegisterUnityClass<CubemapArray>("Core");
-	//27. RenderTexture
-	RegisterUnityClass<RenderTexture>("Core");
-	//28. UI::RectTransform
-	RegisterUnityClass<UI::RectTransform>("Core");
-	//29. Transform
-	RegisterUnityClass<Transform>("Core");
-	//30. Sprite
-	RegisterUnityClass<Sprite>("Core");
-	//31. Rigidbody
-	RegisterUnityClass<Rigidbody>("Physics");
-	//32. TextRenderingPrivate::TextMesh
-	RegisterUnityClass<TextRenderingPrivate::TextMesh>("TextRendering");
-	//33. TextRendering::Font
-	RegisterUnityClass<TextRendering::Font>("TextRendering");
-	//34. Collider
-	RegisterUnityClass<Collider>("Physics");
-	//35. Shader
+	//15. Shader
 	RegisterUnityClass<Shader>("Core");
-	//36. TagManager
-	RegisterUnityClass<TagManager>("Core");
-	//37. GraphicsSettings
-	RegisterUnityClass<GraphicsSettings>("Core");
-	//38. DelayedCallManager
-	RegisterUnityClass<DelayedCallManager>("Core");
-	//39. InputManager
-	RegisterUnityClass<InputManager>("Core");
-	//40. TimeManager
-	RegisterUnityClass<TimeManager>("Core");
-	//41. BuildSettings
-	RegisterUnityClass<BuildSettings>("Core");
-	//42. PlayerSettings
-	RegisterUnityClass<PlayerSettings>("Core");
-	//43. ResourceManager
-	RegisterUnityClass<ResourceManager>("Core");
-	//44. RuntimeInitializeOnLoadManager
-	RegisterUnityClass<RuntimeInitializeOnLoadManager>("Core");
-	//45. ScriptMapper
-	RegisterUnityClass<ScriptMapper>("Core");
-	//46. PhysicsManager
-	RegisterUnityClass<PhysicsManager>("Physics");
-	//47. MonoManager
-	RegisterUnityClass<MonoManager>("Core");
-	//48. TextAsset
-	RegisterUnityClass<TextAsset>("Core");
-	//49. MonoScript
-	RegisterUnityClass<MonoScript>("Core");
-	//50. UnityConnectSettings
-	RegisterUnityClass<UnityConnectSettings>("UnityConnect");
-	//51. AudioManager
-	RegisterUnityClass<AudioManager>("Audio");
-	//52. LevelGameManager
-	RegisterUnityClass<LevelGameManager>("Core");
-	//53. BoxCollider
-	RegisterUnityClass<BoxCollider>("Physics");
-	//54. LightProbes
-	RegisterUnityClass<LightProbes>("Core");
-	//55. LightmapSettings
-	RegisterUnityClass<LightmapSettings>("Core");
-	//56. AudioListener
+	//16. Material
+	RegisterUnityClass<Material>("Core");
+	//17. MeshFilter
+	RegisterUnityClass<MeshFilter>("Core");
+	//18. MeshRenderer
+	RegisterUnityClass<MeshRenderer>("Core");
+	//19. Mesh
+	RegisterUnityClass<Mesh>("Core");
+	//20. MonoBehaviour
+	RegisterUnityClass<MonoBehaviour>("Core");
+	//21. ReflectionProbe
+	RegisterUnityClass<ReflectionProbe>("Core");
+	//22. ComputeShader
+	RegisterUnityClass<ComputeShader>("Core");
+	//23. Texture2D
+	RegisterUnityClass<Texture2D>("Core");
+	//24. Cubemap
+	RegisterUnityClass<Cubemap>("Core");
+	//25. Texture3D
+	RegisterUnityClass<Texture3D>("Core");
+	//26. Texture2DArray
+	RegisterUnityClass<Texture2DArray>("Core");
+	//27. CubemapArray
+	RegisterUnityClass<CubemapArray>("Core");
+	//28. RenderTexture
+	RegisterUnityClass<RenderTexture>("Core");
+	//29. UI::RectTransform
+	RegisterUnityClass<UI::RectTransform>("Core");
+	//30. Transform
+	RegisterUnityClass<Transform>("Core");
+	//31. Sprite
+	RegisterUnityClass<Sprite>("Core");
+	//32. SpriteAtlas
+	RegisterUnityClass<SpriteAtlas>("Core");
+	//33. Rigidbody
+	RegisterUnityClass<Rigidbody>("Physics");
+	//34. Animator
+	RegisterUnityClass<Animator>("Animation");
+	//35. AnimatorOverrideController
+	RegisterUnityClass<AnimatorOverrideController>("Animation");
+	//36. RuntimeAnimatorController
+	RegisterUnityClass<RuntimeAnimatorController>("Animation");
+	//37. AudioClip
+	RegisterUnityClass<AudioClip>("Audio");
+	//38. SampleClip
+	RegisterUnityClass<SampleClip>("Audio");
+	//39. AudioListener
 	RegisterUnityClass<AudioListener>("Audio");
-	//57. AudioBehaviour
+	//40. AudioBehaviour
 	RegisterUnityClass<AudioBehaviour>("Audio");
-	//58. CapsuleCollider
+	//41. AudioSource
+	RegisterUnityClass<AudioSource>("Audio");
+	//42. TextRenderingPrivate::TextMesh
+	RegisterUnityClass<TextRenderingPrivate::TextMesh>("TextRendering");
+	//43. TextRendering::Font
+	RegisterUnityClass<TextRendering::Font>("TextRendering");
+	//44. UI::Canvas
+	RegisterUnityClass<UI::Canvas>("UI");
+	//45. UI::CanvasGroup
+	RegisterUnityClass<UI::CanvasGroup>("UI");
+	//46. UI::CanvasRenderer
+	RegisterUnityClass<UI::CanvasRenderer>("UI");
+	//47. Collider
+	RegisterUnityClass<Collider>("Physics");
+	//48. TagManager
+	RegisterUnityClass<TagManager>("Core");
+	//49. GraphicsSettings
+	RegisterUnityClass<GraphicsSettings>("Core");
+	//50. DelayedCallManager
+	RegisterUnityClass<DelayedCallManager>("Core");
+	//51. InputManager
+	RegisterUnityClass<InputManager>("Core");
+	//52. TimeManager
+	RegisterUnityClass<TimeManager>("Core");
+	//53. BuildSettings
+	RegisterUnityClass<BuildSettings>("Core");
+	//54. PlayerSettings
+	RegisterUnityClass<PlayerSettings>("Core");
+	//55. ResourceManager
+	RegisterUnityClass<ResourceManager>("Core");
+	//56. RuntimeInitializeOnLoadManager
+	RegisterUnityClass<RuntimeInitializeOnLoadManager>("Core");
+	//57. ScriptMapper
+	RegisterUnityClass<ScriptMapper>("Core");
+	//58. PhysicsManager
+	RegisterUnityClass<PhysicsManager>("Physics");
+	//59. MonoManager
+	RegisterUnityClass<MonoManager>("Core");
+	//60. TextAsset
+	RegisterUnityClass<TextAsset>("Core");
+	//61. MonoScript
+	RegisterUnityClass<MonoScript>("Core");
+	//62. UnityConnectSettings
+	RegisterUnityClass<UnityConnectSettings>("UnityConnect");
+	//63. AudioManager
+	RegisterUnityClass<AudioManager>("Audio");
+	//64. LevelGameManager
+	RegisterUnityClass<LevelGameManager>("Core");
+	//65. BoxCollider
+	RegisterUnityClass<BoxCollider>("Physics");
+	//66. LightProbes
+	RegisterUnityClass<LightProbes>("Core");
+	//67. LightmapSettings
+	RegisterUnityClass<LightmapSettings>("Core");
+	//68. CapsuleCollider
 	RegisterUnityClass<CapsuleCollider>("Physics");
-	//59. Light
+	//69. Light
 	RegisterUnityClass<Light>("Core");
-	//60. RenderSettings
+	//70. RenderSettings
 	RegisterUnityClass<RenderSettings>("Core");
-	//61. SphereCollider
+	//71. SphereCollider
 	RegisterUnityClass<SphereCollider>("Physics");
 
 }

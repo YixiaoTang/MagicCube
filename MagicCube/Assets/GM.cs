@@ -29,7 +29,7 @@ public class GM : MonoBehaviour
     public static int obst4Num = 25;
     public static int obst5Num = 25;
     public static int coinNum = 1000;
-    public static float timeTotal = 60 * 2f; // 60 frames/sec * secs
+    public static float timeTotal = 60 * 30f; // 60 frames/sec * secs
 
 
     //================================== Statistics ===================================
@@ -76,11 +76,11 @@ public class GM : MonoBehaviour
 
 
 
-        //timeTotal -= 1;
-        //if (timeTotal == 0)
-        //{
-        //    SceneManager.LoadScene("finish");
-        //}
+        timeTotal -= 1;
+        if (timeTotal == 0)
+        {
+            SceneManager.LoadScene("finish");
+        }
     }
 
     public static float getBallSizeFactor()
