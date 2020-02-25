@@ -7,7 +7,7 @@ public class GM : MonoBehaviour
 {
     //public static Camera mainCamera;
 
-    private int xRange = 50;
+    private int xRange = 45;
     private int zRange = 50;
 
     private float rand1;
