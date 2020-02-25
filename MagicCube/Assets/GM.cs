@@ -8,16 +8,16 @@ public class GM : MonoBehaviour
 {
     //public static Camera mainCamera;
 
-    private int xRange = 50;
+    private int xRange = 45;
     private int zRange = 50;
 
     private float rand1;
     private float rand2;
 
-    public static float initBallSize = 1f;
+    public static float initBallSize = 1f;   //初始球大小
     public static float ballSize = 1f;
 
-    public static float initBallVel = 1f;
+    public static float initBallVel = 1f;    // ??
     public static float ballVel = 2f;
 
     public static float ballVelMax = 4f;
@@ -35,6 +35,7 @@ public class GM : MonoBehaviour
 
     //================================== Statistics ===================================
     public static int coinTotal = 0;
+
 
     public Transform coinObj;
     public Transform obstObj;
@@ -68,7 +69,7 @@ public class GM : MonoBehaviour
     {
         if (ballSize < ballSizeMax)
         {
-            ballSize += 0.01f;
+            ballSize += 0.01f;  //球体积不断增加
         }
 
         if (ballVel < ballVelMax)
