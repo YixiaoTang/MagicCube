@@ -15,7 +15,7 @@ public class moveByTouch : MonoBehaviour
 
     public static float xVel = 0;
     public static float zVel = 0;
-    public static float deVel = 0.05f;
+    public static float deVel = 0.02f;
 
     private Vector3 initBallScale;
     private Rigidbody rb;
