@@ -35,6 +35,7 @@ public class GM : MonoBehaviour
     //================================== Statistics ===================================
     public static int coinTotal = 0;
 
+
     public Transform coinObj;
     public Transform obstObj;
     public static GameObject mainCamera;
