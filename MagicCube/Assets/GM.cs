@@ -7,16 +7,16 @@ public class GM : MonoBehaviour
 {
     //public static Camera mainCamera;
 
-    private int xRange = 50;
+    private int xRange = 45;
     private int zRange = 50;
 
     private float rand1;
     private float rand2;
 
-    public static float initBallSize = 1f;
+    public static float initBallSize = 1f;   //初始球大小
     public static float ballSize = 1f;
 
-    public static float initBallVel = 1f;
+    public static float initBallVel = 1f;    // ??
     public static float ballVel = 2f;
 
     public static float ballVelMax = 4f;
@@ -45,14 +45,14 @@ public class GM : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Application.targetFrameRate = 60;
+
         for(int i = 0; i < 1000; i++)
         {
             rand1 = Random.Range(-xRange, xRange);
             rand2 = Random.Range(-zRange, zRange);
             Instantiate(coinObj, new Vector3(rand1, 1, rand2), coinObj.rotation);
         }
-
+        //生成柱子
         for (int i = 0; i < 50; i++)
         {
             rand1 = Random.Range(-xRange, xRange);
@@ -66,7 +66,7 @@ public class GM : MonoBehaviour
     {
         if (ballSize < ballSizeMax)
         {
-            ballSize += 0.01f;
+            ballSize += 0.01f;  //球体积不断增加
         }
 
         if (ballVel < ballVelMax)

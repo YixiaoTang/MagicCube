@@ -11,6 +11,7 @@ public class effects : MonoBehaviour
     }
 
     // Update is called once per frame
+    // 让硬币旋转？
     void Update()
     {
         if(gameObject.tag == "coin")
