@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657838, g: 0.49641234, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -138,7 +138,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 171780578}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 5eb44660938664d8e957369716b11944, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -534,14 +534,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad9bfd7c1b2df48118833aa3ae77a005, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  obst1Num: 25
-  obst2Num: 25
-  obst3Num: 25
-  obst4Num: 25
-  obst5Num: 25
-  coinNum: 1000
   coinObj: {fileID: 8448418934256457359, guid: 402455e8ded8d4207864f945818b05c7, type: 3}
-  obstObj: {fileID: 7465245655506830614, guid: b788fa30584e84f6cb2b6604e29fa062, type: 3}
+  obstObj1: {fileID: 5475968853063305006, guid: f13492c14c0364ac892feac0cb202c56,
+    type: 3}
+  obstObj2: {fileID: 4976053528316697093, guid: c1f7224bfcffe48c8a8fe4565f56c6c8,
+    type: 3}
+  obstObj3: {fileID: 4124088475554059648, guid: 0ece599f9a6f34c7caf193ebfcc85613,
+    type: 3}
+  obstObj4: {fileID: 6248115230546630908, guid: abb371ff3b82f45028fecd51c09b3c69,
+    type: 3}
+  obstObj5: {fileID: 1507075500249134899, guid: 6ac08ffcc140f458895017a6cfdd06b8,
+    type: 3}
   coinBar: {fileID: 1990084796}
 --- !u!4 &1044698156
 Transform:
@@ -921,7 +924,6 @@ GameObject:
   - component: {fileID: 1376204678}
   - component: {fileID: 1376204677}
   - component: {fileID: 1376204676}
-  - component: {fileID: 1376204680}
   - component: {fileID: 1376204681}
   - component: {fileID: 1376204682}
   m_Layer: 0
@@ -938,7 +940,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1376204675}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 5eb44660938664d8e957369716b11944, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -1003,18 +1005,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1376204680
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1376204675}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 36f591147032147da9b1b628740f949d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!54 &1376204681
 Rigidbody:
   m_ObjectHideFlags: 0

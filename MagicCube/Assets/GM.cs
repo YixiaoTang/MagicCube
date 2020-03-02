@@ -24,11 +24,11 @@ public class GM : MonoBehaviour
     public static float ballSizeMax = 4f;
 
     //================================== configuration ===================================
-    public static int obst1Num = 25;
-    public static int obst2Num = 25;
-    public static int obst3Num = 25;
-    public static int obst4Num = 25;
-    public static int obst5Num = 25;
+    public static int obst1Num = 10;
+    public static int obst2Num = 10;
+    public static int obst3Num = 10;
+    public static int obst4Num = 10;
+    public static int obst5Num = 20;
     public static int coinNum = 1000;
     public static float timeTotal = 60 * 30f; // 60 frames/sec * secs
 
@@ -38,7 +38,15 @@ public class GM : MonoBehaviour
 
 
     public Transform coinObj;
-    public Transform obstObj;
+    public Transform obstObj1;
+    public Transform obstObj2;
+    public Transform obstObj3;
+    public Transform obstObj4;
+    public Transform obstObj5;
+
+    int[] obstNumList = { obst1Num, obst2Num, obst3Num, obst4Num, obst5Num };
+       
+
     public static GameObject mainCamera;
 
     public GameObject coinBar;
@@ -46,15 +54,22 @@ public class GM : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Transform[] obstList = {obstObj1, obstObj2, obstObj3, obstObj4, obstObj5 };
+
         remoteSetting();
         Application.targetFrameRate = 60;
-        
-        for (int i = 0; i < obst1Num; i++)
+
+        for (int j = 0; j < obstNumList.Length; j++)
         {
-            rand1 = Random.Range(-xRange, xRange);
-            rand2 = Random.Range(-zRange, zRange);
-            Instantiate(obstObj, new Vector3(rand1, 1, rand2), obstObj.rotation);
+            for (int i = 0; i < obstNumList[j]; i++)
+            {
+                rand1 = Random.Range(-xRange, xRange);
+                rand2 = Random.Range(-zRange, zRange);
+                Instantiate(obstList[j], new Vector3(rand1, (j + 1) / 2 + 1, rand2), obstList[j].rotation);
+            }
         }
+
+
         for (int i = 0; i < coinNum; i++)
         {
             rand1 = Random.Range(-xRange, xRange);
@@ -79,11 +94,11 @@ public class GM : MonoBehaviour
 
 
 
-        timeTotal -= 1;
-        if (timeTotal == 0)
-        {
-            SceneManager.LoadScene("finish");
-        }
+        //timeTotal -= 1;
+        //if (timeTotal == 0)
+        //{
+        //    SceneManager.LoadScene("finish");
+        //}
     }
 
     public static float getBallSizeFactor()

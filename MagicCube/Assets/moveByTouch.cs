@@ -17,6 +17,8 @@ public class moveByTouch : MonoBehaviour
     public static float zVel = 0;
     public static float deVel = 0.02f;
 
+    private String[] obstTags = { "obst1", "obst2", "obst3", "obst4", "obst5" };
+
     private Vector3 initBallScale;
     private Rigidbody rb;
 
@@ -102,22 +104,43 @@ public class moveByTouch : MonoBehaviour
     // 如果碰到了柱子
     private void OnCollisionEnter(Collision other)
     {
-        // 不动的柱子
-        if (other.gameObject.tag == "obst1")
+        for (int i = 0; i < obstTags.Length; i++)
         {
-            //球的状态都还原
-            GM.ballSize = GM.initBallSize;
-            GM.ballVel = GM.initBallVel;
-            //速度
-            GetComponent<Rigidbody>().velocity = new Vector3(xVel, 0, zVel) * GM.ballVel;
-            //？？
-            transform.localScale = initBallScale * GM.ballSize;
+            if (other.gameObject.tag == obstTags[i])
+            {
+                if (GM.ballSize < i + 1)
+                {
+                    // obst is bigger
+                    GM.ballSize = GM.initBallSize;
+                    GM.ballVel = GM.initBallVel;
+                    Vector3 currentVel = GetComponent<Rigidbody>().velocity;
+                    GetComponent<Rigidbody>().velocity = new Vector3(xVel, 0, zVel) * GM.ballVel;
+                    transform.localScale = initBallScale * GM.ballSize;
+                    GetComponent<Rigidbody>().AddForce(new Vector3(0, 50, 0));
+                } else
+                {
+                    // obst is small
+                    Destroy(other.gameObject);
+                }
+                break;
+            }
         }
-        //会动的柱子
-        if (other.gameObject.tag == "obst2")
-        {
-            Destroy(other.gameObject);  // 消失
-        }
+        //// 不动的柱子
+        //if (other.gameObject.tag == "obst1")
+        //{
+        //    //球的状态都还原
+        //    GM.ballSize = GM.initBallSize;
+        //    GM.ballVel = GM.initBallVel;
+        //    //速度
+        //    GetComponent<Rigidbody>().velocity = new Vector3(xVel, 0, zVel) * GM.ballVel;
+        //    //？？
+        //    transform.localScale = initBallScale * GM.ballSize;
+        //}
+        ////会动的柱子
+        //if (other.gameObject.tag == "obst2")
+        //{
+        //    Destroy(other.gameObject);  // 消失
+        //}
     }
 
     // 如果碰到了硬币
