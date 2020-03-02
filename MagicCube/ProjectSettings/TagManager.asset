@@ -13,6 +13,7 @@ TagManager:
   - obst3
   - obst4
   - obst5
+  - enemy
   layers:
   - Default
   - TransparentFX

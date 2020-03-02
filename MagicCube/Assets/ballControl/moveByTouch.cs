@@ -117,7 +117,8 @@ public class moveByTouch : MonoBehaviour
                     GetComponent<Rigidbody>().velocity = new Vector3(xVel, 0, zVel) * GM.ballVel;
                     transform.localScale = initBallScale * GM.ballSize;
                     GetComponent<Rigidbody>().AddForce(new Vector3(0, 50, 0));
-                } else
+                }
+                else
                 {
                     // obst is small
                     Destroy(other.gameObject);
