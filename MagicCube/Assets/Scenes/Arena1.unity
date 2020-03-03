@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657838, g: 0.49641234, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -23405,6 +23405,19 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 7575935172043947129}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1376204682
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1376204675}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f4b9be0f98eaf54490623744018860a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  joystick: {fileID: 446175423}
 --- !u!1 &1474580418
 GameObject:
   m_ObjectHideFlags: 0
@@ -28627,18 +28640,28 @@ PrefabInstance:
     - target: {fileID: 7575935171205401584, guid: b5ad84f6a29e6a849aa4a26b8e05efaa,
         type: 3}
       propertyPath: m_Drag
-      value: 1000
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7575935171205401584, guid: b5ad84f6a29e6a849aa4a26b8e05efaa,
         type: 3}
       propertyPath: m_AngularDrag
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7575935171205401584, guid: b5ad84f6a29e6a849aa4a26b8e05efaa,
+        type: 3}
+      propertyPath: m_CollisionDetection
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7575935171205401586, guid: b5ad84f6a29e6a849aa4a26b8e05efaa,
         type: 3}
       propertyPath: joystick
       value: 
       objectReference: {fileID: 446175423}
+    - target: {fileID: 7575935171205401586, guid: b5ad84f6a29e6a849aa4a26b8e05efaa,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7575935171205401587, guid: b5ad84f6a29e6a849aa4a26b8e05efaa,
         type: 3}
       propertyPath: mainCamera
