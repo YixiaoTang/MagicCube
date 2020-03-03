@@ -1,4 +1,4 @@
-﻿/*using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -14,6 +14,7 @@ public class moveByTouch : MonoBehaviour
     float horizontalMove = 0f;
 
     public static float xVel = 0;
+    public static float yVel = 0;
     public static float zVel = 0;
     public static float deVel = 0.02f;
 
@@ -32,20 +33,11 @@ public class moveByTouch : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //if (Input.touchCount > 0)
-        //{
-        //    for(int i = 0; i < Input.touchCount; i++)
-        //    {
-        //        var screenPosition = new Vector3(Input.touches[i].position.x, Input.touches[i].position.y, mainCamera.transform.position.z * -1);
-        //        Vector3 touchPosition = Camera.main.ScreenToWorldPoint(screenPosition);
-        //        Debug.Log(touchPosition);
-        //        Debug.Log(gameObject.transform.position);
-        //        Debug.DrawLine(gameObject.transform.position, touchPosition, Color.red);
-        //    }
-        //}
+        yVel = rb.velocity.y;
+
         Debug.Log(GetComponent<Rigidbody>().velocity);
 
-
+        //Vector3 originVel = GetComponent<Rigidbody>().velocity;
         horizontalMove = joystick.Horizontal;
         verticalMove = joystick.Vertical;
         Debug.Log(horizontalMove);
@@ -94,7 +86,10 @@ public class moveByTouch : MonoBehaviour
             zVel -= deVel;
         }
 
-        GetComponent<Rigidbody>().velocity = new Vector3(xVel, 0, zVel) * GM.ballVel;
+        xVel *= GM.ballVel;
+        zVel *= GM.ballVel;
+
+        GetComponent<Rigidbody>().velocity = new Vector3(xVel, yVel, zVel);
 
         if (transform.localScale.x < GM.ballSizeMax)
         {
@@ -116,7 +111,7 @@ public class moveByTouch : MonoBehaviour
                     Vector3 currentVel = GetComponent<Rigidbody>().velocity;
                     GetComponent<Rigidbody>().velocity = new Vector3(xVel, 0, zVel) * GM.ballVel;
                     transform.localScale = initBallScale * GM.ballSize;
-                    GetComponent<Rigidbody>().AddForce(new Vector3(0, 50, 0));
+                    //GetComponent<Rigidbody>().AddForce(new Vector3(0, 1, 0));
                 }
                 else
                 {
@@ -162,4 +157,4 @@ public class moveByTouch : MonoBehaviour
             GM.level1CompleteEvent();
         }
     }
-}*/
+}

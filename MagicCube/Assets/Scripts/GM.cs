@@ -12,9 +12,9 @@ public class GM : MonoBehaviour
 
     public static float initBallSize = 1f, ballSize = 1f;   //初始球大小
 
-  ///  public static float initBallVel = 1f, ballVel = 2f;    // ??
+    public static float initBallVel = 1f, ballVel = 2f;    // ??
 
-    public static float /*ballVelMax = 4f,*/ ballSizeMax = 4f;
+    public static float ballVelMax = 4f, ballSizeMax = 4f;
 
     //================================== configuration ===================================
     public static int obst1Num = 10;
@@ -67,13 +67,12 @@ public class GM : MonoBehaviour
         rand2 = Random.Range(-zRange, zRange);
         Instantiate(obj, new Vector3(rand1, 1, rand2), obj.rotation);
     }
+
     public void OnCollection()
     {
-        if (ballSize < ballSizeMax)
-        {
-            ballSize += 0.1f;
-        }
+        
     }
+
     void Update()
     {
 
@@ -84,6 +83,11 @@ public class GM : MonoBehaviour
         {
             SceneManager.LoadScene("Round Finish");
         }
+
+        //if (ballSize < ballSizeMax)
+        //{
+        //    ballSize += 0.1f;
+        //}
     }
     public static float getBallSizeFactor()
     {
