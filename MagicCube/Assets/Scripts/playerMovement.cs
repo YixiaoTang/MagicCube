@@ -7,10 +7,11 @@ public class playerMovement : MonoBehaviour
 {
     Vector3 ballScale;
     Rigidbody rb;
-
+    
     [SerializeField] Joystick joystick;
     [SerializeField] float speed = 1000f;
 
+    float drag = 1.0f;
     float movementLR = 1;
     float movementUD = 1;
     void Start()
@@ -18,7 +19,6 @@ public class playerMovement : MonoBehaviour
     }
     void FixedUpdate()
     {
-    
         rb = GetComponent<Rigidbody>();
         ballScale = rb.transform.localScale;
         movementLR = joystick.Horizontal * speed * Time.deltaTime;
