@@ -15,6 +15,7 @@ TagManager:
   - obst5
   - enemy
   - obstacle
+  - ground
   layers:
   - Default
   - TransparentFX

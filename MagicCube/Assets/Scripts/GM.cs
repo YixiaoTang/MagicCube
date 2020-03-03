@@ -70,7 +70,11 @@ public class GM : MonoBehaviour
 
     public void OnCollection()
     {
-        
+
+        if (ballSize < ballSizeMax)
+        {
+            ballSize += 0.1f;
+        }
     }
 
     void Update()
@@ -84,10 +88,6 @@ public class GM : MonoBehaviour
             SceneManager.LoadScene("Round Finish");
         }
 
-        //if (ballSize < ballSizeMax)
-        //{
-        //    ballSize += 0.1f;
-        //}
     }
     public static float getBallSizeFactor()
     {
