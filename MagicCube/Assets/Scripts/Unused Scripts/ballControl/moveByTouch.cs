@@ -17,7 +17,7 @@ public class moveByTouch : MonoBehaviour
     public static float zVel = 0;
     public static float deVel = 0.02f;
 
-    private String[] obstTags = { "obst1", "obst2", "obst3", "obst4", "obst5" };
+    private String[] obstTags = { "obst-lv1(Clone)", "obst-lv2(Clone)", "obst-lv3(Clone)", "obst-lv4(Clone)", "obst-lv5(Clone)" };
 
     private Vector3 initBallScale;
     private Rigidbody rb;
@@ -38,8 +38,8 @@ public class moveByTouch : MonoBehaviour
         //Vector3 originVel = GetComponent<Rigidbody>().velocity;
         horizontalMove = joystick.Horizontal;
         verticalMove = joystick.Vertical;
-        Debug.Log(horizontalMove);
-        Debug.Log(verticalMove);
+        //Debug.Log(horizontalMove);
+        //Debug.Log(verticalMove);
 
         xVel += horizontalMove / 4;
         if (System.Math.Abs(xVel) > GM.ballVelMax)
@@ -98,9 +98,10 @@ public class moveByTouch : MonoBehaviour
             // 如果碰到了柱子
     private void OnCollisionEnter(Collision other)
     {
+        Debug.Log(other.gameObject.name);
         for (int i = 0; i < obstTags.Length; i++)
         {
-            if (other.gameObject.tag == obstTags[i])
+            if (other.gameObject.name == obstTags[i])
             {
                 if (GM.ballSize < i + 1)
                 {
@@ -135,7 +136,7 @@ public class moveByTouch : MonoBehaviour
             if (other.gameObject.tag == "exit")
             {
                 Destroy(gameObject);
-                SceneManager.LoadScene("finish");
+                SceneManager.LoadScene("Round Finish");
                 GM.level1CompleteEvent();
             }
         }

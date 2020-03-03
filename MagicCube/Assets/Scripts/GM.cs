@@ -14,7 +14,7 @@ public class GM : MonoBehaviour
 
     public static float initBallVel = 1f, ballVel = 2f;    // ??
 
-    public static float ballVelMax = 4f, ballSizeMax = 4f;
+    public static float ballVelMax = 8f, ballSizeMax = 2f;
 
     //================================== configuration ===================================
     public static int obst1Num = 10;
@@ -87,7 +87,10 @@ public class GM : MonoBehaviour
         {
             SceneManager.LoadScene("Round Finish");
         }
-
+        if (ballSize < ballSizeMax)
+        {
+            ballSize += 0.1f;
+        }
     }
     public static float getBallSizeFactor()
     {
