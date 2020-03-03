@@ -1,4 +1,4 @@
-﻿/*using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -7,13 +7,13 @@ using System;
 public class moveByTouch : MonoBehaviour
 {
     // Start is called before the first frame update
-    public Transform mainCamera;
     public Joystick joystick;
 
     float verticalMove = 0f;
     float horizontalMove = 0f;
 
     public static float xVel = 0;
+    public static float yVel = 0;
     public static float zVel = 0;
     public static float deVel = 0.02f;
 
@@ -24,7 +24,6 @@ public class moveByTouch : MonoBehaviour
 
     void Start()
     {
-        Debug.Log(Camera.main);
         rb = GetComponent<Rigidbody>();
         initBallScale = rb.transform.localScale;
     }
@@ -32,26 +31,17 @@ public class moveByTouch : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //if (Input.touchCount > 0)
-        //{
-        //    for(int i = 0; i < Input.touchCount; i++)
-        //    {
-        //        var screenPosition = new Vector3(Input.touches[i].position.x, Input.touches[i].position.y, mainCamera.transform.position.z * -1);
-        //        Vector3 touchPosition = Camera.main.ScreenToWorldPoint(screenPosition);
-        //        Debug.Log(touchPosition);
-        //        Debug.Log(gameObject.transform.position);
-        //        Debug.DrawLine(gameObject.transform.position, touchPosition, Color.red);
-        //    }
-        //}
-        Debug.Log(GetComponent<Rigidbody>().velocity);
+        yVel = rb.velocity.y;
 
+        //Debug.Log(GetComponent<Rigidbody>().velocity);
 
+        //Vector3 originVel = GetComponent<Rigidbody>().velocity;
         horizontalMove = joystick.Horizontal;
         verticalMove = joystick.Vertical;
         Debug.Log(horizontalMove);
         Debug.Log(verticalMove);
 
-        xVel += horizontalMove/4;
+        xVel += horizontalMove / 4;
         if (System.Math.Abs(xVel) > GM.ballVelMax)
         {
             if (xVel < 0)
@@ -63,7 +53,7 @@ public class moveByTouch : MonoBehaviour
                 xVel = GM.ballVelMax;
             }
         }
-        zVel += verticalMove/4;
+        zVel += verticalMove / 4;
         if (System.Math.Abs(zVel) > GM.ballVelMax)
         {
             if (zVel < 0)
@@ -94,14 +84,18 @@ public class moveByTouch : MonoBehaviour
             zVel -= deVel;
         }
 
-        GetComponent<Rigidbody>().velocity = new Vector3(xVel, 0, zVel) * GM.ballVel;
+        //xVel *= GM.ballVel;
+        //zVel *= GM.ballVel;
+        //Debug.Log(new Vector3(xVel, yVel, zVel));
+
+        GetComponent<Rigidbody>().velocity = new Vector3(xVel, yVel, zVel);
 
         if (transform.localScale.x < GM.ballSizeMax)
         {
             transform.localScale = initBallScale * GM.ballSize;
         }
     }
-    // 如果碰到了柱子
+            // 如果碰到了柱子
     private void OnCollisionEnter(Collision other)
     {
         for (int i = 0; i < obstTags.Length; i++)
@@ -116,7 +110,7 @@ public class moveByTouch : MonoBehaviour
                     Vector3 currentVel = GetComponent<Rigidbody>().velocity;
                     GetComponent<Rigidbody>().velocity = new Vector3(xVel, 0, zVel) * GM.ballVel;
                     transform.localScale = initBallScale * GM.ballSize;
-                    GetComponent<Rigidbody>().AddForce(new Vector3(0, 50, 0));
+                    //GetComponent<Rigidbody>().AddForce(new Vector3(0, 1, 0));
                 }
                 else
                 {
@@ -126,40 +120,23 @@ public class moveByTouch : MonoBehaviour
                 break;
             }
         }
-        //// 不动的柱子
-        //if (other.gameObject.tag == "obst1")
-        //{
-        //    //球的状态都还原
-        //    GM.ballSize = GM.initBallSize;
-        //    GM.ballVel = GM.initBallVel;
-        //    //速度
-        //    GetComponent<Rigidbody>().velocity = new Vector3(xVel, 0, zVel) * GM.ballVel;
-        //    //？？
-        //    transform.localScale = initBallScale * GM.ballSize;
-        //}
-        ////会动的柱子
-        //if (other.gameObject.tag == "obst2")
-        //{
-        //    Destroy(other.gameObject);  // 消失
-        //}
     }
-
-    // 如果碰到了硬币
+        //如果碰到了硬币
     public void OnTriggerEnter(Collider other)
-    {
-        // tag为硬币
-        if (other.gameObject.tag == "coin")
-        {   
-            Destroy(other.gameObject);  // 消失
-            GM.coinTotal += 1;  // 加分
-        }
-
-        // tag为退出
-        if (other.gameObject.tag == "exit")
         {
-            Destroy(gameObject);
-            SceneManager.LoadScene("finish");
-            GM.level1CompleteEvent();
+            // tag为硬币
+            if (other.gameObject.tag == "coin")
+            {
+                Destroy(other.gameObject);  // 消失
+                GM.coinTotal += 1;  // 加分
+            }
+
+            // tag为退出
+            if (other.gameObject.tag == "exit")
+            {
+                Destroy(gameObject);
+                SceneManager.LoadScene("finish");
+                GM.level1CompleteEvent();
+            }
         }
     }
-}*/
