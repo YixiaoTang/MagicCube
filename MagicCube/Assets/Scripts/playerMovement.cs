@@ -14,20 +14,28 @@ public class playerMovement : MonoBehaviour
     float drag = 1.0f;
     float movementLR = 1;
     float movementUD = 1;
+
+    bool movementActive = true;
     void Start()
     { 
     }
     void FixedUpdate()
     {
-        rb = GetComponent<Rigidbody>();
-        ballScale = rb.transform.localScale;
-        movementLR = joystick.Horizontal * speed * Time.deltaTime;
-        movementUD = joystick.Vertical * speed * Time.deltaTime;
-        ///  movementLR = Input.GetAxis("Horizontal") * speed * Time.deltaTime;
-        /// movementUD = Input.GetAxis("Vertical") * speed * Time.deltaTime;
-        rb.velocity = new Vector3(movementLR, rb.velocity.y, movementUD);
+        Movement();
     }
-
+    void Movement()
+    {
+        if (movementActive == true)
+        {
+            rb = GetComponent<Rigidbody>();
+            ballScale = rb.transform.localScale;
+            movementLR = joystick.Horizontal * speed * Time.deltaTime;
+            movementUD = joystick.Vertical * speed * Time.deltaTime;
+            ///  movementLR = Input.GetAxis("Horizontal") * speed * Time.deltaTime;
+            /// movementUD = Input.GetAxis("Vertical") * speed * Time.deltaTime;
+            rb.velocity = new Vector3(movementLR, rb.velocity.y, movementUD);
+        }
+    }
     void OnCollisionEnter(Collision col)
     {
         if (col.gameObject.tag == "obstacle")
@@ -43,6 +51,14 @@ public class playerMovement : MonoBehaviour
                 MaxSizeCheck();
                 Destroy(col.gameObject);
             }
+        }
+        if (col.gameObject == null)
+        {
+            movementActive = false;
+        }
+        else
+        {
+            movementActive = true;
         }
     }
     void OnTriggerEnter(Collider other)
