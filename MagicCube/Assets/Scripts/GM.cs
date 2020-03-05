@@ -52,11 +52,6 @@ public class GM : MonoBehaviour
         {
             Spawn(coinObj);
         }
-        /*
-                Instantiate(obstList[j], new Vector3(rand1, (j + 1) / 2 + 1, rand2), obstList[j].rotation);
-            }
- */
-
 
         remoteSetting();
         Application.targetFrameRate = 60;
@@ -87,11 +82,12 @@ public class GM : MonoBehaviour
         {
             SceneManager.LoadScene("Round Finish");
         }
-        if (ballSize < ballSizeMax)
-        {
-            ballSize += 0.001f;
-        }
+        //if (ballSize < ballSizeMax)
+        //{
+        //    ballSize += 0.001f;
+        //}
     }
+
     public static float getBallSizeFactor()
     {
         return 1f;
