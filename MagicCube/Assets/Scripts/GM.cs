@@ -14,7 +14,7 @@ public class GM : MonoBehaviour
 
     public static float initBallVel = 1f, ballVel = 2f;    // ??
 
-    public static float ballVelMax = 8f, ballSizeMax = 2f;
+    public static float ballVelMax = 8f, ballSizeMax = 4f;
 
     //================================== configuration ===================================
     public static int obst1Num = 10;
@@ -86,7 +86,7 @@ public class GM : MonoBehaviour
 
         if (ballSize < ballSizeMax)
         {
-            ballSize += 0.1f;
+            ballSize += 0.001f;
         }
     }
     public static float getBallSizeFactor()
