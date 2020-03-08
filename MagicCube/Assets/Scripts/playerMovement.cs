@@ -5,9 +5,12 @@ using UnityEngine.SceneManagement;
 
 public class playerMovement : MonoBehaviour
 {
+    int ballID = 0;
+
+    ballModule myInfo = new ballModule();
     Vector3 ballScale;
     Rigidbody rb;
-
+    
     float verticalMove = 0f;
     float horizontalMove = 0f;
 
@@ -27,6 +30,7 @@ public class playerMovement : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+        ballScale = rb.transform.localScale;
     }
     void FixedUpdate()
     {
@@ -46,27 +50,27 @@ public class playerMovement : MonoBehaviour
         //Debug.Log(verticalMove);
 
         xVel += horizontalMove / 4;
-        if (System.Math.Abs(xVel) > GM.ballVelMax)
+        if (System.Math.Abs(xVel) > myInfo.ballVelMax)
         {
             if (xVel < 0)
             {
-                xVel = -GM.ballVelMax;
+                xVel = -myInfo.ballVelMax;
             }
             else
             {
-                xVel = GM.ballVelMax;
+                xVel = myInfo.ballVelMax;
             }
         }
         zVel += verticalMove / 4;
-        if (System.Math.Abs(zVel) > GM.ballVelMax)
+        if (System.Math.Abs(zVel) > myInfo.ballVelMax)
         {
             if (zVel < 0)
             {
-                zVel = -GM.ballVelMax;
+                zVel = -myInfo.ballVelMax;
             }
             else
             {
-                zVel = GM.ballVelMax;
+                zVel = myInfo.ballVelMax;
             }
         }
 
@@ -90,7 +94,6 @@ public class playerMovement : MonoBehaviour
 
         GetComponent<Rigidbody>().velocity = new Vector3(xVel, yVel, zVel);
 
-        ballScale = rb.transform.localScale;
 
         //if (movementActive == true)
         //{
@@ -113,14 +116,14 @@ public class playerMovement : MonoBehaviour
             if (col.gameObject.transform.localScale.y - 1 >= ballScale.y)
             {
                 this.transform.position = new Vector3(transform.position.x, 1, transform.position.z);
-                MinSizeCheck();
+                myInfo.ballSizeCurrent = myInfo.ballSizeInit;
             }
             else
             {
-                FindObjectOfType<GM>().OnCollection();
-                MaxSizeCheck();
+                onCollection();
                 Destroy(col.gameObject);
             }
+            sizeCheck();
         }
     }
 
@@ -139,19 +142,16 @@ public class playerMovement : MonoBehaviour
         }
     }
 
-    void MaxSizeCheck()
+    void sizeCheck()
     {
-        if (ballScale.x <= GM.ballSizeMax)
+        transform.localScale = ballScale * myInfo.ballSizeCurrent;
+        if (ballScale.x <= myInfo.ballSizeMax)
         {
-            transform.localScale = ballScale * GM.ballSize;
+            transform.localScale = ballScale * myInfo.ballSizeCurrent;
         }
     }
 
-    void MinSizeCheck()
-    {
-        if (ballScale.x > GM.initBallSize)
-        {
-            transform.localScale = ballScale * .9f;
-        }
+    void onCollection(){
+        myInfo.ballSizeCurrent += 0.1f;
     }
 }

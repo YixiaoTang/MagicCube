@@ -10,9 +10,9 @@ public class GM : MonoBehaviour
 
     float rand1, rand2;
 
-    public static float initBallSize = 1f, ballSize = 1f;   //初始球大小
+    public static float initBallSize = 1f, ballSize = 1f;   //current ballSize
 
-    public static float initBallVel = 1f, ballVel = 2f;    // ??
+    public static float initBallVel = 1f, ballVel = 1f;    // ??
 
     public static float ballVelMax = 8f, ballSizeMax = 4f;
 
@@ -36,10 +36,27 @@ public class GM : MonoBehaviour
     /// static GameObject mainCamera;
     [SerializeField] int[] obstNumList = { obst1Num, obst2Num, obst3Num, obst4Num, obst5Num };
     [SerializeField] Transform[] obstList = {};
+
+    ballModule ball1 = new ballModule();
+    ballModule ball2 = new ballModule();
+
+    // [SerializeField] ballModule[] ballList = {};
+    public List<ballModule> ballList = new List<ballModule>();
+
     void Start()
     {
         remoteSetting();
         Application.targetFrameRate = 60;
+        generateStaffs();
+        remoteSetting();
+        InvokeRepeating("generateStaffs", 0, 5f);
+
+        ballList.Add(ball1);
+        ballList.Add(ball2);
+    }
+
+    public void generateStaffs()
+    {
         for (int t = 0; t < obstList.Length; t++)
         {
             for (int n = 0; n < obstNumList[t]; n++)
@@ -52,10 +69,8 @@ public class GM : MonoBehaviour
         {
             Spawn(coinObj);
         }
-
-        remoteSetting();
-        Application.targetFrameRate = 60;
     }
+
     public void Spawn(Transform obj)
     {
         rand1 = Random.Range(-xRange, xRange);
@@ -63,12 +78,12 @@ public class GM : MonoBehaviour
         Instantiate(obj, new Vector3(rand1, 1, rand2), obj.rotation);
     }
 
-    public void OnCollection()
+    public void OnCollection(int id)
     {
-
-        if (ballSize < ballSizeMax)
+        // id or the object in ballList, now hardcoded
+        if (ballList[id].ballSizeCurrent < ballSizeMax)
         {
-            ballSize += 0.1f;
+            ballList[id].ballSizeCurrent += 0.1f;
         }
     }
 
@@ -82,10 +97,6 @@ public class GM : MonoBehaviour
         {
             SceneManager.LoadScene("Round Finish");
         }
-        //if (ballSize < ballSizeMax)
-        //{
-        //    ballSize += 0.001f;
-        //}
     }
 
     public static float getBallSizeFactor()
