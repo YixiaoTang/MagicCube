@@ -86,6 +86,15 @@ public class moveRandomly : MonoBehaviour
         }
     }
 
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "coin")
+        {
+            Destroy(other.gameObject);
+            myInfo.coinTotal += 1;
+        }
+    }
+
     void sizeCheck()
     {
         transform.localScale = ballScale * myInfo.ballSizeCurrent;
