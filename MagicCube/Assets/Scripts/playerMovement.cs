@@ -7,7 +7,7 @@ public class playerMovement : MonoBehaviour
 {
     int ballID = 0;
 
-    ballModule myInfo = new ballModule();
+    public static ballModule myInfo = new ballModule();
     Vector3 ballScale;
     Rigidbody rb;
     
