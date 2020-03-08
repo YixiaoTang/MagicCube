@@ -25,8 +25,8 @@ public class status : MonoBehaviour
         score3.text = "" + scoreManager.scoreTotal;
 
         player1.text = "1." + GameObject.Find("Player");
-        player2.text = "1." + GameObject.Find("Player");
-        player3.text = "1." + GameObject.Find("Player");
+        player2.text = "2." + GameObject.Find("Player");
+        player3.text = "3." + GameObject.Find("Player");
 
     }
 }
