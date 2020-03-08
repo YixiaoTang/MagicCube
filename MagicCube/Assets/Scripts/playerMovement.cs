@@ -49,7 +49,7 @@ public class playerMovement : MonoBehaviour
         //Debug.Log(horizontalMove);
         //Debug.Log(verticalMove);
 
-        xVel += horizontalMove / 4;
+        xVel += horizontalMove/2;
         if (System.Math.Abs(xVel) > myInfo.ballVelMax)
         {
             if (xVel < 0)
@@ -61,7 +61,7 @@ public class playerMovement : MonoBehaviour
                 xVel = myInfo.ballVelMax;
             }
         }
-        zVel += verticalMove / 4;
+        zVel += verticalMove/2;
         if (System.Math.Abs(zVel) > myInfo.ballVelMax)
         {
             if (zVel < 0)
@@ -93,19 +93,6 @@ public class playerMovement : MonoBehaviour
         }
 
         GetComponent<Rigidbody>().velocity = new Vector3(xVel, yVel, zVel);
-
-
-        //if (movementActive == true)
-        //{
-        //    rb = GetComponent<Rigidbody>();
-        //    ballScale = rb.transform.localScale;
-        //    movementLR = joystick.Horizontal * speed * Time.deltaTime;
-        //    movementUD = joystick.Vertical * speed * Time.deltaTime;
-        //    ///  movementLR = Input.GetAxis("Horizontal") * speed * Time.deltaTime;
-        //    /// movementUD = Input.GetAxis("Vertical") * speed * Time.deltaTime;
-        //    rb.velocity = new Vector3(movementLR, rb.velocity.y, movementUD);
-        //    //movementActive = false;
-        //}
     }
 
     void OnCollisionEnter(Collision col)
@@ -117,6 +104,7 @@ public class playerMovement : MonoBehaviour
             {
                 this.transform.position = new Vector3(transform.position.x, 1, transform.position.z);
                 myInfo.ballSizeCurrent = myInfo.ballSizeInit;
+                myInfo.ballSizeTmp = myInfo.ballSizeInit;
             }
             else
             {
@@ -125,20 +113,32 @@ public class playerMovement : MonoBehaviour
             }
             sizeCheck();
         }
+        if (col.gameObject.tag == "enemy")
+        {
+            if (col.gameObject.transform.localScale.x < gameObject.transform.localScale.x)
+            {
+                Destroy(col.gameObject);
+            } else {
+                Destroy(gameObject);
+            }
+        }
     }
 
     void OnTriggerEnter(Collider other)
     {
+        Debug.Log(other.gameObject.tag);
         if (other.gameObject.tag == "coin")
         {
             Destroy(other.gameObject);
-            GM.coinTotal += 1;
+            myInfo.coinTotal += 1;
+            return ;
         }
         if (other.gameObject.tag == "exit")
         {
             Destroy(gameObject);
             SceneManager.LoadScene("finish");
             GM.level1CompleteEvent();
+            return ;
         }
     }
 
@@ -152,6 +152,13 @@ public class playerMovement : MonoBehaviour
     }
 
     void onCollection(){
-        myInfo.ballSizeCurrent += 0.1f;
+        myInfo.ballSizeTmp += 0.5f;
+        for (int i = 4; i > -1; i--){
+            if(myInfo.ballSizeTmp >= myInfo.levelRange[i])
+            {
+                myInfo.ballSizeCurrent = i + 1;
+                break;
+            }
+        }
     }
 }

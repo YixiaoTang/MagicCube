@@ -17,7 +17,7 @@ public class GM : MonoBehaviour
     public static float ballVelMax = 8f, ballSizeMax = 4f;
 
     //================================== configuration ===================================
-    public static int obst1Num = 10;
+    public static int obst1Num = 100;
     public static int obst2Num = 10;
     public static int obst3Num = 10;
     public static int obst4Num = 10;
@@ -49,6 +49,7 @@ public class GM : MonoBehaviour
         Application.targetFrameRate = 60;
         generateStaffs();
         remoteSetting();
+
         InvokeRepeating("generateStaffs", 0, 5f);
 
         ballList.Add(ball1);
