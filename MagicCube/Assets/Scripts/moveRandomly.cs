@@ -41,6 +41,7 @@ public class moveRandomly : MonoBehaviour
     public static float yVel = 0;
     public static float zVel = 0;
     public static float deVel = 0.02f;
+    public static float ballSize = 1f;
 
     [SerializeField] Joystick joystick;
     [SerializeField] float speed = 1000f;
@@ -79,6 +80,7 @@ public class moveRandomly : MonoBehaviour
             }
             else
             {
+                ballSize++;
                 onCollection();
                 Destroy(col.gameObject);
             }

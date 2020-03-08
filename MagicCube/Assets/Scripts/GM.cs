@@ -10,7 +10,7 @@ public class GM : MonoBehaviour
 
     float rand1, rand2;
 
-    public static float initBallSize = 1f, ballSize = 1f;   //current ballSize
+    public static float initBallSize = 1f, ballSizeCurrent = 1f;   //current ballSize
 
     public static float initBallVel = 1f, ballVel = 1f;    // ??
 

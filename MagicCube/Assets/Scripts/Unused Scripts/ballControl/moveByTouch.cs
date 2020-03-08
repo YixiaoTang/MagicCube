@@ -92,7 +92,7 @@ public class moveByTouch : MonoBehaviour
 
         if (transform.localScale.x < GM.ballSizeMax)
         {
-            transform.localScale = initBallScale * GM.ballSize;
+            transform.localScale = initBallScale * GM.ballSizeCurrent;
         }
     }
             // 如果碰到了柱子
@@ -103,14 +103,14 @@ public class moveByTouch : MonoBehaviour
         {
             if (other.gameObject.name == obstTags[i])
             {
-                if (GM.ballSize < i + 1)
+                if (GM.ballSizeCurrent < i + 1)
                 {
                     // obst is bigger
-                    GM.ballSize = GM.initBallSize;
+                    GM.ballSizeCurrent = GM.initBallSize;
                     GM.ballVel = GM.initBallVel;
                     Vector3 currentVel = GetComponent<Rigidbody>().velocity;
                     GetComponent<Rigidbody>().velocity = new Vector3(xVel, 0, zVel) * GM.ballVel;
-                    transform.localScale = initBallScale * GM.ballSize;
+                    transform.localScale = initBallScale * GM.ballSizeCurrent;
                     //GetComponent<Rigidbody>().AddForce(new Vector3(0, 1, 0));
                 }
                 else
