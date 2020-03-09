@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -26,18 +27,27 @@ public class Status : MonoBehaviour
 
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<BallModule>();
         GameObject[] enemies = GameObject.FindGameObjectsWithTag("enemy");
-        BallModule enemy1 = enemies[0].GetComponent<BallModule>();
-        BallModule enemy2 = enemies[1].GetComponent<BallModule>();
-        List<BallModule> lst = new List<BallModule> { player, enemy1, enemy2 };
+        List<BallModule> lst = new List<BallModule>();
+        lst.Add(player);
+        for (int i = 0; i < enemies.Length; i++)
+        {
+            lst.Add(enemies[i].GetComponent<BallModule>());
+        }
         lst.Sort();
 
         setText(rankText1, "1." + lst[0].name, lst[0]);
-        setText(rankText2, "2." + lst[1].name, lst[1]);
-        setText(rankText3, "3." + lst[2].name, lst[2]);
-
         setText(scoreText1, "" + lst[0].coinTotal, lst[0]);
-        setText(scoreText2, "" + lst[1].coinTotal, lst[1]);
-        setText(scoreText3, "" + lst[2].coinTotal, lst[2]);
+        if(lst.Count > 1)
+        {
+            setText(rankText2, "2." + lst[1].name, lst[1]);
+            setText(scoreText2, "" + lst[1].coinTotal, lst[1]);
+        }
+        if (lst.Count > 2)
+        {
+            setText(rankText3, "3." + lst[2].name, lst[2]);
+            setText(scoreText3, "" + lst[2].coinTotal, lst[2]);
+        }
+        
 
     }
     private void setText(Text text, string content, BallModule ball)
