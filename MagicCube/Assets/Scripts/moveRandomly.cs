@@ -41,6 +41,7 @@ public class moveRandomly : MonoBehaviour
     public static float yVel = 0;
     public static float zVel = 0;
     public static float deVel = 0.02f;
+    public static float ballSize = 1f;
 
     [SerializeField] Joystick joystick;
     [SerializeField] float speed = 1000f;
@@ -69,16 +70,17 @@ public class moveRandomly : MonoBehaviour
 
     void OnCollisionEnter(Collision col)
     {
-        Debug.Log(col.gameObject);
         if (col.gameObject.tag == "obstacle")
         {
             if (col.gameObject.transform.localScale.y - 1 >= ballScale.y)
             {
                 this.transform.position = new Vector3(transform.position.x, 1, transform.position.z);
                 myInfo.ballSizeCurrent = myInfo.ballSizeInit;
+                myInfo.ballSizeTmp = myInfo.ballSizeInit;
             }
             else
             {
+                ballSize++;
                 onCollection();
                 Destroy(col.gameObject);
             }
@@ -109,7 +111,14 @@ public class moveRandomly : MonoBehaviour
     }
 
     void onCollection(){
-        myInfo.ballSizeCurrent += 0.1f;
+        myInfo.ballSizeTmp += 0.5f;
+        for (int i = 4; i > -1; i--){
+            if(myInfo.ballSizeTmp >= myInfo.levelRange[i])
+            {
+                myInfo.ballSizeCurrent = i + 1;
+                break;
+            }
+        }
     }
     void SetRandomVel()
     {

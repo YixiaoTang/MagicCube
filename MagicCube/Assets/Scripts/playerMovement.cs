@@ -7,7 +7,7 @@ public class playerMovement : MonoBehaviour
 {
     int ballID = 0;
 
-    ballModule myInfo = new ballModule();
+    public static ballModule myInfo = new ballModule();
     Vector3 ballScale;
     Rigidbody rb;
     
@@ -97,7 +97,6 @@ public class playerMovement : MonoBehaviour
 
     void OnCollisionEnter(Collision col)
     {
-        Debug.Log(col.gameObject);
         if (col.gameObject.tag == "obstacle")
         {
             if (col.gameObject.transform.localScale.y - 1 >= ballScale.y)
@@ -145,14 +144,14 @@ public class playerMovement : MonoBehaviour
     void sizeCheck()
     {
         transform.localScale = ballScale * myInfo.ballSizeCurrent;
-        if (ballScale.x <= myInfo.ballSizeMax)
+        if (transform.localScale.x < myInfo.ballSizeMax)
         {
             transform.localScale = ballScale * myInfo.ballSizeCurrent;
         }
     }
 
     void onCollection(){
-        myInfo.ballSizeTmp += 0.5f;
+        myInfo.ballSizeTmp += 1f;
         for (int i = 4; i > -1; i--){
             if(myInfo.ballSizeTmp >= myInfo.levelRange[i])
             {

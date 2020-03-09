@@ -10,14 +10,14 @@ public class GM : MonoBehaviour
 
     float rand1, rand2;
 
-    public static float initBallSize = 1f, ballSize = 1f;   //current ballSize
+    public static float initBallSize = 1f, ballSizeCurrent = 1f;   //current ballSize
 
     public static float initBallVel = 1f, ballVel = 1f;    // ??
 
     public static float ballVelMax = 8f, ballSizeMax = 4f;
 
     //================================== configuration ===================================
-    public static int obst1Num = 100;
+    public static int obst1Num = 10;
     public static int obst2Num = 10;
     public static int obst3Num = 10;
     public static int obst4Num = 10;
@@ -50,7 +50,7 @@ public class GM : MonoBehaviour
         generateStaffs();
         remoteSetting();
 
-        InvokeRepeating("generateStaffs", 0, 5f);
+        // InvokeRepeating("generateStaffs", 0, 5f);
 
         ballList.Add(ball1);
         ballList.Add(ball2);
