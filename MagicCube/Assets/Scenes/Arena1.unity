@@ -3333,7 +3333,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b36edaf138864147b832f92b0c7f9d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  highScore: 0
 --- !u!1 &658256118
 GameObject:
   m_ObjectHideFlags: 0
@@ -16845,12 +16844,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   coinText: {fileID: 1626463392}
   timer: {fileID: 1306919874}
-  score1: {fileID: 371723755}
-  score2: {fileID: 1054787739}
-  score3: {fileID: 1226619401}
-  player1: {fileID: 2044198298}
-  player2: {fileID: 1469543844}
-  player3: {fileID: 1464288758}
+  scoreText1: {fileID: 371723755}
+  scoreText2: {fileID: 1054787739}
+  scoreText3: {fileID: 1226619401}
+  rankText1: {fileID: 2044198298}
+  rankText2: {fileID: 1469543844}
+  rankText3: {fileID: 1464288758}
 --- !u!1 &1040387486
 GameObject:
   m_ObjectHideFlags: 0
