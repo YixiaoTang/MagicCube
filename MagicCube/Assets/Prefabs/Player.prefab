@@ -101,13 +101,14 @@ MonoBehaviour:
   coinTotal: 0
   ballVelMax: 8
   ballSizeMax: 5
+  name: Player255
+  ballCurrentLevel: 1
   levelMatrials:
   - {fileID: 2100000, guid: e3a4e5c69fb5c4a8f9fb1bf5c68b5575, type: 2}
   - {fileID: 2100000, guid: a1d474b69a7d747d5b16cefbef70a230, type: 2}
   - {fileID: 2100000, guid: 717a01dc3361c4e09b6cf5cc036737af, type: 2}
   - {fileID: 2100000, guid: 1a4eca0c9b59b49d59c920c065732052, type: 2}
   - {fileID: 2100000, guid: aa90b67edfa1d4b6eaf53c54206d3705, type: 2}
-  levelRange: 0100000002000000030000000400000005000000
 --- !u!135 &6940900119557040996
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -150,4 +151,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   joystick: {fileID: 0}
-  speed: 1000

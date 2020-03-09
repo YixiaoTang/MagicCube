@@ -54,8 +54,7 @@ public class moveRandomly : MonoBehaviour
     {
         if (other.gameObject.tag == "coin")
         {
-            Destroy(other.gameObject);
-            myInfo.coinTotal += 1;
+         
         }
     }
 

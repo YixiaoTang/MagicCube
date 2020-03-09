@@ -94,11 +94,8 @@ public class playerMovement : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        Debug.Log(other.gameObject.tag);
         if (other.gameObject.tag == "coin")
         {
-            Destroy(other.gameObject);
-            playerBall.coinTotal += 1;
             GM.Instance.coinTotal += 1;
             return ;
         }

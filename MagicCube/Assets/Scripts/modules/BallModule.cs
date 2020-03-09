@@ -1,7 +1,8 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BallModule : MonoBehaviour
+public class BallModule : MonoBehaviour, IComparable
 {
     public float ballSizeInit = 1f;
     public float ballSizeCurrent = 1f;
@@ -11,7 +12,7 @@ public class BallModule : MonoBehaviour
     public int coinTotal = 0;
     public float ballVelMax = 6f;
     public float ballSizeMax = 5f;
-
+    public new string name;
     public int ballCurrentLevel = 1;
 
     public Material[] levelMatrials = new Material[5];
@@ -45,6 +46,14 @@ public class BallModule : MonoBehaviour
         }
 
     }
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "coin")
+        {
+            Destroy(other.gameObject);
+            coinTotal ++;
+        }
+    }
 
     private void LevelUp()
     {
@@ -74,5 +83,17 @@ public class BallModule : MonoBehaviour
         gameObject.GetComponent<Renderer>().material = levelMatrials[0];
         ballSizeCurrent = ballSizeInit;
         gameObject.transform.localScale = new Vector3(1, 1, 1) * ballSizeInit;
+    }
+
+    public int CompareTo(object obj)
+    {
+        if(obj.GetType() == typeof(BallModule))
+        {
+            return ((BallModule)obj).coinTotal - coinTotal;
+        }
+        else
+        {
+            return -1;
+        }
     }
 }

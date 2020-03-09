@@ -61,7 +61,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: b7efc6eac342f4d84b8c3a5ebd8268c1, type: 2}
+  - {fileID: 2100000, guid: e3a4e5c69fb5c4a8f9fb1bf5c68b5575, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -122,8 +122,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ae9d583b3b6e46b2811d7e4ccd50c27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  joystick: {fileID: 0}
-  speed: 1000
 --- !u!114 &114190882245734484
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -144,6 +142,7 @@ MonoBehaviour:
   coinTotal: 0
   ballVelMax: 6
   ballSizeMax: 5
+  name: 
   ballCurrentLevel: 1
   levelMatrials:
   - {fileID: 2100000, guid: e3a4e5c69fb5c4a8f9fb1bf5c68b5575, type: 2}
@@ -151,4 +150,3 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 717a01dc3361c4e09b6cf5cc036737af, type: 2}
   - {fileID: 2100000, guid: 1a4eca0c9b59b49d59c920c065732052, type: 2}
   - {fileID: 2100000, guid: aa90b67edfa1d4b6eaf53c54206d3705, type: 2}
-  levelRange: 0100000002000000030000000400000005000000
