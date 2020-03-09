@@ -7,10 +7,12 @@ public class playerMovement : MonoBehaviour
 {
     int ballID = 0;
 
-    public static ballModule myInfo = new ballModule();
+    public static BallModule playerBall = new BallModule();
     Vector3 ballScale;
     Rigidbody rb;
+
     
+
     float verticalMove = 0f;
     float horizontalMove = 0f;
 
@@ -20,13 +22,7 @@ public class playerMovement : MonoBehaviour
     public static float deVel = 0.02f;
 
     [SerializeField] Joystick joystick;
-    [SerializeField] float speed = 1000f;
 
-    float drag = 1.0f;
-    float movementLR = 1;
-    float movementUD = 1;
-
-    bool movementActive = true;
     void Start()
     {
         rb = GetComponent<Rigidbody>();
@@ -50,27 +46,27 @@ public class playerMovement : MonoBehaviour
         //Debug.Log(verticalMove);
 
         xVel += horizontalMove/2;
-        if (System.Math.Abs(xVel) > myInfo.ballVelMax)
+        if (System.Math.Abs(xVel) > playerBall.ballVelMax)
         {
             if (xVel < 0)
             {
-                xVel = -myInfo.ballVelMax;
+                xVel = -playerBall.ballVelMax;
             }
             else
             {
-                xVel = myInfo.ballVelMax;
+                xVel = playerBall.ballVelMax;
             }
         }
         zVel += verticalMove/2;
-        if (System.Math.Abs(zVel) > myInfo.ballVelMax)
+        if (System.Math.Abs(zVel) > playerBall.ballVelMax)
         {
             if (zVel < 0)
             {
-                zVel = -myInfo.ballVelMax;
+                zVel = -playerBall.ballVelMax;
             }
             else
             {
-                zVel = myInfo.ballVelMax;
+                zVel = playerBall.ballVelMax;
             }
         }
 
@@ -95,33 +91,6 @@ public class playerMovement : MonoBehaviour
         GetComponent<Rigidbody>().velocity = new Vector3(xVel, yVel, zVel);
     }
 
-    void OnCollisionEnter(Collision col)
-    {
-        if (col.gameObject.tag == "obstacle")
-        {
-            if (col.gameObject.transform.localScale.y - 1 >= ballScale.y)
-            {
-                this.transform.position = new Vector3(transform.position.x, 1, transform.position.z);
-                myInfo.ballSizeCurrent = myInfo.ballSizeInit;
-                myInfo.ballSizeTmp = myInfo.ballSizeInit;
-            }
-            else
-            {
-                onCollection();
-                Destroy(col.gameObject);
-            }
-            sizeCheck();
-        }
-        if (col.gameObject.tag == "enemy")
-        {
-            if (col.gameObject.transform.localScale.x < gameObject.transform.localScale.x)
-            {
-                Destroy(col.gameObject);
-            } else {
-                Destroy(gameObject);
-            }
-        }
-    }
 
     void OnTriggerEnter(Collider other)
     {
@@ -129,35 +98,16 @@ public class playerMovement : MonoBehaviour
         if (other.gameObject.tag == "coin")
         {
             Destroy(other.gameObject);
-            myInfo.coinTotal += 1;
+            playerBall.coinTotal += 1;
+            GM.Instance.coinTotal += 1;
             return ;
         }
         if (other.gameObject.tag == "exit")
         {
             Destroy(gameObject);
             SceneManager.LoadScene("finish");
-            GM.level1CompleteEvent();
+            GM.Instance.Level1CompleteEvent();
             return ;
-        }
-    }
-
-    void sizeCheck()
-    {
-        transform.localScale = ballScale * myInfo.ballSizeCurrent;
-        if (transform.localScale.x < myInfo.ballSizeMax)
-        {
-            transform.localScale = ballScale * myInfo.ballSizeCurrent;
-        }
-    }
-
-    void onCollection(){
-        myInfo.ballSizeTmp += 1f;
-        for (int i = 4; i > -1; i--){
-            if(myInfo.ballSizeTmp >= myInfo.levelRange[i])
-            {
-                myInfo.ballSizeCurrent = i + 1;
-                break;
-            }
         }
     }
 }

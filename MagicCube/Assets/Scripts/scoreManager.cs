@@ -10,7 +10,7 @@ public class scoreManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        scoreTotal = playerMovement.myInfo.ballSizeCurrent * 2.5f;
+        scoreTotal = playerMovement.playerBall.ballSizeCurrent * 2.5f;
         enemyScoreTotal = moveRandomly.ballSize * 2.5f;
     }
 }

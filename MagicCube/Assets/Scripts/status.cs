@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class status : MonoBehaviour
+public class Status : MonoBehaviour
 {
     [SerializeField] Text coinText;
     [SerializeField] Text timer;
@@ -19,8 +19,8 @@ public class status : MonoBehaviour
     // 显示分数
     void Update()
     {
-        coinText.text = "" + GM.coinTotal;
-        timer.text = "" + GM.counterTotal;
+        coinText.text = "" + GM.Instance.coinTotal;
+        timer.text = "" + GM.Instance.counterTotal;
 
         rankText1.text = "1." + GameObject.FindGameObjectWithTag("Player");
         rankText2.text = "2." + GameObject.FindGameObjectWithTag("enemy");

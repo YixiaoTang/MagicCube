@@ -6,57 +6,84 @@ using UnityEngine.SceneManagement;
 
 public class GM : MonoBehaviour
 {
-    int xRange = 45, zRange = 50;
+    /**
+     * Singleton model. Everytime want to use the GM value of function, the way to call is GM.Instance first. 
+     */
+    static GM instance;
 
-    float rand1, rand2;
+    public static GM Instance
+    {
+        get
+        {
+            if (instance == null)
+            {
+                instance = FindObjectOfType(typeof(GM)) as GM;
+                if (instance == null)
+                {
+                    GameObject obj = new GameObject();
+                    instance = (GM)obj.AddComponent(typeof(GM));
+                }
+            }
+            return instance;
+        }
+    }
 
-    public static float initBallSize = 1f, ballSizeCurrent = 1f;   //current ballSize
-
-    public static float initBallVel = 1f, ballVel = 1f;    // ??
-
-    public static float ballVelMax = 8f, ballSizeMax = 4f;
+    // Public variables. All these variables can be changed easily in Unity Inspector.
+    public int xRange = 40;
+    public int zRange = 40;
+    public float initBallVel = 1f, ballVel = 1f;    // ??
+    public float ballVelMax = 8f, ballSizeMax = 4f;
+    public float ballSizeStep = 0.3f; // The step for the ball size change every time.
+    public int fakePlayerNum = 3;
+    public int MaxLevel = 5;
 
     //================================== configuration ===================================
-    public static int obst1Num = 10;
+    public static int obst1Num = 50;
     public static int obst2Num = 10;
     public static int obst3Num = 10;
     public static int obst4Num = 10;
-    public static int obst5Num = 20;
-    public static int coinNum = 1000;
+    public static int obst5Num = 5;
+    public static int coinNum = 100;
     public static float timeTotal = 60 * 30f; // 60 frames/sec * secs
 
 
     //================================== Statistics ===================================
-    public static int coinTotal = 0;
+    public int coinTotal = 0; // The number of player coin collection.
     static float countdown = 60;
-    public static int counterTotal;
+    public int counterTotal;
 
+
+    //private variables
+    private float rand1, rand2;
 
     [SerializeField] Transform coinObj;
     /// static GameObject mainCamera;
     [SerializeField] int[] obstNumList = { obst1Num, obst2Num, obst3Num, obst4Num, obst5Num };
     [SerializeField] Transform[] obstList = {};
 
-    ballModule ball1 = new ballModule();
-    ballModule ball2 = new ballModule();
+    
 
     // [SerializeField] ballModule[] ballList = {};
-    public List<ballModule> ballList = new List<ballModule>();
+    public List<BallModule> ballList = new List<BallModule>();
+
+
 
     void Start()
     {
-        remoteSetting();
+        //RemoteSetting();
         Application.targetFrameRate = 60;
-        generateStaffs();
-        remoteSetting();
+        GenerateStaffs();
+        RemoteSetting();
 
         // InvokeRepeating("generateStaffs", 0, 5f);
-
-        ballList.Add(ball1);
-        ballList.Add(ball2);
+        for(int i = 0; i < fakePlayerNum; i++)
+        {
+            ballList.Add(new BallModule());
+        }
+        
     }
 
-    public void generateStaffs()
+    public void GenerateStaffs()
     {
         for (int t = 0; t < obstList.Length; t++)
         {
@@ -84,7 +111,7 @@ public class GM : MonoBehaviour
         // id or the object in ballList, now hardcoded
         if (ballList[id].ballSizeCurrent < ballSizeMax)
         {
-            ballList[id].ballSizeCurrent += 0.1f;
+            ballList[id].ballSizeCurrent += ballSizeStep;
         }
     }
 
@@ -105,7 +132,7 @@ public class GM : MonoBehaviour
         return 1f;
     }
 
-    private void remoteSetting()
+    private void RemoteSetting()
     {
         UnityEngine.RemoteSettings.ForceUpdate();
         coinNum = UnityEngine.RemoteSettings.GetInt("coinNum");
@@ -114,7 +141,7 @@ public class GM : MonoBehaviour
         timeTotal = UnityEngine.RemoteSettings.GetFloat("TimeTotal");
     }
 
-    public static void level1CompleteEvent()
+    public void Level1CompleteEvent()
     {
         AnalyticsEvent.Custom("level 1 Complete", new Dictionary<string, object>
         {

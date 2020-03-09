@@ -2,9 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class upDateCoinNum : MonoBehaviour
+public class Obst : MonoBehaviour
 {
     // Start is called before the first frame update
+    public int obstLevel;
     void Start()
     {
         
@@ -13,6 +14,6 @@ public class upDateCoinNum : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        GetComponent<UnityEngine.UI.Text>().text = "Coins: " + GM.Instance.coinTotal.ToString();
+        
     }
 }

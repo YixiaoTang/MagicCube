@@ -30,12 +30,10 @@ public class moveRandomly : MonoBehaviour
 
     int ballID = 1;
 
-    ballModule myInfo = new ballModule();
+    BallModule myInfo = new BallModule();
     Vector3 ballScale;
     Rigidbody rb;
     
-    float verticalMove = 0f;
-    float horizontalMove = 0f;
 
     public static float xVel = 0;
     public static float yVel = 0;
@@ -43,14 +41,6 @@ public class moveRandomly : MonoBehaviour
     public static float deVel = 0.02f;
     public static float ballSize = 1f;
 
-    [SerializeField] Joystick joystick;
-    [SerializeField] float speed = 1000f;
-
-    float drag = 1.0f;
-    float movementLR = 1;
-    float movementUD = 1;
-
-    bool movementActive = true;
     void Start()
     {
         rb = GetComponent<Rigidbody>();
@@ -58,35 +48,7 @@ public class moveRandomly : MonoBehaviour
 
         InvokeRepeating("SetRandomVel", 0, 0.5f);
     }
-    void FixedUpdate()
-    {
-        Movement();
-    }
 
-    void Movement()
-    {
-        
-    }
-
-    void OnCollisionEnter(Collision col)
-    {
-        if (col.gameObject.tag == "obstacle")
-        {
-            if (col.gameObject.transform.localScale.y - 1 >= ballScale.y)
-            {
-                this.transform.position = new Vector3(transform.position.x, 1, transform.position.z);
-                myInfo.ballSizeCurrent = myInfo.ballSizeInit;
-                myInfo.ballSizeTmp = myInfo.ballSizeInit;
-            }
-            else
-            {
-                ballSize++;
-                onCollection();
-                Destroy(col.gameObject);
-            }
-            sizeCheck();
-        }
-    }
 
     void OnTriggerEnter(Collider other)
     {
@@ -97,29 +59,7 @@ public class moveRandomly : MonoBehaviour
         }
     }
 
-    void sizeCheck()
-    {
-        transform.localScale = ballScale * myInfo.ballSizeCurrent;
-        if (ballScale.x <= myInfo.ballSizeMax)
-        {
-            transform.localScale = ballScale * myInfo.ballSizeCurrent;
-        } 
-        // else if (ballScale.x > myInfo.ballSizeInit)
-        // {
-        //     transform.localScale = ballScale * .9f;
-        // }
-    }
 
-    void onCollection(){
-        myInfo.ballSizeTmp += 0.5f;
-        for (int i = 4; i > -1; i--){
-            if(myInfo.ballSizeTmp >= myInfo.levelRange[i])
-            {
-                myInfo.ballSizeCurrent = i + 1;
-                break;
-            }
-        }
-    }
     void SetRandomVel()
     {
         rand1 = UnityEngine.Random.Range(-2.0f, 2.0f) * 4;

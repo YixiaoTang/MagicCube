@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 2144075667519650112}
   - component: {fileID: 2144075667519650113}
   - component: {fileID: 2144075667519650118}
+  - component: {fileID: 114190882245734484}
   m_Layer: 0
   m_Name: EnemyBall
   m_TagString: enemy
@@ -121,3 +122,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ae9d583b3b6e46b2811d7e4ccd50c27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  joystick: {fileID: 0}
+  speed: 1000
+--- !u!114 &114190882245734484
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2144075667519650119}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c280cc3dc9a8b44e9a2f8d13991e23a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ballSizeInit: 1
+  ballSizeCurrent: 1
+  ballSizeTmp: 1
+  balVelInit: 1
+  ballVelCurrent: 2
+  coinTotal: 0
+  ballVelMax: 6
+  ballSizeMax: 5
+  ballCurrentLevel: 1
+  levelMatrials:
+  - {fileID: 2100000, guid: e3a4e5c69fb5c4a8f9fb1bf5c68b5575, type: 2}
+  - {fileID: 2100000, guid: a1d474b69a7d747d5b16cefbef70a230, type: 2}
+  - {fileID: 2100000, guid: 717a01dc3361c4e09b6cf5cc036737af, type: 2}
+  - {fileID: 2100000, guid: 1a4eca0c9b59b49d59c920c065732052, type: 2}
+  - {fileID: 2100000, guid: aa90b67edfa1d4b6eaf53c54206d3705, type: 2}
+  levelRange: 0100000002000000030000000400000005000000
