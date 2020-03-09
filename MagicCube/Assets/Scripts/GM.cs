@@ -29,8 +29,8 @@ public class GM : MonoBehaviour
     }
 
     // Public variables. All these variables can be changed easily in Unity Inspector.
-    public int xRange = 40;
-    public int zRange = 40;
+    public int xRange = 30;
+    public int zRange = 30;
     public float initBallVel = 1f, ballVel = 1f;    // ??
     public float ballVelMax = 8f, ballSizeMax = 4f;
     public float ballSizeStep = 0.3f; // The step for the ball size change every time.
