@@ -6,7 +6,6 @@ public class BallModule : MonoBehaviour, IComparable
 {
     public float ballSizeInit = 1f;
     public float ballSizeCurrent = 1f;
-    public float ballSizeTmp = 1f;
     public float balVelInit = 1f;
     public float ballVelCurrent = 2f;
     public int coinTotal = 0;
@@ -22,7 +21,6 @@ public class BallModule : MonoBehaviour, IComparable
         if (col.gameObject.tag == "obstacle")
         {
             Obst obst = (Obst)col.gameObject.GetComponent<Obst>();
-            print("Obst level:" + obst.obstLevel + " Ball Level: " + ballCurrentLevel);
             if (ballCurrentLevel < obst.obstLevel)
             {
                 LevelInit();
@@ -37,11 +35,22 @@ public class BallModule : MonoBehaviour, IComparable
             BallModule enemy = (BallModule)col.gameObject.GetComponent<BallModule>();
             if (ballCurrentLevel > enemy.ballCurrentLevel)
             {
-                Destroy(col.gameObject);
+                //Destroy(col.gameObject);
+                if (enemy.coinTotal > 0)
+                {
+                    enemy.coinTotal--;
+                    coinTotal++;
+                }
+                
             }
             else if(ballCurrentLevel < enemy.ballCurrentLevel)
             {
-                Destroy(gameObject);
+                //Destroy(gameObject);
+                if (coinTotal > 0)
+                {
+                    enemy.coinTotal++;
+                    coinTotal--;
+                }
             }
         }
 

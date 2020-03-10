@@ -10,33 +10,25 @@ public class GM : MonoBehaviour
      * Singleton model. Everytime want to use the GM value of function, the way to call is GM.Instance first. 
      */
     static GM instance;
-
+    public static GameObject obj;
     public static GM Instance
     {
         get
         {
-            if (instance == null)
-            {
-                instance = FindObjectOfType(typeof(GM)) as GM;
-                if (instance == null)
-                {
-                    GameObject obj = new GameObject();
-                    instance = (GM)obj.AddComponent(typeof(GM));
-                }
-            }
+            
             return instance;
         }
     }
 
     // Public variables. All these variables can be changed easily in Unity Inspector.
+
+    public BallModule player;
     public int xRange = 30;
     public int zRange = 30;
     public float initBallVel = 1f, ballVel = 1f;    // ??
-    public float ballVelMax = 8f, ballSizeMax = 4f;
     public float ballSizeStep = 0.3f; // The step for the ball size change every time.
     public int fakePlayerNum = 3;
     public int MaxLevel = 5;
-
     //================================== configuration ===================================
     public static int obst1Num = 50;
     public static int obst2Num = 10;
@@ -55,7 +47,6 @@ public class GM : MonoBehaviour
 
     //private variables
     private float rand1, rand2;
-
     [SerializeField] Transform coinObj;
     /// static GameObject mainCamera;
     [SerializeField] int[] obstNumList = { obst1Num, obst2Num, obst3Num, obst4Num, obst5Num };
@@ -66,6 +57,20 @@ public class GM : MonoBehaviour
     // [SerializeField] ballModule[] ballList = {};
     public List<BallModule> ballList = new List<BallModule>();
 
+
+    private void Awake()
+    {
+        if (instance == null)
+        {
+            instance = this;
+            DontDestroyOnLoad(gameObject);
+           
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
 
 
     void Start()
@@ -101,28 +106,21 @@ public class GM : MonoBehaviour
 
     public void Spawn(Transform obj)
     {
+        //生成区域偏移量
         rand1 = Random.Range(-xRange, xRange);
-        rand2 = Random.Range(-zRange, zRange);
+        rand2 = Random.Range(-zRange, zRange) + 10;
         Instantiate(obj, new Vector3(rand1, 1, rand2), obj.rotation);
     }
 
-    public void OnCollection(int id)
-    {
-        // id or the object in ballList, now hardcoded
-        if (ballList[id].ballSizeCurrent < ballSizeMax)
-        {
-            ballList[id].ballSizeCurrent += ballSizeStep;
-        }
-    }
 
     void Update()
     {
 
         countdown -= Time.deltaTime;
         counterTotal = Mathf.FloorToInt(countdown);
-
         if (counterTotal <= 0)
         {
+            print("Coin Total: " + coinTotal);
             SceneManager.LoadScene("Round Finish");
         }
     }
