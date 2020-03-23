@@ -19,7 +19,7 @@ public class playerMovement : MonoBehaviour
     public static float xVel = 0;
     public static float yVel = 0;
     public static float zVel = 0;
-    public static float deVel = 0.02f;
+    public static float deVel = 0.1f;
 
     [SerializeField] Joystick joystick;
 
@@ -35,15 +35,8 @@ public class playerMovement : MonoBehaviour
 
     void Movement()
     {
-        yVel = rb.velocity.y;
-
-        //Debug.Log(GetComponent<Rigidbody>().velocity);
-
-        //Vector3 originVel = GetComponent<Rigidbody>().velocity;
         horizontalMove = joystick.Horizontal;
         verticalMove = joystick.Vertical;
-        //Debug.Log(horizontalMove);
-        //Debug.Log(verticalMove);
 
         xVel += horizontalMove/2;
         if (System.Math.Abs(xVel) > playerBall.ballVelMax)
@@ -87,7 +80,7 @@ public class playerMovement : MonoBehaviour
         {
             zVel -= deVel;
         }
-
+        yVel = rb.velocity.y;
         GetComponent<Rigidbody>().velocity = new Vector3(xVel, yVel, zVel);
     }
 

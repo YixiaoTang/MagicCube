@@ -14,7 +14,18 @@ public class BallModule : MonoBehaviour, IComparable
     public new string name;
     public int ballCurrentLevel = 1;
 
+    private BallModule self;
+
     public Material[] levelMatrials = new Material[5];
+
+    /// <summary>
+    /// Start is called on the frame when a script is enabled just before
+    /// any of the Update methods is called the first time.
+    /// </summary>
+    void Start()
+    {
+        self = gameObject.GetComponent<BallModule>();
+    }
 
     private void OnCollisionEnter(Collision col)
     {
@@ -33,9 +44,14 @@ public class BallModule : MonoBehaviour, IComparable
         if (col.gameObject.tag == "enemy")
         {
             BallModule enemy = (BallModule)col.gameObject.GetComponent<BallModule>();
+            if (ballCurrentLevel == enemy.ballCurrentLevel)
+            {
+                BallBounce(col.gameObject);
+            }
             if (ballCurrentLevel > enemy.ballCurrentLevel)
             {
-                //Destroy(col.gameObject);
+                BallBounce(col.gameObject);
+                // Destroy(col.gameObject);
                 if (enemy.coinTotal > 0)
                 {
                     enemy.coinTotal--;
@@ -43,15 +59,15 @@ public class BallModule : MonoBehaviour, IComparable
                 }
                 
             }
-            else if(ballCurrentLevel < enemy.ballCurrentLevel)
-            {
-                //Destroy(gameObject);
-                if (coinTotal > 0)
-                {
-                    enemy.coinTotal++;
-                    coinTotal--;
-                }
-            }
+            // else if(ballCurrentLevel < enemy.ballCurrentLevel)
+            // {
+            //     // Destroy(gameObject);
+            //     if (coinTotal > 0)
+            //     {
+            //         enemy.coinTotal++;
+            //         coinTotal--;
+            //     }
+            // }
         }
 
     }
@@ -62,6 +78,13 @@ public class BallModule : MonoBehaviour, IComparable
             Destroy(other.gameObject);
             coinTotal ++;
         }
+    }
+
+    private void BallBounce(GameObject other)
+    {
+        Vector3 positionDelta = gameObject.transform.position - other.transform.position;
+        positionDelta.y = 0f;
+        other.GetComponent<Rigidbody>().AddForce(- positionDelta * 500f);
     }
 
     private void LevelUp()
