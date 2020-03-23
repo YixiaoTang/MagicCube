@@ -19,7 +19,7 @@ public class playerMovement : MonoBehaviour
     public static float xVel = 0;
     public static float yVel = 0;
     public static float zVel = 0;
-    public static float deVel = 0.2f;
+    public static float deVel = 0.1f;
 
     [SerializeField] Joystick joystick;
 
