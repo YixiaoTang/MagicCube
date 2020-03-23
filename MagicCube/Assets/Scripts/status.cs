@@ -20,19 +20,13 @@ public class Status : MonoBehaviour
 
     private BallModule player;
     // 显示分数
+
+
     void Update()
     {
         coinText.text = "" + GM.Instance.coinTotal;
         timer.text = "" + GM.Instance.counterTotal;
-
-        player = GameObject.FindGameObjectWithTag("Player").GetComponent<BallModule>();
-        GameObject[] enemies = GameObject.FindGameObjectsWithTag("enemy");
-        List<BallModule> lst = new List<BallModule>();
-        lst.Add(player);
-        for (int i = 0; i < enemies.Length; i++)
-        {
-            lst.Add(enemies[i].GetComponent<BallModule>());
-        }
+        List<BallModule> lst = GM.Instance.getPlayers();
         lst.Sort();
 
         setText(rankText1, "1." + lst[0].name, lst[0]);
@@ -52,7 +46,7 @@ public class Status : MonoBehaviour
     }
     private void setText(Text text, string content, BallModule ball)
     {
-        if(ball == player)
+        if(ball == GM.Instance.getPlayer())
         {
             text.color = Color.yellow;
         }

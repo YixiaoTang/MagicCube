@@ -95,7 +95,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ballSizeInit: 1
   ballSizeCurrent: 1
-  ballSizeTmp: 1
   balVelInit: 1
   ballVelCurrent: 2
   coinTotal: 0
