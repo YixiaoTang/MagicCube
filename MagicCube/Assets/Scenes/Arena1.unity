@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657838, g: 0.49641234, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1062,14 +1062,14 @@ MonoBehaviour:
   ballSizeStep: 0.3
   fakePlayerNum: 3
   MaxLevel: 5
-  coinObj: {fileID: 8448418934256457359, guid: 402455e8ded8d4207864f945818b05c7, type: 3}
+  coinObj: {fileID: 8448418934256457344, guid: 402455e8ded8d4207864f945818b05c7, type: 3}
   obstNumList: 0a0000000a0000000a0000000a00000014000000
   obstList:
-  - {fileID: 5475968853063305006, guid: f13492c14c0364ac892feac0cb202c56, type: 3}
-  - {fileID: 4976053528316697093, guid: c1f7224bfcffe48c8a8fe4565f56c6c8, type: 3}
-  - {fileID: 4124088475554059648, guid: 0ece599f9a6f34c7caf193ebfcc85613, type: 3}
-  - {fileID: 6248115230546630908, guid: abb371ff3b82f45028fecd51c09b3c69, type: 3}
-  - {fileID: 1507075500249134899, guid: 6ac08ffcc140f458895017a6cfdd06b8, type: 3}
+  - {fileID: 6370813030754008503, guid: f13492c14c0364ac892feac0cb202c56, type: 3}
+  - {fileID: 6240122439105372316, guid: c1f7224bfcffe48c8a8fe4565f56c6c8, type: 3}
+  - {fileID: 3074995940727861017, guid: 0ece599f9a6f34c7caf193ebfcc85613, type: 3}
+  - {fileID: 4981794452327899749, guid: abb371ff3b82f45028fecd51c09b3c69, type: 3}
+  - {fileID: 539610847220043178, guid: 6ac08ffcc140f458895017a6cfdd06b8, type: 3}
   coinTotal: 0
   counterTotal: 0
 --- !u!4 &1044698156
