@@ -142,7 +142,8 @@ public class GM : MonoBehaviour
     {
         Debug.Log("GM.HERE");
         // Instantiate(coinObj, location, coinObj.rotation);
-        GameObject obj = Instantiate(obstList[4]);
+        GameObject obj = Instantiate(coinObj);
+        location[1] = 5;
         obj.transform.position = location;
     }
     private void initPlayers()
