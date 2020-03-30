@@ -762,6 +762,7 @@ GameObject:
   - component: {fileID: 714603540}
   - component: {fileID: 714603539}
   - component: {fileID: 714603538}
+  - component: {fileID: 714603542}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: Untagged
@@ -842,6 +843,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &714603542
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 714603537}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.99999994, y: 1, z: 0.99999994}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &903914274
 PrefabInstance:
   m_ObjectHideFlags: 0
