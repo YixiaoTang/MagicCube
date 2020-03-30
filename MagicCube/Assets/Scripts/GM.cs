@@ -142,9 +142,15 @@ public class GM : MonoBehaviour
     {
         Debug.Log("GM.HERE");
         // Instantiate(coinObj, location, coinObj.rotation);
-        GameObject obj = Instantiate(coinObj);
-        location[1] = 5;
-        obj.transform.position = location;
+        for (int i = 0; i < num; i++)
+        {
+            rand1 = Random.Range(-3, 3);
+            rand2 = Random.Range(-3, 3);
+            GameObject obj = Instantiate(coinObj);
+            location[1] = 3;
+            obj.transform.position = location;
+            obj.GetComponent<Rigidbody>().AddForce(new Vector3(rand1, 3, rand2) * 80f);
+        }
     }
     private void initPlayers()
     {

@@ -50,6 +50,7 @@ public class BallModule : MonoBehaviour, IComparable
             }
             if (ballCurrentLevel > enemy.ballCurrentLevel)
             {
+                enemy.LevelDown();
                 int CoinNum = 0;
                 BallBounce(col.gameObject);
                 // Destroy(col.gameObject);
