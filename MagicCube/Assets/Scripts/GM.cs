@@ -120,7 +120,7 @@ public class GM : MonoBehaviour
         counterTotal = Mathf.FloorToInt(countdown);
         if (counterTotal <= 0)
         {
-            print("Coin Total: " + coinTotal);
+            // print("Coin Total: " + coinTotal);
             SceneManager.LoadScene("Round Finish");
         }
     }
@@ -145,5 +145,11 @@ public class GM : MonoBehaviour
         {
             { "Total Coin", coinTotal }
         });
+    }
+
+    public void SpreadCoins(Vector3 location, int num)
+    {
+        Debug.Log("GM.HERE");
+        Instantiate(coinObj, location, coinObj.rotation);
     }
 }
