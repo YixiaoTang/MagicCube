@@ -22,13 +22,15 @@ public class GM : MonoBehaviour
 
     // Public variables. All these variables can be changed easily in Unity Inspector.
 
-    public BallModule player;
+    
     public int xRange = 30;
     public int zRange = 30;
-    public float initBallVel = 1f, ballVel = 1f;    // ??
     public float ballSizeStep = 0.3f; // The step for the ball size change every time.
-    public int fakePlayerNum = 3;
+    public int fakePlayerNum = 3; //Deprecate after real multi-player
     public int MaxLevel = 5;
+    [SerializeField] Transform coinObj;/// static GameObject mainCamera;
+    [SerializeField] int[] obstNumList = { obst1Num, obst2Num, obst3Num, obst4Num, obst5Num };
+    [SerializeField] Transform[] obstList = { };
     //================================== configuration ===================================
     public static int obst1Num = 50;
     public static int obst2Num = 10;
@@ -47,15 +49,8 @@ public class GM : MonoBehaviour
 
     //private variables
     private float rand1, rand2;
-    [SerializeField] Transform coinObj;
-    /// static GameObject mainCamera;
-    [SerializeField] int[] obstNumList = { obst1Num, obst2Num, obst3Num, obst4Num, obst5Num };
-    [SerializeField] Transform[] obstList = {};
-
-    
-
-    // [SerializeField] ballModule[] ballList = {};
-    public List<BallModule> ballList = new List<BallModule>();
+    private BallModule player;
+    private List<BallModule> players = new List<BallModule>();
 
 
     private void Awake()
@@ -79,12 +74,8 @@ public class GM : MonoBehaviour
         Application.targetFrameRate = 60;
         GenerateStaffs();
         RemoteSetting();
-
+        initPlayers();
         // InvokeRepeating("generateStaffs", 0, 5f);
-        for(int i = 0; i < fakePlayerNum; i++)
-        {
-            ballList.Add(new BallModule());
-        }
         
     }
 
@@ -120,7 +111,6 @@ public class GM : MonoBehaviour
         counterTotal = Mathf.FloorToInt(countdown);
         if (counterTotal <= 0)
         {
-            // print("Coin Total: " + coinTotal);
             SceneManager.LoadScene("Round Finish");
         }
     }
@@ -151,5 +141,25 @@ public class GM : MonoBehaviour
     {
         Debug.Log("GM.HERE");
         Instantiate(coinObj, location, coinObj.rotation);
+    }
+    private void initPlayers()
+    {
+        player = GameObject.FindGameObjectWithTag("Player").GetComponent<BallModule>();
+        GameObject[] enemies = GameObject.FindGameObjectsWithTag("enemy");
+        players.Add(player);
+        for (int i = 0; i < enemies.Length; i++)
+        {
+            players.Add(enemies[i].GetComponent<BallModule>());
+        }
+    }
+
+    public List<BallModule> getPlayers()
+    {
+        return players;
+    }
+
+    public BallModule getPlayer()
+    {
+        return player;
     }
 }
