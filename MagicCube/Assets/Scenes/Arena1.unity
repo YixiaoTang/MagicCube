@@ -300,6 +300,16 @@ PrefabInstance:
       propertyPath: name
       value: Enemy2
       objectReference: {fileID: 0}
+    - target: {fileID: 114190882245734484, guid: c883a40dcd6422b4a8ffeda062b54679,
+        type: 3}
+      propertyPath: coinTotal
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114190882245734484, guid: c883a40dcd6422b4a8ffeda062b54679,
+        type: 3}
+      propertyPath: ballCurrentLevel
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2144075667519650119, guid: c883a40dcd6422b4a8ffeda062b54679,
         type: 3}
       propertyPath: m_Name
@@ -1093,6 +1103,11 @@ MonoBehaviour:
   - {fileID: 4981794452327899749, guid: abb371ff3b82f45028fecd51c09b3c69, type: 3}
   - {fileID: 539610847220043178, guid: 6ac08ffcc140f458895017a6cfdd06b8, type: 3}
   coinTotal: 0
+  levelUp: 0
+  levelDown: 0
+  biggerInCollision: 0
+  smallerInCollision: 0
+  totalCollision: 0
   counterTotal: 0
 --- !u!4 &1044698156
 Transform:
@@ -2776,6 +2791,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114519878026373342, guid: b5ad84f6a29e6a849aa4a26b8e05efaa,
+        type: 3}
+      propertyPath: ballCurrentLevel
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6940900119557040993, guid: b5ad84f6a29e6a849aa4a26b8e05efaa,
         type: 3}

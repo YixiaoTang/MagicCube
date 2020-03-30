@@ -25,6 +25,9 @@ public class BallModule : MonoBehaviour, IComparable
     void Start()
     {
         self = gameObject.GetComponent<BallModule>();
+        gameObject.GetComponent<Renderer>().material = levelMatrials[ballCurrentLevel - 1];
+        ballSizeCurrent = ballSizeInit + 5 * GM.Instance.ballSizeStep * (ballCurrentLevel - 1);
+        gameObject.transform.localScale += new Vector3(1, 1, 1) * (ballSizeCurrent - 1) * GM.Instance.ballSizeStep;
     }
 
     private void OnCollisionEnter(Collision col)
@@ -36,7 +39,8 @@ public class BallModule : MonoBehaviour, IComparable
             {
                 GM.Instance.levelDown++;
                 LevelInit();
-            }else if(ballCurrentLevel >= obst.obstLevel)
+            }
+            else if (ballCurrentLevel >= obst.obstLevel)
             {
                 LevelUp();
                 Destroy(col.gameObject);
@@ -48,6 +52,20 @@ public class BallModule : MonoBehaviour, IComparable
             if (ballCurrentLevel < enemy.ballCurrentLevel)
             {
                 GM.Instance.smallerInCollision++;
+                LevelDown();
+                int CoinNum = 0;
+                BallBounce(gameObject);
+                if (coinTotal > 5)
+                {
+                    CoinNum = 5;
+                    coinTotal -= 5;
+                }
+                else
+                {
+                    CoinNum = coinTotal;
+                    coinTotal = 0;
+                }
+                enemy.SpreadCoins(CoinNum);
             }
             if (ballCurrentLevel > enemy.ballCurrentLevel)
             {
@@ -55,12 +73,6 @@ public class BallModule : MonoBehaviour, IComparable
                 enemy.LevelDown();
                 int CoinNum = 0;
                 BallBounce(col.gameObject);
-                // Destroy(col.gameObject);
-                // if (enemy.coinTotal > 0)
-                // {
-                //     enemy.coinTotal--;
-                //     coinTotal++;
-                // }
                 if (enemy.coinTotal > 5)
                 {
                     CoinNum = 5;
@@ -72,28 +84,17 @@ public class BallModule : MonoBehaviour, IComparable
                     enemy.coinTotal = 0;
                 }
                 enemy.SpreadCoins(CoinNum);
-                
             }
             GM.Instance.totalCollision++;
-            BallBounce(col.gameObject);
-            // else if(ballCurrentLevel < enemy.ballCurrentLevel)
-            // {
-            //     // Destroy(gameObject);
-            //     if (coinTotal > 0)
-            //     {
-            //         enemy.coinTotal++;
-            //         coinTotal--;
-            //     }
-            // }
         }
-
     }
+
     void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "coin")
         {
             Destroy(other.gameObject);
-            coinTotal ++;
+            coinTotal++;
         }
     }
 
@@ -101,16 +102,16 @@ public class BallModule : MonoBehaviour, IComparable
     {
         Vector3 positionDelta = gameObject.transform.position - other.transform.position;
         positionDelta.y = 0f;
-        other.GetComponent<Rigidbody>().AddForce(- positionDelta * 500f);
+        other.GetComponent<Rigidbody>().AddForce(-positionDelta * 500f);
     }
 
     private void LevelUp()
     {
-        if(ballCurrentLevel < GM.Instance.MaxLevel)
+        if (ballCurrentLevel < GM.Instance.MaxLevel)
         {
-            ballCurrentLevel ++;
+            ballCurrentLevel++;
             gameObject.GetComponent<Renderer>().material = levelMatrials[ballCurrentLevel - 1];
-            ballSizeCurrent = ballSizeInit  + 5 * GM.Instance.ballSizeStep * (ballCurrentLevel - 1);
+            ballSizeCurrent = ballSizeInit + 5 * GM.Instance.ballSizeStep * (ballCurrentLevel - 1);
             gameObject.transform.localScale += new Vector3(1, 1, 1) * GM.Instance.ballSizeStep;
             GM.Instance.levelUp++;
         }
@@ -120,7 +121,7 @@ public class BallModule : MonoBehaviour, IComparable
     {
         if (ballCurrentLevel > 1)
         {
-            ballCurrentLevel --;
+            ballCurrentLevel--;
             gameObject.GetComponent<Renderer>().material = levelMatrials[ballCurrentLevel - 1];
             ballSizeCurrent = ballSizeInit + GM.Instance.ballSizeStep * (ballCurrentLevel - 1);
             gameObject.transform.localScale -= new Vector3(1, 1, 1) * GM.Instance.ballSizeStep;
@@ -137,7 +138,7 @@ public class BallModule : MonoBehaviour, IComparable
 
     public int CompareTo(object obj)
     {
-        if(obj.GetType() == typeof(BallModule))
+        if (obj.GetType() == typeof(BallModule))
         {
             return ((BallModule)obj).coinTotal - coinTotal;
         }

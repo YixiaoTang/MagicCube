@@ -8,6 +8,6 @@ public class startManager : MonoBehaviour
 {
     public void Begin()
     {
-        SceneManager.LoadScene("Arena1");
+        SceneManager.LoadScene("round1");
     }
 }
