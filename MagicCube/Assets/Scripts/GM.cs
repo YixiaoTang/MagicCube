@@ -11,6 +11,7 @@ public class GM : MonoBehaviour
      */
     static GM instance;
     public static GameObject obj;
+    // public static GameObject coinObj;
     public static GM Instance
     {
         get
@@ -28,9 +29,9 @@ public class GM : MonoBehaviour
     public float ballSizeStep = 0.3f; // The step for the ball size change every time.
     public int fakePlayerNum = 3; //Deprecate after real multi-player
     public int MaxLevel = 5;
-    [SerializeField] Transform coinObj;/// static GameObject mainCamera;
+    [SerializeField] GameObject coinObj;
     [SerializeField] int[] obstNumList = { obst1Num, obst2Num, obst3Num, obst4Num, obst5Num };
-    [SerializeField] Transform[] obstList = { };
+    [SerializeField] GameObject[] obstList = { };
     //================================== configuration ===================================
     public static int obst1Num = 50;
     public static int obst2Num = 10;
@@ -100,18 +101,18 @@ public class GM : MonoBehaviour
         }
     }
 
-    public void Spawn(Transform obj)
+    public void Spawn(GameObject obj)
     {
         //生成区域偏移量
         rand1 = Random.Range(-xRange, xRange);
         rand2 = Random.Range(-zRange, zRange) + 10;
-        Instantiate(obj, new Vector3(rand1, 1, rand2), obj.rotation);
+        GameObject objG = Instantiate(obj);
+        objG.transform.position = new Vector3(rand1, 1, rand2);
     }
 
 
     void Update()
     {
-
         countdown -= Time.deltaTime;
         counterTotal = Mathf.FloorToInt(countdown);
         if (counterTotal <= 0)
@@ -147,6 +148,20 @@ public class GM : MonoBehaviour
         });
     }
 
+    public void SpreadCoins(Vector3 location, int num)
+    {
+        Debug.Log("GM.HERE");
+        // Instantiate(coinObj, location, coinObj.rotation);
+        for (int i = 0; i < num; i++)
+        {
+            rand1 = Random.Range(-3, 3);
+            rand2 = Random.Range(-3, 3);
+            GameObject obj = Instantiate(coinObj);
+            location[1] = 3;
+            obj.transform.position = location;
+            obj.GetComponent<Rigidbody>().AddForce(new Vector3(rand1, 3, rand2) * 80f);
+        }
+    }
     private void initPlayers()
     {
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<BallModule>();

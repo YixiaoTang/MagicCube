@@ -52,12 +52,27 @@ public class BallModule : MonoBehaviour, IComparable
             if (ballCurrentLevel > enemy.ballCurrentLevel)
             {
                 GM.Instance.biggerInCollision++;
+                enemy.LevelDown();
+                int CoinNum = 0;
+                BallBounce(col.gameObject);
                 // Destroy(col.gameObject);
-                if (enemy.coinTotal > 0)
+                // if (enemy.coinTotal > 0)
+                // {
+                //     enemy.coinTotal--;
+                //     coinTotal++;
+                // }
+                if (enemy.coinTotal > 5)
                 {
-                    enemy.coinTotal--;
-                    coinTotal++;
+                    CoinNum = 5;
+                    enemy.coinTotal -= 5;
                 }
+                else
+                {
+                    CoinNum = enemy.coinTotal;
+                    enemy.coinTotal = 0;
+                }
+                enemy.SpreadCoins(CoinNum);
+                
             }
             GM.Instance.totalCollision++;
             BallBounce(col.gameObject);
@@ -130,5 +145,10 @@ public class BallModule : MonoBehaviour, IComparable
         {
             return -1;
         }
+    }
+
+    public void SpreadCoins(int num)
+    {
+        GM.Instance.SpreadCoins(gameObject.transform.position, num);
     }
 }
