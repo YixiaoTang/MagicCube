@@ -43,6 +43,11 @@ public class GM : MonoBehaviour
 
     //================================== Statistics ===================================
     public int coinTotal = 0; // The number of player coin collection.
+    public int levelUp = 0;
+    public int levelDown = 0;
+    public int biggerInCollision = 0;
+    public int smallerInCollision = 0;
+    public int totalCollision = 0;
     static float countdown = 60;
     public int counterTotal;
 
@@ -72,7 +77,7 @@ public class GM : MonoBehaviour
     {
         //RemoteSetting();
         Application.targetFrameRate = 60;
-        GenerateStaffs();
+        //GenerateStaffs();
         RemoteSetting();
         initPlayers();
         // InvokeRepeating("generateStaffs", 0, 5f);
@@ -133,7 +138,12 @@ public class GM : MonoBehaviour
     {
         AnalyticsEvent.Custom("level 1 Complete", new Dictionary<string, object>
         {
-            { "Total Coin", coinTotal }
+            { "Total Coin", coinTotal },
+            {"Level Up",levelUp },
+            {"Level Down",levelDown },
+            {"Bigger in Collision",biggerInCollision },
+            {"Smallar in Collision",smallerInCollision },
+            {"Total Collision", totalCollision}
         });
     }
 

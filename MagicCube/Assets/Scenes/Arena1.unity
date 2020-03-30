@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1026,6 +1026,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94961e2922ac841369205049e10a6679, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  coinText: {fileID: 1626463392}
+  timer: {fileID: 1306919874}
+  scoreText1: {fileID: 371723755}
+  scoreText2: {fileID: 1054787739}
+  scoreText3: {fileID: 1226619401}
+  rankText1: {fileID: 2044198298}
+  rankText2: {fileID: 1469543844}
+  rankText3: {fileID: 1464288758}
 --- !u!1 &1044698154
 GameObject:
   m_ObjectHideFlags: 0
@@ -2750,10 +2758,20 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 114519878026373342, guid: b5ad84f6a29e6a849aa4a26b8e05efaa,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6940900119557040993, guid: b5ad84f6a29e6a849aa4a26b8e05efaa,
         type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 6940900119557040997, guid: b5ad84f6a29e6a849aa4a26b8e05efaa,
+        type: 3}
+      propertyPath: m_DynamicOccludee
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6940900119557040998, guid: b5ad84f6a29e6a849aa4a26b8e05efaa,
         type: 3}
