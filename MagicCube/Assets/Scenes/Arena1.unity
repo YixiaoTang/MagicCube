@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657838, g: 0.49641234, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1050,14 +1050,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94961e2922ac841369205049e10a6679, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coinText: {fileID: 1626463392}
-  timer: {fileID: 1306919874}
-  scoreText1: {fileID: 371723755}
-  scoreText2: {fileID: 1054787739}
-  scoreText3: {fileID: 1226619401}
-  rankText1: {fileID: 2044198298}
-  rankText2: {fileID: 1469543844}
-  rankText3: {fileID: 1464288758}
 --- !u!1 &1044698154
 GameObject:
   m_ObjectHideFlags: 0
@@ -1763,6 +1755,26 @@ PrefabInstance:
         type: 3}
       propertyPath: name
       value: Enemy1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114190882245734484, guid: c883a40dcd6422b4a8ffeda062b54679,
+        type: 3}
+      propertyPath: ballCurrentLevel
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114190882245734484, guid: c883a40dcd6422b4a8ffeda062b54679,
+        type: 3}
+      propertyPath: coinTotal
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2144075667519650112, guid: c883a40dcd6422b4a8ffeda062b54679,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2144075667519650113, guid: c883a40dcd6422b4a8ffeda062b54679,
+        type: 3}
+      propertyPath: m_CollisionDetection
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2144075667519650119, guid: c883a40dcd6422b4a8ffeda062b54679,
         type: 3}
@@ -2801,6 +2813,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 6940900119557040993, guid: b5ad84f6a29e6a849aa4a26b8e05efaa,
+        type: 3}
+      propertyPath: m_TagString
+      value: enemy
       objectReference: {fileID: 0}
     - target: {fileID: 6940900119557040997, guid: b5ad84f6a29e6a849aa4a26b8e05efaa,
         type: 3}

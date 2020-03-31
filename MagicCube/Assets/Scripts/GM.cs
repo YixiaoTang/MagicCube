@@ -78,7 +78,7 @@ public class GM : MonoBehaviour
     {
         //RemoteSetting();
         Application.targetFrameRate = 60;
-        //GenerateStaffs();
+        GenerateStaffs();
         RemoteSetting();
         initPlayers();
         // InvokeRepeating("generateStaffs", 0, 5f);
@@ -154,17 +154,16 @@ public class GM : MonoBehaviour
         // Instantiate(coinObj, location, coinObj.rotation);
         for (int i = 0; i < num; i++)
         {
-            rand1 = Random.Range(-3, 3);
-            rand2 = Random.Range(-3, 3);
+            rand1 = Random.Range(-10, 10);
+            rand2 = Random.Range(-10, 10);
             GameObject obj = Instantiate(coinObj);
-            location[1] = 3;
             obj.transform.position = location;
-            obj.GetComponent<Rigidbody>().AddForce(new Vector3(rand1, 3, rand2) * 80f);
+            // obj.GetComponent<Rigidbody>().AddForce(new Vector3(rand1, 10, rand2) * .001f);
         }
     }
     private void initPlayers()
     {
-        player = GameObject.FindGameObjectWithTag("Player").GetComponent<BallModule>();
+        player = GameObject.Find("Player").GetComponent<BallModule>();
         GameObject[] enemies = GameObject.FindGameObjectsWithTag("enemy");
         players.Add(player);
         for (int i = 0; i < enemies.Length; i++)

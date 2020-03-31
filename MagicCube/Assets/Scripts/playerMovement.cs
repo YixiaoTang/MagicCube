@@ -30,7 +30,7 @@ public class playerMovement : MonoBehaviour
     }
     void FixedUpdate()
     {
-        Debug.Log(playerBall.canMove);
+        // Debug.Log(playerBall.canMove);
         if (playerBall.canMove == true)
         {
             Movement();
@@ -39,7 +39,7 @@ public class playerMovement : MonoBehaviour
 
     void Movement()
     {
-        Debug.Log(GetComponent<Rigidbody>().velocity);
+        // Debug.Log(GetComponent<Rigidbody>().velocity);
         horizontalMove = joystick.Horizontal;
         verticalMove = joystick.Vertical;
 

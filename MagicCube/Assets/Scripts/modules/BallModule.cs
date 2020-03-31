@@ -69,23 +69,23 @@ public class BallModule : MonoBehaviour, IComparable
             //     }
             //     enemy.SpreadCoins(CoinNum);
             // }
-            if (ballCurrentLevel > enemy.ballCurrentLevel)
+            if (ballCurrentLevel < enemy.ballCurrentLevel)
             {
-                GM.Instance.biggerInCollision++;
-                enemy.LevelDown();
+                GM.Instance.smallerInCollision++;
+                this.LevelDown();
                 int CoinNum = 0;
                 BallBounce(col.gameObject);
-                if (enemy.coinTotal > 5)
+                if (this.coinTotal > 5)
                 {
                     CoinNum = 5;
-                    enemy.coinTotal -= 5;
+                    this.coinTotal -= 5;
                 }
                 else
                 {
-                    CoinNum = enemy.coinTotal;
-                    enemy.coinTotal = 0;
+                    CoinNum = this.coinTotal;
+                    this.coinTotal = 0;
                 }
-                enemy.SpreadCoins(CoinNum);
+                this.SpreadCoins(CoinNum);
             }
             GM.Instance.totalCollision++;
         }
@@ -104,12 +104,14 @@ public class BallModule : MonoBehaviour, IComparable
     {
         Vector3 positionDelta = gameObject.transform.position - other.transform.position;
         positionDelta.y = 0f;
-        other.GetComponent<Rigidbody>().velocity = new Vector3(0, 0, 0);
-        other.GetComponent<playerMovement>().xVel = 0;
-        other.GetComponent<playerMovement>().zVel = 0;
-        other.GetComponent<Rigidbody>().ResetInertiaTensor();
+        gameObject.GetComponent<Rigidbody>().velocity = new Vector3(0, 0, 0);
+        if (gameObject.GetComponent<playerMovement>())
+        {
+            gameObject.GetComponent<playerMovement>().xVel = 0;
+            gameObject.GetComponent<playerMovement>().zVel = 0;
+        }
         playerMovement.playerBall.canMove = false;
-        other.GetComponent<Rigidbody>().AddForce(-positionDelta * 500f);
+        gameObject.GetComponent<Rigidbody>().AddForce(positionDelta * 500f);
         StartCoroutine(resumeMovement(0.45f));
     }
 
@@ -166,6 +168,9 @@ public class BallModule : MonoBehaviour, IComparable
 
     public void SpreadCoins(int num)
     {
-        GM.Instance.SpreadCoins(gameObject.transform.position, num);
+        Vector3 location = gameObject.transform.position;
+        location[1] = ballCurrentLevel + 1;
+        location[1] = 6;
+        GM.Instance.SpreadCoins(location, num);
     }
 }
