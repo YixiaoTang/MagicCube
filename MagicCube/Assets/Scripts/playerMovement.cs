@@ -16,10 +16,10 @@ public class playerMovement : MonoBehaviour
     float verticalMove = 0f;
     float horizontalMove = 0f;
 
-    public static float xVel = 0;
-    public static float yVel = 0;
-    public static float zVel = 0;
-    public static float deVel = 0.1f;
+    public float xVel = 0;
+    public float yVel = 0;
+    public float zVel = 0;
+    public float deVel = 0.1f;
 
     [SerializeField] Joystick joystick;
 
@@ -30,11 +30,16 @@ public class playerMovement : MonoBehaviour
     }
     void FixedUpdate()
     {
-        Movement();
+        Debug.Log(playerBall.canMove);
+        if (playerBall.canMove == true)
+        {
+            Movement();
+        }
     }
 
     void Movement()
     {
+        Debug.Log(GetComponent<Rigidbody>().velocity);
         horizontalMove = joystick.Horizontal;
         verticalMove = joystick.Vertical;
 
@@ -82,6 +87,7 @@ public class playerMovement : MonoBehaviour
         }
         yVel = rb.velocity.y;
         GetComponent<Rigidbody>().velocity = new Vector3(xVel, yVel, zVel);
+
     }
 
 

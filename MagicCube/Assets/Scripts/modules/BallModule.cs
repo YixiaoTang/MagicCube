@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -13,6 +14,7 @@ public class BallModule : MonoBehaviour, IComparable
     public float ballSizeMax = 5f;
     public new string name;
     public int ballCurrentLevel = 1;
+    public bool canMove = true;
 
     private BallModule self;
 
@@ -49,24 +51,24 @@ public class BallModule : MonoBehaviour, IComparable
         if (col.gameObject.tag == "enemy")
         {
             BallModule enemy = (BallModule)col.gameObject.GetComponent<BallModule>();
-            if (ballCurrentLevel < enemy.ballCurrentLevel)
-            {
-                GM.Instance.smallerInCollision++;
-                LevelDown();
-                int CoinNum = 0;
-                BallBounce(gameObject);
-                if (coinTotal > 5)
-                {
-                    CoinNum = 5;
-                    coinTotal -= 5;
-                }
-                else
-                {
-                    CoinNum = coinTotal;
-                    coinTotal = 0;
-                }
-                enemy.SpreadCoins(CoinNum);
-            }
+            // if (ballCurrentLevel < enemy.ballCurrentLevel)
+            // {
+            //     GM.Instance.smallerInCollision++;
+            //     LevelDown();
+            //     int CoinNum = 0;
+            //     BallBounce(gameObject);
+            //     if (coinTotal > 5)
+            //     {
+            //         CoinNum = 5;
+            //         coinTotal -= 5;
+            //     }
+            //     else
+            //     {
+            //         CoinNum = coinTotal;
+            //         coinTotal = 0;
+            //     }
+            //     enemy.SpreadCoins(CoinNum);
+            // }
             if (ballCurrentLevel > enemy.ballCurrentLevel)
             {
                 GM.Instance.biggerInCollision++;
@@ -102,7 +104,21 @@ public class BallModule : MonoBehaviour, IComparable
     {
         Vector3 positionDelta = gameObject.transform.position - other.transform.position;
         positionDelta.y = 0f;
+        other.GetComponent<Rigidbody>().velocity = new Vector3(0, 0, 0);
+        other.GetComponent<playerMovement>().xVel = 0;
+        other.GetComponent<playerMovement>().zVel = 0;
+        other.GetComponent<Rigidbody>().ResetInertiaTensor();
+        playerMovement.playerBall.canMove = false;
         other.GetComponent<Rigidbody>().AddForce(-positionDelta * 500f);
+        StartCoroutine(resumeMovement(0.45f));
+    }
+
+    IEnumerator resumeMovement(float time)
+    {
+        yield return new WaitForSeconds(time);
+        playerMovement.playerBall.canMove = true;
+        // playerMovement.xVel = 0;
+        // playerMovement.zVel = 0;
     }
 
     private void LevelUp()
