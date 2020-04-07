@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 2144075667519650115}
   - component: {fileID: 2144075667519650112}
   - component: {fileID: 2144075667519650113}
-  - component: {fileID: 2144075667519650118}
   m_Layer: 0
   m_Name: EnemyBall
   m_TagString: enemy
@@ -60,7 +59,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: b7efc6eac342f4d84b8c3a5ebd8268c1, type: 2}
+  - {fileID: 2100000, guid: e3a4e5c69fb5c4a8f9fb1bf5c68b5575, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -109,15 +108,3 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &2144075667519650118
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2144075667519650119}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3ae9d583b3b6e46b2811d7e4ccd50c27, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
