@@ -11,7 +11,7 @@ public class playerMovement : MonoBehaviour
     Vector3 ballScale;
     Rigidbody rb;
 
-    
+
 
     float verticalMove = 0f;
     float horizontalMove = 0f;
