@@ -42,10 +42,10 @@ public class BallModule : MonoBehaviour, IComparable
                 GM.Instance.levelDown++;
                 LevelInit();
             }
-            else if (ballCurrentLevel >= obst.obstLevel)
+            else if (ballCurrentLevel == obst.obstLevel)
             {
                 LevelUp();
-                Destroy(col.gameObject);
+                //Destroy(col.gameObject);
             }
         }
         if (col.gameObject.tag == "enemy")

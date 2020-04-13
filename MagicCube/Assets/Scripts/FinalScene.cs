@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class FinalScene : MonoBehaviour
@@ -37,7 +38,10 @@ public class FinalScene : MonoBehaviour
         Application.Quit();
     }
 
-
+    public void NewRound()
+    {
+        SceneManager.LoadScene("Start Menu");
+    }
     private void setText(Text text, string content, BallModule ball)
     {
         if (ball == GM.Instance.getPlayer())

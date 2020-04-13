@@ -61,7 +61,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e3a4e5c69fb5c4a8f9fb1bf5c68b5575, type: 2}
+  - {fileID: 2100000, guid: 19855eed1c7dc504993ef7c4a3f4c3a1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -102,12 +102,13 @@ MonoBehaviour:
   ballSizeMax: 5
   name: Player255
   ballCurrentLevel: 1
+  canMove: 1
   levelMatrials:
-  - {fileID: 2100000, guid: e3a4e5c69fb5c4a8f9fb1bf5c68b5575, type: 2}
-  - {fileID: 2100000, guid: a1d474b69a7d747d5b16cefbef70a230, type: 2}
-  - {fileID: 2100000, guid: 717a01dc3361c4e09b6cf5cc036737af, type: 2}
-  - {fileID: 2100000, guid: 1a4eca0c9b59b49d59c920c065732052, type: 2}
-  - {fileID: 2100000, guid: aa90b67edfa1d4b6eaf53c54206d3705, type: 2}
+  - {fileID: 2100000, guid: 19855eed1c7dc504993ef7c4a3f4c3a1, type: 2}
+  - {fileID: 2100000, guid: 068b0438b43f2844983f78564ada3e44, type: 2}
+  - {fileID: 2100000, guid: 18b990ada69320241851d6392bb4e215, type: 2}
+  - {fileID: 2100000, guid: 4925430b121aa0f4499acd79c734050f, type: 2}
+  - {fileID: 2100000, guid: dc7738a8898ee45489cbc1ea02df257f, type: 2}
 --- !u!135 &6940900119557040996
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -149,4 +150,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a295702f0bf224f48900d15f21b4184e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  xVel: 0
+  yVel: 0
+  zVel: 0
+  deVel: 0.1
   joystick: {fileID: 0}

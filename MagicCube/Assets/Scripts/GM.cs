@@ -78,7 +78,7 @@ public class GM : MonoBehaviour
     {
         //RemoteSetting();
         Application.targetFrameRate = 60;
-        GenerateStaffs();
+        //GenerateStaffs();
         RemoteSetting();
         initPlayers();
         // InvokeRepeating("generateStaffs", 0, 5f);
