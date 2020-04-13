@@ -21,6 +21,14 @@ namespace Com.MyCompany.MyGame
         [SerializeField]
         private Slider playerLevelSlider;
 
+        [Tooltip("UI Text to display Player's Name")]
+        [SerializeField]
+        private Text coinHint;
+
+        [Tooltip("UI Text to display Player's Name")]
+        [SerializeField]
+        private Text coinNum;
+
         [Tooltip("Pixel offset from the player target")]
         [SerializeField]
         private Vector3 screenOffset = new Vector3(0f, 30f, 0f);
@@ -58,6 +66,14 @@ namespace Com.MyCompany.MyGame
                     playerLevelSlider.value = target.ballCurrentLevel / 5f;
 
             }
+
+            // Reflect the Player Coins
+            if (coinNum != null)
+            {
+                coinNum.text = target.coinsum.ToString();
+
+            }
+
             if (target == null)
             {
                 Destroy(this.gameObject);
@@ -90,6 +106,8 @@ namespace Com.MyCompany.MyGame
 
         #region Public Methods
 
+        //这边不显示调用，而是在玩家初始化的时候，用远程RPC调用初始化这个prefab
+        //使得playerUI中脚本中target绑定为玩家的值。
         public void SetTarget(playerMovement _target)
         {
             if (_target == null)
@@ -111,6 +129,13 @@ namespace Com.MyCompany.MyGame
             {
                 playerNameText.text = target.photonView.Owner.NickName;
             }
+
+            if (coinHint != null)
+            {
+                coinHint.text = "coins:";
+
+            }
+
 
         }
 

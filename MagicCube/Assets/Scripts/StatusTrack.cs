@@ -23,13 +23,17 @@ namespace Com.MyCompany.MyGame
         // Update is called once per frame
         void Update()
         {
-/*            if(PhotonNetwork.LocalPlayer!=null && target.coinsum != current_coin)
-            {
-                current_coin = target.coinsum;
-                PhotonNetwork.LocalPlayer.SetScore(target.coinsum);
-            }*/
+            /*            if(PhotonNetwork.LocalPlayer!=null && target.coinsum != current_coin)
+                        {
+                            current_coin = target.coinsum;
+                            PhotonNetwork.LocalPlayer.SetScore(target.coinsum);
+                        }*/
 
-            coinText.text = playerMovement.coinsum.ToString();
+            playerMovement player = (playerMovement)GetComponent<playerMovement>();
+            //Obst obst = (Obst)col.gameObject.GetComponent<Obst>();
+
+
+            coinText.text =player.coinsum.ToString();
             if (target !=null && coinText != null)
             {
                 //PhotonNetwork.LocalPlayer.SetScore(target.coinsum);

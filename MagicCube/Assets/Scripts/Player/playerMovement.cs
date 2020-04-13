@@ -35,7 +35,7 @@ namespace Com.MyCompany.MyGame
         public Material[] levelMatrials = new Material[5];
 
         [Tooltip("The current coins of our player")]
-        public static int coinsum = 0;
+        public int coinsum = 0;
 
         [SerializeField] Joystick joystick;
 
@@ -201,8 +201,10 @@ namespace Com.MyCompany.MyGame
 
             if (other.gameObject.tag == "coin")
             {
-                coinsum++;
-                Destroy(other.gameObject);
+                photonView.RPC("CoinCount", RpcTarget.All);
+                print("Current coins:" + coinsum);
+
+                //Destroy(other.gameObject);
             }
         }
         private void OnCollisionEnter(Collision col)
@@ -221,12 +223,12 @@ namespace Com.MyCompany.MyGame
 
                     //LevelInit();
                 }
-                else if (ballCurrentLevel >= obst.obstLevel)
+                else if (ballCurrentLevel == obst.obstLevel)
                 {
                     print("Obst level:" + obst.obstLevel + " Ball Level: " + ballCurrentLevel);
                     //Destroy(col.gameObject);
                     photonView.RPC("LevelUP", RpcTarget.All);
-                    Destroy(col.gameObject);
+                    //Destroy(col.gameObject);
                     //PhotonNetwork.Destroy(col.gameObject);
                 }
             }
@@ -242,6 +244,8 @@ namespace Com.MyCompany.MyGame
             //if (photonView.isMine)
         }
 
+        //考虑写一个RPC函数来存储他自己的金币数目以及删除金币操作。似乎非常可行
+
         [PunRPC]
         void LevelUP()
         {
@@ -250,7 +254,15 @@ namespace Com.MyCompany.MyGame
                 print("Yes we enter the loop");
                 ballCurrentLevel++;
                 gameObject.GetComponent<Renderer>().material = levelMatrials[ballCurrentLevel - 1];
+                
+                //这边到时候加修改体积的函数。
             }
+        }
+        [PunRPC]
+        void CoinCount()
+        {
+            coinsum++;
+
         }
 
         //该函数在用户加载level1之后立刻调用，所以在start调用。然后这边其实因为没有level了，所以传入的level参数没用
