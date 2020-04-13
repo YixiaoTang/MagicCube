@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 public class GM : MonoBehaviour
 {
     /**
-     * Singleton model. Everytime want to use the GM value of function, the way to call is GM.Instance first. 
+     * Singleton model. Everytime want to use the GM value of function, the way to call is GM.Instance first.
      */
     static GM instance;
     public static GameObject obj;
@@ -16,14 +16,14 @@ public class GM : MonoBehaviour
     {
         get
         {
-            
+
             return instance;
         }
     }
 
     // Public variables. All these variables can be changed easily in Unity Inspector.
 
-    
+
     public int xRange = 30;
     public int zRange = 30;
     public float ballSizeStep = 0.3f; // The step for the ball size change every time.
@@ -65,7 +65,7 @@ public class GM : MonoBehaviour
         {
             instance = this;
             DontDestroyOnLoad(gameObject);
-           
+
         }
         else
         {
@@ -82,7 +82,7 @@ public class GM : MonoBehaviour
         RemoteSetting();
         initPlayers();
         // InvokeRepeating("generateStaffs", 0, 5f);
-        
+
     }
 
     public void GenerateStaffs()
@@ -151,13 +151,37 @@ public class GM : MonoBehaviour
     public void SpreadCoins(Vector3 location, int num)
     {
         Debug.Log("GM.HERE");
-        // Instantiate(coinObj, location, coinObj.rotation);
+        float radius = 1f;
+        float theta = Random.Range(0, (float)(2 * System.Math.PI));
+        float delta = 2 * (float)System.Math.PI / ((float)num);
+
+        float x;
+        float z;
+        Vector3 force;
+        Vector3 location_new;
+        force.y = 1f;
+        location_new.y = location.y;
+
         for (int i = 0; i < num; i++)
         {
-            rand1 = Random.Range(-10, 10);
-            rand2 = Random.Range(-10, 10);
+            // circule version:
+            x = (float)(radius * System.Math.Cos(theta));
+            z = (float)(radius * System.Math.Sin(theta));
+            theta += delta;
+
+            force.x = x;
+            force.z = z;
+            location_new.x = x;
+            location_new.z = z;
             GameObject obj = Instantiate(coinObj);
-            obj.transform.position = location;
+            obj.transform.position = location_new;
+            obj.GetComponent<Rigidbody>().AddForce(force * 500f);
+
+            // random version:
+            // rand1 = Random.Range(-10, 10);
+            // rand2 = Random.Range(-10, 10);
+            // GameObject obj = Instantiate(coinObj);
+            // obj.transform.position = location;
             // obj.GetComponent<Rigidbody>().AddForce(new Vector3(rand1, 10, rand2) * .001f);
         }
     }
