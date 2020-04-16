@@ -9,8 +9,7 @@ public class startManager : MonoBehaviour
 
     private void Start()
     {
-        bool result = Handheld.PlayFullScreenMovie("C:\\Users\\yixia\\Documents\\oCam\\1.mp4");
-        print(result);
+        Handheld.PlayFullScreenMovie("C:\\Users\\yixia\\Documents\\oCam\\1.mp4");
     }
     public void Begin()
     {

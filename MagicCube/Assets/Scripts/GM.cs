@@ -57,6 +57,7 @@ public class GM : MonoBehaviour
     private float rand1, rand2;
     private BallModule player;
     private List<BallModule> players = new List<BallModule>();
+    private bool inFinal = false;
 
 
     private void Awake()
@@ -115,9 +116,11 @@ public class GM : MonoBehaviour
     {
         countdown -= Time.deltaTime;
         counterTotal = Mathf.FloorToInt(countdown);
-        if (counterTotal <= 0)
+        if (counterTotal <= 0 && !inFinal)
         {
+            GM.Instance.Level1CompleteEvent();
             SceneManager.LoadScene("Round Finish");
+            inFinal = true;
         }
     }
 
@@ -139,13 +142,19 @@ public class GM : MonoBehaviour
     {
         AnalyticsEvent.Custom("level 1 Complete", new Dictionary<string, object>
         {
-            { "Total Coin", coinTotal },
+            {"Total Coin", coinTotal },
             {"Level Up",levelUp },
             {"Level Down",levelDown },
             {"Bigger in Collision",biggerInCollision },
             {"Smallar in Collision",smallerInCollision },
             {"Total Collision", totalCollision}
         });
+        print("coinTotal " + coinTotal);
+        print("levelup " + levelUp);
+        print("levelDown " + levelDown);
+        print("biggerInCollision " + biggerInCollision);
+        print("smallerInCollision " + smallerInCollision);
+        print("totalCollision " + totalCollision);
     }
 
     public void SpreadCoins(Vector3 location, int num)

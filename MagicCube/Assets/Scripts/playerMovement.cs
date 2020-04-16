@@ -102,7 +102,6 @@ public class playerMovement : MonoBehaviour
         {
             Destroy(gameObject);
             SceneManager.LoadScene("finish");
-            GM.Instance.Level1CompleteEvent();
             return ;
         }
     }

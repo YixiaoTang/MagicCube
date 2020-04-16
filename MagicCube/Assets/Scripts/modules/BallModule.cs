@@ -69,6 +69,10 @@ public class BallModule : MonoBehaviour, IComparable
             //     }
             //     enemy.SpreadCoins(CoinNum);
             // }
+            if(ballCurrentLevel > enemy.ballCurrentLevel)
+            {
+                GM.Instance.biggerInCollision++;
+            }
             if (ballCurrentLevel < enemy.ballCurrentLevel)
             {
                 GM.Instance.smallerInCollision++;
