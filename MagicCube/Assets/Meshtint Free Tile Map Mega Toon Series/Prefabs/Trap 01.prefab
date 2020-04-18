@@ -12,9 +12,10 @@ GameObject:
   - component: {fileID: 33423071824211052}
   - component: {fileID: 23195110563586512}
   - component: {fileID: 65656385409730186}
+  - component: {fileID: 2108870878}
   m_Layer: 0
   m_Name: Trap 01
-  m_TagString: Untagged
+  m_TagString: obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -91,3 +92,16 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.89801717, y: 0.24602173, z: 0.8957621}
   m_Center: {x: 0.002165094, y: 0.11085803, z: -0.0027316958}
+--- !u!114 &2108870878
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1779254397466754}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0238ee9ac737ac48bffd00d335ce464, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  obstLevel: 6

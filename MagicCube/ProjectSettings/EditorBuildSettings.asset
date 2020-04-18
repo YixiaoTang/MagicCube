@@ -7,16 +7,7 @@ EditorBuildSettings:
   m_Scenes:
   - enabled: 1
     path: Assets/Scenes/Start Menu.unity
-    guid: 144ae81796cfd1a41ae484fe5718d6f5
-  - enabled: 1
-    path: Assets/Scenes/Arena1.unity
-    guid: b8177edac07224502ac42983b6bfaf11
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 1
-    path: Assets/Scenes/Round Finish.unity
-    guid: dfbf8785d3f724da9a5220e38c421746
+    guid: 92b53a5679ac6ad4dbbfa54eb37052ca
   - enabled: 1
     path: Assets/Scenes/round1.unity
     guid: 79ed9dd89cf532242aac1a603824adc1
