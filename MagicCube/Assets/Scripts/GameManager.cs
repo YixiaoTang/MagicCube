@@ -67,16 +67,43 @@ namespace Com.MyCompany.MyGame
             {
                 for (int i = 0; i < CoinNum; i++)
                 {
-                    rand1 = Random.Range(-xRange, xRange);
-                    rand2 = Random.Range(-zRange, zRange);
+                    /*                    rand1 = Random.Range(-xRange, xRange);
+                                        rand2 = Random.Range(-zRange, zRange);*/
+                    rand1 = Random.Range(-6, 36);
+                    rand2 = Random.Range(-36, 8);
                     //Instantiate(coin, new Vector3(rand1, 1, rand2), coin.transform.rotation);
 
                     //Photon初始化的话，所有的参数都需要再设置一边，否则就是默认000的状态
                     PhotonNetwork.InstantiateSceneObject("Coin", new Vector3(rand1, 2, rand2), Quaternion.Euler(90,0,0));
 
                 }
+                for (int i = 0; i < CoinNum/2; i++)
+                {
+                    /*                    rand1 = Random.Range(-xRange, xRange);
+                                        rand2 = Random.Range(-zRange, zRange);*/
+                    rand1 = Random.Range(-36, 36);
+                    rand2 = Random.Range(22, 34);
+                    //Instantiate(coin, new Vector3(rand1, 1, rand2), coin.transform.rotation);
 
-                for (int i = 0; i < obstList.Length; i++)
+                    //Photon初始化的话，所有的参数都需要再设置一边，否则就是默认000的状态
+                    PhotonNetwork.InstantiateSceneObject("Coin", new Vector3(rand1, 2, rand2), Quaternion.Euler(90, 0, 0));
+
+                }
+                for (int i = 0; i < CoinNum / 4; i++)
+                {
+                    /*                    rand1 = Random.Range(-xRange, xRange);
+                                        rand2 = Random.Range(-zRange, zRange);*/
+                    rand1 = Random.Range(-36, -8);
+                    rand2 = Random.Range(-24, -36);
+                    //Instantiate(coin, new Vector3(rand1, 1, rand2), coin.transform.rotation);
+
+                    //Photon初始化的话，所有的参数都需要再设置一边，否则就是默认000的状态
+                    PhotonNetwork.InstantiateSceneObject("Coin", new Vector3(rand1, 2, rand2), Quaternion.Euler(90, 0, 0));
+
+                }
+
+                // Here is the code for spawn pillar!!!!
+/*                for (int i = 0; i < obstList.Length; i++)
                 {
                     for(int m=0; m<obstNumList[i];m++)
                     {
@@ -105,7 +132,7 @@ namespace Com.MyCompany.MyGame
 
 
 
-                }
+                }*/
             }
                 //PhotonNetwork.InstantiateSceneObject("Coin", new Vector3(1, 1, 1), Quaternion.identity);
             //SpawnCoinsFirst();

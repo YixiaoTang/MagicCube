@@ -229,9 +229,9 @@ MonoBehaviour:
   levelMatrials:
   - {fileID: 2100000, guid: b3446139d00a5994199c7a7f9a6d70da, type: 2}
   - {fileID: 2100000, guid: e6f4f126a1cc120488a2440c81bbb440, type: 2}
-  - {fileID: 2100000, guid: 914e3b86900c37c48921438225adb44a, type: 2}
   - {fileID: 2100000, guid: 260957fd36f1b834a8dc83ed2a22038a, type: 2}
   - {fileID: 2100000, guid: ae22a350daf4de549ba0d6811ecc43a8, type: 2}
+  - {fileID: 2100000, guid: f23b832d3d97b28498e44d06dc8535cf, type: 2}
   coinsum: 0
   joystick: {fileID: 2762888175288748344}
   PlayerUiPrefab: {fileID: 2690109610491918809, guid: 22ce512aadb295440904668f23478dc1,

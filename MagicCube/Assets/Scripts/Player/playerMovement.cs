@@ -45,10 +45,17 @@ namespace Com.MyCompany.MyGame
         [SerializeField]
         public GameObject PlayerUiPrefab;
 
+
+/*        [Tooltip("The Player's UI GameObject StatusTracker")]
+        [SerializeField]
+        public GameObject PlayerStatusPrefab;*/
+
         [Tooltip("The local player instance. Use this to know if the local player is represented in the Scene")]
         public static GameObject LocalPlayerInstance;
 
-        public float ballSizeStep = 0.3f;
+        //        public float ballSizeStep = 0.3f;
+
+        public float ballSizeStep = 0.5f;
         public float ballSizeInit = 1f;
         public float ballSizeCurrent = 1f;
         public bool canMove = true;
@@ -81,6 +88,17 @@ namespace Com.MyCompany.MyGame
                 Debug.LogWarning("<Color=Red><a>Missing</a></Color> PlayerUiPrefab reference on player Prefab.", this);
             }
 
+
+            //----------------------------------------金币和时间tracker
+/*            if (PlayerStatusPrefab != null)
+            {
+                GameObject _uiGo = Instantiate(PlayerStatusPrefab);
+                _uiGo.SendMessage("SetTarget", this, SendMessageOptions.RequireReceiver);
+            }
+            else
+            {
+                Debug.LogWarning("<Color=Red><a>Missing</a></Color> PlayerStatusPrefab reference on player Prefab.", this);
+            }*/
             //-----------------------------------------用于改变player模型--------------------------
             rb = GetComponent<Rigidbody>();
             ballScale = rb.transform.localScale;
@@ -143,7 +161,7 @@ namespace Com.MyCompany.MyGame
             //Debug.Log(horizontalMove);
             //Debug.Log(verticalMove);
 
-            xVel += horizontalMove / 2;
+            xVel += (horizontalMove / 2)/(gameObject.transform.localScale.x/0.8f);
             if (System.Math.Abs(xVel) > ballVelMax)
             {
                 if (xVel < 0)
@@ -155,7 +173,7 @@ namespace Com.MyCompany.MyGame
                     xVel = ballVelMax;
                 }
             }
-            zVel += verticalMove / 2;
+            zVel += (verticalMove / 2)/(gameObject.transform.localScale.x /0.8f);
             if (System.Math.Abs(zVel) > ballVelMax)
             {
                 if (zVel < 0)
@@ -234,7 +252,7 @@ namespace Com.MyCompany.MyGame
                 }
                 else if (ballCurrentLevel == obst.obstLevel)
                 {
-                    print("Obst level:" + obst.obstLevel + " Ball Level: " + ballCurrentLevel);
+                    //print("Obst level:" + obst.obstLevel + " Ball Level: " + ballCurrentLevel);
                     //Destroy(col.gameObject);
                     photonView.RPC("LevelUP", RpcTarget.All);
                     //Destroy(col.gameObject);
@@ -297,12 +315,13 @@ namespace Com.MyCompany.MyGame
         [PunRPC]
         void LevelUP()
         {
+            //当球的level=5，也就是材质为第五种时，不再发生变化。因此对于obstacle 最高只有4级，5级的球只能收到6级的陷阱影响。
             if (ballCurrentLevel < 5)
             {
                 print("Yes, UP the ball");
                 ballCurrentLevel++;
                 gameObject.GetComponent<Renderer>().material = levelMatrials[ballCurrentLevel - 1];
-                gameObject.transform.localScale += new Vector3(1, 1, 1) * ballSizeStep;
+                gameObject.transform.localScale += new Vector3(2, 2, 2) * ballSizeStep;
                 //这边到时候加修改体积的函数。
             }
         }
@@ -315,7 +334,7 @@ namespace Com.MyCompany.MyGame
                 print("Yes, Down the ball");
                 ballCurrentLevel--;
                 gameObject.GetComponent<Renderer>().material = levelMatrials[ballCurrentLevel - 1];
-                gameObject.transform.localScale -= new Vector3(1, 1, 1) * ballSizeStep;
+                gameObject.transform.localScale -= new Vector3(2, 2, 2) * ballSizeStep;
                 //这边到时候加修改体积的函数。
             }
         }
