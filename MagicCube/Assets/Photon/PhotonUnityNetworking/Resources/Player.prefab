@@ -236,10 +236,15 @@ MonoBehaviour:
   joystick: {fileID: 2762888175288748344}
   PlayerUiPrefab: {fileID: 2690109610491918809, guid: 22ce512aadb295440904668f23478dc1,
     type: 3}
+  PlayerStatusPrefab: {fileID: 9069024664262368395, guid: c0e7c61cad4fe4c4e827aaacf804467e,
+    type: 3}
+  PlayerBoardPrefab: {fileID: 1525291771935680325, guid: 93311697a83e94f4da150eed445f54fc,
+    type: 3}
   ballSizeStep: 0.3
   ballSizeInit: 1
   ballSizeCurrent: 1
   canMove: 1
+  counterTotal: 0
 --- !u!114 &9161374434515789994
 MonoBehaviour:
   m_ObjectHideFlags: 0

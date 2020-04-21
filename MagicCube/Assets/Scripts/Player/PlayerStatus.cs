@@ -9,15 +9,18 @@ namespace Com.MyCompany.MyGame
     {
 
 
-        [SerializeField]
-        private GameObject coinTracKBG;
+/*        [SerializeField]
+        private GameObject coinTracKBG;*/
 
 
         [SerializeField]
         private Text coinTracker;
+        [SerializeField]
+        private Text timeTracker;
 
         private playerMovement target;
 
+        float characterControllerHeight = 0f;
         Transform targetTransform;
         Renderer targetRenderer;
         CanvasGroup _canvasGroup;
@@ -39,7 +42,11 @@ namespace Com.MyCompany.MyGame
                 coinTracker.text = target.coinsum.ToString();
 
             }
+            if (timeTracker != null)
+            {
+                timeTracker.text = target.counterTotal.ToString();
 
+            }
             if (target == null)
             {
                 Destroy(this.gameObject);
@@ -47,8 +54,17 @@ namespace Com.MyCompany.MyGame
             }
         }
 
+        void LateUpdate()
+        {
+            // Do not show the UI if we are not visible to the camera, thus avoid potential bugs with seeing the UI, but not the player itself.
+/*            if (targetRenderer != null)
+            {
+                this._canvasGroup.alpha = targetRenderer.isVisible ? 1f : 0f;
+            }*/
+        }
 
-        public void SetTarget(playerMovement _target)
+
+        public void SetTrackerTarget(playerMovement _target)
         {
             if (_target == null)
             {
@@ -59,6 +75,12 @@ namespace Com.MyCompany.MyGame
             target = _target;
             targetTransform = this.target.GetComponent<Transform>();
             targetRenderer = this.target.GetComponent<Renderer>();
+            CharacterController characterController = _target.GetComponent<CharacterController>();
+            // Get data from the Player that won't change during the lifetime of this Component
+            if (characterController != null)
+            {
+                characterControllerHeight = characterController.height;
+            }
         }
     }
 

@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using Photon.Pun;
 using Photon.Realtime;
+using PhotonHashTable = ExitGames.Client.Photon.Hashtable;
 
 namespace Com.MyCompany.MyGame
 {
@@ -11,7 +12,6 @@ namespace Com.MyCompany.MyGame
     public class playerMovement : MonoBehaviourPunCallbacks, IPunObservable
     {
         int ballID = 0;
-
         public float ballVelMax = 6f;
 
         // public static BallModule playerBall = new BallModule();
@@ -46,10 +46,15 @@ namespace Com.MyCompany.MyGame
         public GameObject PlayerUiPrefab;
 
 
-/*        [Tooltip("The Player's UI GameObject StatusTracker")]
+        [Tooltip("The Player's UI GameObject StatusTracker")]
         [SerializeField]
-        public GameObject PlayerStatusPrefab;*/
+        public GameObject PlayerStatusPrefab;
 
+        [Tooltip("The Player's UI GameObject BoardPrefab")]
+        [SerializeField]
+        public GameObject PlayerBoardPrefab;
+
+        
         [Tooltip("The local player instance. Use this to know if the local player is represented in the Scene")]
         public static GameObject LocalPlayerInstance;
 
@@ -59,6 +64,12 @@ namespace Com.MyCompany.MyGame
         public float ballSizeInit = 1f;
         public float ballSizeCurrent = 1f;
         public bool canMove = true;
+        PhotonHashTable setScore = new PhotonHashTable();
+
+        static float countdown = 120;
+        public int counterTotal=1;
+
+        //public string playername = PhotonNetwork.LocalPlayer.NickName;
 
         #region MonoBehaviour CallBacks
         void Awake()
@@ -74,14 +85,18 @@ namespace Com.MyCompany.MyGame
         }
 
         void Start()
-        {   //---------------------------------------球体大小控制---------------
-            
+
+        {
+
+            setScore.Add("score", coinsum);
+            PhotonNetwork.SetPlayerCustomProperties(setScore);
+            //---------------------------------------球体大小控制---------------
 
             //-----------------------------------------UI控制-----------------------------------
             if (PlayerUiPrefab != null)
             {
-                GameObject _uiGo = Instantiate(PlayerUiPrefab);
-                _uiGo.SendMessage("SetTarget", this, SendMessageOptions.RequireReceiver);
+                GameObject _uiGo_1 = Instantiate(PlayerUiPrefab);
+                _uiGo_1.SendMessage("SetTarget", this, SendMessageOptions.RequireReceiver);
             }
             else
             {
@@ -89,24 +104,45 @@ namespace Com.MyCompany.MyGame
             }
 
 
-            //----------------------------------------金币和时间tracker
-/*            if (PlayerStatusPrefab != null)
+            //----------------------------------------金币和时间tracker---------------------------------
+            //Tracker必须要加用户验证，否则一个客户端会显示所有人的tracker。
+            if (photonView.IsMine == true)
             {
-                GameObject _uiGo = Instantiate(PlayerStatusPrefab);
-                _uiGo.SendMessage("SetTarget", this, SendMessageOptions.RequireReceiver);
+                if (PlayerStatusPrefab != null)
+                {
+                    GameObject _uiGo_2 = Instantiate(PlayerStatusPrefab);
+                    _uiGo_2.SendMessage("SetTrackerTarget", this, SendMessageOptions.RequireReceiver);
+                }
+                else
+                {
+                    Debug.LogWarning("<Color=Red><a>Missing</a></Color> PlayerStatusPrefab reference on player Prefab.", this);
+                }
             }
-            else
+            //-------------------------------------------
+
+/*            setScore["score"] = coinsum;
+            PhotonNetwork.LocalPlayer.CustomProperties = setScore;*/
+             
+            if (photonView.IsMine == true)
             {
-                Debug.LogWarning("<Color=Red><a>Missing</a></Color> PlayerStatusPrefab reference on player Prefab.", this);
-            }*/
+                if (PlayerBoardPrefab != null)
+                {
+                    GameObject _uiGo_3 = Instantiate(PlayerBoardPrefab);
+                    _uiGo_3.SendMessage("SetBoardTarget", this, SendMessageOptions.RequireReceiver);
+                }
+                else
+                {
+                    Debug.LogWarning("<Color=Red><a>Missing</a></Color> PlayerBoardPrefab reference on player Prefab.", this);
+                }
+            }
             //-----------------------------------------用于改变player模型--------------------------
             rb = GetComponent<Rigidbody>();
             ballScale = rb.transform.localScale;
 
-            UnityEngine.SceneManagement.SceneManager.sceneLoaded += (scene, loadingMode) =>
+/*            UnityEngine.SceneManagement.SceneManager.sceneLoaded += (scene, loadingMode) =>
             {
                 this.CalledOnLevelWasLoaded(scene.buildIndex);
-            };
+            };*/
             CameraWork _cameraWork = this.gameObject.GetComponent<CameraWork>();
 
 
@@ -120,6 +156,24 @@ namespace Com.MyCompany.MyGame
             else
             {
                 Debug.LogError("<Color=Red><a>Missing</a></Color> CameraWork Component on playerPrefab.", this);
+            }
+
+            //---------------------------------------计分板控制
+
+
+        }
+
+/*        void Update()
+        {
+            countdown -= Time.deltaTime;
+            counterTotal = Mathf.FloorToInt(countdown);
+        }*/
+        void Update()
+        {
+            if(photonView.IsMine == true)
+            {
+                countdown -= Time.deltaTime;
+                counterTotal = Mathf.FloorToInt(countdown);
             }
 
         }
@@ -144,6 +198,11 @@ namespace Com.MyCompany.MyGame
             }
 
 
+/*            if (counterTotal <= 0)
+            {
+                Debug.Log("Time Over,Do something");
+            }*/
+
         }
 
         #endregion
@@ -161,7 +220,7 @@ namespace Com.MyCompany.MyGame
             //Debug.Log(horizontalMove);
             //Debug.Log(verticalMove);
 
-            xVel += (horizontalMove / 2)/(gameObject.transform.localScale.x/0.8f);
+            xVel += (horizontalMove / 2);
             if (System.Math.Abs(xVel) > ballVelMax)
             {
                 if (xVel < 0)
@@ -173,7 +232,7 @@ namespace Com.MyCompany.MyGame
                     xVel = ballVelMax;
                 }
             }
-            zVel += (verticalMove / 2)/(gameObject.transform.localScale.x /0.8f);
+            zVel += (verticalMove / 2);
             if (System.Math.Abs(zVel) > ballVelMax)
             {
                 if (zVel < 0)
@@ -230,6 +289,14 @@ namespace Com.MyCompany.MyGame
             {
                 photonView.RPC("CoinCount", RpcTarget.All);
                 print("Current coins:" + coinsum);
+
+                //int test1 = 0;
+                //int test2 = 0;
+                // test1=(int)photonView.Owner.CustomProperties["score"];
+                //test2 = (int)PhotonNetwork.LocalPlayer.CustomProperties["score"];
+
+                //print("test1 properties: "+test1);
+                //print("test2 properties: " + PhotonNetwork.LocalPlayer.CustomProperties["score"]);
 
                 //Destroy(other.gameObject);
             }
@@ -300,6 +367,7 @@ namespace Com.MyCompany.MyGame
                         coinsum = 0;
                     }
                     photonView.RPC("SpreadCoins", RpcTarget.All,coinForSpread);
+                    //PhotonNetwork.LocalPlayer.CustomProperties["score"] = (int)PhotonNetwork.LocalPlayer.CustomProperties["score"] - coinForSpread;
 
                     //发动一次所有人都可以看到的金币爆发。
                     //调用RPC
@@ -353,6 +421,7 @@ namespace Com.MyCompany.MyGame
         void CoinCount()
         {
             coinsum++;
+            PhotonNetwork.LocalPlayer.CustomProperties["score"] = ((int)PhotonNetwork.LocalPlayer.CustomProperties["score"]) + 1;
 
         }
 
@@ -449,21 +518,25 @@ namespace Com.MyCompany.MyGame
                 }
 
             }
+            PhotonNetwork.LocalPlayer.CustomProperties["score"] = ((int)PhotonNetwork.LocalPlayer.CustomProperties["score"]) - num;
+
         }
 
         //该函数在用户加载level1之后立刻调用，所以在start调用。然后这边其实因为没有level了，所以传入的level参数没用
         //希望能够优化这一部分。
-        void CalledOnLevelWasLoaded(int level)
-        {
-            // check if we are outside the Arena and if it's the case, spawn around the center of the arena in a safe zone
-            if (!Physics.Raycast(transform.position, -Vector3.up, 5f))
-            {
-                transform.position = new Vector3(0f, 5f, 0f);
-            }
-            GameObject _uiGo = Instantiate(this.PlayerUiPrefab);
-            _uiGo.SendMessage("SetTarget", this, SendMessageOptions.RequireReceiver);
-        }
+        /*        void CalledOnLevelWasLoaded(int level)
+                {
 
+
+                    // check if we are outside the Arena and if it's the case, spawn around the center of the arena in a safe zone
+                    if (!Physics.Raycast(transform.position, -Vector3.up, 5f))
+                    {
+                        transform.position = new Vector3(0f, 5f, 0f);
+                    }
+                    GameObject _uiGo_3 = Instantiate(this.PlayerUiPrefab);
+                    _uiGo_3.SendMessage("SetTarget", this, SendMessageOptions.RequireReceiver);
+                }
+        */
 
         #region IPunObservable implementation
 

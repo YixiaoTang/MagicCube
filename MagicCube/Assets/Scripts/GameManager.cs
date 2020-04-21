@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 
 using UnityEngine;
-
+using UnityEngine.UI;
 
 using Photon.Pun;
 using Photon.Realtime;
@@ -49,20 +49,27 @@ namespace Com.MyCompany.MyGame
         [SerializeField] Transform[] obstList = { };
 
         private float rand1, rand2;
+        public int timecounter=10;
+        [SerializeField]
+        private GameObject RankCanvas;
+        [SerializeField]
+        private Text PlayerName;
+        [SerializeField]
+        private Text PlayerCoin;
 
-
-
+/*        private float countdown = 100;
+        private int counterTotal = 1;*/
         public void Start()
 
         {
+            RankCanvas.SetActive(false);
 
             //SpawnCoinsFirst();
-
 
             Debug.LogFormat("We are Instantiating LocalPlayer from {0}", SceneManagerHelper.ActiveSceneName);
 
             LocalPlayer = PhotonNetwork.Instantiate("Player", new Vector3(0f, 5f, 0f), Quaternion.identity, 0).GetComponent<playerMovement>();
-
+            //这里是GM的计时接口。
             if (PhotonNetwork.IsMasterClient)
             {
                 for (int i = 0; i < CoinNum; i++)
@@ -138,6 +145,22 @@ namespace Com.MyCompany.MyGame
             //SpawnCoinsFirst();
         }
 
+        public void Update()
+        {
+
+            timecounter = LocalPlayer.counterTotal + 1;
+            if (timecounter <= 0)
+            {
+                PlayerName.text = PhotonNetwork.LocalPlayer.NickName;
+                PlayerCoin.text = LocalPlayer.coinsum.ToString();
+                RankCanvas.SetActive(true);
+                Debug.Log("Time Over,Do something");
+                Destroy(LocalPlayer);
+            }
+            
+
+
+        }
 
         private void SpawnCoinsFirst()
         {
@@ -163,11 +186,27 @@ namespace Com.MyCompany.MyGame
 
         public override void OnMasterClientSwitched(Player newMasterClient)
         {
-            if (PhotonNetwork.LocalPlayer.ActorNumber == newMasterClient.ActorNumber)
+
+                if (PhotonNetwork.LocalPlayer.ActorNumber == newMasterClient.ActorNumber)
             {
                 SpawnCoinsFirst();
                 StartCoroutine(SpawnCoinsRoutine());
             }
+        }
+
+        public void AddAllActivePlayers()
+        {
+            Dictionary<int, Photon.Realtime.Player> pList = Photon.Pun.PhotonNetwork.CurrentRoom.Players;
+            foreach (KeyValuePair<int, Photon.Realtime.Player> p in pList)
+            {
+                print(p.Value.NickName);
+                
+            }
+        }
+
+        public void ShowRank()
+        {
+
         }
 
     }
