@@ -123,7 +123,7 @@ namespace Com.MyCompany.MyGame
 /*            setScore["score"] = coinsum;
             PhotonNetwork.LocalPlayer.CustomProperties = setScore;*/
              
-            if (photonView.IsMine == true)
+/*            if (photonView.IsMine == true)
             {
                 if (PlayerBoardPrefab != null)
                 {
@@ -134,7 +134,7 @@ namespace Com.MyCompany.MyGame
                 {
                     Debug.LogWarning("<Color=Red><a>Missing</a></Color> PlayerBoardPrefab reference on player Prefab.", this);
                 }
-            }
+            }*/
             //-----------------------------------------用于改变player模型--------------------------
             rb = GetComponent<Rigidbody>();
             ballScale = rb.transform.localScale;
