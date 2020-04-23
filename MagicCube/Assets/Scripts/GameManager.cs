@@ -4,6 +4,7 @@ using System.Collections.Generic;
 
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 using Photon.Pun;
 using Photon.Realtime;
@@ -154,6 +155,8 @@ namespace Com.MyCompany.MyGame
                 PlayerName.text = PhotonNetwork.LocalPlayer.NickName;
                 PlayerCoin.text = LocalPlayer.coinsum.ToString();
                 RankCanvas.SetActive(true);
+                Destroy(GetComponent<Joystick>());
+                Destroy(GetComponent<playerMovement>());
                 Debug.Log("Time Over,Do something");
                 Destroy(LocalPlayer);
             }
@@ -203,10 +206,16 @@ namespace Com.MyCompany.MyGame
                 
             }
         }
-
-        public void ShowRank()
+        public override void OnLeftRoom()
         {
+            // the number is set in File/Build Settings.
+            SceneManager.LoadScene(0);
+        }
 
+        public void LeaveRoom()
+        {
+            //Destroy(GetComponent<playerMovement>());
+            PhotonNetwork.LeaveRoom();
         }
 
     }

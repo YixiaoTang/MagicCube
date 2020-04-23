@@ -66,7 +66,7 @@ namespace Com.MyCompany.MyGame
         public bool canMove = true;
         PhotonHashTable setScore = new PhotonHashTable();
 
-        static float countdown = 120;
+         float countdown = 120;
         public int counterTotal=1;
 
         //public string playername = PhotonNetwork.LocalPlayer.NickName;
